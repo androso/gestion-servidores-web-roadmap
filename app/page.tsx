@@ -712,7 +712,7 @@ export default function Home() {
                 Aprende cómo se conectan HTTP, los contenedores web, IIS y Node.js + Express. Sigue las dependencias, elige una rama y vuelve a converger en una entrega completa.
               </p>
               <div className="hero-stats">
-                <div><strong>36</strong><span>nodos de concepto</span></div>
+                <div><strong>34</strong><span>nodos de concepto</span></div>
                 <div><strong>02</strong><span>implementaciones</span></div>
                 <div><strong>01</strong><span>caso integrador</span></div>
               </div>
