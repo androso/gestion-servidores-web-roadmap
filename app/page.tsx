@@ -619,6 +619,9 @@ export default function Home() {
 
   const isVisible = (id: string) => visible.has(id);
   const node = (id: string) => nodes.find((item) => item.id === id)!;
+  const principleVisible =
+    (activeFilter === 'all' || activeFilter === 'security') &&
+    (!query.trim() || 'menor privilegio principio transversal'.includes(query.trim().toLowerCase()));
 
   return (
     <main className="site-shell">
@@ -767,13 +770,13 @@ export default function Home() {
             <section className="roadmap-section" id="foundations">
               <SectionHeading index="01" eyebrow="Base común" title="Entender el terreno" description="Antes de elegir una tecnología, arma el modelo mental: quién recibe, qué se ejecuta y cómo viaja una petición." tone="cyan" />
               <div className="node-grid four-col">
-                {['client-server', 'network-addressing', 'http', 'process-runtime'].map((id) => (
+                {['client-server', 'network-addressing', 'http', 'process-runtime'].filter(isVisible).map((id) => (
                   <NodeCard key={id} node={node(id)} completed={completed.has(id)} onSelect={setSelected} />
                 ))}
               </div>
               <div className="flow-connector" aria-hidden="true"><span /></div>
               <div className="node-grid three-col">
-                {['request-flow', 'web-container', 'static-dynamic'].map((id) => (
+                {['request-flow', 'web-container', 'static-dynamic'].filter(isVisible).map((id) => (
                   <NodeCard key={id} node={node(id)} completed={completed.has(id)} onSelect={setSelected} />
                 ))}
               </div>
@@ -783,13 +786,13 @@ export default function Home() {
             <section className="roadmap-section compact-section">
               <SectionHeading index="01B" eyebrow="Construir para entender" title="Del concepto al proceso" description="La primera implementación expone el mecanismo antes de ocultarlo detrás de un framework." tone="purple" />
               <div className="node-grid three-col">
-                {['server-container', 'typescript', 'manual-container'].map((id) => (
+                {['server-container', 'typescript', 'manual-container'].filter(isVisible).map((id) => (
                   <NodeCard key={id} node={node(id)} completed={completed.has(id)} onSelect={setSelected} />
                 ))}
               </div>
               <div className="connector-pair" aria-hidden="true"><span /><span /></div>
               <div className="node-grid two-col narrow-grid">
-                {['lifecycle', 'technology-choice'].map((id) => (
+                {['lifecycle', 'technology-choice'].filter(isVisible).map((id) => (
                   <NodeCard key={id} node={node(id)} completed={completed.has(id)} onSelect={setSelected} />
                 ))}
               </div>
@@ -833,7 +836,7 @@ export default function Home() {
               <div className="flow-connector" aria-hidden="true"><span /></div>
               <div className="checkpoint-row">
                 {isVisible('security-checkpoint') && <NodeCard node={node('security-checkpoint')} completed={completed.has('security-checkpoint')} onSelect={setSelected} />}
-                <div className="principle-card"><span className="principle-mark">+</span><div><b>Principio transversal</b><strong>Menor privilegio</strong><p>El componente solo recibe el acceso que necesita para funcionar.</p></div></div>
+                {principleVisible && <div className="principle-card"><span className="principle-mark">+</span><div><b>Principio transversal</b><strong>Menor privilegio</strong><p>El componente solo recibe el acceso que necesita para funcionar.</p></div></div>}
               </div>
             </section>
 
