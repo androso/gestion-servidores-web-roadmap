@@ -1,36 +1,11 @@
 'use client';
 
-import React, { useMemo, useSyncExternalStore } from 'react';
-import {
-  ReactFlow,
-  ReactFlowProvider,
-  type Edge,
-  type Node,
-  type Viewport,
-} from '@xyflow/react';
+import React, { useMemo } from 'react';
+import { ReactFlow, ReactFlowProvider, type Edge, type Node } from '@xyflow/react';
 import { nodeTypes } from './roadmap-node';
 import { edgeTypes } from './roadmap-edge';
 import { resolveRoadmapTheme, roadmapThemeCssVars } from './theme';
 import type { CanvasConfig, RoadmapTheme } from './types';
-
-const MOBILE_BREAKPOINT = 768;
-
-function subscribeToViewport(onStoreChange: () => void) {
-  if (typeof window === 'undefined') return () => {};
-  window.addEventListener('resize', onStoreChange);
-  return () => window.removeEventListener('resize', onStoreChange);
-}
-
-function isMobileViewport() {
-  return typeof window !== 'undefined' && window.innerWidth < MOBILE_BREAKPOINT;
-}
-
-export function pickAuthoredViewport(canvas: CanvasConfig): Viewport {
-  if (isMobileViewport() && canvas.mobileInitialViewport) {
-    return canvas.mobileInitialViewport;
-  }
-  return canvas.initialViewport;
-}
 
 interface RoadmapCanvasInnerProps {
   nodes: Node[];
@@ -49,9 +24,7 @@ function RoadmapCanvasInner({
 }: RoadmapCanvasInnerProps) {
   const resolvedTheme = useMemo(() => resolveRoadmapTheme(theme), [theme]);
   const themeVars = useMemo(() => roadmapThemeCssVars(resolvedTheme), [resolvedTheme]);
-  const isMobile = useSyncExternalStore(subscribeToViewport, isMobileViewport, () => false);
-  const authoredViewport =
-    isMobile && canvas.mobileInitialViewport ? canvas.mobileInitialViewport : canvas.initialViewport;
+  const viewport = canvas.initialViewport;
 
   const canvasStyle = {
     ...themeVars,
@@ -63,7 +36,6 @@ function RoadmapCanvasInner({
   return (
     <div className="roadmap-canvas w-full h-full relative select-none overflow-hidden" style={canvasStyle}>
       <ReactFlow
-        key={isMobile ? 'mobile' : 'desktop'}
         nodes={nodes}
         edges={edges}
         nodeTypes={nodeTypes}
@@ -76,9 +48,9 @@ function RoadmapCanvasInner({
         zoomOnScroll={false}
         zoomOnPinch={false}
         zoomOnDoubleClick={false}
-        minZoom={authoredViewport.zoom}
-        maxZoom={authoredViewport.zoom}
-        defaultViewport={authoredViewport}
+        minZoom={viewport.zoom}
+        maxZoom={viewport.zoom}
+        defaultViewport={viewport}
         onNodeClick={onNodeClick}
         proOptions={{ hideAttribution: true }}
       />

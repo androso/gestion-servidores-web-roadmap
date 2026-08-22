@@ -6,3 +6,6 @@ export * from './roadmap-canvas';
 export * from './topic-drawer';
 export * from './interactive-renderer';
 export * from './use-roadmap-progress';
+export * from './use-mobile-viewport';
+export * from './mobile-layout';
+export * from './mobile-path';

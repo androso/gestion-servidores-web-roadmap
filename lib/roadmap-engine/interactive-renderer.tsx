@@ -1,11 +1,14 @@
 'use client';
 
-import React, { useState, useMemo, useCallback } from 'react';
+import React, { useState, useMemo, useCallback, useEffect } from 'react';
 import { MarkerType, type Node, type Edge } from '@xyflow/react';
 import { RoadmapCanvas } from './roadmap-canvas';
 import { TopicDrawer } from './topic-drawer';
+import { MobilePath } from './mobile-path';
 import { useRoadmapProgress } from './use-roadmap-progress';
-import { resolveRoadmapTheme } from './theme';
+import { useIsMobileViewport } from './use-mobile-viewport';
+import { layoutRoadmapForMobile } from './mobile-layout';
+import { resolveRoadmapTheme, roadmapThemeCssVars } from './theme';
 import type { RoadmapDocument } from './types';
 
 export interface InteractiveRoadmapProps {
@@ -20,8 +23,22 @@ export function InteractiveRoadmap({
   className = '',
 }: InteractiveRoadmapProps) {
   const { progress, setTopicStatus } = useRoadmapProgress(roadmap.slug);
+  const isMobile = useIsMobileViewport();
+  const [hydrated, setHydrated] = useState(false);
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [triggerElement, setTriggerElement] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setHydrated(true);
+  }, []);
+
+  const showMobile = !hydrated || isMobile;
+  const showDesktop = !hydrated || !isMobile;
+
+  const mobileItems = useMemo(
+    () => layoutRoadmapForMobile(roadmap.nodes),
+    [roadmap.nodes]
+  );
 
   const handleSelectTopic = useCallback((nodeId: string, element: HTMLElement) => {
     setSelectedNodeId(nodeId);
@@ -42,7 +59,6 @@ export function InteractiveRoadmap({
     setSelectedNodeId(null);
   }, []);
 
-  // Search matching logic
   const normalizedQuery = searchQuery.trim().toLowerCase();
   const isSearching = normalizedQuery.length > 0;
 
@@ -82,7 +98,6 @@ export function InteractiveRoadmap({
           node.data.items.some((item) => item.label.toLowerCase().includes(normalizedQuery));
       }
 
-      // Check topic content
       const topicDetails = roadmap.topics[node.id];
       const detailsMatch =
         topicDetails &&
@@ -96,8 +111,9 @@ export function InteractiveRoadmap({
     return matches;
   }, [isSearching, normalizedQuery, roadmap.nodes, roadmap.topics]);
 
-  // Convert roadmap.nodes to React Flow nodes
   const flowNodes: Node[] = useMemo(() => {
+    if (!showDesktop) return [];
+
     return roadmap.nodes.map((node) => {
       const isMatch = isSearching && searchMatchingNodeIds.has(node.id);
       const isDimmed = isSearching && !searchMatchingNodeIds.has(node.id);
@@ -127,23 +143,24 @@ export function InteractiveRoadmap({
         },
       };
     });
-  }, [roadmap.nodes, isSearching, searchMatchingNodeIds, progress, handleSelectTopic]);
+  }, [showDesktop, roadmap.nodes, isSearching, searchMatchingNodeIds, progress, handleSelectTopic]);
 
   const theme = useMemo(() => resolveRoadmapTheme(roadmap.theme), [roadmap.theme]);
+  const themeVars = useMemo(() => roadmapThemeCssVars(theme), [theme]);
 
   const nodeTypeById = useMemo(
     () => new Map(roadmap.nodes.map((node) => [node.id, node.type])),
     [roadmap.nodes]
   );
 
-  // Convert roadmap.edges to React Flow edges
   const flowEdges: Edge[] = useMemo(() => {
+    if (!showDesktop) return [];
+
     return roadmap.edges.map((edge) => {
       const isDimmed =
         isSearching &&
         (!searchMatchingNodeIds.has(edge.source) || !searchMatchingNodeIds.has(edge.target));
       const stroke = edge.style?.strokeColor || theme.connectorColor;
-      // An edge into or out of a supporting concept is a detour off the main sequence.
       const isSupport =
         nodeTypeById.get(edge.source) === 'subtopic' ||
         nodeTypeById.get(edge.target) === 'subtopic';
@@ -171,7 +188,7 @@ export function InteractiveRoadmap({
         },
       };
     });
-  }, [roadmap.edges, isSearching, searchMatchingNodeIds, theme.connectorColor, nodeTypeById]);
+  }, [showDesktop, roadmap.edges, isSearching, searchMatchingNodeIds, theme.connectorColor, nodeTypeById]);
 
   const selectedTopic = selectedNodeId ? roadmap.topics[selectedNodeId] || null : null;
   const currentStatus = selectedNodeId ? progress[selectedNodeId] || 'pending' : 'pending';
@@ -184,15 +201,40 @@ export function InteractiveRoadmap({
   }, [roadmap.nodes, selectedNodeId]);
 
   return (
-    <div className={`relative w-full h-full ${className}`}>
-      <RoadmapCanvas
-        key={roadmap.slug}
-        nodes={flowNodes}
-        edges={flowEdges}
-        canvas={roadmap.canvas}
-        theme={roadmap.theme}
-        onNodeClick={handleNodeClick}
-      />
+    <div
+      className={`roadmap-viewer relative w-full h-full ${className}`}
+      style={
+        {
+          ...themeVars,
+          backgroundColor: theme.paper,
+          color: theme.ink,
+        } as React.CSSProperties
+      }
+    >
+      {showMobile ? (
+        <div className="roadmap-mobile-host">
+          <MobilePath
+            items={mobileItems}
+            progress={progress}
+            matchingNodeIds={searchMatchingNodeIds}
+            isSearching={isSearching}
+            onSelectTopic={handleSelectTopic}
+          />
+        </div>
+      ) : null}
+
+      {showDesktop ? (
+        <div className="roadmap-desktop-host">
+          <RoadmapCanvas
+            key={roadmap.slug}
+            nodes={flowNodes}
+            edges={flowEdges}
+            canvas={roadmap.canvas}
+            theme={roadmap.theme}
+            onNodeClick={handleNodeClick}
+          />
+        </div>
+      ) : null}
 
       <TopicDrawer
         topic={selectedTopic}

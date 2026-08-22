@@ -139,7 +139,7 @@ export function TopicDrawer({
       role="dialog"
       aria-modal="true"
       aria-labelledby="topic-drawer-title"
-      className="fixed inset-0 z-50 flex justify-end bg-slate-900/40 backdrop-blur-xs transition-opacity duration-200"
+      className="topic-drawer-root"
       onClick={(e) => {
         if (e.target === e.currentTarget) {
           handleClose();
@@ -148,29 +148,30 @@ export function TopicDrawer({
     >
       <div
         ref={panelRef}
-        className="w-full sm:max-w-xl md:max-w-2xl h-full bg-white border-l border-slate-200 shadow-2xl flex flex-col overflow-hidden animate-in slide-in-from-right duration-200"
+        className="topic-drawer-panel"
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-6 py-3 border-b border-slate-200 bg-slate-50/75 shrink-0">
-          <div className="flex items-center gap-2">
+        <div className="topic-drawer-head">
+          <div className="topic-drawer-handle" aria-hidden="true" />
+          <div className="flex items-center justify-between gap-3">
             <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500">
               {step ? `Paso ${step}` : `Tema #${nodeId}`}
             </span>
+            <button
+              ref={closeButtonRef}
+              type="button"
+              onClick={handleClose}
+              aria-label="Cerrar panel de tema"
+              className="topic-drawer-close"
+            >
+              ✕
+            </button>
           </div>
-          <button
-            ref={closeButtonRef}
-            type="button"
-            onClick={handleClose}
-            aria-label="Cerrar panel de tema"
-            className="w-8 h-8 rounded-full border border-slate-300 flex items-center justify-center text-slate-600 hover:bg-slate-200 hover:text-slate-900 transition-colors"
-          >
-            ✕
-          </button>
         </div>
 
-        <div className="flex items-center gap-2 px-6 py-2 border-b border-slate-200 bg-white shrink-0">
+        <div className="topic-status-row">
           <span className="sr-only">Estado de aprendizaje</span>
-          <div className="flex flex-1 rounded-md border border-slate-200 overflow-hidden">
+          <div className="topic-status-grid">
             {statusOptions.map((opt) => {
               const isActive = status === opt.id;
               return (
@@ -179,26 +180,23 @@ export function TopicDrawer({
                   type="button"
                   onClick={() => onStatusChange(opt.id)}
                   title={opt.label}
-                  className={`flex-1 min-w-0 flex items-center justify-center gap-1 px-1.5 py-1 text-[11px] leading-tight border-r border-slate-200 last:border-r-0 transition-colors ${
-                    isActive
-                      ? opt.activeClass
-                      : 'bg-white text-slate-600 hover:bg-slate-50'
+                  className={`topic-status-btn ${
+                    isActive ? opt.activeClass : 'bg-white text-slate-600'
                   }`}
                 >
                   <span aria-hidden="true">{opt.icon}</span>
-                  <span className="truncate">{opt.label}</span>
+                  <span>{opt.label}</span>
                 </button>
               );
             })}
           </div>
         </div>
 
-        {/* Scrollable Body */}
-        <div className="flex-1 overflow-y-auto px-6 py-5 space-y-5">
+        <div className="topic-drawer-body">
           <div>
             <h2
               id="topic-drawer-title"
-              className="text-2xl font-bold tracking-tight text-slate-900 leading-tight font-sans"
+              className="topic-drawer-title"
             >
               {topic.title}
             </h2>

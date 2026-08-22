@@ -29,6 +29,12 @@ export const metadata: Metadata = {
   },
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  viewportFit: 'cover' as const,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -37,7 +43,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${balsamiqSans.variable} font-sans antialiased bg-slate-50 text-slate-900 overflow-x-hidden`}
+        className={`${geistSans.variable} ${geistMono.variable} ${balsamiqSans.variable} font-sans antialiased bg-slate-50 text-slate-900`}
       >
         {children}
       </body>

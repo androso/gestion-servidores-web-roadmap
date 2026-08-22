@@ -69,92 +69,91 @@ function RoadmapViewerContent() {
   }, [activeRoadmap.nodes, progress]);
 
   return (
-    <div className="flex flex-col h-screen w-screen overflow-hidden bg-[#fbfbf8] font-sans">
-      <header className="h-14 shrink-0 bg-[#102a43] text-white px-3 sm:px-4 z-20">
-        <div className="flex items-center justify-between gap-3 h-full">
-          <div className="flex items-center gap-2 min-w-0">
-            <h1 className="text-sm font-semibold truncate leading-tight">
-              {activeRoadmap.title}
-            </h1>
-          </div>
-
-          <div className="flex items-center gap-2 sm:gap-3 ml-auto min-w-0">
-            {roadmaps.length > 1 && (
-              <select
-                value={selectedSlug}
-                onChange={(e) => handleSelectRoadmap(e.target.value)}
-                aria-label="Seleccionar curso"
-                className="text-xs bg-white/10 border border-white/25 rounded px-2 py-1 text-white outline-none focus:ring-2 focus:ring-white/60"
-              >
-                {roadmaps.map((r) => (
-                  <option key={r.slug} value={r.slug} className="text-slate-900">
-                    {r.title}
-                  </option>
-                ))}
-              </select>
+    <div className="app-shell flex flex-col bg-[#fbfbf8] font-sans">
+      <header className="app-header shrink-0 bg-[#102a43] text-white z-20">
+        <div className="app-header-inner">
+          <div className="app-header-primary">
+            {roadmaps.length > 1 ? (
+              <label className="app-course-label min-w-0 flex-1">
+                <span className="sr-only">Seleccionar curso</span>
+                <select
+                  value={selectedSlug}
+                  onChange={(e) => handleSelectRoadmap(e.target.value)}
+                  className="app-course-select"
+                >
+                  {roadmaps.map((r) => (
+                    <option key={r.slug} value={r.slug} className="text-slate-900">
+                      {r.title}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ) : (
+              <h1 className="app-title">{activeRoadmap.title}</h1>
             )}
 
-            <div className="relative flex items-center">
-              <label htmlFor="roadmap-search" className="sr-only">
-                Buscar tema
-              </label>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="14"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="absolute left-2 pointer-events-none opacity-70"
-                aria-hidden="true"
-              >
-                <circle cx="11" cy="11" r="7" />
-                <path d="m20 20-3-3" />
-              </svg>
-              <input
-                id="roadmap-search"
-                type="text"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="Buscar…"
-                className="w-32 sm:w-44 text-xs bg-white/10 border border-white/25 rounded pl-7 pr-7 py-1.5 text-white placeholder-white/50 outline-none focus:ring-2 focus:ring-white/60"
-              />
-              {searchQuery && (
-                <button
-                  type="button"
-                  onClick={() => setSearchQuery('')}
-                  aria-label="Limpiar búsqueda"
-                  className="absolute right-2 text-white/70 hover:text-white text-xs"
-                >
-                  ✕
-                </button>
-              )}
-            </div>
-
-            <div className="flex items-center gap-1.5 text-xs shrink-0 tabular-nums">
-              <span className="font-semibold">
+            <div className="app-progress" aria-label="Progreso del curso">
+              <span className="font-semibold tabular-nums">
                 {stats.completed}/{stats.total}
               </span>
-              <span className="text-white/70 hidden sm:inline">{stats.percentage}%</span>
+              <span className="app-progress-pct text-white/70 tabular-nums">{stats.percentage}%</span>
               {stats.completed > 0 && (
                 <button
                   type="button"
                   onClick={resetProgress}
                   title="Reiniciar progreso guardado"
-                  className="ml-1 text-[10px] text-white/60 hover:text-white"
+                  className="app-reset"
                 >
                   Reiniciar
                 </button>
               )}
             </div>
           </div>
+
+          <div className="app-search">
+            <label htmlFor="roadmap-search" className="sr-only">
+              Buscar tema
+            </label>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="app-search-icon"
+              aria-hidden="true"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m20 20-3-3" />
+            </svg>
+            <input
+              id="roadmap-search"
+              type="search"
+              enterKeyHint="search"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Buscar tema"
+              className="app-search-input"
+            />
+            {searchQuery && (
+              <button
+                type="button"
+                onClick={() => setSearchQuery('')}
+                aria-label="Limpiar búsqueda"
+                className="app-search-clear"
+              >
+                ✕
+              </button>
+            )}
+          </div>
         </div>
       </header>
 
-      <main className="flex-1 w-full relative overflow-hidden">
+      <main className="app-main">
         <InteractiveRoadmap
           roadmap={activeRoadmap}
           searchQuery={searchQuery}
