@@ -203,7 +203,7 @@ export function TopicDrawer({
           </div>
 
           {/* Markdown Content */}
-          <div className="prose prose-slate prose-sm max-w-none leading-relaxed border-b border-slate-200 pb-6">
+          <div className="topic-drawer-prose prose prose-slate prose-sm max-w-none leading-relaxed border-b border-slate-200 pb-6">
             <ReactMarkdown remarkPlugins={[remarkGfm]} skipHtml>
               {stripLeadingHeading(topic.content)}
             </ReactMarkdown>

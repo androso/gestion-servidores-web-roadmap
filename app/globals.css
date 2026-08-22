@@ -299,6 +299,115 @@ button {
 
 .topic-drawer-body .prose {
   max-width: none;
+  color: #334155;
+  font-size: 0.95rem;
+  line-height: 1.65;
+}
+
+.topic-drawer-body .prose > :first-child {
+  margin-top: 0;
+}
+
+.topic-drawer-body .prose h3,
+.topic-drawer-body .prose h4 {
+  margin: 1.15em 0 0.45em;
+  color: #0f172a;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.topic-drawer-body .prose h3 {
+  font-size: 0.95rem;
+}
+
+.topic-drawer-body .prose p {
+  margin: 0.7em 0;
+}
+
+.topic-drawer-body .prose ul,
+.topic-drawer-body .prose ol {
+  margin: 0.45em 0 0.95em;
+  padding-left: 1.2rem;
+}
+
+.topic-drawer-body .prose ul {
+  list-style-type: disc;
+}
+
+.topic-drawer-body .prose ol {
+  list-style-type: decimal;
+}
+
+.topic-drawer-body .prose li {
+  margin: 0.35em 0;
+  padding-left: 0.2rem;
+}
+
+.topic-drawer-body .prose li::marker {
+  color: #64748b;
+}
+
+.topic-drawer-body .prose strong {
+  color: #0f172a;
+  font-weight: 650;
+}
+
+.topic-drawer-body .prose a {
+  color: #1d4ed8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.topic-drawer-body .prose code {
+  font-size: 0.86em;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.topic-drawer-body .prose pre {
+  margin: 0.85em 0;
+  padding: 12px 14px;
+  overflow-x: auto;
+  border-radius: 8px;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.topic-drawer-body .prose pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 0.8rem;
+}
+
+.topic-drawer-body .prose table {
+  width: 100%;
+  margin: 0.85em 0;
+  font-size: 0.85rem;
+  border-collapse: collapse;
+}
+
+.topic-drawer-body .prose th,
+.topic-drawer-body .prose td {
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.topic-drawer-body .prose th {
+  background: #f8fafc;
+  font-weight: 650;
+  color: #0f172a;
+}
+
+.topic-drawer-body .prose blockquote {
+  margin: 0.85em 0;
+  padding: 8px 14px;
+  border-left: 3px solid #cbd5e1;
+  color: #475569;
 }
 
 @media (min-width: 40rem) {
