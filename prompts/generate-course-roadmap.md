@@ -1,0 +1,144 @@
+# Guía de Autoría de Rutas de Aprendizaje para Agentes CLI
+
+Esta guía define el procedimiento estándar para que un agente de repositorio (Codex, Gemini CLI u otro) genere e integre una ruta de aprendizaje interactiva a partir de documentos de curso locales.
+
+---
+
+## 1. Principios y Reglas Inviolables
+
+1. **Sin dependencias de API en tiempo de ejecución**: Toda la ruta, nodos, conexiones, detalles y temas se compilan como datos estáticos dentro del repositorio. La aplicación desplegada nunca debe invocar APIs de modelos (OpenAI, Anthropic, Gemini, etc.), bases de datos remotos ni autenticación.
+2. **Prohibido copiar activos o contenido restringido**: No copiar assets propietarios, SVGs cerrados ni contenido con derechos restrictivos de plataformas externas.
+3. **Trazabilidad académica estricta**: Cada tema o subtema debe incluir al menos una referencia de origen (`sourceRefs`) con etiqueta y localizador exacto (número de diapositiva, sección de guía, página de lectura). Verificar el localizador contra el archivo real; si no existe en el documento de clase, usar el encabezado exacto del sílabo. Nunca inventar un rango de páginas o diapositivas.
+4. **Recursos verificados exclusivamente**: Solo incluir enlaces externos HTTP/HTTPS públicos y verificables cuyo título coincida con el destino. Nunca inventar enlaces ni sustituir una página precisa por la portada genérica del sitio.
+5. **No desplegar documentos fuente**: Antes de verificar el build, mover todos los archivos suministrados del curso a `course-inputs/<slug>/` (ruta ignorada por git). La aplicación solo importa los JSON derivados. No publicar PDFs ni Markdown de clase desde `public/`.
+6. **Vista inicial autorada, no auto-ajuste**: Cada documento debe declarar un `canvas.initialViewport` legible (y `mobileInitialViewport` opcional). Prohibido el `fitView` automático al cargar el documento completo. Fit View es una acción explícita del visitante; Reset debe devolver al viewport autorado. El `minZoom` debe ser lo bastante bajo para que Fit View muestre el documento completo en un área de 1280×800; con documentos altos esto significa valores cercanos a `0.15`, no `0.35`.
+7. **Grafo de aprendizaje completo**: Cada nodo `topic` o `subtopic` debe participar en al menos un edge. Leyendas, etiquetas, párrafos y grupos de enlaces se usan solo donde mejoran la jerarquía, no como relleno.
+
+---
+
+## 2. Flujo de Trabajo Paso a Paso
+
+### Paso 1: Lectura e Inspección de Documentos del Curso
+1. Mover los archivos del curso a `course-inputs/<slug>/` (o leerlos ahí si ya están).
+2. Extraer:
+   - Objetivos de aprendizaje y resultados formativos.
+   - Módulos, unidades o bloques temáticos.
+   - Temas (`topic`) y conceptos detallados (`subtopic`).
+   - Relaciones de prerrequisitos y dependencias lógicas.
+   - Localizadores exactos verificados en el archivo (por ejemplo, `Diapositiva 7 — El recorrido completo de una petición`).
+
+### Paso 2: Diseño de Topología y Geometría Absoluta
+1. Usar siempre la **columna vertebral con apoyos laterales**, porque es la única silueta que responde «¿qué estudio después de X?» sin ambigüedad:
+   - Los pasos principales de la ruta son `topic` y se apilan en una sola columna izquierda (por ejemplo `x: 90`, ancho 380).
+   - Los conceptos de apoyo son `subtopic` y se colocan a la derecha, en la misma fila del paso que amplían (por ejemplo `x: 540` y `x: 910`).
+   - Las ramas paralelas (elegir una tecnología, no ambas) ocupan dos columnas hermanas con su propia `section`, y vuelven a unirse en un paso común.
+   - Prohibido usar una rejilla uniforme donde todas las tarjetas parecen iguales: sin jerarquía visual no hay orden de lectura.
+2. Numerar la secuencia de estudio en `data.order` para **cada** `topic` y `subtopic`:
+   - Formato `"01"`, `"02"`, … y sufijo de rama para caminos paralelos: `"20a"` / `"20b"`.
+   - La numeración recorre cada fila: primero el paso de la columna vertebral, después sus apoyos de izquierda a derecha.
+   - Invariante obligatorio: en todo `edge`, el número del origen debe ser menor que el del destino. El validador lo rechaza si no se cumple.
+   - Los números son únicos y sustituyen a cualquier código temático. No inventar códigos tipo `F01`/`C05`: numeran por tema, no por orden, y contradicen el recorrido real.
+3. Asignar coordenadas absolutas `position: { x, y }` y dimensiones `size: { width, height }`:
+   - Tarjetas de la columna vertebral: 360–450px de ancho, 96–100px de alto.
+   - Tarjetas de apoyo: 300–330px de ancho, 88px de alto.
+   - Cada `topic`/`subtopic` declara `data.detail`: una frase corta visible en el mapa, distinta del Markdown del cajón.
+   - Separación entre filas: 120–140px, para que la insignia numerada no toque la tarjeta de arriba.
+   - Espaciado horizontal mínimo entre columnas: 60px.
+   - Secciones de fondo (`section`): `zIndex: -1` cubriendo el área del módulo correspondiente; no interceptan clics ni se conectan.
+   - Los párrafos de nota no deben caer sobre el trazado de un conector: colocarlos en una columna libre de la misma fila.
+4. Bloques conectables: `title`, `topic`, `subtopic`, `paragraph`, `label`, `button`. No conectar `section`, `legend`, `linkGroup` ni `line`.
+5. Asignar conectores (`edges`) con `sourceHandle` y `targetHandle` obligatorios (`top`, `bottom`, `left`, `right`).
+   - **Todo `edge` lleva `arrow: true`.** Sin punta de flecha el sentido del recorrido es invisible y el mapa deja de indicar qué va después.
+   - Usar `route: "smoothstep" | "bezier" | "straight"`.
+   - Paso principal → siguiente paso principal: `bottom` → `top` `straight`.
+   - Paso principal → apoyo, y apoyo → apoyo de la misma fila: `right` → `left` `straight`.
+   - Horquillas, convergencias y saltos entre secciones: `smoothstep`.
+   - El motor adelgaza y atenúa por sí solo los conectores que tocan un `subtopic`, de modo que la ruta principal resalta. No hace falta declarar estilos para conseguirlo.
+6. Incluir una `legend` que explique cómo leer el mapa: que se sigue la numeración, qué distingue un paso principal de un concepto de apoyo y qué significan los sufijos de rama.
+7. Inspeccionar el texto de cada nodo al zoom del `initialViewport` (no al zoom mínimo). No debe haber recorte, elipsis ni tarjetas solapadas (salvo `section` y `line`).
+
+### Paso 3: Redacción de Contenido Markdown y Referencias
+1. Para cada nodo de tipo `topic` o `subtopic`:
+   - Escribir `data.detail` (una frase) para el bloque del mapa.
+   - Redactar explicación técnica concisa y estructurada en formato Markdown (`content`) para el cajón. El cajón renderiza GFM (tablas, listas, citas y código en línea) y omite el `# <Título>` inicial porque ya muestra el título del tema.
+   - Definir `sourceRefs` obligatorios con `label` y `locator` específico verificado. No incluir URLs a archivos de `course-inputs/` ni rutas `/servidores/`.
+   - Añadir `resources` externos solo si la URL es HTTP/HTTPS, accesible y el título describe el destino real.
+
+### Paso 4: Creación de Archivos JSON
+Crear el directorio `roadmaps/<slug>/` con:
+1. `roadmaps/<slug>/roadmap.json`:
+   ```json
+   {
+     "schemaVersion": 1,
+     "slug": "<slug>",
+     "title": "<Título del Curso>",
+     "description": "<Descripción del curso>",
+     "canvas": {
+       "width": 1240,
+       "height": 3000,
+       "minZoom": 0.15,
+       "maxZoom": 1.75,
+       "initialViewport": { "x": 170, "y": 28, "zoom": 0.86 },
+       "mobileInitialViewport": { "x": -52, "y": -170, "zoom": 0.85 }
+     },
+     "theme": {
+       "paper": "#fbfbf8",
+       "ink": "#111827",
+       "topicBg": "#f9d95c",
+       "subtopicBg": "#fff2a8",
+       "connectorColor": "#2563eb",
+       "progressBg": "#dad1fd",
+       "searchMatchBorder": "#1d4ed8"
+     },
+     "nodes": [ ... ],
+     "edges": [ ... ]
+   }
+   ```
+   El `initialViewport` de escritorio debe abrir el título y la sección de fundamentos a tamaño legible. El viewport móvil debe situar el primer tema cerca de la esquina superior izquierda y permitir pan. No usar ajuste automático al documento completo.
+2. `roadmaps/<slug>/topics.json`:
+   ```json
+   {
+     "<node-id>": {
+       "title": "<Título del Tema>",
+       "content": "# <Título>\n\nExplicación técnica...",
+       "sourceRefs": [
+         {
+           "label": "Clase X — Título del documento",
+           "locator": "Diapositiva N — Encabezado real"
+         }
+       ],
+       "resources": [ ... ]
+     }
+   }
+   ```
+
+### Paso 5: Registro en la Aplicación
+1. Abrir `roadmaps/index.ts`.
+2. Importar los dos archivos JSON creados.
+3. Añadir la ruta combinada al array `roadmaps` y al mapa `roadmapsBySlug`.
+
+### Paso 6: Validación Estricta
+Ejecutar:
+```bash
+npm run validate:roadmaps
+npm run test:roadmaps
+```
+Si el validador reporta errores de límites de lienzo, nodos desconectados, handles faltantes, URLs inválidas, solapes, IDs duplicados, `data.order` ausente o duplicado, o un orden de estudio que retrocede a lo largo de un conector, corregir los archivos JSON y volver a ejecutar la validación.
+
+### Paso 7: Inspección Visual y Ajustes de Diagramación
+1. Iniciar el servidor local:
+   ```bash
+   npm run dev
+   ```
+2. Abrir en navegador `http://localhost:3000/?roadmap=<slug>`.
+3. Verificar visualmente:
+   - Que el zoom inicial sea el autorado, no el mínimo ni un fit del documento entero.
+   - Que ningún nodo quede cortado, con elipsis, ni sobreponga a otro nodo de contenido.
+   - Que los conectores tengan trazados limpios y no atraviesen tarjetas de forma confusa.
+   - Que la búsqueda resalte los nodos correctos sin escalarlos.
+   - Que Fit View muestre el documento completo y que Reset vuelva al viewport autorado.
+   - Que al hacer clic en un tema se abra el panel lateral con su contenido Markdown y referencias, con contraste legible y tablas renderizadas como tablas.
+   - Que Escape, el fondo y el botón de cierre restablezcan el foco al nodo activador.
+   - Que el seguimiento de progreso funcione y persista en localStorage.
+4. Ajustar coordenadas y tamaños según sea necesario hasta lograr una jerarquía visual clara.
+5. Confirmar que no quedan copias desplegables de los documentos de clase fuera de `course-inputs/`.
