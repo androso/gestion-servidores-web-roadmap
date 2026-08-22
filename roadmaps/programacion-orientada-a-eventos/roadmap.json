@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "slug": "programacion-orientada-a-eventos",
+  "title": "Programación Orientada a Eventos",
+  "description": "Ruta completa de las clases 1–10: paradigma reactivo, TypeScript, EventEmitter, DOM, interfaces, layouts, práctica Spider-Verse, UX/UI, accesibilidad y laboratorio de biblioteca.",
+  "canvas": {
+    "width": 1280,
+    "height": 2340,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": { "x": 170, "y": 10, "zoom": 0.86 },
+    "mobileInitialViewport": { "x": -58, "y": -185, "zoom": 0.84 }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": { "x": 90, "y": 18 },
+      "size": { "width": 700, "height": 52 },
+      "data": { "text": "Programación Orientada a Eventos", "style": { "fontSize": 28, "textAlign": "center" } }
+    },
+    {
+      "id": "subtitle",
+      "type": "paragraph",
+      "position": { "x": 90, "y": 86 },
+      "size": { "width": 700, "height": 88 },
+      "data": {
+        "text": "Sigue la numeración. La columna izquierda es la secuencia principal; las tarjetas claras explican conceptos y técnicas del mismo paso. Cada bloque abre un cajón con contenido y fuentes archivadas.",
+        "style": { "fontSize": 14, "textAlign": "center" }
+      }
+    },
+    {
+      "id": "legend",
+      "type": "legend",
+      "position": { "x": 900, "y": 18 },
+      "size": { "width": 320, "height": 194 },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          { "label": "Sigue 01, 02, 03…", "color": "#fbfbf8" },
+          { "label": "Paso principal", "color": "#f9d95c" },
+          { "label": "Concepto de apoyo", "color": "#fff2a8" },
+          { "label": "Sufijos a/b indicarían ramas", "color": "#fbfbf8" },
+          { "label": "Pulsa un bloque para el detalle", "color": "#111827" }
+        ]
+      }
+    },
+    {
+      "id": "course-orientation",
+      "type": "topic",
+      "position": { "x": 90, "y": 280 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Orientarse en POE", "order": "01", "detail": "Reconocer el objetivo: software que reacciona a eventos." }
+    },
+    {
+      "id": "paradigm-shift",
+      "type": "topic",
+      "position": { "x": 90, "y": 416 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "De imperativo a reactivo", "order": "02", "detail": "Cambiar de una secuencia controlada a reacciones disparadas." }
+    },
+    {
+      "id": "control-inversion",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 420 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Inversión del flujo", "order": "03", "detail": "El entorno llama al código cuando ocurre algo." }
+    },
+    {
+      "id": "event-loop",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 420 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Bucle, cola y oyentes", "order": "04", "detail": "Eventos en cola activan listeners o handlers." }
+    },
+    {
+      "id": "typescript-foundations",
+      "type": "topic",
+      "position": { "x": 90, "y": 612 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Fundamentos de TypeScript", "order": "05", "detail": "Tipos, control, arreglos, funciones, clases e interfaces." }
+    },
+    {
+      "id": "ts-models-functions",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 616 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Modelos, funciones y clases", "order": "06", "detail": "Definir datos y comportamiento antes de conectarlos." }
+    },
+    {
+      "id": "array-methods",
+      "type": "topic",
+      "position": { "x": 90, "y": 748 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Transformar arreglos", "order": "07", "detail": "Derivar colecciones sin mezclar cada transformación." }
+    },
+    {
+      "id": "map",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 752 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": ".map()", "order": "08", "detail": "Convertir cada elemento y producir un nuevo arreglo." }
+    },
+    {
+      "id": "filter",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 752 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": ".filter()", "order": "09", "detail": "Conservar solo elementos que cumplen una condición." }
+    },
+    {
+      "id": "destructuring-enums",
+      "type": "topic",
+      "position": { "x": 90, "y": 884 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Desestructuración y enums", "order": "10", "detail": "Extraer datos y restringir estados permitidos." }
+    },
+    {
+      "id": "destructuring",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 888 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Objetos y arreglos", "order": "11", "detail": "Nombrar directamente las partes que necesita un handler." }
+    },
+    {
+      "id": "enums",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 888 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Enumeraciones", "order": "12", "detail": "Representar un conjunto cerrado de estados." }
+    },
+    {
+      "id": "event-emitter",
+      "type": "topic",
+      "position": { "x": 90, "y": 1080 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "EventEmitter", "order": "13", "detail": "Implementar eventos personalizados en Node y TypeScript." }
+    },
+    {
+      "id": "emitters",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1084 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Emisor y .emit()", "order": "14", "detail": "Publicar un evento con datos tipados." }
+    },
+    {
+      "id": "listeners",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1084 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Oyentes y .on()", "order": "15", "detail": "Suscribir múltiples reacciones desacopladas." }
+    },
+    {
+      "id": "event-flow",
+      "type": "topic",
+      "position": { "x": 90, "y": 1216 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Flujo completo de POE", "order": "16", "detail": "Emisor → evento → datos → oyentes → acción." }
+    },
+    {
+      "id": "gui-dom",
+      "type": "topic",
+      "position": { "x": 90, "y": 1412 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Interfaces y eventos DOM", "order": "17", "detail": "Convertir controles visuales en fuentes de eventos." }
+    },
+    {
+      "id": "gui-controls",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1416 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Labels, botones, inputs y listas", "order": "18", "detail": "Elegir el control que expresa cada interacción." }
+    },
+    {
+      "id": "dom-listeners",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1416 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "addEventListener", "order": "19", "detail": "Conectar click, input y teclado con handlers." }
+    },
+    {
+      "id": "layout-responsive",
+      "type": "topic",
+      "position": { "x": 90, "y": 1548 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Layout y responsive", "order": "20", "detail": "Organizar componentes para distintas pantallas." }
+    },
+    {
+      "id": "flex-grid",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1552 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Flexbox y CSS Grid", "order": "21", "detail": "Usar una o dos dimensiones según el diseño." }
+    },
+    {
+      "id": "responsive-containers",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1552 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Contenedores adaptables", "order": "22", "detail": "Evitar desbordes y reorganizar componentes." }
+    },
+    {
+      "id": "spiderverse",
+      "type": "topic",
+      "position": { "x": 90, "y": 1684 },
+      "size": { "width": 380, "height": 100 },
+      "data": { "label": "Práctica Spider-Verse", "order": "23", "detail": "Integrar estado, renderizado, validación y eventos DOM." }
+    },
+    {
+      "id": "state-render",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1690 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Estado, validación y render", "order": "24", "detail": "Actualizar la pantalla desde el arreglo de héroes." }
+    },
+    {
+      "id": "delegation-filtering",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1690 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Delegación, filtro y orden", "order": "25", "detail": "Manejar controles dinámicos y vistas derivadas." }
+    },
+    {
+      "id": "ux-ui",
+      "type": "topic",
+      "position": { "x": 90, "y": 1820 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "UX, UI y usabilidad", "order": "26", "detail": "Diseñar interacciones claras, consistentes y útiles." }
+    },
+    {
+      "id": "accessibility",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1824 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Accesibilidad (A11y)", "order": "27", "detail": "Incluir teclado, contraste, etiquetas y semántica." }
+    },
+    {
+      "id": "user-centered-design",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1824 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "DCU y prototipado", "order": "28", "detail": "Diseñar y validar flujos antes de implementar." }
+    },
+    {
+      "id": "library-lab",
+      "type": "topic",
+      "position": { "x": 90, "y": 2016 },
+      "size": { "width": 380, "height": 100 },
+      "data": { "label": "Laboratorio: biblioteca", "order": "29", "detail": "Construir un sistema universitario orientado a eventos." }
+    },
+    {
+      "id": "library-domain",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2022 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Modelos, emisor y oyentes", "order": "30", "detail": "Tipar el dominio y conectar sus reacciones." }
+    },
+    {
+      "id": "library-dom",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 2022 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Interfaz gráfica y DOM", "order": "31", "detail": "Exponer operaciones y resultados en la interfaz." }
+    },
+    {
+      "id": "integration",
+      "type": "topic",
+      "position": { "x": 90, "y": 2152 },
+      "size": { "width": 380, "height": 100 },
+      "data": { "label": "Integrar y demostrar", "order": "32", "detail": "Entregar estructura, datos de prueba y flujo funcional." }
+    },
+    {
+      "id": "deliverables",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2158 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Entregables verificables", "order": "33", "detail": "Código, interfaz y evidencia del comportamiento." }
+    },
+    {
+      "id": "section-paradigm",
+      "type": "section",
+      "position": { "x": 40, "y": 230 },
+      "size": { "width": 1200, "height": 302 },
+      "zIndex": -1,
+      "data": { "label": "01 · Paradigma — Clases 1–2" }
+    },
+    {
+      "id": "section-language",
+      "type": "section",
+      "position": { "x": 40, "y": 552 },
+      "size": { "width": 1200, "height": 448 },
+      "zIndex": -1,
+      "data": { "label": "02 · TypeScript — Clases 3–4" }
+    },
+    {
+      "id": "section-events",
+      "type": "section",
+      "position": { "x": 40, "y": 1020 },
+      "size": { "width": 1200, "height": 312 },
+      "zIndex": -1,
+      "data": { "label": "03 · Emisores y GUI — Clases 5–6" }
+    },
+    {
+      "id": "section-interface",
+      "type": "section",
+      "position": { "x": 40, "y": 1352 },
+      "size": { "width": 1200, "height": 584 },
+      "zIndex": -1,
+      "data": { "label": "04 · Layout y práctica — Clases 7–8" }
+    },
+    {
+      "id": "section-quality",
+      "type": "section",
+      "position": { "x": 40, "y": 1956 },
+      "size": { "width": 1200, "height": 316 },
+      "zIndex": -1,
+      "data": { "label": "05 · Calidad e integración — Clases 9–10" }
+    }
+  ],
+  "edges": [
+    { "id": "e-title-subtitle", "source": "title-node", "target": "subtitle", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-subtitle-orientation", "source": "subtitle", "target": "course-orientation", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-orientation-paradigm", "source": "course-orientation", "target": "paradigm-shift", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-paradigm-control", "source": "paradigm-shift", "target": "control-inversion", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-control-loop", "source": "control-inversion", "target": "event-loop", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-paradigm-ts", "source": "paradigm-shift", "target": "typescript-foundations", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-ts-models", "source": "typescript-foundations", "target": "ts-models-functions", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-ts-arrays", "source": "typescript-foundations", "target": "array-methods", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-arrays-map", "source": "array-methods", "target": "map", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-map-filter", "source": "map", "target": "filter", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-arrays-destructuring", "source": "array-methods", "target": "destructuring-enums", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-destructuring-detail", "source": "destructuring-enums", "target": "destructuring", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-destructuring-enums", "source": "destructuring", "target": "enums", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-destructuring-emitter", "source": "destructuring-enums", "target": "event-emitter", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-emitter-emitters", "source": "event-emitter", "target": "emitters", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-emitters-listeners", "source": "emitters", "target": "listeners", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-emitter-flow", "source": "event-emitter", "target": "event-flow", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-flow-gui", "source": "event-flow", "target": "gui-dom", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-gui-controls", "source": "gui-dom", "target": "gui-controls", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-controls-listeners", "source": "gui-controls", "target": "dom-listeners", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-gui-layout", "source": "gui-dom", "target": "layout-responsive", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-layout-flex", "source": "layout-responsive", "target": "flex-grid", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-flex-responsive", "source": "flex-grid", "target": "responsive-containers", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-layout-spider", "source": "layout-responsive", "target": "spiderverse", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-spider-state", "source": "spiderverse", "target": "state-render", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-state-delegation", "source": "state-render", "target": "delegation-filtering", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-spider-ux", "source": "spiderverse", "target": "ux-ui", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-ux-accessibility", "source": "ux-ui", "target": "accessibility", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-accessibility-dcu", "source": "accessibility", "target": "user-centered-design", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-ux-library", "source": "ux-ui", "target": "library-lab", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-library-domain", "source": "library-lab", "target": "library-domain", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-domain-dom", "source": "library-domain", "target": "library-dom", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-library-integration", "source": "library-lab", "target": "integration", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-integration-deliverables", "source": "integration", "target": "deliverables", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true }
+  ]
+}

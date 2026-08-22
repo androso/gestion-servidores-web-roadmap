@@ -1,0 +1,929 @@
+{
+  "client-server": {
+    "title": "Cliente y servidor",
+    "content": "# Cliente y servidor\n\nEl **cliente** es quien hace la petición: un navegador, una app o Postman. El **servidor** es la máquina o el programa que escucha y responde.\n\nEstas dos piezas no bastan solas. En la Clase 2 se ensamblan con IP, puerto, HTTP y proceso para llegar a un concepto nuevo: el contenedor web.\n\n### Qué debes poder explicar\n- Quién inicia el diálogo y quién lo atiende.\n- Por qué el mismo servidor puede atender muchos clientes distintos.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "3. - Mini glosario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Visión general del protocolo HTTP",
+        "url": "https://developer.mozilla.org/es/docs/Web/HTTP/Guides/Overview"
+      }
+    ]
+  },
+  "network-addressing": {
+    "title": "IP y puertos",
+    "content": "# IP y puertos\n\nUna **IP** identifica la máquina en la red. Un **puerto** (0–65535) es la puerta numerada *dentro* de esa IP donde vive un servicio.\n\nSin esa pareja no hay a dónde mandar `http://localhost:3000`. Más adelante, el binding de IIS no es otra cosa que IP + puerto + host.\n\n### Qué debes poder explicar\n- Por qué dos servicios en la misma máquina no pueden usar el mismo puerto.\n- Qué significa “escuchar en 3000” o “8081”.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "3. - Mini glosario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: ¿Qué es un servidor web?",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Howto/Web_mechanics/What_is_a_web_server"
+      }
+    ]
+  },
+  "http": {
+    "title": "HTTP",
+    "content": "# HTTP\n\nHTTP es el idioma con el que cliente y servidor se hablan: método, ruta, parámetros, cabeceras y código de estado.\n\nEn el mini-contenedor de la Clase 2 ya aparece: `GET /saludo?nombre=Ana` y respuestas 200 o 404. En Express, `res.status(400)` es el mismo idioma.\n\n### Qué debes poder explicar\n- Qué viaja en una petición y en una respuesta.\n- Qué significa 200, 400 y 404 en este curso.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "3. - Mini glosario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Mensajes HTTP",
+        "url": "https://developer.mozilla.org/es/docs/Web/HTTP/Guides/Messages"
+      }
+    ]
+  },
+  "process-runtime": {
+    "title": "Proceso, terminal y VM",
+    "content": "# Proceso, terminal y VM\n\nUn **proceso** es un programa en ejecución, con su propia memoria. La **terminal** es donde se escriben los comandos que lo arrancan. Una **VM** es una computadora simulada dentro de otra.\n\nEl contenedor *es* un proceso. Si solo lo lanzas en una terminal, muere al cerrarla. Por eso más adelante aparece W3SVC y systemd: para que el proceso siga vivo.\n\n### Qué debes poder explicar\n- Diferencia entre “tengo el archivo” y “el proceso está escuchando”.\n- Para qué sirve practicar IIS dentro de VirtualBox.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "3. - Mini glosario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Node.js Docs: Process",
+        "url": "https://nodejs.org/docs/latest/api/process.html"
+      }
+    ]
+  },
+  "restaurant": {
+    "title": "Mesero, cocina y chef",
+    "content": "# Mesero, cocina y chef\n\nAnalogía central de la Unidad 1:\n\n| Rol en el restaurante | En el servidor |\n| --- | --- |\n| Mesero | Servidor web: recibe al cliente y trae el plato. **No cocina.** |\n| Cocina | Contenedor web: prepara la lógica (cálculos, consultas). |\n| Chef / receta | Servlet o route handler: atiende un pedido concreto, p. ej. `GET /ensalada`. |\n\nSi el restaurante solo sirve agua embotellada ya lista, basta el mesero: contenido estático. En cuanto alguien pide un total con impuestos o un saludo personalizado, hace falta la cocina.\n\n> Verificación: ¿qué representa la cocina? El contenedor web.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "4. El restaurante"
+      },
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "5. ¿Cuándo se necesita la cocina?"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Visión general cliente-servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side/First_steps/Client-Server_overview"
+      }
+    ]
+  },
+  "lifecycle": {
+    "title": "init · service · destroy",
+    "content": "# Ciclo de vida: init · service · destroy\n\nEl turno de un empleado, aplicado al contenedor:\n\n| Momento | Qué pasa | Analogía |\n| --- | --- | --- |\n| init | Carga el código una sola vez | El empleado llega y se uniforma |\n| service | Se ejecuta por cada petición | Atiende cada cliente, uno a uno |\n| destroy | Libera todo al apagar | Cierra su estación |\n\nExpress + Node administran ese ciclo. Ustedes no lo implementan a mano, pero deben nombrarlo: es pregunta de verificación de la Clase 2.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "8. El ciclo de vida – el turno de un empleado"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Programación del lado del servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side"
+      }
+    ]
+  },
+  "web-container": {
+    "title": "Qué es un contenedor web",
+    "content": "# Qué es un contenedor web\n\nUn contenedor web es un programa que:\n\n1. Recibe la petición HTTP que el servidor web le delega.\n2. Decide qué pieza de código (servlet) debe atenderla.\n3. Ejecuta esa pieza y devuelve el resultado.\n4. Administra sesiones, seguridad y concurrencia.\n\nEn la industria: PHP-FPM, Node.js + Express (MIT, este curso), Microsoft IIS, Gunicorn + Django.\n\n> Idea clave: recibe, decide y ejecuta lógica dinámica.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "6. ¿Qué es, formalmente, un contenedor web?"
+      },
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "9. Comparando contenedores reales de la industria"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Programación del lado del servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side"
+      }
+    ]
+  },
+  "request-flow": {
+    "title": "Recorrido de una petición",
+    "content": "# Recorrido de una petición\n\n1. El usuario escribe `http://miapp.com/saludo?nombre=Ana`.\n2. El navegador (cliente) envía la petición HTTP.\n3. El servidor web la recibe en el puerto correspondiente.\n4. `/saludo` necesita lógica → se delega al contenedor.\n5. El contenedor busca el route handler de `/saludo`.\n6. El handler lee `nombre` y construye la respuesta.\n7. La respuesta vuelve: contenedor → servidor web → navegador.\n\nResultado: “Hola, Ana”. El resto del curso son versiones más completas de este mismo camino.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "7. El recorrido completo de una petición"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Cómo funciona la web",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"
+      }
+    ]
+  },
+  "servlet-handler": {
+    "title": "Servlet / route handler",
+    "content": "# Servlet / route handler\n\nEn la terminología oficial, la pieza de código que atiende una ruta se llama **servlet**. En este curso se ve como una función:\n\n- Clase 2: `function manejarSaludo(nombre: string)`\n- Clase 8: `(req, res) => { ... }` registrada con `app.get(\"/ruta\", ...)`\n\nEl contenedor decide *cuál* handler corre (`if (url.pathname === \"/saludo\")` o `app.get`). El handler solo recibe datos y produce texto.\n\n> Verificación: ¿cómo se llama la pieza que atiende una ruta? Servlet.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "11. Nuestro primer “contenedor” (1/2): imports y handler"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "4. Servlet = route handler: el mismo concepto"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express.js: Guía de enrutamiento",
+        "url": "https://expressjs.com/es/guide/routing.html"
+      }
+    ]
+  },
+  "typescript": {
+    "title": "TypeScript → JavaScript",
+    "content": "# TypeScript → JavaScript\n\nTypeScript se escribe con tipos para que el código sea más seguro. Node.js e iisnode **no** ejecutan `.ts`: hay que traducir con `tsc` a JavaScript.\n\n```bash\nnpm init -y\nnpm install --save-dev typescript @types/node\nnpx tsc --init\ntsc app.ts   # genera app.js\n```\n\nEl mismo patrón aparece en IIS (`tsc app.ts`) y en Express (`tsc servidor.ts`). Si cambian el código y “sigue la versión vieja”, casi siempre olvidaron recompilar y reiniciar.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "10. Antes de programar: preparar el proyecto"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "10. Paso 2 (cont.): de TypeScript a JavaScript"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "TypeScript Handbook: Introducción",
+        "url": "https://www.typescriptlang.org/docs/handbook/intro.html"
+      }
+    ]
+  },
+  "manual-container": {
+    "title": "Mini-contenedor con http.createServer",
+    "content": "# Mini-contenedor con http.createServer\n\n`http.createServer` crea el proceso que escucha. El callback `(req, res)` es el contenedor: descompone la URL y decide el handler.\n\n```typescript\nconst servidor = http.createServer((req, res) => {\n  const url = new URL(req.url ?? \"/\", `http://${req.headers.host}`);\n  if (url.pathname === \"/saludo\") {\n    const nombre = url.searchParams.get(\"nombre\") ?? \"desconocido\";\n    res.writeHead(200, { \"Content-Type\": \"text/html; charset=utf-8\" });\n    res.end(manejarSaludo(nombre));\n    return;\n  }\n  res.writeHead(404, { \"Content-Type\": \"text/plain\" });\n  res.end(\"Ruta no encontrada\");\n});\n```\n\nCada `if` nuevo es una ruta nueva. Express existirá después precisamente para no escribir tantos `if`.\n\nLaboratorio: `/saludo`, `/suma`, y `/despedida` con el mismo molde.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "12. Nuestro primer “contenedor” (2/2): el servidor HTTP"
+      },
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "13. Línea por línea: ¿qué hace cada parte?"
+      },
+      {
+        "label": "Clase 02 — Introducción a los Contenedores Web",
+        "locator": "16. Ejercicio individual"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Node.js Docs: Módulo http",
+        "url": "https://nodejs.org/docs/latest/api/http.html"
+      }
+    ]
+  },
+  "server-container": {
+    "title": "Oficina de correos vs trámites",
+    "content": "# Oficina de correos vs trámites\n\nEn la Clase 2 un solo `http.createServer` mezclaba los dos roles. La Clase 3 los separa:\n\n- **Correos (servidor web):** recibe paquetes y los entrega. No le importa qué hay adentro. Apache, Nginx, IIS sirviendo archivos.\n- **Trámites (contenedor):** procesa la solicitud y produce un documento nuevo. Node.js/Express, Gunicorn, PHP-FPM.\n\nPregunta clave para un servidor puro: si lo apagas y lo prendes, ¿el archivo entregado cambia? No.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "4. Correos vs. trámites"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "6. Servidor web (puro): qué hace"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "7. Contenedor web: qué hace"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Programación del lado del servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side"
+      }
+    ]
+  },
+  "static-dynamic": {
+    "title": "Estático vs. dinámico",
+    "content": "# Estático vs. dinámico\n\nMisma regla práctica, otro ángulo:\n\n- **Estático:** el archivo ya existe (HTML, CSS, imagen, PDF). Es igual para todos.\n- **Dinámico:** el resultado no existe todavía; se calcula según quién pregunta o qué pregunta.\n\n| Característica | Servidor web | Contenedor web |\n| --- | --- | --- |\n| Qué entrega | Archivo ya existente | Resultado calculado |\n| ¿Ejecuta lógica? | No (directamente) | Sí |\n| ¿Sesiones? | No | Sí |\n\nClasificación rápida: logo y favicon son estáticos; saldo bancario y feed personalizado son dinámicos.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "5. ¿Cuál oficina necesito?"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "9. Tabla comparativa"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Visión general cliente-servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side/First_steps/Client-Server_overview"
+      }
+    ]
+  },
+  "nginx-front": {
+    "title": "Nginx delante de Express",
+    "content": "# Nginx delante de Express\n\nArquitectura típica en producción:\n\n1. Internet llega a **Nginx** (servidor web): estáticos, TLS, balanceo.\n2. Si la petición es dinámica, Nginx la reenvía a **Node.js / Express** (contenedor).\n\nSe hace porque el servidor web puro es más eficiente sirviendo archivos y miles de conexiones, mientras el contenedor se concentra en la lógica.\n\nEjemplo: un e-commerce — Nginx entrega fotos y CSS; Node calcula el carrito y el IVA.\n\nIIS y Express también pueden combinar ambos roles en un solo producto.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "8. Software que combina ambos roles"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "10. Arquitectura típica en producción"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Nginx: documentación oficial",
+        "url": "https://nginx.org/en/docs/"
+      }
+    ]
+  },
+  "static-dynamic-lab": {
+    "title": "Lab: servidor-estatico vs dinámico",
+    "content": "# Lab: servidor-estatico vs dinámico\n\nDos programas, dos puertos:\n\n- `servidor-estatico.ts` en `:3001` — `fs.readFile` entrega `publico/saludo.html` tal cual. Recargar no cambia nada.\n- `contenedor-dinamico.ts` en `:3002` — `/hora-saludo?nombre=Ana` calcula el saludo con `new Date().getHours()`. Cambia con la hora y con el nombre.\n\n```bash\nnpx ts-node servidor-estatico.ts\nnpx ts-node contenedor-dinamico.ts\n```\n\nEso es, en esencia, lo que distingue a un contenedor: la respuesta se produce en el momento.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "11. Versión A – “Servidor” puro (solo entrega un archivo)"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "13. Versión B – “Contenedor” (calcula según quién pregunta)"
+      },
+      {
+        "label": "Clase 03 — Contenedor Web vs Servidor Web",
+        "locator": "15. Ejecutarlas y compararlas"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Node.js Docs: Módulo fs",
+        "url": "https://nodejs.org/docs/latest/api/fs.html"
+      }
+    ]
+  },
+  "sla": {
+    "title": "SLA y soporte contractual",
+    "content": "# SLA y soporte contractual\n\n**SLA** = Service Level Agreement: compromiso escrito de tiempo de respuesta y calidad.\n\nEjemplo de la clase: si el facturador de un banco falla un sábado a las 3:00 am, el proveedor se compromete a responder en menos de 1 hora y resolver en menos de 4. Si no, hay penalización.\n\nEso es exactamente lo que un banco o un hospital necesita, y lo que el software libre **por sí solo** no ofrece gratis. El árbol de decisión empieza aquí: ¿hay obligación legal de soporte garantizado?\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "6. ¿Qué es un SLA, en concreto?"
+      },
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "10. ¿Cómo decido? – árbol de decisión rápido"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Introducción a IIS",
+        "url": "https://learn.microsoft.com/iis"
+      }
+    ]
+  },
+  "proprietary": {
+    "title": "IIS, NGINX Plus, Citrix",
+    "content": "# Contenedores propietarios\n\n| Producto | Empresa | Notas |\n| --- | --- | --- |\n| IIS | Microsoft | Incluido en Windows Server; licencia del SO |\n| NGINX Plus | F5 | Soporte empresarial, certificaciones |\n| Citrix ADC | Citrix | Banca y gobierno, soporte 24/7 |\n\nSe paga licencia. Hay SLA. Hay documentación de cumplimiento. Hay menos libertad para modificar el software por dentro.\n\nEn producción: bancos con Citrix ADC, hospitales con NGINX Plus, intranets con IIS.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "5. Contenedores propietarios"
+      },
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "8. Quién usa qué: ejemplos reales"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Introducción al servidor web IIS",
+        "url": "https://learn.microsoft.com/iis/get-started/introduction-to-iis/iis-web-server-overview"
+      }
+    ]
+  },
+  "libre": {
+    "title": "Node, Apache, PHP-FPM",
+    "content": "# Libre distribución\n\n| Producto | Licencia | Notas |\n| --- | --- | --- |\n| Node.js + Express | MIT | El que usamos en TypeScript |\n| Apache HTTP Server | Apache 2.0 | Servidor web libre más usado |\n| PHP-FPM | PHP License | WordPress, Laravel |\n\nSin costo de licencia. Código auditable. Comunidad enorme. El soporte 24/7 no existe salvo que se contrate aparte.\n\nNetflix, LinkedIn y PayPal usan Node en partes críticas. Muchas empresas grandes usan **ambos** modelos: propietario donde la regulación lo exige, libre donde importa la velocidad.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "7. Contenedores de libre distribución"
+      },
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "9. Tabla comparativa de decisión"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express.js: Guía de instalación",
+        "url": "https://expressjs.com/es/starter/installing.html"
+      }
+    ]
+  },
+  "technology-choice": {
+    "title": "En este módulo: IIS y Express",
+    "content": "# En este módulo: IIS y Express\n\nPara *este* módulo, no se elige uno:\n\n- **Propietario:** IIS sobre una VM Windows Server (local o Azure for Students).\n- **Libre:** Node.js + Express en TypeScript, sobre Linux (o macOS/Windows con el mismo código).\n\nNinguno es “mejor” en abstracto. El caso de la clínica pequeña (sin SLA, presupuesto ajustado) recomienda Express. El banco regional con cumplimiento 24/7 recomienda propietario.\n\nDe aquí en adelante, cada instalación se ubica en uno de esos dos mundos.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "11. Para este módulo"
+      },
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "12. Caso ya resuelto: clínica pequeña"
+      },
+      {
+        "label": "Clase 04 — Propietarios vs. Libre Distribución",
+        "locator": "4. Comprar casa vs. construir con planos abiertos"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Introducción a IIS",
+        "url": "https://learn.microsoft.com/iis"
+      }
+    ]
+  },
+  "iis-environment": {
+    "title": "Windows Server + VirtualBox",
+    "content": "# Windows Server + VirtualBox\n\nIIS no se descarga aparte: ya viene en Windows Server, **apagado**. Es la cocina industrial con la llave de gas cerrada.\n\nEn el curso se usa VirtualBox (gratuito, local):\n\n- Windows Server 2022 Evaluation (~180 días), 2–4 GB RAM, 2 CPU, disco dinámico ≥ 30 GB.\n- Nombre sugerido: `WinServer2022`.\n- Red: Puente o NAT. Para la clase, la consola de VirtualBox basta.\n\nHábito: apagar o guardar el estado al terminar. Arrancar unos minutos antes de la siguiente práctica.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "4. ¿Qué es IIS, en palabras sencillas?"
+      },
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "6. Equipo necesario"
+      },
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "8. VirtualBox – crear la máquina virtual (pasos)"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Introducción al servidor web IIS",
+        "url": "https://learn.microsoft.com/iis/get-started/introduction-to-iis/iis-web-server-overview"
+      }
+    ]
+  },
+  "iis-install": {
+    "title": "Rol Web Server y W3SVC",
+    "content": "# Rol Web Server y W3SVC\n\nWindows Server organiza funciones en **roles** (Web Server IIS) y **features**. Hoy se enciende el interruptor del rol.\n\n- Opción A: Server Manager → Add Roles and Features → Web Server (IIS).\n- Opción B: `Install-WindowsFeature -Name Web-Server -IncludeManagementTools` (PowerShell como Administrador).\n\nVerificación:\n\n1. En la VM, `http://localhost` muestra la página de bienvenida de IIS.\n2. `Get-Service W3SVC` → `Status: Running`.\n\nW3SVC es el World Wide Web Publishing Service: el proceso en segundo plano que mantiene IIS vivo sin una ventana abierta. La GUI enseña; PowerShell escala a 50 servidores.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "5. ¿Qué es un “rol” en Windows Server?"
+      },
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "11. Instalación – Opción A: Server Manager (interfaz gráfica)"
+      },
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "12. Instalación – Opción B: PowerShell"
+      },
+      {
+        "label": "Clase 05 — Instalación de IIS",
+        "locator": "14. Verificación de la instalación"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Instalar IIS en Windows Server",
+        "url": "https://learn.microsoft.com/en-us/iis/install/installing-iis-85/installing-iis-85-on-windows-server-2012-r2"
+      }
+    ]
+  },
+  "iis-site": {
+    "title": "Sitio IIS (el local)",
+    "content": "# Sitio IIS (el local)\n\nIIS es un centro comercial. Cada **sitio** es un local: configuración + carpeta física.\n\n```powershell\nNew-Item -ItemType Directory -Path \"C:\\inetpub\\miapp\"\nImport-Module WebAdministration\nNew-Website -Name \"MiApp\" -PhysicalPath \"C:\\inetpub\\miapp\" -Port 8081\n```\n\n`C:\\inetpub` es el equivalente de `/var/www`. El nombre es el local; la ruta es la carpeta; el puerto es el número del local.\n\nLa aplicación TypeScript que vive ahí es el mismo `http.createServer` de la Clase 2: “el contenedor no cambió, solo cambió la casa”.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "4. Conceptos clave de IIS Manager"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "8. Paso 1: crear la carpeta del sitio"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "12. Paso 4: crear el sitio en IIS"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Sitios, aplicaciones y directorios virtuales en IIS",
+        "url": "https://learn.microsoft.com/en-us/iis/get-started/planning-your-iis-architecture/understanding-sites-applications-and-virtual-directories-on-iis"
+      }
+    ]
+  },
+  "iis-bindings": {
+    "title": "Binding y documento",
+    "content": "# Binding y documento\n\nEl **binding** es IP + puerto + host: el número de local que activa el sitio. Sin esa terna, IIS no sabe qué sitio debe atender `http://localhost:8081`. El **documento por defecto** es lo que se sirve al pedir la raíz sin archivo (`index.html`, o `app.js` cuando iisnode toma el control).\n\nSe prueba en `http://localhost:8081/app.js`. Si falla, el orden de revisión es:\n\n1. ¿Existe `app.js` en la carpeta física del sitio?\n2. ¿iisnode está instalado?\n3. ¿el puerto del binding es el que estás visitando?\n4. ¿el Application Pool está Started?\n\nEs el mismo par IP + puerto de la Clase 2, ahora con nombre de host y con un sitio concreto detrás.\n\n### Qué debes poder explicar\n- Qué tres datos forman un binding.\n- Por qué dos sitios no pueden reclamar el mismo puerto en la misma IP.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "4. Conceptos clave de IIS Manager"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "14. Paso 6: probar en el navegador"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Crear un sitio web en IIS",
+        "url": "https://learn.microsoft.com/iis/get-started/getting-started-with-iis/create-a-web-site"
+      }
+    ]
+  },
+  "iis-pool": {
+    "title": "Application Pool aislado",
+    "content": "# Application Pool aislado\n\nCada local debe tener su propia caja registradora. Si “Pago” se cae, “MiApp” sigue atendiendo.\n\n```text\nNew-WebAppPool -Name \"MiAppPool\"\nSet-ItemProperty \"IIS:\\Sites\\MiApp\" -Name applicationPool -Value \"MiAppPool\"\n```\n\nEl pool es el proceso de worker (`w3wp`) que ejecuta el sitio. Compartir el pool por defecto entre sitios es el equivalente de correr varias apps como root: un fallo arrastra a las demás.\n\nEs el mismo principio de menor privilegio que más tarde se aplica a `appweb` en Linux. En la analogía: cada cocina tiene su propio gas; no se comparte la llave.\n\n### Qué debes poder explicar\n- Qué aísla un Application Pool.\n- Qué comando asocia el sitio al pool nuevo.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "5. El centro comercial, en diagrama"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "13. Paso 5: Application Pool dedicado"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Application Pools en IIS",
+        "url": "https://learn.microsoft.com/en-us/iis/configuration/system.applicationhost/applicationpools/"
+      }
+    ]
+  },
+  "iis-node": {
+    "title": "iisnode + web.config",
+    "content": "# iisnode + web.config\n\nIIS nació para ASP.NET. **iisnode** es el módulo que le enseña a ejecutar Node (y el `.js` compilado desde TypeScript). No es un truco de curso: un banco con cientos de Windows puede correr Node sin migrar a Linux.\n\n`web.config` es la instrucción del sitio:\n\n```xml\n<configuration>\n  <system.webServer>\n    <handlers>\n      <add name=\"iisnode\" path=\"app.js\" verb=\"*\" modules=\"iisnode\" />\n    </handlers>\n  </system.webServer>\n</configuration>\n```\n\niisnode inyecta el puerto en `process.env.PORT`. Los dos mundos de la Clase 4, en la práctica, se tocan.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "6. ¿Qué es iisnode?"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "11. Paso 3: el web.config que conecta IIS con iisnode"
+      }
+    ],
+    "resources": [
+      {
+        "type": "repository",
+        "title": "GitHub: iisnode — hospedar Node.js dentro de IIS",
+        "url": "https://github.com/azure/iisnode"
+      }
+    ]
+  },
+  "iis-deploy": {
+    "title": "Probar y errores 500.19 / 500.1002",
+    "content": "# Probar y errores 500.19 / 500.1002\n\nCamino completo: herramientas → carpeta → `app.ts` → `tsc` → `web.config` → `New-Website` → pool → navegador.\n\nErrores frecuentes:\n\n- **500.19** sección bloqueada: `appcmd unlock config` de handlers/modules y `iisreset`.\n- **500.1002** permisos/logging: `icacls` a `IIS_IUSRS` sobre `C:\\inetpub\\miapp`, o desactivar logging de iisnode.\n\nDeben ver: “Mi primer sitio en IIS (vía iisnode + TypeScript)”.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "15. Errores comunes en iisnode"
+      },
+      {
+        "label": "Clase 06 — Configuración básica de IIS",
+        "locator": "16. El camino completo, de un vistazo"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Diagnosticar solicitudes fallidas en IIS",
+        "url": "https://learn.microsoft.com/en-us/iis/troubleshoot/using-failed-request-tracing/troubleshooting-failed-requests-using-tracing-in-iis"
+      }
+    ]
+  },
+  "node-toolchain": {
+    "title": "Node.js, npm y TypeScript",
+    "content": "# Node.js, npm y TypeScript\n\nExpress es el contenedor libre del módulo porque: (1) TypeScript de punta a punta, (2) es el más usado para APIs, (3) cumple el mismo rol teórico — recibir, decidir, ejecutar.\n\n```bash\n# Linux: sudo apt install -y nodejs npm\n# macOS: brew install node\n# Windows: winget install OpenJS.NodeJS\nnode -v && npm -v\nnpm install -g typescript ts-node\n```\n\n**npm** es la tienda de librerías. `-g` deja `tsc` disponible en cualquier carpeta. El código de `servidor.ts` es idéntico en los tres sistemas.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "4. ¿Por qué Node.js + Express?"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "6. Paso 1: instalar Node.js y npm"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "7. Paso 2: instalar TypeScript globalmente"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Node.js: Documentación oficial del runtime",
+        "url": "https://nodejs.org/docs/latest/api/"
+      }
+    ]
+  },
+  "appweb-user": {
+    "title": "Usuario de servicio appweb",
+    "content": "# Usuario de servicio appweb\n\nNunca correr la aplicación con el administrador.\n\n```bash\n# Linux\nsudo useradd -m -U -s /usr/sbin/nologin appweb\n```\n\nEn macOS: `sysadminctl -addUser appweb`. En Windows: `New-LocalUser -Name \"appweb\"`.\n\nSi hay una falla de seguridad, el daño queda limitado a lo que ese usuario puede hacer. La Clase 9 lo reconecta como **menor privilegio**; aquí se aplica por primera vez.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "8. Paso 3: usuario de servicio dedicado"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "OWASP Access Control Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html"
+      }
+    ]
+  },
+  "express-app": {
+    "title": "Proyecto Express en TypeScript",
+    "content": "# Proyecto Express en TypeScript\n\nLinux/macOS: `/opt/miapp`. Windows: `C:\\miapp`. Los comandos npm son los mismos:\n\n```bash\nnpm init -y\nnpm install express\nnpm install --save-dev typescript @types/express @types/node\nnpx tsc --init\n```\n\n```typescript\nconst app = express();\napp.get(\"/\", (req, res) => {\n  res.send(\"<h1>Contenedor de libre distribucion activo (Node.js + Express + TypeScript)</h1>\");\n});\napp.listen(3000);\n```\n\n`express()` reemplaza el `http.createServer` manual. Antes de convertirlo en servicio: `tsc servidor.ts && node servidor.js` y visitar `:3000`.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "9. Paso 4: crear el proyecto Express"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "10. Paso 4 (cont.): servidor.ts"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "11. Compilar y probar manualmente"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express.js: Guía de instalación",
+        "url": "https://expressjs.com/es/starter/installing.html"
+      }
+    ]
+  },
+  "service-branch": {
+    "title": "systemd, launchd o NSSM",
+    "content": "# systemd, launchd o NSSM\n\nSi solo corres `node servidor.js`, el contenedor muere al cerrar la terminal. Un **servicio del sistema** lo mantiene, lo reinicia si falla y lo levanta al encender.\n\n| Sistema | Mecanismo |\n| --- | --- |\n| Linux | systemd — `miapp.service`, `User=appweb`, `Restart=on-failure` |\n| macOS | launchd — `RunAtLoad` + `KeepAlive` |\n| Windows | NSSM — equivalente práctico al `web.config` de IIS |\n\nEs el mismo papel que W3SVC cumple para IIS.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "12. ¿Qué es un “servicio del sistema”?"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "13. Paso 5: crear el servicio – Linux (systemd)"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "14. Paso 5: crear el servicio – macOS (launchd)"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "15. Paso 5: crear el servicio – Windows (NSSM)"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "systemd.service(5): unidades de servicio",
+        "url": "https://man7.org/linux/man-pages/man5/systemd.service.5.html"
+      }
+    ]
+  },
+  "service-check": {
+    "title": "Arrancar y verificar el servicio",
+    "content": "# Arrancar y verificar el servicio\n\n```bash\n# Linux\nsudo systemctl daemon-reload\nsudo systemctl enable --now miapp\nsudo systemctl status miapp\n```\n\nmacOS: `launchctl load -w ...`. Windows: `nssm start miapp` + `Get-Service miapp`.\n\nResultado: el servicio está activo **y** `http://localhost:3000` responde sin ninguna terminal abierta.\n\nComparación con IIS: W3SVC vs systemd/launchd/NSSM; Application Pool vs usuario `appweb`; `tsc app.ts` vs `tsc servidor.ts`.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "16. Paso 6: habilitar y arrancar el servicio"
+      },
+      {
+        "label": "Clase 07 — Node.js + Express",
+        "locator": "18. IIS (Clase 6) vs. Node/Express (hoy): mismo patrón"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "systemctl(1): control del gestor de servicios",
+        "url": "https://man7.org/linux/man-pages/man1/systemctl.1.html"
+      }
+    ]
+  },
+  "dynamic-routes": {
+    "title": "app.get: /saludo, /info, /cotizacion",
+    "content": "# Rutas dinámicas en Express\n\nExpress elimina el `if (url.pathname === ...)` de la Clase 2. Un servlet es `app.get(\"/ruta\", (req, res) => { ... })`.\n\n| Ruta | Qué demuestra |\n| --- | --- |\n| `/saludo?nombre=` | `req.query` = lo que era `searchParams` |\n| `/info` | `res.json` + `new Date()`: se calcula ahora |\n| `/cotizacion?monto=` | IVA 13 % (El Salvador) **después** de validar |\n\n`/cotizacion?monto=-5` debe devolver **400**, no un total absurdo ni un crash. Esa validación es el primer asomo a la Clase 9.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "5. ¿Por qué Express y no solo http.createServer?"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "6. Ruta 1: /saludo – saludo personalizado"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "7. Ruta 2: /info – información calculada al momento"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "8. Ruta 3: /cotizacion – cálculo con validación"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express.js: Guía de enrutamiento",
+        "url": "https://expressjs.com/es/guide/routing.html"
+      }
+    ]
+  },
+  "route-lab": {
+    "title": "Validar, recompilar, reiniciar",
+    "content": "# Validar, recompilar, reiniciar\n\nUn contenedor que confía ciegamente en el usuario es inseguro. 400 significa “tu petición está mal formada”, no “yo fallé”.\n\nDespués de cada cambio:\n\n```text\ntsc servidor.ts\n# Linux: sudo systemctl restart miapp\n# macOS: launchctl unload + load\n# Windows: nssm restart miapp\n```\n\nLaboratorio: las tres rutas, `/factorial` con el molde de cotización, y opcionalmente POST en `/saludo` con `express.json()`. Si ves el código viejo, no recompilaron.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "9. ¿Por qué validar antes de calcular?"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "10. Recompilar y reiniciar el servicio"
+      },
+      {
+        "label": "Clase 08 — Rutas dinámicas en Express",
+        "locator": "12. Ejercicio individual"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express.js: Métodos de respuesta",
+        "url": "https://expressjs.com/es/guide/routing.html"
+      }
+    ]
+  },
+  "attacker-mindset": {
+    "title": "Pensar como atacante",
+    "content": "# Pensar como atacante\n\nPregunta que cambia cómo se programa: *si yo quisiera romper esto, ¿por dónde entraría?*\n\nCada ruta que acepta parámetros es una puerta del edificio. `/cotizacion?monto=` ya es una: un vacío, un texto, un negativo o un número absurdo. El trabajo no es solo construir la puerta: es decidir qué puede pasar, qué no, y qué hacer con quien la fuerza.\n\nNo es paranoia. Es el ejercicio básico de un ingeniero de sistemas serio. Las cinco medidas de la Clase 9 (validar, errores seguros, Helmet, menor privilegio, rate limit) salen de esa pregunta, no de una lista de paquetes.\n\n### Qué debes poder explicar\n- Por qué una ruta con `req.query` es una superficie de ataque.\n- Qué cambia en el código cuando diseñas asumiendo entrada hostil.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "4. La mentalidad correcta: pensar como atacante"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "OWASP Top Ten: Riesgos de seguridad en aplicaciones web",
+        "url": "https://owasp.org/www-project-top-ten/"
+      }
+    ]
+  },
+  "input-validation": {
+    "title": "Validar siempre la entrada",
+    "content": "# Validar siempre la entrada\n\nLa Clase 8 ya validaba `NaN` y negativos. La Clase 9 añade tope superior: un monto de mil millones no es un cliente distraído, es alguien forzando el cálculo.\n\n```typescript\nif (!montoRaw || isNaN(monto) || monto < 0 || monto > 1_000_000) {\n  res.status(400).json({ error: \"Monto invalido\" });\n  return;\n}\n```\n\n400 significa “tu petición está mal formada”, no “yo fallé”. La lógica de negocio **no corre** si el dato es inválido. Sin máximo, un número absurdo puede tumbar memoria, timeouts o informes más adelante.\n\n### Qué debes poder explicar\n- Qué cuatro casos rechaza `/cotizacion`.\n- Por qué el `return` inmediato importa tanto como el `status(400)`.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "5. Medida 1: validar siempre la entrada del usuario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "OWASP Input Validation Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html"
+      }
+    ]
+  },
+  "safe-errors": {
+    "title": "No exponer err.stack",
+    "content": "# No exponer err.stack\n\n`err.stack` al usuario revela rutas (`/opt/miapp/servidor.js`), versiones de librerías y a veces lógica interna. No son contraseñas, pero ahorran trabajo al atacante: ya sabe el runtime, la carpeta y por dónde seguir.\n\nMal: `res.status(500).send(err.stack)`.\nBien: `console.error(err)` en el log del administrador y `{ error: \"Ocurrio un error interno\" }` al cliente.\n\nMismo error, dos destinos. En IIS el equivalente es `customErrors`: el visitante ve una página genérica; el administrador ve el detalle en el log.\n\n### Qué debes poder explicar\n- Qué filtra un stack al atacante.\n- Dónde sí debe vivir el detalle técnico.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "6. Medida 2: no exponer detalles internos en errores"
+      },
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "7. ¿Qué revela exactamente un err.stack?"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "OWASP Error Handling Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html"
+      }
+    ]
+  },
+  "helmet-rate-limit": {
+    "title": "Helmet y rate limiting",
+    "content": "# Helmet y rate limiting\n\n**Helmet** añade cabeceras HTTP de seguridad (por ejemplo, no embeber el sitio en un iframe) sin memorizar cada una: `app.use(helmet())`.\n\n**express-rate-limit** corta abuso y fuerza bruta. El ejemplo de teoría usa 100 peticiones/minuto; el ejercicio pide **20** para poder probarlo con F5.\n\n```typescript\nconst limitador = rateLimit({ windowMs: 60_000, max: 20 });\napp.use(limitador);\n```\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "8. Medida 3: cabeceras de seguridad con helmet"
+      },
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "10. Medida 5: limitar peticiones por usuario"
+      }
+    ],
+    "resources": [
+      {
+        "type": "repository",
+        "title": "GitHub: Helmet.js — cabeceras de seguridad para Express",
+        "url": "https://github.com/helmetjs/helmet"
+      }
+    ]
+  },
+  "least-privilege": {
+    "title": "Menor privilegio",
+    "content": "# Menor privilegio\n\nCinco medidas distintas, una sola idea: cada componente tiene solo el acceso mínimo necesario.\n\n- Express: usuario `appweb` (Clase 7), validar entrada, errores sin detalle.\n- IIS: Application Pool por sitio (Clase 6), errores ocultos, HTTPS.\n\nCorrer Node como root o compartir el pool por defecto convierte un bug de una ruta en un incidente de todo el servidor. La medida 4 de la Clase 9 no es un paso nuevo: reconecta `appweb` como parte de la lista completa, no como un truco aislado de instalación.\n\n### Qué debes poder explicar\n- Qué pierde un atacante si el proceso no es root.\n- Cómo se traduce el mismo principio a un Application Pool.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "9. Medida 4: no correr el proceso como root"
+      },
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "12. Principio transversal: menor privilegio"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "OWASP Access Control Cheat Sheet",
+        "url": "https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html"
+      }
+    ]
+  },
+  "iis-hardening": {
+    "title": "Hardening de IIS",
+    "content": "# Hardening de IIS\n\nLa rama propietaria no queda fuera de la Clase 9. Las mismas responsabilidades, otros interruptores:\n\n| Medida | Por qué |\n| --- | --- |\n| Deshabilitar directory browsing | No listar archivos del servidor |\n| Pool por sitio | Un sitio comprometido no tumba a los demás |\n| customErrors | No exponer rutas ni mensajes técnicos |\n| Binding HTTPS | Cifrar el tráfico |\n| Windows Update | Cerrar vulnerabilidades conocidas |\n\nEs la misma defensa que Helmet + errores seguros + `appweb`, aplicada a IIS. El checkpoint pide justificar, no memorizar el clic de cada casilla.\n\n### Qué debes poder explicar\n- Qué equivalente IIS tiene “no filtrar el stack”.\n- Por qué directory browsing es una fuga de información.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "11. Seguridad en IIS"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Configurar SSL en IIS",
+        "url": "https://learn.microsoft.com/iis/manage/configuring-security/how-to-set-up-ssl-on-iis"
+      }
+    ]
+  },
+  "security-checkpoint": {
+    "title": "Checkpoint: aplicar y justificar",
+    "content": "# Checkpoint: aplicar y justificar\n\nSobre el Express de las Clases 7–8, aplicar y documentar:\n\n1. Helmet.\n2. Rate limit a **20** req/min (el ejemplo teórico usaba 100; 20 se puede probar con F5).\n3. Middleware de error que no expone el stack.\n4. Probar el límite recargando hasta ver “demasiadas peticiones”.\n\nEntregar código, captura del bloqueo y 1–2 líneas de justificación por medida. La meta es explicar *por qué* reduce el riesgo, no memorizar paquetes. Si no puedes decir qué amenaza cubre Helmet o el tope de peticiones, la medida no está cerrada.\n\n### Qué debes poder explicar\n- Por qué el ejercicio usa 20 y no 100.\n- Qué evidencia cuenta como “aplicado”, no solo “instalado”.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "13. Ejercicio individual"
+      },
+      {
+        "label": "Clase 09 — Buenas prácticas y seguridad",
+        "locator": "14. Pista para el ejercicio"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "OWASP Web Security Testing Guide",
+        "url": "https://owasp.org/www-project-web-security-testing-guide/"
+      }
+    ]
+  },
+  "integration": {
+    "title": "Caso: bienvenida y cotización",
+    "content": "# Caso: bienvenida y cotización\n\n> Una pequeña empresa quiere publicar un servicio de bienvenida y cotización. Hay que montarlo en Node.js/Express + TypeScript y confirmar que IIS sigue disponible como respaldo.\n\nExpress (Clases 7–9): servicio `miapp` activo; `/bienvenida?empresa=`; `/cotizacion` con IVA y validación; al menos una medida de la Clase 9; recompilar, reiniciar, probar dos valores.\n\nIIS (Clases 5–6): sitio activo, página de bienvenida estática, acceso en el navegador. Esta parte es más corta a propósito: el caso pide *confirmar*, no reconstruir.\n\nNo hay teoría nueva. El reto es resolver con criterio, no con receta.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "4. El caso a resolver"
+      },
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "6. Tareas: Node.js / Express"
+      },
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "7. Tareas: IIS"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Express: prácticas recomendadas de rendimiento en producción",
+        "url": "https://expressjs.com/es/advanced/best-practice-performance.html"
+      }
+    ]
+  },
+  "mastery": {
+    "title": "Explicar, desplegar, defender",
+    "content": "# Explicar, desplegar, defender\n\nRúbrica del caso (10 puntos):\n\n| Criterio | Puntos |\n| --- | --- |\n| Express con las rutas pedidas | 3.0 |\n| Al menos una medida de seguridad | 1.5 |\n| IIS accesible | 3.0 |\n| Capturas | 1.5 |\n| Comparativa propia Express vs IIS | 1.0 |\n\nLa comparativa no pide repetir la Clase 4: pide qué les costó *a ustedes* al configurar ambos (permisos, servicio, binding, recompilar).\n\nLa unidad cierra cuando puedes trazar el request, elegir modelo con criterio, mantener el proceso vivo y justificar cada control.\n\n### Qué debes poder explicar\n- Qué parte del caso es confirmar IIS, no reconstruirlo.\n- Qué hace distinta una comparativa propia de un cuadro de la Clase 4.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "8. Documentación final"
+      },
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "9. Rúbrica"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "The Twelve-Factor App",
+        "url": "https://12factor.net/es/"
+      }
+    ]
+  },
+  "parcial-scope": {
+    "title": "Qué entra al Parcial 1",
+    "content": "# Qué entra al Parcial 1\n\n1. Concepto y arquitectura de contenedores (Clase 2).\n2. Contenedor vs servidor web (Clase 3).\n3. Propietario vs libre distribución (Clase 4).\n4. Instalación y configuración de IIS (Clases 5–6).\n5. Instalación y rutas dinámicas en Express (Clases 7–8).\n6. Buenas prácticas de seguridad (Clase 9).\n\nLaboratorio 1 (práctica) y Parcial 1 (teoría) cierran la unidad. Repasar notas y ejercicios de las clases 1 a 10.\n",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "10. Cierre: ¿qué entra en el Parcial 1?"
+      },
+      {
+        "label": "Clase 10 — Despliegue integrador",
+        "locator": "11. Resumen de la Unidad 1"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "MDN: Programación del lado del servidor",
+        "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side"
+      }
+    ]
+  }
+}

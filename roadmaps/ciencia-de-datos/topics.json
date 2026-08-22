@@ -1,0 +1,570 @@
+{
+  "data-science": {
+    "title": "Ciencia de datos",
+    "content": "# Ciencia de datos\n\nLa ciencia de datos convierte evidencia en información útil para decidir. No es sinónimo de programar ni de aplicar un algoritmo: integra formulación del problema, preparación, análisis, interpretación y comunicación.\n\nEn la asignatura, esa integración se concreta en extraer y evaluar datos digitales y construir modelos de clasificación y regresión. La calidad del resultado depende tanto del razonamiento sobre el contexto como del código.\n\n### Debes poder\n- Explicar qué decisión o pregunta motiva un análisis.\n- Distinguir una herramienta de un proceso científico basado en datos.\n- Relacionar extracción, preparación, modelado y comunicación.",
+    "sourceRefs": [
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 5/14 — Descripción de la asignatura"
+      },
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 10/14 — Competencias"
+      },
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 2–6/31 — Introducción a Data Science"
+      }
+    ]
+  },
+  "interdisciplinary": {
+    "title": "Tres pilares interdisciplinarios",
+    "content": "# Tres pilares interdisciplinarios\n\nLa disciplina combina tres capacidades inseparables:\n\n| Pilar | Aporte |\n| --- | --- |\n| Estadística | Describir, modelar e interpretar incertidumbre |\n| Computación | Almacenar, procesar, visualizar y automatizar |\n| Dominio | Formular preguntas sensatas e interpretar resultados |\n\nUn modelo técnicamente correcto puede ser inútil si responde una pregunta mal planteada. Del mismo modo, conocer el dominio sin métodos cuantitativos no basta para evaluar patrones con rigor.\n\n> El objetivo no es maximizar una métrica aislada, sino producir evidencia válida y accionable.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 3–6/31 — Estadística, computación y área de aplicación"
+      }
+    ]
+  },
+  "lifecycle": {
+    "title": "Ciclo de ciencia de datos",
+    "content": "# Ciclo de ciencia de datos\n\nLa ruta general es: **definir → recolectar → preparar → analizar → presentar**. Aunque se dibuje como una secuencia, es iterativa: una anomalía puede obligar a revisar la fuente o incluso la pregunta.\n\nLa recolección y limpieza suelen consumir cerca de la mitad del esfuerzo. Saltarlas para llegar rápido al modelo reduce la confiabilidad de todo lo que sigue.\n\n### Evidencia mínima por etapa\n1. Pregunta, objetivo y alcance escritos.\n2. Procedencia y estructura de los datos.\n3. Reglas de limpieza justificadas.\n4. Análisis reproducible y evaluación honesta.\n5. Hallazgos comunicados junto con sus límites.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 7–12/31 — Ciclo de la ciencia de datos"
+      }
+    ]
+  },
+  "problem-definition": {
+    "title": "Pregunta, objetivo y alcance",
+    "content": "# Pregunta, objetivo y alcance\n\nAntes de abrir un notebook, especifica:\n\n- **Pregunta:** qué fenómeno se desea comprender o predecir.\n- **Unidad de análisis:** qué representa cada fila.\n- **Objetivo:** qué salida concreta se espera.\n- **Alcance:** población, periodo y exclusiones.\n- **Datos necesarios:** variables y fuentes que permitirían responder.\n\nEsto evita confundir exploración con búsqueda indiscriminada de correlaciones. También fija el tipo de respuesta: binaria para logística, continua para regresión lineal o conteo para Poisson.\n\nUna buena definición permite reconocer cuándo los datos disponibles no alcanzan para sostener la conclusión.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "p. 9/31 — Definición del problema y recolección de datos"
+      }
+    ]
+  },
+  "eda-workflow": {
+    "title": "Flujo de EDA",
+    "content": "# Flujo de EDA\n\nEl análisis exploratorio propuesto sigue cuatro comprobaciones principales:\n\n1. Describir variables y estructura del conjunto.\n2. Ajustar tipos para que cada operación tenga significado.\n3. Detectar y tratar faltantes sin ocultar su patrón.\n4. Identificar valores atípicos y evaluar su influencia.\n\nLas visualizaciones complementan los resúmenes numéricos: revelan asimetrías, concentraciones, categorías y errores que una media puede esconder. Después se estudian relaciones y se decide si tiene sentido modelar.\n\n> EDA no es decoración previa al modelo; es la auditoría que determina si el modelo es defendible.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 14–16/31 — Análisis exploratorio de los datos"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 1–3/18 — Carga, estructura e histogramas de calidad del aire"
+      }
+    ]
+  },
+  "data-types": {
+    "title": "Tipos y naturaleza de variables",
+    "content": "# Tipos y naturaleza de variables\n\nEl `dtype` de Python y la naturaleza analítica no siempre coinciden. Un entero puede ser un código categórico; una fecha puede llegar como texto; un booleano puede cargarse como `object`.\n\nComprueba para cada columna:\n\n- unidad y rango plausibles;\n- cuantitativa, cualitativa o temporal;\n- discreta o continua;\n- categorías permitidas;\n- conversión necesaria (`datetime`, `category`, numérico).\n\nEn calidad del aire, `Fecha` se corrige de texto a fecha y Provincia/Estación a categoría. La corrección temprana evita ordenar fechas como cadenas o calcular promedios de códigos.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "p. 17/31 — Verificación de tipos de datos"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 3–4/18 — Tipos e identificación de correcciones"
+      }
+    ]
+  },
+  "missing-values": {
+    "title": "Faltantes y calidad semántica",
+    "content": "# Faltantes y calidad semántica\n\nPrimero cuantifica faltantes por columna en número y porcentaje. Después pregunta **por qué** faltan: error de captura, ausencia real, medición no disponible o regla del proceso.\n\nEn calidad del aire, PM25 y CO superan ampliamente 50 % de ausencia, mientras Latitud y Longitud tienen cerca de 0.9 %. Aplicar la misma receta a ambos casos perdería información o inventaría demasiada.\n\nAdemás, `isna()` solo detecta marcadores reconocidos. Valores como `UNKNOWN`, `ERROR` o ceros fisiológicamente imposibles también representan problemas de calidad aunque no sean `NaN`.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 18–21/31 — Valores faltantes y estrategias"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 4–7/18 — Conteo y porcentaje de valores nulos"
+      }
+    ]
+  },
+  "semantic-invalids": {
+    "title": "Ceros e inválidos semánticos",
+    "content": "# Ceros e inválidos semánticos\n\nUn dato puede ser válido para el tipo pero imposible en el dominio. En el ejemplo de diabetes, `Glucose`, `BloodPressure`, `SkinThickness`, `Insulin` y `BMI` contienen ceros que no deben interpretarse como mediciones reales.\n\nEl procedimiento es explícito:\n\n1. Definir reglas de plausibilidad con conocimiento del dominio.\n2. Reemplazar el marcador imposible por `NaN`.\n3. Volver a contar la ausencia revelada.\n4. Elegir tratamiento y documentarlo.\n\nNo conviertas todos los ceros: en `Pregnancies` o una variable binaria, cero puede ser perfectamente válido.",
+    "sourceRefs": [
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 3–5/20 — Ceros incongruentes, faltantes e imputación"
+      },
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 3/4 — Dataset 2: UNKNOWN, ERROR y categorías inconsistentes"
+      }
+    ]
+  },
+  "missing-strategy": {
+    "title": "Decidir el tratamiento",
+    "content": "# Decidir el tratamiento\n\nLa decisión depende de proporción, mecanismo de ausencia, distribución, tamaño de muestra y uso posterior. Antes de transformar, conserva una copia o un registro de cambios.\n\nPreguntas guía:\n\n- ¿La columna sigue siendo útil con tanta ausencia?\n- ¿Las filas faltantes parecen sistemáticas?\n- ¿La imputación reduce artificialmente la variabilidad?\n- ¿La eliminación cambia la población analizada?\n- ¿El cálculo del imputador se hará solo con entrenamiento?\n\nEn el ejemplo de aire se eliminan columnas con más de 50 % y luego se imputa la media. Es una demostración, no una regla universal.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 19–21/31 — Alternativas para valores faltantes"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 7–9/18 — Eliminación por porcentaje e imputación"
+      }
+    ]
+  },
+  "impute-delete": {
+    "title": "Imputar, eliminar o conservar",
+    "content": "# Imputar, eliminar o conservar\n\nOpciones frecuentes:\n\n| Estrategia | Uso razonable | Riesgo |\n| --- | --- | --- |\n| Media | Distribución aproximadamente simétrica y poca ausencia | Sensible a extremos; reduce varianza |\n| Mediana | Asimetría o atípicos | También concentra valores |\n| Moda | Variables categóricas | Sobrerrepresenta la categoría dominante |\n| Adelante/atrás | Series ordenadas con dependencia temporal | Introduce continuidad artificial |\n| Eliminar filas | Pocos casos y ausencia no selectiva | Pérdida y sesgo |\n| Eliminar columna | Ausencia muy alta y poca relevancia | Descarta señal potencial |\n\nEn modelado, aprende cualquier imputación **solo en train** para evitar fuga.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 19–21/31 — Media, mediana, moda, adyacentes y eliminación"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 8–9/18 — Reemplazo de nulos por la media"
+      }
+    ]
+  },
+  "distribution-plots": {
+    "title": "Visualizar distribuciones",
+    "content": "# Visualizar distribuciones\n\nNingún gráfico responde todo. Usa vistas complementarias y escribe una interpretación, no solo una figura.\n\n- Histograma: forma, asimetría, multimodalidad y escala.\n- Caja: mediana, cuartiles y observaciones fuera de bigotes.\n- Puntos por categoría: concentración, solapamiento y observaciones individuales.\n- Violín: forma de densidad por grupo.\n\nLa elección depende del número de observaciones y categorías. En conjuntos grandes, un swarm completo puede ser ilegible; `stripplot` con *jitter*, transparencia o muestreo comunica mejor sin ocultar la densidad.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "p. 3/18 — Histogramas de variables numéricas"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 2–4/17 — Descriptivos, histogramas y diagramas de caja"
+      }
+    ]
+  },
+  "comparative-plots": {
+    "title": "Histograma, caja, strip y violín",
+    "content": "# Histograma, caja, strip y violín\n\nPara comparar una variable cuantitativa entre categorías:\n\n- **Strip/enjambre:** muestra cada observación y permite ver solapamiento, grupos y extremos.\n- **Violín:** añade una estimación de densidad; la anchura representa concentración.\n- **Caja:** resume cuartiles y mediana sin mostrar todos los puntos.\n\nEn vino se compara alcohol por calidad; en diabetes, variables clínicas por `Outcome`. No conviertas una diferencia visual en causalidad ni significancia. Añade tamaño de cada grupo y, cuando corresponda, una prueba o intervalo que responda la pregunta.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "p. 10/17 — Gráfico stripplot/enjambre"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "p. 11/17 — Diagrama de violín"
+      },
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 6–7/20 — Stripplots y violines por Outcome"
+      }
+    ]
+  },
+  "outlier-detection": {
+    "title": "Detectar valores atípicos",
+    "content": "# Detectar valores atípicos\n\nUn valor atípico es una observación alejada del patrón general, pero puede ser error, evento raro real o miembro de otro subgrupo. La detección es una **bandera para investigar**, no una orden automática de borrar.\n\nAntes de tratarlo:\n\n1. Verifica unidad, captura y rango del dominio.\n2. Compara varios métodos y visualizaciones.\n3. Evalúa su influencia en el análisis.\n4. Justifica conservar, corregir, transformar o excluir.\n5. Reporta cuántos casos cambian y cómo cambia el resultado.\n\nEliminar extremos solo porque empeoran una métrica produce un análisis sesgado.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 22–28/31 — Valores atípicos, detección y tratamiento"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 9–12/18 — Comparación de métodos de valores atípicos"
+      }
+    ]
+  },
+  "iqr-z-mad": {
+    "title": "IQR, z y z modificada/MAD",
+    "content": "# IQR, z y z modificada/MAD\n\n- **Tukey/IQR:** límites `Q1 − 1.5·IQR` y `Q3 + 1.5·IQR`; no exige normalidad, pero puede ser inestable en muestras pequeñas.\n- **z:** distancia a la media en desviaciones estándar; depende de una forma aproximadamente gaussiana y es sensible a extremos.\n- **z modificada:** usa mediana y desviación absoluta mediana (MAD), más robustas.\n\nLos métodos pueden marcar cantidades muy distintas. En aire y vino, IQR suele detectar mucho más que z. Esa diferencia no prueba que uno esté equivocado: revela que responden a supuestos diferentes.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 24–27/31 — IQR, desviación, puntuación Z y Z modificada"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 4–8/17 — Comparación IQR, desviación, Z y Z modificada"
+      }
+    ]
+  },
+  "isolation-forest": {
+    "title": "Isolation Forest",
+    "content": "# Isolation Forest\n\nIsolation Forest busca anomalías multivariadas aislando observaciones mediante particiones aleatorias. Los casos que se aíslan con pocos cortes reciben puntajes más anómalos.\n\nEl flujo de clase usa `fit_predict` para obtener `1` (normal) y `-1` (anómalo), más `decision_function` para un puntaje continuo. Antes de ajustar:\n\n- selecciona variables pertinentes;\n- resuelve faltantes;\n- excluye identificadores sin significado;\n- fija `random_state` para reproducibilidad;\n- inspecciona los casos marcados en su contexto.\n\nUna anomalía multivariada puede no ser extrema en ninguna columna por separado.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 13–14/18 — Isolation Forest en calidad del aire"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 8–9/17 — Isolation Forest en calidad del vino"
+      }
+    ]
+  },
+  "contamination-caveat": {
+    "title": "Cuidado con contamination",
+    "content": "# Cuidado con contamination\n\nEn los ejemplos se fija `contamination=0.05`. Ese valor comunica al algoritmo que se espera aproximadamente 5 % de anomalías; por eso aparecen 57 de 1,143 vinos, 39 de 768 pacientes y 50 de 1,000 estudiantes.\n\n> No interpretes esas proporciones como una prevalencia descubierta por los datos.\n\nPráctica defendible:\n\n1. Justificar el valor con conocimiento previo o sensibilidad.\n2. Comparar varios valores y la estabilidad de los casos marcados.\n3. Examinar el puntaje continuo, no solo la etiqueta.\n4. Validar manualmente ejemplos representativos.\n5. Reportar que el umbral fue supuesto.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 8–9/17 — Isolation Forest con contamination=0.05"
+      },
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 12–13/20 — 39 anomalías con contamination=0.05"
+      },
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "pp. 8–9/15 — 50 anomalías con contamination=0.05"
+      }
+    ]
+  },
+  "correlation": {
+    "title": "Correlación con criterio",
+    "content": "# Correlación con criterio\n\nLa correlación resume fuerza y dirección de una asociación, pero no demuestra causalidad. Puede cambiar por atípicos, relaciones no lineales, subgrupos o variables omitidas.\n\nÚsala para:\n\n- detectar redundancia entre predictores;\n- orientar visualizaciones y selección inicial;\n- contrastar relaciones lineales y monótonas;\n- formular hipótesis que después deben evaluarse.\n\nEn calidad del aire, NO y NO₂ muestran la asociación más fuerte y O₃ una tendencia inversa con varios contaminantes. La interpretación debe conservar unidades, contexto y posibles factores comunes.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 29–31/31 — Correlación y usos en EDA"
+      },
+      {
+        "label": "Ejemplo 1- CDD -Semana 02.pdf",
+        "locator": "pp. 15–18/18 — Matrices de correlación de contaminantes"
+      }
+    ]
+  },
+  "correlation-family": {
+    "title": "Pearson, Spearman y Kendall",
+    "content": "# Pearson, Spearman y Kendall\n\n| Medida | Captura | Atención |\n| --- | --- | --- |\n| Pearson | Asociación lineal | Sensible a atípicos y forma |\n| Spearman | Asociación monótona mediante rangos | Tolera no linealidad monótona |\n| Kendall | Concordancia de rangos | Útil en muestras pequeñas y empates |\n\nComparar las tres ayuda a detectar cuándo la conclusión depende de linealidad o extremos. En vino, Pearson entre azufre libre y total es menor que Spearman, señal de una relación monotónica que no queda resumida igual por una recta.\n\nSiempre acompaña la matriz con gráficos de pares relevantes.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "p. 30/31 — Pearson, Spearman y Kendall"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 12–15/17 — Correlaciones Pearson, Spearman y Kendall"
+      }
+    ]
+  },
+  "evaluation-discipline": {
+    "title": "Disciplina de evaluación",
+    "content": "# Disciplina de evaluación\n\nUna métrica solo estima generalización si el caso evaluado no participó en el aprendizaje. Divide los datos antes de imputar, escalar, seleccionar variables o elegir hiperparámetros.\n\nFlujo recomendado:\n\n1. Separar `train` y `test` con semilla registrada.\n2. Ajustar transformaciones y modelo usando `train`.\n3. Elegir hiperparámetros con validación cruzada dentro de `train`.\n4. Aplicar la misma tubería a `test` una sola vez.\n5. Reportar métrica, incertidumbre, base de comparación y limitaciones.\n\nLa exactitud calculada sobre entrenamiento describe ajuste, no desempeño futuro.",
+    "sourceRefs": [
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 10/14 — Competencia 3: metodologías de evaluación de modelos"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 7–10/10 — División, ajuste y evaluación de Poisson múltiple"
+      }
+    ]
+  },
+  "split-standardize": {
+    "title": "Split, escalado y métricas",
+    "content": "# Split, escalado y métricas\n\nLos algoritmos basados en distancia, como KNN, requieren escalas comparables. El orden correcto es:\n\n```text\nsplit → fit scaler en train → transform train/test → fit modelo → predict test\n```\n\nAjustar el escalador con todo el conjunto filtra medias y desviaciones de test. Entrenar con datos crudos y predecir datos estandarizados cambia el espacio de representación y hace incoherente la distancia.\n\nSelecciona métricas según la tarea y el balance de clases: accuracy puede complementarse con matriz de confusión y métricas por clase. Para regresión, no confundas ajuste en train con evaluación fuera de muestra.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 15–17/17 — Estandarización, KNN, accuracy y validación cruzada"
+      },
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 19–20/20 — Accuracy y matriz de confusión logística"
+      }
+    ]
+  },
+  "knn": {
+    "title": "Clasificación KNN",
+    "content": "# Clasificación KNN\n\nKNN asigna una clase según las etiquetas de los `k` vecinos más cercanos. No aprende una ecuación paramétrica: conserva el conjunto de entrenamiento y calcula distancias al predecir.\n\nDecisiones clave:\n\n- variables y codificación apropiadas;\n- escalado consistente;\n- valor de `k`;\n- métrica de distancia;\n- estrategia ante clases desbalanceadas;\n- costo de predicción.\n\nUn `k` muy pequeño es sensible al ruido; uno muy grande puede borrar fronteras locales. La calidad debe juzgarse en observaciones no usadas para ajustar.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 15–17/17 — Implementación de KNN para calidad del vino"
+      },
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 8/14 — Clasificación kNN"
+      }
+    ]
+  },
+  "knn-cv": {
+    "title": "Validación cruzada y elección de k",
+    "content": "# Validación cruzada y elección de k\n\nEl ejemplo prueba `k=1…99` con validación cruzada de cinco particiones y reporta **k=21** como el mayor accuracy medio. Ese valor es evidencia del ejemplo, no una constante para otros datos.\n\nHay dos problemas metodológicos que no deben repetirse:\n\n1. El modelo se ajusta con `X` sin estandarizar y luego predice `X` estandarizado.\n2. La primera accuracy se calcula sobre las mismas observaciones usadas para ajustar.\n\nCorrige ambos con una `Pipeline(StandardScaler(), KNeighborsClassifier())`, validación cruzada sobre train y evaluación final en test. Reporta dispersión entre folds, no solo el máximo.",
+    "sourceRefs": [
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 15–17/17 — KNN, inconsistencia de escalado y mejor k=21"
+      }
+    ]
+  },
+  "logistic-regression": {
+    "title": "Regresión logística",
+    "content": "# Regresión logística\n\nPara una respuesta binaria, la regresión logística modela el logaritmo de las *odds*:\n\n`log(p / (1 − p)) = β₀ + β₁x₁ + … + βₚxₚ`\n\n`exp(βj)` se interpreta como razón de odds por una unidad de `xj`, manteniendo las demás constantes. El signo indica dirección, pero la magnitud depende de la unidad.\n\nEn diabetes, `Outcome` indica presencia (1) o ausencia (0). El flujo incluye limpieza de ceros semánticos, exploración, ajuste con scikit-learn y resumen inferencial con statsmodels.",
+    "sourceRefs": [
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 17–20/20 — Regresión logística para Outcome"
+      },
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 8/14 — Regresión logística"
+      }
+    ]
+  },
+  "logistic-significance": {
+    "title": "Coeficientes y significancia",
+    "content": "# Coeficientes y significancia\n\nEn el Logit del ejemplo, presentan asociación positiva y `p<0.05`:\n\n- `Pregnancies`\n- `Glucose`\n- `BMI`\n- `DiabetesPedigreeFunction`\n\n`BloodPressure`, `SkinThickness`, `Insulin` y `Age` no resultan significativas en ese ajuste. La accuracy reportada es **0.77734375**, pero fue calculada en muestra; no es una estimación limpia de generalización.\n\nNo confundas tres preguntas: ¿el coeficiente es distinto de cero?, ¿el efecto es relevante en la práctica?, ¿el modelo predice bien fuera de muestra? Requieren p-valores/intervalos, escala de efecto y evaluación en test, respectivamente.",
+    "sourceRefs": [
+      {
+        "label": "Clase 05 -CCD - Ejemplo.pdf",
+        "locator": "pp. 18–20/20 — Resumen Logit, predictores significativos y accuracy"
+      }
+    ]
+  },
+  "linear-regression": {
+    "title": "Regresión lineal",
+    "content": "# Regresión lineal\n\nLa regresión lineal estima una respuesta continua mediante una combinación de predictores. En forma simple usa una variable; en forma múltiple ajusta efectos parciales manteniendo las demás constantes.\n\nAntes de interpretar:\n\n- confirma que la respuesta sea continua y la relación tenga sentido;\n- revisa residuos, linealidad y varianza;\n- evita identificadores como predictores;\n- separa train/test si el objetivo es predecir;\n- conserva unidades al explicar coeficientes.\n\nEn la actividad, Dataset 1 pide analizar `precio_hora` y `salario` con regresión lineal.",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "pp. 12–15/15 — Regresión lineal simple y múltiple"
+      },
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 2/4 — Dataset 1: precio_hora y salario"
+      }
+    ]
+  },
+  "simple-multiple": {
+    "title": "Simple, múltiple y OLS",
+    "content": "# Simple, múltiple y OLS\n\n`LinearRegression` facilita ajuste y predicción; `statsmodels.OLS` añade errores estándar, pruebas, intervalos y diagnósticos. Son vistas complementarias del mismo modelo lineal.\n\nCompara:\n\n- **Simple:** relación marginal de cada predictor con la respuesta.\n- **Múltiple:** contribución parcial condicionada a los demás.\n- **R²:** proporción de variabilidad explicada en la muestra.\n- **R² ajustado:** penaliza predictores sin aporte.\n- **p-valor/intervalo:** incertidumbre del coeficiente bajo supuestos.\n\nUna relación simple puede desaparecer al controlar por variables correlacionadas; eso debe interpretarse, no esconderse.",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "pp. 12–15/15 — Modelos simple, múltiple y resumen OLS"
+      }
+    ]
+  },
+  "ols-reading": {
+    "title": "Leer críticamente un OLS",
+    "content": "# Leer críticamente un OLS\n\nLee el resumen en capas:\n\n1. **R² y R² ajustado:** capacidad descriptiva.\n2. **Prueba F:** evidencia conjunta de los predictores.\n3. **Coeficientes, intervalos y p-valores:** efectos parciales.\n4. **Residuos:** forma, independencia y varianza.\n5. **Número de condición:** posible multicolinealidad o problemas de escala.\n\nEn estudiantes, la prueba F tiene `p=0.471`, ningún predictor tiene `p<0.05` y el número de condición es `2.13e3`. El resumen no respalda una historia de predicción útil; exige revisar variables, diseño y especificación.",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "pp. 14–15/15 — Resumen OLS y número de condición 2.13e3"
+      }
+    ]
+  },
+  "weak-r2": {
+    "title": "R² débil también es resultado",
+    "content": "# R² débil también es resultado\n\nEl modelo múltiple de calificación final obtiene `R²≈0.005` (`0.0045789`) y R² ajustado aproximadamente cero. Los modelos simples también están cerca de cero.\n\nConclusión defendible: **las variables incluidas no explican de forma útil la calificación final en este conjunto**. No corresponde destacar el signo de un coeficiente ni vender una predicción.\n\nPróximos pasos razonables:\n\n- revisar definición y calidad de las variables;\n- detectar duplicidad conceptual (`StudyHoursPerWeek` / `Study Hours`);\n- incorporar factores relevantes;\n- comprobar no linealidad e interacciones;\n- evaluar en test si se construye otro modelo.",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "pp. 13–15/15 — R² múltiple 0.005 y ningún predictor significativo"
+      }
+    ]
+  },
+  "count-outcomes": {
+    "title": "Resultados de conteo",
+    "content": "# Resultados de conteo\n\nUn conteo toma enteros no negativos: quejas por día, accidentes por mes, visitas por hora o bicicletas registradas. La regresión lineal puede producir negativos y supone una estructura de error inadecuada.\n\nPoisson modela la media esperada `λ` de eventos. Se diferencia de logística porque esta última responde a una salida binaria, mientras Poisson admite `0, 1, 2, …`.\n\nAntes de usarla, confirma:\n\n- unidad temporal o exposición comparable;\n- conteo realmente discreto;\n- independencia razonable;\n- relación de la media con los predictores;\n- dispersión compatible o una alternativa.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "pp. 2–4/12 — Datos de conteo y contraste con otros modelos"
+      }
+    ]
+  },
+  "equidispersion": {
+    "title": "Equidispersión y sobredispersión",
+    "content": "# Equidispersión y sobredispersión\n\nPoisson supone **equidispersión**: varianza aproximadamente igual a la media condicional. En datos reales es frecuente la sobredispersión, donde la varianza es mayor.\n\nConsecuencia: un Poisson convencional puede subestimar errores estándar y producir p-valores demasiado pequeños. Por eso una tabla llena de `p<0.001` no basta.\n\nDiagnóstico mínimo:\n\n- comparar media y varianza;\n- inspeccionar desviancia o Pearson χ² respecto a grados de libertad;\n- revisar residuos y dependencia temporal;\n- considerar errores robustos, quasi-Poisson o binomial negativa si procede.\n\nTambién debe revisarse exceso de ceros y exposición desigual.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "p. 6/12 — Equidispersión, sobredispersión y errores estándar"
+      }
+    ]
+  },
+  "log-link": {
+    "title": "GLM Poisson con enlace log",
+    "content": "# GLM Poisson con enlace log\n\nEl modelo es:\n\n`log(λᵢ) = β₀ + β₁xᵢ1 + … + βₚxᵢp`\n\nPor tanto, `λᵢ = exp(Xᵢβ)`, siempre positivo. `λᵢ` es el conteo esperado para la observación `i`; no tiene que ser entero aunque la respuesta observada sí lo sea.\n\nEl intercepto representa el logaritmo del conteo esperado cuando todos los predictores valen cero. Comprueba que ese punto sea interpretable; centrar variables puede hacerlo más útil.\n\nEl enlace log permite una combinación lineal en la escala del logaritmo y una curva exponencial en la escala del conteo.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "pp. 7–10/12 — Distribución, enlace log y media exponencial"
+      }
+    ]
+  },
+  "multiplicative-effects": {
+    "title": "Efectos multiplicativos",
+    "content": "# Efectos multiplicativos\n\nUn incremento unitario en `xj` multiplica el conteo esperado por `exp(βj)`, manteniendo los demás predictores constantes.\n\n- `β>0`: factor mayor que 1; aumenta el conteo esperado.\n- `β<0`: factor menor que 1; lo reduce.\n- Cambio porcentual aproximado: `(exp(β)−1)·100`.\n\nPor ejemplo, no digas que un coeficiente `1.7` suma 1.7 bicicletas: en la escala de respuesta implica multiplicar por `exp(1.7)` por una unidad, si esa unidad es interpretable. Con variables normalizadas como `atemp`, aclara qué representa una unidad.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "pp. 8–10/12 — Coeficientes, enlace log y conteo esperado"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 5–6/10 — Coeficiente de atemp y curva simple"
+      }
+    ]
+  },
+  "poisson-regressor": {
+    "title": "PoissonRegressor",
+    "content": "# PoissonRegressor\n\n`PoissonRegressor` ofrece `fit`, `predict` y `score`. Parámetros importantes:\n\n- `alpha`: regularización L2; el valor predeterminado es 1.0.\n- `max_iter`: aumentar si no converge.\n- `tol`: precisión del criterio de convergencia.\n\nRegistra versión, semilla, variables, transformación y partición. Evalúa en test y compara con un modelo de solo intercepto.\n\nPara inferencia, `statsmodels.GLM(..., family=Poisson())` expone errores estándar, intervalos y p-valores. Scikit-learn y statsmodels pueden diferir porque `PoissonRegressor` regulariza de forma predeterminada.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "pp. 11–12/12 — PoissonRegressor, parámetros y métodos"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 5–9/10 — Implementación predictiva y GLM"
+      }
+    ]
+  },
+  "d2-score": {
+    "title": "D² de desviancia",
+    "content": "# D² de desviancia\n\nEn los ejemplos, `PoissonRegressor.score(X, y)` se interpreta como **D²**, proporción de reducción de desviancia respecto a un modelo nulo de intercepto. Un valor mayor indica mejor ajuste relativo; no significa “porcentaje de conteos acertados”.\n\nExiste una discrepancia interna: la p. 12 de la clase teórica dice que `score` devuelve el negativo de la desviación media, mientras los ejemplos y el comportamiento usado en clase lo tratan como D². Para esta ruta, conserva la interpretación de los ejemplos y documenta la discrepancia.\n\nSiempre indica si D² proviene de train, validación o test.",
+    "sourceRefs": [
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "p. 12/12 — Descripción de score (discrepante con los ejemplos)"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "p. 5/10 — D² simple 0.368826"
+      },
+      {
+        "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
+        "locator": "p. 6/8 — D² de entrenamiento 0.528553"
+      }
+    ]
+  },
+  "bicycle-models": {
+    "title": "Bicicletas: modelo simple",
+    "content": "# Bicicletas: modelo simple\n\nEl primer conjunto contiene 731 días. La respuesta `cnt` es el total de alquileres y `atemp` la temperatura aparente normalizada.\n\nEl modelo simple obtiene:\n\n- coeficiente de `atemp`: `1.7022` en scikit-learn;\n- intercepto: `7.5676`;\n- D²: **0.368826**;\n- GLM: `atemp` con `p<0.001`.\n\nLa curva captura una tendencia creciente, pero queda variabilidad considerable. Interpreta D² como mejora sobre el modelo nulo, no como 36.9 % de predicciones exactas. La asociación no prueba que cambiar temperatura cause alquileres.",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 1–4/10 — Datos y exploración de alquileres"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 5–7/10 — Poisson simple, curva y GLM"
+      }
+    ]
+  },
+  "simple-multiple-bikes": {
+    "title": "Modelo múltiple y D²",
+    "content": "# Modelo múltiple y D²\n\nEl modelo múltiple incorpora clima, estación, año, mes, festivo, día semanal, jornada laboral y situación meteorológica. Reporta D² de entrenamiento **0.774602**, superior al modelo simple.\n\nLos coeficientes positivos incluyen `atemp`, `temp`, `season` y `yr`; `hum`, `windspeed`, `holiday` y `weathersit` son negativos en el ajuste mostrado.\n\nCautelas:\n\n- el D² reportado es de **train**;\n- `temp` y `atemp` pueden aportar colinealidad;\n- códigos categóricos no siempre deben tratarse como distancias lineales;\n- p-valores diminutos pueden agravarse por sobredispersión.\n\nEvalúa test, residuos y codificación antes de elegir el modelo.",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "p. 8/10 — Poisson múltiple y D² train 0.774602"
+      },
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "p. 9/10 — GLM múltiple y residuos"
+      }
+    ]
+  },
+  "temporal-glm": {
+    "title": "Ingeniería temporal y GLM",
+    "content": "# Ingeniería temporal y GLM\n\nEl segundo ejemplo contiene 214 días con temperaturas, precipitación y `BB_COUNT`. Se convierte `Date` a fecha y se extraen mes, día de semana y día del mes.\n\nEl modelo obtiene D² train **0.528553**. En el GLM, `HIGH_T`, `LOW_T`, `PRECIP`, mes y día semanal tienen `p<0.05`; día del mes tiene **p=0.584** y no aporta evidencia en ese ajuste.\n\nNo asumas que números de mes o día son efectos lineales continuos. Considera codificación categórica o cíclica, orden temporal del split y dependencia serial. Un split aleatorio puede mezclar futuro con pasado.",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
+        "locator": "pp. 1–2/8 — Datos, tipos y conversión de Date"
+      },
+      {
+        "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
+        "locator": "pp. 5–7/8 — Variables temporales, modelo, D² y GLM"
+      }
+    ]
+  },
+  "diagnostics": {
+    "title": "Inferencia, residuos y predicción",
+    "content": "# Inferencia, residuos y predicción\n\nLa evaluación de Poisson necesita varias evidencias:\n\n- **D² en test:** mejora predictiva sobre el nulo.\n- **Coeficientes e intervalos:** dirección, magnitud e incertidumbre.\n- **Residuos:** estructura, extremos y falta de ajuste.\n- **Real vs predicho:** desfases y periodos sistemáticamente mal representados.\n- **Dispersión:** validez de errores estándar y p-valores.\n\nEn ambos ejemplos de bicicletas, las predicciones siguen la tendencia general pero presentan diferencias grandes en días concretos. Ordena la comparación por fecha; un gráfico en orden aleatorio puede ocultar patrones temporales.\n\nNo cierres el análisis con una sola métrica.",
+    "sourceRefs": [
+      {
+        "label": "Clase 08 - CDD - Ejemplo 1.pdf",
+        "locator": "pp. 9–10/10 — GLM, residuos y valores reales vs predichos"
+      },
+      {
+        "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
+        "locator": "pp. 6–8/8 — D², GLM y serie real vs predicha"
+      }
+    ]
+  },
+  "dataset-one": {
+    "title": "Checkpoint: Dataset 1",
+    "content": "# Checkpoint: Dataset 1\n\nEn la tabla de asignación, **Campos Andrade, Anibal Josue** recibe Dataset 1 y Dataset 2. Dataset 1 contiene 4,725 registros de empleados.\n\nEntregables del Dataset 1:\n\n1. Estructura, tipos y naturaleza de variables.\n2. Gráficos de cuantitativas.\n3. Strip/enjambre y violín por `departamento_descripcion`.\n4. Cantidad y porcentaje de nulos.\n5. Atípicos y anomalías, distinguiendo regla estadística de error.\n6. Correlaciones pertinentes.\n7. Regresión lineal entre `precio_hora` y `salario`.\n\nDocumenta cada decisión de limpieza y evalúa el modelo fuera de muestra si se presenta como predictivo.",
+    "sourceRefs": [
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2"
+      },
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 2/4 — Dataset 1: empleados, EDA y regresión"
+      }
+    ]
+  },
+  "dataset-two": {
+    "title": "Checkpoint: Dataset 2",
+    "content": "# Checkpoint: Dataset 2\n\nDataset 2 contiene 10,000 transacciones de una cafetería durante 2023. La auditoría combina estructura, semántica y reglas del negocio.\n\nEntregables:\n\n1. Observaciones, variables, tipos y no nulos.\n2. Clasificación cuantitativa, cualitativa y temporal.\n3. Corrección de tipos.\n4. Distribuciones cuantitativas.\n5. Cantidad y porcentaje de faltantes.\n6. Categorías inválidas como `UNKNOWN` o `ERROR`.\n7. Verificar `Total Spent = Quantity × Price Per Unit` cuando los datos sean válidos.\n8. Strip/enjambre y violín por `Payment Method`.\n\nSepara inconsistencias lógicas de ausencia y conserva un registro de filas afectadas.",
+    "sourceRefs": [
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2"
+      },
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "p. 3/4 — Dataset 2: transacciones de cafetería"
+      }
+    ]
+  },
+  "reproducible-workflow": {
+    "title": "Flujo reproducible de extremo a extremo",
+    "content": "# Flujo reproducible de extremo a extremo\n\nUna entrega reproducible debe poder ejecutarse de inicio a fin sin correcciones manuales ocultas.\n\n### Estructura sugerida\n1. Pregunta, unidad de análisis y criterios de éxito.\n2. Carga con ruta configurable y copia inmutable de datos crudos.\n3. Auditoría de tipos, rangos, faltantes, duplicados e inconsistencias.\n4. EDA con tablas y gráficos interpretados.\n5. Reglas de limpieza encapsuladas y contabilizadas.\n6. Split antes de transformaciones aprendidas.\n7. Pipeline de preprocesamiento y modelo.\n8. Evaluación en test y diagnóstico.\n9. Conclusiones vinculadas a evidencia.\n10. Semillas, versiones y pasos de ejecución.\n\nEl notebook debe explicar **por qué**, no solo mostrar salidas.",
+    "sourceRefs": [
+      {
+        "label": "Clase 01 - S1 - CDD.pdf",
+        "locator": "pp. 7–12/31 — Ciclo completo de ciencia de datos"
+      },
+      {
+        "label": "Generalidades de la asignatura - CDD-1.pdf",
+        "locator": "p. 11/14 — Metodología práctica y trabajo autónomo"
+      },
+      {
+        "label": "CCD ACT1.pdf",
+        "locator": "pp. 2–3/4 — Actividades de Dataset 1 y Dataset 2"
+      }
+    ]
+  },
+  "limitations": {
+    "title": "Supuestos, límites y evidencia",
+    "content": "# Supuestos, límites y evidencia\n\nCierra el informe declarando qué no puede afirmar. Incluye:\n\n- mecanismo de faltantes desconocido y efecto de imputación;\n- reglas usadas para inválidos y atípicos;\n- `contamination` como proporción impuesta;\n- posible fuga o evaluación en muestra de ejemplos de clase;\n- incertidumbre de métricas y sensibilidad a particiones;\n- correlación sin causalidad;\n- R² bajo como evidencia de capacidad limitada;\n- equidispersión y posible sobredispersión en Poisson;\n- variables omitidas, periodo y población cubiertos.\n\nUna limitación concreta fortalece el análisis: delimita dónde la evidencia sí es útil y propone el siguiente dato o experimento necesario.",
+    "sourceRefs": [
+      {
+        "label": "Clase 06 - CCD - S3.pdf",
+        "locator": "p. 15/15 — R²=0.005, ningún p<0.05 y recomendación de revisión"
+      },
+      {
+        "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
+        "locator": "p. 6/12 — Limitaciones por sobredispersión e independencia"
+      },
+      {
+        "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
+        "locator": "pp. 15–17/17 — Ejemplo KNN con evaluación y escalado inconsistentes"
+      }
+    ]
+  }
+}

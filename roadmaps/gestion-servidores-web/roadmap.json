@@ -1,0 +1,1519 @@
+{
+  "schemaVersion": 1,
+  "slug": "gestion-servidores-web",
+  "title": "Gestión de Servidores Web",
+  "description": "Unidad 1 según las clases 2–10: analogía del restaurante, servidor vs contenedor, decisión propietario/libre, IIS con iisnode, Express como servicio, seguridad y el caso integrador.",
+  "canvas": {
+    "width": 1280,
+    "height": 4592,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 8,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -60,
+      "y": -190,
+      "zoom": 0.84
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": {
+        "x": 140,
+        "y": 16
+      },
+      "size": {
+        "width": 700,
+        "height": 52
+      },
+      "data": {
+        "text": "Gestión de Servidores Web",
+        "style": {
+          "fontSize": 28,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "subtitle-para",
+      "type": "paragraph",
+      "position": {
+        "x": 140,
+        "y": 80
+      },
+      "size": {
+        "width": 700,
+        "height": 84
+      },
+      "data": {
+        "text": "Unidad 1: del primer request HTTP al despliegue defendible. Estudia en el orden de los números: la columna izquierda es la ruta principal y las tarjetas claras de la derecha amplían el paso que tienen al lado.",
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "progress-legend",
+      "type": "legend",
+      "position": {
+        "x": 900,
+        "y": 16
+      },
+      "size": {
+        "width": 320,
+        "height": 212
+      },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          {
+            "label": "Sigue los números: 01, 02, 03…",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "Paso principal de la ruta",
+            "color": "#f9d95c"
+          },
+          {
+            "label": "Concepto de apoyo del paso",
+            "color": "#fff2a8"
+          },
+          {
+            "label": "20a / 20b: ramas paralelas, elige una",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "En aprendizaje",
+            "color": "#dad1fd"
+          },
+          {
+            "label": "Completado",
+            "color": "#cbd5e1"
+          },
+          {
+            "label": "Pulsa un bloque para el detalle",
+            "color": "#111827"
+          }
+        ]
+      }
+    },
+    {
+      "id": "client-server",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 280
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Cliente y servidor",
+        "order": "01",
+        "detail": "Quién pide (navegador, Postman) y quién escucha."
+      }
+    },
+    {
+      "id": "network-addressing",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 284
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "IP y puertos",
+        "order": "02",
+        "detail": "IP de la máquina y puerto del servicio (0–65535)."
+      }
+    },
+    {
+      "id": "process-runtime",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 284
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Proceso, terminal y VM",
+        "order": "03",
+        "detail": "El contenedor es un proceso; la VM es una máquina simulada."
+      }
+    },
+    {
+      "id": "http",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 416
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "HTTP",
+        "order": "04",
+        "detail": "Método, ruta, parámetros, cabeceras y código de estado."
+      }
+    },
+    {
+      "id": "request-flow",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 420
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Recorrido de una petición",
+        "order": "05",
+        "detail": "De http://miapp.com/saludo?nombre=Ana hasta “Hola, Ana”."
+      }
+    },
+    {
+      "id": "restaurant",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 552
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Mesero, cocina y chef",
+        "order": "06",
+        "detail": "Mesero = servidor web; cocina = contenedor; chef = servlet."
+      }
+    },
+    {
+      "id": "lifecycle",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 556
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "init · service · destroy",
+        "order": "07",
+        "detail": "Init carga una vez; service atiende cada petición; destroy libera."
+      }
+    },
+    {
+      "id": "web-container",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 688
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Qué es un contenedor web",
+        "order": "08",
+        "detail": "Recibe, decide el servlet, ejecuta y administra concurrencia."
+      }
+    },
+    {
+      "id": "servlet-handler",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 692
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Servlet / route handler",
+        "order": "09",
+        "detail": "Función que atiende una ruta: manejarSaludo o app.get."
+      }
+    },
+    {
+      "id": "typescript",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 692
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "TypeScript → JavaScript",
+        "order": "10",
+        "detail": "tsc traduce .ts a .js; Node e iisnode solo ejecutan JavaScript."
+      }
+    },
+    {
+      "id": "manual-container",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 824
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Mini-contenedor con http.createServer",
+        "order": "11",
+        "detail": "http.createServer + if (pathname); 404 si no hay ruta."
+      }
+    },
+    {
+      "id": "foundations-note",
+      "type": "paragraph",
+      "position": {
+        "x": 540,
+        "y": 828
+      },
+      "size": {
+        "width": 330,
+        "height": 120
+      },
+      "data": {
+        "text": "Regla práctica: si la respuesta cambia según quién pregunta o qué pregunta, necesitas contenedor. Hoy ensamblamos glosario, analogía del restaurante y el primer http.createServer. Cada if nuevo es una ruta nueva.",
+        "style": {
+          "fontSize": 13,
+          "textAlign": "left"
+        }
+      }
+    },
+    {
+      "id": "section-concepto",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 210
+      },
+      "size": {
+        "width": 1200,
+        "height": 778
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "01 · Concepto — Clase 2"
+      }
+    },
+    {
+      "id": "server-container",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1098
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Oficina de correos vs trámites",
+        "order": "12",
+        "detail": "Correos entrega el paquete; trámites produce un documento nuevo."
+      }
+    },
+    {
+      "id": "static-dynamic",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1234
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Estático vs. dinámico",
+        "order": "13",
+        "detail": "Archivo ya existente vs resultado calculado en el momento."
+      }
+    },
+    {
+      "id": "nginx-front",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1238
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Nginx delante de Express",
+        "order": "14",
+        "detail": "Nginx sirve estáticos y TLS; Express calcula la lógica."
+      }
+    },
+    {
+      "id": "static-dynamic-lab",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1370
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Lab: servidor-estatico vs dinámico",
+        "order": "15",
+        "detail": ":3001 siempre igual; :3002/hora-saludo cambia con la hora."
+      }
+    },
+    {
+      "id": "roles-note",
+      "type": "paragraph",
+      "position": {
+        "x": 540,
+        "y": 1374
+      },
+      "size": {
+        "width": 330,
+        "height": 120
+      },
+      "data": {
+        "text": "En la Clase 2 un solo proceso mezclaba ambos roles a propósito. Hoy separamos el archivo que ya existe (servidor web) del resultado que se calcula en el momento (contenedor). El laboratorio usa :3001 estático y :3002 dinámico.",
+        "style": {
+          "fontSize": 13
+        }
+      }
+    },
+    {
+      "id": "section-roles",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 1028
+      },
+      "size": {
+        "width": 1200,
+        "height": 506
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "02 · Servidor vs contenedor — Clase 3"
+      }
+    },
+    {
+      "id": "sla",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1644
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "SLA y soporte contractual",
+        "order": "16",
+        "detail": "Compromiso contractual de tiempo de respuesta; bancos y hospitales."
+      }
+    },
+    {
+      "id": "proprietary",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1648
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "IIS, NGINX Plus, Citrix",
+        "order": "17",
+        "detail": "Licencia, SLA y menos libertad: IIS, NGINX Plus, Citrix ADC."
+      }
+    },
+    {
+      "id": "libre",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 1648
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Node, Apache, PHP-FPM",
+        "order": "18",
+        "detail": "Sin licencia, código auditable: Node/Express, Apache, PHP-FPM."
+      }
+    },
+    {
+      "id": "decision-label",
+      "type": "label",
+      "position": {
+        "x": 450,
+        "y": 1786
+      },
+      "size": {
+        "width": 380,
+        "height": 26
+      },
+      "data": {
+        "text": "Paso 19 · elige tu rama: 20a o 20b",
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "technology-choice",
+      "type": "topic",
+      "position": {
+        "x": 450,
+        "y": 1820
+      },
+      "size": {
+        "width": 380,
+        "height": 100
+      },
+      "data": {
+        "label": "En este módulo: IIS y Express",
+        "order": "19",
+        "detail": "Este módulo practica IIS en Windows Server y Express en TS."
+      }
+    },
+    {
+      "id": "fork-note",
+      "type": "paragraph",
+      "position": {
+        "x": 330,
+        "y": 1938
+      },
+      "size": {
+        "width": 620,
+        "height": 70
+      },
+      "data": {
+        "text": "Ninguno es mejor en abstracto: SLA, presupuesto y regulación deciden. Haz una rama completa (20a…26a o 20b…26b) y sigue en el paso 27; ambas llegan a las mismas responsabilidades de seguridad.",
+        "style": {
+          "fontSize": 13,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "section-decision",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 1574
+      },
+      "size": {
+        "width": 1200,
+        "height": 490
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "03 · Propietario o libre — Clase 4"
+      }
+    },
+    {
+      "id": "iis-environment",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2174
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Windows Server + VirtualBox",
+        "order": "20a",
+        "detail": "IIS ya viene en Windows Server, apagado; se practica en VirtualBox."
+      }
+    },
+    {
+      "id": "iis-install",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2298
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Rol Web Server y W3SVC",
+        "order": "21a",
+        "detail": "Rol Web Server por GUI o PowerShell; W3SVC debe estar Running."
+      }
+    },
+    {
+      "id": "iis-site",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2422
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Sitio IIS (el local)",
+        "order": "22a",
+        "detail": "Local en el centro comercial: nombre, C:\\inetpub\\miapp y puerto."
+      }
+    },
+    {
+      "id": "iis-bindings",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2546
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Binding y documento",
+        "order": "23a",
+        "detail": "Binding = IP + puerto + host; documento por defecto en la raíz."
+      }
+    },
+    {
+      "id": "iis-pool",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2670
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Application Pool aislado",
+        "order": "24a",
+        "detail": "Caja registradora propia; si un sitio cae, el otro sigue."
+      }
+    },
+    {
+      "id": "iis-node",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2794
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "iisnode + web.config",
+        "order": "25a",
+        "detail": "Módulo que ejecuta app.js; web.config conecta el handler."
+      }
+    },
+    {
+      "id": "iis-deploy",
+      "type": "topic",
+      "position": {
+        "x": 105,
+        "y": 2918
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Probar y errores 500.19 / 500.1002",
+        "order": "26a",
+        "detail": "500.19 desbloquea handlers; 500.1002 es permisos o logging."
+      }
+    },
+    {
+      "id": "node-toolchain",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2174
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Node.js, npm y TypeScript",
+        "order": "20b",
+        "detail": "apt/brew/winget + npm -g typescript; el mismo TS en tres SO."
+      }
+    },
+    {
+      "id": "appweb-user",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2298
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Usuario de servicio appweb",
+        "order": "21b",
+        "detail": "Nunca como root; useradd appweb limita el daño de una falla."
+      }
+    },
+    {
+      "id": "express-app",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2422
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Proyecto Express en TypeScript",
+        "order": "22b",
+        "detail": "/opt/miapp o C:\\miapp; express() reemplaza createServer."
+      }
+    },
+    {
+      "id": "service-branch",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2546
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "systemd, launchd o NSSM",
+        "order": "23b",
+        "detail": "systemd, launchd o NSSM mantienen el proceso sin terminal."
+      }
+    },
+    {
+      "id": "service-check",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2670
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Arrancar y verificar el servicio",
+        "order": "24b",
+        "detail": "enable --now / launchctl / nssm start y localhost:3000 responde."
+      }
+    },
+    {
+      "id": "dynamic-routes",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2794
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "app.get: /saludo, /info, /cotizacion",
+        "order": "25b",
+        "detail": "/saludo, /info y /cotizacion con IVA 13 % y req.query."
+      }
+    },
+    {
+      "id": "route-lab",
+      "type": "topic",
+      "position": {
+        "x": 725,
+        "y": 2918
+      },
+      "size": {
+        "width": 450,
+        "height": 100
+      },
+      "data": {
+        "label": "Validar, recompilar, reiniciar",
+        "order": "26b",
+        "detail": "400 si el monto es inválido; tsc + restart después de cada cambio."
+      }
+    },
+    {
+      "id": "section-iis",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2104
+      },
+      "size": {
+        "width": 580,
+        "height": 954
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "04a · IIS / Windows Server — Clases 5–6"
+      }
+    },
+    {
+      "id": "section-express",
+      "type": "section",
+      "position": {
+        "x": 660,
+        "y": 2104
+      },
+      "size": {
+        "width": 580,
+        "height": 954
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "04b · Node.js + Express — Clases 7–8"
+      }
+    },
+    {
+      "id": "convergence-note",
+      "type": "paragraph",
+      "position": {
+        "x": 540,
+        "y": 3268
+      },
+      "size": {
+        "width": 330,
+        "height": 130
+      },
+      "data": {
+        "text": "Termines por 26a o por 26b, el camino se une aquí. A partir del paso 27 las responsabilidades son las mismas: validar entradas, no filtrar el stack, limitar privilegios y verificar el servicio.",
+        "style": {
+          "fontSize": 13,
+          "textAlign": "left"
+        }
+      }
+    },
+    {
+      "id": "attacker-mindset",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3264
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Pensar como atacante",
+        "order": "27",
+        "detail": "Si yo quisiera romper esto, ¿por dónde entraría?"
+      }
+    },
+    {
+      "id": "input-validation",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3400
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Validar siempre la entrada",
+        "order": "28",
+        "detail": "Rechazar vacío, NaN, negativo y monto > 1 000 000."
+      }
+    },
+    {
+      "id": "safe-errors",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3536
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "No exponer err.stack",
+        "order": "29",
+        "detail": "Stack al log del admin; al usuario solo “error interno”."
+      }
+    },
+    {
+      "id": "helmet-rate-limit",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3672
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Helmet y rate limiting",
+        "order": "30",
+        "detail": "Cabeceras automáticas y tope de peticiones por minuto."
+      }
+    },
+    {
+      "id": "least-privilege",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3808
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Menor privilegio",
+        "order": "31",
+        "detail": "appweb y Application Pool: solo el acceso mínimo."
+      }
+    },
+    {
+      "id": "iis-hardening",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3812
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Hardening de IIS",
+        "order": "32",
+        "detail": "Sin directory browsing, customErrors, HTTPS y Windows Update."
+      }
+    },
+    {
+      "id": "security-checkpoint",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3944
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Checkpoint: aplicar y justificar",
+        "order": "33",
+        "detail": "Helmet, 20 req/min, errores seguros y justificar cada medida."
+      }
+    },
+    {
+      "id": "section-security",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 3194
+      },
+      "size": {
+        "width": 1200,
+        "height": 886
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "05 · Seguridad — Clase 9"
+      }
+    },
+    {
+      "id": "integration",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4190
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Caso: bienvenida y cotización",
+        "order": "34",
+        "detail": "/bienvenida y /cotizacion en Express; IIS queda como respaldo."
+      }
+    },
+    {
+      "id": "mastery",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4326
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Explicar, desplegar, defender",
+        "order": "35",
+        "detail": "Rúbrica 10 pts y comparativa propia de qué costó más configurar."
+      }
+    },
+    {
+      "id": "parcial-scope",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4330
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Qué entra al Parcial 1",
+        "order": "36",
+        "detail": "Clases 2–9 en el teórico; Laboratorio 1 es la práctica."
+      }
+    },
+    {
+      "id": "materials-links",
+      "type": "linkGroup",
+      "position": {
+        "x": 910,
+        "y": 4190
+      },
+      "size": {
+        "width": 300,
+        "height": 180
+      },
+      "data": {
+        "title": "Referencias",
+        "links": [
+          {
+            "label": "MDN · HTTP",
+            "url": "https://developer.mozilla.org/es/docs/Web/HTTP"
+          },
+          {
+            "label": "Microsoft Learn · IIS",
+            "url": "https://learn.microsoft.com/iis"
+          },
+          {
+            "label": "Express · Documentación",
+            "url": "https://expressjs.com/es/"
+          },
+          {
+            "label": "OWASP · Top Ten",
+            "url": "https://owasp.org/www-project-top-ten/"
+          }
+        ]
+      }
+    },
+    {
+      "id": "docs-button",
+      "type": "button",
+      "position": {
+        "x": 540,
+        "y": 4446
+      },
+      "size": {
+        "width": 260,
+        "height": 46
+      },
+      "data": {
+        "label": "Repasar HTTP en MDN",
+        "href": "https://developer.mozilla.org/es/docs/Web/HTTP",
+        "target": "_blank"
+      }
+    },
+    {
+      "id": "section-integration",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 4120
+      },
+      "size": {
+        "width": 1200,
+        "height": 412
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "06 · Integración — Clase 10"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-node-subtitle-para",
+      "source": "title-node",
+      "target": "subtitle-para",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-client-server-network-addressing",
+      "source": "client-server",
+      "target": "network-addressing",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-network-addressing-process-runtime",
+      "source": "network-addressing",
+      "target": "process-runtime",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-http-request-flow",
+      "source": "http",
+      "target": "request-flow",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-client-server-http",
+      "source": "client-server",
+      "target": "http",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-restaurant-lifecycle",
+      "source": "restaurant",
+      "target": "lifecycle",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-http-restaurant",
+      "source": "http",
+      "target": "restaurant",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-web-container-servlet-handler",
+      "source": "web-container",
+      "target": "servlet-handler",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-servlet-handler-typescript",
+      "source": "servlet-handler",
+      "target": "typescript",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-restaurant-web-container",
+      "source": "restaurant",
+      "target": "web-container",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-web-container-manual-container",
+      "source": "web-container",
+      "target": "manual-container",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-subtitle-para-client-server",
+      "source": "subtitle-para",
+      "target": "client-server",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-static-dynamic-nginx-front",
+      "source": "static-dynamic",
+      "target": "nginx-front",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-server-container-static-dynamic",
+      "source": "server-container",
+      "target": "static-dynamic",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-static-dynamic-static-dynamic-lab",
+      "source": "static-dynamic",
+      "target": "static-dynamic-lab",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-manual-container-server-container",
+      "source": "manual-container",
+      "target": "server-container",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-sla-proprietary",
+      "source": "sla",
+      "target": "proprietary",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-proprietary-libre",
+      "source": "proprietary",
+      "target": "libre",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-sla-technology-choice",
+      "source": "sla",
+      "target": "technology-choice",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-static-dynamic-lab-sla",
+      "source": "static-dynamic-lab",
+      "target": "sla",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-environment-iis-install",
+      "source": "iis-environment",
+      "target": "iis-install",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-install-iis-site",
+      "source": "iis-install",
+      "target": "iis-site",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-site-iis-bindings",
+      "source": "iis-site",
+      "target": "iis-bindings",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-bindings-iis-pool",
+      "source": "iis-bindings",
+      "target": "iis-pool",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-pool-iis-node",
+      "source": "iis-pool",
+      "target": "iis-node",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-node-iis-deploy",
+      "source": "iis-node",
+      "target": "iis-deploy",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-node-toolchain-appweb-user",
+      "source": "node-toolchain",
+      "target": "appweb-user",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-appweb-user-express-app",
+      "source": "appweb-user",
+      "target": "express-app",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-express-app-service-branch",
+      "source": "express-app",
+      "target": "service-branch",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-service-branch-service-check",
+      "source": "service-branch",
+      "target": "service-check",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-service-check-dynamic-routes",
+      "source": "service-check",
+      "target": "dynamic-routes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-dynamic-routes-route-lab",
+      "source": "dynamic-routes",
+      "target": "route-lab",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-technology-choice-iis-environment",
+      "source": "technology-choice",
+      "target": "iis-environment",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-technology-choice-node-toolchain",
+      "source": "technology-choice",
+      "target": "node-toolchain",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-attacker-mindset-input-validation",
+      "source": "attacker-mindset",
+      "target": "input-validation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-input-validation-safe-errors",
+      "source": "input-validation",
+      "target": "safe-errors",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-safe-errors-helmet-rate-limit",
+      "source": "safe-errors",
+      "target": "helmet-rate-limit",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-least-privilege-iis-hardening",
+      "source": "least-privilege",
+      "target": "iis-hardening",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-helmet-rate-limit-least-privilege",
+      "source": "helmet-rate-limit",
+      "target": "least-privilege",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-least-privilege-security-checkpoint",
+      "source": "least-privilege",
+      "target": "security-checkpoint",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-deploy-attacker-mindset",
+      "source": "iis-deploy",
+      "target": "attacker-mindset",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-route-lab-attacker-mindset",
+      "source": "route-lab",
+      "target": "attacker-mindset",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-hardening-security-checkpoint",
+      "source": "iis-hardening",
+      "target": "security-checkpoint",
+      "sourceHandle": "bottom",
+      "targetHandle": "right",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-mastery-parcial-scope",
+      "source": "mastery",
+      "target": "parcial-scope",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-integration-mastery",
+      "source": "integration",
+      "target": "mastery",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-security-checkpoint-integration",
+      "source": "security-checkpoint",
+      "target": "integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    }
+  ]
+}

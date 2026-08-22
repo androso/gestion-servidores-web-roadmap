@@ -1,0 +1,962 @@
+{
+  "schemaVersion": 1,
+  "slug": "ciencia-de-datos",
+  "title": "Ciencia de Datos",
+  "description": "Ruta actualmente impartida: fundamentos interdisciplinarios, EDA y calidad de datos, modelos predictivos, regresión de Poisson y aplicación reproducible a los Dataset 1 y 2 asignados.",
+  "canvas": {
+    "width": 1280,
+    "height": 3740,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 8,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -60,
+      "y": -190,
+      "zoom": 0.84
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": { "x": 140, "y": 16 },
+      "size": { "width": 700, "height": 52 },
+      "data": {
+        "text": "Ciencia de Datos",
+        "style": { "fontSize": 28, "textAlign": "center" }
+      }
+    },
+    {
+      "id": "subtitle-para",
+      "type": "paragraph",
+      "position": { "x": 140, "y": 80 },
+      "size": { "width": 700, "height": 84 },
+      "data": {
+        "text": "De una pregunta bien definida a un análisis reproducible: sigue los números por la columna izquierda y estudia cada apoyo claro de la derecha antes de bajar al siguiente paso.",
+        "style": { "fontSize": 14, "textAlign": "center" }
+      }
+    },
+    {
+      "id": "progress-legend",
+      "type": "legend",
+      "position": { "x": 900, "y": 16 },
+      "size": { "width": 320, "height": 212 },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          { "label": "Sigue los números: 01, 02, 03…", "color": "#fbfbf8" },
+          { "label": "Paso principal de la ruta", "color": "#f9d95c" },
+          { "label": "Concepto de apoyo del paso", "color": "#fff2a8" },
+          { "label": "La flecha indica qué estudiar después", "color": "#2563eb" },
+          { "label": "En aprendizaje", "color": "#dad1fd" },
+          { "label": "Completado", "color": "#cbd5e1" },
+          { "label": "Pulsa un bloque para el detalle", "color": "#111827" }
+        ]
+      }
+    },
+    {
+      "id": "data-science",
+      "type": "topic",
+      "position": { "x": 90, "y": 290 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Ciencia de datos",
+        "order": "01",
+        "detail": "Transformar datos en decisiones, no solo ejecutar herramientas."
+      }
+    },
+    {
+      "id": "interdisciplinary",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 294 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Tres pilares interdisciplinarios",
+        "order": "02",
+        "detail": "Estadística, computación y conocimiento del dominio."
+      }
+    },
+    {
+      "id": "lifecycle",
+      "type": "topic",
+      "position": { "x": 90, "y": 426 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Ciclo de ciencia de datos",
+        "order": "03",
+        "detail": "Definir, recolectar, preparar, analizar y comunicar."
+      }
+    },
+    {
+      "id": "problem-definition",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 430 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Pregunta, objetivo y alcance",
+        "order": "04",
+        "detail": "La pregunta determina datos, métrica y límites del análisis."
+      }
+    },
+    {
+      "id": "eda-workflow",
+      "type": "topic",
+      "position": { "x": 90, "y": 562 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Flujo de EDA",
+        "order": "05",
+        "detail": "Describir, corregir tipos, tratar faltantes y revisar atípicos."
+      }
+    },
+    {
+      "id": "data-types",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 566 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Tipos y naturaleza de variables",
+        "order": "06",
+        "detail": "Numéricas, categóricas y temporales deben codificarse con sentido."
+      }
+    },
+    {
+      "id": "section-foundations",
+      "type": "section",
+      "position": { "x": 40, "y": 240 },
+      "size": { "width": 1200, "height": 460 },
+      "zIndex": -1,
+      "data": { "label": "01 · Fundamentos y ciclo de trabajo" }
+    },
+    {
+      "id": "missing-values",
+      "type": "topic",
+      "position": { "x": 90, "y": 800 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Faltantes y calidad semántica",
+        "order": "07",
+        "detail": "NaN visibles y valores imposibles requieren diagnósticos distintos."
+      }
+    },
+    {
+      "id": "semantic-invalids",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 804 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Ceros e inválidos semánticos",
+        "order": "08",
+        "detail": "Un cero puede ser válido técnicamente e imposible en el dominio."
+      }
+    },
+    {
+      "id": "missing-strategy",
+      "type": "topic",
+      "position": { "x": 90, "y": 936 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Decidir el tratamiento",
+        "order": "09",
+        "detail": "Medir patrón y proporción antes de modificar observaciones."
+      }
+    },
+    {
+      "id": "impute-delete",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 940 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Imputar, eliminar o conservar",
+        "order": "10",
+        "detail": "Media, mediana, moda o eliminación implican supuestos y sesgo."
+      }
+    },
+    {
+      "id": "distribution-plots",
+      "type": "topic",
+      "position": { "x": 90, "y": 1072 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Visualizar distribuciones",
+        "order": "11",
+        "detail": "Combinar gráficos: ninguno resume por sí solo forma y extremos."
+      }
+    },
+    {
+      "id": "comparative-plots",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1076 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Histograma, caja, strip y violín",
+        "order": "12",
+        "detail": "Forma global, cuartiles, puntos individuales y densidad por grupo."
+      }
+    },
+    {
+      "id": "outlier-detection",
+      "type": "topic",
+      "position": { "x": 90, "y": 1208 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Detectar valores atípicos",
+        "order": "13",
+        "detail": "Una bandera estadística no demuestra que el dato sea un error."
+      }
+    },
+    {
+      "id": "iqr-z-mad",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1212 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "IQR, z y z modificada/MAD",
+        "order": "14",
+        "detail": "Elegir método según distribución, tamaño y sensibilidad a extremos."
+      }
+    },
+    {
+      "id": "isolation-forest",
+      "type": "topic",
+      "position": { "x": 90, "y": 1344 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Isolation Forest",
+        "order": "15",
+        "detail": "Aísla observaciones multivariadas inusuales mediante particiones."
+      }
+    },
+    {
+      "id": "contamination-caveat",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1348 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Cuidado con contamination",
+        "order": "16",
+        "detail": "Fijar 0.05 fuerza cerca de 5 % de anomalías; no las descubre."
+      }
+    },
+    {
+      "id": "correlation",
+      "type": "topic",
+      "position": { "x": 90, "y": 1480 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Correlación con criterio",
+        "order": "17",
+        "detail": "Asociación orienta el análisis, pero no establece causalidad."
+      }
+    },
+    {
+      "id": "correlation-family",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1484 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Pearson, Spearman y Kendall",
+        "order": "18",
+        "detail": "Linealidad frente a rangos, monotonía y muestras pequeñas."
+      }
+    },
+    {
+      "id": "section-quality",
+      "type": "section",
+      "position": { "x": 40, "y": 730 },
+      "size": { "width": 1200, "height": 920 },
+      "zIndex": -1,
+      "data": { "label": "02 · Calidad, exploración y relaciones" }
+    },
+    {
+      "id": "evaluation-discipline",
+      "type": "topic",
+      "position": { "x": 90, "y": 1750 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Disciplina de evaluación",
+        "order": "19",
+        "detail": "Separar entrenamiento y prueba antes de aprender transformaciones."
+      }
+    },
+    {
+      "id": "split-standardize",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1754 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Split, escalado y métricas",
+        "order": "20",
+        "detail": "Ajustar el escalador solo en train y evaluar solo en datos no vistos."
+      }
+    },
+    {
+      "id": "knn",
+      "type": "topic",
+      "position": { "x": 90, "y": 1886 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Clasificación KNN",
+        "order": "21",
+        "detail": "La clase depende de vecinos y de una distancia comparable."
+      }
+    },
+    {
+      "id": "knn-cv",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1890 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Validación cruzada y elección de k",
+        "order": "22",
+        "detail": "El ejemplo reporta k=21, pero su evaluación mezcla escalas y train."
+      }
+    },
+    {
+      "id": "logistic-regression",
+      "type": "topic",
+      "position": { "x": 90, "y": 2022 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Regresión logística",
+        "order": "23",
+        "detail": "Modela log-odds y probabilidad de una respuesta binaria."
+      }
+    },
+    {
+      "id": "logistic-significance",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2026 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Coeficientes y significancia",
+        "order": "24",
+        "detail": "Separar importancia predictiva, efecto estimado y evidencia estadística."
+      }
+    },
+    {
+      "id": "linear-regression",
+      "type": "topic",
+      "position": { "x": 90, "y": 2158 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Regresión lineal",
+        "order": "25",
+        "detail": "Estima una respuesta continua como combinación de predictores."
+      }
+    },
+    {
+      "id": "simple-multiple",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2162 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Simple, múltiple y OLS",
+        "order": "26",
+        "detail": "Comparar ajuste, coeficientes, incertidumbre y supuestos."
+      }
+    },
+    {
+      "id": "ols-reading",
+      "type": "topic",
+      "position": { "x": 90, "y": 2294 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Leer críticamente un OLS",
+        "order": "27",
+        "detail": "R², p-valores y condición numérica pueden invalidar una narrativa."
+      }
+    },
+    {
+      "id": "weak-r2",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2298 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "R² débil también es resultado",
+        "order": "28",
+        "detail": "R²=0.005 y ningún p<0.05: no prometer capacidad inexistente."
+      }
+    },
+    {
+      "id": "section-predictive",
+      "type": "section",
+      "position": { "x": 40, "y": 1680 },
+      "size": { "width": 1200, "height": 770 },
+      "zIndex": -1,
+      "data": { "label": "03 · Modelos predictivos y evaluación honesta" }
+    },
+    {
+      "id": "count-outcomes",
+      "type": "topic",
+      "position": { "x": 90, "y": 2550 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Resultados de conteo",
+        "order": "29",
+        "detail": "Enteros no negativos requieren un modelo acorde a su distribución."
+      }
+    },
+    {
+      "id": "equidispersion",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2554 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Equidispersión y sobredispersión",
+        "order": "30",
+        "detail": "Si varianza supera la media, Poisson puede subestimar incertidumbre."
+      }
+    },
+    {
+      "id": "log-link",
+      "type": "topic",
+      "position": { "x": 90, "y": 2686 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "GLM Poisson con enlace log",
+        "order": "31",
+        "detail": "log(λ)=Xβ garantiza una media esperada positiva."
+      }
+    },
+    {
+      "id": "multiplicative-effects",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2690 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Efectos multiplicativos",
+        "order": "32",
+        "detail": "exp(β) es la razón del conteo esperado por una unidad."
+      }
+    },
+    {
+      "id": "poisson-regressor",
+      "type": "topic",
+      "position": { "x": 90, "y": 2822 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "PoissonRegressor",
+        "order": "33",
+        "detail": "Ajustar, predecir y controlar regularización y convergencia."
+      }
+    },
+    {
+      "id": "d2-score",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2826 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "D² de desviancia",
+        "order": "34",
+        "detail": "La práctica usa score como D²; una diapositiva lo describe mal."
+      }
+    },
+    {
+      "id": "bicycle-models",
+      "type": "topic",
+      "position": { "x": 90, "y": 2958 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Bicicletas: modelo simple",
+        "order": "35",
+        "detail": "atemp predice cnt con D²=0.368826 y tendencia positiva."
+      }
+    },
+    {
+      "id": "simple-multiple-bikes",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 2962 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Modelo múltiple y D²",
+        "order": "36",
+        "detail": "Más predictores elevan D² train a 0.774602; falta juzgar test."
+      }
+    },
+    {
+      "id": "temporal-glm",
+      "type": "topic",
+      "position": { "x": 90, "y": 3094 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Ingeniería temporal y GLM",
+        "order": "37",
+        "detail": "Extraer mes, día semanal y día del mes antes de modelar."
+      }
+    },
+    {
+      "id": "diagnostics",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 3098 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Inferencia, residuos y predicción",
+        "order": "38",
+        "detail": "Contrastar p-valores, residuos, D² y serie real frente a predicha."
+      }
+    },
+    {
+      "id": "section-poisson",
+      "type": "section",
+      "position": { "x": 40, "y": 2480 },
+      "size": { "width": 1200, "height": 770 },
+      "zIndex": -1,
+      "data": { "label": "04 · Regresión de Poisson para conteos" }
+    },
+    {
+      "id": "dataset-one",
+      "type": "topic",
+      "position": { "x": 90, "y": 3350 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Checkpoint: Dataset 1",
+        "order": "39",
+        "detail": "Empleados: EDA, anomalías, correlación y salario vs precio_hora."
+      }
+    },
+    {
+      "id": "dataset-two",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 3354 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Checkpoint: Dataset 2",
+        "order": "40",
+        "detail": "Cafetería: calidad, categorías inválidas y consistencia de totales."
+      }
+    },
+    {
+      "id": "reproducible-workflow",
+      "type": "topic",
+      "position": { "x": 90, "y": 3486 },
+      "size": { "width": 380, "height": 96 },
+      "data": {
+        "label": "Flujo reproducible de extremo a extremo",
+        "order": "41",
+        "detail": "Pregunta, auditoría, EDA, modelo, evaluación y reporte ejecutable."
+      }
+    },
+    {
+      "id": "limitations",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 3490 },
+      "size": { "width": 330, "height": 88 },
+      "data": {
+        "label": "Supuestos, límites y evidencia",
+        "order": "42",
+        "detail": "Cerrar declarando sesgos, fuga, incertidumbre y próximos pasos."
+      }
+    },
+    {
+      "id": "section-applied",
+      "type": "section",
+      "position": { "x": 40, "y": 3280 },
+      "size": { "width": 1200, "height": 410 },
+      "zIndex": -1,
+      "data": { "label": "05 · Checkpoint aplicado de Anibal · Dataset 1 + Dataset 2" }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-subtitle",
+      "source": "title-node",
+      "target": "subtitle-para",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-subtitle-data-science",
+      "source": "subtitle-para",
+      "target": "data-science",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-data-science-interdisciplinary",
+      "source": "data-science",
+      "target": "interdisciplinary",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-data-science-lifecycle",
+      "source": "data-science",
+      "target": "lifecycle",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lifecycle-problem-definition",
+      "source": "lifecycle",
+      "target": "problem-definition",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lifecycle-eda-workflow",
+      "source": "lifecycle",
+      "target": "eda-workflow",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-eda-workflow-data-types",
+      "source": "eda-workflow",
+      "target": "data-types",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-eda-workflow-missing-values",
+      "source": "eda-workflow",
+      "target": "missing-values",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-missing-values-semantic-invalids",
+      "source": "missing-values",
+      "target": "semantic-invalids",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-missing-values-missing-strategy",
+      "source": "missing-values",
+      "target": "missing-strategy",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-missing-strategy-impute-delete",
+      "source": "missing-strategy",
+      "target": "impute-delete",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-missing-strategy-distribution-plots",
+      "source": "missing-strategy",
+      "target": "distribution-plots",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-distribution-plots-comparative-plots",
+      "source": "distribution-plots",
+      "target": "comparative-plots",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-distribution-plots-outlier-detection",
+      "source": "distribution-plots",
+      "target": "outlier-detection",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-outlier-detection-iqr-z-mad",
+      "source": "outlier-detection",
+      "target": "iqr-z-mad",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-outlier-detection-isolation-forest",
+      "source": "outlier-detection",
+      "target": "isolation-forest",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-isolation-forest-contamination-caveat",
+      "source": "isolation-forest",
+      "target": "contamination-caveat",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-isolation-forest-correlation",
+      "source": "isolation-forest",
+      "target": "correlation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-correlation-correlation-family",
+      "source": "correlation",
+      "target": "correlation-family",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-correlation-evaluation-discipline",
+      "source": "correlation",
+      "target": "evaluation-discipline",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-evaluation-discipline-split-standardize",
+      "source": "evaluation-discipline",
+      "target": "split-standardize",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-evaluation-discipline-knn",
+      "source": "evaluation-discipline",
+      "target": "knn",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-knn-knn-cv",
+      "source": "knn",
+      "target": "knn-cv",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-knn-logistic-regression",
+      "source": "knn",
+      "target": "logistic-regression",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-logistic-regression-logistic-significance",
+      "source": "logistic-regression",
+      "target": "logistic-significance",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-logistic-regression-linear-regression",
+      "source": "logistic-regression",
+      "target": "linear-regression",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-linear-regression-simple-multiple",
+      "source": "linear-regression",
+      "target": "simple-multiple",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-linear-regression-ols-reading",
+      "source": "linear-regression",
+      "target": "ols-reading",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-ols-reading-weak-r2",
+      "source": "ols-reading",
+      "target": "weak-r2",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-ols-reading-count-outcomes",
+      "source": "ols-reading",
+      "target": "count-outcomes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-count-outcomes-equidispersion",
+      "source": "count-outcomes",
+      "target": "equidispersion",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-count-outcomes-log-link",
+      "source": "count-outcomes",
+      "target": "log-link",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-log-link-multiplicative-effects",
+      "source": "log-link",
+      "target": "multiplicative-effects",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-log-link-poisson-regressor",
+      "source": "log-link",
+      "target": "poisson-regressor",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-poisson-regressor-d2-score",
+      "source": "poisson-regressor",
+      "target": "d2-score",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-poisson-regressor-bicycle-models",
+      "source": "poisson-regressor",
+      "target": "bicycle-models",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-bicycle-models-simple-multiple-bikes",
+      "source": "bicycle-models",
+      "target": "simple-multiple-bikes",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-bicycle-models-temporal-glm",
+      "source": "bicycle-models",
+      "target": "temporal-glm",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-temporal-glm-diagnostics",
+      "source": "temporal-glm",
+      "target": "diagnostics",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-temporal-glm-dataset-one",
+      "source": "temporal-glm",
+      "target": "dataset-one",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-dataset-one-dataset-two",
+      "source": "dataset-one",
+      "target": "dataset-two",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-dataset-one-reproducible-workflow",
+      "source": "dataset-one",
+      "target": "reproducible-workflow",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-reproducible-workflow-limitations",
+      "source": "reproducible-workflow",
+      "target": "limitations",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    }
+  ]
+}

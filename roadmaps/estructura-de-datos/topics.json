@@ -1,0 +1,146 @@
+{
+  "environment": {
+    "title": "Preparar el entorno",
+    "content": "# Preparar el entorno\n\nLa ruta comienza con un entorno reproducible: Python 3.12 o superior y VS Code. Antes de estudiar estructuras, confirma que puedes crear y ejecutar un archivo `.py`.\n\n### Evidencia\n- Python responde desde la terminal.\n- VS Code abre y ejecuta un script.\n- Conservas los ejercicios en una carpeta de trabajo.",
+    "sourceRefs": [
+      { "label": "Clase 1 - 14 de julio 2026", "locator": "Competencias a Desarrollar — Instalación de herramientas de Python y el IDE VSCode." }
+    ]
+  },
+  "python-vscode": {
+    "title": "Python y VS Code",
+    "content": "# Python y VS Code\n\nLa instalación no es el objetivo final, sino el requisito para experimentar. Ejecuta una instrucción sencilla, observa la salida y corrige cualquier problema del intérprete antes de continuar.\n\nLa Clase 2 exige finalizar la instalación; por eso este apoyo cierra la preparación técnica.",
+    "sourceRefs": [
+      { "label": "Clase 2 - 16 de julio 2026", "locator": "Detalles de la Sesión — Finalizaremos la instalación de las herramientas de trabajo a utilizar en esta materia." }
+    ]
+  },
+  "basic-types": {
+    "title": "Tipos de datos básicos",
+    "content": "# Tipos de datos básicos\n\nPython representa valores básicos con tipos como `int`, `float`, `str` y `bool`. El tipo determina qué significa el valor y qué operaciones tienen sentido.\n\n### Comprueba\n- `type(7)` y `type(7.0)` no producen el mismo resultado.\n- Un texto y un número requieren operaciones distintas.\n- Un booleano expresa una condición verdadera o falsa.",
+    "sourceRefs": [
+      { "label": "Clase 3 - 21 de julio 2026", "locator": "Indicaciones Generales — Explicar rangos, int, float, str, bool." }
+    ]
+  },
+  "primitive-structured": {
+    "title": "Primitivos y estructurados",
+    "content": "# Primitivos y estructurados\n\nUn dato básico representa un valor; una estructura reúne varios valores relacionados. Esta diferencia prepara el paso desde `int`, `float`, `str` y `bool` hacia listas, tuplas y conjuntos.\n\nEn la práctica debes observar no solo el contenido, sino también su representación y comportamiento al intentar modificarlo.",
+    "sourceRefs": [
+      { "label": "Práctica 1 — Tipos de Datos", "locator": "Objetivo de la Práctica — Diferenciar la representación en memoria y comportamiento de los tipos de datos primitivos y estructurados." }
+    ]
+  },
+  "ranges": {
+    "title": "Rangos y límites",
+    "content": "# Rangos y límites\n\nLos límites importan al almacenar información y al diseñar bases de datos. No basta con decir “es un número”: hay que considerar qué valores necesita representar el sistema y qué errores pueden aparecer.\n\nLa clase conecta los rangos con `int`, `float`, `str` y `bool`, sin exigir una tabla inventada de tamaños.",
+    "sourceRefs": [
+      { "label": "Clase 3 - 21 de julio 2026", "locator": "Tema: Rangos de tipos de datos" },
+      { "label": "Clase 3 - 21 de julio 2026", "locator": "Competencias a Desarrollar — Comprender los rangos de cada tipo de dato en Python y en computadoras." }
+    ]
+  },
+  "select-basic-type": {
+    "title": "Elegir el tipo adecuado",
+    "content": "# Elegir el tipo adecuado\n\nSelecciona el tipo según el significado del dato que entra al sistema. Una edad, un precio, un nombre y una condición no deben modelarse de la misma manera.\n\n### Preguntas guía\n1. ¿Es texto, número o condición?\n2. ¿Qué valores válidos necesita admitir?\n3. ¿La representación elegida evita conversiones y errores innecesarios?",
+    "sourceRefs": [
+      { "label": "Clase 4 - 23-07-2026", "locator": "Competencias a Desarrollar — Seleccionar los tipos de datos ideal para el ingreso de datos a sistema." }
+    ]
+  },
+  "strings": {
+    "title": "Cadenas de texto",
+    "content": "# Cadenas de texto\n\n`str` representa texto. Practica la lectura de posiciones, el recorrido y la construcción de nuevos textos sin asumir que una cadena se modifica como una lista.\n\nEl archivo de ejercicios archivado contiene ejemplos de saludo, concatenación, longitud, mayúsculas y acceso por índice.",
+    "sourceRefs": [
+      { "label": "Clase 3 - 21 de julio 2026", "locator": "Actividades y Tareas — Realizar la siguiente guía de ejercicios: ejercicios_String.py" }
+    ]
+  },
+  "string-practice": {
+    "title": "Ejercicios de String",
+    "content": "# Ejercicios de String\n\nEjecuta cada bloque de `ejercicios_String.py`, predice la salida y después compárala con el resultado real.\n\n### Enfoque\n- Concatenar nombre y saludo.\n- Consultar longitud.\n- Convertir a mayúsculas.\n- Acceder a caracteres por índice.\n\nNo agregues operaciones que el material no presenta como requisito.",
+    "sourceRefs": [
+      { "label": "Material — ejercicios_String.py", "locator": "Ejemplos 1–5: saludo, concatenación, len, upper e índice" }
+    ]
+  },
+  "structured-data": {
+    "title": "Datos estructurados",
+    "content": "# Datos estructurados\n\nUna estructura permite representar varios datos como una unidad de trabajo. El curso introduce esta idea antes de pasar a listas y luego contrastarla con tuplas y conjuntos.\n\nEl objetivo es elegir una forma que refleje el problema, no acumular valores sin criterio.",
+    "sourceRefs": [
+      { "label": "Clase 4 - 23-07-2026", "locator": "Tema: Introducción a Datos estructurados" }
+    ]
+  },
+  "memory-mutability": {
+    "title": "Memoria y mutabilidad",
+    "content": "# Memoria y mutabilidad\n\nLa práctica pide inspeccionar identificadores de memoria y realizar pruebas de mutabilidad. Observa qué ocurre antes y después de intentar cambiar un valor o una colección.\n\nRegistra el código, la salida y una explicación breve. La evidencia debe mostrar el comportamiento observado, no solo una definición.",
+    "sourceRefs": [
+      { "label": "Práctica 1 — Tipos de Datos", "locator": "Objetivo de la Práctica — inspección de identificadores de memoria y pruebas de mutabilidad en Python." }
+    ]
+  },
+  "lists": {
+    "title": "Listas",
+    "content": "# Listas\n\nUna lista agrupa elementos en una secuencia ordenada y puede modificarse durante la ejecución. Es apropiada cuando el programa necesita conservar una colección y actualizarla.\n\nPractica crear una lista, consultar elementos y aplicar cambios; después compara este comportamiento con una tupla y un conjunto.",
+    "sourceRefs": [
+      { "label": "Clase 5 - 28/7/2025", "locator": "Tema: Aplicación de Estructura de datos (listas)" }
+    ]
+  },
+  "list-application": {
+    "title": "Aplicar listas",
+    "content": "# Aplicar listas\n\nUsa listas para ejercicios donde importa mantener varios valores y poder cambiar la colección. Comprueba el resultado después de cada operación y explica por qué una lista encaja con el caso.\n\nLa profundidad de este paso se limita a la aplicación indicada en la Clase 5.",
+    "sourceRefs": [
+      { "label": "Clase 5 - 28/7/2025", "locator": "Tema: Aplicación de Estructura de datos (listas)" }
+    ]
+  },
+  "tuples": {
+    "title": "Tuplas",
+    "content": "# Tuplas\n\nUna tupla representa una secuencia ordenada cuyo contenido no se modifica como una lista. Úsala cuando el conjunto de posiciones forma un registro estable.\n\n### Contraste\n- Lista: colección ordenada que se actualiza.\n- Tupla: colección ordenada que se conserva.\n\nLa sesión pide describir cómo las tuplas ayudan en el desarrollo de software.",
+    "sourceRefs": [
+      { "label": "Clase 9 - 18 de agosto 2026", "locator": "Tuplas - Estructura de Datos." },
+      { "label": "Clase 9 - 18 de agosto 2026", "locator": "Competencias a Desarrollar — Describir la información sobre tuplas y como nos ayudaría en el desarrollo de software." }
+    ]
+  },
+  "tuple-practice": {
+    "title": "Ejercicios de tuplas",
+    "content": "# Ejercicios de tuplas\n\nResuelve la guía de tuplas y guarda los resultados en el cuaderno de trabajo. Para cada ejercicio, anota qué dato permanece fijo y por qué una tupla expresa mejor esa intención.\n\nSi necesitas cambiar continuamente la colección, revisa si en realidad corresponde una lista.",
+    "sourceRefs": [
+      { "label": "Clase 9 - 18 de agosto 2026", "locator": "Actividades y Tareas — Guía de ejercicios de tuplas" }
+    ]
+  },
+  "sets": {
+    "title": "Conjuntos (set)",
+    "content": "# Conjuntos (set)\n\nUn `set` almacena elementos únicos y permite trabajar con pertenencia y combinación de conjuntos. Es útil cuando importa saber si un valor ya está presente y los duplicados no aportan información.\n\nLa clase exige creación, inserción, eliminación, pertenencia y unión.",
+    "sourceRefs": [
+      { "label": "Clase 10 - 20/08/2026", "locator": "Tema: Conjunto (set)" },
+      { "label": "Clase 10 - 20/08/2026", "locator": "Indicaciones Generales — almacenar elementos únicos y realizar operaciones de pertenencia y combinación de conjuntos." }
+    ]
+  },
+  "set-membership": {
+    "title": "Pertenencia y unicidad",
+    "content": "# Pertenencia y unicidad\n\nLa propiedad central del conjunto es la unicidad. Añadir un valor repetido no crea otra copia, y una prueba de pertenencia responde si el elemento está en la colección.\n\nAplica esta idea a datos donde repetir un identificador no tiene sentido.",
+    "sourceRefs": [
+      { "label": "Clase 10 - 20/08/2026", "locator": "Recursos y Multimedia — Características de los conjuntos (SET)" }
+    ]
+  },
+  "set-operations": {
+    "title": "Crear, insertar, eliminar y unir",
+    "content": "# Crear, insertar, eliminar y unir\n\nConstruye un conjunto, agrega y elimina elementos, verifica pertenencia y combina dos conjuntos mediante unión. Después de cada operación, imprime el resultado y explica qué cambió.\n\nEstas son exactamente las operaciones enumeradas en la competencia de la Clase 10.",
+    "sourceRefs": [
+      { "label": "Clase 10 - 20/08/2026", "locator": "Competencias a Desarrollar — operaciones de creación, inserción, eliminación, pertenencia y unión." }
+    ]
+  },
+  "choose-collection": {
+    "title": "Elegir list, tuple o set",
+    "content": "# Elegir list, tuple o set\n\nLa estructura correcta depende del comportamiento requerido:\n\n| Necesidad | Elección inicial |\n| --- | --- |\n| Mantener orden y modificar | `list` |\n| Mantener orden y conservar | `tuple` |\n| Evitar duplicados y probar pertenencia | `set` |\n\nLa elección debe justificarse con el dato del sistema y con las propiedades practicadas en las clases.",
+    "sourceRefs": [
+      { "label": "Clase 4 - 23-07-2026", "locator": "Competencias a Desarrollar — Seleccionar los tipos de datos ideal para el ingreso de datos a sistema." },
+      { "label": "Clase 10 - 20/08/2026", "locator": "Indicaciones Generales — elementos únicos y operaciones de pertenencia." }
+    ]
+  },
+  "choice-checklist": {
+    "title": "Criterios de selección",
+    "content": "# Criterios de selección\n\nAntes de elegir una colección, responde:\n\n1. ¿El orden forma parte del significado?\n2. ¿La colección cambiará durante la ejecución?\n3. ¿Deben eliminarse duplicados?\n4. ¿La operación principal será consultar pertenencia?\n\nUsa las respuestas para justificar `list`, `tuple` o `set` en una frase.",
+    "sourceRefs": [
+      { "label": "Práctica 1 — Tipos de Datos", "locator": "Objetivo de la Práctica — comportamiento de los tipos de datos primitivos y estructurados." }
+    ]
+  },
+  "practice-close": {
+    "title": "Demostrar con un script",
+    "content": "# Demostrar con un script\n\nEntrega un archivo `.py` o un Notebook `.ipynb` con ejercicios resueltos y respuestas comentadas. Incluye ejemplos pequeños que muestren tipos básicos, mutabilidad y la elección entre lista, tupla y conjunto.\n\nLa explicación analítica es parte de la evidencia: no basta con que el código ejecute.",
+    "sourceRefs": [
+      { "label": "Práctica 1 — Tipos de Datos", "locator": "Indicaciones de entrega — Subir un archivo Script de Python (.py) o Jupyter Notebook (.ipynb) con los ejercicios resueltos y las respuestas comentadas." }
+    ]
+  }
+}

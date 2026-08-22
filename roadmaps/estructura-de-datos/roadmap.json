@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "slug": "estructura-de-datos",
+  "title": "Estructura de Datos",
+  "description": "Ruta basada únicamente en las clases sustantivas 1–5 y 9–10, más la Práctica 1: entorno Python, tipos, rangos, cadenas y estructuras list, tuple y set.",
+  "canvas": {
+    "width": 1280,
+    "height": 1840,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": { "x": 170, "y": 12, "zoom": 0.86 },
+    "mobileInitialViewport": { "x": -58, "y": -185, "zoom": 0.84 }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": { "x": 90, "y": 18 },
+      "size": { "width": 700, "height": 52 },
+      "data": { "text": "Estructura de Datos", "style": { "fontSize": 28, "textAlign": "center" } }
+    },
+    {
+      "id": "subtitle",
+      "type": "paragraph",
+      "position": { "x": 90, "y": 86 },
+      "size": { "width": 700, "height": 88 },
+      "data": {
+        "text": "Sigue la numeración. La columna izquierda marca el recorrido principal y las tarjetas claras de la derecha amplían cada paso. La ruta omite las clases 6–8 ausentes y las plantillas 11–40.",
+        "style": { "fontSize": 14, "textAlign": "center" }
+      }
+    },
+    {
+      "id": "legend",
+      "type": "legend",
+      "position": { "x": 900, "y": 18 },
+      "size": { "width": 320, "height": 194 },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          { "label": "Sigue 01, 02, 03…", "color": "#fbfbf8" },
+          { "label": "Paso principal", "color": "#f9d95c" },
+          { "label": "Concepto de apoyo", "color": "#fff2a8" },
+          { "label": "Sufijos a/b indicarían ramas", "color": "#fbfbf8" },
+          { "label": "Pulsa un bloque para ver detalle", "color": "#111827" }
+        ]
+      }
+    },
+    {
+      "id": "environment",
+      "type": "topic",
+      "position": { "x": 90, "y": 280 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Preparar el entorno", "order": "01", "detail": "Instalar Python 3.12+ y trabajar desde VS Code." }
+    },
+    {
+      "id": "python-vscode",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 284 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Python y VS Code", "order": "02", "detail": "Verificar las herramientas antes de resolver ejercicios." }
+    },
+    {
+      "id": "basic-types",
+      "type": "topic",
+      "position": { "x": 90, "y": 416 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Tipos de datos básicos", "order": "03", "detail": "Reconocer int, float, str y bool en Python." }
+    },
+    {
+      "id": "primitive-structured",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 420 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Primitivos y estructurados", "order": "04", "detail": "Distinguir un valor simple de una colección de valores." }
+    },
+    {
+      "id": "ranges",
+      "type": "topic",
+      "position": { "x": 90, "y": 552 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Rangos y límites", "order": "05", "detail": "Comprender por qué los límites afectan almacenamiento y errores." }
+    },
+    {
+      "id": "select-basic-type",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 556 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Elegir el tipo adecuado", "order": "06", "detail": "Relacionar el dato de entrada con su representación." }
+    },
+    {
+      "id": "strings",
+      "type": "topic",
+      "position": { "x": 90, "y": 688 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Cadenas de texto", "order": "07", "detail": "Practicar acceso, recorrido y transformaciones de str." }
+    },
+    {
+      "id": "string-practice",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 692 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Ejercicios de String", "order": "08", "detail": "Resolver la guía archivada y observar sus resultados." }
+    },
+    {
+      "id": "structured-data",
+      "type": "topic",
+      "position": { "x": 90, "y": 824 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Datos estructurados", "order": "09", "detail": "Agrupar varios valores para representar información relacionada." }
+    },
+    {
+      "id": "memory-mutability",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 828 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Memoria y mutabilidad", "order": "10", "detail": "Inspeccionar identificadores y probar cambios en Python." }
+    },
+    {
+      "id": "lists",
+      "type": "topic",
+      "position": { "x": 90, "y": 1020 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Listas", "order": "11", "detail": "Usar una colección ordenada y modificable." }
+    },
+    {
+      "id": "list-application",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1024 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Aplicar listas", "order": "12", "detail": "Construir y modificar colecciones en ejercicios." }
+    },
+    {
+      "id": "tuples",
+      "type": "topic",
+      "position": { "x": 90, "y": 1156 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Tuplas", "order": "13", "detail": "Representar una secuencia ordenada que no se modifica." }
+    },
+    {
+      "id": "tuple-practice",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1160 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Ejercicios de tuplas", "order": "14", "detail": "Aplicar tuplas y conservar la guía en el cuaderno." }
+    },
+    {
+      "id": "sets",
+      "type": "topic",
+      "position": { "x": 90, "y": 1292 },
+      "size": { "width": 380, "height": 96 },
+      "data": { "label": "Conjuntos (set)", "order": "15", "detail": "Almacenar elementos únicos sin depender de duplicados." }
+    },
+    {
+      "id": "set-membership",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1296 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Pertenencia y unicidad", "order": "16", "detail": "Comprobar si un elemento pertenece al conjunto." }
+    },
+    {
+      "id": "set-operations",
+      "type": "subtopic",
+      "position": { "x": 910, "y": 1296 },
+      "size": { "width": 300, "height": 88 },
+      "data": { "label": "Crear, insertar, eliminar y unir", "order": "17", "detail": "Aplicar las operaciones exigidas por la sesión." }
+    },
+    {
+      "id": "choose-collection",
+      "type": "topic",
+      "position": { "x": 90, "y": 1428 },
+      "size": { "width": 380, "height": 100 },
+      "data": { "label": "Elegir list, tuple o set", "order": "18", "detail": "Decidir según cambio, orden y necesidad de unicidad." }
+    },
+    {
+      "id": "choice-checklist",
+      "type": "subtopic",
+      "position": { "x": 540, "y": 1434 },
+      "size": { "width": 330, "height": 88 },
+      "data": { "label": "Criterios de selección", "order": "19", "detail": "Justificar la estructura elegida para cada dato." }
+    },
+    {
+      "id": "practice-close",
+      "type": "topic",
+      "position": { "x": 90, "y": 1640 },
+      "size": { "width": 380, "height": 100 },
+      "data": { "label": "Demostrar con un script", "order": "20", "detail": "Entregar Python o Notebook con pruebas y respuestas." }
+    },
+    {
+      "id": "section-foundations",
+      "type": "section",
+      "position": { "x": 40, "y": 230 },
+      "size": { "width": 1200, "height": 710 },
+      "zIndex": -1,
+      "data": { "label": "01 · Fundamentos — Clases 1–4" }
+    },
+    {
+      "id": "section-collections",
+      "type": "section",
+      "position": { "x": 40, "y": 960 },
+      "size": { "width": 1200, "height": 600 },
+      "zIndex": -1,
+      "data": { "label": "02 · Colecciones — Clases 5, 9 y 10" }
+    },
+    {
+      "id": "section-application",
+      "type": "section",
+      "position": { "x": 40, "y": 1580 },
+      "size": { "width": 1200, "height": 220 },
+      "zIndex": -1,
+      "data": { "label": "03 · Evidencia — Práctica 1" }
+    }
+  ],
+  "edges": [
+    { "id": "e-title-subtitle", "source": "title-node", "target": "subtitle", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-subtitle-environment", "source": "subtitle", "target": "environment", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-environment-python", "source": "environment", "target": "python-vscode", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-environment-basic", "source": "environment", "target": "basic-types", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-basic-primitive", "source": "basic-types", "target": "primitive-structured", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-basic-ranges", "source": "basic-types", "target": "ranges", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-ranges-select", "source": "ranges", "target": "select-basic-type", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-ranges-strings", "source": "ranges", "target": "strings", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-strings-practice", "source": "strings", "target": "string-practice", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-strings-structured", "source": "strings", "target": "structured-data", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-structured-memory", "source": "structured-data", "target": "memory-mutability", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-structured-lists", "source": "structured-data", "target": "lists", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-lists-application", "source": "lists", "target": "list-application", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-lists-tuples", "source": "lists", "target": "tuples", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-tuples-practice", "source": "tuples", "target": "tuple-practice", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-tuples-sets", "source": "tuples", "target": "sets", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-sets-membership", "source": "sets", "target": "set-membership", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-membership-operations", "source": "set-membership", "target": "set-operations", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-sets-choice", "source": "sets", "target": "choose-collection", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-choice-checklist", "source": "choose-collection", "target": "choice-checklist", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-choice-close", "source": "choose-collection", "target": "practice-close", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true }
+  ]
+}

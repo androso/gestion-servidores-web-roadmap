@@ -1,0 +1,267 @@
+{
+  "course-orientation": {
+    "title": "Orientarse en POE",
+    "content": "# Orientarse en POE\n\nLa programación orientada a eventos organiza el software alrededor de sucesos y de las respuestas que estos activan. El curso avanza desde el cambio de paradigma hasta interfaces y un laboratorio integrador.\n\nLa meta es identificar eventos, diseñar handlers y conectar componentes sin concentrar todo el comportamiento en una secuencia rígida.",
+    "sourceRefs": [
+      { "label": "Clase 1 Lunes 13/06/26", "locator": "Objetivo General de la Materia" }
+    ]
+  },
+  "paradigm-shift": {
+    "title": "De imperativo a reactivo",
+    "content": "# De imperativo a reactivo\n\nEn un programa imperativo, el código decide el orden completo. En un sistema reactivo, el programa queda preparado y responde cuando llega un clic, un temporizador, un mensaje u otro evento.\n\nEste cambio permite interfaces y sistemas desacoplados, pero exige pensar en estados y reacciones.",
+    "sourceRefs": [
+      { "label": "Clase 2 Miercoles 15/06/26", "locator": "Teoría — Paradigma Imperativo / Paradigma Reactivo" }
+    ]
+  },
+  "control-inversion": {
+    "title": "Inversión del flujo",
+    "content": "# Inversión del flujo\n\nEl código registra qué debe ocurrir, pero el entorno decide cuándo invocarlo. Es el **Hollywood Principle**: no llames continuamente al sistema; el sistema llamará a tu handler.\n\n`setTimeout` y un clic del navegador muestran la inversión con ejemplos pequeños.",
+    "sourceRefs": [
+      { "label": "Clase 2 Miercoles 15/06/26", "locator": "Teoría — Inversión del flujo de control" },
+      { "label": "Clase 2 Miercoles 15/06/26", "locator": "Hollywood Principle" }
+    ]
+  },
+  "event-loop": {
+    "title": "Bucle, cola y oyentes",
+    "content": "# Bucle, cola y oyentes\n\nEl flujo combina eventos, una cola, el bucle de eventos y oyentes o controladores. Cuando un evento queda listo, el sistema ejecuta el listener registrado.\n\nDistingue el evento (qué ocurrió) del handler (qué hacer como respuesta).",
+    "sourceRefs": [
+      { "label": "Clase 2 Miercoles 15/06/26", "locator": "Componentes Clave de POE — Eventos, Bucle de Eventos, Oyentes / Controladores y Colas de Mensajes" }
+    ]
+  },
+  "typescript-foundations": {
+    "title": "Fundamentos de TypeScript",
+    "content": "# Fundamentos de TypeScript\n\nTypeScript añade tipos al código JavaScript. Repasa variables, condicionales, ciclos y arreglos antes de construir emisores y manipular el DOM.\n\nLos tipos ayudan a que los datos transportados por un evento tengan una forma predecible.",
+    "sourceRefs": [
+      { "label": "Clase 3 Lunes 20/07/26", "locator": "Recordatorio de TypeScript — ¿Qué es TypeScript?" },
+      { "label": "Clase 3 Lunes 20/07/26", "locator": "Variables y Tipos Básicos" }
+    ]
+  },
+  "ts-models-functions": {
+    "title": "Modelos, funciones y clases",
+    "content": "# Modelos, funciones y clases\n\nDefine la forma de los datos, encapsula una reacción en una función y usa clases cuando un componente necesita estado o comportamiento propio.\n\nEstas piezas reaparecen en EventEmitter: una interfaz tipa la carga, una clase emite y métodos de otros objetos reaccionan.",
+    "sourceRefs": [
+      { "label": "Clase 3 Lunes 20/07/26", "locator": "Modelos o Plantillas" },
+      { "label": "Clase 3 Lunes 20/07/26", "locator": "Funciones" },
+      { "label": "Clase 3 Lunes 20/07/26", "locator": "Clases y Objetos" }
+    ]
+  },
+  "array-methods": {
+    "title": "Transformar arreglos",
+    "content": "# Transformar arreglos\n\nLos métodos de arreglos permiten expresar transformaciones y selecciones como operaciones separadas. Esto resulta útil para convertir estado en una vista y para derivar subconjuntos sin mezclar todas las reglas.\n\nLa Clase 4 concentra la práctica en `map` y `filter`.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Métodos de Arreglos, Desestructuración y Enumeraciones" }
+    ]
+  },
+  "map": {
+    "title": ".map()",
+    "content": "# .map()\n\n`map` recorre cada elemento, aplica una transformación y devuelve un arreglo nuevo. En una interfaz puede convertir cada registro en texto o en una tarjeta HTML.\n\nLa función de transformación debe devolver el valor que ocupará la misma posición en el resultado.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Método .map()" },
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Ejercicios Prácticos — Transformar productos con .map()" }
+    ]
+  },
+  "filter": {
+    "title": ".filter()",
+    "content": "# .filter()\n\n`filter` crea un arreglo con los elementos cuya condición es verdadera. Sirve para búsquedas, favoritos, estados y eliminación inmutable.\n\nLa colección original no se convierte: se obtiene una selección nueva.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Método .filter()" },
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Ejercicios Prácticos — Filtrar productos con .filter()" }
+    ]
+  },
+  "destructuring-enums": {
+    "title": "Desestructuración y enums",
+    "content": "# Desestructuración y enums\n\nLa desestructuración extrae las propiedades que una reacción necesita. Una enumeración nombra un conjunto cerrado de estados y evita textos dispersos.\n\nJuntas, ambas técnicas hacen que los handlers sean más explícitos.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Desestructuración de Objetos y Arreglos" },
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Enumeraciones (enum)" }
+    ]
+  },
+  "destructuring": {
+    "title": "Objetos y arreglos",
+    "content": "# Objetos y arreglos\n\nDesestructura un objeto de evento para nombrar directamente sus campos; en arreglos, usa posiciones cuando el significado depende del orden.\n\nEvita extraer propiedades que el handler no utiliza. La forma debe seguir siendo clara para quien lea la reacción.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Ejercicios Prácticos — Desestructurar objeto de evento" }
+    ]
+  },
+  "enums": {
+    "title": "Enumeraciones",
+    "content": "# Enumeraciones\n\nUn `enum` representa estados permitidos con nombres compartidos. Es apropiado cuando el dominio tiene opciones conocidas y cerradas.\n\nLa práctica propone un enum para estados de usuario; el mismo criterio puede aplicarse a estados de un préstamo.",
+    "sourceRefs": [
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Enumeraciones (enum)" },
+      { "label": "Clase 4 Miercoles 22/07/26", "locator": "Ejercicios Prácticos — Crear enum para estados de usuario" }
+    ]
+  },
+  "event-emitter": {
+    "title": "EventEmitter",
+    "content": "# EventEmitter\n\n`EventEmitter` es la clase de Node.js que permite emitir y escuchar eventos personalizados. Una clase emisora hereda sus métodos y publica hechos del dominio sin conocer a todos los consumidores.\n\nEsto implementa el núcleo de POE estudiado en la Clase 2.",
+    "sourceRefs": [
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Importación de Módulos: EventEmitter" }
+    ]
+  },
+  "emitters": {
+    "title": "Emisor y .emit()",
+    "content": "# Emisor y .emit()\n\nLa clase emisora extiende `EventEmitter`. Cuando ocurre un hecho, llama `emit(nombre, datos)` y entrega una carga tipada.\n\nEl emisor no necesita saber qué hará cada oyente; esa separación reduce acoplamiento.",
+    "sourceRefs": [
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Clase Emisora (El Origen del Evento)" },
+      { "label": "Material — script.ts de EventEmitter", "locator": "CLASE EMISORA / EMITIR EL EVENTO" }
+    ]
+  },
+  "listeners": {
+    "title": "Oyentes y .on()",
+    "content": "# Oyentes y .on()\n\n`.on(nombre, callback)` registra una reacción. Varios oyentes pueden responder al mismo evento de maneras distintas.\n\nEl ejemplo conecta una central policial con Spider-Man y el Daily Bugle: una alerta, dos respuestas independientes.",
+    "sourceRefs": [
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Clases Escuchadoras (Los Oyentes)" },
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Suscripción (.on) - Múltiples Oyentes" }
+    ]
+  },
+  "event-flow": {
+    "title": "Flujo completo de POE",
+    "content": "# Flujo completo de POE\n\nRecorre el camino: el emisor detecta un hecho, emite un nombre y datos, el sistema notifica a los oyentes y cada listener ejecuta su acción.\n\nPrueba el flujo con más de un evento para confirmar que las suscripciones permanecen activas.",
+    "sourceRefs": [
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Flujo Completo de POE" },
+      { "label": "Clase 5 Lunes 27/07/26", "locator": "Instanciación y Ejecución" }
+    ]
+  },
+  "gui-dom": {
+    "title": "Interfaces y eventos DOM",
+    "content": "# Interfaces y eventos DOM\n\nUna interfaz gráfica presenta controles que emiten interacciones. El DOM permite encontrar esos elementos y enlazarlos con funciones mediante listeners.\n\nSepara referencias DOM, estado y handlers para que cada responsabilidad sea visible.",
+    "sourceRefs": [
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Introducción a las Interfaces Gráficas" },
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Eventos en Interfaces Gráficas" }
+    ]
+  },
+  "gui-controls": {
+    "title": "Labels, botones, inputs y listas",
+    "content": "# Labels, botones, inputs y listas\n\nUna etiqueta explica, un input captura, un botón dispara una acción y una lista presenta o selecciona opciones. El control debe coincidir con la intención de la interacción.\n\nTipa cada referencia DOM con el elemento correspondiente en TypeScript.",
+    "sourceRefs": [
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Etiquetas (Labels)" },
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Botones (Buttons)" },
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Campos de Texto (Inputs)" },
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Listas (Listas, Dropdowns y Selectores)" }
+    ]
+  },
+  "dom-listeners": {
+    "title": "addEventListener",
+    "content": "# addEventListener\n\nRegistra listeners para `click`, `input`, teclado y `DOMContentLoaded`. El objeto `event` describe la interacción y permite impedir acciones por defecto cuando corresponde.\n\nNo ejecutes el handler al registrarlo: pasa la función que debe invocarse después.",
+    "sourceRefs": [
+      { "label": "Clase 6 Miercoles 29/07/26", "locator": "Eventos en Interfaces Gráficas" },
+      { "label": "Material — Spider-Verse script.ts", "locator": "PASO 12: INICIALIZACIÓN — CONECTAR TODOS LOS EVENTOS" }
+    ]
+  },
+  "layout-responsive": {
+    "title": "Layout y responsive",
+    "content": "# Layout y responsive\n\nEl layout define cómo se distribuyen los componentes. El diseño responsive adapta esa estructura al espacio disponible sin perder acceso a las acciones.\n\nPrimero establece jerarquía y contenedores; después decide Flexbox, Grid y puntos de adaptación.",
+    "sourceRefs": [
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "¿Qué es un Layout?" },
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "Diseño Responsive - Adaptación a diferentes pantallas" }
+    ]
+  },
+  "flex-grid": {
+    "title": "Flexbox y CSS Grid",
+    "content": "# Flexbox y CSS Grid\n\nFlexbox organiza elementos en una dimensión; Grid controla filas y columnas. Usa Flexbox para alineación lineal y Grid para estructuras bidimensionales.\n\nAmbos pueden convivir: Grid para la página y Flexbox dentro de un componente.",
+    "sourceRefs": [
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "Flexbox - Layout en una Dimensión" },
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "CSS Grid - Layout en Dos Dimensiones" }
+    ]
+  },
+  "responsive-containers": {
+    "title": "Contenedores adaptables",
+    "content": "# Contenedores adaptables\n\nLos contenedores agrupan componentes relacionados y delimitan su distribución. Permite `wrap`, columnas flexibles y cambios de estructura cuando el ancho disminuye.\n\nComprueba que inputs, botones y listas sigan utilizables en pantallas estrechas.",
+    "sourceRefs": [
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "Contenedores - Organización de Componentes" },
+      { "label": "Clase 7 Lunes 10/08/26", "locator": "Diseño Responsive - Adaptación a diferentes pantallas" }
+    ]
+  },
+  "spiderverse": {
+    "title": "Práctica Spider-Verse",
+    "content": "# Práctica Spider-Verse\n\nLa aplicación registra héroes, actualiza el estado y renderiza tarjetas. La práctica amplía el código base con validaciones, favoritos, filtro y orden.\n\nEs un punto de integración entre TypeScript, arreglos, DOM, eventos y layout.",
+    "sourceRefs": [
+      { "label": "Clase 8 Miercoles 12/08/26", "locator": "Spider-Verse: Registro de Héroes" },
+      { "label": "Clase 8 Miercoles 12/08/26", "locator": "Código Base" }
+    ]
+  },
+  "state-render": {
+    "title": "Estado, validación y render",
+    "content": "# Estado, validación y render\n\nEl arreglo `heroes` es la memoria de la aplicación. Cada cambio debe pasar por una función y terminar en un nuevo render de la vista.\n\nValida entradas antes de modificar el estado y muestra un mensaje útil cuando el dato no es aceptable.",
+    "sourceRefs": [
+      { "label": "Clase 8 Miercoles 12/08/26", "locator": "Validaciones" },
+      { "label": "Material — Spider-Verse script.ts", "locator": "PASO 3: ESTADO GLOBAL / PASO 7: RENDERIZAR" }
+    ]
+  },
+  "delegation-filtering": {
+    "title": "Delegación, filtro y orden",
+    "content": "# Delegación, filtro y orden\n\nLa delegación coloca un listener en el contenedor y detecta el control dinámico con `closest`. Así los botones creados durante cada render siguen funcionando.\n\n`filter` y el orden producen vistas derivadas sin perder la colección base.",
+    "sourceRefs": [
+      { "label": "Clase 8 Miercoles 12/08/26", "locator": "Filtro y Orden" },
+      { "label": "Material — Spider-Verse script.ts", "locator": "PASO 8: DELEGACIÓN DE EVENTOS PARA LOS BOTONES \"EXPULSAR\"" }
+    ]
+  },
+  "ux-ui": {
+    "title": "UX, UI y usabilidad",
+    "content": "# UX, UI y usabilidad\n\nUX considera la experiencia completa; UI se concentra en los elementos visibles y su presentación. La usabilidad comprueba si la persona puede completar su tarea con claridad y eficiencia.\n\nUna interfaz atractiva que oculta el estado o confunde las acciones sigue siendo un mal sistema.",
+    "sourceRefs": [
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Introducción al Diseño UX/UI" },
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Experiencia de Usuario (UX)" },
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Interfaz de Usuario (UI)" },
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Usabilidad" }
+    ]
+  },
+  "accessibility": {
+    "title": "Accesibilidad (A11y)",
+    "content": "# Accesibilidad (A11y)\n\nDiseña controles con etiquetas comprensibles, contraste suficiente, navegación por teclado y HTML semántico. El estado de una acción no debe depender solo del color.\n\nPrueba el flujo principal sin ratón y verifica que el foco sea visible.",
+    "sourceRefs": [
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Accesibilidad (A11y)" }
+    ]
+  },
+  "user-centered-design": {
+    "title": "DCU y prototipado",
+    "content": "# DCU y prototipado\n\nEl diseño centrado en el usuario parte de necesidades y tareas reales. Figma permite prototipar la interfaz; Draw.io ayuda a representar flujos antes de programar.\n\nUsa el prototipo para detectar pasos innecesarios y estados sin salida.",
+    "sourceRefs": [
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Diseño Centrado en el Usuario (DCU)" },
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Figma — Diseño de Interfaces" },
+      { "label": "Clase 9 Lunes 17/08/26", "locator": "Draw.io — Diagramas y Flujos" }
+    ]
+  },
+  "library-lab": {
+    "title": "Laboratorio: biblioteca",
+    "content": "# Laboratorio: biblioteca\n\nEl laboratorio integra el curso en un Sistema de Gestión de Biblioteca Universitaria. Debes modelar el dominio, emitir hechos, conectar oyentes y exponer operaciones mediante una interfaz.\n\nTrabaja desde los requisitos y conserva nombres de eventos y datos coherentes.",
+    "sourceRefs": [
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Laboratorio #1: Sistema de Gestión de Biblioteca Universitaria" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Requisitos del Sistema" }
+    ]
+  },
+  "library-domain": {
+    "title": "Modelos, emisor y oyentes",
+    "content": "# Modelos, emisor y oyentes\n\nDefine interfaces para los datos del sistema. Implementa una clase emisora y clases oyentes con responsabilidades distintas; después registra las suscripciones que conectan el flujo.\n\nLa forma de los datos es el contrato entre emisor y listeners.",
+    "sourceRefs": [
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Interfaces y Modelos" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Clase Emisora de Eventos" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Clases Oyentes" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Suscripciones y Conexiones" }
+    ]
+  },
+  "library-dom": {
+    "title": "Interfaz gráfica y DOM",
+    "content": "# Interfaz gráfica y DOM\n\nConecta los controles del laboratorio con handlers que validan, actualizan estado y muestran resultados. Mantén el DOM como capa de interacción y delega la lógica del dominio a sus clases.\n\nLa interfaz debe reflejar los eventos sin duplicar reglas de negocio.",
+    "sourceRefs": [
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Interfaz Gráfica y DOM" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Guión de TypeScript (app.ts)" }
+    ]
+  },
+  "integration": {
+    "title": "Integrar y demostrar",
+    "content": "# Integrar y demostrar\n\nOrganiza el proyecto, conecta todas las suscripciones y ejecuta los datos de prueba. Una demostración completa debe hacer visible qué evento ocurrió y qué oyentes respondieron.\n\nRevisa el sistema desde el requisito hasta el resultado de la interfaz.",
+    "sourceRefs": [
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Estructura del Proyecto" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Datos de Prueba" }
+    ]
+  },
+  "deliverables": {
+    "title": "Entregables verificables",
+    "content": "# Entregables verificables\n\nEntrega los archivos solicitados y confirma que el proyecto ejecuta con los datos de prueba. La evidencia debe cubrir modelos, emisor, oyentes, suscripciones e interacción DOM.\n\nAntes de cerrar, compara el resultado con cada requisito del sistema.",
+    "sourceRefs": [
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Entregables" },
+      { "label": "Clase 10 Miercoles 19/08/26", "locator": "Notas Importantes" }
+    ]
+  }
+}
