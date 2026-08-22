@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caso de Estudio — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Caso de Estudio</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 3 del 27/07/26 al 02/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/assignments/13530">https://univo.instructure.com/courses/1742/assignments/13530</a></p>
+  </header>
+  <main>
+<div style="max-width: 1100px; width: 100%; margin: 40px auto; font-family: 'Segoe UI', Roboto, system-ui, -apple-system, sans-serif; background: #0a0a0a; border-radius: 32px; overflow: hidden; color: #e2e8f0; border: 1px solid #1a1a1a;" title="contenido insertado"><header style="background: linear-gradient(145deg, #0a0a0a 0%, #1a0a1a 30%, #0f0a0f 100%); padding: 45px 45px 35px; position: relative; overflow: hidden; border-bottom: 3px solid #ef4444;">
+<div style="position: absolute; top: 50%; left: 50%; font-size: 15rem; z-index: 1; color: #ef4444;">🕷️</div>
+<div style="position: relative; z-index: 2; display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+<div style="flex: 0 0 auto; background: rgba(239, 68, 68, 0.08); padding: 18px; border-radius: 100px; border-width: 2px; border-style: solid; border-color: rgba(239, 68, 68, 0.2);"><span style="font-size: 3.5rem; display: block; line-height: 1;">🕷️</span></div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 10px;"><span style="background: #ef4444; color: #ffffff; padding: 4px 18px; border-radius: 40px; font-size: 0.7rem;">📡 Caso de Estudio</span> <span style="background: rgba(239, 68, 68, 0.15); color: #ef4444; padding: 4px 18px; border-radius: 40px; font-size: 0.7rem; border-width: 1px; border-style: solid; border-color: rgba(239, 68, 68, 0.2);">🕷️ Event-Driven</span> <span style="background: rgba(255, 255, 255, 0.05); color: #94a3b8; padding: 4px 18px; border-radius: 40px; font-size: 0.7rem; border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.1);">⚡ Node.js</span></div>
+<h2 style="margin: 0; color: #ffffff; font-size: 2.2rem; line-height: 1.1;">Sistema de Coordinación <br><span style="color: #ef4444;">de Patrullaje Vecinal</span></h2>
+<p style="margin: 10px 0 0; color: #94a3b8; font-size: 1rem;">🎯 Un vecino alerta, todos los héroes del barrio responden</p>
+</div>
+</div>
+<div style="position: relative; z-index: 2; margin-top: 25px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 20px;">
+<div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+<div style="display: flex; gap: 20px; flex-wrap: wrap;"><span style="color: #94a3b8; font-size: 0.75rem;"><span style="color: #ef4444;">●</span> Nivel: <strong style="color: #ffffff;">Intermedio</strong></span> <span style="color: #94a3b8; font-size: 0.75rem;"><span style="color: #ef4444;">●</span> Tecnología: <strong style="color: #ffffff;">Node.js + TypeScript</strong></span> <span style="color: #94a3b8; font-size: 0.75rem;"><span style="color: #ef4444;">●</span> Duración: <strong style="color: #ffffff;">90 min</strong></span></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap;"><span style="background: #1a0a1a; color: #ef4444; padding: 3px 14px; border-radius: 20px; font-size: 0.65rem; border: 1px solid #2a0a1a;">📖 Contexto</span> <span style="background: #1a0a1a; color: #ef4444; padding: 3px 14px; border-radius: 20px; font-size: 0.65rem; border: 1px solid #2a0a1a;">💡 Requerimientos</span> <span style="background: #1a0a1a; color: #ef4444; padding: 3px 14px; border-radius: 20px; font-size: 0.65rem; border: 1px solid #2a0a1a;">🏆 Evaluación</span></div>
+</div>
+</div>
+</header>
+<div style="padding: 30px 40px 40px; background: #0f0a0f;">
+<div style="background: linear-gradient(145deg, #13101a, #0f0a0f); border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"><span style="background: #ef4444; color: #ffffff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 0.9rem;">📖</span>
+<h3 style="margin: 0; color: #ef4444; font-size: 1.5rem;">Contexto del Problema</h3>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+<div>
+<div style="background: #1a0a1a; border-radius: 12px; padding: 20px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #2a0a1a #2a0a1a #2a0a1a #ef4444;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.95rem; line-height: 1.7;">En el <strong style="color: #ef4444;">barrio de Queens</strong>, Nueva York, los vecinos han decidido organizar un sistema de <strong style="color: #fbbf24;">patrullaje vecinal</strong> para mantener su comunidad segura. Sin embargo, el sistema actual es caótico: cuando un vecino detecta algo sospechoso, debe llamar uno por uno a los patrulleros voluntarios, lo que <strong style="color: #f87171;">provoca demoras y confusión</strong>.</p>
+</div>
+<div style="background: #1a0a1a; border-radius: 12px; padding: 20px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #2a0a1a #2a0a1a #2a0a1a #60a5fa; margin-top: 15px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.95rem; line-height: 1.7;"><strong style="color: #60a5fa;">Peter Parker</strong>, vecino del barrio, ha propuesto desarrollar un sistema <strong style="color: #ef4444;">desacoplado basado en eventos</strong>. Cualquier vecino puede reportar una situación, y los diferentes <strong style="color: #ef4444;">grupos de respuesta del barrio</strong> se activarán automáticamente según su especialidad.</p>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 15px;">
+<div style="background: #1a0a1a; border-radius: 12px; padding: 20px; text-align: center; border: 1px solid #2a0a1a;"><span style="font-size: 3rem; display: block; margin-bottom: 5px;">🏘️</span>
+<p style="margin: 0; color: #64748b; font-size: 0.8rem; font-style: italic;">"Un barrio unido es un barrio seguro"</p>
+</div>
+<div style="background: #1a0a1a; border-radius: 12px; padding: 15px 20px; border: 1px solid #2a0a1a;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.2rem;">⚠️</span> <span><strong style="color: #f87171;">El problema:</strong> Llamadas telefónicas individuales causan demoras y caos.</span></p>
+<p style="margin: 10px 0 0; color: #94a3b8; font-size: 0.85rem; display: flex; align-items: center; gap: 10px;"><span style="font-size: 1.2rem;">💡</span> <span><strong style="color: #34d399;">La solución:</strong> Sistema basado en eventos con emisión y suscripción automática.</span></p>
+</div>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(145deg, #13101a, #0f0a0f); border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"><span style="background: #ef4444; color: #ffffff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 0.9rem;">🎯</span>
+<h3 style="margin: 0; color: #ef4444; font-size: 1.5rem;">Objetivo y Requerimientos</h3>
+</div>
+<div style="background: #1a0a1a; border-radius: 12px; padding: 20px; margin-bottom: 20px; border: 1px solid #2a0a1a;">
+<p style="margin: 0; color: #94a3b8; font-size: 1rem; line-height: 1.7;"><strong style="color: #ef4444;">🎯 Objetivo del Estudiante:</strong> Diseñar e implementar en <strong style="color: #60a5fa;">TypeScript</strong> una solución orientada a eventos utilizando la clase <strong style="color: #34d399;">EventEmitter</strong> de Node.js para coordinar el patrullaje vecinal.</p>
+</div>
+<h4 style="color: #60a5fa; font-size: 1rem; margin: 0 0 15px 0;">📋 Requerimientos del Sistema</h4>
+<div style="display: grid; grid-template-columns: 1fr; gap: 20px;">
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 22px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #1a0a1a #1a0a1a #1a0a1a #8b5cf6;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #8b5cf6; color: #ffffff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.8rem;">1</span> <span style="color: #ef4444; font-size: 1rem;">La Interfaz de Datos (ReporteVecinal)</span></div>
+<p style="margin: 0 0 10px 0; color: #94a3b8; font-size: 0.9rem;">Crea una interfaz que represente la información que viaja cuando un vecino reporta una situación:</p>
+<div style="background: #0a0a0a; border-radius: 8px; padding: 12px 16px; font-family: 'Courier New', monospace; font-size: 0.8rem; color: #34d399; line-height: 1.8; border: 1px solid #1a0a1a;"><span style="color: #94a3b8;">// 📍 ubicacion: El lugar del incidente</span><br><span style="color: #fbbf24;">ubicacion</span>: <span style="color: #60a5fa;">string</span>; <span style="color: #64748b;">// ej: "Calle 23 con Avenida 5"</span><br><span style="color: #94a3b8;">// 🚨 tipoIncidente: Categoría del problema</span><br><span style="color: #fbbf24;">tipoIncidente</span>: <span style="color: #34d399;">'Sospechoso'</span> | <span style="color: #34d399;">'Emergencia'</span> | <span style="color: #34d399;">'Accidente'</span> | <span style="color: #34d399;">'Incidencia'</span>;<br><span style="color: #94a3b8;">// 📝 descripcion: Detalles del reporte</span><br><span style="color: #fbbf24;">descripcion</span>: <span style="color: #60a5fa;">string</span>; <span style="color: #64748b;">// ej: "Hombre sospechoso merodeando"</span><br><span style="color: #94a3b8;">// 🔴 urgencia: Nivel de prioridad</span><br><span style="color: #fbbf24;">urgencia</span>: <span style="color: #34d399;">'Alta'</span> | <span style="color: #34d399;">'Media'</span> | <span style="color: #34d399;">'Baja'</span>;</div>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 22px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #1a0a1a #1a0a1a #1a0a1a #ef4444;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #ef4444; color: #ffffff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.8rem;">2</span> <span style="color: #ef4444; font-size: 1rem;">La Clase Emisora (CentralVecinal)</span></div>
+<ul style="margin: 0; padding-left: 20px; color: #94a3b8; font-size: 0.9rem; line-height: 1.8;">
+<li>Debe <strong style="color: #ef4444;">heredar de EventEmitter</strong>.</li>
+<li>Método <strong style="color: #34d399;">reportarIncidente(ubicacion, tipoIncidente, descripcion, urgencia)</strong> que:
+<ul style="margin: 5px 0 0; padding-left: 20px; color: #94a3b8; font-size: 0.85rem; line-height: 1.8;">
+<li>Imprime un aviso oficial de la central en consola.</li>
+<li>Emite el evento <strong style="color: #ef4444;">'alertaVecinal'</strong> con la información del reporte.</li>
+</ul>
+</li>
+</ul>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 22px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #1a0a1a #1a0a1a #1a0a1a #34d399;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #34d399; color: #0a0a0a; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.8rem;">3</span> <span style="color: #ef4444; font-size: 1rem;">Los Escuchadores (Grupos de Respuesta)</span></div>
+<p style="margin: 0 0 10px 0; color: #94a3b8; font-size: 0.9rem;">Crea <strong style="color: #ef4444;">cuatro clases distintas</strong> que reaccionen al evento 'alertaVecinal':</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 12px;">
+<div style="background: #0a0a0a; border-radius: 8px; padding: 12px 16px; border: 1px solid #1a0a1a;"><span style="color: #ef4444;">🕷️ Patrulla Spider</span>
+<ul style="margin: 5px 0 0; padding-left: 16px; color: #94a3b8; font-size: 0.7rem; line-height: 1.5;">
+<li>Método <span style="color: #34d399;">movilizarEquipo</span></li>
+<li>Si urgencia es <span style="color: #ef4444;">'Alta'</span>: "Movilizando equipo completo con Spider-Man"</li>
+<li>Si no: "Enviando patrulla de reconocimiento"</li>
+</ul>
+</div>
+<div style="background: #0a0a0a; border-radius: 8px; padding: 12px 16px; border: 1px solid #1a0a1a;"><span style="color: #60a5fa;">🚑 Ambulancia Comunitaria</span>
+<ul style="margin: 5px 0 0; padding-left: 16px; color: #94a3b8; font-size: 0.7rem; line-height: 1.5;">
+<li>Método <span style="color: #34d399;">enviarEmergencia</span></li>
+<li>Solo responde si <span style="color: #60a5fa;">tipoIncidente</span> es 'Emergencia' o 'Accidente'</li>
+<li>Imprime: "Unidad médica en camino a [ubicacion]"</li>
+</ul>
+</div>
+<div style="background: #0a0a0a; border-radius: 8px; padding: 12px 16px; border: 1px solid #1a0a1a;"><span style="color: #fbbf24;">🔦 Vecinos Vigilantes</span>
+<ul style="margin: 5px 0 0; padding-left: 16px; color: #94a3b8; font-size: 0.7rem; line-height: 1.5;">
+<li>Método <span style="color: #34d399;">activarVigilancia</span></li>
+<li>Responde a <span style="color: #fbbf24;">todos</span> los incidentes</li>
+<li>Imprime: "Vecinos alertados en [ubicacion] - Mantener vigilancia"</li>
+</ul>
+</div>
+<div style="background: #0a0a0a; border-radius: 8px; padding: 12px 16px; border: 1px solid #1a0a1a;"><span style="color: #8b5cf6;">🏢 Consejo del Barrio</span>
+<ul style="margin: 5px 0 0; padding-left: 16px; color: #94a3b8; font-size: 0.7rem; line-height: 1.5;">
+<li>Método <span style="color: #34d399;">evaluarIncidente</span></li>
+<li>Si <span style="color: #8b5cf6;">urgencia</span> es 'Alta' o 'Media': "Convocando reunión de emergencia"</li>
+<li>Si no: "Registrando incidente para informe mensual"</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 22px; border-width: 1px 1px 1px 4px; border-style: solid; border-color: #1a0a1a #1a0a1a #1a0a1a #f87171;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #f87171; color: #ffffff; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-size: 0.8rem;">4</span> <span style="color: #ef4444; font-size: 1rem;">Pruebas de Integración</span></div>
+<ul style="margin: 0; padding-left: 20px; color: #94a3b8; font-size: 0.9rem; line-height: 1.8;">
+<li>Instanciar la <strong style="color: #ef4444;">CentralVecinal</strong> y las <strong style="color: #34d399;">4 entidades</strong>.</li>
+<li>Suscribir a todos los grupos al evento <strong style="color: #ef4444;">'alertaVecinal'</strong> con <span style="color: #34d399;">.on()</span>.</li>
+<li>Disparar al menos <strong style="color: #f87171;">tres incidentes</strong> diferentes:
+<ul style="margin: 5px 0 0; padding-left: 20px; color: #94a3b8; font-size: 0.85rem; line-height: 1.8;">
+<li><span style="color: #ef4444;">Incidente 1:</span> Sospechoso en Calle 23 (Urgencia: <span style="color: #f87171;">'Alta'</span>, Tipo: 'Sospechoso')</li>
+<li><span style="color: #ef4444;">Incidente 2:</span> Accidente en Avenida 7 (Urgencia: <span style="color: #34d399;">'Media'</span>, Tipo: 'Accidente')</li>
+<li><span style="color: #ef4444;">Incidente 3:</span> Incidencia menor en Parque Central (Urgencia: <span style="color: #94a3b8;">'Baja'</span>, Tipo: 'Incidencia')</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(145deg, #13101a, #0f0a0f); border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"><span style="background: #ef4444; color: #ffffff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 0.9rem;">📦</span>
+<h3 style="margin: 0; color: #ef4444; font-size: 1.5rem;">Entregables Esperados</h3>
+<span style="margin-left: auto; background: #1a0a1a; padding: 4px 16px; border-radius: 30px; font-size: 0.7rem; color: #94a3b8; border: 1px solid #2a0a1a;">📝 Documentación</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; text-align: center; border: 1px solid #1a0a1a;"><span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">📄</span> <span style="color: #ef4444;">Código Fuente</span>
+<p style="margin: 8px 0 0; color: #94a3b8; font-size: 0.8rem; line-height: 1.5;">Archivo TypeScript con la implementación completa del sistema.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; text-align: center; border: 1px solid #1a0a1a;"><span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">🖥️</span> <span style="color: #ef4444;">Ejecución de Pruebas</span>
+<p style="margin: 8px 0 0; color: #94a3b8; font-size: 0.8rem; line-height: 1.5;">Captura de pantalla o video mostrando la salida en consola con los 3 incidentes.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; text-align: center; border: 1px solid #1a0a1a;"><span style="font-size: 2.5rem; display: block; margin-bottom: 10px;">📊</span> <span style="color: #ef4444;">Diagrama de Flujo</span>
+<p style="margin: 8px 0 0; color: #94a3b8; font-size: 0.8rem; line-height: 1.5;">Diagrama que muestre el flujo de eventos entre la central y los grupos de respuesta.</p>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(145deg, #13101a, #0f0a0f); border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"><span style="background: #ef4444; color: #ffffff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 0.9rem;">📊</span>
+<h3 style="margin: 0; color: #ef4444; font-size: 1.5rem;">Guía de Evaluación</h3>
+<span style="margin-left: auto; background: #1a0a1a; padding: 4px 16px; border-radius: 30px; font-size: 0.7rem; color: #94a3b8; border: 1px solid #2a0a1a;">🏆 Criterios</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #8b5cf6 #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">📝</span> <span style="color: #ef4444;">Tipado estricto</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">Uso correcto de <strong style="color: #8b5cf6;">interface</strong> y tipos restringidos <span style="color: #34d399;">('Alta' | 'Media' | 'Baja')</span> y <span style="color: #34d399;">('Sospechoso' | 'Emergencia' | 'Accidente' | 'Incidencia')</span>.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #34d399 #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">🧬</span> <span style="color: #ef4444;">Herencia</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">La clase emisora utiliza correctamente <strong style="color: #34d399;">extends EventEmitter</strong>.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #ef4444 #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">📡</span> <span style="color: #ef4444;">Emisión (.emit)</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">El evento se emite con el nombre correcto y pasa el objeto con la <strong style="color: #ef4444;">estructura adecuada</strong>.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #60a5fa #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">🔗</span> <span style="color: #ef4444;">Suscripción (.on)</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">Existen al menos <strong style="color: #60a5fa;">4 suscripciones independientes</strong> para un mismo evento.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #f87171 #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">🚫</span> <span style="color: #ef4444;">Desacoplamiento</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">La clase <strong style="color: #f87171;">CentralVecinal</strong> NO tiene importaciones ni referencias directas a <span style="color: #ef4444;">ningún grupo de respuesta</span>.</p>
+</div>
+<div style="background: #0f0a0f; border-radius: 12px; padding: 18px 20px; border-width: 4px 1px 1px; border-style: solid; border-color: #34d399 #1a0a1a #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.5rem;">🧪</span> <span style="color: #ef4444;">Pruebas de integración</span></div>
+<p style="margin: 0; color: #94a3b8; font-size: 0.85rem; line-height: 1.6;">Al menos <strong style="color: #34d399;">3 incidentes diferentes</strong> para comprobar que todos los grupos reaccionan dinámicamente según su lógica.</p>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(145deg, #13101a, #0f0a0f); border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #1a0a1a;">
+<div style="display: flex; align-items: center; gap: 15px; margin-bottom: 20px;"><span style="background: #ef4444; color: #ffffff; width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; border-radius: 12px; font-size: 0.9rem;">🧪</span>
+<h3 style="margin: 0; color: #ef4444; font-size: 1.5rem;">Escenario de Prueba</h3>
+<span style="margin-left: auto; background: #1a0a1a; padding: 4px 16px; border-radius: 30px; font-size: 0.7rem; color: #94a3b8; border: 1px solid #2a0a1a;">📋 Ejecución</span></div>
+<div style="background: #0a0a0a; border-radius: 12px; padding: 20px 24px; font-family: 'Courier New', monospace; font-size: 0.8rem; color: #94a3b8; line-height: 1.8; border: 1px solid #1a0a1a;">
+<div style="color: #ef4444;">📍 INCIDENTE 1: Sospechoso en Calle 23</div>
+<div style="color: #fbbf24;">🕷️ CentralVecinal: ¡ALERTA VECINAL! Calle 23 - Sospechoso - Urgencia: Alta</div>
+<div style="color: #34d399;">🕷️ Patrulla Spider: Movilizando equipo completo con Spider-Man</div>
+<div style="color: #60a5fa;">🚑 Ambulancia Comunitaria: [No responde - Tipo no coincide]</div>
+<div style="color: #fbbf24;">🔦 Vecinos Vigilantes: Vecinos alertados en Calle 23 - Mantener vigilancia</div>
+<div style="color: #8b5cf6;">🏢 Consejo del Barrio: Convocando reunión de emergencia</div>
+<br>
+<div style="color: #ef4444;">📍 INCIDENTE 2: Accidente en Avenida 7</div>
+<div style="color: #fbbf24;">🕷️ CentralVecinal: ¡ALERTA VECINAL! Avenida 7 - Accidente - Urgencia: Media</div>
+<div style="color: #34d399;">🕷️ Patrulla Spider: Enviando patrulla de reconocimiento</div>
+<div style="color: #60a5fa;">🚑 Ambulancia Comunitaria: Unidad médica en camino a Avenida 7</div>
+<div style="color: #fbbf24;">🔦 Vecinos Vigilantes: Vecinos alertados en Avenida 7 - Mantener vigilancia</div>
+<div style="color: #8b5cf6;">🏢 Consejo del Barrio: Convocando reunión de emergencia</div>
+<br>
+<div style="color: #ef4444;">📍 INCIDENTE 3: Incidencia menor en Parque Central</div>
+<div style="color: #fbbf24;">🕷️ CentralVecinal: ¡ALERTA VECINAL! Parque Central - Incidencia - Urgencia: Baja</div>
+<div style="color: #34d399;">🕷️ Patrulla Spider: Enviando patrulla de reconocimiento</div>
+<div style="color: #60a5fa;">🚑 Ambulancia Comunitaria: [No responde - Tipo no coincide]</div>
+<div style="color: #fbbf24;">🔦 Vecinos Vigilantes: Vecinos alertados en Parque Central - Mantener vigilancia</div>
+<div style="color: #8b5cf6;">🏢 Consejo del Barrio: Registrando incidente para informe mensual</div>
+</div>
+</div>
+<div style="background: linear-gradient(145deg, #1a0a1a, #0f0a0f); border-radius: 20px; padding: 25px 30px; margin-top: 25px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; border: 1px solid #2a0a1a;">
+<div style="display: flex; align-items: center; gap: 18px;"><span style="font-size: 2.8rem;">💬</span>
+<div>
+<h5 style="margin: 0 0 4px 0; color: #ef4444; font-size: 1.1rem;">¿Dudas sobre el caso de estudio?</h5>
+<p style="margin: 0; color: #94a3b8; font-size: 0.9rem;">Comparte tus preguntas en el foro de consultas.</p>
+</div>
+</div>
+<a style="background: #ef4444; color: #ffffff; padding: 12px 35px; text-decoration: none; border-radius: 40px; font-size: 0.95rem;" href="#"> 🕷️ Ir al Foro </a></div>
+<div style="margin-top: 25px; padding-top: 20px; border-top: 1px solid #1a0a1a; text-align: center;">
+<p style="color: #334155; font-size: 0.75rem; margin: 0;">🕷️ UN GRAN PODER CONLLEVA UNA GRAN RESPONSABILIDAD 🕷️</p>
+</div>
+</div>
+<footer style="background: linear-gradient(145deg, #0a0a0a, #0f0a0f); color: #94a3b8; text-align: center; padding: 25px 30px 20px; border-top: 2px solid #ef4444;">
+<p style="margin: 0 0 5px 0; font-size: 1rem; color: #ef4444;">🕷️ Gestión de Servidores Web | Ing. Adolfo Herrera</p>
+<div style="border-top: 1px solid rgba(255,255,255,0.05); padding-top: 12px; margin-top: 8px;">
+<p style="margin: 0; font-size: 0.75rem; color: #64748b;">© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

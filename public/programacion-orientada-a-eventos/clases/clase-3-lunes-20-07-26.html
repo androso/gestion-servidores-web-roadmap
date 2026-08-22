@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 3  Lunes 20/07/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 3  Lunes 20/07/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 2 del 20 al 26 de julio</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-3-lunes-20-slash-07-slash-26">https://univo.instructure.com/courses/1742/pages/clase-3-lunes-20-slash-07-slash-26</a></p>
+  </header>
+  <main>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 20px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">Sesion 03</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 2 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">📚 FUNDAMENTOS</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Recordatorio de TypeScript</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 600px;">Fundamentos necesarios para comenzar con Programación Orientada a Eventos</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">20 de Julio 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#intro-ts">TypeScript</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#variables">Variables</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#condicionales">Condicionales</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#ciclos">Ciclos</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#arreglos">Arreglos</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#modelos">Modelos</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#funciones">Funciones</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#clases">Clases</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">2 horas</span></div>
+</div>
+  
+<div id="intro-ts" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔷</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">¿Qué es TypeScript?</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 18px 22px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">📌 Definición</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.6;">TypeScript es un <strong style="color: #0e3f68;">superset</strong> de JavaScript que añade <strong style="color: #0e3f68;">tipado estático</strong> y otras características modernas. Fue desarrollado por Microsoft para ayudar a construir aplicaciones a gran escala.</p>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 18px 22px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🎯 ¿Por qué usarlo?</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.92em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Tipado estático:</strong> Detecta errores en tiempo de compilación.</li>
+<li><strong style="color: #0e3f68;">Autocompletado:</strong> Mejora la experiencia de desarrollo.</li>
+<li><strong style="color: #0e3f68;">Mantenibilidad:</strong> Código más predecible y fácil de entender.</li>
+<li><strong style="color: #0e3f68;">POE:</strong> Permite tipar eventos, emisores y manejadores.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.88em;"><strong>💡 Para POE:</strong> TypeScript nos permite definir <strong style="color: #92400e;">tipos de eventos</strong>, <strong style="color: #92400e;">estructuras de datos</strong> y <strong style="color: #92400e;">contratos</strong> entre emisores y oyentes.</p>
+</div>
+</div>
+  
+<div id="variables" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📦</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Variables y Tipos Básicos</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Las variables en TypeScript son <strong style="color: #0e3f68;">contenedores</strong> que almacenan valores. TypeScript nos permite <strong style="color: #0e3f68;">declarar explícitamente</strong> el tipo de dato que contendrán.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+<div style="background: #eff6ff; border-radius: 10px; padding: 14px 18px; border: 1px solid #bfdbfe; text-align: center;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">🔢 Números</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.8em;"><code>number</code></p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Enteros y decimales</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 10px; padding: 14px 18px; border: 1px solid #bbf7d0; text-align: center;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">📝 Texto</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.8em;"><code>string</code></p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Cadenas de texto</p>
+</div>
+<div style="background: #fef2f2; border-radius: 10px; padding: 14px 18px; border: 1px solid #fecaca; text-align: center;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.9em;">⚖️ Booleano</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.8em;"><code>boolean</code></p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">true / false</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Declaración de variables</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 8px; font-family: monospace; font-size: 0.82em; background: #1e293b; color: #e2e8f0; padding: 12px 16px; border-radius: 8px;">
+<div><span style="color: #60a5fa;">let</span> nombre: <span style="color: #34d399;">string</span> = <span style="color: #fbbf24;">"Ana"</span>;</div>
+<div><span style="color: #60a5fa;">let</span> edad: <span style="color: #34d399;">number</span> = <span style="color: #f472b6;">25</span>;</div>
+<div><span style="color: #60a5fa;">let</span> esEstudiante: <span style="color: #34d399;">boolean</span> = <span style="color: #fbbf24;">true</span>;</div>
+<div><span style="color: #60a5fa;">const</span> PI: <span style="color: #34d399;">number</span> = <span style="color: #f472b6;">3.1416</span>;</div>
+</div>
+<p style="margin: 8px 0 0 0; color: #64748b; font-size: 0.78em;"><strong style="color: #0e3f68;">Diferencia:</strong> <code>let</code> permite reasignación, <code>const</code> no. TypeScript infiere tipos automáticamente.</p>
+</div>
+</div>
+  
+<div id="condicionales" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔀</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Condicionales</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Permiten <strong style="color: #0e3f68;">tomar decisiones</strong> en el código. Ejecutan diferentes bloques según una condición.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 if / else</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Ejecuta un bloque si la condición es <strong style="color: #0e3f68;">verdadera</strong>.</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.75em;">También puede tener <code>else if</code> y <code>else</code>.</p>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Operador Ternario</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Forma <strong style="color: #0e3f68;">compacta</strong> de escribir un if/else.</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.75em;">Sintaxis: <code>condición ? valor1 : valor2</code></p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.88em;"><strong>💡 Para POE:</strong> Los condicionales son útiles para <strong style="color: #92400e;">validar eventos</strong> y decidir qué acción tomar según el tipo de evento o sus datos.</p>
+</div>
+</div>
+  
+<div id="ciclos" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔄</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Ciclos</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Permiten <strong style="color: #0e3f68;">repetir</strong> un bloque de código varias veces. Son esenciales para procesar colecciones de datos.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+<div style="background: #f5f3ff; border-radius: 10px; padding: 14px 18px; border: 1px solid #ddd6fe; text-align: center;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.85em;">for</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.75em;">Repite con un contador</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.7em;">Ideal para arreglos indexados</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 10px; padding: 14px 18px; border: 1px solid #ddd6fe; text-align: center;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.85em;">while</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.75em;">Repite mientras se cumpla</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.7em;">Útil cuando no se sabe cuántas</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 10px; padding: 14px 18px; border: 1px solid #ddd6fe; text-align: center;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.85em;">forEach</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.75em;">Itera sobre arreglos</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.7em;">Muy usado en TypeScript</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f1f5f9; border-radius: 10px; padding: 12px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #64748b; font-size: 0.82em;"><strong style="color: #0e3f68;">💡 Para POE:</strong> Los ciclos son útiles para <strong style="color: #0e3f68;">procesar listas de eventos</strong> o <strong style="color: #0e3f68;">escuchar múltiples fuentes</strong> de eventos.</p>
+</div>
+</div>
+  
+<div id="arreglos" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #ec4899; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Arreglos</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Los arreglos son <strong style="color: #0e3f68;">colecciones ordenadas</strong> de elementos del mismo tipo. Se pueden declarar de dos formas:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #fdf2f8; border-radius: 10px; padding: 14px 18px; border: 1px solid #fbcfe8;">
+<p style="margin: 0;  color: #9d174d; font-size: 0.9em;">🔹 Sintaxis con []</p>
+<p style="margin: 6px 0 0 0; color: #e2e8f0; font-size: 0.85em; font-family: monospace; background: #1e293b; padding: 6px 10px; border-radius: 6px;">let numeros: <span style="color: #34d399;">number[]</span> = [1, 2, 3];</p>
+</div>
+<div style="background: #fdf2f8; border-radius: 10px; padding: 14px 18px; border: 1px solid #fbcfe8;">
+<p style="margin: 0;  color: #9d174d; font-size: 0.9em;">🔹 Sintaxis con Array&lt;T&gt;</p>
+<p style="margin: 6px 0 0 0; color: #e2e8f0; font-size: 0.85em; font-family: monospace; background: #1e293b; padding: 6px 10px; border-radius: 6px;">let nombres: <span style="color: #34d399;">Array&lt;string&gt;</span> = ["Ana", "Luis"];</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.88em;"><strong>💡 Para POE:</strong> Los arreglos se usan para <strong style="color: #92400e;">almacenar listas de eventos</strong>, <strong style="color: #92400e;">colas de mensajes</strong> y <strong style="color: #92400e;">listados de oyentes</strong>.</p>
+</div>
+</div>
+  
+<div id="modelos" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📐</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Modelos o Plantillas</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Los modelos definen la <strong style="color: #0e3f68;">estructura</strong> que deben tener los objetos. En TypeScript se usan <strong style="color: #0e3f68;">interfaces</strong> y <strong style="color: #0e3f68;">type aliases</strong>.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f0f7ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">🔹 Interface</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Define un <strong style="color: #1e3a8a;">contrato</strong> que un objeto debe cumplir.</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 0.75em; margin-top: 8px;"><span style="color: #60a5fa;">interface</span> Usuario {<br>&nbsp;&nbsp;nombre: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;edad: <span style="color: #34d399;">number</span>;<br>&nbsp;&nbsp;email?: <span style="color: #34d399;">string</span>; <span style="color: #fbbf24;">// opcional</span><br>}</div>
+</div>
+<div style="background: #f0f7ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">🔹 Propiedades opcionales</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Con <code style="color: #1e3a8a;">?</code> se indica que la propiedad <strong style="color: #1e3a8a;">no es obligatoria</strong>.</p>
+<div style="background: #fef3c7; padding: 8px 12px; border-radius: 6px; font-size: 0.8em; margin-top: 8px;"><span style="color: #92400e;">💡</span> Ejemplo: <code style="color: #92400e;">email?: string</code> significa que puede o no estar presente.</div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.88em;"><strong>💡 Para POE:</strong> Los modelos son <strong style="color: #92400e;">esenciales</strong> para definir la estructura de los <strong style="color: #92400e;">eventos</strong>, los <strong style="color: #92400e;">datos</strong> que transportan y los <strong style="color: #92400e;">contratos</strong> entre emisores y oyentes.</p>
+</div>
+</div>
+  
+<div id="funciones" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">⚡</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Funciones</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Las funciones son <strong style="color: #0e3f68;">bloques de código</strong> que se ejecutan cuando son <strong style="color: #0e3f68;">llamadas</strong>. Pueden recibir <strong style="color: #0e3f68;">parámetros</strong> y devolver <strong style="color: #0e3f68;">resultados</strong>.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">🔹 Función tradicional</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Se declara con <code style="color: #92400e;">function</code> y tiene un nombre.</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 6px 10px; border-radius: 6px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #60a5fa;">function</span> <span style="color: #fbbf24;">sumar</span>(a: <span style="color: #34d399;">number</span>, b: <span style="color: #34d399;">number</span>): <span style="color: #34d399;">number</span> {<br>&nbsp;&nbsp;<span style="color: #60a5fa;">return</span> a + b;<br>}</div>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">🔹 Función flecha (Arrow)</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Sintaxis <strong style="color: #92400e;">moderna</strong> y más compacta.</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 6px 10px; border-radius: 6px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #60a5fa;">const</span> sumar = (a: <span style="color: #34d399;">number</span>, b: <span style="color: #34d399;">number</span>): <span style="color: #34d399;">number</span> =&gt; a + b;</div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.88em;"><strong>💡 Para POE:</strong> Las funciones son los <strong style="color: #14532d;">manejadores de eventos</strong> (handlers). Se pasan como <strong style="color: #14532d;">callbacks</strong> a los emisores.</p>
+</div>
+</div>
+  
+<div id="clases" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🏗️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Clases y Objetos</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Las clases son <strong style="color: #0e3f68;">plantillas</strong> para crear objetos. Encapsulan <strong style="color: #0e3f68;">datos</strong> (propiedades) y <strong style="color: #0e3f68;">comportamiento</strong> (métodos).</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f0f7ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">🔹 Clase</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #60a5fa;">class</span> <span style="color: #fbbf24;">Persona</span> {<br>&nbsp;&nbsp;<span style="color: #60a5fa;">constructor</span>(<span style="color: #60a5fa;">public</span> nombre: <span style="color: #34d399;">string</span>, <span style="color: #60a5fa;">public</span> edad: <span style="color: #34d399;">number</span>) {}<br>&nbsp;&nbsp;<span style="color: #60a5fa;">saludar</span>(): <span style="color: #34d399;">void</span> {<br>&nbsp;&nbsp;&nbsp;&nbsp;console.log(<span style="color: #fbbf24;">`Hola, soy ${this.nombre}`</span>);<br>&nbsp;&nbsp;}<br>}</div>
+</div>
+<div style="background: #f0f7ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">🔹 Objeto</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Instancia de una clase. Contiene datos y puede ejecutar métodos.</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #60a5fa;">const</span> ana = <span style="color: #60a5fa;">new</span> Persona(<span style="color: #fbbf24;">"Ana"</span>, <span style="color: #f472b6;">25</span>);<br>ana.saludar(); <span style="color: #fbbf24;">// "Hola, soy Ana"</span></div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.88em;"><strong>💡 Para POE:</strong> Las clases se usan para crear <strong style="color: #92400e;">emisores de eventos</strong>, <strong style="color: #92400e;">manejadores</strong> y <strong style="color: #92400e;">sistemas</strong> completos basados en eventos.</p>
+</div>
+</div>
+  
+<div id="ejercicios" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 40px 45px; margin-bottom: 30px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;"><span style="font-size: 2em;">✍️</span>
+<h2 style="margin: 0; color: #ffffff; font-size: 1.6em; ">Ejercicios Prácticos</h2>
+<span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em; ">45 min</span></div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px; margin-bottom: 18px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 1</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 15 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">📋 Registro de Asistencia a Eventos</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Crea un molde para registrar a los asistentes de un seminario de la universidad. El <strong style="color: #fbc30b;">nombre</strong> y la <strong style="color: #fbc30b;">carrera</strong> son obligatorios, pero el <strong style="color: #fbc30b;">correo electrónico</strong> y el <strong style="color: #fbc30b;">número de asiento</strong> asignado son opcionales. Crea dos asistentes (uno con datos completos y otro sin los opcionales) y usa condicionales para imprimirlos de forma limpia.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #60a5fa;">interface</span> <span style="color: #fbbf24;">Asistente</span> {<br>&nbsp;&nbsp;nombre: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;carrera: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;email?: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;asiento?: <span style="color: #34d399;">number</span>;<br>}</p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #fbc30b;">🎯 Objetivo:</strong> Practicar <strong style="color: #fbc30b;">interfaces</strong>, <strong style="color: #fbc30b;">propiedades opcionales</strong> y <strong style="color: #fbc30b;">condicionales</strong>.</p>
+</div>
+</div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px; margin-bottom: 18px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #22c55e; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 2</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 15 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">🛒 El Carrito de Compras</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Crea una lista de productos de tecnología. Cada producto tiene un <strong style="color: #fbc30b;">nombre</strong> y un <strong style="color: #fbc30b;">precio</strong>, pero el <strong style="color: #fbc30b;">descuento</strong> es opcional. Recorre la lista con un bucle <code style="color: #34d399;">forEach</code> y calcula el precio final que pagará el usuario usando un <strong style="color: #fbc30b;">operador ternario</strong>.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #60a5fa;">interface</span> <span style="color: #fbbf24;">Producto</span> {<br>&nbsp;&nbsp;nombre: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;precio: <span style="color: #34d399;">number</span>;<br>&nbsp;&nbsp;descuento?: <span style="color: #34d399;">number</span>;<br>}<br><br><span style="color: #fbbf24;">// Ejemplo de cálculo</span><br><span style="color: #fbbf24;">// precioFinal = precio - (descuento ? precio * descuento : 0)</span></p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #34d399;">🎯 Objetivo:</strong> Practicar <strong style="color: #34d399;">arreglos</strong>, <strong style="color: #34d399;">forEach</strong>, <strong style="color: #34d399;">operador ternario</strong> y <strong style="color: #34d399;">propiedades opcionales</strong>.</p>
+</div>
+</div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 3</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 15 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">🎟️ Calculadora de Entradas Universitarias</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Crea una <strong style="color: #fbc30b;">función flecha</strong> que calcule el precio de la entrada a un evento universitario. La función debe recibir obligatoriamente el <strong style="color: #fbc30b;">precio base</strong> y el <strong style="color: #fbc30b;">tipo de boleto</strong> ("GENERAL" o "VIP"). Además, debe recibir un <strong style="color: #fbc30b;">código de descuento</strong> de estudiante que es <strong style="color: #fbc30b;">opcional</strong>.</p>
+<ul style="margin: 8px 0 12px 0; padding-left: 20px; color: #94a3b8; font-size: 0.85em; line-height: 1.8;">
+<li>Si el boleto es <strong style="color: #fbc30b;">"VIP"</strong> se le suman <strong style="color: #fbc30b;">$20</strong> al costo.</li>
+<li>Si el usuario pasa el código opcional <strong style="color: #fbc30b;">"ESTUDIANTE"</strong>, se le aplica un <strong style="color: #fbc30b;">50% de descuento</strong> al total.</li>
+</ul>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #fbbf24;">// Función flecha</span><br><span style="color: #60a5fa;">const</span> calcularPrecio = (precioBase: <span style="color: #34d399;">number</span>, tipo: <span style="color: #34d399;">string</span>, codigo?: <span style="color: #34d399;">string</span>) =&gt; {<br>&nbsp;&nbsp;<span style="color: #fbbf24;">// TODO: Implementar lógica</span><br>};</p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #f59e0b;">🎯 Objetivo:</strong> Practicar <strong style="color: #f59e0b;">funciones flecha</strong>, <strong style="color: #f59e0b;">parámetros opcionales</strong>, <strong style="color: #f59e0b;">condicionales</strong> y <strong style="color: #f59e0b;">operadores lógicos</strong>.</p>
+</div>
+</div>
+
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Consejo:</strong> Completa cada ejercicio antes de pasar al siguiente. Estos conceptos son la base para la <strong style="color: #fbc30b;">Programación Orientada a Eventos</strong>.</p>
+</div>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📚</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Documentación de TypeScript</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Recursos oficiales y referencias para profundizar en TypeScript:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📖 Documentación Oficial</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">typescriptlang.org/docs</p>
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">▶️ Playground</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Prueba TypeScript en línea</p>
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📋 Cheatsheets</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Resúmenes rápidos de sintaxis</p>
+</div>
+<div style="margin-top: 14px; background: #f1f5f9; border-radius: 10px; padding: 12px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #64748b; font-size: 0.82em;"><strong style="color: #0e3f68;">💡 Recomendación:</strong> Usa la documentación oficial como referencia constante durante el desarrollo de tus proyectos.</p>
+</div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 30px 38px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+<div>
+<h3 style="margin: 0; color: #fbc30b; font-size: 1.1em;">🎯 ¿Listo para DOM?</h3>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.85em;">Con estos fundamentos estás preparado para comenzar con la <strong style="color: #fbc30b;">Panipulación del DOM</strong>.</p>
+</div>
+<div style="text-align: right;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); padding: 12px 20px; border-radius: 12px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.7em;">Próxima sesión</p>
+<p style="margin: 4px 0 0 0; color: #fbc30b;  font-size: 0.9em;">Introducción a DOM</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><br><strong style="color: #fbc30b; font-size: 1.05em;">PROGRAMACION ORIENTADA A EVENTOS | ING. ADOLFO HERRERA</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;"><span>&nbsp;</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

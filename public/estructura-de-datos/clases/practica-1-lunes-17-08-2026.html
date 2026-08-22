@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practica 1 Lunes 17/08/2026 — ESTRUCTURA DE DATOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Practica 1 Lunes 17/08/2026</h1>
+    <p><strong>Curso:</strong> ESTRUCTURA DE DATOS</p>
+    <p><strong>Módulo:</strong> Practicas de laboratorio</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1748/pages/practica-1-lunes-17-slash-08-slash-2026">https://univo.instructure.com/courses/1748/pages/practica-1-lunes-17-slash-08-slash-2026</a></p>
+  </header>
+  <main>
+<div style="max-width: 900px; width: 100%; margin: 40px auto; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; border-radius: 24px; overflow: hidden; color: #334155; border: 1px solid #e2e8f0;" title="Plantilla para prácticas"><header style="background: linear-gradient(135deg, #0f2027 0%, #0e3f68 50%, #2980b9 100%); padding: 50px 40px; border-bottom: 8px solid #fbc30b; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 35px; flex-wrap: wrap;">
+<div style="flex-shrink: 0; margin: 0 auto; text-align: center; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 50%;"><img style="max-height: 110px; width: auto; display: block; border: 0px none currentcolor;" src="https://univo.instructure.com/courses/1763/files/386519/preview" alt="Logo de la Universidad de Oriente" data-api-endpoint="https://univo.instructure.com/api/v1/courses/1763/files/386519" data-api-returntype="File" loading="lazy"></div>
+<div style="flex: 1; min-width: 280px; text-align: left;">
+<div style="margin-bottom: 18px; display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 12px;">
+<div style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 30px; font-size: 0.85em;">PRÁCTICA N.º 01</div>
+<div style="background: #ef4444; color: #ffffff; padding: 6px 20px; border-radius: 30px; font-size: 0.85em;">MODALIDAD PRESENCIAL</div>
+</div>
+<h2 style="margin: 0; color: #ffffff; font-size: 2.4em; line-height: 1.2;">Tema: Tipos de Datos</h2>
+<p style="margin: 12px 0 0; color: #fbc30b; font-size: 1.25em;">Manejo y Estructura de Datos</p>
+</div>
+</div>
+</header>
+<div style="padding: 40px 30px; background-color: #fafbfc;">
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border-width: 6px 1px 1px; border-style: solid; border-color: #0e3f68 #e2e8f0 #e2e8f0;">
+<h3 style="margin: 0 0 25px 0; color: #0e3f68; font-size: 1.7em;">Indicaciones de la Práctica</h3>
+<div style="background: linear-gradient(to right, #f8fafc, #ffffff); border-left: 5px solid #3b82f6; padding: 22px 25px; border-radius: 0 12px 12px 0; margin-bottom: 35px;">
+<p style="margin: 0; color: #475569; font-size: 1.05em; line-height: 1.6;"><strong style="color: #0f172a; font-size: 1.1em; display: block; margin-bottom: 8px;">Indicaciones generales:</strong> La práctica se desarrollará de forma individual en el laboratorio. Las explicaciones conceptuales, los ejercicios guiados y el procedimiento detallado a seguir se encuentran disponibles en la presentación de la sesión.</p>
+</div>
+<div style="background: linear-gradient(135deg, #f0f7ff 0%, #f8fafc 100%); padding: 30px; border-radius: 16px; border: 1px solid #e0f2fe;">
+<h4 style="margin: 0 0 15px 0; color: #0e3f68; font-size: 1.2em;">Objetivo de la Práctica</h4>
+<p style="margin: 0; color: #334155; font-size: 1em; line-height: 1.7;">Diferenciar la representación en memoria y comportamiento de los tipos de datos primitivos y estructurados mediante la inspección de identificadores de memoria y pruebas de mutabilidad en Python.</p>
+</div>
+</div>
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border-width: 6px 1px 1px; border-style: solid; border-color: #fbc30b #e2e8f0 #e2e8f0;">
+<h3 style="margin: 0 0 25px 0; color: #0e3f68; font-size: 1.7em;">Material de la Sesión</h3>
+<div style="background: #f8fafc; padding: 20px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<p style="margin: 0 0 15px 0; color: #334155; font-size: 1.1em;">Presentación de la Sesión</p>
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; border-radius: 12px; overflow: hidden; background-color: #000000;"><iframe style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; border: medium none currentcolor;" src="https://docs.google.com/presentation/d/1VJXw8FE22XQYsd6-s_6IDr84zNmT07R2/embed?start=false&amp;loop=false&amp;delayms=3000" loading="lazy" allowfullscreen="allowfullscreen" webkitallowfullscreen="webkitallowfullscreen" mozallowfullscreen="mozallowfullscreen"></iframe></div>
+</div>
+</div>
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border-width: 6px 1px 1px; border-style: solid; border-color: #0e3f68 #e2e8f0 #e2e8f0;">
+<h3 style="margin: 0 0 25px 0; color: #0e3f68; font-size: 1.7em;">Entrega de la Actividad</h3>
+<div style="background: linear-gradient(135deg, #0e3f68 0%, #1e5a8a 100%); padding: 30px; border-radius: 16px; color: #ffffff; ">
+<h4 style="margin: 0 0 10px 0; color: #fbc30b; font-size: 1.25em;">Indicaciones de entrega</h4>
+<p style="margin: 0 0 20px 0; color: #f1f5f9; font-size: 1em; line-height: 1.6;">Subir un archivo Script de Python (<code>.py</code>) o Jupyter Notebook (<code>.ipynb</code>) con los ejercicios resueltos y las respuestas comentadas a las preguntas analíticas solicitadas en la presentación.</p>
+<div style="text-align: center; margin-top: 15px;"><a style="display: inline-block; background-color: #2563eb; color: #ffffff;  font-size: 1.05em; padding: 14px 28px; border-radius: 10px; text-decoration: none;   border: 1px solid #3b82f6;" href="https://univo.instructure.com/courses/1748/assignments/14350" target="_blank" data-api-endpoint="https://univo.instructure.com/api/v1/courses/1748/assignments/14350" data-api-returntype="Assignment"> 🚀 Ir a Entregar Tarea en Canvas </a></div>
+</div>
+</div>
+<footer style="background: linear-gradient(135deg, #0f2027 0%, #0e3f68 50%, #2980b9 100%); color: #ffffff; text-align: center; padding: 15px 20px 10px; border-top: 5px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.9em; color: #e2e8f0; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;"> Dirección de Educación a Distancia - UNIVO </strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.85em; color: #ffffff; margin-bottom: 10px;">
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">📞</span> <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">📧</span> <a style="color: #fbc30b; text-decoration: none;" title="Enviar correo a soporte técnico" href="mailto:educacion.distancia@univo.edu.sv"> educacion.distancia@univo.edu.sv </a></div>
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">🕒</span> <span> Lunes a viernes: 8:00 a. m. a 6:00 p. m. &nbsp;|&nbsp; Sábados: 8:00 a. m. a 12:00 m. </span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 8px;">
+<p style="margin: 0; font-size: 0.8em; color: #cbd5e1;"><strong> © 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS </strong></p>
+</div>
+</footer></div>
+</div>
+  </main>
+</body>
+</html>

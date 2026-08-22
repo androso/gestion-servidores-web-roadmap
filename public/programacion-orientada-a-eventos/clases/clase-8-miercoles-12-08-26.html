@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 8 Miercoles 12/08/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 8 Miercoles 12/08/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 4 del 10/08/26 al 16/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-8-miercoles-12-slash-08-slash-26">https://univo.instructure.com/courses/1742/pages/clase-8-miercoles-12-slash-08-slash-26</a></p>
+  </header>
+  <main>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="max-width: 1100px; width: 100%; margin: 0px auto; font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0;"><header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 40px 50px 35px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 35px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255, 255, 255, 0.06); padding: 18px; border-radius: 24px; border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.08);"><span style="font-size: 3em; display: block;"><img id="385326" src="../archivos/385326-Recurso 1.png" alt="Recurso 1.png" width="125" height="125" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File" loading="lazy"></span></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;"><span style="background: #fbc30b; color: #0f172a; padding: 4px 18px; border-radius: 100px; font-size: 0.7em;">GUÍA DE PRÁCTICA</span> <span style="background: rgba(255, 255, 255, 0.12); color: #e2e8f0; padding: 4px 18px; border-radius: 100px; font-size: 0.7em; border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06);">⏱️ 90 MINUTOS</span> <span style="background: rgba(251, 195, 11, 0.15); color: #fbc30b; padding: 4px 18px; border-radius: 100px; font-size: 0.7em; border-width: 1px; border-style: solid; border-color: rgba(251, 195, 11, 0.15);">👥 INDIVIDUAL / PAREJAS</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.2em; line-height: 1.15;">Spider-Verse: Registro de Héroes</h1>
+<p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 1.05em; max-width: 600px;">Aplicación de POE con TypeScript — Eventos, validaciones y funcionalidades interactivas</p>
+</div>
+</div>
+</header>
+<div style="padding: 35px 40px; background: #f8fafc;">
+<div style="background: #ffffff; border-radius: 20px; padding: 30px 35px; margin-bottom: 30px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.8em;">🧩</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.3em;">Código Base</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">PARTES INCLUIDAS</span></div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0 0 8px 0; color: #0e3f68;">📌 El código base ya incluye:</p>
+<ul style="margin: 0; padding-left: 22px; color: #475569; font-size: 0.92em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">interface Heroe</strong> — Definición del tipo de datos de los héroes.</li>
+<li><strong style="color: #0e3f68;">Objeto DOM</strong> — Selección de elementos del HTML (botones, inputs, select, contenedor).</li>
+<li><strong style="color: #0e3f68;">Arreglo heroes</strong> — Almacenamiento de los héroes registrados.</li>
+<li><strong style="color: #0e3f68;">Funciones agregarHeroe()</strong> y <strong style="color: #0e3f68;">eliminarHeroe()</strong> — Operaciones CRUD básicas.</li>
+<li><strong style="color: #0e3f68;">Función renderizarHeroes()</strong> — Genera las tarjetas HTML de cada héroe.</li>
+<li><strong style="color: #0e3f68;">Delegación de eventos con closest()</strong> — Manejo de eventos en elementos dinámicos.</li>
+</ul>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>📌 Regla del ejercicio:</strong> Cada punto se prueba en el navegador antes de pasar al siguiente. Si algo no compila, <strong style="color: #92400e;">no avanzan</strong> — deben resolverlo primero (así se acostumbran a leer errores de TypeScript).</p>
+</div>
+</div>
+<div style="background: #ffffff; border-radius: 20px; padding: 16px 22px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;"><span style="color: #0e3f68; font-size: 0.8em;">📋 Bloques:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.75em; padding: 3px 12px; background: #eff6ff; border-radius: 100px;" href="#bloque1">1️⃣ Calentamiento</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.75em; padding: 3px 12px; background: #eff6ff; border-radius: 100px;" href="#bloque2">2️⃣ Validaciones</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.75em; padding: 3px 12px; background: #eff6ff; border-radius: 100px;" href="#bloque3">3️⃣ Favoritos</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.75em; padding: 3px 12px; background: #eff6ff; border-radius: 100px;" href="#bloque4">4️⃣ Filtro y Orden</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.75em; padding: 3px 12px; background: #eff6ff; border-radius: 100px;" href="#bloque5">5️⃣ Reto Final</a></div>
+<div style="display: flex; align-items: center; gap: 6px; background: #f1f5f9; padding: 3px 14px; border-radius: 100px;"><span style="color: #475569; font-size: 0.7em;">⏱️ Total:</span> <span style="color: #0e3f68; font-size: 0.8em;">90 min</span></div>
+</div>
+<div id="bloque1" style="background: #ffffff; border-radius: 24px; padding: 28px 35px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #3b82f6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">BLOQUE 1</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em;">Calentamiento</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">15 min</span></div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Objetivo:</strong> Perder el miedo a tocar el código base. Modificar sin romper nada.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 18px; border: 1px solid #bfdbfe;"><span style="background: #3b82f6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 1</span>
+<p style="margin: 8px 0 0 0; color: #1e3a8a; font-size: 0.85em;">🕐 Fecha y hora</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Cambien el mensaje de bienvenida en consola (<code style="color: #1e3a8a;">init()</code>) para que también muestre la <strong style="color: #1e3a8a;">fecha y hora actual</strong> usando <code style="color: #1e3a8a;">new Date()</code>.</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 18px; border: 1px solid #bbf7d0;"><span style="background: #22c55e; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 2</span>
+<p style="margin: 8px 0 0 0; color: #14532d; font-size: 0.85em;">🌌 Nuevo universo</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Agreguen una nueva opción al <code style="color: #14532d;">&lt;select&gt;</code> del HTML con un universo inventado por ustedes (ej. <strong style="color: #14532d;">"Tierra-XXXX — su propio personaje"</strong>), y verifiquen que aparece correctamente al reclutarlo.</p>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 18px; border: 1px solid #fde68a;"><span style="background: #f59e0b; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 3</span>
+<p style="margin: 8px 0 0 0; color: #92400e; font-size: 0.85em;">📊 Log de cambios</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">En <code style="color: #92400e;">actualizarEstado()</code>, agreguen un <code style="color: #92400e;">console.log</code> que muestre el arreglo <code style="color: #92400e;">heroes</code> completo cada vez que cambia. Ábranlo en la consola del navegador y observen cómo crece y decrece.</p>
+</div>
+</div>
+</div>
+<div id="bloque2" style="background: #ffffff; border-radius: 24px; padding: 28px 35px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #f59e0b; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">BLOQUE 2</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em;">Validaciones</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">20 min</span></div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Refuerza:</strong> <code style="color: #0e3f68;">if</code>, tipado de strings, manipulación de estilos desde eventos.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 4</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">🚫 Nombres duplicados</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Antes de agregar un héroe en <code style="color: #991b1b;">agregarHeroe()</code>, verifiquen si ya existe uno con el mismo nombre (usen <code style="color: #991b1b;">.some()</code> o <code style="color: #991b1b;">.find()</code> sobre el arreglo <code style="color: #991b1b;">heroes</code>). Si existe, muestren un mensaje de error y <strong style="color: #991b1b;">no lo agreguen</strong>.</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 5</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">✏️ Límite de caracteres</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">El nombre no debe superar los <strong style="color: #991b1b;">20 caracteres</strong>. Si el usuario escribe más, <strong style="color: #991b1b;">corten el string</strong> o <strong style="color: #991b1b;">muestren un error</strong> (a elección de ustedes, pero deben justificar cuál eligieron y por qué).</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 6</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">👥 Límite de héroes</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">El equipo no puede tener más de <strong style="color: #991b1b;">6 héroes</strong> a la vez. Si se intenta agregar un séptimo, el botón <code style="color: #991b1b;">btnAgregar</code> debe <strong style="color: #991b1b;">deshabilitarse</strong> (<code style="color: #991b1b;">disabled = true</code>) y mostrar un mensaje explicando por qué. Al eliminar uno, el botón debe <strong style="color: #991b1b;">volver a habilitarse</strong>.</p>
+</div>
+</div>
+</div>
+<div id="bloque3" style="background: #ffffff; border-radius: 24px; padding: 28px 35px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #8b5cf6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">BLOQUE 3</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em;">Nueva Funcionalidad: Favoritos</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">25 min</span></div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Refuerza:</strong> Modificar la interfaz <code style="color: #0e3f68;">Heroe</code>, <code style="color: #0e3f68;">classList.toggle</code>, delegación de eventos.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 18px; border: 1px solid #ddd6fe;"><span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 7</span>
+<p style="margin: 8px 0 0 0; color: #4c1d95; font-size: 0.85em;">🔖 Agregar propiedad a la interfaz</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Agreguen una propiedad nueva a la interfaz <code style="color: #4c1d95;">Heroe</code>:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 8px 12px; border-radius: 6px; font-family: monospace; font-size: 0.7em; margin-top: 4px;"><span style="color: #fbbf24;">interface</span> <span style="color: #60a5fa;">Heroe</span> {<br>&nbsp;&nbsp;id: <span style="color: #34d399;">number</span>;<br>&nbsp;&nbsp;nombre: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;universo: <span style="color: #34d399;">string</span>;<br>&nbsp;&nbsp;<span style="color: #fbbf24;">esFavorito</span>: <span style="color: #34d399;">boolean</span>; <span style="color: #fbc30b;">// &lt;-- nueva propiedad</span><br>}</div>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 18px; border: 1px solid #ddd6fe;"><span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 8</span>
+<p style="margin: 8px 0 0 0; color: #4c1d95; font-size: 0.85em;">🔄 Inicializar favoritos</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Ajusten <code style="color: #4c1d95;">agregarHeroe()</code> para que todo héroe nuevo empiece con <code style="color: #4c1d95;">esFavorito: false</code>.</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 18px; border: 1px solid #ddd6fe;"><span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 9</span>
+<p style="margin: 8px 0 0 0; color: #4c1d95; font-size: 0.85em;">🎨 Botón de favorito en plantilla</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">En la plantilla HTML de cada tarjeta (dentro de <code style="color: #4c1d95;">renderizarHeroes</code>), agreguen un botón nuevo:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 6px 10px; border-radius: 6px; font-family: monospace; font-size: 0.7em; margin-top: 4px;"><span style="color: #fbbf24;">&lt;button</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"btn-favorito"</span> <span style="color: #34d399;">data-id</span>=<span style="color: #fbbf24;">"${heroe.id}"</span><span style="color: #fbbf24;">&gt;</span><br>&nbsp;&nbsp;${heroe.esFavorito ? <span style="color: #fbbf24;">'Quitar de favoritos'</span> : <span style="color: #fbbf24;">'Marcar como favorito'</span>}<br><span style="color: #fbbf24;">&lt;/button&gt;</span></div>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 18px; border: 1px solid #ddd6fe;"><span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 10</span>
+<p style="margin: 8px 0 0 0; color: #4c1d95; font-size: 0.85em;">🔄 Función toggleFavorito</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Creen una función <code style="color: #4c1d95;">toggleFavorito(id: number): void</code> que busque el héroe por <code style="color: #4c1d95;">id</code> e <strong style="color: #4c1d95;">invierta</strong> su propiedad <code style="color: #4c1d95;">esFavorito</code> (<code style="color: #4c1d95;">heroe.esFavorito = !heroe.esFavorito</code>), y luego vuelva a renderizar.</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 18px; grid-column: span 2; border: 1px solid #ddd6fe;"><span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 11</span>
+<p style="margin: 8px 0 0 0; color: #4c1d95; font-size: 0.85em;">🔗 Conectar el botón (Delegación de eventos)</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Conecten el nuevo botón usando el <strong style="color: #4c1d95;">mismo patrón de delegación de eventos</strong> que ya existe para <strong style="color: #4c1d95;">"Expulsar"</strong> — <strong style="color: #4c1d95;">no creen un addEventListener nuevo suelto</strong>, agréguenlo dentro de <code style="color: #4c1d95;">setupEliminarHeroes</code> (o creen <code style="color: #4c1d95;">setupBotonesHeroe</code> si prefieren separar responsabilidades).</p>
+<div style="margin-top: 8px; background: #fef3c7; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.75em;"><strong>💡 Reflexión:</strong> ¿Por qué el botón de favorito no necesita un <code style="color: #92400e;">addEventListener</code> nuevo? Piensen en la <strong style="color: #92400e;">delegación de eventos</strong> y el método <code style="color: #92400e;">closest()</code>.</p>
+</div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>🎨 Bonus visual:</strong> Agreguen una clase CSS <code style="color: #14532d;">.favorito</code> que le dé un <strong style="color: #14532d;">borde dorado</strong> a la tarjeta, y actívenla/desactívenla con <code style="color: #14532d;">classList.toggle('favorito', heroe.esFavorito)</code>.</p>
+</div>
+</div>
+<div id="bloque4" style="background: #ffffff; border-radius: 24px; padding: 28px 35px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #22c55e; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">BLOQUE 4</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em;">Filtro y Orden</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">20 min</span></div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Refuerza:</strong> <code style="color: #0e3f68;">.filter()</code>, <code style="color: #0e3f68;">.sort()</code>, eventos en un <code style="color: #0e3f68;">&lt;select&gt;</code> con <code style="color: #0e3f68;">"change"</code>.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 18px; border: 1px solid #bbf7d0;"><span style="background: #22c55e; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 12</span>
+<p style="margin: 8px 0 0 0; color: #14532d; font-size: 0.85em;">🔍 Selector de filtro</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Agreguen un nuevo <code style="color: #14532d;">&lt;select&gt;</code> en el HTML con las opciones: <strong style="color: #14532d;">Todos</strong>, <strong style="color: #14532d;">Solo favoritos</strong>, <strong style="color: #14532d;">Tierra-616</strong>, <strong style="color: #14532d;">Tierra-1610</strong>, <strong style="color: #14532d;">Tierra-65</strong>.</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 18px; border: 1px solid #bbf7d0;"><span style="background: #22c55e; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 13</span>
+<p style="margin: 8px 0 0 0; color: #14532d; font-size: 0.85em;">🎯 Evento "change" y filtrado</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Escuchen el evento <strong style="color: #14532d;">"change"</strong> de ese <code style="color: #14532d;">select</code> (<strong style="color: #14532d;">no "click"</strong> — investiguen la diferencia) y, según la opción elegida, filtren qué tarjetas se muestran.</p>
+<div style="margin-top: 6px; background: #fef3c7; padding: 6px 12px; border-radius: 6px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.7em;"><strong>💡 Sugerencia:</strong> No toquen el arreglo <code style="color: #92400e;">heroes</code> original, generen un <strong style="color: #92400e;">arreglo filtrado</strong> dentro de <code style="color: #92400e;">renderizarHeroes</code> antes de hacer el <code style="color: #92400e;">.map()</code>.</p>
+</div>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 18px; grid-column: span 2; border: 1px solid #bbf7d0;"><span style="background: #22c55e; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">PUNTO 14</span>
+<p style="margin: 8px 0 0 0; color: #14532d; font-size: 0.85em;">📋 Orden alfabético</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Agreguen un botón <strong style="color: #14532d;">"Ordenar alfabéticamente"</strong> que reordene <code style="color: #14532d;">heroes</code> usando <code style="color: #14532d;">.sort()</code> comparando <code style="color: #14532d;">nombre</code> con <code style="color: #14532d;">localeCompare()</code>.</p>
+</div>
+</div>
+</div>
+<div id="bloque5" style="background: #ffffff; border-radius: 24px; padding: 28px 35px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #ef4444; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">BLOQUE 5</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em;">Reto Final / Extensión Libre</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">10 min</span></div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Elijan UNO</strong> de estos, el que más les interese:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 15px;">
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">OPCIÓN A</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">✏️ Edición en línea</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Al hacer clic en el nombre de un héroe, que se convierta en un <code style="color: #991b1b;">&lt;input&gt;</code> editable, y al presionar <strong style="color: #991b1b;">Enter</strong> o perder el foco (<strong style="color: #991b1b;">"blur"</strong>), se guarde el cambio.</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">OPCIÓN B</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">💾 Persistencia</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Investiguen <code style="color: #991b1b;">localStorage.setItem()</code> y <code style="color: #991b1b;">localStorage.getItem()</code>, y hagan que la lista de héroes <strong style="color: #991b1b;">sobreviva</strong> si recargan la página.</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 18px; border: 1px solid #fecaca;"><span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.6em;">OPCIÓN C</span>
+<p style="margin: 8px 0 0 0; color: #991b1b; font-size: 0.85em;">📊 Contador por universo</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.8em; line-height: 1.5;">Un pequeño resumen que muestre <strong style="color: #991b1b;">cuántos héroes hay de cada universo</strong> (ej. "Tierra-616: 2, Tierra-1610: 1").</p>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 30px 38px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 2em;">✅</span>
+<h2 style="margin: 0; color: #fbc30b; font-size: 1.3em;">Checklist de Entrega</h2>
+</div>
+<p style="margin: 0 0 14px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;">Al final de la sesión, cada estudiante/pareja debe poder mostrar:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 10px;"><span style="color: #22c55e; font-size: 1.2em;">✅</span> <span style="color: #e2e8f0; font-size: 0.85em;">Al menos <strong style="color: #fbc30b;">2 validaciones</strong> del Bloque 2 funcionando</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 10px;"><span style="color: #22c55e; font-size: 1.2em;">✅</span> <span style="color: #e2e8f0; font-size: 0.85em;">El sistema de <strong style="color: #fbc30b;">favoritos</strong> completo (Bloque 3)</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 10px;"><span style="color: #22c55e; font-size: 1.2em;">✅</span> <span style="color: #e2e8f0; font-size: 0.85em;">El <strong style="color: #fbc30b;">filtro</strong> funcionando (punto 13 del Bloque 4)</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 10px;"><span style="color: #22c55e; font-size: 1.2em;">✅</span> <span style="color: #e2e8f0; font-size: 0.85em;">Código compilando sin errores (<code style="color: #fbc30b;">npx tsc</code> sin salida de errores)</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 10px; padding: 12px 16px; display: flex; align-items: center; gap: 10px; grid-column: span 2;"><span style="color: #22c55e; font-size: 1.2em;">✅</span> <span style="color: #e2e8f0; font-size: 0.85em;"><strong style="color: #fbc30b;">Explicar en voz alta, sin leer el código:</strong> "¿por qué el botón de favorito no necesitó un <code style="color: #fbc30b;">addEventListener</code> nuevo?"</span></div>
+</div>
+</div>
+</div>
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-top: 25px; border: 2px dashed #3b82f6;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 2em;">📤</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.3em;">&nbsp;Archivos</h2>
+<span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em;">DESCARGAR AQUÍ</span></div>
+<p style="margin: 0 0 20px 0; color: #475569; font-size: 0.9em; line-height: 1.6;">Descarga los siguientes archivos para completar la entrega de la práctica:</p>
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; margin-bottom: 16px; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #e2e8f0 #e2e8f0 #e2e8f0 #3b82f6;">
+<div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 2.2em;">📄</span>
+<div style="flex: 1;">
+<p style="margin: 0; color: #0e3f68; font-size: 1em;">Archivo HTML</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.8em;">index.html — Estructura de la página, contenedores y elementos interactivos</p>
+</div>
+<div style="background: #eff6ff; padding: 10px 24px; border-radius: 100px; text-align: center; border: 2px dashed #bfdbfe;"><a id="419455" class="instructure_file_link inline_disabled" href="../archivos/419455-index.html" target="_blank" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419455-index.html" data-api-returntype="File"><span style="color: #3b82f6; font-size: 0.8em;">📤 ARCHIVO</span></a>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;"><a id="419455" class="instructure_file_link inline_disabled" href="../archivos/419455-index.html" target="_blank" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419455-index.html" data-api-returntype="File">Arrastra o haz clic para subir</a></p>
+</div>
+</div>
+</div>
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; margin-bottom: 16px; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #e2e8f0 #e2e8f0 #e2e8f0 #22c55e;">
+<div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 2.2em;">🎨</span>
+<div style="flex: 1;">
+<p style="margin: 0; color: #0e3f68; font-size: 1em;">Archivo CSS</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.8em;">styles.css — Estilos visuales de la aplicación, incluyendo la clase .favorito para el borde dorado</p>
+</div>
+<div style="background: #f0fdf4; padding: 10px 24px; border-radius: 100px; text-align: center; border: 2px dashed #bbf7d0;"><a id="419453" class="instructure_file_link inline_disabled" href="../archivos/419453-style.css" target="_blank" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419453-style.css" data-api-returntype="File"><span style="color: #22c55e; font-size: 0.8em;">📤&nbsp; ARCHIVO</span></a>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;"><a id="419453" class="instructure_file_link inline_disabled" href="../archivos/419453-style.css" target="_blank" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419453-style.css" data-api-returntype="File">Arrastra o haz clic para subir</a></p>
+</div>
+</div>
+</div>
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border-width: 1px 1px 1px 5px; border-style: solid; border-color: #e2e8f0 #e2e8f0 #e2e8f0 #8b5cf6;">
+<div style="display: flex; align-items: center; gap: 12px;"><span style="font-size: 2.2em;">🔷</span>
+<div style="flex: 1;">
+<p style="margin: 0; color: #0e3f68; font-size: 1em;">Archivo TypeScript</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.8em;">app.ts — Código principal con la interfaz Heroe, funciones de CRUD, validaciones, favoritos y filtros</p>
+</div>
+<div style="background: #f5f3ff; padding: 10px 24px; border-radius: 100px; text-align: center; border: 2px dashed #ddd6fe;"><a id="419452" class="instructure_file_link instructure_scribd_file inline_disabled" href="../archivos/419452-script.ts" target="_blank" data-canvas-previewable="true" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419452-script.ts" data-api-returntype="File"><span style="color: #8b5cf6; font-size: 0.8em;">📤 ARCHIVO</span></a>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;"><a id="419452" class="instructure_file_link instructure_scribd_file inline_disabled" href="../archivos/419452-script.ts" target="_blank" data-canvas-previewable="true" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/419452-script.ts" data-api-returntype="File">Arrastra o haz clic para subir</a></p>
+</div>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>📌 Importante:</strong> Asegúrate de que los archivos funcionen en&nbsp; la <strong style="color: #92400e;">versión final</strong> de tu práctica, con todos los puntos completados y funcionando correctamente.</p>
+</div>
+</div>
+</div>
+<footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;">📞 <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;">📧 <a style="color: #fbc30b; text-decoration: none;" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;">🕒 <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 10 Miercoles 19/08/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 10 Miercoles 19/08/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 5 del 17/08/26 al 23/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-10-miercoles-19-slash-08-slash-26">https://univo.instructure.com/courses/1742/pages/clase-10-miercoles-19-slash-08-slash-26</a></p>
+  </header>
+  <main>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 40px 50px 35px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 35px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 18px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><span style="font-size: 3em; display: block;"><img id="385326" src="../archivos/385326-Recurso 1.png" alt="Recurso 1.png" width="86" height="86" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></span></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 14px;"><span style="background: #fbc30b; color: #0f172a; padding: 4px 18px; border-radius: 100px; font-size: 0.7em;   ">CASO DE ESTUDIO</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 4px 18px; border-radius: 100px; font-size: 0.7em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 90 MINUTOS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 4px 18px; border-radius: 100px; font-size: 0.7em;   border: 1px solid rgba(251,195,11,0.15);">📝 EXAMEN PRÁCTICO</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.2em;  line-height: 1.15; ">Laboratorio #1: Sistema de Gestión de Biblioteca Universitaria</h1>
+<p style="margin: 8px 0 0 0; color: #94a3b8; font-size: 1.05em;  max-width: 650px;">Programación Orientada a Eventos con TypeScript — Préstamos, devoluciones y gestión de libros</p>
+<div style="margin-top: 16px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Agosto 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 35px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 25px 35px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 1.8em;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em; ">Información General</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 15px; margin-top: 10px;">
+<div style="background: #f8fafc; padding: 12px 16px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: center;">
+<p style="margin: 0; font-size: 0.75em; color: #94a3b8;">Duración</p>
+<p style="margin: 4px 0 0 0;  color: #0e3f68;">90 min</p>
+</div>
+<div style="background: #f8fafc; padding: 12px 16px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: center;">
+<p style="margin: 0; font-size: 0.75em; color: #94a3b8;">Ponderación</p>
+<p style="margin: 4px 0 0 0;  color: #0e3f68;">10 puntos</p>
+</div>
+<div style="background: #f8fafc; padding: 12px 16px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: center;">
+<p style="margin: 0; font-size: 0.75em; color: #94a3b8;">Formato</p>
+<p style="margin: 4px 0 0 0;  color: #0e3f68;">Práctico</p>
+</div>
+<div style="background: #f8fafc; padding: 12px 16px; border-radius: 10px; border: 1px solid #e2e8f0; text-align: center;">
+<p style="margin: 0; font-size: 0.75em; color: #94a3b8;">Entrega</p>
+<p style="margin: 4px 0 0 0;  color: #0e3f68;">3 archivos</p>
+</div>
+</div>
+</div>
+  
+<div style="background: #eff6ff; border-radius: 20px; padding: 25px 35px; margin-bottom: 30px; border: 1px solid #bfdbfe;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 10px;"><span style="font-size: 1.8em;">🎯</span>
+<h2 style="margin: 0; color: #1e3a8a; font-size: 1.2em; ">Contexto</h2>
+</div>
+<p style="margin: 0; color: #1e293b; font-size: 0.95em; line-height: 1.7;">La <strong style="color: #0e3f68;">Biblioteca Central de la Universidad de Oriente</strong> necesita un <strong style="color: #0e3f68;">Sistema de Gestión de Préstamos de Libros</strong> para que los estudiantes puedan:</p>
+<ul style="margin: 10px 0 0 0; padding-left: 22px; color: #1e293b; font-size: 0.92em; line-height: 1.8;">
+<li>Visualizar el <strong style="color: #0e3f68;">catálogo de libros</strong> disponibles</li>
+<li>Solicitar <strong style="color: #0e3f68;">préstamos</strong> de libros</li>
+<li><strong style="color: #0e3f68;">Devolver</strong> libros</li>
+<li><strong style="color: #0e3f68;">Marcar libros como favoritos</strong></li>
+<li><strong style="color: #0e3f68;">Filtrar</strong> libros por categoría o autor</li>
+<li>Recibir <strong style="color: #0e3f68;">notificaciones</strong> en tiempo real (simuladas)</li>
+</ul>
+<div style="margin-top: 12px; background: #fef3c7; padding: 10px 16px; border-radius: 8px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Enfoque:</strong> El sistema debe ser construido usando <strong style="color: #92400e;">TypeScript</strong> con un enfoque de <strong style="color: #92400e;">Programación Orientada a Eventos</strong> utilizando <code style="color: #92400e;">EventEmitter</code>.</p>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">📌</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.3em; ">Requisitos del Sistema</h2>
+</div>
+
+<div style="background: #f8fafc; border-radius: 14px; padding: 18px 22px; margin-bottom: 16px; border: 1px solid #e2e8f0; border-left: 5px solid #3b82f6;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">PARTE 1</span>
+<h3 style="margin: 0; color: #0e3f68; font-size: 1em;">Interfaces y Modelos</h3>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.6em; ">1.5 PUNTOS</span></div>
+<p style="margin: 0 0 10px 0; color: #475569; font-size: 0.88em; line-height: 1.6;">Define una interfaz <code style="color: #0e3f68;">Libro</code> con las siguientes propiedades:</p>
+<div style="overflow-x: auto; margin-bottom: 10px;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.85em;">
+<thead>
+<tr style="background: #0e3f68; color: white;">
+<th style="padding: 8px 12px; text-align: left; border: 1px solid #1e293b;">Propiedad</th>
+<th style="padding: 8px 12px; text-align: left; border: 1px solid #1e293b;">Tipo</th>
+<th style="padding: 8px 12px; text-align: left; border: 1px solid #1e293b;">Descripción</th>
+<th style="padding: 8px 12px; text-align: left; border: 1px solid #1e293b;">Obligatorio</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background: #f8fafc;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>id</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>number</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Identificador único</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>titulo</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>string</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Título del libro</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>autor</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>string</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Autor del libro</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>categoria</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>string</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Categoría del libro</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>anio</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>number</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Año de publicación</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>disponible</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>boolean</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Disponibilidad para préstamo</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>ejemplares</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>number</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Cantidad de ejemplares disponibles</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>esFavorito</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;"><code>boolean</code></td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Indicador de favorito</td>
+<td style="padding: 6px 12px; border: 1px solid #e2e8f0;">Sí</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 8px;">
+<div style="background: #e0f2fe; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+<p style="margin: 0; font-size: 0.8em; color: #1e3a8a;"><strong>1.1 (0.5 pts)</strong> Define la interfaz <code style="color: #1e3a8a;">Libro</code>.</p>
+</div>
+<div style="background: #fef3c7; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; font-size: 0.8em; color: #92400e;"><strong>1.2 (0.5 pts)</strong> Define un <strong style="color: #92400e;">tipo unión</strong> llamado <code style="color: #92400e;">CategoriaLibro</code> con los valores: <code style="color: #92400e;">"CIENCIA"</code>, <code style="color: #92400e;">"LITERATURA"</code>, <code style="color: #92400e;">"HISTORIA"</code>, <code style="color: #92400e;">"TECNOLOGIA"</code>, <code style="color: #92400e;">"ARTE"</code>.</p>
+</div>
+<div style="background: #f0fdf4; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #22c55e; grid-column: span 2;">
+<p style="margin: 0; font-size: 0.8em; color: #14532d;"><strong>1.3 (0.5 pts)</strong> Modifica la interfaz <code style="color: #14532d;">Libro</code> para que la propiedad <code style="color: #14532d;">categoria</code> use el tipo unión <code style="color: #14532d;">CategoriaLibro</code>.</p>
+</div>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 14px; padding: 18px 22px; margin-bottom: 16px; border: 1px solid #e2e8f0; border-left: 5px solid #22c55e;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #22c55e; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">PARTE 2</span>
+<h3 style="margin: 0; color: #0e3f68; font-size: 1em;">Clase Emisora de Eventos</h3>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.6em; ">2.5 PUNTOS</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<div style="background: #e0f2fe; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+<p style="margin: 0; font-size: 0.8em; color: #1e3a8a;"><strong>2.1 (1.0 pts)</strong> Crea una clase <code style="color: #1e3a8a;">Biblioteca</code> que <strong style="color: #1e3a8a;">extienda</strong> de <code style="color: #1e3a8a;">EventEmitter</code> con un arreglo privado <code style="color: #1e3a8a;">libros: Libro[]</code> y un contador <code style="color: #1e3a8a;">_idCounter: number = 1</code>.</p>
+</div>
+<div style="background: #f0fdf4; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; font-size: 0.8em; color: #14532d;"><strong>2.2 (1.0 pts)</strong> Implementa <code style="color: #14532d;">agregarLibro(libro: Omit&lt;Libro, 'id' | 'disponible' | 'esFavorito'&gt;): void</code> que emita <code style="color: #14532d;">"libroAgregado"</code>.</p>
+</div>
+<div style="background: #fef3c7; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; font-size: 0.8em; color: #92400e;"><strong>2.3 (0.5 pts)</strong> Implementa <code style="color: #92400e;">solicitarPrestamo(id: number): void</code> que emita <code style="color: #92400e;">"prestamoExitoso"</code> o <code style="color: #92400e;">"noDisponible"</code>.</p>
+</div>
+<div style="background: #fef3c7; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; font-size: 0.8em; color: #92400e;"><strong>2.4 (0.5 pts)</strong> Implementa <code style="color: #92400e;">devolverLibro(id: number): void</code> que emita <code style="color: #92400e;">"devolucionExitosa"</code>.</p>
+</div>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 14px; padding: 18px 22px; margin-bottom: 16px; border: 1px solid #e2e8f0; border-left: 5px solid #8b5cf6;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #8b5cf6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">PARTE 3</span>
+<h3 style="margin: 0; color: #0e3f68; font-size: 1em;">Clases Oyentes</h3>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.6em; ">2.0 PUNTOS</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<div style="background: #f5f3ff; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; font-size: 0.8em; color: #4c1d95;"><strong>3.1 (1.0 pts)</strong> Crea una clase <code style="color: #4c1d95;">NotificadorBiblioteca</code> con métodos para mostrar mensajes en consola:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #4c1d95; font-size: 0.75em; line-height: 1.8;">
+<li><code style="color: #4c1d95;">notificarNuevoLibro(libro: Libro)</code></li>
+<li><code style="color: #4c1d95;">notificarPrestamo(libro: Libro)</code></li>
+<li><code style="color: #4c1d95;">notificarNoDisponible(libro: Libro)</code></li>
+<li><code style="color: #4c1d95;">notificarDevolucion(libro: Libro)</code></li>
+</ul>
+</div>
+<div style="background: #f5f3ff; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; font-size: 0.8em; color: #4c1d95;"><strong>3.2 (1.0 pts)</strong> Crea una clase <code style="color: #4c1d95;">GestorUIBiblioteca</code> con métodos para manejar la interfaz:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #4c1d95; font-size: 0.75em; line-height: 1.8;">
+<li><code style="color: #4c1d95;">renderizarLibros(libros: Libro[]): void</code></li>
+<li><code style="color: #4c1d95;">actualizarContador(libros: Libro[]): void</code></li>
+<li><code style="color: #4c1d95;">mostrarMensaje(mensaje: string, tipo: 'exito' | 'error' | 'info'): void</code></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 14px; padding: 18px 22px; margin-bottom: 16px; border: 1px solid #e2e8f0; border-left: 5px solid #f59e0b;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">PARTE 4</span>
+<h3 style="margin: 0; color: #0e3f68; font-size: 1em;">Suscripciones y Conexiones</h3>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.6em; ">2.0 PUNTOS</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<div style="background: #fffbeb; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; font-size: 0.8em; color: #92400e;"><strong>4.1 (1.0 pts)</strong> En el archivo <code style="color: #92400e;">app.ts</code>, instancia:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #92400e; font-size: 0.75em; line-height: 1.8;">
+<li><code style="color: #92400e;">Biblioteca</code> (emisor)</li>
+<li><code style="color: #92400e;">NotificadorBiblioteca</code> (oyente de consola)</li>
+<li><code style="color: #92400e;">GestorUIBiblioteca</code> (oyente de interfaz)</li>
+</ul>
+</div>
+<div style="background: #fffbeb; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; font-size: 0.8em; color: #92400e;"><strong>4.2 (1.0 pts)</strong> Registra todas las suscripciones usando <code style="color: #92400e;">.on()</code> para los eventos:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #92400e; font-size: 0.75em; line-height: 1.8;">
+<li><code style="color: #92400e;">"libroAgregado"</code> → Notificador + GestorUI</li>
+<li><code style="color: #92400e;">"prestamoExitoso"</code> → Notificador + GestorUI</li>
+<li><code style="color: #92400e;">"noDisponible"</code> → Notificador + GestorUI</li>
+<li><code style="color: #92400e;">"devolucionExitosa"</code> → Notificador + GestorUI</li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 14px; padding: 18px 22px; border: 1px solid #e2e8f0; border-left: 5px solid #ef4444;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="background: #ef4444; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">PARTE 5</span>
+<h3 style="margin: 0; color: #0e3f68; font-size: 1em;">Interfaz Gráfica y DOM</h3>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 12px; border-radius: 100px; font-size: 0.6em; ">2.0 PUNTOS</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+<div style="background: #fef2f2; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #ef4444;">
+<p style="margin: 0; font-size: 0.8em; color: #991b1b;"><strong>5.1 (1.0 pts)</strong> Completa el <code style="color: #991b1b;">index.html</code> para que contenga:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #991b1b; font-size: 0.75em; line-height: 1.8;">
+<li><strong style="color: #991b1b;">Formulario:</strong> Título, Autor, Categoría (select), Ejemplares (number), Año (number)</li>
+<li><strong style="color: #991b1b;">Contenedor</strong> para mostrar los libros</li>
+<li><strong style="color: #991b1b;">Contador</strong> con total y disponibles</li>
+<li><strong style="color: #991b1b;">Área de mensajes</strong> para notificaciones</li>
+<li><strong style="color: #991b1b;">Filtros:</strong> Select por categoría, botones de orden</li>
+</ul>
+</div>
+<div style="background: #fef2f2; padding: 10px 14px; border-radius: 8px; border-left: 3px solid #ef4444;">
+<p style="margin: 0; font-size: 0.8em; color: #991b1b;"><strong>5.2 (1.0 pts)</strong> Implementa la lógica del DOM en TypeScript para:</p>
+<ul style="margin: 6px 0 0 0; padding-left: 18px; color: #991b1b; font-size: 0.75em; line-height: 1.8;">
+<li><strong style="color: #991b1b;">Agregar</strong> libro desde el formulario</li>
+<li><strong style="color: #991b1b;">Solicitar préstamo</strong> desde cada tarjeta</li>
+<li><strong style="color: #991b1b;">Devolver</strong> desde cada tarjeta</li>
+<li><strong style="color: #991b1b;">Marcar/Desmarcar favorito</strong></li>
+<li><strong style="color: #991b1b;">Filtrar</strong> por categoría</li>
+<li><strong style="color: #991b1b;">Ordenar</strong> por título y por autor</li>
+<li><strong style="color: #991b1b;">Mostrar solo disponibles</strong></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div style="margin-top: 20px; background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 14px; padding: 20px 25px; text-align: center;">
+<p style="margin: 0; color: #fbc30b; font-size: 1.1em; ">📊 Ponderación Total: <span style="font-size: 1.4em;">10 PUNTOS</span></p>
+<div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 12px;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; text-align: center;">
+<p style="margin: 0; color: #3b82f6; font-size: 1.1em; ">1.5</p>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;">Parte 1</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; text-align: center;">
+<p style="margin: 0; color: #22c55e; font-size: 1.1em; ">2.5</p>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;">Parte 2</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; text-align: center;">
+<p style="margin: 0; color: #8b5cf6; font-size: 1.1em; ">2.0</p>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;">Parte 3</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; text-align: center;">
+<p style="margin: 0; color: #f59e0b; font-size: 1.1em; ">2.0</p>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;">Parte 4</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 8px 10px; text-align: center;">
+<p style="margin: 0; color: #ef4444; font-size: 1.1em; ">2.0</p>
+<p style="margin: 0; color: #94a3b8; font-size: 0.6em;">Parte 5</p>
+</div>
+</div>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 20px; padding: 25px 35px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 1.8em;">📁</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em; ">Estructura del Proyecto</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;">examen-practico-biblioteca/
+│
+├── index.html          # Estructura HTML
+├── styles.css          # Estilos visuales
+├── app.ts              # Código TypeScript
+├── package.json        # Configuración npm
+└── tsconfig.json       # Configuración TypeScript</pre>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 20px; padding: 25px 35px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 1.8em;">📤</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em; ">Entregables</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+<div style="background: #f8fafc; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0; text-align: center;"><span style="font-size: 2em; display: block;">📄</span>
+<p style="margin: 8px 0 0 0;  color: #0e3f68;">index.html</p>
+<p style="margin: 4px 0 0 0; font-size: 0.75em; color: #94a3b8;">Estructura completa</p>
+</div>
+<div style="background: #f8fafc; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0; text-align: center;"><span style="font-size: 2em; display: block;">🎨</span>
+<p style="margin: 8px 0 0 0;  color: #0e3f68;">styles.css</p>
+<p style="margin: 4px 0 0 0; font-size: 0.75em; color: #94a3b8;">Estilos visuales</p>
+</div>
+<div style="background: #f8fafc; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0; text-align: center;"><span style="font-size: 2em; display: block;">🔷</span>
+<p style="margin: 8px 0 0 0;  color: #0e3f68;">app.ts</p>
+<p style="margin: 4px 0 0 0; font-size: 0.75em; color: #94a3b8;">Código TypeScript</p>
+</div>
+</div>
+<div style="margin-top: 12px; background: #fef3c7; padding: 10px 16px; border-radius: 8px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>📌 Importante:</strong> Adjuntar <strong style="color: #92400e;">captura de pantalla</strong> del sistema funcionando en el navegador.</p>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 20px; padding: 25px 35px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 1.8em;">🧪</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em; ">Datos de Prueba</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Libros de ejemplo para inicializar el sistema</span>
+<span style="color: #60a5fa;">const</span> librosIniciales = [
+    { titulo: <span style="color: #fbbf24;">"El Principito"</span>, autor: <span style="color: #fbbf24;">"Antoine de Saint-Exupéry"</span>, categoria: <span style="color: #fbbf24;">"LITERATURA"</span>, anio: <span style="color: #f472b6;">1943</span>, ejemplares: <span style="color: #f472b6;">5</span> },
+    { titulo: <span style="color: #fbbf24;">"Cien años de soledad"</span>, autor: <span style="color: #fbbf24;">"Gabriel García Márquez"</span>, categoria: <span style="color: #fbbf24;">"LITERATURA"</span>, anio: <span style="color: #f472b6;">1967</span>, ejemplares: <span style="color: #f472b6;">3</span> },
+    { titulo: <span style="color: #fbbf24;">"Breve historia del tiempo"</span>, autor: <span style="color: #fbbf24;">"Stephen Hawking"</span>, categoria: <span style="color: #fbbf24;">"CIENCIA"</span>, anio: <span style="color: #f472b6;">1988</span>, ejemplares: <span style="color: #f472b6;">2</span> },
+    { titulo: <span style="color: #fbbf24;">"El arte de la guerra"</span>, autor: <span style="color: #fbbf24;">"Sun Tzu"</span>, categoria: <span style="color: #fbbf24;">"HISTORIA"</span>, anio: <span style="color: #f472b6;">500</span>, ejemplares: <span style="color: #f472b6;">4</span> },
+    { titulo: <span style="color: #fbbf24;">"Clean Code"</span>, autor: <span style="color: #fbbf24;">"Robert C. Martin"</span>, categoria: <span style="color: #fbbf24;">"TECNOLOGIA"</span>, anio: <span style="color: #f472b6;">2008</span>, ejemplares: <span style="color: #f472b6;">6</span> },
+    { titulo: <span style="color: #fbbf24;">"Historia del arte"</span>, autor: <span style="color: #fbbf24;">"Ernst Gombrich"</span>, categoria: <span style="color: #fbbf24;">"ARTE"</span>, anio: <span style="color: #f472b6;">1950</span>, ejemplares: <span style="color: #f472b6;">2</span> }
+];</pre>
+</div>
+</div>
+  
+<div style="background: #f0fdf4; border-radius: 20px; padding: 20px 30px; margin-bottom: 30px; border: 1px solid #bbf7d0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="font-size: 1.8em;">💡</span>
+<h2 style="margin: 0; color: #14532d; font-size: 1.2em; ">Recursos Permitidos</h2>
+</div>
+<ul style="margin: 0; padding-left: 22px; color: #14532d; font-size: 0.9em; line-height: 1.8;">
+<li>📖 Documentación oficial de <strong style="color: #14532d;">TypeScript</strong></li>
+<li>📖 Documentación de <strong style="color: #14532d;">EventEmitter</strong> (Node.js)</li>
+<li>📝 Apuntes de clase y materiales del curso</li>
+<li>💻 Visual Studio Code con <strong style="color: #14532d;">autocompletado</strong></li>
+</ul>
+</div>
+  
+<div style="background: #fef2f2; border-radius: 20px; padding: 20px 30px; margin-bottom: 30px; border: 1px solid #fecaca;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 8px;"><span style="font-size: 1.8em;">⚠️</span>
+<h2 style="margin: 0; color: #991b1b; font-size: 1.2em; ">Notas Importantes</h2>
+</div>
+<ol style="margin: 0; padding-left: 22px; color: #991b1b; font-size: 0.9em; line-height: 1.8;">
+<li>El código debe <strong style="color: #991b1b;">compilar sin errores</strong> con <code style="color: #991b1b;">npx tsc</code>.</li>
+<li><strong style="color: #991b1b;">Todos los eventos</strong> deben ser manejados por los oyentes correspondientes.</li>
+<li>La interfaz debe <strong style="color: #991b1b;">actualizarse en tiempo real</strong> al agregar, prestar, devolver o marcar favoritos.</li>
+<li>Los <strong style="color: #991b1b;">mensajes de consola</strong> deben aparecer según lo especificado.</li>
+<li>El <strong style="color: #991b1b;">filtro por categoría</strong> debe funcionar correctamente.</li>
+<li>Los <strong style="color: #991b1b;">botones de ordenar</strong> deben ordenar según corresponda.</li>
+<li>El botón <strong style="color: #991b1b;">"Solo Disponibles"</strong> debe mostrar solo los libros con ejemplares disponibles.</li>
+</ol>
+</div>
+  
+<div style="background: #ffffff; border-radius: 20px; padding: 25px 35px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 1.8em;">🔷</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.2em; ">Guión de TypeScript (app.ts)</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.8em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// PARTE 1: INTERFACES Y MODELOS (1.5 puntos)</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+
+<span style="color: #fbc30b;">// 1.1 (0.5 pts) Define la interfaz Libro</span>
+<span style="color: #fbc30b;">// 1.2 (0.5 pts) Define el tipo unión CategoriaLibro</span>
+<span style="color: #fbc30b;">// 1.3 (0.5 pts) Modifica la interfaz para usar el tipo unión</span>
+
+<span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// PARTE 2: CLASE EMISORA DE EVENTOS (2.5 puntos)</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+
+<span style="color: #fbc30b;">// 2.1 (1.0 pts) Crea la clase Biblioteca que extiende EventEmitter</span>
+<span style="color: #fbc30b;">// 2.2 (1.0 pts) Implementa el método agregarLibro</span>
+<span style="color: #fbc30b;">// 2.3 (0.5 pts) Implementa el método solicitarPrestamo</span>
+<span style="color: #fbc30b;">// 2.4 (0.5 pts) Implementa el método devolverLibro</span>
+
+<span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// PARTE 3: CLASES OYENTES (2.0 puntos)</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+
+<span style="color: #fbc30b;">// 3.1 (1.0 pts) Crea la clase NotificadorBiblioteca</span>
+<span style="color: #fbc30b;">// 3.2 (1.0 pts) Crea la clase GestorUIBiblioteca</span>
+
+<span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// PARTE 4: SUSCRIPCIONES Y CONEXIONES (2.0 puntos)</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+
+<span style="color: #fbc30b;">// 4.1 (1.0 pts) Instanciar Biblioteca, NotificadorBiblioteca y GestorUIBiblioteca</span>
+<span style="color: #fbc30b;">// 4.2 (1.0 pts) Registrar suscripciones con .on()</span>
+
+<span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// PARTE 5: INTERFAZ GRÁFICA Y DOM (2.0 puntos)</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+
+<span style="color: #fbc30b;">// 5.2 (1.0 pts) Implementar la lógica del DOM</span>
+<span style="color: #fbc30b;">// - Botón Agregar Libro</span>
+<span style="color: #fbc30b;">// - Botón Solicitar Préstamo</span>
+<span style="color: #fbc30b;">// - Botón Devolver</span>
+<span style="color: #fbc30b;">// - Botón Favorito</span>
+<span style="color: #fbc30b;">// - Selector de filtro por categoría</span>
+<span style="color: #fbc30b;">// - Botón Ordenar por Título</span>
+<span style="color: #fbc30b;">// - Botón Ordenar por Autor</span>
+<span style="color: #fbc30b;">// - Botón Mostrar Solo Disponibles</span>
+
+<span style="color: #fbc30b;">// ============================================================</span>
+<span style="color: #fbc30b;">// INICIALIZACIÓN</span>
+<span style="color: #fbc30b;">// ============================================================</span>
+console.log(<span style="color: #fbbf24;">"📚 Sistema de Gestión de Biblioteca UNIVO iniciado"</span>);</pre>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;">📞 <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;">📧 <a style="color: #fbc30b; text-decoration: none;" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;">🕒 <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,376 @@
+{
+  "courseId": 1748,
+  "course": "ESTRUCTURA DE DATOS",
+  "capturedAt": "2026-08-22",
+  "source": "https://univo.instructure.com/courses/1748",
+  "classes": [
+    {
+      "title": "Practica 1 Lunes 17/08/2026",
+      "module": "Practicas de laboratorio",
+      "type": "Page",
+      "filename": "clases/practica-1-lunes-17-08-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/practica-1-lunes-17-slash-08-slash-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 1 -  14 de julio 2026",
+      "module": "Semana 1",
+      "type": "Page",
+      "filename": "clases/clase-1-14-de-julio-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-1-14-de-julio-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 2 - 16 de julio 2026",
+      "module": "Semana 1",
+      "type": "Page",
+      "filename": "clases/clase-2-16-de-julio-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-2-16-de-julio-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 3 - 21 de julio 2026",
+      "module": "Semana 2",
+      "type": "Page",
+      "filename": "clases/clase-3-21-de-julio-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-3-21-de-julio-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 4 - 23-07-2026",
+      "module": "Semana 2",
+      "type": "Page",
+      "filename": "clases/clase-4-23-07-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-4-23-07-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 5 - 28/7/2025 - Datos estructurados/Representación Grafica",
+      "module": "Semana 3",
+      "type": "Page",
+      "filename": "clases/clase-5-28-7-2025-datos-estructurados-representacion-grafica.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-5-28-slash-7-slash-2025-datos-estructurados-slash-representacion-grafica",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 9 18 de agosto 2026",
+      "module": "Semana 5",
+      "type": "Page",
+      "filename": "clases/clase-9-18-de-agosto-2026.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-9-18-de-agosto-2026",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 10 - 20/08/2026 Conjuntos(SET) ",
+      "module": "Semana 5",
+      "type": "Page",
+      "filename": "clases/clase-10-20-08-2026-conjuntos-set.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-10-20-slash-08-slash-2026-conjuntos-set",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 11",
+      "module": "Semana 6",
+      "type": "Page",
+      "filename": "clases/clase-11.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-11",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 12",
+      "module": "Semana 6",
+      "type": "Page",
+      "filename": "clases/clase-12.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-12",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 13",
+      "module": "Semana 7",
+      "type": "Page",
+      "filename": "clases/clase-13.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-13",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 14",
+      "module": "Semana 7",
+      "type": "Page",
+      "filename": "clases/clase-14.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-14",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 15",
+      "module": "Semana 8",
+      "type": "Page",
+      "filename": "clases/clase-15.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-15",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 16",
+      "module": "Semana 8",
+      "type": "Page",
+      "filename": "clases/clase-16.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-16",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 17",
+      "module": "Semana 9",
+      "type": "Page",
+      "filename": "clases/clase-17.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-17",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 18",
+      "module": "Semana 9",
+      "type": "Page",
+      "filename": "clases/clase-18.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-18",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 19",
+      "module": "Semana 10",
+      "type": "Page",
+      "filename": "clases/clase-19.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-19",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 20",
+      "module": "Semana 10",
+      "type": "Page",
+      "filename": "clases/clase-20.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-20",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 21",
+      "module": "Semana 11",
+      "type": "Page",
+      "filename": "clases/clase-21.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-21",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 22",
+      "module": "Semana 11",
+      "type": "Page",
+      "filename": "clases/clase-22.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-22",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 23",
+      "module": "Semana 12",
+      "type": "Page",
+      "filename": "clases/clase-23.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-23",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 24",
+      "module": "Semana 12",
+      "type": "Page",
+      "filename": "clases/clase-24.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-24",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 25",
+      "module": "Semana 13",
+      "type": "Page",
+      "filename": "clases/clase-25.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-25",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 26",
+      "module": "Semana 13",
+      "type": "Page",
+      "filename": "clases/clase-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 27",
+      "module": "Semana 14",
+      "type": "Page",
+      "filename": "clases/clase-27.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-27",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 28",
+      "module": "Semana 14",
+      "type": "Page",
+      "filename": "clases/clase-28.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-28",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 29",
+      "module": "Semana 15",
+      "type": "Page",
+      "filename": "clases/clase-29.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-29",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 30",
+      "module": "Semana 15",
+      "type": "Page",
+      "filename": "clases/clase-30.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-30",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 31",
+      "module": "Semana 16",
+      "type": "Page",
+      "filename": "clases/clase-31.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-31",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 32",
+      "module": "Semana 16",
+      "type": "Page",
+      "filename": "clases/clase-32.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-32",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 33",
+      "module": "Semana 17",
+      "type": "Page",
+      "filename": "clases/clase-33.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-33",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 34",
+      "module": "Semana 17",
+      "type": "Page",
+      "filename": "clases/clase-34.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-34",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 35",
+      "module": "Semana 18",
+      "type": "Page",
+      "filename": "clases/clase-35.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-35",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 36",
+      "module": "Semana 18",
+      "type": "Page",
+      "filename": "clases/clase-36.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-36",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 37",
+      "module": "Semana 19",
+      "type": "Page",
+      "filename": "clases/clase-37.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-37",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 38",
+      "module": "Semana 19",
+      "type": "Page",
+      "filename": "clases/clase-38.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-38",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 39",
+      "module": "Semana 20",
+      "type": "Page",
+      "filename": "clases/clase-39.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-39",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 40",
+      "module": "Semana 20",
+      "type": "Page",
+      "filename": "clases/clase-40.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1748/pages/clase-40",
+      "hasContent": true
+    }
+  ],
+  "files": [
+    {
+      "id": 389005,
+      "filename": "389005-Gemini_Generated_Image_q4spnrq4spnrq4sp.png",
+      "originalName": "Gemini_Generated_Image_q4spnrq4spnrq4sp.png",
+      "contentType": "image/png",
+      "size": 1978949,
+      "source": "Canvas"
+    },
+    {
+      "id": 424582,
+      "filename": "424582-Tipos de Datos - Presentacion.pptx",
+      "originalName": "Tipos de Datos - Presentacion.pptx",
+      "contentType": "application/vnd.openxmlformats-officedocument.presentationml.presentation",
+      "size": 39211,
+      "source": "Canvas"
+    },
+    {
+      "id": 425302,
+      "filename": "425302-Ejemplos.ipynb",
+      "originalName": "Ejemplos.ipynb",
+      "contentType": "application/x-ipynb+json",
+      "size": 4499,
+      "source": "Canvas"
+    },
+    {
+      "id": 395067,
+      "filename": "395067-ejercicios_String.py",
+      "originalName": "ejercicios_String.py",
+      "contentType": "text/x-python",
+      "size": 378,
+      "source": "Canvas"
+    },
+    {
+      "id": 389021,
+      "filename": "389021-image.png",
+      "originalName": "image.png",
+      "contentType": "image/png",
+      "size": 9800,
+      "source": "Canvas"
+    },
+    {
+      "id": 430564,
+      "filename": "430564-ChatGPT Image 20 ago 2026, 11_12_12 a.m..png",
+      "originalName": "ChatGPT Image 20 ago 2026, 11_12_12 a.m..png",
+      "contentType": "image/png",
+      "size": 1657368,
+      "source": "Canvas"
+    },
+    {
+      "filename": "Ejercicios de tuplas.pdf",
+      "originalName": "Ejercicios de tuplas.pdf",
+      "contentType": "application/pdf",
+      "size": 298126,
+      "source": "OneDrive enlazado desde Canvas"
+    },
+    {
+      "filename": "guia_instalacion_python_vscode.html",
+      "originalName": "guia_instalacion_python_vscode.html",
+      "contentType": "text/html",
+      "size": 28492,
+      "source": "OneDrive enlazado desde Canvas"
+    }
+  ]
+}

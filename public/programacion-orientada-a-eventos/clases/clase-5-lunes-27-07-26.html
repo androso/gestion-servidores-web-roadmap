@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 5 Lunes 27/07/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 5 Lunes 27/07/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 3 del 27/07/26 al 02/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-5-lunes-27-slash-07-slash-26">https://univo.instructure.com/courses/1742/pages/clase-5-lunes-27-slash-07-slash-26</a></p>
+  </header>
+  <main>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 20px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">CLASE TEÓRICA</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 1.5 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">🚨 EVENTEMITTER</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Sistema de Eventos con EventEmitter</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 700px;">Emisores, oyentes y manejo de eventos en TypeScript — El corazón de la Programación Orientada a Eventos</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Última actualización: Julio 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#eventemitter">EventEmitter</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#interface">Interfaces</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#clase-emisora">Clase Emisora</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#oyentes">Oyentes</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#suscripcion">Suscripción</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#flujo">Flujo POE</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">1.5 horas</span></div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #bfdbfe;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="font-size: 2em;">🚨</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.3em; ">El Sistema de Alerta de la Policía de Nueva York</h2>
+</div>
+<p style="margin: 0; color: #475569; font-size: 0.95em; line-height: 1.7;">En esta clase, exploraremos los fundamentos de la <strong style="color: #0e3f68;">Programación Orientada a Eventos</strong> a través de un sistema de alertas policiales. Analizaremos los conceptos de <strong style="color: #0e3f68;">emisores</strong>, <strong style="color: #0e3f68;">oyentes</strong>, <strong style="color: #0e3f68;">eventos</strong> y <strong style="color: #0e3f68;">suscripciones</strong>, todos ellos implementados con <strong style="color: #0e3f68;">EventEmitter</strong> en TypeScript.</p>
+<div style="margin-top: 14px; display: flex; gap: 12px; flex-wrap: wrap;"><span style="background: #0e3f68; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em; ">📌 Emisor</span> <span style="background: #3b82f6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em; ">📌 Evento</span> <span style="background: #22c55e; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em; ">📌 Oyente</span> <span style="background: #f59e0b; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em; ">📌 Suscripción</span> <span style="background: #8b5cf6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em; ">📌 Interfaz</span></div>
+</div>
+  
+<div id="eventemitter" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📦</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Importación de Módulos: EventEmitter</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Importamos 'EventEmitter' desde el módulo nativo 'events' de Node.js.</span>
+<span style="color: #60a5fa;">import</span> { EventEmitter } <span style="color: #60a5fa;">from</span> <span style="color: #34d399;">'events'</span>;</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es EventEmitter?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.9em; line-height: 1.6;">Es la <strong style="color: #1e3a8a;">clase base</strong> que nos permite <strong style="color: #1e3a8a;">emitir</strong> (disparar) y <strong style="color: #1e3a8a;">escuchar</strong> eventos en JavaScript/TypeScript. Es el <strong style="color: #1e3a8a;">corazón</strong> de la Programación Orientada a Eventos en Node.js.</p>
+</div>
+<div style="background: #fef3c7; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.95em;">🎯 ¿Para qué sirve?</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #78350f; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #92400e;">.emit()</strong> → Dispara un evento.</li>
+<li><strong style="color: #92400e;">.on()</strong> → Registra un oyente para un evento.</li>
+<li><strong style="color: #92400e;">.once()</strong> → Registra un oyente que se ejecuta una sola vez.</li>
+<li><strong style="color: #92400e;">.off()</strong> → Elimina un oyente.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 Analogía:</strong> EventEmitter es como una <strong style="color: #14532d;">emisora de radio</strong> que transmite señales. Los oyentes son los <strong style="color: #14532d;">receptores</strong> que escuchan una frecuencia específica.</p>
+</div>
+</div>
+  
+<div id="interface" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📐</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Interfaces en TypeScript</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Una interfaz define la "forma" o contrato que deben cumplir los datos.</span>
+<span style="color: #60a5fa;">interface</span> <span style="color: #fbbf24;">AlertaCrimen</span> {
+  lugar: <span style="color: #34d399;">string</span>;
+  villano: <span style="color: #34d399;">string</span>;
+  nivelPeligro: <span style="color: #fbbf24;">'Bajo'</span> | <span style="color: #fbbf24;">'Medio'</span> | <span style="color: #fbbf24;">'Alto'</span>;
+}</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #ddd6fe;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.9em;">📌 ¿Qué es una interfaz?</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Define el <strong style="color: #4c1d95;">contrato</strong> que deben cumplir los datos. Especifica <strong style="color: #4c1d95;">qué propiedades</strong> debe tener un objeto y de <strong style="color: #4c1d95;">qué tipo</strong> son.</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #ddd6fe;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.9em;">🔹 ¿Para qué sirve?</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;"><strong style="color: #4c1d95;">No genera código</strong> ejecutable en JavaScript. Solo sirve en <strong style="color: #4c1d95;">tiempo de desarrollo</strong> para asegurarnos de que no nos equivoquemos en los nombres de las propiedades ni en sus tipos.</p>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #ddd6fe;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.9em;">🔹 Tipo Unión</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;"><code style="color: #4c1d95;">'Bajo' | 'Medio' | 'Alto'</code> es un <strong style="color: #4c1d95;">tipo unión de literales</strong>. Solo permite uno de esos 3 textos exactos. <strong style="color: #4c1d95;">¡Adiós errores de dedo!</strong></p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Para POE:</strong> Las interfaces son <strong style="color: #92400e;">esenciales</strong> para definir la estructura de los <strong style="color: #92400e;">datos que transportan los eventos</strong>. Aseguran que los emisores y oyentes usen el mismo formato.</p>
+</div>
+</div>
+  
+<div id="clase-emisora" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #ef4444; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🚨</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Clase Emisora (El Origen del Evento)</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Usamos 'extends EventEmitter' para heredar todos los métodos</span>
+<span style="color: #60a5fa;">class</span> <span style="color: #fbbf24;">CentralPoliciaNY</span> <span style="color: #60a5fa;">extends</span> <span style="color: #fbbf24;">EventEmitter</span> {
+  <span style="color: #60a5fa;">public</span> <span style="color: #fbbf24;">reportarIncidente</span>(lugar: <span style="color: #34d399;">string</span>, villano: <span style="color: #34d399;">string</span>, nivelPeligro: <span style="color: #fbbf24;">'Bajo'</span> | <span style="color: #fbbf24;">'Medio'</span> | <span style="color: #fbbf24;">'Alto'</span>): <span style="color: #34d399;">void</span> {
+    <span style="color: #fbc30b;">// 1. Mensaje por consola</span>
+    console.log(<span style="color: #34d399;">`\n🚨 [RADIO POLICIAL]: ¡Atención! Se reporta un problema en ${lugar}.`</span>);
+    
+    <span style="color: #fbc30b;">// 2. Empaquetar datos</span>
+    <span style="color: #60a5fa;">const</span> detallesAlerta: <span style="color: #fbbf24;">AlertaCrimen</span> = { lugar, villano, nivelPeligro };
+    
+    <span style="color: #fbc30b;">// 3. Emitir el evento</span>
+    <span style="color: #60a5fa;">this</span>.<span style="color: #fbbf24;">emit</span>(<span style="color: #34d399;">'crimenEnProceso'</span>, detallesAlerta);
+  }
+}</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 20px; border: 1px solid #fecaca;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.95em;">📌 extends EventEmitter</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.9em; line-height: 1.6;">Al usar <code style="color: #991b1b;">extends</code>, nuestra clase <strong style="color: #991b1b;">hereda</strong> todos los métodos de EventEmitter, como <code style="color: #991b1b;">.emit()</code>, <code style="color: #991b1b;">.on()</code>, <code style="color: #991b1b;">.once()</code>, etc.</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 20px; border: 1px solid #fecaca;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.95em;">📌 this.emit()</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #991b1b;">Notifica</strong> al sistema que ocurrió un evento. Significa: <em>"¡Atención a todos los que estén escuchando 'crimenEnProceso', ejecuten sus acciones y tomen estos datos!"</em></p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 Concepto clave:</strong> El emisor <strong style="color: #14532d;">no sabe</strong> quién escucha. Solo <strong style="color: #14532d;">emite el evento</strong> y <strong style="color: #14532d;">no le importa</strong> qué sucede después. Esto es <strong style="color: #14532d;">desacoplamiento</strong>.</p>
+</div>
+</div>
+  
+<div id="oyentes" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">👂</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Clases Escuchadoras (Los Oyentes)</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Estas clases NO necesitan heredar de EventEmitter</span>
+<span style="color: #fbc30b;">// Son simples clases con métodos que se ejecutarán cuando el evento sea emitido.</span>
+
+<span style="color: #60a5fa;">class</span> <span style="color: #fbbf24;">SpiderMan</span> {
+  <span style="color: #60a5fa;">public</span> <span style="color: #fbbf24;">columpiarseAlLugar</span>(alerta: <span style="color: #fbbf24;">AlertaCrimen</span>): <span style="color: #34d399;">void</span> {
+    console.log(<span style="color: #34d399;">`🕸️ [Spider-Man]: Me columpio hacia ${alerta.lugar} para detener a ${alerta.villano}.`</span>);
+  }
+}
+
+<span style="color: #60a5fa;">class</span> <span style="color: #fbbf24;">PeriódicoDailyBugle</span> {
+  <span style="color: #60a5fa;">public</span> <span style="color: #fbbf24;">publicarNoticia</span>(alerta: <span style="color: #fbbf24;">AlertaCrimen</span>): <span style="color: #34d399;">void</span> {
+    console.log(<span style="color: #34d399;">`📰 [Daily Bugle]: ¡ÚLTIMA HORA! Fotos de ${alerta.villano} en ${alerta.lugar}.`</span>);
+  }
+}</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 20px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">📌 ¿Qué son los oyentes?</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Son clases o funciones que <strong style="color: #14532d;">reaccionan</strong> a un evento. Definen <strong style="color: #14532d;">qué hacer</strong> cuando el evento ocurre.</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 20px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">🔹 Características</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;"><strong style="color: #14532d;">No heredan</strong> de EventEmitter. Son <strong style="color: #14532d;">independientes</strong> y <strong style="color: #14532d;">desacopladas</strong> del emisor. Pueden ser <strong style="color: #14532d;">múltiples</strong> oyentes para un mismo evento.</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 20px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">🔹 Reacción personalizada</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Cada oyente reacciona <strong style="color: #14532d;">de forma diferente</strong> al mismo evento. Spider-Man se columpia, el Daily Bugle publica una noticia.</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Para POE:</strong> Los oyentes son el <strong style="color: #92400e;">"efecto"</strong> que ocurre cuando el <strong style="color: #92400e;">"causa"</strong> (evento) sucede. Son los <strong style="color: #92400e;">handlers</strong> o <strong style="color: #92400e;">controladores</strong> de eventos.</p>
+</div>
+</div>
+  
+<div id="suscripcion" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📎</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Suscripción (.on) - Múltiples Oyentes</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// .on(nombreDelEvento, callback) registra una función "escuchadora"</span>
+
+<span style="color: #fbc30b;">// Suscripción 1: Spider-Man escucha el evento</span>
+centralPolicia.<span style="color: #fbbf24;">on</span>(<span style="color: #34d399;">'crimenEnProceso'</span>, (alerta: <span style="color: #fbbf24;">AlertaCrimen</span>) =&gt; {
+  spidey.columpiarseAlLugar(alerta);
+});
+
+<span style="color: #fbc30b;">// Suscripción 2: Daily Bugle escucha el mismo evento</span>
+centralPolicia.<span style="color: #fbbf24;">on</span>(<span style="color: #34d399;">'crimenEnProceso'</span>, (alerta: <span style="color: #fbbf24;">AlertaCrimen</span>) =&gt; {
+  dailyBugle.publicarNoticia(alerta);
+});</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">📌 ¿Qué es .on()?</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Registra una función <strong style="color: #92400e;">escuchadora</strong> (listener). Significa: <em>"Cada vez que el emisor emita este evento, <strong style="color: #92400e;">ejecuta esta función</strong>".</em></p>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">🔹 Múltiples oyentes</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Puedes registrar <strong style="color: #92400e;">muchos oyentes</strong> para el <strong style="color: #92400e;">mismo evento</strong>. Todos se ejecutarán <strong style="color: #92400e;">a la vez</strong> cuando el evento sea emitido.</p>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">🔹 Patrón Pub/Sub</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Esto es el <strong style="color: #92400e;">patrón Publish/Subscribe</strong>. El emisor <strong style="color: #92400e;">publica</strong> un evento y los suscriptores <strong style="color: #92400e;">reciben</strong> la notificación.</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 Concepto clave:</strong> <code style="color: #14532d;">.on()</code> es la forma de <strong style="color: #14532d;">suscribirse</strong> a un evento. Es el <strong style="color: #14532d;">"contrato"</strong> entre el emisor y el oyente: <em>"Cuando pase X, haz Y"</em>.</p>
+</div>
+</div>
+  
+<div id="flujo" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔄</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Flujo Completo de POE</h2>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 25px 30px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; font-size: 0.85em;">
+<div style="background: #ef4444; color: white; padding: 8px 16px; border-radius: 10px; ">1. Emisor</div>
+<span style="color: #94a3b8; font-size: 1.5em;">→</span>
+<div style="background: #f59e0b; color: white; padding: 8px 16px; border-radius: 10px; ">2. Evento</div>
+<span style="color: #94a3b8; font-size: 1.5em;">→</span>
+<div style="background: #3b82f6; color: white; padding: 8px 16px; border-radius: 10px; ">3. Datos</div>
+<span style="color: #94a3b8; font-size: 1.5em;">→</span>
+<div style="background: #22c55e; color: white; padding: 8px 16px; border-radius: 10px; ">4. Oyentes</div>
+<span style="color: #94a3b8; font-size: 1.5em;">→</span>
+<div style="background: #8b5cf6; color: white; padding: 8px 16px; border-radius: 10px; ">5. Acción</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f1f5f9; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">📌 Paso a paso</p>
+<ol style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 2;">
+<li><strong style="color: #0e3f68;">Emisor</strong> crea el evento (<code>.emit()</code>).</li>
+<li><strong style="color: #0e3f68;">Evento</strong> es disparado con un nombre.</li>
+<li><strong style="color: #0e3f68;">Datos</strong> (opcionales) son enviados.</li>
+<li><strong style="color: #0e3f68;">Oyentes</strong> registrados con <code>.on()</code> reciben el evento.</li>
+<li><strong style="color: #0e3f68;">Acción</strong> es ejecutada por cada oyente.</li>
+</ol>
+</div>
+<div style="background: #f1f5f9; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Ventajas de este flujo</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 2;">
+<li><strong style="color: #0e3f68;">Desacoplamiento:</strong> Emisor y oyentes no se conocen.</li>
+<li><strong style="color: #0e3f68;">Escalabilidad:</strong> Añadir oyentes sin modificar el emisor.</li>
+<li><strong style="color: #0e3f68;">Flexibilidad:</strong> Cada oyente reacciona a su manera.</li>
+<li><strong style="color: #0e3f68;">Mantenibilidad:</strong> Cambios en un oyente no afectan a otros.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Analogía del restaurante:</strong> El <strong style="color: #92400e;">cocinero</strong> (emisor) prepara un plato (evento). El <strong style="color: #92400e;">mesero</strong> (sistema) lo lleva a la mesa correcta. Cada <strong style="color: #92400e;">comensal</strong> (oyente) reacciona de forma diferente: uno come, otro toma foto, otro pide más salsa.</p>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #3b82f6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">⚡</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Instanciación y Ejecución</h2>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-bottom: 16px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// 1. Instanciación (crear objetos)</span>
+<span style="color: #60a5fa;">const</span> centralPolicia = <span style="color: #60a5fa;">new</span> <span style="color: #fbbf24;">CentralPoliciaNY</span>();
+<span style="color: #60a5fa;">const</span> spidey = <span style="color: #60a5fa;">new</span> <span style="color: #fbbf24;">SpiderMan</span>();
+<span style="color: #60a5fa;">const</span> dailyBugle = <span style="color: #60a5fa;">new</span> <span style="color: #fbbf24;">PeriódicoDailyBugle</span>();
+
+<span style="color: #fbc30b;">// 2. Suscripciones (.on)</span>
+centralPolicia.<span style="color: #fbbf24;">on</span>(<span style="color: #34d399;">'crimenEnProceso'</span>, (alerta) =&gt; spidey.columpiarseAlLugar(alerta));
+centralPolicia.<span style="color: #fbbf24;">on</span>(<span style="color: #34d399;">'crimenEnProceso'</span>, (alerta) =&gt; dailyBugle.publicarNoticia(alerta));
+
+<span style="color: #fbc30b;">// 3. Emitir eventos (pruebas)</span>
+centralPolicia.<span style="color: #fbbf24;">reportarIncidente</span>(<span style="color: #34d399;">'Times Square'</span>, <span style="color: #34d399;">'Duende Verde'</span>, <span style="color: #34d399;">'Alto'</span>);
+centralPolicia.<span style="color: #fbbf24;">reportarIncidente</span>(<span style="color: #34d399;">'Banco Central'</span>, <span style="color: #34d399;">'Rhino'</span>, <span style="color: #34d399;">'Medio'</span>);</pre>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">📌 Instanciación</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Creamos <strong style="color: #1e3a8a;">objetos reales</strong> en memoria a partir de las clases. Cada objeto tiene su propio estado y métodos.</p>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">📌 Suscripción</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Registramos <strong style="color: #1e3a8a;">qué oyentes</strong> reaccionarán a <strong style="color: #1e3a8a;">qué eventos</strong>. Es el "contrato" entre emisor y oyente.</p>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">📌 Emisión</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Al llamar a <code style="color: #1e3a8a;">reportarIncidente()</code>, internamente se hace <code style="color: #1e3a8a;">.emit()</code>. Esto <strong style="color: #1e3a8a;">activa en cadena</strong> a todos los oyentes registrados.</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 Concepto clave:</strong> Los oyentes <strong style="color: #14532d;">no se ejecutan</strong> hasta que el evento ocurre. El programa <strong style="color: #14532d;">no se bloquea</strong> esperando; simplemente <strong style="color: #14532d;">escucha</strong>.</p>
+</div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 35px 40px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 2em;">📋</span>
+<h2 style="margin: 0; color: #fbc30b; font-size: 1.5em; ">Resumen de Conceptos Clave</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📦 EventEmitter</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Clase base que permite <strong style="color: #e2e8f0;">emitir</strong> y <strong style="color: #e2e8f0;">escuchar</strong> eventos en Node.js.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📐 Interfaces</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Definen el <strong style="color: #e2e8f0;">contrato</strong> de los datos. Aseguran que emisores y oyentes usen el <strong style="color: #e2e8f0;">mismo formato</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🚨 Clase Emisora</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Extiende <code style="color: #e2e8f0;">EventEmitter</code> y contiene la lógica para <strong style="color: #e2e8f0;">emitir eventos</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">👂 Clases Oyentes</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Clases <strong style="color: #e2e8f0;">independientes</strong> que definen <strong style="color: #e2e8f0;">qué hacer</strong> cuando ocurre un evento.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📎 Suscripción (.on)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Registra <strong style="color: #e2e8f0;">múltiples oyentes</strong> para un mismo evento. Cada uno reacciona <strong style="color: #e2e8f0;">de forma diferente</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🔄 Flujo POE</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Emisor → Evento → Datos → Oyentes → Acción. <strong style="color: #e2e8f0;">Desacoplamiento</strong> y <strong style="color: #e2e8f0;">escalabilidad</strong>.</p>
+</div>
+</div>
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Conclusión:</strong> Este sistema de eventos es la <strong style="color: #fbc30b;">base</strong> de la Programación Orientada a Eventos. Emisores, oyentes, eventos y suscripciones trabajan juntos para crear sistemas <strong style="color: #fbc30b;">reactivos</strong>, <strong style="color: #fbc30b;">desacoplados</strong> y <strong style="color: #fbc30b;">escalables</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;">📞 <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;">📧 <a style="color: #fbc30b; text-decoration: none;" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;">🕒 <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

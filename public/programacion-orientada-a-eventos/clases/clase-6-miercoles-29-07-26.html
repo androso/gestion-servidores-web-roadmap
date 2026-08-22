@@ -1,0 +1,454 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 6 Miercoles 29/07/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 6 Miercoles 29/07/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 3 del 27/07/26 al 02/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-6-miercoles-29-slash-07-slash-26">https://univo.instructure.com/courses/1742/pages/clase-6-miercoles-29-slash-07-slash-26</a></p>
+  </header>
+  <main>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 20px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">CLASE TEÓRICA</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 2 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">🖥️ INTERFACES GUI</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Fundamentos de Interfaces Gráficas I</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 700px;">Componentes GUI básicos: Botones, Etiquetas, Campos de Texto y Listas</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Última actualización: Julio 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#introduccion">Introducción</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#etiquetas">Etiquetas</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#botones">Botones</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#campos">Campos de Texto</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#listas">Listas</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#eventos">Eventos GUI</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#diseno">Diseño</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">2 horas</span></div>
+</div>
+  
+<div id="introduccion" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🖥️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Introducción a las Interfaces Gráficas</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es una Interfaz Gráfica (GUI)?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Una <strong style="color: #1e3a8a;">Interfaz Gráfica de Usuario</strong> (GUI, por sus siglas en inglés) es un sistema de elementos visuales que permite a los usuarios <strong style="color: #1e3a8a;">interactuar</strong> con un software mediante <strong style="color: #1e3a8a;">imágenes, iconos y componentes visuales</strong>, en lugar de hacerlo solo con texto o comandos.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Características principales</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Intuitiva:</strong> Fácil de entender para el usuario.</li>
+<li><strong style="color: #0e3f68;">Interactiva:</strong> Responde a las acciones del usuario.</li>
+<li><strong style="color: #0e3f68;">Visual:</strong> Usa elementos gráficos en lugar de texto.</li>
+<li><strong style="color: #0e3f68;">Basada en eventos:</strong> Reacciona a clics, teclas, etc.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Ejemplos cotidianos</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Sistemas operativos:</strong> Windows, macOS, Linux.</li>
+<li><strong style="color: #0e3f68;">Aplicaciones móviles:</strong> WhatsApp, Instagram, etc.</li>
+<li><strong style="color: #0e3f68;">Páginas web:</strong> Interfaz web con HTML/CSS/JS.</li>
+<li><strong style="color: #0e3f68;">Software de escritorio:</strong> Word, Photoshop, etc.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> Las interfaces gráficas son el <strong style="color: #92400e;">ejemplo más claro</strong> de Programación Orientada a Eventos. Cada clic, tecla o movimiento del mouse <strong style="color: #92400e;">dispara un evento</strong> que el programa debe manejar.</p>
+</div>
+</div>
+  
+<div id="etiquetas" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #3b82f6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🏷️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Etiquetas (Labels)</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es una etiqueta?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Una <strong style="color: #1e3a8a;">etiqueta</strong> (o <em>label</em>) es un componente gráfico que <strong style="color: #1e3a8a;">muestra texto estático</strong> en la interfaz. Su propósito es <strong style="color: #1e3a8a;">informar</strong> al usuario sobre qué representa otro elemento o proporcionar <strong style="color: #1e3a8a;">instrucciones</strong>.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Características</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Texto <strong style="color: #0e3f68;">estático</strong> (no editable por el usuario).</li>
+<li>Puede ser <strong style="color: #0e3f68;">modificado</strong> por el programa.</li>
+<li>No genera <strong style="color: #0e3f68;">eventos</strong> (no interactivo).</li>
+<li>Se usa para <strong style="color: #0e3f68;">identificar</strong> otros componentes.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de etiquetas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Texto simple:</strong> "Nombre:", "Contraseña:"</li>
+<li><strong style="color: #0e3f68;">Títulos:</strong> "Gestión de Usuarios"</li>
+<li><strong style="color: #0e3f68;">Subtítulos:</strong> "Complete el formulario"</li>
+<li><strong style="color: #0e3f68;">Mensajes de estado:</strong> "Conexión exitosa"</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Buenas prácticas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Texto <strong style="color: #0e3f68;">claro y conciso</strong>.</li>
+<li>Alineación <strong style="color: #0e3f68;">consistente</strong>.</li>
+<li>Usar <strong style="color: #0e3f68;">fuentes legibles</strong>.</li>
+<li>Colores <strong style="color: #0e3f68;">contrastantes</strong>.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Ejemplo en HTML (componente visual)</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 8px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Etiqueta simple</span>
+<span style="color: #fbbf24;">&lt;label</span> <span style="color: #34d399;">for</span>=<span style="color: #fbbf24;">"nombre"</span><span style="color: #fbbf24;">&gt;</span>Nombre completo:<span style="color: #fbbf24;">&lt;/label&gt;</span>
+
+<span style="color: #fbc30b;">// Etiqueta estilizada</span>
+<span style="color: #fbbf24;">&lt;label</span> <span style="color: #34d399;">style</span>=<span style="color: #fbbf24;">"font-weight: bold; color: #0e3f68;"</span><span style="color: #fbbf24;">&gt;</span>Bienvenido, Usuario<span style="color: #fbbf24;">&lt;/label&gt;</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> Las etiquetas pueden <strong style="color: #92400e;">cambiar su contenido</strong> en respuesta a eventos. Por ejemplo, mostrar "Cargando..." mientras se procesa una acción.</p>
+</div>
+</div>
+</div>
+  
+<div id="botones" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔘</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Botones (Buttons)</h2>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 22px; border: 1px solid #bbf7d0; margin-bottom: 16px;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 ¿Qué es un botón?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Un <strong style="color: #14532d;">botón</strong> es el componente <strong style="color: #14532d;">más importante</strong> de cualquier GUI. Es un elemento <strong style="color: #14532d;">interactivo</strong> que el usuario puede presionar para <strong style="color: #14532d;">desencadenar una acción</strong>. Es el <strong style="color: #14532d;">corazón de la interacción</strong> usuario-sistema.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Características</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Interactivo:</strong> Responde al clic del usuario.</li>
+<li><strong style="color: #0e3f68;">Texto:</strong> Describe la acción que realizará.</li>
+<li><strong style="color: #0e3f68;">Evento:</strong> Dispara un evento al ser presionado.</li>
+<li><strong style="color: #0e3f68;">Estados:</strong> Normal, hover, presionado, deshabilitado.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Tipos de botones</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Botón de acción:</strong> "Guardar", "Enviar", "Aceptar"</li>
+<li><strong style="color: #0e3f68;">Botón de cancelación:</strong> "Cancelar", "Cerrar"</li>
+<li><strong style="color: #0e3f68;">Botón de navegación:</strong> "Siguiente", "Atrás"</li>
+<li><strong style="color: #0e3f68;">Botón con icono:</strong> Solo imagen o icono + texto</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Ejemplo en HTML + Evento</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 8px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Botón en HTML</span>
+<span style="color: #fbbf24;">&lt;button</span> <span style="color: #34d399;">id</span>=<span style="color: #fbbf24;">"btnEnviar"</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"boton-primario"</span><span style="color: #fbbf24;">&gt;</span>Enviar formulario<span style="color: #fbbf24;">&lt;/button&gt;</span>
+
+<span style="color: #fbc30b;">// Evento en JavaScript</span>
+<span style="color: #60a5fa;">const</span> boton = document.getElementById(<span style="color: #34d399;">'btnEnviar'</span>);
+boton.addEventListener(<span style="color: #34d399;">'click'</span>, () =&gt; {
+    <span style="color: #fbc30b;">// Acción que se ejecuta al hacer clic</span>
+    console.log(<span style="color: #34d399;">'¡Botón presionado!'</span>);
+});</pre>
+</div>
+<div style="margin-top: 8px; background: #f0fdf4; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.78em;"><strong>💡 Para POE:</strong> Los botones son el <strong style="color: #14532d;">origen de eventos</strong> más común. Cada clic es un evento que el sistema debe manejar, ejecutando la acción correspondiente.</p>
+</div>
+</div>
+<div style="margin-top: 14px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>📌 Buenas prácticas en botones:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #78350f; font-size: 0.82em; line-height: 1.8;">
+<li>Texto <strong style="color: #92400e;">claro y orientado a la acción</strong> ("Guardar" vs "Aceptar").</li>
+<li>Ubicación <strong style="color: #92400e;">consistente</strong> en la interfaz.</li>
+<li><strong style="color: #92400e;">Diferenciar</strong> acciones primarias (color principal) y secundarias.</li>
+<li>Proporcionar <strong style="color: #92400e;">retroalimentación</strong> visual al hacer clic (cambio de color, loading, etc.).</li>
+</ul>
+</div>
+</div>
+  
+<div id="campos" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">✏️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Campos de Texto (Inputs)</h2>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 22px; border: 1px solid #fde68a; margin-bottom: 16px;">
+<p style="margin: 0;  color: #92400e; font-size: 0.95em;">📌 ¿Qué es un campo de texto?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Un <strong style="color: #92400e;">campo de texto</strong> (o <em>input</em>) es un componente que permite al usuario <strong style="color: #92400e;">ingresar datos</strong> en forma de texto. Es la forma principal de <strong style="color: #92400e;">entrada de datos</strong> en cualquier interfaz.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de campos</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Texto simple:</strong> Nombre, dirección, etc.</li>
+<li><strong style="color: #0e3f68;">Contraseña:</strong> Oculta el texto ingresado.</li>
+<li><strong style="color: #0e3f68;">Correo electrónico:</strong> Valida formato de email.</li>
+<li><strong style="color: #0e3f68;">Número:</strong> Solo permite dígitos.</li>
+<li><strong style="color: #0e3f68;">Textarea:</strong> Múltiples líneas de texto.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Eventos asociados</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">change:</strong> Cuando se modifica el valor.</li>
+<li><strong style="color: #0e3f68;">input:</strong> Cada vez que se escribe.</li>
+<li><strong style="color: #0e3f68;">focus:</strong> Cuando el campo recibe el foco.</li>
+<li><strong style="color: #0e3f68;">blur:</strong> Cuando el campo pierde el foco.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Buenas prácticas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Usar <strong style="color: #0e3f68;">etiquetas</strong> claras y visibles.</li>
+<li>Proporcionar <strong style="color: #0e3f68;">placeholders</strong> (texto de ayuda).</li>
+<li><strong style="color: #0e3f68;">Validar</strong> los datos ingresados.</li>
+<li><strong style="color: #0e3f68;">Feedback visual</strong> de errores.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Ejemplo en HTML</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 8px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Campo de texto simple</span>
+<span style="color: #fbbf24;">&lt;label</span> <span style="color: #34d399;">for</span>=<span style="color: #fbbf24;">"nombre"</span><span style="color: #fbbf24;">&gt;</span>Nombre completo:<span style="color: #fbbf24;">&lt;/label&gt;</span>
+<span style="color: #fbbf24;">&lt;input</span> <span style="color: #34d399;">type</span>=<span style="color: #fbbf24;">"text"</span> <span style="color: #34d399;">id</span>=<span style="color: #fbbf24;">"nombre"</span> <span style="color: #34d399;">placeholder</span>=<span style="color: #fbbf24;">"Ingrese su nombre"</span> <span style="color: #fbbf24;">/&gt;</span>
+
+<span style="color: #fbc30b;">// Campo de contraseña</span>
+<span style="color: #fbbf24;">&lt;label</span> <span style="color: #34d399;">for</span>=<span style="color: #fbbf24;">"password"</span><span style="color: #fbbf24;">&gt;</span>Contraseña:<span style="color: #fbbf24;">&lt;/label&gt;</span>
+<span style="color: #fbbf24;">&lt;input</span> <span style="color: #34d399;">type</span>=<span style="color: #fbbf24;">"password"</span> <span style="color: #34d399;">id</span>=<span style="color: #fbbf24;">"password"</span> <span style="color: #fbbf24;">/&gt;</span>
+
+<span style="color: #fbc30b;">// Textarea (múltiples líneas)</span>
+<span style="color: #fbbf24;">&lt;textarea</span> <span style="color: #34d399;">id</span>=<span style="color: #fbbf24;">"mensaje"</span> <span style="color: #34d399;">rows</span>=<span style="color: #fbbf24;">"4"</span> <span style="color: #34d399;">placeholder</span>=<span style="color: #fbbf24;">"Escriba su mensaje..."</span><span style="color: #fbbf24;">&gt;&lt;/textarea&gt;</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> Los campos de texto son <strong style="color: #92400e;">fuentes de eventos</strong> continuos. Cada carácter que el usuario escribe puede <strong style="color: #92400e;">disparar eventos</strong> de validación, autocompletado o actualización en tiempo real.</p>
+</div>
+</div>
+</div>
+  
+<div id="listas" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Listas (Listas, Dropdowns y Selectores)</h2>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #ddd6fe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.95em;">📌 ¿Qué es una lista en GUI?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Una <strong style="color: #4c1d95;">lista</strong> es un componente que permite al usuario <strong style="color: #4c1d95;">seleccionar</strong> una o más opciones de un <strong style="color: #4c1d95;">conjunto predefinido</strong>. Ayuda a <strong style="color: #4c1d95;">evitar errores</strong> al limitar las opciones disponibles.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de listas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Lista desplegable (dropdown):</strong> Selección de una opción.</li>
+<li><strong style="color: #0e3f68;">Lista de selección múltiple:</strong> Varias opciones a la vez.</li>
+<li><strong style="color: #0e3f68;">Lista simple:</strong> Muestra opciones visibles.</li>
+<li><strong style="color: #0e3f68;">Radio buttons:</strong> Selección única con visualización directa.</li>
+<li><strong style="color: #0e3f68;">Checkboxes:</strong> Selección múltiple con visualización directa.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Eventos asociados</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">change:</strong> Cuando se selecciona una opción.</li>
+<li><strong style="color: #0e3f68;">click:</strong> En elementos de la lista.</li>
+<li><strong style="color: #0e3f68;">dblclick:</strong> Doble clic en un elemento.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Buenas prácticas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Ordenar opciones <strong style="color: #0e3f68;">lógicamente</strong>.</li>
+<li>Usar opción <strong style="color: #0e3f68;">placeholder</strong> ("Seleccione...").</li>
+<li>Agrupar opciones si son <strong style="color: #0e3f68;">muchas</strong>.</li>
+<li><strong style="color: #0e3f68;">Deshabilitar</strong> opciones no disponibles.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Ejemplo en HTML</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 8px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Dropdown (selección única)</span>
+<span style="color: #fbbf24;">&lt;label</span> <span style="color: #34d399;">for</span>=<span style="color: #fbbf24;">"ciudad"</span><span style="color: #fbbf24;">&gt;</span>Ciudad:<span style="color: #fbbf24;">&lt;/label&gt;</span>
+<span style="color: #fbbf24;">&lt;select</span> <span style="color: #34d399;">id</span>=<span style="color: #fbbf24;">"ciudad"</span><span style="color: #fbbf24;">&gt;</span>
+  <span style="color: #fbbf24;">&lt;option</span> <span style="color: #34d399;">value</span>=<span style="color: #fbbf24;">""</span><span style="color: #fbbf24;">&gt;</span>Seleccione...<span style="color: #fbbf24;">&lt;/option&gt;</span>
+  <span style="color: #fbbf24;">&lt;option</span> <span style="color: #34d399;">value</span>=<span style="color: #fbbf24;">"SJO"</span><span style="color: #fbbf24;">&gt;</span>San Salvador<span style="color: #fbbf24;">&lt;/option&gt;</span>
+  <span style="color: #fbbf24;">&lt;option</span> <span style="color: #34d399;">value</span>=<span style="color: #fbbf24;">"STA"</span><span style="color: #fbbf24;">&gt;</span>Santa Ana<span style="color: #fbbf24;">&lt;/option&gt;</span>
+<span style="color: #fbbf24;">&lt;/select&gt;</span>
+
+<span style="color: #fbc30b;">// Lista con selección múltiple</span>
+<span style="color: #fbbf24;">&lt;select</span> <span style="color: #34d399;">multiple</span> <span style="color: #34d399;">size</span>=<span style="color: #fbbf24;">"3"</span><span style="color: #fbbf24;">&gt;</span>
+  <span style="color: #fbbf24;">&lt;option&gt;</span>Opción 1<span style="color: #fbbf24;">&lt;/option&gt;</span>
+  <span style="color: #fbbf24;">&lt;option&gt;</span>Opción 2<span style="color: #fbbf24;">&lt;/option&gt;</span>
+  <span style="color: #fbbf24;">&lt;option&gt;</span>Opción 3<span style="color: #fbbf24;">&lt;/option&gt;</span>
+<span style="color: #fbbf24;">&lt;/select&gt;</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> Las listas generan eventos cuando el usuario <strong style="color: #92400e;">cambia la selección</strong>. Esto permite <strong style="color: #92400e;">actualizar</strong> otros componentes de la interfaz en tiempo real.</p>
+</div>
+</div>
+</div>
+  
+<div id="eventos" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #ef4444; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">⚡</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Eventos en Interfaces Gráficas</h2>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 22px; border: 1px solid #fecaca; margin-bottom: 16px;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.95em;">📌 ¿Qué son los eventos GUI?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Los <strong style="color: #991b1b;">eventos</strong> son <strong style="color: #991b1b;">acciones</strong> que ocurren en la interfaz y que el sistema puede <strong style="color: #991b1b;">detectar y manejar</strong>. Son el <strong style="color: #991b1b;">puente</strong> entre el usuario y el programa.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🖱️ Eventos de mouse</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">click:</strong> Un clic en el elemento.</li>
+<li><strong style="color: #0e3f68;">dblclick:</strong> Doble clic.</li>
+<li><strong style="color: #0e3f68;">mouseenter:</strong> El mouse entra al elemento.</li>
+<li><strong style="color: #0e3f68;">mouseleave:</strong> El mouse sale del elemento.</li>
+<li><strong style="color: #0e3f68;">mousemove:</strong> El mouse se mueve sobre el elemento.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">⌨️ Eventos de teclado</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">keydown:</strong> Se presiona una tecla.</li>
+<li><strong style="color: #0e3f68;">keyup:</strong> Se suelta una tecla.</li>
+<li><strong style="color: #0e3f68;">keypress:</strong> Tecla presionada y soltada.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📝 Eventos de formulario</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">focus:</strong> El elemento recibe el foco.</li>
+<li><strong style="color: #0e3f68;">blur:</strong> El elemento pierde el foco.</li>
+<li><strong style="color: #0e3f68;">change:</strong> El valor cambia.</li>
+<li><strong style="color: #0e3f68;">input:</strong> Se escribe en el campo.</li>
+<li><strong style="color: #0e3f68;">submit:</strong> Se envía un formulario.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Diagrama del flujo de eventos GUI</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 8px; overflow-x: auto; text-align: center;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">Usuario realiza una acción (clic, tecla, etc.)</span>
+        ↓
+<span style="color: #fbc30b;">Sistema detecta el evento</span>
+        ↓
+<span style="color: #fbc30b;">Evento se coloca en la cola de eventos</span>
+        ↓
+<span style="color: #fbc30b;">Bucle de eventos lo procesa</span>
+        ↓
+<span style="color: #fbc30b;">Se ejecuta el manejador (handler)</span>
+        ↓
+<span style="color: #fbc30b;">La interfaz se actualiza</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #ef4444;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> Las interfaces gráficas son <strong style="color: #92400e;">sistemas puramente basados en eventos</strong>. Cada interacción del usuario es un evento que el programa debe manejar.</p>
+</div>
+</div>
+</div>
+  
+<div id="diseno" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🎨</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Principios de Diseño de Interfaces</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f0f7ff; border-radius: 12px; padding: 16px 20px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.9em;">📌 Principio de Consistencia</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Los elementos similares deben <strong style="color: #1e3a8a;">verse y comportarse</strong> de la misma manera en toda la interfaz. Esto reduce la <strong style="color: #1e3a8a;">curva de aprendizaje</strong> del usuario.</p>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 20px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">📌 Principio de Retroalimentación</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">El usuario debe <strong style="color: #14532d;">saber</strong> qué está pasando. Cada acción debe tener una <strong style="color: #14532d;">respuesta visual</strong> (cambio de color, mensaje, animación, etc.).</p>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 20px; border: 1px solid #fde68a;">
+<p style="margin: 0;  color: #92400e; font-size: 0.9em;">📌 Principio de Jerarquía</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Los elementos más <strong style="color: #92400e;">importantes</strong> deben ser más <strong style="color: #92400e;">visibles</strong>. Usar tamaño, color y posición para guiar la atención del usuario.</p>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 20px; border: 1px solid #fecaca;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.9em;">📌 Principio de Prevención de Errores</p>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em; line-height: 1.6;">Diseñar para <strong style="color: #991b1b;">evitar</strong> que el usuario cometa errores. Usar <strong style="color: #991b1b;">validaciones</strong>, <strong style="color: #991b1b;">confirmaciones</strong> y <strong style="color: #991b1b;">opciones limitadas</strong>.</p>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📌 Consejos prácticos para GUI</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Menos es más:</strong> No saturar la interfaz con elementos innecesarios.</li>
+<li><strong style="color: #0e3f68;">Alineación:</strong> Mantener elementos alineados para una apariencia limpia.</li>
+<li><strong style="color: #0e3f68;">Espaciado:</strong> Usar espacios adecuados entre elementos.</li>
+<li><strong style="color: #0e3f68;">Contraste:</strong> Asegurar buena legibilidad del texto.</li>
+<li><strong style="color: #0e3f68;">Accesibilidad:</strong> Diseñar para todos los usuarios, incluyendo personas con discapacidades.</li>
+</ul>
+</div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 35px 40px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 2em;">📋</span>
+<h2 style="margin: 0; color: #fbc30b; font-size: 1.5em; ">Resumen de Conceptos Clave</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🖥️ Interfaz Gráfica (GUI)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Sistema visual que permite <strong style="color: #e2e8f0;">interactuar</strong> con el software mediante elementos gráficos.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🏷️ Etiquetas (Labels)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Texto <strong style="color: #e2e8f0;">estático</strong> para identificar o describir otros componentes.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🔘 Botones (Buttons)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Elemento <strong style="color: #e2e8f0;">interactivo</strong> que desencadena acciones al ser presionado.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">✏️ Campos de Texto</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Permiten al usuario <strong style="color: #e2e8f0;">ingresar datos</strong> de texto en la interfaz.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📋 Listas</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Permiten <strong style="color: #e2e8f0;">seleccionar</strong> una o más opciones de un conjunto predefinido.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">⚡ Eventos GUI</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Acciones del usuario que el sistema <strong style="color: #e2e8f0;">detecta y maneja</strong> (clic, tecla, cambio, etc.).</p>
+</div>
+</div>
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Conclusión:</strong> Los componentes GUI básicos (etiquetas, botones, campos de texto y listas) son la <strong style="color: #fbc30b;">base</strong> de cualquier interfaz de usuario. Su correcta implementación y diseño determinan la <strong style="color: #fbc30b;">experiencia del usuario</strong> y la <strong style="color: #fbc30b;">eficacia</strong> del sistema. En POE, estos componentes son <strong style="color: #fbc30b;">emisores de eventos</strong> que desencadenan la lógica de la aplicación.</p>
+</div>
+</div>
+</div>
+</div>
+<footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><strong style="color: #fbc30b; font-size: 1.05em;">Programación Orientada a Evento | Ing. Adolfo Herrera</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;"></div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

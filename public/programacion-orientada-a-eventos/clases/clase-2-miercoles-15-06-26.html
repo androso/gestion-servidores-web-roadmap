@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 2 Miercoles 15/06/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 2 Miercoles 15/06/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 1 del 13 al 19 de julio</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-2-miercoles-15-slash-06-slash-26">https://univo.instructure.com/courses/1742/pages/clase-2-miercoles-15-slash-06-slash-26</a></p>
+  </header>
+  <main>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="max-width: 1100px; width: 100%; margin: 0px auto; font-family: Inter, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0;"><header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 60px 50px 50px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255, 255, 255, 0.06); padding: 20px; border-radius: 24px; border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File" loading="lazy"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;">SESIÓN 2</span> <span style="background: rgba(255, 255, 255, 0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em; border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06);">⏱️ 2 HORAS</span> <span style="background: rgba(251, 195, 11, 0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em; border-width: 1px; border-style: solid; border-color: rgba(251, 195, 11, 0.15);">🏆 FUNDAMENTOS</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.8em; line-height: 1.15;">Programación Orientada a Eventos</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.25em; max-width: 600px;">¿Qué es la POE? — El cambio de paradigma: reaccionar en lugar de instruir</p>
+</div>
+</div>
+</header>
+<div style="padding: 40px 45px; background: #f8fafc;">
+<div style="background: #ffffff; border-radius: 20px; padding: 20px 25px; margin-bottom: 35px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 15px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap;"><span style="color: #0e3f68; font-size: 0.9em;">📋 Navegación rápida:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#objetivo">Objetivo</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#agenda">Agenda</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#introduccion">Introducción</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#teoria">Teoría</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#componentes">Componentes</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#ejemplos">Ejemplos</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.85em; padding: 4px 14px; background: #eff6ff; border-radius: 100px;" href="#practica">Práctica</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 6px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.8em;">⏱️ Duración:</span> <span style="color: #0e3f68; font-size: 0.9em;">2 horas</span></div>
+</div>
+<div id="objetivo" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 40px 45px; margin-bottom: 35px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 2em;">🎯</span>
+<h2 style="margin: 0; color: #ffffff; font-size: 1.6em;">Objetivo de Aprendizaje</h2>
+</div>
+<p style="margin: 0 0 20px 0; color: #94a3b8; font-size: 1.05em; line-height: 1.6;">Al finalizar la sesión, el estudiante será capaz de:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; gap: 12px;"><span style="color: #fbc30b; font-size: 1.2em;">1</span> <span style="color: #e2e8f0; font-size: 0.95em;">Explicar qué es la <strong style="color: #fbc30b;">Programación Orientada a Eventos</strong></span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; gap: 12px;"><span style="color: #fbc30b; font-size: 1.2em;">2</span> <span style="color: #e2e8f0; font-size: 0.95em;">Diferenciar programa <strong style="color: #fbc30b;">secuencial</strong> de uno <strong style="color: #fbc30b;">dirigido por eventos</strong></span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; gap: 12px;"><span style="color: #fbc30b; font-size: 1.2em;">3</span> <span style="color: #e2e8f0; font-size: 0.95em;">Comprender el concepto de <strong style="color: #fbc30b;">Callback</strong></span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; gap: 12px;"><span style="color: #fbc30b; font-size: 1.2em;">4</span> <span style="color: #e2e8f0; font-size: 0.95em;">Identificar <strong style="color: #fbc30b;">aplicaciones reales</strong> donde se utiliza POE</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 14px; display: flex; align-items: center; gap: 12px; grid-column: span 2;"><span style="color: #fbc30b; font-size: 1.2em;">5</span> <span style="color: #e2e8f0; font-size: 0.95em;">Crear un programa sencillo utilizando <strong style="color: #fbc30b;">eventos en TypeScript</strong></span></div>
+</div>
+</div>
+</div>
+<div id="agenda" style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 25px;"><span style="font-size: 1.8em;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Agenda de la Sesión</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 12px;">
+<div style="text-align: center; background: #f1f5f9; padding: 18px 10px; border-radius: 16px; border-top: 4px solid #fbc30b;"><span style="display: block; font-size: 1.8em; margin-bottom: 6px;">🎬</span> <span style="display: block; color: #0e3f68; font-size: 0.9em;">Introducción</span> <span style="display: block; color: #94a3b8; font-size: 0.75em; margin-top: 4px;">15 min</span></div>
+<div style="text-align: center; background: #f1f5f9; padding: 18px 10px; border-radius: 16px; border-top: 4px solid #3b82f6;"><span style="display: block; font-size: 1.8em; margin-bottom: 6px;">📖</span> <span style="display: block; color: #0e3f68; font-size: 0.9em;">Teoría</span> <span style="display: block; color: #94a3b8; font-size: 0.75em; margin-top: 4px;">30 min</span></div>
+<div style="text-align: center; background: #f1f5f9; padding: 18px 10px; border-radius: 16px; border-top: 4px solid #22c55e;"><span style="display: block; font-size: 1.8em; margin-bottom: 6px;">⚙️</span> <span style="display: block; color: #0e3f68; font-size: 0.9em;">Componentes POE</span> <span style="display: block; color: #94a3b8; font-size: 0.75em; margin-top: 4px;">20 min</span></div>
+<div style="text-align: center; background: #f1f5f9; padding: 18px 10px; border-radius: 16px; border-top: 4px solid #8b5cf6;"><span style="display: block; font-size: 1.8em; margin-bottom: 6px;">💻</span> <span style="display: block; color: #0e3f68; font-size: 0.9em;">Ejemplos y Práctica</span> <span style="display: block; color: #94a3b8; font-size: 0.75em; margin-top: 4px;">40 min</span></div>
+<div style="text-align: center; background: #f1f5f9; padding: 18px 10px; border-radius: 16px; border-top: 4px solid #ef4444;"><span style="display: block; font-size: 1.8em; margin-bottom: 6px;">💬</span> <span style="display: block; color: #0e3f68; font-size: 0.9em;">Discusión y conclusiones</span> <span style="display: block; color: #94a3b8; font-size: 0.75em; margin-top: 4px;">15 min</span></div>
+</div>
+<div style="margin-top: 18px; background: #eff6ff; padding: 12px 20px; border-radius: 12px; display: flex; align-items: center; gap: 12px; flex-wrap: wrap;"><span style="color: #1e3a8a; font-size: 0.9em;">⏱️ Duración total:</span> <span style="background: #ffffff; padding: 4px 16px; border-radius: 100px; color: #0e3f68; font-size: 0.9em; border: 1px solid #bfdbfe;">2 horas</span> <span style="color: #475569; font-size: 0.85em; margin-left: 4px;"><br></span></div>
+</div>
+<div id="introduccion" style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">🎬</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Introducción</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">15 min</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+<div style="background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 16px; padding: 25px; position: relative; border: 1px solid #bfdbfe;">
+<div style="position: absolute; top: -10px; right: 20px; background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">PREGUNTA 1</div>
+<p style="margin: 0; font-size: 1.1em; color: #0f172a;">💭 ¿Qué sucede cuando hacen clic en un botón de Facebook?</p>
+<p style="margin: 12px 0 0 0; color: #475569; font-size: 0.95em; line-height: 1.5;"><em>"¿El programa está ejecutando una línea tras otra esperando que den clic?"</em></p>
+<div style="margin-top: 14px; background: #f0fdf4; padding: 12px 16px; border-radius: 10px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.9em;"><strong>💡 Respuesta clave:</strong> El programa está <strong>esperando</strong> que ocurra un <strong>evento</strong>.</p>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #fef3c7, #fffbeb); border-radius: 16px; padding: 25px; position: relative; border: 1px solid #fde68a;">
+<div style="position: absolute; top: -10px; right: 20px; background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">PREGUNTA 2</div>
+<p style="margin: 0; font-size: 1.1em; color: #0f172a;">💬 ¿Qué hace WhatsApp cuando recibimos un mensaje?</p>
+<p style="margin: 12px 0 0 0; color: #475569; font-size: 0.95em; line-height: 1.5;">No está preguntando cada segundo: <em>"¿Llegó un mensaje? ¿Llegó un mensaje?"</em></p>
+<div style="margin-top: 14px; background: #f0fdf4; padding: 12px 16px; border-radius: 10px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.9em;"><strong>💡 Respuesta clave:</strong> Simplemente <strong>espera un evento</strong>. Cuando ocurre, se ejecuta una función y se muestra la notificación.</p>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 16px; padding: 30px 35px; text-align: center;">
+<p style="margin: 0; color: #fbc30b; font-size: 1.4em;">✨ Eso es Programación Orientada a Eventos ✨</p>
+<p style="margin: 10px 0 0 0; color: #94a3b8; font-size: 1em;">El programa no decide cuándo ejecutar — <strong style="color: #fbc30b;">espera</strong> y <strong style="color: #fbc30b;">reacciona</strong></p>
+</div>
+<div style="margin-top: 25px; background: linear-gradient(135deg, #f0f7ff, #eff6ff); border-radius: 16px; padding: 25px 30px; border: 1px solid #bfdbfe;">
+<h4 style="margin: 0 0 15px 0; color: #1e3a8a; font-size: 1.1em;">🌟 Importancia de la Programación Basada en Eventos</h4>
+<p style="margin: 0 0 15px 0; color: #475569; line-height: 1.6;">Debido al uso intensivo de aplicaciones altamente interactivas, procesos asíncronos y comunicación en tiempo real, la programación orientada a eventos se erige como un <strong style="color: #0e3f68;">factor clave</strong> en el desarrollo de aplicaciones. Esta proporciona una interfaz para crear software que responde a entradas externas.</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+<div style="background: #ffffff; padding: 14px 18px; border-radius: 10px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid #e2e8f0;"><span style="font-size: 1.2em;">⚡</span>
+<div>
+<p style="margin: 0; color: #0e3f68; font-size: 0.9em;">Capacidad de respuesta</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.85em;">Permite responder a solicitudes sin obstaculizar otras operaciones</p>
+</div>
+</div>
+<div style="background: #ffffff; padding: 14px 18px; border-radius: 10px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid #e2e8f0;"><span style="font-size: 1.2em;">📈</span>
+<div>
+<p style="margin: 0; color: #0e3f68; font-size: 0.9em;">Escalabilidad</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.85em;">Gestiona gran cantidad de usuarios/eventos sin recursos masivos</p>
+</div>
+</div>
+<div style="background: #ffffff; padding: 14px 18px; border-radius: 10px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid #e2e8f0;"><span style="font-size: 1.2em;">🔄</span>
+<div>
+<p style="margin: 0; color: #0e3f68; font-size: 0.9em;">Procesamiento asíncrono</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.85em;">Gestiona tareas asíncronas y procesa varias tareas simultáneamente</p>
+</div>
+</div>
+<div style="background: #ffffff; padding: 14px 18px; border-radius: 10px; display: flex; align-items: flex-start; gap: 10px; border: 1px solid #e2e8f0;"><span style="font-size: 1.2em;">🧩</span>
+<div>
+<p style="margin: 0; color: #0e3f68; font-size: 0.9em;">Desacoplamiento de componentes</p>
+<p style="margin: 4px 0 0 0; color: #475569; font-size: 0.85em;">Partes de la aplicación funcionan independientemente</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="teoria" style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">📖</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Teoría</h2>
+<span style="background: #f1f5f9; color: #475569; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">30 min</span></div>
+<div style="background: #f8fafc; border-radius: 16px; padding: 25px 30px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;"><span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">RECORDATORIO</span> <span style="color: #0e3f68; font-size: 1.1em;">Programación Secuencial</span></div>
+<p style="margin: 0 0 15px 0; color: #475569; line-height: 1.6;">Hasta ahora, los programas se ejecutaban así:</p>
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #e2e8f0;"><span style="background: #0f172a; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Inicio</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #1e293b; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Leer datos</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #1e293b; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Procesar</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #1e293b; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Mostrar resultado</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #ef4444; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Fin</span></div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; margin-top: 15px; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;">console.log("Inicio");
+console.log("Ingrese su nombre");
+let nombre = "Panchito";
+console.log("Hola " + nombre);
+console.log("Fin");
+
+// Salida:
+// Inicio
+// Ingrese su nombre
+// Hola Panchito
+// Fin</pre>
+</div>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 0.9em; text-align: center;">Todo ocurre de <strong style="color: #0e3f68;">arriba hacia abajo</strong>. El programa <strong style="color: #0e3f68;">controla</strong> el flujo.</p>
+</div>
+<div style="background: linear-gradient(135deg, #fef3c7, #fffbeb); border-radius: 16px; padding: 25px 30px; margin-bottom: 25px; border: 1px solid #fde68a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;"><span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">¿QUÉ CAMBIA?</span> <span style="color: #92400e; font-size: 1.1em;">El programa ya no decide cuándo ejecutar</span></div>
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px; flex-wrap: wrap; background: #ffffff; padding: 20px; border-radius: 12px; border: 1px solid #fde68a;"><span style="background: #0f172a; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Programa iniciado</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #1e293b; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Esperar</span> <span style="color: #94a3b8; font-size: 1.4em;">↓</span> <span style="background: #f59e0b; color: #0f172a; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">¿Ocurrió un evento?</span> <span style="color: #94a3b8; font-size: 1.4em;">↓ Sí</span> <span style="background: #22c55e; color: white; padding: 6px 18px; border-radius: 8px; font-size: 0.9em;">Ejecutar una función</span></div>
+<p style="margin: 12px 0 0 0; color: #78350f; font-size: 0.95em; text-align: center;">El programa <strong style="color: #92400e;">espera</strong>. No sabe <strong style="color: #92400e;">cuándo</strong> ocurrirá el evento.</p>
+</div>
+<div style="background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 16px; padding: 25px 30px; margin-bottom: 25px; border: 1px solid #bfdbfe;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;"><span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.7em;">DEFINICIÓN</span></div>
+<p style="margin: 0; font-size: 1.1em; color: #0f172a; line-height: 1.6;">La <strong style="color: #0e3f68;">Programación Orientada a Eventos</strong> es un <strong style="color: #0e3f68;">paradigma</strong> donde el flujo del programa depende de <strong style="color: #0e3f68;">eventos</strong> generados por el usuario, el sistema o dispositivos externos.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px;"><span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">🖱️ clic</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">⌨️ teclado</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">🖱️ mouse</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">⏱️ temporizadores</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">📡 sensores</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">📨 mensajes de red</span> <span style="background: #ffffff; padding: 6px 16px; border-radius: 100px; font-size: 0.85em; color: #1e3a8a; border: 1px solid #bfdbfe;">📊 llegada de datos</span></div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px;">
+<div style="background: #f1f5f9; border-radius: 16px; padding: 25px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;"><span style="font-size: 1.4em;">⚙️</span>
+<h4 style="margin: 0; color: #0e3f68; font-size: 1.1em;">Paradigma Imperativo</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #475569; font-size: 0.95em;">El <strong style="color: #0e3f68;">programador</strong> controla el flujo.</p>
+<div style="background: #ffffff; padding: 15px; border-radius: 10px; text-align: center; font-family: monospace;">A<br>↓<br>B<br>↓<br>C<br>↓<br>D</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 12px; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;">let a = 5;
+let b = 10;
+let suma = a + b;
+console.log(suma);</pre>
+</div>
+<p style="margin: 10px 0 0 0; color: #94a3b8; font-size: 0.85em; text-align: center;">El programa siempre hace lo mismo</p>
+</div>
+<div style="background: #fef3c7; border-radius: 16px; padding: 25px; border: 1px solid #fde68a;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 12px;"><span style="font-size: 1.4em;">🔄</span>
+<h4 style="margin: 0; color: #92400e; font-size: 1.1em;">Paradigma Reactivo</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #78350f; font-size: 0.95em;">El <strong style="color: #92400e;">usuario</strong> controla el flujo.</p>
+<div style="background: #ffffff; padding: 15px; border-radius: 10px; text-align: center; font-family: monospace;">Programa<br>↓<br>Espera<br>↓<br>Usuario hace clic<br>↓<br>Se ejecuta código<br>↓<br>Espera nuevamente</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 12px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.8em; margin-top: 12px; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;">// Una interfaz gráfica funciona así:
+while(programaAbierto){
+    esperarEvento();
+}</pre>
+</div>
+<p style="margin: 10px 0 0 0; color: #78350f; font-size: 0.85em; text-align: center;">No sabemos cuándo ocurrirá el evento</p>
+</div>
+</div>
+<div style="background: #f8fafc; border-radius: 16px; padding: 25px 30px; margin-bottom: 25px; border: 1px solid #e2e8f0;">
+<h4 style="margin: 0 0 15px 0; color: #0e3f68;">🔄 Inversión del flujo de control</h4>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #475569; font-size: 0.85em; text-align: center;">Antes (Secuencial)</p>
+<div style="text-align: center; font-family: monospace; padding: 10px 0;">main()<br>↓<br>función1()<br>↓<br>función2()</div>
+</div>
+<div style="background: #ffffff; padding: 18px; border-radius: 12px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #0e3f68; font-size: 0.85em; text-align: center;">Ahora (POE)</p>
+<div style="text-align: center; font-family: monospace; padding: 10px 0;">main()<br>↓<br>Registrar eventos<br>↓<br>Esperar...<br>↓<br>Evento<br>↓<br>Función</div>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #0f172a, #1e293b); border-radius: 16px; padding: 30px 35px; margin-bottom: 25px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1; display: flex; align-items: center; gap: 20px; flex-wrap: wrap;">
+<div style="flex-shrink: 0; font-size: 3.5em; line-height: 1;">🎬</div>
+<div>
+<h4 style="margin: 0; color: #fbc30b; font-size: 1.2em;">Hollywood Principle</h4>
+<p style="margin: 6px 0 0 0; color: #e2e8f0; font-size: 1.1em;">"Don't call us, we'll call you."</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.95em;">No nos llames; nosotros te llamamos.</p>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; position: relative; z-index: 1;">
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 12px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">En programación tradicional:</p>
+<p style="margin: 6px 0 0 0; color: #e2e8f0; font-family: monospace;">saludar();</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.8em;">Yo llamo la función</p>
+</div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); padding: 16px 20px; border-radius: 12px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">En eventos ocurre al revés:</p>
+<p style="margin: 6px 0 0 0; color: #fbc30b; font-family: monospace;">boton.onClick(saludar);</p>
+<p style="margin: 4px 0 0 0; color: #94a3b8; font-size: 0.8em;">El sistema llama tu función</p>
+</div>
+</div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div style="background: #f1f5f9; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0;">
+<h4 style="margin: 0 0 10px 0; color: #0e3f68;">🍽️ Imperativo</h4>
+<ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 1.8;">
+<li>Voy a la cocina</li>
+<li>Pido comida</li>
+<li>Espero</li>
+<li>Me entregan</li>
+</ul>
+</div>
+<div style="background: #fef3c7; border-radius: 16px; padding: 20px 25px; border: 1px solid #fde68a;">
+<h4 style="margin: 0 0 10px 0; color: #92400e;">📱 Eventos</h4>
+<ul style="margin: 0; padding-left: 20px; color: #78350f; line-height: 1.8;">
+<li>Dejo mi número</li>
+<li>Me siento</li>
+<li>Cuando esté lista</li>
+<li style="list-style: none; padding-left: 20px;">↓</li>
+<li style="color: #0e3f68;">Me llaman</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="componentes" style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">⚙️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Componentes Clave de POE</h2>
+<span style="background: #8b5cf6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">20 min</span></div>
+<div style="background: linear-gradient(135deg, #f8fafc, #eff6ff); border-radius: 16px; padding: 30px; margin-bottom: 25px; text-align: center; border: 1px solid #bfdbfe;">
+<p style="margin: 0 0 15px 0; color: #0e3f68; font-size: 0.9em;">📊 Flujo de la Programación Orientada a Eventos</p>
+<div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap;"><span style="background: #0f172a; color: white; padding: 8px 18px; border-radius: 10px; font-size: 0.8em;">Evento</span> <span style="color: #94a3b8; font-size: 1.4em;">→</span> <span style="background: #1e293b; color: white; padding: 8px 18px; border-radius: 10px; font-size: 0.8em;">Bucle de Eventos</span> <span style="color: #94a3b8; font-size: 1.4em;">→</span> <span style="background: #f59e0b; color: #0f172a; padding: 8px 18px; border-radius: 10px; font-size: 0.8em;">Cola de Mensajes</span> <span style="color: #94a3b8; font-size: 1.4em;">→</span> <span style="background: #22c55e; color: white; padding: 8px 18px; border-radius: 10px; font-size: 0.8em;">Oyente/Controlador</span></div>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: linear-gradient(135deg, #fef3c7, #fffbeb); border-radius: 14px; padding: 22px 24px; border: 1px solid #fde68a;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.6em;">🔔</span>
+<h4 style="margin: 0; color: #92400e; font-size: 1em;">Eventos</h4>
+</div>
+<p style="margin: 0; color: #78350f; font-size: 0.9em; line-height: 1.6;">Acciones o sucesos que desencadenan una respuesta del sistema. Ejemplos: clic, tecla presionada, mensaje recibido, temporizador.</p>
+</div>
+<div style="background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 14px; padding: 22px 24px; border: 1px solid #bfdbfe;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.6em;">🔄</span>
+<h4 style="margin: 0; color: #1e3a8a; font-size: 1em;">Bucle de Eventos</h4>
+</div>
+<p style="margin: 0; color: #1e293b; font-size: 0.9em; line-height: 1.6;">Ciclo sostenido que espera a que ocurran eventos y los procesa cuando suceden. Es el motor invisible de la POE.</p>
+</div>
+<div style="background: linear-gradient(135deg, #f0fdf4, #f8fafc); border-radius: 14px; padding: 22px 24px; border: 1px solid #bbf7d0;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.6em;">👂</span>
+<h4 style="margin: 0; color: #14532d; font-size: 1em;">Oyentes / Controladores</h4>
+</div>
+<p style="margin: 0; color: #1e293b; font-size: 0.9em; line-height: 1.6;">Funciones o métodos que se ejecutan cuando se detecta un evento específico. También conocidos como <strong style="color: #14532d;">listeners</strong> o <strong style="color: #14532d;">handlers</strong>.</p>
+</div>
+<div style="background: linear-gradient(135deg, #f5f3ff, #f8fafc); border-radius: 14px; padding: 22px 24px; border: 1px solid #ddd6fe;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="font-size: 1.6em;">📨</span>
+<h4 style="margin: 0; color: #4c1d95; font-size: 1em;">Colas de Mensajes</h4>
+</div>
+<p style="margin: 0; color: #1e293b; font-size: 0.9em; line-height: 1.6;">En sistemas más sofisticados, los mensajes suelen colocarse en colas para ser ejecutados en un <strong style="color: #4c1d95;">orden controlado</strong>, evitando pérdidas y garantizando procesamiento.</p>
+</div>
+</div>
+<div style="margin-top: 20px; background: #f8fafc; border-radius: 14px; padding: 20px 25px; border: 1px solid #e2e8f0;">
+<h4 style="margin: 0 0 10px 0; color: #0e3f68; font-size: 0.95em;">📝 ¿Cómo funciona este flujo?</h4>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; font-size: 0.9em; color: #475569; line-height: 1.6;">
+<div style="background: #ffffff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;"><strong style="color: #0e3f68;">1. Evento:</strong> El usuario hace clic en un botón.</div>
+<div style="background: #ffffff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;"><strong style="color: #0e3f68;">2. Bucle de Eventos:</strong> Detecta el clic y lo pone en la cola.</div>
+<div style="background: #ffffff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;"><strong style="color: #0e3f68;">3. Cola de Mensajes:</strong> Organiza los eventos pendientes.</div>
+<div style="background: #ffffff; padding: 12px 16px; border-radius: 8px; border: 1px solid #e2e8f0;"><strong style="color: #0e3f68;">4. Controlador:</strong> Ejecuta la función asociada al evento.</div>
+</div>
+</div>
+</div>
+<div style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">⚖️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Ventajas y Desafíos de POE</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div style="background: linear-gradient(135deg, #f0fdf4, #f8fafc); border-radius: 16px; padding: 25px 28px; border: 1px solid #bbf7d0;">
+<h4 style="margin: 0 0 15px 0; color: #14532d; font-size: 1.1em;">✅ Ventajas</h4>
+<ul style="margin: 0; padding-left: 20px; color: #1e293b; line-height: 1.8; font-size: 0.9em;">
+<li><strong style="color: #14532d;">Capacidad de respuesta:</strong> Reacciona de inmediato a entradas del usuario o eventos del sistema.</li>
+<li><strong style="color: #14532d;">Modularidad:</strong> Controladores separados facilitan mantenimiento y depuración.</li>
+<li><strong style="color: #14532d;">Escalabilidad:</strong> Añadir nuevos controladores sin reestructurar el código base.</li>
+<li><strong style="color: #14532d;">Tiempo real:</strong> Ideal para sistemas que requieren respuestas inmediatas.</li>
+<li><strong style="color: #14532d;">Asincronía:</strong> Mejora el rendimiento y la utilización de recursos.</li>
+</ul>
+</div>
+<div style="background: linear-gradient(135deg, #fef2f2, #f8fafc); border-radius: 16px; padding: 25px 28px; border: 1px solid #fecaca;">
+<h4 style="margin: 0 0 15px 0; color: #991b1b; font-size: 1.1em;">⚠️ Desafíos</h4>
+<ul style="margin: 0; padding-left: 20px; color: #1e293b; line-height: 1.8; font-size: 0.9em;">
+<li><strong style="color: #991b1b;">Depuración compleja:</strong> El flujo de ejecución es difícil de rastrear en aplicaciones grandes.</li>
+<li><strong style="color: #991b1b;">Imprevisibilidad:</strong> Dificultad para predecir cuándo ocurrirán los eventos.</li>
+<li><strong style="color: #991b1b;">Callback Hell:</strong> Múltiples callbacks anidados pueden crear código espagueti.</li>
+<li><strong style="color: #991b1b;">Consumo de recursos:</strong> Puede ser ineficiente en ciertos escenarios.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 20px; background: #1e293b; border-radius: 14px; padding: 20px 25px; border-left: 4px solid #ef4444;">
+<h4 style="margin: 0 0 10px 0; color: #fca5a5; font-size: 0.95em;">🔥 Problema: Callback Hell</h4>
+<p style="margin: 0 0 10px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;">Cuando se anidan muchas funciones de devolución de llamada, el código se vuelve difícil de leer y mantener:</p>
+<div style="background: #0f172a; color: #e2e8f0; padding: 12px 16px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.75em; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;">doA(() =&gt; {
+    doB(() =&gt; {
+        doC(() =&gt; {
+            doD(() =&gt; {
+                // Código difícil de seguir
+            });
+        });
+    });
+});</pre>
+</div>
+<p style="margin: 10px 0 0 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fca5a5;">Solución:</strong> Usar Promesas, Async/Await o patrones como Pub/Sub para evitar el anidamiento.</p>
+</div>
+</div>
+<div style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">🌍</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Casos Reales de Uso</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 14px; padding: 20px 22px; text-align: center; border: 1px solid #bfdbfe;"><span style="font-size: 2.5em; display: block; margin-bottom: 8px;">🖥️</span>
+<h4 style="margin: 0; color: #0e3f68; font-size: 1em;">Interfaces Gráficas</h4>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em;">Windows, Android, Apps móviles</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.75em;">Botones, menús, checkbox, textbox</p>
+</div>
+<div style="background: linear-gradient(135deg, #fef3c7, #fffbeb); border-radius: 14px; padding: 20px 22px; text-align: center; border: 1px solid #fde68a;"><span style="font-size: 2.5em; display: block; margin-bottom: 8px;">🌐</span>
+<h4 style="margin: 0; color: #92400e; font-size: 1em;">Páginas Web</h4>
+<p style="margin: 6px 0 0 0; color: #78350f; font-size: 0.85em;">JavaScript: click, mousemove, keyup, scroll, submit</p>
+</div>
+<div style="background: linear-gradient(135deg, #f0fdf4, #f8fafc); border-radius: 14px; padding: 20px 22px; text-align: center; border: 1px solid #bbf7d0;"><span style="font-size: 2.5em; display: block; margin-bottom: 8px;">🎮</span>
+<h4 style="margin: 0; color: #14532d; font-size: 1em;">Videojuegos</h4>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em;">Disparar, saltar, recibir daño, presionar teclas</p>
+</div>
+<div style="background: linear-gradient(135deg, #fef2f2, #f8fafc); border-radius: 14px; padding: 20px 22px; text-align: center; border: 1px solid #fecaca;"><span style="font-size: 2.5em; display: block; margin-bottom: 8px;">📡</span>
+<h4 style="margin: 0; color: #991b1b; font-size: 1em;">Internet de las Cosas (IoT)</h4>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em;">Sensores detectan movimiento, humo, temperatura</p>
+</div>
+<div style="background: linear-gradient(135deg, #f5f3ff, #f8fafc); border-radius: 14px; padding: 20px 22px; text-align: center; grid-column: span 2; border: 1px solid #ddd6fe;"><span style="font-size: 2.5em; display: block; margin-bottom: 8px;">🌐</span>
+<h4 style="margin: 0; color: #4c1d95; font-size: 1em;">Sistemas Distribuidos</h4>
+<p style="margin: 6px 0 0 0; color: #475569; font-size: 0.85em;">Servidor recibe petición → Procesa → Responde</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.75em;">Aplicaciones de negociación financiera, monitorización de seguridad</p>
+</div>
+</div>
+</div>
+<div style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">📊</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Comparación: Secuencial vs Eventos</h2>
+</div>
+<div style="overflow-x: auto;">
+<table style="width: 100%; border-collapse: collapse; font-size: 0.95em;">
+<thead>
+<tr style="background: #0f172a; color: white;">
+<th style="padding: 14px 20px; text-align: left; border: 1px solid #1e293b;">Característica</th>
+<th style="padding: 14px 20px; text-align: left; border: 1px solid #1e293b;">Programación Secuencial</th>
+<th style="padding: 14px 20px; text-align: left; border: 1px solid #1e293b;">Programación Orientada a Eventos</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Orden</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Orden fijo, predecible</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Depende de eventos</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Control</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">El programador controla el flujo</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">El usuario controla el flujo</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Flujo</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Flujo lineal</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Flujo dinámico</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Ciclo de vida</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Inicio → Fin</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Espera continuamente</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Comunicación</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Llamada directa</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Suscripción (Pub/Sub)</td>
+</tr>
+<tr style="background: #ffffff;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Acoplamiento</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Fuerte</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Débil</td>
+</tr>
+<tr style="background: #f8fafc;">
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Ideal para</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Cálculos, algoritmos</td>
+<td style="padding: 12px 20px; border: 1px solid #e2e8f0;">Interfaces, sistemas reactivos</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div id="ejemplos" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 40px 45px; margin-bottom: 35px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">💻</span>
+<h2 style="margin: 0; color: #ffffff; font-size: 1.5em;">Ejemplos paso a paso</h2>
+<span style="background: #22c55e; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">20 min</span></div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 25px 30px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #3b82f6; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">NIVEL 1</span>
+<h4 style="margin: 0; color: #fbc30b; font-size: 1.1em;">📌 Ejemplo 1: Programa Secuencial (Sin eventos)</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em;">Todo ocurre en <strong style="color: #fbc30b;">orden estricto</strong>. El programa controla el flujo:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;"><span style="color: #fbc30b;">// Programa secuencial - todo ocurre en orden</span>
+console.log(<span style="color: #34d399;">"Programa iniciado"</span>);
+
+<span style="color: #60a5fa;">function</span> <span style="color: #fbc30b;">saludar</span>() {
+    console.log(<span style="color: #34d399;">"¡Hola estudiante!"</span>);
+}
+
+saludar();  <span style="color: #fbc30b;">// Llamada directa a la función</span>
+
+console.log(<span style="color: #34d399;">"Programa finalizado"</span>);
+
+<span style="color: #fbc30b;">// Salida esperada:</span>
+<span style="color: #fbc30b;">// Programa iniciado</span>
+<span style="color: #fbc30b;">// ¡Hola estudiante!</span>
+<span style="color: #fbc30b;">// Programa finalizado</span></pre>
+</div>
+<div style="margin-top: 12px; background: rgba(251,195,11,0.06); padding: 10px 16px; border-radius: 10px; border-left: 3px solid #3b82f6;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;"><strong style="color: #60a5fa;">💡 Observación:</strong> El programa <strong style="color: #60a5fa;">controla</strong> cuándo se ejecuta <code>saludar()</code>. No hay espera ni eventos.</p>
+</div>
+</div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 25px 30px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #22c55e; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">NIVEL 2</span>
+<h4 style="margin: 0; color: #fbc30b; font-size: 1.1em;">⏱️ Ejemplo 2: Primer Evento (setTimeout)</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em;">El programa <strong style="color: #fbc30b;">no se bloquea</strong>. La función se ejecuta <strong style="color: #fbc30b;">después</strong> de un tiempo:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;">console.log(<span style="color: #34d399;">"1. Programa iniciado"</span>);
+
+<span style="color: #fbc30b;">// Evento basado en tiempo</span>
+<span style="color: #60a5fa;">setTimeout</span>(() =&gt; {
+    console.log(<span style="color: #34d399;">"3. ¡Hola después de 2 segundos!"</span>);
+}, <span style="color: #f472b6;">2000</span>);
+
+console.log(<span style="color: #34d399;">"2. Esto se ejecuta mientras espera"</span>);
+
+<span style="color: #fbc30b;">// Salida esperada:</span>
+<span style="color: #fbc30b;">// 1. Programa iniciado</span>
+<span style="color: #fbc30b;">// 2. Esto se ejecuta mientras espera</span>
+<span style="color: #fbc30b;">// 3. ¡Hola después de 2 segundos!</span></pre>
+</div>
+<div style="margin-top: 12px; background: rgba(251,195,11,0.06); padding: 10px 16px; border-radius: 10px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;"><strong style="color: #34d399;">💡 Concepto clave:</strong> El programa <strong style="color: #34d399;">no espera</strong>. El "2" se muestra <strong style="color: #34d399;">antes</strong> del "3". ¡Eso es <strong style="color: #34d399;">asincronía</strong>!</p>
+</div>
+</div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 25px 30px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #f59e0b; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">NIVEL 3</span>
+<h4 style="margin: 0; color: #fbc30b; font-size: 1.1em;">📌 Ejemplo 3: Evento con función externa</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em;">El evento ejecuta una <strong style="color: #fbc30b;">función definida por separado</strong>. El sistema <strong style="color: #fbc30b;">llama</strong> a la función:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;"><span style="color: #fbc30b;">// Función que se ejecutará cuando ocurra el evento</span>
+<span style="color: #60a5fa;">function</span> <span style="color: #fbc30b;">mostrarMensaje</span>() {
+    console.log(<span style="color: #34d399;">"📨 ¡Evento activado!"</span>);
+}
+
+console.log(<span style="color: #34d399;">"Esperando evento..."</span>);
+
+<span style="color: #fbc30b;">// El temporizador ejecutará mostrarMensaje después de 3 segundos</span>
+<span style="color: #60a5fa;">setTimeout</span>(mostrarMensaje, <span style="color: #f472b6;">3000</span>);
+
+<span style="color: #fbc30b;">// Salida esperada:</span>
+<span style="color: #fbc30b;">// Esperando evento...</span>
+<span style="color: #fbc30b;">// 📨 ¡Evento activado! (después de 3 segundos)</span></pre>
+</div>
+<div style="margin-top: 12px; background: rgba(251,195,11,0.06); padding: 10px 16px; border-radius: 10px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;"><strong style="color: #f59e0b;">💡 Concepto clave:</strong> El sistema <strong style="color: #f59e0b;">llama</strong> a la función. Tú <strong style="color: #f59e0b;">no</strong> la llamas directamente. Esto es el <strong style="color: #f59e0b;">Hollywood Principle</strong>.</p>
+</div>
+</div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 25px 30px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #8b5cf6; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">NIVEL 4</span>
+<h4 style="margin: 0; color: #fbc30b; font-size: 1.1em;">🖱️ Ejemplo 4: Evento en el navegador (clic)</h4>
+</div>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em;">El usuario <strong style="color: #fbc30b;">controla</strong> el flujo. El programa <strong style="color: #fbc30b;">espera</strong> a que el usuario haga clic:</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.85em; overflow-x: auto;">
+<pre style="margin: 0px; color: #e2e8f0;"><span style="color: #fbc30b;">// 1. Seleccionar el botón</span>
+<span style="color: #60a5fa;">const</span> boton = document.getElementById(<span style="color: #34d399;">"miBoton"</span>);
+
+<span style="color: #fbc30b;">// 2. Función que se ejecutará al hacer clic</span>
+<span style="color: #60a5fa;">function</span> <span style="color: #fbc30b;">manejarClic</span>() {
+    alert(<span style="color: #34d399;">"¡Hiciste clic en el botón!"</span>);
+}
+
+<span style="color: #fbc30b;">// 3. Registrar el evento</span>
+boton.addEventListener(<span style="color: #34d399;">"click"</span>, manejarClic);
+
+console.log(<span style="color: #34d399;">"El programa está escuchando..."</span>);
+
+<span style="color: #fbc30b;">// El programa NO se bloquea. Solo reacciona cuando el usuario hace clic.</span></pre>
+</div>
+<div style="margin-top: 12px; background: rgba(251,195,11,0.06); padding: 10px 16px; border-radius: 10px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;"><strong style="color: #a78bfa;">💡 Concepto clave:</strong> El <strong style="color: #a78bfa;">usuario</strong> decide cuándo ocurre el evento. El programa <strong style="color: #a78bfa;">espera</strong> y <strong style="color: #a78bfa;">reacciona</strong>.</p>
+</div>
+</div>
+<div style="background: rgba(255, 255, 255, 0.05); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 25px 30px;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;"><span style="background: #ef4444; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">Actividad</span></div>
+<div style="margin-top: 12px; background: rgba(251,195,11,0.06); padding: 10px 16px; border-radius: 10px; border-left: 3px solid #ef4444;">
+<p><span style="color: #ddc50e;">&lt;button id="rojo"&gt;Rojo&lt;/button&gt;</span></p>
+<p><span style="color: #ddc50e;">&lt;button id="verde"&gt;Verde&lt;/button&gt;</span></p>
+<p><span style="color: #ddc50e;">&lt;button id="azul"&gt;Azul&lt;/button&gt;</span></p>
+</div>
+</div>
+<div style="margin-top: 25px; background: rgba(255, 255, 255, 0.03); border-width: 1px; border-style: solid; border-color: rgba(255, 255, 255, 0.06); border-radius: 14px; padding: 20px 25px;">
+<h4 style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em;">📈 Progresión de aprendizaje</h4>
+<div style="display: flex; gap: 12px; flex-wrap: wrap;"><span style="background: #3b82f6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">1️⃣ Secuencial</span> <span style="color: #94a3b8; font-size: 1.2em;">→</span> <span style="background: #22c55e; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">2️⃣ Evento con setTimeout</span> <span style="color: #94a3b8; font-size: 1.2em;">→</span> <span style="background: #f59e0b; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">3️⃣ Evento con función externa</span> <span style="color: #94a3b8; font-size: 1.2em;">→</span> <span style="background: #8b5cf6; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">4️⃣ Evento en navegador</span> <span style="color: #94a3b8; font-size: 1.2em;">→</span> <span style="background: #ef4444; color: white; padding: 4px 16px; border-radius: 100px; font-size: 0.7em;">5️⃣ Múltiples eventos</span></div>
+<p style="margin: 10px 0 0 0; color: #64748b; font-size: 0.75em; text-align: center;">🔄 De lo más simple a lo más completo, construyendo sobre cada concepto</p>
+</div>
+</div>
+</div>
+<div id="practica" style="background: #ffffff; border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">✍️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.5em;">Práctica</h2>
+<span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">40 min</span></div>
+<div style="background: #f1f5f9; border-radius: 16px; padding: 20px 25px; margin-bottom: 16px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;"><span style="background: #3b82f6; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">EJERCICIO 1</span> <span style="font-size: 0.8em; color: #94a3b8;">⏱️ 5 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #0e3f68; font-size: 1em;">✅ Programa Secuencial</h4>
+<p style="margin: 0 0 10px 0; color: #475569; font-size: 0.9em;">Escribe un programa que ejecute las siguientes acciones que haces en un dia normal en <strong style="color: #0e3f68;">orden secuencial</strong>:</p>
+<div style="background: #ffffff; border-radius: 10px; padding: 14px 18px; font-family: 'Courier New', monospace; font-size: 0.8em; border: 1px solid #e2e8f0;">
+<pre style="margin: 0px; color: #1e293b;">console.log("1. Inicio del programa");
+console.log("2. Procesando datos...");
+console.log("3. Fin del programa");</pre>
+</div>
+<div style="margin-top: 10px; background: #e0f2fe; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+<p style="margin: 0; color: #1e3a8a; font-size: 0.8em;"><strong>🎯 Objetivo:</strong> Confirmar que entiendes el flujo <strong style="color: #1e3a8a;">secuencial</strong> antes de pasar a eventos.</p>
+</div>
+</div>
+<div style="background: #f1f5f9; border-radius: 16px; padding: 20px 25px; margin-bottom: 16px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;"><span style="background: #22c55e; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">EJERCICIO 2</span> <span style="font-size: 0.8em; color: #94a3b8;">⏱️ 5 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #0e3f68; font-size: 1em;">⏱️ Evento con setTimeout</h4>
+<p style="margin: 0 0 10px 0; color: #475569; font-size: 0.9em;">Modifica el ejercicio anterior para que el mensaje "Procesando datos..." o los que se ejecuten en un tiempo especifico se ejecute <strong style="color: #0e3f68;">2 segundos después</strong> del inicio:</p>
+<div style="background: #ffffff; border-radius: 10px; padding: 14px 18px; font-family: 'Courier New', monospace; font-size: 0.8em; border: 1px solid #e2e8f0;">
+<pre style="margin: 0px; color: #1e293b;">console.log("1. Inicio del programa");
+
+<span style="color: #f59e0b;">// TODO: Usar setTimeout para ejecutar esto después de 2 segundos</span>
+<span style="color: #f59e0b;">// console.log("2. Procesando datos...");</span>
+
+console.log("3. Fin del programa");</pre>
+</div>
+<div style="margin-top: 10px; background: #f0fdf4; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.8em;"><strong>💡 Pista:</strong> Usa <code style="color: #14532d;">setTimeout(() =&gt; { ... }, 2000)</code></p>
+</div>
+</div>
+<div style="background: #f1f5f9; border-radius: 16px; padding: 20px 25px; margin-bottom: 16px; border: 1px solid #e2e8f0;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;"><span style="background: #8b5cf6; color: white; padding: 2px 12px; border-radius: 100px; font-size: 0.65em;">EJERCICIO 3</span> <span style="font-size: 0.8em; color: #94a3b8;">⏱️ 10 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #0e3f68; font-size: 1em;">🖱️ Evento click en el navegador</h4>
+<p style="margin: 0 0 10px 0; color: #475569; font-size: 0.9em;">Crea un botón en HTML y un evento que muestre <strong style="color: #0e3f68;">"¡Botón presionado! y que cambie el color del fondo con el ultimo ejercicio practicado con el inge"</strong>:</p>
+<div style="background: #ffffff; border-radius: 10px; padding: 14px 18px; font-family: 'Courier New', monospace; font-size: 0.8em; border: 1px solid #e2e8f0;">
+<pre style="margin: 0px; color: #1e293b;"><span style="color: #f59e0b;">// 1. HTML: &lt;button id="miBoton"&gt;Presiona&lt;/button&gt;</span>
+
+<span style="color: #f59e0b;">// 2. TypeScript:</span>
+const boton = document.getElementById(<span style="color: #34d399;">"miBoton"</span>);
+
+<span style="color: #f59e0b;">// TODO: Agregar evento click que muestre Color de fondo diferente y "¡Botón presionado! + Color"</span></pre>
+</div>
+<div style="margin-top: 10px; background: #f5f3ff; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; color: #4c1d95; font-size: 0.8em;"><strong>🎯 Objetivo:</strong> El <strong style="color: #4c1d95;">usuario</strong> controla cuándo se ejecuta la función.</p>
+</div>
+</div>
+<div style="margin-top: 20px; background: linear-gradient(135deg, #eff6ff, #f8fafc); border-radius: 12px; padding: 16px 22px; text-align: center; border: 1px solid #bfdbfe;">
+<p style="margin: 0; color: #1e3a8a; font-size: 0.9em;"><strong>📈 Progresión:</strong> <span style="background: #3b82f6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.7em;">1. Secuencial</span> <span style="color: #94a3b8;">→</span> <span style="background: #22c55e; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.7em;">2. Evento simple</span> <span style="color: #94a3b8;">→</span> <span style="background: #f59e0b; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.7em;">3. Función externa</span> <span style="color: #94a3b8;">→</span> <span style="background: #8b5cf6; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.7em;">4. Evento navegador</span> <span style="color: #94a3b8;">→</span> <span style="background: #ef4444; color: white; padding: 2px 10px; border-radius: 100px; font-size: 0.7em;">5. Múltiples eventos</span></p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.8em;">Completa cada ejercicio antes de pasar al siguiente. ¡Construye sobre lo aprendido!</p>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #fef3c7, #fffbeb); border-radius: 24px; padding: 35px 40px; margin-bottom: 35px; border: 1px solid #fde68a;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 1.8em;">💬</span>
+<h2 style="margin: 0; color: #92400e; font-size: 1.5em;">Discusión y Conclusiones</h2>
+<span style="background: #ef4444; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em;">15 min</span></div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<h4 style="margin: 0 0 10px 0; color: #78350f;">🤔 Preguntas para discutir:</h4>
+<ul style="margin: 0; padding-left: 20px; color: #78350f; line-height: 2;">
+<li>¿Qué ventajas tiene la POE sobre la programación secuencial?</li>
+<li>¿Qué desventajas podría tener la POE?</li>
+<li>¿Qué aplicaciones cotidianas usan POE sin que nos demos cuenta?</li>
+<li>¿Cómo cambiaría tu vida sin POE en las aplicaciones?</li>
+<li>¿Qué es el "Callback Hell" y cómo se puede evitar?</li>
+</ul>
+</div>
+<div>
+<h4 style="margin: 0 0 10px 0; color: #0e3f68;">📌 Conclusiones clave:</h4>
+<ul style="margin: 0; padding-left: 20px; color: #475569; line-height: 2;">
+<li><strong style="color: #0e3f68;">POE</strong> es un paradigma <strong style="color: #0e3f68;">reactivo</strong> donde el programa <strong style="color: #0e3f68;">espera</strong> y <strong style="color: #0e3f68;">reacciona</strong></li>
+<li>El <strong style="color: #0e3f68;">usuario</strong> controla el flujo, no el programador</li>
+<li><strong style="color: #0e3f68;">Hollywood Principle:</strong> "No nos llames, nosotros te llamamos"</li>
+<li><strong style="color: #0e3f68;">Componentes clave:</strong> Eventos, Bucle de Eventos, Oyentes/Controladores, Colas de Mensajes</li>
+<li>La POE permite <strong style="color: #0e3f68;">escalabilidad</strong>, <strong style="color: #0e3f68;">desacoplamiento</strong> y <strong style="color: #0e3f68;">procesamiento asíncrono</strong></li>
+<li><strong style="color: #0e3f68;">Callback Hell</strong> es un desafío que se resuelve con Promesas o Async/Await</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 35px 40px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+<div>
+<h3 style="margin: 0; color: #fbc30b; font-size: 1.2em;">📚 Prueba Diagnostica</h3>
+<p><iframe title="contenido insertado" src="https://es.educaplay.com/juego/29913522-prueba_diagnostica_poo_y_evento.html" width="795" height="690" allowfullscreen="allowfullscreen" allow="fullscreen; autoplay; allow-top-navigation-by-user-activation" frameborder="0" loading="lazy"></iframe></p>
+</div>
+</div>
+</div>
+</div>
+<footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><br><strong style="color: #fbc30b; font-size: 1.05em;">Programación Orientada a Eventos - Ing. Adolfo Herrera</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;"><span>&nbsp;</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

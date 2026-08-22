@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía de Instalación: Python y VSCode</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #F2F2F2;
+            color: #132B40;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Navegación lateral */
+        .sidebar {
+            width: 300px;
+            background: linear-gradient(135deg, #132B40 0%, #104D73 100%);
+            color: white;
+            padding: 0;
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+            box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            background-color: #132B40;
+            border-bottom: 2px solid #4E9FBF;
+        }
+
+        .sidebar-header h1 {
+            color: #F2A413;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-header p {
+            color: #4E9FBF;
+            font-size: 0.9em;
+        }
+
+        .nav-menu {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav-menu li {
+            border-bottom: 1px solid #4E9FBF;
+        }
+
+        .nav-menu a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-menu a:hover {
+            background-color: #4E9FBF;
+            padding-left: 30px;
+        }
+
+        .nav-menu a.active {
+            background-color: #F2A413;
+            color: #132B40;
+            font-weight: bold;
+        }
+
+        .nav-menu a::before {
+            content: "▶";
+            position: absolute;
+            left: 8px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .nav-menu a:hover::before {
+            opacity: 1;
+        }
+
+        /* Contenido principal */
+        .main-content {
+            flex: 1;
+            margin-left: 300px;
+            padding: 20px 40px;
+            background-color: #F2F2F2;
+        }
+
+        .section {
+            display: none;
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-left: 5px solid #4E9FBF;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section h2 {
+            color: #132B40;
+            margin-bottom: 20px;
+            font-size: 2em;
+            border-bottom: 3px solid #F2A413;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #104D73;
+            margin: 25px 0 15px 0;
+            font-size: 1.3em;
+        }
+
+        .step {
+            background: #F2F2F2;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #4E9FBF;
+        }
+
+        .step-number {
+            display: inline-block;
+            background: #F2A413;
+            color: #132B40;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .download-button {
+            background: linear-gradient(135deg, #4E9FBF 0%, #104D73 100%);
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 10px 5px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-button:hover {
+            background: linear-gradient(135deg, #F2A413 0%, #4E9FBF 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .warning {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #F2A413;
+        }
+
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 4px solid #4E9FBF;
+        }
+
+        .code-block {
+            background: #132B40;
+            color: #F2F2F2;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+
+        .image-placeholder {
+            background: #e9ecef;
+            border: 2px dashed #4E9FBF;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #104D73;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            
+            .main-content {
+                margin-left: 0;
+                padding: 20px;
+            }
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 6px;
+            background: #e9ecef;
+            border-radius: 3px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4E9FBF 0%, #F2A413 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <h1>🐍 Python & VSCode</h1>
+                <p>Guía de Instalación Completa</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('intro')" class="active">Introducción</a></li>
+                <li><a href="#" onclick="showSection('requirements')">Requisitos del Sistema</a></li>
+                <li><a href="#" onclick="showSection('python-install')">Instalación de Python</a></li>
+                <li><a href="#" onclick="showSection('python-verify')">Verificación de Python</a></li>
+                <li><a href="#" onclick="showSection('vscode-install')">Instalación de VSCode</a></li>
+                <li><a href="#" onclick="showSection('vscode-config')">Configuración VSCode</a></li>
+                <li><a href="#" onclick="showSection('first-program')">Primer Programa</a></li>
+                <li><a href="#" onclick="showSection('troubleshooting')">Solución de Problemas</a></li>
+                <li><a href="#" onclick="showSection('resources')">Recursos Adicionales</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+
+            <!-- Sección Introducción -->
+            <section id="intro" class="section active">
+                <h2>🎯 Introducción</h2>
+                <p>Bienvenido a esta guía completa para la instalación de <strong>Python</strong> y <strong>Visual Studio Code</strong>. Esta guía te llevará paso a paso a través del proceso de instalación y configuración de ambas herramientas.</p>
+                
+                <h3>¿Qué es Python?</h3>
+                <p>Python es un lenguaje de programación interpretado, de alto nivel y de propósito general. Es conocido por su sintaxis clara y legible, lo que lo hace ideal tanto para principiantes como para desarrolladores experimentados.</p>
+                
+                <h3>¿Qué es Visual Studio Code?</h3>
+                <p>Visual Studio Code (VSCode) es un editor de código fuente gratuito y de código abierto desarrollado por Microsoft. Es altamente personalizable y cuenta con excelente soporte para Python.</p>
+                
+                <div class="warning">
+                    <strong>⚠️ Importante:</strong> Sigue todos los pasos en orden para evitar problemas durante la instalación.
+                </div>
+            </section>
+
+            <!-- Sección Requisitos -->
+            <section id="requirements" class="section">
+                <h2>💻 Requisitos del Sistema</h2>
+                
+                <h3>Requisitos Mínimos:</h3>
+                <div class="step">
+                    <strong>Sistema Operativo:</strong>
+                    <ul>
+                        <li>Windows 10 o superior</li>
+                        <li>macOS 10.14 o superior</li>
+                        <li>Linux (Ubuntu 16.04+, Debian 9+, CentOS 7+)</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <strong>Hardware:</strong>
+                    <ul>
+                        <li>RAM: 4 GB mínimo (8 GB recomendado)</li>
+                        <li>Espacio en disco: 2 GB disponible</li>
+                        <li>Procesador: 1.6 GHz o superior</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <strong>Permisos:</strong>
+                    <ul>
+                        <li>Permisos de administrador para la instalación</li>
+                        <li>Conexión a internet activa</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Instalación Python -->
+            <section id="python-install" class="section">
+                <h2>🐍 Instalación de Python</h2>
+                
+                <h3>Paso 1: Descarga Python</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Visita el sitio oficial:</strong> Ve a <a href="https://www.python.org/downloads/" target="_blank">python.org/downloads</a>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Descarga la versión más reciente:</strong> Haz clic en el botón de descarga para tu sistema operativo.
+                    <br>
+                    <a href="https://www.python.org/downloads/" class="download-button" target="_blank">⬇️ Descargar Python</a>
+                </div>
+
+                <h3>Paso 2: Instalación en Windows</h3>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Ejecuta el instalador:</strong> Haz doble clic en el archivo descargado.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Configuración importante:</strong>
+                    <ul>
+                        <li>✅ Marca "Add Python to PATH"</li>
+                        <li>✅ Selecciona "Install for all users" (recomendado)</li>
+                        <li>✅ Haz clic en "Install Now"</li>
+                    </ul>
+                </div>
+
+                <div class="warning">
+                    <strong>⚠️ Muy Importante:</strong> No olvides marcar "Add Python to PATH" durante la instalación. Esto es crucial para poder usar Python desde la línea de comandos.
+                </div>
+
+                <h3>Paso 3: Instalación en macOS</h3>
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Abre el archivo .pkg</strong> y sigue las instrucciones del instalador.
+                </div>
+
+                <h3>Paso 4: Instalación en Linux</h3>
+                <div class="step">
+                    <span class="step-number">6</span>
+                    <strong>Ubuntu/Debian:</strong>
+                    <div class="code-block">
+sudo apt update<br>
+sudo apt install python3 python3-pip
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Verificación Python -->
+            <section id="python-verify" class="section">
+                <h2>✅ Verificación de Python</h2>
+                
+                <h3>Verificar la instalación:</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Abre la línea de comandos:</strong>
+                    <ul>
+                        <li><strong>Windows:</strong> Presiona Win + R, escribe "cmd" y presiona Enter</li>
+                        <li><strong>macOS:</strong> Presiona Cmd + Space, escribe "Terminal"</li>
+                        <li><strong>Linux:</strong> Presiona Ctrl + Alt + T</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Ejecuta el comando:</strong>
+                    <div class="code-block">
+python --version
+                    </div>
+                    <p>o en algunos sistemas:</p>
+                    <div class="code-block">
+python3 --version
+                    </div>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Verifica pip:</strong>
+                    <div class="code-block">
+pip --version
+                    </div>
+                </div>
+                
+                <div class="success">
+                    <strong>✅ Éxito:</strong> Si ves la versión de Python y pip, la instalación fue exitosa.
+                </div>
+            </section>
+
+            <!-- Sección Instalación VSCode -->
+            <section id="vscode-install" class="section">
+                <h2>💻 Instalación de Visual Studio Code</h2>
+                
+                <h3>Paso 1: Descarga VSCode</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Visita el sitio oficial:</strong> Ve a <a href="https://code.visualstudio.com/" target="_blank">code.visualstudio.com</a>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Descarga para tu sistema:</strong>
+                    <br>
+                    <a href="https://code.visualstudio.com/download" class="download-button" target="_blank">⬇️ Descargar VSCode</a>
+                </div>
+
+                <h3>Paso 2: Instalación</h3>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Windows:</strong>
+                    <ul>
+                        <li>Ejecuta el archivo .exe descargado</li>
+                        <li>Acepta los términos de licencia</li>
+                        <li>Selecciona la carpeta de instalación</li>
+                        <li>✅ Marca "Add to PATH"</li>
+                        <li>✅ Marca "Create a desktop icon"</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>macOS:</strong>
+                    <ul>
+                        <li>Abre el archivo .zip descargado</li>
+                        <li>Arrastra Visual Studio Code a la carpeta Applications</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Linux:</strong>
+                    <div class="code-block">
+# Para Ubuntu/Debian (.deb)<br>
+sudo dpkg -i code_*.deb<br>
+sudo apt-get install -f
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección Configuración VSCode -->
+            <section id="vscode-config" class="section">
+                <h2>⚙️ Configuración de VSCode para Python</h2>
+                
+                <h3>Paso 1: Instalar la extensión de Python</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Abre VSCode</strong> y haz clic en el icono de extensiones (cuadrado con cuadrados) en la barra lateral.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Busca "Python"</strong> en el campo de búsqueda.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Instala la extensión oficial:</strong> Busca "Python" by Microsoft e instálala.
+                </div>
+
+                <h3>Paso 2: Configurar el intérprete de Python</h3>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Presiona Ctrl+Shift+P</strong> (Cmd+Shift+P en macOS) para abrir la paleta de comandos.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Escribe "Python: Select Interpreter"</strong> y selecciona la opción.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">6</span>
+                    <strong>Selecciona la versión de Python</strong> que instalaste.
+                </div>
+
+                <h3>Paso 3: Extensiones recomendadas</h3>
+                <div class="step">
+                    <span class="step-number">7</span>
+                    <strong>Instala estas extensiones útiles:</strong>
+                    <ul>
+                        <li><strong>Python</strong> - Soporte completo para Python</li>
+                        <li><strong>Python Docstring Generator</strong> - Genera documentación automática</li>
+                        <li><strong>Python Indent</strong> - Ayuda con la indentación</li>
+                        <li><strong>Bracket Pair Colorizer</strong> - Colorea los paréntesis</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Sección Primer Programa -->
+            <section id="first-program" class="section">
+                <h2>🎉 Tu Primer Programa en Python</h2>
+                
+                <h3>Paso 1: Crear un nuevo archivo</h3>
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Abre VSCode</strong> y presiona Ctrl+N (Cmd+N en macOS) para crear un nuevo archivo.
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Guarda el archivo:</strong> Presiona Ctrl+S (Cmd+S en macOS) y guárdalo como "mi_primer_programa.py"
+                </div>
+
+                <h3>Paso 2: Escribir código Python</h3>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Escribe el siguiente código:</strong>
+                    <div class="code-block">
+# Mi primer programa en Python<br>
+print("¡Hola, mundo!")<br>
+print("Python está funcionando correctamente")<br><br>
+
+# Variables y operaciones básicas<br>
+nombre = "Estudiante"<br>
+edad = 20<br>
+print(f"Hola {nombre}, tienes {edad} años")<br><br>
+
+# Operaciones matemáticas<br>
+a = 10<br>
+b = 5<br>
+suma = a + b<br>
+print(f"La suma de {a} + {b} = {suma}")
+                    </div>
+                </div>
+
+                <h3>Paso 3: Ejecutar el programa</h3>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Método 1 - Desde VSCode:</strong>
+                    <ul>
+                        <li>Haz clic derecho en el archivo y selecciona "Run Python File in Terminal"</li>
+                        <li>O presiona F5 para ejecutar con el depurador</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Método 2 - Desde la terminal:</strong>
+                    <div class="code-block">
+python mi_primer_programa.py
+                    </div>
+                </div>
+                
+                <div class="success">
+                    <strong>✅ ¡Felicitaciones!</strong> Si ves la salida del programa, has configurado exitosamente Python y VSCode.
+                </div>
+            </section>
+
+            <!-- Sección Solución de Problemas -->
+            <section id="troubleshooting" class="section">
+                <h2>🔧 Solución de Problemas Comunes</h2>
+                
+                <h3>Problema 1: "Python no se reconoce como comando"</h3>
+                <div class="step">
+                    <strong>Solución:</strong>
+                    <ul>
+                        <li>Reinstala Python y asegúrate de marcar "Add Python to PATH"</li>
+                        <li>O agrega manualmente Python al PATH del sistema</li>
+                    </ul>
+                </div>
+                
+                <h3>Problema 2: VSCode no encuentra Python</h3>
+                <div class="step">
+                    <strong>Solución:</strong>
+                    <ul>
+                        <li>Abre la paleta de comandos (Ctrl+Shift+P)</li>
+                        <li>Busca "Python: Select Interpreter"</li>
+                        <li>Selecciona la ruta correcta de Python</li>
+                    </ul>
+                </div>
+                
+                <h3>Problema 3: Errores de permisos en Linux/macOS</h3>
+                <div class="step">
+                    <strong>Solución:</strong>
+                    <div class="code-block">
+# Para pip<br>
+python3 -m pip install --user nombre_paquete<br><br>
+
+# Para instalación de Python<br>
+sudo apt install python3-pip
+                    </div>
+                </div>
+                
+                <div class="warning">
+                    <strong>💡 Consejo:</strong> Si encuentras otros problemas, revisa la documentación oficial o busca ayuda en foros especializados.
+                </div>
+            </section>
+
+            <!-- Sección Recursos -->
+            <section id="resources" class="section">
+                <h2>📚 Recursos Adicionales</h2>
+                
+                <h3>Documentación Oficial</h3>
+                <div class="step">
+                    <ul>
+                        <li><a href="https://docs.python.org/3/" target="_blank">Documentación oficial de Python</a></li>
+                        <li><a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank">Tutorial de Python en VSCode</a></li>
+                        <li><a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Extensión Python para VSCode</a></li>
+                    </ul>
+                </div>
+                
+                <h3>Cursos y Tutoriales</h3>
+                <div class="step">
+                    <ul>
+                        <li><a href="https://www.python.org/about/gettingstarted/" target="_blank">Getting Started with Python</a></li>
+                        <li><a href="https://realpython.com/" target="_blank">Real Python</a></li>
+                        <li><a href="https://www.codecademy.com/learn/learn-python-3" target="_blank">Codecademy Python Course</a></li>
+                    </ul>
+                </div>
+                
+                <h3>Comunidades y Foros</h3>
+                <div class="step">
+                    <ul>
+                        <li><a href="https://stackoverflow.com/questions/tagged/python" target="_blank">Stack Overflow - Python</a></li>
+                        <li><a href="https://www.reddit.com/r/Python/" target="_blank">Reddit - r/Python</a></li>
+                        <li><a href="https://discord.gg/python" target="_blank">Discord Python Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="success">
+                    <strong>🎓 ¡Felicitaciones!</strong> Has completado exitosamente la instalación de Python y VSCode. ¡Ahora estás listo para comenzar tu viaje en la programación!
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Función para mostrar secciones
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            
+            // Remover clase active de todos los enlaces
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Mostrar la sección seleccionada
+            document.getElementById(sectionId).classList.add('active');
+            
+            // Agregar clase active al enlace clickeado
+            event.target.classList.add('active');
+            
+            // Actualizar barra de progreso
+            updateProgressBar(sectionId);
+        }
+        
+        // Función para actualizar la barra de progreso
+        function updateProgressBar(sectionId) {
+            const sections = ['intro', 'requirements', 'python-install', 'python-verify', 'vscode-install', 'vscode-config', 'first-program', 'troubleshooting', 'resources'];
+            const currentIndex = sections.indexOf(sectionId);
+            const progress = ((currentIndex + 1) / sections.length) * 100;
+            
+            document.getElementById('progressBar').style.width = progress + '%';
+        }
+        
+        // Inicializar la barra de progreso
+        updateProgressBar('intro');
+        
+        // Smooth scrolling para enlaces internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Función para copiar código al portapapeles
+        function copyCode(element) {
+            const codeText = element.textContent;
+            navigator.clipboard.writeText(codeText).then(() => {
+                // Mostrar mensaje de éxito
+                element.style.backgroundColor = '#4E9FBF';
+                setTimeout(() => {
+                    element.style.backgroundColor = '#132B40';
+                }, 1000);
+            });
+        }
+        
+        // Agregar funcionalidad de copia a los bloques de código
+        document.querySelectorAll('.code-block').forEach(block => {
+            block.addEventListener('click', function() {
+                copyCode(this);
+            });
+            block.style.cursor = 'pointer';
+            block.title = 'Haz clic para copiar';
+        });
+        
+        // Agregar efectos de hover a los pasos
+        document.querySelectorAll('.step').forEach(step => {
+            step.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateX(5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            step.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateX(0)';
+            });
+        });
+    </script>
+</body>
+</html>

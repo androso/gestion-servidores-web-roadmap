@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man: Brand New Day — Reclutamiento de Héroes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedor">
+
+        <!-- ENCABEZADO TEMÁTICO - BRAND NEW DAY -->
+        <header class="encabezado">
+            <div class="header-text">
+                <h1>Spider-Man: <span class="highlight">Brand New Day</span></h1>
+                <p>Sistema de reclutamiento para el nuevo comienzo de Peter Parker</p>
+            </div>
+        </header>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <main class="contenido">
+
+            <!-- SECCIÓN DEL FORMULARIO DE REGISTRO -->
+            <section class="formulario glass-panel">
+                <h2>Reclutar para el Nuevo Comienzo</h2>
+                <p class="subtitle">Únete a Peter Parker en su nueva etapa como Spider-Man</p>
+
+                <!-- Campo Nombre / Alias -->
+                <div class="campo">
+                    <label for="txtNombre">Nombre / Alias:</label>
+                    <input type="text" id="txtNombre" placeholder="Ej: Peter Parker, Miles Morales, Spider-Gwen...">
+                </div>
+
+                <!-- Campo Universo de Origen -->
+                <div class="campo">
+                    <label for="selectCarrera">Universo de Origen:</label>
+                    <select id="selectCarrera">
+                        <option value="Tierra-616 (Peter Parker)">Tierra-616 — Peter Parker</option>
+                        <option value="Tierra-1610 (Miles Morales)">Tierra-1610 — Miles Morales</option>
+                        <option value="Tierra-65 (Gwen Stacy)">Tierra-65 — Spider-Gwen</option>
+                        <option value="Tierra-2026 (Spider-Man BND)">Tierra-2026 — Spider-Man BND</option>
+                    </select>
+                </div>
+
+                <!-- Botones de Acción -->
+                <div class="botones">
+                    <button id="btnAgregar" class="btn-spider">Reclutar Héroe</button>
+                    <button id="btnLimpiar" class="btn-dimension">Limpiar Campos</button>
+                </div>
+
+                <!-- Contador de héroes -->
+                <div class="hero-counter">
+                    <span class="counter-label">Héroes reclutados:</span>
+                    <span id="contadorHeroes" class="counter-number">0</span>
+                </div>
+            </section>
+
+            <!-- SECCIÓN DE MOSTRAR RESULTADOS -->
+            <section class="estudiantes glass-panel">
+                <h2>Equipo Spider-Man: Brand New Day</h2>
+                <p class="subtitle">Héroes que forman parte del nuevo comienzo</p>
+                <div class="hero-grid" id="listaEstudiantes">
+                    <!-- Los elementos se agregarán dinámicamente aquí -->
+                </div>
+                <div class="empty-state" id="emptyState">
+                    <p>Nuevo día, nuevos héroes</p>
+                    <span class="empty-sub">Recluta héroes para el Brand New Day</span>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- PIE DE PÁGINA / ESTADO -->
+        <footer class="pie">
+            <div class="footer-content">
+                <p id="estado">Estado: Esperando nuevos héroes para el Brand New Day...</p>
+                <div class="footer-details">
+                    <span>Brand New Day Protocol v1.0</span>
+                    <span>Universo: <span id="dimensionFooter">Tierra-616</span></span>
+                    <span class="highlight-new">Un nuevo comienzo</span>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Enlace al archivo compilado de TypeScript -->
+    <script src="script.js"></script>
+</body>
+</html>

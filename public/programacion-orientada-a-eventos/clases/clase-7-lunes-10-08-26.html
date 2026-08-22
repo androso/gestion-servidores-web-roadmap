@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 7 Lunes 10/08/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 7 Lunes 10/08/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 4 del 10/08/26 al 16/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-7-lunes-10-slash-08-slash-26">https://univo.instructure.com/courses/1742/pages/clase-7-lunes-10-slash-08-slash-26</a></p>
+  </header>
+  <main>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 20px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">CLASE TEÓRICO-PRÁCTICA</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 2 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">📐 LAYOUTS</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Fundamentos de Interfaces Gráficas II</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 700px;">Layouts y Contenedores — Organización de componentes en la interfaz</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Última actualización: Julio 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#intro-layout">Introducción</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#flexbox">Flexbox</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#grid">Grid</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#contenedores">Contenedores</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#responsive">Responsive</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#practica">Ejemplo</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">2 horas</span></div>
+</div>
+  
+<div id="intro-layout" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📐</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">¿Qué es un Layout?</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 Definición de Layout</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Un <strong style="color: #1e3a8a;">layout</strong> (diseño o maquetación) es la <strong style="color: #1e3a8a;">estructura</strong> que define cómo se organizan y distribuyen los elementos visuales en una interfaz. Es el <strong style="color: #1e3a8a;">esqueleto</strong> que da orden a los componentes.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 ¿Por qué es importante?</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Organiza la <strong style="color: #0e3f68;">información</strong> visualmente.</li>
+<li>Guía la <strong style="color: #0e3f68;">atención</strong> del usuario.</li>
+<li>Mejora la <strong style="color: #0e3f68;">usabilidad</strong> y experiencia.</li>
+<li>Facilita el <strong style="color: #0e3f68;">mantenimiento</strong> del código.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de layouts</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Flexbox:</strong> Una dimensión (fila/columna).</li>
+<li><strong style="color: #0e3f68;">CSS Grid:</strong> Dos dimensiones (filas y columnas).</li>
+<li><strong style="color: #0e3f68;">Position:</strong> Posicionamiento absoluto/relativo.</li>
+<li><strong style="color: #0e3f68;">Float:</strong> Método tradicional.</li>
+<li><strong style="color: #0e3f68;">Table:</strong> Para datos tabulares.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Componentes de un layout</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Contenedores:</strong> Cajas que agrupan elementos.</li>
+<li><strong style="color: #0e3f68;">Espaciado:</strong> Márgenes y rellenos.</li>
+<li><strong style="color: #0e3f68;">Alineación:</strong> Posición de los elementos.</li>
+<li><strong style="color: #0e3f68;">Jerarquía:</strong> Tamaño y orden visual.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> Los layouts organizan los <strong style="color: #92400e;">componentes emisores de eventos</strong> (botones, inputs, listas) en la interfaz, determinando <strong style="color: #92400e;">dónde</strong> y <strong style="color: #92400e;">cómo</strong> el usuario interactuará con ellos.</p>
+</div>
+</div>
+  
+<div id="flexbox" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #3b82f6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📏</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Flexbox - Layout en una Dimensión</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es Flexbox?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #1e3a8a;">Flexbox</strong> (Flexible Box Layout) es un modelo de diseño CSS que permite organizar elementos en <strong style="color: #1e3a8a;">una sola dimensión</strong> (fila o columna). Es ideal para <strong style="color: #1e3a8a;">alinear</strong>, <strong style="color: #1e3a8a;">distribuir</strong> y <strong style="color: #1e3a8a;">ordenar</strong> elementos dentro de un contenedor.</p>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 1: Contenedor Flex básico</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* PASO 1: Estructura HTML */</span>
+<span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"contenedor-flex"</span><span style="color: #fbbf24;">&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>1<span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>2<span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>3<span style="color: #fbbf24;">&lt;/div&gt;</span>
+<span style="color: #fbbf24;">&lt;/div&gt;</span>
+
+<span style="color: #fbc30b;">/* PASO 2: CSS para Flexbox */</span>
+<span style="color: #fbbf24;">.contenedor-flex</span> {
+  <span style="color: #34d399;">display</span>: flex;          <span style="color: #fbc30b;">/* Activa Flexbox en el contenedor */</span>
+  <span style="color: #34d399;">gap</span>: 10px;              <span style="color: #fbc30b;">/* Espacio entre los items (10px) */</span>
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f1f5f9</span>;    <span style="color: #fbc30b;">/* Color de fondo del contenedor */</span>
+  <span style="color: #34d399;">padding</span>: 20px;          <span style="color: #fbc30b;">/* Espacio interno del contenedor */</span>
+}
+
+<span style="color: #fbbf24;">.item</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#3b82f6</span>;    <span style="color: #fbc30b;">/* Color de fondo de cada item */</span>
+  <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">white</span>;          <span style="color: #fbc30b;">/* Color del texto */</span>
+  <span style="color: #34d399;">padding</span>: 20px;          <span style="color: #fbc30b;">/* Espacio interno del item */</span>
+  <span style="color: #34d399;">border-radius</span>: 8px;    <span style="color: #fbc30b;">/* Bordes redondeados */</span>
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">display: flex</strong> → Activa el modo Flexbox en el contenedor. Todos los hijos directos se convierten en "flex items".</li>
+<li><strong style="color: #22c55e;">gap: 10px</strong> → Define el espacio entre cada item. Es un atajo que evita usar <code>margin</code> individualmente.</li>
+<li><strong style="color: #22c55e;">padding: 20px</strong> → Espacio interno. En el contenedor separa los items del borde, en los items separa el texto del borde.</li>
+<li><strong style="color: #22c55e;">border-radius: 8px</strong> → Redondea las esquinas de los items para dar un aspecto moderno.</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Copia el código HTML y CSS en un archivo <code style="color: #92400e;">index.html</code>, ábrelo en el navegador y verás los tres items alineados horizontalmente en una fila.</p>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 2: Dirección y alineación</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* Propiedades de alineación en Flexbox */</span>
+<span style="color: #fbbf24;">.contenedor-flex-avanzado</span> {
+  <span style="color: #34d399;">display</span>: flex;
+  <span style="color: #34d399;">flex-direction</span>: row;        <span style="color: #fbc30b;">/* Dirección: fila (horizontal) */</span>
+  <span style="color: #34d399;">justify-content</span>: center;   <span style="color: #fbc30b;">/* Alineación horizontal: centro */</span>
+  <span style="color: #34d399;">align-items</span>: center;       <span style="color: #fbc30b;">/* Alineación vertical: centro */</span>
+  <span style="color: #34d399;">flex-wrap</span>: wrap;           <span style="color: #fbc30b;">/* Permite que los items pasen a la siguiente línea */</span>
+  <span style="color: #34d399;">gap</span>: 15px;
+  <span style="color: #34d399;">min-height</span>: 200px;         <span style="color: #fbc30b;">/* Altura mínima para ver el centrado vertical */</span>
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f1f5f9</span>;
+  <span style="color: #34d399;">padding</span>: 20px;
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada de cada propiedad:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">flex-direction: row</strong> → Los items se ordenan en <strong style="color: #22c55e;">fila horizontal</strong> (de izquierda a derecha). Otras opciones: <code>column</code> (columna vertical), <code>row-reverse</code>, <code>column-reverse</code>.</li>
+<li><strong style="color: #22c55e;">justify-content: center</strong> → Alinea los items <strong style="color: #22c55e;">horizontalmente</strong> en el centro del contenedor. Opciones: <code>flex-start</code> (izquierda), <code>flex-end</code> (derecha), <code>space-between</code> (espacio entre), <code>space-around</code> (espacio alrededor).</li>
+<li><strong style="color: #22c55e;">align-items: center</strong> → Alinea los items <strong style="color: #22c55e;">verticalmente</strong> en el centro. Opciones: <code>flex-start</code> (arriba), <code>flex-end</code> (abajo), <code>stretch</code> (estirar).</li>
+<li><strong style="color: #22c55e;">flex-wrap: wrap</strong> → Permite que los items <strong style="color: #22c55e;">pasen a la siguiente línea</strong> si no caben en una fila. Sin esto, se encogerían o desbordarían.</li>
+<li><strong style="color: #22c55e;">min-height: 200px</strong> → Establece una altura mínima para que se note el centrado vertical.</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Prueba cambiar <code style="color: #92400e;">flex-direction</code> a <code style="color: #92400e;">column</code> para ver cómo los items se apilan verticalmente. Cambia <code style="color: #92400e;">justify-content</code> a <code style="color: #92400e;">space-between</code> para distribuir el espacio uniformemente.</p>
+</div>
+</div>
+</div>
+  
+<div id="grid" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📊</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">CSS Grid - Layout en Dos Dimensiones</h2>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #ddd6fe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.95em;">📌 ¿Qué es CSS Grid?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #4c1d95;">CSS Grid</strong> es un sistema de diseño en <strong style="color: #4c1d95;">dos dimensiones</strong> (filas y columnas). Permite crear layouts complejos de forma sencilla y <strong style="color: #4c1d95;">precisa</strong>.</p>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0; margin-bottom: 20px;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 3: Grid básico de 2x2</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* PASO 1: Estructura HTML */</span>
+<span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"grid-container"</span><span style="color: #fbbf24;">&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>1<span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>2<span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>3<span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"item"</span><span style="color: #fbbf24;">&gt;</span>4<span style="color: #fbbf24;">&lt;/div&gt;</span>
+<span style="color: #fbbf24;">&lt;/div&gt;</span>
+
+<span style="color: #fbc30b;">/* PASO 2: CSS para Grid */</span>
+<span style="color: #fbbf24;">.grid-container</span> {
+  <span style="color: #34d399;">display</span>: grid;                      <span style="color: #fbc30b;">/* Activa CSS Grid */</span>
+  <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;  <span style="color: #fbc30b;">/* 2 columnas de igual tamaño */</span>
+  <span style="color: #34d399;">grid-template-rows</span>: <span style="color: #f472b6;">100px</span> <span style="color: #f472b6;">100px</span>;   <span style="color: #fbc30b;">/* 2 filas de 100px de alto */</span>
+  <span style="color: #34d399;">gap</span>: 15px;                         <span style="color: #fbc30b;">/* Espacio entre celdas */</span>
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f1f5f9</span>;
+  <span style="color: #34d399;">padding</span>: 20px;
+}
+
+<span style="color: #fbbf24;">.grid-container .item</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#8b5cf6</span>;
+  <span style="color: #34d399;">color</span>: white;
+  <span style="color: #34d399;">display</span>: flex;                       <span style="color: #fbc30b;">/* Centramos el texto */</span>
+  <span style="color: #34d399;">justify-content</span>: center;
+  <span style="color: #34d399;">align-items</span>: center;
+  <span style="color: #34d399;">border-radius</span>: 8px;
+  <span style="color: #34d399;">font-size</span>: 24px;
+  <span style="color: #34d399;">font-weight</span>: bold;
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada de cada propiedad:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">display: grid</strong> → Activa CSS Grid en el contenedor.</li>
+<li><strong style="color: #22c55e;">grid-template-columns: 1fr 1fr</strong> → Define <strong style="color: #22c55e;">2 columnas</strong> de igual tamaño. <code>1fr</code> significa "1 fracción" del espacio disponible. Equivale a "ancho del 50%".</li>
+<li><strong style="color: #22c55e;">grid-template-rows: 100px 100px</strong> → Define <strong style="color: #22c55e;">2 filas</strong> de 100px de altura cada una.</li>
+<li><strong style="color: #22c55e;">gap: 15px</strong> → Espacio de 15px entre todas las celdas (tanto horizontal como vertical).</li>
+<li><strong style="color: #22c55e;">display: flex</strong> en .item → Centramos el texto dentro de cada celda usando Flexbox anidado.</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Copia este código en un archivo HTML, ábrelo en el navegador y verás una cuadrícula de 2x2 con los números 1, 2, 3 y 4. Cambia <code style="color: #92400e;">grid-template-columns</code> a <code style="color: #92400e;">1fr 1fr 1fr</code> para tener 3 columnas.</p>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 4: Grid con áreas nombradas</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* Layout de página con áreas nombradas */</span>
+<span style="color: #fbbf24;">.pagina-layout</span> {
+  <span style="color: #34d399;">display</span>: grid;
+  <span style="color: #34d399;">grid-template-areas</span>: 
+    <span style="color: #fbbf24;">"header header header"</span>
+    <span style="color: #fbbf24;">"sidebar main main"</span>
+    <span style="color: #fbbf24;">"footer footer footer"</span>;
+  <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">200px</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;
+  <span style="color: #34d399;">grid-template-rows</span>: <span style="color: #f472b6;">80px</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">60px</span>;
+  <span style="color: #34d399;">gap</span>: 10px;
+  <span style="color: #34d399;">min-height</span>: <span style="color: #f472b6;">100vh</span>;
+  <span style="color: #34d399;">padding</span>: 20px;
+}
+
+<span style="color: #fbbf24;">.header</span> { <span style="color: #34d399;">grid-area</span>: header; <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#0e3f68</span>; color: white; <span style="color: #34d399;">padding</span>: 20px; }
+<span style="color: #fbbf24;">.sidebar</span> { <span style="color: #34d399;">grid-area</span>: sidebar; <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f1f5f9</span>; <span style="color: #34d399;">padding</span>: 20px; }
+<span style="color: #fbbf24;">.main</span> { <span style="color: #34d399;">grid-area</span>: main; <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">white</span>; <span style="color: #34d399;">padding</span>: 20px; border: 1px solid <span style="color: #fbbf24;">#e2e8f0</span>; }
+<span style="color: #fbbf24;">.footer</span> { <span style="color: #34d399;">grid-area</span>: footer; <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#1e293b</span>; color: white; <span style="color: #34d399;">padding</span>: 20px; }</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">grid-template-areas</strong> → Define áreas con nombres. Cada fila entre comillas representa una fila de la cuadrícula. Los nombres se repiten para que ocupen ese espacio.</li>
+<li><strong style="color: #22c55e;">grid-area: header</strong> → Asigna cada elemento a su área correspondiente.</li>
+<li><strong style="color: #22c55e;">grid-template-columns: 200px 1fr 1fr</strong> → Primera columna de 200px (sidebar), las otras dos ocupan el resto del espacio.</li>
+<li><strong style="color: #22c55e;">grid-template-rows: 80px 1fr 60px</strong> → Encabezado de 80px, contenido flexible, pie de 60px.</li>
+<li><strong style="color: #22c55e;">min-height: 100vh</strong> → Altura mínima del 100% de la ventana (viewport height).</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Este código crea el layout de una página completa con <strong style="color: #92400e;">header</strong>, <strong style="color: #92400e;">sidebar</strong>, <strong style="color: #92400e;">contenido principal</strong> y <strong style="color: #92400e;">footer</strong>. Es el mismo patrón usado en muchas aplicaciones web modernas.</p>
+</div>
+</div>
+</div>
+  
+<div id="contenedores" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📦</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Contenedores - Organización de Componentes</h2>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 22px; border: 1px solid #bbf7d0; margin-bottom: 16px;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 ¿Qué es un contenedor?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Un <strong style="color: #14532d;">contenedor</strong> es un elemento que <strong style="color: #14532d;">agrupa</strong> y <strong style="color: #14532d;">organiza</strong> otros componentes. Es la base de cualquier layout, ya que define <strong style="color: #14532d;">dónde</strong> y <strong style="color: #14532d;">cómo</strong> se agrupan los elementos.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Tipos de contenedores en HTML</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">&lt;div&gt;</strong> → Contenedor genérico, el más usado.</li>
+<li><strong style="color: #0e3f68;">&lt;section&gt;</strong> → Agrupa contenido relacionado.</li>
+<li><strong style="color: #0e3f68;">&lt;article&gt;</strong> → Contenido independiente.</li>
+<li><strong style="color: #0e3f68;">&lt;header&gt;</strong> → Encabezado de página o sección.</li>
+<li><strong style="color: #0e3f68;">&lt;footer&gt;</strong> → Pie de página o sección.</li>
+<li><strong style="color: #0e3f68;">&lt;nav&gt;</strong> → Navegación principal.</li>
+<li><strong style="color: #0e3f68;">&lt;main&gt;</strong> → Contenido principal.</li>
+<li><strong style="color: #0e3f68;">&lt;aside&gt;</strong> → Contenido lateral (barra lateral).</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Contenedores semánticos en HTML5</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.9em; line-height: 1.6;">Los contenedores <strong style="color: #0e3f68;">semánticos</strong> dan <strong style="color: #0e3f68;">significado</strong> al contenido. Ayudan a los motores de búsqueda y lectores de pantalla a entender la estructura de la página.</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 14px; border-radius: 8px; font-family: 'Courier New', monospace; font-size: 0.75em; margin-top: 8px; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbbf24;">&lt;header&gt;</span>      <span style="color: #fbc30b;">// Encabezado</span>
+<span style="color: #fbbf24;">&lt;nav&gt;</span>          <span style="color: #fbc30b;">// Navegación</span>
+<span style="color: #fbbf24;">&lt;main&gt;</span>         <span style="color: #fbc30b;">// Contenido principal</span>
+  <span style="color: #fbbf24;">&lt;article&gt;</span>    <span style="color: #fbc30b;">// Artículo</span>
+  <span style="color: #fbbf24;">&lt;section&gt;</span>    <span style="color: #fbc30b;">// Sección</span>
+<span style="color: #fbbf24;">&lt;aside&gt;</span>        <span style="color: #fbc30b;">// Barra lateral</span>
+<span style="color: #fbbf24;">&lt;footer&gt;</span>       <span style="color: #fbc30b;">// Pie de página</span></pre>
+</div>
+</div>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0; margin-top: 20px;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 5: Contenedores anidados (card con botones)</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* Estructura de una tarjeta (card) con contenedores anidados */</span>
+<span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"card"</span><span style="color: #fbbf24;">&gt;</span>                        <span style="color: #fbc30b;">// Contenedor principal (tarjeta)</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"card-header"</span><span style="color: #fbbf24;">&gt;</span>              <span style="color: #fbc30b;">// Contenedor del título</span>
+    <span style="color: #fbbf24;">&lt;h3&gt;</span>Mi Tarjeta<span style="color: #fbbf24;">&lt;/h3&gt;</span>
+  <span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"card-body"</span><span style="color: #fbbf24;">&gt;</span>                <span style="color: #fbc30b;">// Contenedor del cuerpo</span>
+    <span style="color: #fbbf24;">&lt;p&gt;</span>Este es el contenido de la tarjeta.<span style="color: #fbbf24;">&lt;/p&gt;</span>
+  <span style="color: #fbbf24;">&lt;/div&gt;</span>
+  <span style="color: #fbbf24;">&lt;div</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"card-footer"</span><span style="color: #fbbf24;">&gt;</span>              <span style="color: #fbc30b;">// Contenedor del pie (acciones)</span>
+    <span style="color: #fbbf24;">&lt;button</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"btn"</span><span style="color: #fbbf24;">&gt;</span>Guardar<span style="color: #fbbf24;">&lt;/button&gt;</span>
+    <span style="color: #fbbf24;">&lt;button</span> <span style="color: #34d399;">class</span>=<span style="color: #fbbf24;">"btn btn-secondary"</span><span style="color: #fbbf24;">&gt;</span>Cancelar<span style="color: #fbbf24;">&lt;/button&gt;</span>
+  <span style="color: #fbbf24;">&lt;/div&gt;</span>
+<span style="color: #fbbf24;">&lt;/div&gt;</span>
+
+<span style="color: #fbc30b;">/* CSS para la tarjeta */</span>
+<span style="color: #fbbf24;">.card</span> {
+  <span style="color: #34d399;">border</span>: 1px solid <span style="color: #fbbf24;">#e2e8f0</span>;      <span style="color: #fbc30b;">/* Borde de la tarjeta */</span>
+  <span style="color: #34d399;">border-radius</span>: 12px;          <span style="color: #fbc30b;">/* Esquinas redondeadas */</span>
+  <span style="color: #34d399;">box-shadow</span>: 0 4px 6px <span style="color: #fbbf24;">rgba(0,0,0,0.1)</span>; <span style="color: #fbc30b;">/* Sombra suave */</span>
+  <span style="color: #34d399;">max-width</span>: 400px;            <span style="color: #fbc30b;">/* Ancho máximo */</span>
+  <span style="color: #34d399;">margin</span>: 20px auto;           <span style="color: #fbc30b;">/* Centrado y espacio exterior */</span>
+  <span style="color: #34d399;">overflow</span>: hidden;            <span style="color: #fbc30b;">/* Oculta contenido que sobresale */</span>
+}
+
+<span style="color: #fbbf24;">.card-header</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#0e3f68</span>;          <span style="color: #fbc30b;">/* Color de fondo del encabezado */</span>
+  <span style="color: #34d399;">color</span>: white;                <span style="color: #fbc30b;">/* Color del texto */</span>
+  <span style="color: #34d399;">padding</span>: 16px 20px;          <span style="color: #fbc30b;">/* Espacio interno */</span>
+}
+
+<span style="color: #fbbf24;">.card-body</span> {
+  <span style="color: #34d399;">padding</span>: 20px;               <span style="color: #fbc30b;">/* Espacio interno del cuerpo */</span>
+}
+
+<span style="color: #fbbf24;">.card-footer</span> {
+  <span style="color: #34d399;">padding</span>: 16px 20px;          <span style="color: #fbc30b;">/* Espacio interno del pie */</span>
+  <span style="color: #34d399;">border-top</span>: 1px solid <span style="color: #fbbf24;">#e2e8f0</span>; <span style="color: #fbc30b;">/* Línea separadora */</span>
+  <span style="color: #34d399;">display</span>: flex;               <span style="color: #fbc30b;">/* Flexbox para alinear botones */</span>
+  <span style="color: #34d399;">justify-content</span>: flex-end;  <span style="color: #fbc30b;">/* Botones a la derecha */</span>
+  <span style="color: #34d399;">gap</span>: 10px;                  <span style="color: #fbc30b;">/* Espacio entre botones */</span>
+}
+
+<span style="color: #fbbf24;">.btn</span> {
+  <span style="color: #34d399;">padding</span>: 8px 16px;
+  <span style="color: #34d399;">border</span>: none;
+  <span style="color: #34d399;">border-radius</span>: 6px;
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#3b82f6</span>;
+  <span style="color: #34d399;">color</span>: white;
+  <span style="color: #34d399;">cursor</span>: pointer;             <span style="color: #fbc30b;">/* Cambia el cursor al pasar sobre el botón */</span>
+}
+
+<span style="color: #fbbf24;">.btn-secondary</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#94a3b8</span>;         <span style="color: #fbc30b;">/* Color secundario */</span>
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">Contenedores anidados:</strong> La tarjeta tiene 3 contenedores internos: <code>card-header</code>, <code>card-body</code> y <code>card-footer</code>. Cada uno organiza una parte diferente del contenido.</li>
+<li><strong style="color: #22c55e;">box-shadow: 0 4px 6px rgba(0,0,0,0.1)</strong> → Crea una sombra suave debajo de la tarjeta para dar profundidad. Los valores son: desplazamiento horizontal, vertical, difuminado y color.</li>
+<li><strong style="color: #22c55e;">overflow: hidden</strong> → Asegura que las esquinas redondeadas se apliquen correctamente a todos los hijos.</li>
+<li><strong style="color: #22c55e;">cursor: pointer</strong> → En los botones, cambia el cursor a una mano cuando el usuario pasa el mouse, indicando que es interactivo.</li>
+<li><strong style="color: #22c55e;">justify-content: flex-end</strong> → Alinea los botones a la derecha del contenedor del pie.</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Copia este código en un archivo HTML. Verás una tarjeta moderna con un encabezado azul, contenido y botones. Haz clic en los botones para ver el efecto <code style="color: #92400e;">cursor: pointer</code>.</p>
+</div>
+</div>
+</div>
+  
+<div id="responsive" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📱</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Diseño Responsive - Adaptación a diferentes pantallas</h2>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 22px; border: 1px solid #fde68a; margin-bottom: 16px;">
+<p style="margin: 0;  color: #92400e; font-size: 0.95em;">📌 ¿Qué es el diseño responsive?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">El <strong style="color: #92400e;">diseño responsive</strong> es una técnica que permite que una interfaz se <strong style="color: #92400e;">adapte</strong> a diferentes tamaños de pantalla (móvil, tablet, escritorio) usando <strong style="color: #92400e;">media queries</strong>.</p>
+</div>
+
+<div style="background: #f8fafc; border-radius: 16px; padding: 20px 25px; border: 1px solid #e2e8f0;">
+<p style="margin: 0 0 12px 0;  color: #0e3f68; font-size: 0.95em;">📌 Ejemplo Paso a Paso 6: Grid responsive con media queries</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* Contenedor Grid responsive */</span>
+<span style="color: #fbbf24;">.grid-responsive</span> {
+  <span style="color: #34d399;">display</span>: grid;
+  <span style="color: #34d399;">gap</span>: 20px;
+  <span style="color: #34d399;">padding</span>: 20px;
+}
+
+<span style="color: #fbc30b;">/* Por defecto: 1 columna (móvil) */</span>
+<span style="color: #fbbf24;">.grid-responsive</span> {
+  <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span>;
+}
+
+<span style="color: #fbc30b;">/* Tablets: 2 columnas cuando la pantalla es mayor a 600px */</span>
+<span style="color: #fbbf24;">@media (min-width: 600px)</span> {
+  <span style="color: #fbbf24;">.grid-responsive</span> {
+    <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;
+  }
+}
+
+<span style="color: #fbc30b;">/* Escritorio: 3 columnas cuando la pantalla es mayor a 900px */</span>
+<span style="color: #fbbf24;">@media (min-width: 900px)</span> {
+  <span style="color: #fbbf24;">.grid-responsive</span> {
+    <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;
+  }
+}
+
+<span style="color: #fbc30b;">/* Estilo de cada item */</span>
+<span style="color: #fbbf24;">.grid-item</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#3b82f6</span>;
+  <span style="color: #34d399;">color</span>: white;
+  <span style="color: #34d399;">padding</span>: 40px 20px;
+  <span style="color: #34d399;">border-radius</span>: 12px;
+  <span style="color: #34d399;">text-align</span>: center;
+  <span style="color: #34d399;">font-size</span>: 24px;
+  <span style="color: #34d399;">font-weight</span>: bold;
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">@media (min-width: 600px)</strong> → Media query que se activa cuando el ancho de la pantalla es <strong style="color: #22c55e;">mayor o igual a 600px</strong>. Es el punto de quiebre (breakpoint) para tablets.</li>
+<li><strong style="color: #22c55e;">@media (min-width: 900px)</strong> → Punto de quiebre para escritorio. Cuando la pantalla es más ancha que 900px, se muestran 3 columnas.</li>
+<li><strong style="color: #22c55e;">Por defecto 1 columna:</strong> En móviles (&lt; 600px), todo el contenido se muestra en una sola columna vertical. Esto es más fácil de leer en pantallas pequeñas.</li>
+<li><strong style="color: #22c55e;">1fr 1fr</strong> → Cada columna ocupa una fracción igual del espacio disponible. Si hay 2 columnas, cada una ocupa el 50%.</li>
+</ul>
+</div>
+<div style="margin-top: 10px; background: #fef3c7; border-radius: 8px; padding: 10px 16px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.82em;"><strong>💡 Ejecución:</strong> Prueba este código en el navegador y <strong style="color: #92400e;">cambia el tamaño de la ventana</strong> para ver cómo el grid se adapta automáticamente: 1 columna en móvil, 2 en tablet, 3 en escritorio.</p>
+</div>
+</div>
+</div>
+  
+<div id="practica" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #ef4444; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🚀</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Ejemplo Completo - Dashboard de Eventos</h2>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 22px; border: 1px solid #fecaca; margin-bottom: 16px;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.95em;">📌 Ejemplo Final: Dashboard con todos los componentes</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">Vamos a combinar <strong style="color: #991b1b;">Flexbox</strong>, <strong style="color: #991b1b;">Grid</strong>, <strong style="color: #991b1b;">contenedores</strong> y <strong style="color: #991b1b;">responsive</strong> en un dashboard completo que simula un sistema de monitoreo de eventos.</p>
+</div>
+<div style="background: #1e293b; color: #e2e8f0; padding: 16px 20px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto; margin-bottom: 16px;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">/* ============================================================ */</span>
+<span style="color: #fbc30b;">/* DASHBOARD COMPLETO - Layout de página de monitoreo            */</span>
+<span style="color: #fbc30b;">/* ============================================================ */</span>
+
+<span style="color: #fbc30b;">/* ----- 1. CONTENEDOR PRINCIPAL (Grid de página) ----- */</span>
+<span style="color: #fbbf24;">.dashboard</span> {
+  <span style="color: #34d399;">display</span>: grid;
+  <span style="color: #34d399;">grid-template-areas</span>: 
+    <span style="color: #fbbf24;">"header header header"</span>
+    <span style="color: #fbbf24;">"sidebar main main"</span>
+    <span style="color: #fbbf24;">"footer footer footer"</span>;
+  <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">250px</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;
+  <span style="color: #34d399;">grid-template-rows</span>: <span style="color: #f472b6;">70px</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">50px</span>;
+  <span style="color: #34d399;">min-height</span>: <span style="color: #f472b6;">100vh</span>;
+  <span style="color: #34d399;">gap</span>: 10px;
+  <span style="color: #34d399;">padding</span>: 15px;
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f1f5f9</span>;
+}
+
+<span style="color: #fbc30b;">/* ----- 2. ÁREAS DEL GRID ----- */</span>
+<span style="color: #fbbf24;">.dashboard-header</span> {
+  <span style="color: #34d399;">grid-area</span>: header;
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#0e3f68</span>;
+  <span style="color: #34d399;">color</span>: white;
+  <span style="color: #34d399;">padding</span>: 0 20px;
+  <span style="color: #34d399;">display</span>: flex;                    <span style="color: #fbc30b;">/* Flexbox para alinear elementos */</span>
+  <span style="color: #34d399;">align-items</span>: center;              <span style="color: #fbc30b;">/* Centrado vertical */</span>
+  <span style="color: #34d399;">justify-content</span>: space-between;   <span style="color: #fbc30b;">/* Espacio entre elementos */</span>
+  <span style="color: #34d399;">border-radius</span>: 12px 12px 0 0;
+}
+
+<span style="color: #fbbf24;">.dashboard-sidebar</span> {
+  <span style="color: #34d399;">grid-area</span>: sidebar;
+  <span style="color: #34d399;">background</span>: white;
+  <span style="color: #34d399;">padding</span>: 20px;
+  <span style="color: #34d399;">border-radius</span>: 0 0 0 12px;
+  <span style="color: #34d399;">box-shadow</span>: 2px 0 5px <span style="color: #fbbf24;">rgba(0,0,0,0.05)</span>;
+}
+
+<span style="color: #fbbf24;">.dashboard-main</span> {
+  <span style="color: #34d399;">grid-area</span>: main;
+  <span style="color: #34d399;">background</span>: white;
+  <span style="color: #34d399;">padding</span>: 20px;
+  <span style="color: #34d399;">border-radius</span>: 0 0 12px 0;
+}
+
+<span style="color: #fbbf24;">.dashboard-footer</span> {
+  <span style="color: #34d399;">grid-area</span>: footer;
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#1e293b</span>;
+  <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">#94a3b8</span>;
+  <span style="color: #34d399;">display</span>: flex;                    <span style="color: #fbc30b;">/* Centrar contenido */</span>
+  <span style="color: #34d399;">align-items</span>: center;
+  <span style="color: #34d399;">justify-content</span>: center;
+  <span style="color: #34d399;">border-radius</span>: 0 0 12px 12px;
+  <span style="color: #34d399;">font-size</span>: 14px;
+}
+
+<span style="color: #fbc30b;">/* ----- 3. COMPONENTES INTERNOS ----- */</span>
+
+<span style="color: #fbc30b;">/* Tarjeta de estadística (usando Flexbox) */</span>
+<span style="color: #fbbf24;">.stats-grid</span> {
+  <span style="color: #34d399;">display</span>: grid;
+  <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;
+  <span style="color: #34d399;">gap</span>: 15px;
+  <span style="color: #34d399;">margin-bottom</span>: 20px;
+}
+
+<span style="color: #fbbf24;">.stat-card</span> {
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f8fafc</span>;
+  <span style="color: #34d399;">padding</span>: 20px;
+  <span style="color: #34d399;">border-radius</span>: 12px;
+  <span style="color: #34d399;">text-align</span>: center;
+  <span style="color: #34d399;">border</span>: 1px solid <span style="color: #fbbf24;">#e2e8f0</span>;
+  <span style="color: #34d399;">transition</span>: transform 0.2s;     <span style="color: #fbc30b;">/* Animación suave al hacer hover */</span>
+}
+
+<span style="color: #fbbf24;">.stat-card:hover</span> {
+  <span style="color: #34d399;">transform</span>: translateY(-5px);     <span style="color: #fbc30b;">/* Eleva la tarjeta al pasar el mouse */</span>
+  <span style="color: #34d399;">box-shadow</span>: 0 8px 15px <span style="color: #fbbf24;">rgba(0,0,0,0.1)</span>;
+}
+
+<span style="color: #fbbf24;">.stat-card .numero</span> {
+  <span style="color: #34d399;">font-size</span>: 32px;
+  <span style="color: #34d399;">font-weight</span>: 700;
+  <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">#0e3f68</span>;
+}
+
+<span style="color: #fbbf24;">.stat-card .label</span> {
+  <span style="color: #34d399;">font-size</span>: 14px;
+  <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">#64748b</span>;
+}
+
+<span style="color: #fbc30b;">/* ----- 4. LISTA DE EVENTOS (contenedor de lista) ----- */</span>
+<span style="color: #fbbf24;">.event-list</span> {
+  <span style="color: #34d399;">display</span>: flex;
+  <span style="color: #34d399;">flex-direction</span>: column;          <span style="color: #fbc30b;">/* Columna vertical */</span>
+  <span style="color: #34d399;">gap</span>: 10px;
+  <span style="color: #34d399;">margin-top</span>: 15px;
+}
+
+<span style="color: #fbbf24;">.event-item</span> {
+  <span style="color: #34d399;">display</span>: flex;
+  <span style="color: #34d399;">justify-content</span>: space-between;
+  <span style="color: #34d399;">align-items</span>: center;
+  <span style="color: #34d399;">padding</span>: 12px 16px;
+  <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#f8fafc</span>;
+  <span style="color: #34d399;">border-radius</span>: 8px;
+  <span style="color: #34d399;">border-left</span>: 4px solid <span style="color: #fbbf24;">#3b82f6</span>;   <span style="color: #fbc30b;">/* Barra de color a la izquierda */</span>
+}
+
+<span style="color: #fbbf24;">.event-item .estado</span> {
+  <span style="color: #34d399;">padding</span>: 4px 12px;
+  <span style="color: #34d399;">border-radius</span>: 100px;
+  <span style="color: #34d399;">font-size</span>: 12px;
+  <span style="color: #34d399;">font-weight</span>: 600;
+}
+
+<span style="color: #fbbf24;">.event-item .estado.activo</span> { <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#dcfce7</span>; <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">#166534</span>; }
+<span style="color: #fbbf24;">.event-item .estado.error</span> { <span style="color: #34d399;">background</span>: <span style="color: #fbbf24;">#fee2e2</span>; <span style="color: #34d399;">color</span>: <span style="color: #fbbf24;">#991b1b</span>; }
+
+<span style="color: #fbc30b;">/* ----- 5. RESPONSIVE ----- */</span>
+
+<span style="color: #fbc30b;">/* Tablet: sidebar se oculta, grid se ajusta */</span>
+<span style="color: #fbbf24;">@media (max-width: 768px)</span> {
+  <span style="color: #fbbf24;">.dashboard</span> {
+    <span style="color: #34d399;">grid-template-areas</span>: 
+      <span style="color: #fbbf24;">"header"</span>
+      <span style="color: #fbbf24;">"main"</span>
+      <span style="color: #fbbf24;">"footer"</span>;
+    <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span>;
+    <span style="color: #34d399;">grid-template-rows</span>: <span style="color: #f472b6;">70px</span> <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">50px</span>;
+  }
+  
+  <span style="color: #fbbf24;">.dashboard-sidebar</span> {
+    <span style="color: #34d399;">display</span>: none;                 <span style="color: #fbc30b;">/* Ocultar sidebar en tablets */</span>
+  }
+  
+  <span style="color: #fbbf24;">.stats-grid</span> {
+    <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span> <span style="color: #f472b6;">1fr</span>;  <span style="color: #fbc30b;">/* 2 columnas en tablet */</span>
+  }
+}
+
+<span style="color: #fbc30b;">/* Móvil: estadísticas en 1 columna */</span>
+<span style="color: #fbbf24;">@media (max-width: 480px)</span> {
+  <span style="color: #fbbf24;">.stats-grid</span> {
+    <span style="color: #34d399;">grid-template-columns</span>: <span style="color: #f472b6;">1fr</span>;       <span style="color: #fbc30b;">/* 1 columna en móvil */</span>
+  }
+  
+  <span style="color: #fbbf24;">.dashboard-header</span> {
+    <span style="color: #34d399;">flex-direction</span>: column;        <span style="color: #fbc30b;">/* Apilar elementos verticalmente */</span>
+    <span style="color: #34d399;">align-items</span>: flex-start;
+    <span style="color: #34d399;">gap</span>: 8px;
+    <span style="color: #34d399;">padding</span>: 15px 20px;
+  }
+  
+  <span style="color: #fbbf24;">.event-item</span> {
+    <span style="color: #34d399;">flex-direction</span>: column;        <span style="color: #fbc30b;">/* Apilar en móvil */</span>
+    <span style="color: #34d399;">align-items</span>: flex-start;
+    <span style="color: #34d399;">gap</span>: 8px;
+  }
+}</pre>
+</div>
+<div style="margin-top: 12px; background: #f0fdf4; border-radius: 8px; padding: 12px 16px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>✅ Explicación detallada del dashboard:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #22c55e;">Grid principal (dashboard):</strong> Crea un layout de página con header, sidebar, main y footer usando <code>grid-template-areas</code>.</li>
+<li><strong style="color: #22c55e;">Stats Grid:</strong> Muestra 4 tarjetas de estadísticas en una cuadrícula. En móvil se reduce a 1 columna.</li>
+<li><strong style="color: #22c55e;">Event List:</strong> Usa <code>flex-direction: column</code> para mostrar una lista vertical de eventos.</li>
+<li><strong style="color: #22c55e;">Hover en tarjetas:</strong> <code>transition: transform 0.2s</code> y <code>transform: translateY(-5px)</code> crean un efecto de elevación al pasar el mouse.</li>
+<li><strong style="color: #22c55e;">Responsive:</strong> En tablets (&lt; 768px) el sidebar se oculta. En móvil (&lt; 480px) todo se apila verticalmente.</li>
+</ul>
+</div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 35px 40px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 2em;">📋</span>
+<h2 style="margin: 0; color: #fbc30b; font-size: 1.5em; ">Resumen de Conceptos Clave</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📐 Flexbox</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Diseño en <strong style="color: #e2e8f0;">una dimensión</strong> (fila/columna). Ideal para <strong style="color: #e2e8f0;">alinear</strong> y <strong style="color: #e2e8f0;">distribuir</strong> elementos.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📊 CSS Grid</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Diseño en <strong style="color: #e2e8f0;">dos dimensiones</strong> (filas y columnas). Para layouts <strong style="color: #e2e8f0;">complejos</strong> y precisos.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📦 Contenedores</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Elementos que <strong style="color: #e2e8f0;">agrupan</strong> y <strong style="color: #e2e8f0;">organizan</strong> otros componentes. Base de todo layout.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">📱 Responsive</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Adaptación a <strong style="color: #e2e8f0;">diferentes pantallas</strong> usando <code style="color: #e2e8f0;">@media</code> queries.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🎨 Propiedades clave</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;"><code style="color: #e2e8f0;">gap</code>, <code style="color: #e2e8f0;">justify-content</code>, <code style="color: #e2e8f0;">align-items</code>, <code style="color: #e2e8f0;">grid-template-areas</code></p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">⚡ En POE</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Los layouts <strong style="color: #e2e8f0;">organizan</strong> los componentes emisores de eventos (<strong style="color: #e2e8f0;">botones</strong>, <strong style="color: #e2e8f0;">inputs</strong>, etc.).</p>
+</div>
+</div>
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Conclusión:</strong> Los layouts y contenedores son la <strong style="color: #fbc30b;">estructura</strong> sobre la que se construyen las interfaces. Un buen layout <strong style="color: #fbc30b;">mejora la usabilidad</strong>, la <strong style="color: #fbc30b;">experiencia del usuario</strong> y facilita el <strong style="color: #fbc30b;">mantenimiento del código</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;">📞 <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;">📧 <a style="color: #fbc30b; text-decoration: none;" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;">🕒 <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,717 @@
+/* ================================================================
+   SPIDER-VERSE: REGISTRO DE HÉROES
+   Estilo inspirado en Spider-Man: Un Nuevo Universo
+   ================================================================ */
+
+/* ---------- IMPORTACIÓN DE FUENTES ---------- */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+/* ---------- RESET Y VARIABLES ---------- */
+* {
+    margin: 0;
+    /* Elimina márgenes predeterminados */
+    padding: 0;
+    /* Elimina rellenos predeterminados */
+    box-sizing: border-box;
+    /* Incluye padding y border en el tamaño total */
+}
+
+:root {
+    /* Colores principales - Inspirados en Spider-Verse */
+    --spider-red: #E62429;
+    /* Rojo característico de Spider-Man */
+    --spider-blue: #1A3A7A;
+    /* Azul del traje */
+    --spider-dark: #0A0E1A;
+    /* Fondo oscuro tipo cómic */
+    --spider-purple: #6A3DE8;
+    /* Púrpura del universo alternativo */
+    --spider-glow: #00D4FF;
+    /* Azul neón para efectos glow */
+    --spider-pink: #FF6B9D;
+    /* Rosa para Gwen Stacy */
+    --spider-green: #39FF14;
+    /* Verde neón para efectos */
+    --spider-gold: #FFD700;
+    /* Dorado para detalles premium */
+
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --glass-shadow: rgba(0, 0, 0, 0.4);
+
+    /* Tipografía */
+    --font-comic: 'Bangers', cursive;
+    --font-body: 'Montserrat', sans-serif;
+}
+
+/* ---------- ESTILOS DEL CUERPO ---------- */
+body {
+    font-family: var(--font-body);
+    background: var(--spider-dark);
+    background-image:
+        /* Patrón de puntos estilo cómic */
+        radial-gradient(circle at 20% 50%, rgba(230, 36, 41, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 80% 50%, rgba(26, 58, 122, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 100%, rgba(106, 61, 232, 0.05) 0%, transparent 40%),
+        /* Grid sutil de fondo */
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px;
+    min-height: 100vh;
+    display: flex;
+    /* Flexbox para centrar */
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    /* Centra verticalmente */
+    padding: 20px;
+    color: #ffffff;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* ---------- EFECTO DE TELARAÑA DE FONDO ---------- */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        /* Líneas de telaraña radiales */
+        radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.03) 0%, transparent 60%),
+        /* Líneas diagonales simulando telaraña */
+        repeating-linear-gradient(45deg,
+            transparent 0px,
+            transparent 80px,
+            rgba(255, 255, 255, 0.01) 80px,
+            rgba(255, 255, 255, 0.01) 81px),
+        repeating-linear-gradient(-45deg,
+            transparent 0px,
+            transparent 80px,
+            rgba(255, 255, 255, 0.01) 80px,
+            rgba(255, 255, 255, 0.01) 81px);
+    pointer-events: none;
+    /* No interfiere con clicks */
+    z-index: 0;
+}
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+.contenedor {
+    max-width: 1100px;
+    /* Ancho máximo del contenedor */
+    width: 100%;
+    /* Ocupa todo el ancho disponible */
+    position: relative;
+    z-index: 1;
+    /* Por encima del fondo */
+    animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    /* Animación de entrada */
+}
+
+/* ---------- ANIMACIONES GLOBALES ---------- */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(5deg);
+    }
+}
+
+@keyframes glowPulse {
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(0, 212, 255, 0.1);
+    }
+}
+
+/* ---------- ENCABEZADO ---------- */
+.encabezado {
+    display: flex;
+    /* Flexbox para alinear */
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 24px;
+    /* Espacio entre elementos */
+    padding: 28px 32px;
+    /* Espacio interno */
+    background: var(--glass-bg);
+    /* Fondo semi-transparente */
+    backdrop-filter: blur(20px);
+    /* Desenfoque para efecto glass */
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    /* Borde sutil */
+    border-radius: 20px;
+    /* Esquinas redondeadas */
+    margin-bottom: 32px;
+    /* Espacio inferior */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Línea de glow inferior */
+.encabezado::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--spider-red),
+            var(--spider-blue),
+            var(--spider-purple),
+            transparent);
+    animation: glowPulse 3s ease-in-out infinite;
+}
+
+.logo-spider {
+    display: flex;
+    gap: 8px;
+    font-size: 36px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.spider-icon {
+    display: inline-block;
+}
+
+.spider-icon.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.header-text {
+    flex: 1;
+    /* Ocupa el espacio restante */
+}
+
+.header-text h1 {
+    font-family: var(--font-comic);
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(230, 36, 41, 0.3);
+}
+
+.header-text .highlight {
+    background: linear-gradient(135deg, var(--spider-red), var(--spider-blue), var(--spider-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 20px rgba(230, 36, 41, 0.3));
+}
+
+.header-text p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.dimension-tag {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 14px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    color: var(--spider-glow);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* ---------- CONTENIDO PRINCIPAL ---------- */
+.contenido {
+    display: grid;
+    /* Grid para dos columnas */
+    grid-template-columns: 1fr 1.3fr;
+    /* Proporción de columnas */
+    gap: 32px;
+    /* Espacio entre columnas */
+}
+
+/* ---------- PANELES GLASS ---------- */
+.glass-panel {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 28px 30px;
+    transition: all 0.3s ease;
+}
+
+.glass-panel:hover {
+    border-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------- FORMULARIO ---------- */
+.formulario h2 {
+    font-family: var(--font-comic);
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 24px;
+    letter-spacing: 1px;
+}
+
+.campo {
+    margin-bottom: 20px;
+    /* Espacio entre campos */
+}
+
+.campo label {
+    display: block;
+    /* Ocupa toda la línea */
+    font-weight: 600;
+    /* Negrita */
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 6px;
+    letter-spacing: 0.03em;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    /* Ocupa todo el ancho */
+    padding: 12px 16px;
+    /* Espacio interno */
+    background: rgba(255, 255, 255, 0.05);
+    /* Fondo semi-transparente */
+    border: 2px solid rgba(255, 255, 255, 0.08);
+    /* Borde sutil */
+    border-radius: 12px;
+    /* Esquinas redondeadas */
+    color: #ffffff;
+    /* Texto blanco */
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    outline: none;
+    /* Elimina el contorno azul */
+}
+
+.campo input:focus,
+.campo select:focus {
+    border-color: var(--spider-red);
+    /* Borde rojo al enfocar */
+    box-shadow: 0 0 25px rgba(230, 36, 41, 0.15);
+    /* Sombra glow roja */
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.campo input::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    /* Color del placeholder */
+}
+
+.campo select option {
+    background: var(--spider-dark);
+    /* Fondo oscuro para opciones */
+    color: #ffffff;
+}
+
+/* ---------- BOTONES ---------- */
+.botones {
+    display: flex;
+    /* Flexbox para alinear */
+    gap: 12px;
+    /* Espacio entre botones */
+    margin-top: 8px;
+    flex-wrap: wrap;
+    /* Permite salto de línea en móvil */
+}
+
+.btn-spider {
+    padding: 12px 28px;
+    /* Espacio interno */
+    background: linear-gradient(135deg, var(--spider-red), #B71C1C);
+    /* Degradado rojo */
+    color: white;
+    /* Texto blanco */
+    border: none;
+    /* Sin borde */
+    border-radius: 12px;
+    /* Esquinas redondeadas */
+    font-family: var(--font-comic);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    /* Cursor de mano */
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 20px rgba(230, 36, 41, 0.3);
+    flex: 1;
+}
+
+.btn-spider:hover {
+    transform: translateY(-3px) scale(1.02);
+    /* Efecto de elevación */
+    box-shadow: 0 8px 35px rgba(230, 36, 41, 0.5);
+    /* Sombra más intensa */
+}
+
+.btn-spider:active {
+    transform: translateY(0) scale(0.98);
+    /* Efecto de presión */
+}
+
+.btn-dimension {
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    font-family: var(--font-comic);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    flex: 1;
+}
+
+.btn-dimension:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+/* ---------- CONTADOR DE HÉROES ---------- */
+.hero-counter {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.counter-label {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.counter-number {
+    font-family: var(--font-comic);
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, var(--spider-red), var(--spider-glow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ---------- LISTA DE HÉROES ---------- */
+.estudiantes h2 {
+    font-family: var(--font-comic);
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-grid {
+    display: grid;
+    /* Grid para tarjetas */
+    grid-template-columns: 1fr;
+    /* Una columna por defecto */
+    gap: 12px;
+    /* Espacio entre tarjetas */
+    min-height: 100px;
+    /* Altura mínima */
+}
+
+/* ---------- TARJETA DE HÉROE ---------- */
+.hero-card {
+    display: flex;
+    /* Flexbox para alinear */
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: space-between;
+    /* Espacio entre elementos */
+    padding: 14px 20px;
+    /* Espacio interno */
+    background: rgba(255, 255, 255, 0.03);
+    /* Fondo sutil */
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    /* Borde sutil */
+    border-radius: 14px;
+    /* Esquinas redondeadas */
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.hero-card:hover {
+    background: rgba(255, 255, 255, 0.06);
+    transform: translateX(6px) scale(1.01);
+    border-color: rgba(230, 36, 41, 0.3);
+}
+
+.hero-card .hero-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.hero-card .hero-name {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #ffffff;
+}
+
+.hero-card .hero-universe {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.03em;
+}
+
+.hero-card .hero-universe .dimension-badge {
+    display: inline-block;
+    padding: 1px 10px;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 12px;
+    color: var(--spider-glow);
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.hero-card .btn-eliminar {
+    padding: 6px 16px;
+    background: rgba(230, 36, 41, 0.15);
+    color: var(--spider-red);
+    border: 1px solid rgba(230, 36, 41, 0.2);
+    border-radius: 8px;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-card .btn-eliminar:hover {
+    background: var(--spider-red);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(230, 36, 41, 0.3);
+}
+
+/* ---------- ESTADO VACÍO ---------- */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.empty-state .empty-icon {
+    font-size: 48px;
+    margin-bottom: 12px;
+    opacity: 0.5;
+    animation: float 4s ease-in-out infinite;
+}
+
+.empty-state p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.empty-state .empty-sub {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin-top: 4px;
+}
+
+.empty-state.hidden {
+    display: none;
+}
+
+/* ---------- PIE DE PÁGINA ---------- */
+.pie {
+    margin-top: 32px;
+    /* Espacio superior */
+    padding: 20px 28px;
+    /* Espacio interno */
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    /* Esquinas redondeadas */
+    position: relative;
+    overflow: hidden;
+}
+
+.pie .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.pie #estado {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.pie .footer-details {
+    display: flex;
+    gap: 20px;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.03em;
+}
+
+.pie .footer-details span {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+/* Telaraña decorativa en el footer */
+.spider-web {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 120px;
+    height: 80px;
+    background:
+        /* Líneas de telaraña */
+        radial-gradient(circle at 100% 100%,
+            transparent 30%,
+            rgba(255, 255, 255, 0.02) 30%,
+            rgba(255, 255, 255, 0.02) 31%,
+            transparent 31%);
+    background-size: 20px 20px;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    .contenido {
+        grid-template-columns: 1fr;
+        /* Una sola columna en tablet */
+        gap: 24px;
+    }
+
+    .encabezado {
+        flex-direction: column;
+        /* Columna en móvil */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .header-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .botones {
+        flex-direction: column;
+        /* Botones en columna */
+    }
+}
+
+@media (max-width: 600px) {
+    .encabezado {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .header-text h1 {
+        font-size: 1.4rem;
+    }
+
+    .header-text p {
+        font-size: 0.8rem;
+    }
+
+    .glass-panel {
+        padding: 18px 16px;
+        border-radius: 14px;
+    }
+
+    .formulario h2,
+    .estudiantes h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-card {
+        flex-direction: column;
+        /* Columna en móvil muy pequeño */
+        align-items: stretch;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero-card .btn-eliminar {
+        align-self: center;
+    }
+
+    .pie .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pie .footer-details {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .logo-spider {
+        font-size: 28px;
+    }
+
+    .counter-number {
+        font-size: 1.4rem;
+    }
+}
+
+/* ---------- ACCESIBILIDAD ---------- */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+:focus-visible {
+    outline: 2px solid var(--spider-red);
+    outline-offset: 2px;
+}

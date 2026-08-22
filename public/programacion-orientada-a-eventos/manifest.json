@@ -1,0 +1,210 @@
+{
+  "courseId": 1742,
+  "course": "PROGRAMACIÓN ORIENTADA A EVENTOS",
+  "capturedAt": "2026-08-22",
+  "source": "https://univo.instructure.com/courses/1742",
+  "classes": [
+    {
+      "title": "Presentación del Instructor ",
+      "module": "Prácticas de Laboratorio - Jueves 1:00 - 2:40 pm CT7",
+      "type": "Page",
+      "filename": "clases/presentacion-del-instructor.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/presentacion-del-instructor",
+      "hasContent": true
+    },
+    {
+      "title": "Practica 1",
+      "module": "Prácticas de Laboratorio - Jueves 1:00 - 2:40 pm CT7",
+      "type": "Page",
+      "filename": "clases/practica-1.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/practica-1",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 1 Lunes 13/06/26",
+      "module": "Semana 1 del 13 al 19 de julio",
+      "type": "Page",
+      "filename": "clases/clase-1-lunes-13-06-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-1-lunes-13-slash-06-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 2 Miercoles 15/06/26",
+      "module": "Semana 1 del 13 al 19 de julio",
+      "type": "Page",
+      "filename": "clases/clase-2-miercoles-15-06-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-2-miercoles-15-slash-06-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 3  Lunes 20/07/26",
+      "module": "Semana 2 del 20 al 26 de julio",
+      "type": "Page",
+      "filename": "clases/clase-3-lunes-20-07-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-3-lunes-20-slash-07-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 4 Miercoles 22/07/26",
+      "module": "Semana 2 del 20 al 26 de julio",
+      "type": "Page",
+      "filename": "clases/clase-4-miercoles-22-07-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-4-miercoles-22-slash-07-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 5 Lunes 27/07/26",
+      "module": "Semana 3 del 27/07/26 al 02/08/26",
+      "type": "Page",
+      "filename": "clases/clase-5-lunes-27-07-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-5-lunes-27-slash-07-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Caso de Estudio",
+      "module": "Semana 3 del 27/07/26 al 02/08/26",
+      "type": "Assignment",
+      "filename": "clases/caso-de-estudio.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/assignments/13530",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 6 Miercoles 29/07/26",
+      "module": "Semana 3 del 27/07/26 al 02/08/26",
+      "type": "Page",
+      "filename": "clases/clase-6-miercoles-29-07-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-6-miercoles-29-slash-07-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 7 Lunes 10/08/26",
+      "module": "Semana 4 del 10/08/26 al 16/08/26",
+      "type": "Page",
+      "filename": "clases/clase-7-lunes-10-08-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-7-lunes-10-slash-08-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 8 Miercoles 12/08/26",
+      "module": "Semana 4 del 10/08/26 al 16/08/26",
+      "type": "Page",
+      "filename": "clases/clase-8-miercoles-12-08-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-8-miercoles-12-slash-08-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 9 Lunes 17/08/26",
+      "module": "Semana 5 del 17/08/26 al 23/08/26",
+      "type": "Page",
+      "filename": "clases/clase-9-lunes-17-08-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-9-lunes-17-slash-08-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Clase 10 Miercoles 19/08/26",
+      "module": "Semana 5 del 17/08/26 al 23/08/26",
+      "type": "Page",
+      "filename": "clases/clase-10-miercoles-19-08-26.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/clase-10-miercoles-19-slash-08-slash-26",
+      "hasContent": true
+    },
+    {
+      "title": "Glosario",
+      "module": "Extra",
+      "type": "Page",
+      "filename": "clases/glosario.html",
+      "sourceUrl": "https://univo.instructure.com/courses/1742/pages/glosario",
+      "hasContent": true
+    }
+  ],
+  "files": [
+    {
+      "id": 383554,
+      "filename": "383554-POE.png",
+      "originalName": "POE.png",
+      "contentType": "image/png",
+      "size": 1573073,
+      "source": "Canvas"
+    },
+    {
+      "id": 406451,
+      "filename": "406451-script.ts",
+      "originalName": "script.ts",
+      "contentType": "text/plain",
+      "size": 5786,
+      "source": "Canvas"
+    },
+    {
+      "id": 406475,
+      "filename": "406475-instrucciones.txt",
+      "originalName": "instrucciones.txt",
+      "contentType": "text/plain",
+      "size": 580,
+      "source": "Canvas"
+    },
+    {
+      "id": 409300,
+      "filename": "409300-Temas expo.docx",
+      "originalName": "Temas expo.docx",
+      "contentType": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "size": 19119,
+      "source": "Canvas"
+    },
+    {
+      "id": 419452,
+      "filename": "419452-script.ts",
+      "originalName": "script.ts",
+      "contentType": "text/plain",
+      "size": 13159,
+      "source": "Canvas"
+    },
+    {
+      "id": 419453,
+      "filename": "419453-style.css",
+      "originalName": "style.css",
+      "contentType": "text/css",
+      "size": 17449,
+      "source": "Canvas"
+    },
+    {
+      "id": 419455,
+      "filename": "419455-index.html",
+      "originalName": "index.html",
+      "contentType": "text/html",
+      "size": 3935,
+      "source": "Canvas"
+    },
+    {
+      "id": 430583,
+      "filename": "430583-index.html",
+      "originalName": "index.html",
+      "contentType": "text/html",
+      "size": 574,
+      "source": "Canvas"
+    },
+    {
+      "id": 430584,
+      "filename": "430584-styles.css",
+      "originalName": "styles.css",
+      "contentType": "text/css",
+      "size": 1062,
+      "source": "Canvas"
+    },
+    {
+      "id": 430585,
+      "filename": "430585-app.ts",
+      "originalName": "app.ts",
+      "contentType": "application/x-linguist",
+      "size": 1194,
+      "source": "Canvas"
+    },
+    {
+      "id": 385326,
+      "filename": "385326-Recurso 1.png",
+      "originalName": "Recurso 1.png",
+      "contentType": "image/png",
+      "size": 391430,
+      "source": "Canvas"
+    }
+  ]
+}

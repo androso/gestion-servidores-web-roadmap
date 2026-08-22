@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 37 — ESTRUCTURA DE DATOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 37</h1>
+    <p><strong>Curso:</strong> ESTRUCTURA DE DATOS</p>
+    <p><strong>Módulo:</strong> Semana 19</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1748/pages/clase-37">https://univo.instructure.com/courses/1748/pages/clase-37</a></p>
+  </header>
+  <main>
+<div style="max-width: 900px; width: 100%; margin: 40px auto; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #ffffff; border: 1px solid #e2e8f0; border-radius: 24px; overflow: hidden; color: #334155;" title="contenido insertado"><header style="background: linear-gradient(135deg, #0f2027 0%, #0e3f68 50%, #2980b9 100%); padding: 50px 40px; border-bottom: 8px solid #fbc30b; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 35px; flex-wrap: wrap;">
+<div style="flex-shrink: 0; margin: 0 auto; text-align: center; background: rgba(255,255,255,0.05); padding: 15px; border-radius: 50%;"><img style="max-height: 110px; width: auto; display: block; border: 0;" src="https://univo.instructure.com/courses/1316/files/137302/preview" alt="Logo UNIVO" data-api-endpoint="https://univo.instructure.com/api/v1/courses/1316/files/137302" data-api-returntype="File" loading="lazy"></div>
+<div style="flex: 1; min-width: 280px; text-align: left;">
+<div style="margin-bottom: 18px; display: flex; justify-content: flex-start; flex-wrap: wrap; gap: 12px;">
+<div style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 30px; font-size: 0.85em;">SEMANA [ 00 ]</div>
+<div style="background: #ef4444; color: white; padding: 6px 20px; border-radius: 30px; font-size: 0.85em;">MODALIDAD [ PRESENCIAL / VIRTUAL ]</div>
+</div>
+<h2 style="margin: 0; color: #ffffff; font-size: 2.4em; line-height: 1.2;">Tema: [ Nombre del Tema ]</h2>
+<p style="margin: 12px 0 0; color: #fbc30b; font-size: 1.25em;">[ Escriba aquí el subtema o descripción breve ]</p>
+</div>
+</div>
+</header>
+<div style="padding: 40px 30px; background-color: #fafbfc;">
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border: 1px solid #e2e8f0; border-top: 6px solid #0e3f68;">
+<div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px; margin-bottom: 25px;">
+<h3 style="margin: 0; color: #0e3f68; font-size: 1.7em; display: flex; align-items: center; gap: 10px;">Detalles de la Sesión</h3>
+<span style="background: #f1f5f9; color: #334155; padding: 8px 20px; border-radius: 30px; border: 1px solid #cbd5e1; font-size: 0.9em; display: inline-flex; align-items: center; gap: 6px;"> Fecha: [ DD/MM/AAAA ] </span></div>
+<div style="background: linear-gradient(to right, #f8fafc, #ffffff); border-left: 5px solid #3b82f6; padding: 22px 25px; border-radius: 0 12px 12px 0; margin-bottom: 35px;">
+<p style="margin: 0; color: #475569; font-size: 1.05em; line-height: 1.6;"><strong style="color: #0f172a; font-size: 1.1em; display: block; margin-bottom: 5px;">Indicaciones Generales:</strong> [ Escriba aquí las instrucciones de la sesión, qué deben leer los estudiantes antes de clase, o cómo se desarrollará la actividad... ]</p>
+</div>
+<div style="background: linear-gradient(135deg, #f0f7ff 0%, #f8fafc 100%); padding: 30px; border-radius: 16px; border: 1px solid #e0f2fe;">
+<h4 style="margin: 0 0 20px 0; color: #0e3f68; font-size: 1.2em; display: flex; align-items: center; gap: 10px;">Competencias a Desarrollar</h4>
+<ul style="margin: 0; padding-left: 25px; color: #334155; font-size: 1em; line-height: 1.7; list-style-type: disc;">
+<li style="margin-bottom: 12px; padding-left: 5px;">[ Escriba aquí la primera competencia ].</li>
+<li style="margin-bottom: 12px; padding-left: 5px;">[ Escriba aquí la segunda competencia ].</li>
+<li style="margin-bottom: 10px; padding-left: 5px;">[ Escriba aquí la tercera competencia ].</li>
+</ul>
+</div>
+</div>
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border: 1px solid #e2e8f0; border-top: 6px solid #fbc30b;">
+<h3 style="margin: 0 0 25px 0; color: #0e3f68; font-size: 1.7em; display: flex; align-items: center; gap: 10px;">Recursos y Multimedia</h3>
+<div style="background: #fffdf2; border: 1px solid #fef08a; border-left: 5px solid #fbc30b; padding: 18px 20px; margin-bottom: 30px; border-radius: 8px;">
+<p style="margin: 0; color: #614a00; font-size: 0.95em; line-height: 1.5;"><em><strong>Docente:</strong> Reemplace los textos azules insertando sus <strong>documentos</strong> desde Canvas. Para <strong>videos</strong>, borre el texto gris e incruste su código HTML. <br><strong>Para eliminar un recuadro que no utilice, sombréelo por completo con el ratón y presione la tecla Borrar (Backspace).</strong></em></p>
+</div>
+<div style="display: flex; align-items: center; gap: 20px; background: #f8fafc; padding: 20px 25px; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 15px;">
+<div style="flex: 1;">
+<p style="margin: 0 0 5px 0; color: #334155; font-size: 1.1em;">[ Nombre del Documento, Lectura o PDF ]</p>
+<p style="margin: 0;"><a style="color: #2980b9; text-decoration: none; font-size: 1em; display: inline-block;" href="#">[ Seleccione este texto y vincule su archivo aquí. Si no lo usará, borre este cuadro ]</a></p>
+</div>
+</div>
+<div style="display: flex; align-items: flex-start; gap: 20px; background: #f8fafc; padding: 20px 25px; border-radius: 16px; border: 1px solid #e2e8f0; margin-bottom: 15px;">
+<div style="flex: 1; width: 100%;">
+<p style="margin: 0 0 12px 0; color: #334155; font-size: 1.1em; padding-top: 5px;">[ Título de la Videoclase o Video Complementario ]</p>
+<p style="margin: 0; color: #3b82f6; font-size: 0.95em;"><em>[ Seleccione este texto, bórrelo e incruste su video aquí. Si no usará video, borre este cuadro ]</em></p>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 20px; background: #f8fafc; padding: 20px 25px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<div style="flex: 1;">
+<p style="margin: 0 0 5px 0; color: #334155; font-size: 1.1em;">[ Nombre del Enlace Externo o Recurso ]</p>
+<p style="margin: 0;"><a style="color: #2980b9; text-decoration: none; font-size: 1em; display: inline-block;" href="#">[ Seleccione este texto y pegue su enlace aquí. Si no lo usará, borre este cuadro ]</a></p>
+</div>
+</div>
+</div>
+<div style="background-color: #ffffff; border-radius: 20px; padding: 35px; margin-bottom: 45px; border: 1px solid #e2e8f0; border-top: 6px solid #2980b9;">
+<h3 style="margin: 0 0 25px 0; color: #0e3f68; font-size: 1.7em; display: flex; align-items: center; gap: 10px;">Actividades y Tareas</h3>
+<div style="background: #f0f7ff; border: 1px solid #bfdbfe; border-left: 5px solid #3b82f6; padding: 18px 20px; margin-bottom: 30px; border-radius: 8px;">
+<p style="margin: 0; color: #1e3a8a; font-size: 0.95em; line-height: 1.5;"><em><strong>Docente:</strong> En este espacio agregue las tareas o actividades evaluadas de la semana. <strong>Si esta sesión no tiene actividades, sombree toda la sección con el ratón y presione Borrar.</strong></em></p>
+</div>
+<div style="display: flex; align-items: flex-start; gap: 20px; background: #f8fafc; padding: 20px 25px; border-radius: 16px; border: 1px solid #e2e8f0;">
+<div style="flex: 1; width: 100%;">
+<p style="margin: 0 0 5px 0; color: #334155; font-size: 1.1em;">[ Nombre de la Actividad o Tarea ]</p>
+<p style="margin: 0 0 10px 0; color: #64748b; font-size: 0.95em;">[ Breve descripción de lo que el estudiante debe hacer, instrucciones principales o fecha de entrega ]</p>
+<p style="margin: 0;"><a style="color: #2980b9; text-decoration: none; font-size: 1em; display: inline-block;" href="#">[ Seleccione este texto y vincule la tarea aquí. Si no hay tarea, borre el cuadro ]</a></p>
+</div>
+</div>
+</div>
+<div style="background: linear-gradient(135deg, #fffbeb 0%, #ffffff 100%); border-radius: 20px; padding: 35px; margin-bottom: 45px; border: 1px solid #fef3c7; border-left: 6px solid #f59e0b; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 25px;">
+<div style="display: flex; align-items: center; gap: 20px; flex: 1; min-width: 250px;">
+<div style="font-size: 45px; flex-shrink: 0;">💬</div>
+<div>
+<h4 style="margin: 0 0 8px 0; color: #b45309; font-size: 1.35em;">¿Tienes dudas sobre los temas vistos?</h4>
+<p style="margin: 0; color: #78350f; font-size: 1em; line-height: 1.5;">Participa en el foro de consultas para resolver tus inquietudes con el docente y tus compañeros.</p>
+</div>
+</div>
+<a style="background: #ffffff; color: #b45309; padding: 16px 28px; text-decoration: none; border-radius: 30px; border: 2px solid #fcd34d; font-size: 1em; white-space: nowrap;" title="Ir al Foro" href="#"> INGRESAR AL FORO </a></div>
+<div style="margin-top: 10px; padding-top: 35px; border-top: 2px solid #e2e8f0; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;"><br><br></div>
+</div>
+<footer style="background: linear-gradient(135deg, #0f2027 0%, #0e3f68 50%, #2980b9 100%); color: #ffffff; text-align: center; padding: 15px 20px 10px 20px; border-top: 5px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.9em; color: #e2e8f0; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.85em; color: #ffffff; margin-bottom: 10px;">
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">📞</span> <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">📧</span> <a style="color: #fbc30b; text-decoration: none;" title="Enviar correo a soporte técnico" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;"><span style="font-size: 1.1em;">🕒</span> <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m. &nbsp;|&nbsp; Sábados: 8:00 a. m. a 12:00 m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.2); padding-top: 8px;">
+<p style="margin: 0; font-size: 0.8em; color: #cbd5e1;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

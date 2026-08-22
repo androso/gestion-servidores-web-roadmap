@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 4 Miercoles 22/07/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 4 Miercoles 22/07/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 2 del 20 al 26 de julio</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-4-miercoles-22-slash-07-slash-26">https://univo.instructure.com/courses/1742/pages/clase-4-miercoles-22-slash-07-slash-26</a></p>
+  </header>
+  <main>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 20px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><img id="385326" style="display: block;" src="../archivos/385326-Recurso 1.png" alt="Logo UNIVO" width="80" height="80" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">CLASE TEÓRICA</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 1.5 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">📚 FUNDAMENTOS</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Métodos de Arreglos, Desestructuración y Enumeraciones</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 700px;">Herramientas esenciales para manipular datos de forma elegante y segura en TypeScript</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Última actualización: Julio 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#map">.map()</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#filter">.filter()</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#destructuring">Desestructuración</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#enum">Enumeraciones</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#ejercicios">Ejercicios</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">1.5 horas</span></div>
+</div>
+  
+<div id="map" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #3b82f6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔄</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Método .map()</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es .map()?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.6;"><code style="background: #1e293b; color: #e2e8f0; padding: 2px 8px; border-radius: 4px;">.map()</code> es un método de arreglos que <strong style="color: #1e3a8a;">transforma</strong> cada elemento de un arreglo y devuelve un <strong style="color: #1e3a8a;">nuevo arreglo</strong> con los resultados. No modifica el arreglo original.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Sintaxis</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #60a5fa;">const</span> nuevoArreglo = arregloOriginal.<span style="color: #fbbf24;">map</span>((elemento, índice, arreglo) =&gt; {
+    <span style="color: #fbc30b;">// Transformar el elemento</span>
+    <span style="color: #60a5fa;">return</span> elementoTransformado;
+});</pre>
+</div>
+<div style="margin-top: 8px; background: #f8fafc; border-radius: 8px; padding: 8px 14px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #64748b; font-size: 0.75em;">📌 El <strong style="color: #0e3f68;">índice</strong> y el <strong style="color: #0e3f68;">arreglo</strong> son parámetros opcionales.</p>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Ejemplo práctico</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Duplicar cada número</span>
+<span style="color: #60a5fa;">const</span> numeros = [<span style="color: #f472b6;">1</span>, <span style="color: #f472b6;">2</span>, <span style="color: #f472b6;">3</span>, <span style="color: #f472b6;">4</span>];
+<span style="color: #60a5fa;">const</span> dobles = numeros.<span style="color: #fbbf24;">map</span>(n =&gt; n * <span style="color: #f472b6;">2</span>);
+<span style="color: #fbc30b;">// dobles = [2, 4, 6, 8]</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> <code style="color: #92400e;">.map()</code> es útil para <strong style="color: #92400e;">transformar listas de eventos</strong> o <strong style="color: #92400e;">datos</strong> antes de mostrarlos o procesarlos.</p>
+</div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border: 1px solid #bbf7d0;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong style="color: #22c55e;">✅ Características clave:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li>Devuelve un <strong style="color: #22c55e;">nuevo arreglo</strong> del mismo tamaño que el original.</li>
+<li><strong style="color: #22c55e;">No modifica</strong> el arreglo original (inmutabilidad).</li>
+<li>Se usa para <strong style="color: #22c55e;">transformar</strong> datos (ej: formatear, calcular, extraer).</li>
+<li>Es una alternativa <strong style="color: #22c55e;">más limpia</strong> que un bucle <code>for</code> tradicional.</li>
+</ul>
+</div>
+</div>
+  
+<div id="filter" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🔍</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Método .filter()</h2>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 22px; border: 1px solid #bbf7d0; margin-bottom: 16px;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 ¿Qué es .filter()?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.6;"><code style="background: #1e293b; color: #e2e8f0; padding: 2px 8px; border-radius: 4px;">.filter()</code> es un método de arreglos que crea un <strong style="color: #14532d;">nuevo arreglo</strong> con todos los elementos que <strong style="color: #14532d;">cumplen una condición</strong> (devuelven <code>true</code>). No modifica el arreglo original.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Sintaxis</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #60a5fa;">const</span> filtrados = arregloOriginal.<span style="color: #fbbf24;">filter</span>((elemento, índice, arreglo) =&gt; {
+    <span style="color: #fbc30b;">// Devolver true o false</span>
+    <span style="color: #60a5fa;">return</span> condición;
+});</pre>
+</div>
+<div style="margin-top: 8px; background: #f8fafc; border-radius: 8px; padding: 8px 14px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #64748b; font-size: 0.75em;">📌 Solo los elementos que devuelven <strong style="color: #22c55e;">true</strong> pasan al nuevo arreglo.</p>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Ejemplo práctico</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Filtrar números pares</span>
+<span style="color: #60a5fa;">const</span> numeros = [<span style="color: #f472b6;">1</span>, <span style="color: #f472b6;">2</span>, <span style="color: #f472b6;">3</span>, <span style="color: #f472b6;">4</span>, <span style="color: #f472b6;">5</span>, <span style="color: #f472b6;">6</span>];
+<span style="color: #60a5fa;">const</span> pares = numeros.<span style="color: #fbbf24;">filter</span>(n =&gt; n % <span style="color: #f472b6;">2</span> === <span style="color: #f472b6;">0</span>);
+<span style="color: #fbc30b;">// pares = [2, 4, 6]</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Para POE:</strong> <code style="color: #92400e;">.filter()</code> es útil para <strong style="color: #92400e;">seleccionar eventos específicos</strong> de una lista o <strong style="color: #92400e;">filtrar datos</strong> según el tipo de evento.</p>
+</div>
+</div>
+</div>
+<div style="margin-top: 14px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border: 1px solid #bbf7d0;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong style="color: #22c55e;">✅ Características clave:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li>Devuelve un <strong style="color: #22c55e;">nuevo arreglo</strong> (puede ser más pequeño que el original).</li>
+<li><strong style="color: #22c55e;">No modifica</strong> el arreglo original (inmutabilidad).</li>
+<li>Se usa para <strong style="color: #22c55e;">filtrar</strong> datos según una condición.</li>
+<li>Es una alternativa <strong style="color: #22c55e;">más legible</strong> que un bucle <code>for</code> con <code>if</code>.</li>
+</ul>
+</div>
+
+<div style="margin-top: 16px; background: #f1f5f9; border-radius: 10px; padding: 14px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📊 Comparativa rápida</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 8px; font-size: 0.85em;">
+<div style="background: #eff6ff; padding: 10px 14px; border-radius: 8px; border: 1px solid #bfdbfe;">
+<p style="margin: 0;  color: #1e3a8a;">.map()</p>
+<p style="margin: 4px 0 0 0; color: #475569;">Transforma → <strong style="color: #1e3a8a;">mismo tamaño</strong></p>
+</div>
+<div style="background: #f0fdf4; padding: 10px 14px; border-radius: 8px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d;">.filter()</p>
+<p style="margin: 4px 0 0 0; color: #475569;">Selecciona → <strong style="color: #14532d;">tamaño variable</strong></p>
+</div>
+</div>
+</div>
+</div>
+  
+<div id="destructuring" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📦</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Desestructuración de Objetos y Arreglos</h2>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #ddd6fe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.95em;">📌 ¿Qué es la desestructuración?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.6;">Es una sintaxis <strong style="color: #4c1d95;">rápida y elegante</strong> para extraer propiedades de un objeto o elementos de un arreglo directamente en <strong style="color: #4c1d95;">variables individuales</strong>, sin tener que escribir <code style="background: #1e293b; color: #e2e8f0; padding: 2px 8px; border-radius: 4px;">objeto.propiedad</code> a cada rato.</p>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px;">
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Desestructuración de Objetos</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Sin desestructuración</span>
+<span style="color: #60a5fa;">const</span> usuario = { nombre: <span style="color: #fbbf24;">"Ana"</span>, edad: <span style="color: #f472b6;">25</span>, ciudad: <span style="color: #fbbf24;">"San Salvador"</span> };
+<span style="color: #60a5fa;">const</span> nombre = usuario.nombre;
+<span style="color: #60a5fa;">const</span> edad = usuario.edad;
+
+<span style="color: #fbc30b;">// Con desestructuración</span>
+<span style="color: #60a5fa;">const</span> { nombre, edad, ciudad } = usuario;
+<span style="color: #fbc30b;">// nombre = "Ana", edad = 25, ciudad = "San Salvador"</span></pre>
+</div>
+<div style="margin-top: 8px; background: #fef3c7; border-radius: 8px; padding: 8px 14px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.78em;"><strong>💡 Ventaja:</strong> Extraes <strong style="color: #92400e;">múltiples propiedades en una línea</strong> con el nombre exacto de la propiedad.</p>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Desestructuración con alias</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Cambiar el nombre de la variable</span>
+<span style="color: #60a5fa;">const</span> usuario = { nombre: <span style="color: #fbbf24;">"Ana"</span>, edad: <span style="color: #f472b6;">25</span> };
+<span style="color: #60a5fa;">const</span> { nombre: nombreUsuario, edad: edadUsuario } = usuario;
+<span style="color: #fbc30b;">// nombreUsuario = "Ana", edadUsuario = 25</span>
+
+<span style="color: #fbc30b;">// Con valores por defecto</span>
+<span style="color: #60a5fa;">const</span> { ciudad = <span style="color: #fbbf24;">"Santa Tecla"</span> } = usuario;
+<span style="color: #fbc30b;">// ciudad = "Santa Tecla" (valor por defecto)</span></pre>
+</div>
+</div>
+</div>
+
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Desestructuración de Arreglos</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Sin desestructuración</span>
+<span style="color: #60a5fa;">const</span> colores = [<span style="color: #fbbf24;">"rojo"</span>, <span style="color: #fbbf24;">"verde"</span>, <span style="color: #fbbf24;">"azul"</span>];
+<span style="color: #60a5fa;">const</span> primero = colores[<span style="color: #f472b6;">0</span>];
+<span style="color: #60a5fa;">const</span> segundo = colores[<span style="color: #f472b6;">1</span>];
+
+<span style="color: #fbc30b;">// Con desestructuración</span>
+<span style="color: #60a5fa;">const</span> [primero, segundo, tercero] = colores;
+<span style="color: #fbc30b;">// primero = "rojo", segundo = "verde", tercero = "azul"</span></pre>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Desestructuración con rest</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #fbc30b;">// Omitir elementos y capturar el resto</span>
+<span style="color: #60a5fa;">const</span> colores = [<span style="color: #fbbf24;">"rojo"</span>, <span style="color: #fbbf24;">"verde"</span>, <span style="color: #fbbf24;">"azul"</span>, <span style="color: #fbbf24;">"amarillo"</span>];
+<span style="color: #60a5fa;">const</span> [primero, ...resto] = colores;
+<span style="color: #fbc30b;">// primero = "rojo", resto = ["verde", "azul", "amarillo"]</span></pre>
+</div>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Para POE:</strong> La desestructuración es muy útil para <strong style="color: #92400e;">extraer datos de eventos</strong> que llegan como objetos, o para <strong style="color: #92400e;">capturar parámetros</strong> de funciones manejadoras de eventos.</p>
+</div>
+</div>
+  
+<div id="enum" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Enumeraciones (enum)</h2>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 22px; border: 1px solid #fde68a; margin-bottom: 16px;">
+<p style="margin: 0;  color: #92400e; font-size: 0.95em;">📌 ¿Qué es un enum?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.6;">Un <code style="background: #1e293b; color: #e2e8f0; padding: 2px 8px; border-radius: 4px;">enum</code> (enumeración) sirve para crear un <strong style="color: #92400e;">conjunto de constantes con nombre</strong>. En lugar de usar cadenas de texto sueltas (como <code style="color: #fbbf24;">"ADMIN"</code>, <code style="color: #fbbf24;">"USER"</code>), creamos una <strong style="color: #92400e;">lista cerrada de opciones</strong>. Esto evita <strong style="color: #92400e;">errores de dedo</strong> en tu código.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Sintaxis básica</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #60a5fa;">enum</span> <span style="color: #fbbf24;">Rol</span> {
+    ADMIN,
+    USUARIO,
+    INVITADO
+}
+
+<span style="color: #fbc30b;">// Uso</span>
+<span style="color: #60a5fa;">const</span> miRol: <span style="color: #fbbf24;">Rol</span> = Rol.<span style="color: #fbbf24;">ADMIN</span>;
+console.log(miRol); <span style="color: #fbc30b;">// 0 (valor numérico por defecto)</span></pre>
+</div>
+</div>
+<div>
+<p style="margin: 0 0 8px 0;  color: #0e3f68; font-size: 0.9em;">🔹 Enum con valores string</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 14px 18px; border-radius: 10px; font-family: 'Courier New', monospace; font-size: 0.82em; overflow-x: auto;">
+<pre style="margin: 0; white-space: pre-wrap; color: #e2e8f0;"><span style="color: #60a5fa;">enum</span> <span style="color: #fbbf24;">TipoEvento</span> {
+    CLICK = <span style="color: #fbbf24;">"CLICK"</span>,
+    KEYDOWN = <span style="color: #fbbf24;">"KEYDOWN"</span>,
+    MOUSEMOVE = <span style="color: #fbbf24;">"MOUSEMOVE"</span>
+}
+
+<span style="color: #fbc30b;">// Uso</span>
+<span style="color: #60a5fa;">const</span> evento: <span style="color: #fbbf24;">TipoEvento</span> = TipoEvento.<span style="color: #fbbf24;">CLICK</span>;
+console.log(evento); <span style="color: #fbc30b;">// "CLICK"</span></pre>
+</div>
+</div>
+</div>
+<div style="margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #fef2f2; border-radius: 10px; padding: 14px 18px; border: 1px solid #fecaca;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.9em;">❌ Sin enum (propenso a errores)</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 14px; border-radius: 8px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #fbc30b;">// Error de dedo</span> <span style="color: #60a5fa;">const</span> rol = <span style="color: #fbbf24;">"ADMIN"</span>; <span style="color: #fbc30b;">// OK</span> <span style="color: #60a5fa;">const</span> rol2 = <span style="color: #fbbf24;">"ADMINN"</span>; <span style="color: #fbc30b;">// ¡Error no detectado!</span></div>
+</div>
+<div style="background: #f0fdf4; border-radius: 10px; padding: 14px 18px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.9em;">✅ Con enum (seguro y autocompletado)</p>
+<div style="background: #1e293b; color: #e2e8f0; padding: 10px 14px; border-radius: 8px; font-family: monospace; font-size: 0.75em; margin-top: 6px;"><span style="color: #60a5fa;">enum</span> <span style="color: #fbbf24;">Rol</span> { ADMIN, USUARIO, INVITADO }<br><span style="color: #60a5fa;">const</span> rol = Rol.<span style="color: #fbbf24;">ADMIN</span>; <span style="color: #fbc30b;">// Solo opciones válidas</span> <span style="color: #fbc30b;">// TypeScript no permite Rol.ADMINN</span></div>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Para POE:</strong> Los <code style="color: #92400e;">enum</code> son ideales para <strong style="color: #92400e;">tipos de eventos</strong>, <strong style="color: #92400e;">estados</strong> o <strong style="color: #92400e;">categorías</strong> que tienen un conjunto fijo de valores. Evitan errores y mejoran el autocompletado.</p>
+</div>
+</div>
+  
+<div id="ejercicios" style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 40px 45px; margin-bottom: 30px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 24px;"><span style="font-size: 2em;">✍️</span>
+<h2 style="margin: 0; color: #ffffff; font-size: 1.6em; ">Ejercicios Prácticos</h2>
+<span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.75em; ">30 min</span></div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px; margin-bottom: 18px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #3b82f6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 1</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 10 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">🔄 Transformar productos con .map()</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Dado un arreglo de productos con nombre y precio, usa <code style="color: #34d399;">.map()</code> para crear un nuevo arreglo que incluya un <strong style="color: #fbc30b;">descuento del 10%</strong> a cada precio.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #fbbf24;">// Datos de entrada</span><br><span style="color: #60a5fa;">const</span> productos = [<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Laptop"</span>, precio: <span style="color: #f472b6;">800</span> },<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Mouse"</span>, precio: <span style="color: #f472b6;">25</span> },<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Teclado"</span>, precio: <span style="color: #f472b6;">60</span> }<br>];<br><br><span style="color: #fbc30b;">// TODO: Usar .map() para aplicar descuento del 10%</span><br><span style="color: #fbc30b;">// Resultado esperado: [{ nombre: "Laptop", precio: 720 }, ...]</span></p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #3b82f6;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #60a5fa;">🎯 Objetivo:</strong> Practicar <strong style="color: #60a5fa;">.map()</strong> y <strong style="color: #60a5fa;">transformación de datos</strong>.</p>
+</div>
+</div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px; margin-bottom: 18px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #22c55e; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 2</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 10 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">🔍 Filtrar productos con .filter()</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Usando el mismo arreglo de productos, usa <code style="color: #34d399;">.filter()</code> para crear un nuevo arreglo con los productos que cuesten <strong style="color: #fbc30b;">más de $50</strong>.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #fbbf24;">// Datos de entrada</span><br><span style="color: #60a5fa;">const</span> productos = [<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Laptop"</span>, precio: <span style="color: #f472b6;">800</span> },<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Mouse"</span>, precio: <span style="color: #f472b6;">25</span> },<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"Monitor"</span>, precio: <span style="color: #f472b6;">200</span> },<br>&nbsp;&nbsp;{ nombre: <span style="color: #fbbf24;">"USB"</span>, precio: <span style="color: #f472b6;">15</span> }<br>];<br><br><span style="color: #fbc30b;">// TODO: Usar .filter() para productos &gt; $50</span><br><span style="color: #fbc30b;">// Resultado esperado: Laptop (800), Monitor (200)</span></p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #22c55e;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #34d399;">🎯 Objetivo:</strong> Practicar <strong style="color: #34d399;">.filter()</strong> y <strong style="color: #34d399;">condiciones de filtrado</strong>.</p>
+</div>
+</div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px; margin-bottom: 18px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #8b5cf6; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 3</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 5 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">📦 Desestructurar objeto de evento</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Dado un objeto que representa un evento, usa <strong style="color: #fbc30b;">desestructuración</strong> para extraer sus propiedades en variables individuales.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #fbbf24;">// Objeto de evento</span><br><span style="color: #60a5fa;">const</span> evento = {<br>&nbsp;&nbsp;tipo: <span style="color: #fbbf24;">"CLICK"</span>,<br>&nbsp;&nbsp;coordenadas: { x: <span style="color: #f472b6;">100</span>, y: <span style="color: #f472b6;">200</span> },<br>&nbsp;&nbsp;usuario: <span style="color: #fbbf24;">"Ana"</span><br>};<br><br><span style="color: #fbc30b;">// TODO: Desestructurar en: tipo, x, y, usuario</span></p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #8b5cf6;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #a78bfa;">🎯 Objetivo:</strong> Practicar <strong style="color: #a78bfa;">desestructuración de objetos anidados</strong>.</p>
+</div>
+</div>
+
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 14px; padding: 22px 28px;">
+<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;"><span style="background: #f59e0b; color: white; padding: 2px 14px; border-radius: 100px; font-size: 0.65em; ">EJERCICIO 4</span> <span style="color: #94a3b8; font-size: 0.75em;">⏱️ 5 min</span></div>
+<h4 style="margin: 0 0 8px 0; color: #fbc30b; font-size: 1em;">📋 Crear enum para estados de usuario</h4>
+<p style="margin: 0 0 12px 0; color: #94a3b8; font-size: 0.9em; line-height: 1.6;"><strong style="color: #e2e8f0;">Enunciado:</strong> Define un <code style="color: #34d399;">enum</code> llamado <strong style="color: #fbc30b;">EstadoUsuario</strong> con los valores: <code style="color: #fbbf24;">ACTIVO</code>, <code style="color: #fbbf24;">INACTIVO</code>, <code style="color: #fbbf24;">SUSPENDIDO</code>. Luego crea una variable que use este enum.</p>
+<div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; padding: 12px 16px;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.75em; font-family: monospace;"><span style="color: #fbc30b;">// TODO: Definir enum EstadoUsuario</span><br><span style="color: #fbc30b;">// TODO: Crear variable con estado ACTIVO</span></p>
+</div>
+<div style="margin-top: 10px; background: rgba(251,195,11,0.06); padding: 8px 14px; border-radius: 8px; border-left: 3px solid #f59e0b;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.78em;"><strong style="color: #f59e0b;">🎯 Objetivo:</strong> Practicar la creación y uso de <strong style="color: #f59e0b;">enumeraciones</strong>.</p>
+</div>
+</div>
+
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Consejo:</strong> Estos conceptos son herramientas esenciales para manipular datos de forma elegante en TypeScript.</p>
+</div>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📚</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Documentación de TypeScript</h2>
+</div>
+<p style="margin: 0 0 16px 0; color: #475569; font-size: 0.95em; line-height: 1.6;">Recursos oficiales para profundizar en estos temas:</p>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📖 Array Methods</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">map, filter, reduce y más</p>
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📦 Destructuring</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Objetos y arreglos</p>
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">📋 Enums</p>
+<p style="margin: 4px 0 0 0; color: #64748b; font-size: 0.75em;">Enumeraciones en TypeScript</p>
+</div>
+<div style="margin-top: 14px; background: #f1f5f9; border-radius: 10px; padding: 12px 18px; border: 1px solid #e2e8f0;">
+<p style="margin: 0; color: #64748b; font-size: 0.82em;"><strong style="color: #0e3f68;">💡 Recomendación:</strong> Estos tres conceptos (map, filter, destructuring y enum) son herramientas que usarás <strong style="color: #0e3f68;">constantemente</strong> en cualquier proyecto TypeScript.</p>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><br><strong style="color: #fbc30b; font-size: 1.05em;">PORGRAMACION ORIENTADA A OBJETO | ING. ADOLFO HERRERA</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;"><span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clase 9 Lunes 17/08/26 — PROGRAMACIÓN ORIENTADA A EVENTOS</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+    body { max-width: 1040px; margin: 0 auto; padding: 32px 20px 72px; color: #172033; line-height: 1.55; }
+    .archive-header { border-bottom: 1px solid #d8dee9; margin-bottom: 28px; padding-bottom: 20px; }
+    .archive-header p { margin: 5px 0; color: #566074; }
+    .archive-header a { color: #2457c5; }
+    img, video, iframe { max-width: 100%; }
+    pre { overflow-x: auto; padding: 16px; background: #f4f6f8; border-radius: 8px; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #d8dee9; padding: 8px; vertical-align: top; }
+  </style>
+</head>
+<body>
+  <header class="archive-header">
+    <h1>Clase 9 Lunes 17/08/26</h1>
+    <p><strong>Curso:</strong> PROGRAMACIÓN ORIENTADA A EVENTOS</p>
+    <p><strong>Módulo:</strong> Semana 5 del 17/08/26 al 23/08/26</p>
+    <p><strong>Fuente:</strong> <a href="https://univo.instructure.com/courses/1742/pages/clase-9-lunes-17-slash-08-slash-26">https://univo.instructure.com/courses/1742/pages/clase-9-lunes-17-slash-08-slash-26</a></p>
+  </header>
+  <main>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<div style="max-width: 1100px; width: 100%; margin: 0 auto; font-family: 'Inter', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: #f8fafc; border-radius: 32px; overflow: hidden; color: #0f172a; border: 1px solid #e2e8f0; ">  <header style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 30%, #0e3f68 70%, #1e4a7a 100%); padding: 50px 50px 40px; border-bottom: none; position: relative; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap; position: relative; z-index: 1;">
+<div style="flex-shrink: 0;">
+<div style="background: rgba(255,255,255,0.06);  padding: 18px; border-radius: 24px; border: 1px solid rgba(255,255,255,0.08);"><span style="font-size: 3.5em; display: block;"><img id="385326" src="../archivos/385326-Recurso 1.png" alt="Recurso 1.png" width="109" height="109" loading="lazy" data-api-endpoint="https://univo.instructure.com/api/v1../archivos/385326-Recurso 1.png" data-api-returntype="File"></span></div>
+</div>
+<div style="flex: 1; min-width: 280px;">
+<div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px;"><span style="background: #fbc30b; color: #0f172a; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   ">CLASE TEÓRICA</span> <span style="background: rgba(255,255,255,0.12); color: #e2e8f0; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(255,255,255,0.06);">⏱️ 2 HORAS</span> <span style="background: rgba(251,195,11,0.15); color: #fbc30b; padding: 6px 20px; border-radius: 100px; font-size: 0.75em;   border: 1px solid rgba(251,195,11,0.15);">🎯 UX/UI</span></div>
+<h1 style="margin: 0; color: #ffffff; font-size: 2.6em;  line-height: 1.15; ">Principios de UX/UI</h1>
+<p style="margin: 12px 0 0 0; color: #94a3b8; font-size: 1.2em;  max-width: 700px;">Usabilidad, accesibilidad, diseño centrado en el usuario y herramientas de diseño (Figma / Draw.io)</p>
+<div style="margin-top: 20px; display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+<div style="display: flex; align-items: center; gap: 8px; color: #cbd5e1; font-size: 0.85em;"><span>Disponible para estudiantes</span></div>
+<span style="color: #94a3b8; font-size: 0.85em;">📅 Última actualización: Agosto 2026</span></div>
+</div>
+</div>
+</header>  
+<div style="padding: 40px 45px; background: #f8fafc;">  
+<div style="background: #ffffff; border-radius: 20px; padding: 18px 25px; margin-bottom: 35px; border: 1px solid #e2e8f0;  display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+<div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;"><span style=" color: #0e3f68; font-size: 0.85em;">📋 Temas:</span> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#intro">Introducción</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#ux">UX</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#ui">UI</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#usabilidad">Usabilidad</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#accesibilidad">Accesibilidad</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#figma">Figma</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#drawio">Draw.io</a> <a style="color: #3b82f6; text-decoration: none; font-size: 0.8em; padding: 3px 14px; background: #eff6ff; border-radius: 100px;" href="#caso">Caso de Estudio</a></div>
+<div style="display: flex; align-items: center; gap: 8px; background: #f1f5f9; padding: 4px 16px; border-radius: 100px;"><span style="color: #475569; font-size: 0.75em;">⏱️ Duración:</span> <span style=" color: #0e3f68; font-size: 0.85em;">2 horas</span></div>
+</div>
+  
+<div id="intro" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🎯</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Introducción al Diseño UX/UI</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 ¿Qué es el Diseño UX/UI?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">El diseño UX/UI es la disciplina que se encarga de crear <strong style="color: #1e3a8a;">experiencias digitales significativas</strong> y <strong style="color: #1e3a8a;">agradables</strong> para los usuarios. Combina la <strong style="color: #1e3a8a;">investigación</strong>, la <strong style="color: #1e3a8a;">psicología</strong> y el <strong style="color: #1e3a8a;">diseño visual</strong> para construir productos que sean <strong style="color: #1e3a8a;">útiles</strong>, <strong style="color: #1e3a8a;">usables</strong> y <strong style="color: #1e3a8a;">deseables</strong>.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Importancia del diseño en POE</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li>Una buena interfaz <strong style="color: #0e3f68;">mejora la interacción</strong> del usuario con los eventos.</li>
+<li>El diseño <strong style="color: #0e3f68;">guía al usuario</strong> sobre qué acciones puede realizar.</li>
+<li>La usabilidad <strong style="color: #0e3f68;">reduce errores</strong> y frustración.</li>
+<li>La accesibilidad <strong style="color: #0e3f68;">amplía el alcance</strong> de la aplicación.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Beneficios del buen diseño</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Mayor satisfacción</strong> del usuario.</li>
+<li><strong style="color: #0e3f68;">Menos tiempo</strong> de aprendizaje.</li>
+<li><strong style="color: #0e3f68;">Menor tasa</strong> de errores.</li>
+<li><strong style="color: #0e3f68;">Mayor retención</strong> y fidelización.</li>
+<li><strong style="color: #0e3f68;">Ventaja competitiva</strong> en el mercado.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> El diseño UX/UI es fundamental para que los usuarios <strong style="color: #92400e;">interactúen correctamente</strong> con los componentes emisores de eventos (botones, inputs, listas) y <strong style="color: #92400e;">entiendan</strong> el feedback del sistema.</p>
+</div>
+</div>
+  
+<div id="ux" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #3b82f6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🧠</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Experiencia de Usuario (UX)</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 Definición de UX</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #1e3a8a;">User Experience (UX)</strong> o <strong style="color: #1e3a8a;">Experiencia de Usuario</strong> es el conjunto de <strong style="color: #1e3a8a;">percepciones y respuestas emocionales</strong> que una persona experimenta al interactuar con un producto, sistema o servicio. No se trata solo de lo que <strong style="color: #1e3a8a;">funciona</strong>, sino de cómo <strong style="color: #1e3a8a;">se siente</strong> el usuario durante el proceso.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Elementos de UX</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Usabilidad:</strong> Facilidad de uso.</li>
+<li><strong style="color: #0e3f68;">Utilidad:</strong> Resuelve una necesidad real.</li>
+<li><strong style="color: #0e3f68;">Deseabilidad:</strong> Atractivo y placentero.</li>
+<li><strong style="color: #0e3f68;">Accesibilidad:</strong> Para todos los usuarios.</li>
+<li><strong style="color: #0e3f68;">Credibilidad:</strong> Confianza en el producto.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Proceso de diseño UX</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Investigación:</strong> Entender al usuario.</li>
+<li><strong style="color: #0e3f68;">Definición:</strong> Identificar necesidades.</li>
+<li><strong style="color: #0e3f68;">Ideación:</strong> Generar soluciones.</li>
+<li><strong style="color: #0e3f68;">Prototipado:</strong> Crear versiones tempranas.</li>
+<li><strong style="color: #0e3f68;">Pruebas:</strong> Validar con usuarios reales.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Ejemplos de buena UX</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Spotify:</strong> Recomendaciones personalizadas.</li>
+<li><strong style="color: #0e3f68;">Duolingo:</strong> Gamificación del aprendizaje.</li>
+<li><strong style="color: #0e3f68;">Airbnb:</strong> Proceso de reserva intuitivo.</li>
+<li><strong style="color: #0e3f68;">Apple:</strong> Simplicidad y elegancia.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 En POE:</strong> Una buena UX en sistemas de eventos significa que el usuario <strong style="color: #14532d;">entiende claramente</strong> qué acciones puede realizar, <strong style="color: #14532d;">recibe feedback</strong> inmediato y <strong style="color: #14532d;">no se siente perdido</strong> en la interfaz.</p>
+</div>
+</div>
+  
+<div id="ui" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🖥️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Interfaz de Usuario (UI)</h2>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #ddd6fe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.95em;">📌 Definición de UI</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #4c1d95;">User Interface (UI)</strong> o <strong style="color: #4c1d95;">Interfaz de Usuario</strong> es el <strong style="color: #4c1d95;">punto de contacto</strong> entre el usuario y el sistema. Incluye todos los <strong style="color: #4c1d95;">elementos visuales</strong> con los que el usuario interactúa: botones, iconos, colores, tipografía, espaciado, animaciones, etc.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Principios de UI</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Claridad:</strong> Comunicar información de forma simple.</li>
+<li><strong style="color: #0e3f68;">Consistencia:</strong> Elementos similares, comportamiento similar.</li>
+<li><strong style="color: #0e3f68;">Jerarquía:</strong> Guiar la atención del usuario.</li>
+<li><strong style="color: #0e3f68;">Feedback:</strong> Mostrar el resultado de las acciones.</li>
+<li><strong style="color: #0e3f68;">Afectividad:</strong> Generar emociones positivas.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Componentes de UI</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Botones:</strong> Acciones primarias.</li>
+<li><strong style="color: #0e3f68;">Campos de texto:</strong> Entrada de datos.</li>
+<li><strong style="color: #0e3f68;">Menús:</strong> Navegación.</li>
+<li><strong style="color: #0e3f68;">Tarjetas:</strong> Presentación de contenido.</li>
+<li><strong style="color: #0e3f68;">Iconos:</strong> Comunicación visual.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Diferencias UX vs UI</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">UX:</strong> Cómo se siente (experiencia).</li>
+<li><strong style="color: #0e3f68;">UI:</strong> Cómo se ve (interfaz).</li>
+<li><strong style="color: #0e3f68;">UX:</strong> Funcionalidad y flujo.</li>
+<li><strong style="color: #0e3f68;">UI:</strong> Estética y presentación.</li>
+<li><strong style="color: #0e3f68;">UX:</strong> Investigación y pruebas.</li>
+<li><strong style="color: #0e3f68;">UI:</strong> Diseño visual y prototipado.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> La UI debe <strong style="color: #92400e;">comunicar claramente</strong> qué eventos pueden ocurrir (botones visibles, estados de los elementos) y <strong style="color: #92400e;">mostrar feedback</strong> cuando un evento es emitido.</p>
+</div>
+</div>
+  
+<div id="usabilidad" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🎯</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Usabilidad</h2>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 22px; border: 1px solid #bbf7d0; margin-bottom: 16px;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 Definición de Usabilidad</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">La <strong style="color: #14532d;">usabilidad</strong> es la <strong style="color: #14532d;">medida de la calidad</strong> de la experiencia de un usuario al interactuar con un producto. Un producto es usable cuando el usuario puede <strong style="color: #14532d;">lograr sus objetivos</strong> de manera <strong style="color: #14532d;">eficiente</strong>, <strong style="color: #14532d;">efectiva</strong> y <strong style="color: #14532d;">satisfactoria</strong>.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Principios de usabilidad (Jakob Nielsen)</p>
+<ol style="margin: 8px 0 0 0; padding-left: 22px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Visibilidad del estado</strong> del sistema.</li>
+<li><strong style="color: #0e3f68;">Relación</strong> entre el sistema y el mundo real.</li>
+<li><strong style="color: #0e3f68;">Control y libertad</strong> del usuario.</li>
+<li><strong style="color: #0e3f68;">Consistencia</strong> y estándares.</li>
+<li><strong style="color: #0e3f68;">Prevención</strong> de errores.</li>
+<li><strong style="color: #0e3f68;">Reconocimiento</strong> antes que memoria.</li>
+<li><strong style="color: #0e3f68;">Flexibilidad</strong> y eficiencia de uso.</li>
+<li><strong style="color: #0e3f68;">Diseño estético</strong> y minimalista.</li>
+<li><strong style="color: #0e3f68;">Ayuda</strong> para reconocer y recuperarse de errores.</li>
+<li><strong style="color: #0e3f68;">Ayuda y documentación</strong> accesible.</li>
+</ol>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Métricas de usabilidad</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Efectividad:</strong> ¿El usuario logra su objetivo?</li>
+<li><strong style="color: #0e3f68;">Eficiencia:</strong> ¿Cuánto tiempo/recursos usa?</li>
+<li><strong style="color: #0e3f68;">Satisfacción:</strong> ¿Qué tan agradable fue?</li>
+<li><strong style="color: #0e3f68;">Tasa de error:</strong> ¿Cuántos errores comete?</li>
+<li><strong style="color: #0e3f68;">Retención:</strong> ¿Qué tan fácil es recordar?</li>
+</ul>
+<div style="margin-top: 10px; background: #fef3c7; padding: 8px 14px; border-radius: 8px; border-left: 3px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.75em;"><strong>💡 Ejemplo:</strong> Un botón de "Eliminar" debe tener <strong style="color: #92400e;">confirmación</strong> para evitar errores (principio 9).</p>
+</div>
+</div>
+</div>
+</div>
+  
+<div id="accesibilidad" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #f59e0b; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">♿</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Accesibilidad (A11y)</h2>
+</div>
+<div style="background: #fffbeb; border-radius: 12px; padding: 16px 22px; border: 1px solid #fde68a; margin-bottom: 16px;">
+<p style="margin: 0;  color: #92400e; font-size: 0.95em;">📌 Definición de Accesibilidad</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">La <strong style="color: #92400e;">accesibilidad</strong> (A11y) asegura que los productos digitales sean <strong style="color: #92400e;">utilizables por todas las personas</strong>, independientemente de sus <strong style="color: #92400e;">capacidades</strong> o <strong style="color: #92400e;">discapacidades</strong>. Es un <strong style="color: #92400e;">derecho fundamental</strong> y un principio ético del diseño.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de discapacidades</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Visuales:</strong> Baja visión, daltonismo, ceguera.</li>
+<li><strong style="color: #0e3f68;">Auditivas:</strong> Hipoacusia, sordera.</li>
+<li><strong style="color: #0e3f68;">Motoras:</strong> Dificultades de movimiento.</li>
+<li><strong style="color: #0e3f68;">Cognitivas:</strong> Dislexia, memoria limitada.</li>
+<li><strong style="color: #0e3f68;">Temporales:</strong> Lesiones o contextos.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Principios de accesibilidad (WCAG)</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Perceptible:</strong> La información debe ser visible.</li>
+<li><strong style="color: #0e3f68;">Operable:</strong> La interfaz debe ser navegable.</li>
+<li><strong style="color: #0e3f68;">Comprensible:</strong> La información debe ser clara.</li>
+<li><strong style="color: #0e3f68;">Robusto:</strong> Compatible con tecnologías de asistencia.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Buenas prácticas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Usar <strong style="color: #0e3f68;">texto alternativo</strong> en imágenes.</li>
+<li><strong style="color: #0e3f68;">Contraste</strong> adecuado de colores.</li>
+<li><strong style="color: #0e3f68;">Navegación</strong> solo con teclado.</li>
+<li><strong style="color: #0e3f68;">Subtítulos</strong> en videos.</li>
+<li><strong style="color: #0e3f68;">Tamaño de fuente</strong> ajustable.</li>
+<li><strong style="color: #0e3f68;">Etiquetas</strong> en formularios.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 En POE:</strong> La accesibilidad asegura que todos los usuarios puedan <strong style="color: #14532d;">interactuar con los eventos</strong> del sistema, independientemente de sus capacidades. Por ejemplo, los botones deben ser navegables por teclado y los mensajes de error deben ser claros.</p>
+</div>
+</div>
+  
+<div style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #0e3f68; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">❤️</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Diseño Centrado en el Usuario (DCU)</h2>
+</div>
+<div style="background: #eff6ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #bfdbfe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #1e3a8a; font-size: 0.95em;">📌 Definición de DCU</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">El <strong style="color: #1e3a8a;">Diseño Centrado en el Usuario</strong> (DCU) es un enfoque de diseño que <strong style="color: #1e3a8a;">prioriza las necesidades</strong>, <strong style="color: #1e3a8a;">deseos</strong> y <strong style="color: #1e3a8a;">limitaciones</strong> del usuario final en <strong style="color: #1e3a8a;">todas las etapas</strong> del proceso de diseño y desarrollo.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Principios del DCU</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Enfoque en el usuario:</strong> Todo gira en torno al usuario.</li>
+<li><strong style="color: #0e3f68;">Investigación:</strong> Conocer al usuario profundamente.</li>
+<li><strong style="color: #0e3f68;">Prototipado:</strong> Validar ideas temprano.</li>
+<li><strong style="color: #0e3f68;">Iteración:</strong> Mejorar continuamente.</li>
+<li><strong style="color: #0e3f68;">Pruebas:</strong> Validar con usuarios reales.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Etapas del DCU</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">1. Investigación:</strong> Entender al usuario.</li>
+<li><strong style="color: #0e3f68;">2. Definición:</strong> Identificar necesidades.</li>
+<li><strong style="color: #0e3f68;">3. Ideación:</strong> Generar soluciones.</li>
+<li><strong style="color: #0e3f68;">4. Prototipado:</strong> Crear versiones tempranas.</li>
+<li><strong style="color: #0e3f68;">5. Pruebas:</strong> Evaluar con usuarios.</li>
+<li><strong style="color: #0e3f68;">6. Implementación:</strong> Desarrollar el producto.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Beneficios del DCU</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li>Productos más <strong style="color: #0e3f68;">útiles</strong> y <strong style="color: #0e3f68;">usables</strong>.</li>
+<li>Menor <strong style="color: #0e3f68;">riesgo</strong> de fracaso.</li>
+<li>Mayor <strong style="color: #0e3f68;">satisfacción</strong> del usuario.</li>
+<li><strong style="color: #0e3f68;">Retorno de inversión</strong> positivo.</li>
+<li>Mejor <strong style="color: #0e3f68;">reputación</strong> de la marca.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> El DCU asegura que los sistemas basados en eventos sean <strong style="color: #92400e;">intuitivos</strong> y <strong style="color: #92400e;">respondan</strong> a lo que el usuario realmente necesita, no a lo que el programador <strong style="color: #92400e;">cree</strong> que necesita.</p>
+</div>
+</div>
+  
+<div id="figma" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #8b5cf6; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">🎨</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Figma — Diseño de Interfaces</h2>
+</div>
+<div style="background: #f5f3ff; border-radius: 12px; padding: 16px 22px; border: 1px solid #ddd6fe; margin-bottom: 16px;">
+<p style="margin: 0;  color: #4c1d95; font-size: 0.95em;">📌 ¿Qué es Figma?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #4c1d95;">Figma</strong> es una <strong style="color: #4c1d95;">herramienta de diseño colaborativa</strong> basada en la nube. Permite crear <strong style="color: #4c1d95;">prototipos de interfaces</strong>, <strong style="color: #4c1d95;">wireframes</strong> y <strong style="color: #4c1d95;">diseños visuales</strong> de alta fidelidad con <strong style="color: #4c1d95;">colaboración en tiempo real</strong>.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Características principales</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Colaboración en tiempo real:</strong> Múltiples usuarios editando simultáneamente.</li>
+<li><strong style="color: #0e3f68;">Prototipado interactivo:</strong> Crear flujos y animaciones.</li>
+<li><strong style="color: #0e3f68;">Componentes reutilizables:</strong> Crear librerías de diseño.</li>
+<li><strong style="color: #0e3f68;">Comentarios:</strong> Feedback directamente en el diseño.</li>
+<li><strong style="color: #0e3f68;">Auto Layout:</strong> Diseño responsive automático.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🔹 Flujo de trabajo en Figma</p>
+<ol style="margin: 8px 0 0 0; padding-left: 22px; color: #475569; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Wireframes:</strong> Esbozos de baja fidelidad.</li>
+<li><strong style="color: #0e3f68;">Prototipo:</strong> Interacciones entre pantallas.</li>
+<li><strong style="color: #0e3f68;">Diseño final:</strong> Colores, tipografía, iconos.</li>
+<li><strong style="color: #0e3f68;">Testing:</strong> Compartir para validación.</li>
+<li><strong style="color: #0e3f68;">Entrega:</strong> Exportar recursos para desarrollo.</li>
+</ol>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f0fdf4; border-radius: 10px; padding: 12px 18px; border-left: 4px solid #22c55e;">
+<p style="margin: 0; color: #14532d; font-size: 0.85em;"><strong>💡 Consejos para usar Figma:</strong></p>
+<ul style="margin: 6px 0 0 0; padding-left: 20px; color: #14532d; font-size: 0.82em; line-height: 1.8;">
+<li>Usa <strong style="color: #14532d;">Auto Layout</strong> para que los diseños sean flexibles.</li>
+<li>Crea <strong style="color: #14532d;">componentes</strong> para elementos reutilizables (botones, tarjetas).</li>
+<li><strong style="color: #14532d;">Nombrar capas</strong> correctamente para mantener el orden.</li>
+<li>Usa <strong style="color: #14532d;">sistemas de diseño</strong> (Material Design, Apple HIG).</li>
+<li><strong style="color: #14532d;">Prototipa</strong> para validar flujos antes de codificar.</li>
+</ul>
+</div>
+</div>
+  
+<div id="drawio" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #22c55e; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📊</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Draw.io — Diagramas y Flujos</h2>
+</div>
+<div style="background: #f0fdf4; border-radius: 12px; padding: 16px 22px; border: 1px solid #bbf7d0; margin-bottom: 16px;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 ¿Qué es Draw.io?</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;"><strong style="color: #14532d;">Draw.io</strong> (también conocido como diagrams.net) es una <strong style="color: #14532d;">herramienta de diagramación</strong> gratuita y de código abierto. Permite crear <strong style="color: #14532d;">diagramas de flujo</strong>, <strong style="color: #14532d;">mapas de sitio</strong>, <strong style="color: #14532d;">diagramas de clases</strong> y <strong style="color: #14532d;">arquitecturas</strong> de software.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Tipos de diagramas</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Diagramas de flujo:</strong> Procesos y decisiones.</li>
+<li><strong style="color: #0e3f68;">Mapas de sitio:</strong> Estructura de páginas web.</li>
+<li><strong style="color: #0e3f68;">Diagramas UML:</strong> Clases y relaciones.</li>
+<li><strong style="color: #0e3f68;">Arquitectura:</strong> Sistemas y componentes.</li>
+<li><strong style="color: #0e3f68;">Wireframes:</strong> Estructura básica de interfaz.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Características</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Gratuito:</strong> Sin costo, código abierto.</li>
+<li><strong style="color: #0e3f68;">Integración:</strong> Con Google Drive, OneDrive, GitHub.</li>
+<li><strong style="color: #0e3f68;">Plantillas:</strong> Gran variedad para empezar.</li>
+<li><strong style="color: #0e3f68;">Colaboración:</strong> Edición simultánea.</li>
+<li><strong style="color: #0e3f68;">Exportación:</strong> PNG, SVG, PDF, HTML.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.9em;">🔹 Uso en diseño UX/UI</p>
+<ul style="margin: 8px 0 0 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Flujo de usuario:</strong> Cómo navega el usuario.</li>
+<li><strong style="color: #0e3f68;">Mapa de sitio:</strong> Estructura de la aplicación.</li>
+<li><strong style="color: #0e3f68;">Wireframes:</strong> Esbozos de baja fidelidad.</li>
+<li><strong style="color: #0e3f68;">Diagrama de eventos:</strong> Flujo de eventos en POE.</li>
+<li><strong style="color: #0e3f68;">Arquitectura:</strong> Estructura del sistema.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 En POE:</strong> Draw.io es ideal para <strong style="color: #92400e;">mapear el flujo de eventos</strong> en un sistema, mostrando cómo se relacionan los emisores, los eventos y los oyentes.</p>
+</div>
+</div>
+  
+<div id="caso" style="background: #ffffff; border-radius: 24px; padding: 30px 38px; margin-bottom: 30px; border: 1px solid #e2e8f0; ">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;"><span style="font-size: 1.4em; background: #ef4444; color: white; width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center;">📋</span>
+<h2 style="margin: 0; color: #0e3f68; font-size: 1.4em; ">Caso de Estudio: Aplicación de Eventos "UNIVO Connect"</h2>
+</div>
+<div style="background: #fef2f2; border-radius: 12px; padding: 16px 22px; border: 1px solid #fecaca; margin-bottom: 16px;">
+<p style="margin: 0;  color: #991b1b; font-size: 0.95em;">📌 Contexto</p>
+<p style="margin: 8px 0 0 0; color: #475569; font-size: 0.92em; line-height: 1.7;">La Universidad de Oriente quiere desarrollar una aplicación llamada <strong style="color: #991b1b;">"UNIVO Connect"</strong> para que los estudiantes puedan <strong style="color: #991b1b;">registrarse a eventos académicos</strong>, <strong style="color: #991b1b;">recibir notificaciones</strong> y <strong style="color: #991b1b;">gestionar su asistencia</strong>. La aplicación debe ser <strong style="color: #991b1b;">intuitiva</strong>, <strong style="color: #991b1b;">accesible</strong> y <strong style="color: #991b1b;">basada en eventos</strong> para notificar a los usuarios sobre cambios y actualizaciones.</p>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">🎯 Actividad con Figma</p>
+<p style="margin: 8px 0 8px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Tarea:</strong> Diseñar la interfaz de "UNIVO Connect" en Figma.</p>
+<ul style="margin: 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Pantalla 1:</strong> Login (correo, contraseña, botón de acceso).</li>
+<li><strong style="color: #0e3f68;">Pantalla 2:</strong> Dashboard (lista de eventos disponibles).</li>
+<li><strong style="color: #0e3f68;">Pantalla 3:</strong> Detalle del evento (descripción, botón de inscripción).</li>
+<li><strong style="color: #0e3f68;">Pantalla 4:</strong> Mis eventos (inscritos, con opción de cancelar).</li>
+<li><strong style="color: #0e3f68;">Componentes:</strong> Crear un sistema de diseño con botones, tarjetas y tipografía.</li>
+</ul>
+</div>
+<div style="background: #f8fafc; border-radius: 12px; padding: 16px 20px; border: 1px solid #e2e8f0;">
+<p style="margin: 0;  color: #0e3f68; font-size: 0.95em;">📊 Actividad con Draw.io</p>
+<p style="margin: 8px 0 8px 0; color: #475569; font-size: 0.9em; line-height: 1.6;"><strong style="color: #0e3f68;">Tarea:</strong> Diagramar la arquitectura de eventos de "UNIVO Connect" en Draw.io.</p>
+<ul style="margin: 0; padding-left: 20px; color: #475569; font-size: 0.85em; line-height: 1.8;">
+<li><strong style="color: #0e3f68;">Diagrama de flujo:</strong> Proceso de registro a un evento.</li>
+<li><strong style="color: #0e3f68;">Diagrama de eventos:</strong> Emisores, eventos y oyentes.</li>
+<li><strong style="color: #0e3f68;">Mapa de sitio:</strong> Estructura de navegación.</li>
+<li><strong style="color: #0e3f68;">Diagrama de clases:</strong> Entidades (Usuario, Evento, Inscripción).</li>
+<li><strong style="color: #0e3f68;">Diagrama de secuencia:</strong> Flujo de notificaciones.</li>
+</ul>
+</div>
+</div>
+<div style="margin-top: 16px; background: #f0fdf4; border-radius: 12px; padding: 16px 20px; border: 1px solid #bbf7d0;">
+<p style="margin: 0;  color: #14532d; font-size: 0.95em;">📌 Entregables</p>
+<ul style="margin: 8px 0 0 0; padding-left: 22px; color: #14532d; font-size: 0.9em; line-height: 1.8;">
+<li><strong style="color: #14532d;">Figma:</strong> Enlace al prototipo interactivo (4 pantallas + sistema de diseño).</li>
+<li><strong style="color: #14532d;">Draw.io:</strong> Archivo .drawio o enlace con todos los diagramas.</li>
+<li><strong style="color: #14532d;">Documento:</strong> Breve justificación de decisiones de diseño (usabilidad, accesibilidad, DCU).</li>
+</ul>
+</div>
+<div style="margin-top: 16px; background: #fef3c7; padding: 12px 18px; border-radius: 10px; border-left: 4px solid #fbc30b;">
+<p style="margin: 0; color: #78350f; font-size: 0.85em;"><strong>💡 Pasos sugeridos:</strong></p>
+<ol style="margin: 6px 0 0 0; padding-left: 20px; color: #78350f; font-size: 0.82em; line-height: 1.8;">
+<li><strong style="color: #92400e;">Investigación:</strong> Identificar necesidades de los estudiantes (encuestas rápidas).</li>
+<li><strong style="color: #92400e;">Wireframes:</strong> Dibujar la estructura en Draw.io (baja fidelidad).</li>
+<li><strong style="color: #92400e;">Prototipo:</strong> Crear el diseño en Figma (alta fidelidad).</li>
+<li><strong style="color: #92400e;">Diagramas:</strong> Mapear eventos y flujos en Draw.io.</li>
+<li><strong style="color: #92400e;">Validación:</strong> Compartir con compañeros para feedback.</li>
+</ol>
+</div>
+</div>
+  
+<div style="background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); border-radius: 24px; padding: 35px 40px; position: relative; overflow: hidden;">
+<div style="position: relative; z-index: 1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;"><span style="font-size: 2em;">📋</span>
+<h2 style="margin: 0; color: #fbc30b; font-size: 1.5em; ">Resumen de Conceptos Clave</h2>
+</div>
+<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🧠 UX (Experiencia de Usuario)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Cómo <strong style="color: #e2e8f0;">se siente</strong> el usuario al interactuar. Enfoque en <strong style="color: #e2e8f0;">necesidades</strong> y <strong style="color: #e2e8f0;">emociones</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🖥️ UI (Interfaz de Usuario)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Cómo <strong style="color: #e2e8f0;">se ve</strong> la interfaz. Enfoque en <strong style="color: #e2e8f0;">diseño visual</strong> y <strong style="color: #e2e8f0;">estética</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🎯 Usabilidad</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Facilidad de uso. <strong style="color: #e2e8f0;">Eficiencia</strong>, <strong style="color: #e2e8f0;">efectividad</strong> y <strong style="color: #e2e8f0;">satisfacción</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">♿ Accesibilidad</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">Uso para <strong style="color: #e2e8f0;">todas las personas</strong>. Inclusión y <strong style="color: #e2e8f0;">equidad</strong>.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">❤️ DCU (Diseño Centrado en el Usuario)</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;">El usuario es el <strong style="color: #e2e8f0;">centro</strong> del proceso. <strong style="color: #e2e8f0;">Investigación</strong> e <strong style="color: #e2e8f0;">iteración</strong> constante.</p>
+</div>
+<div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.06); border-radius: 12px; padding: 16px 20px;">
+<p style="margin: 0; color: #fbc30b;  font-size: 0.9em;">🎨 Herramientas</p>
+<p style="margin: 6px 0 0 0; color: #94a3b8; font-size: 0.82em; line-height: 1.5;"><strong style="color: #e2e8f0;">Figma:</strong> Diseño UI / <strong style="color: #e2e8f0;">Draw.io:</strong> Diagramas y flujos.</p>
+</div>
+</div>
+<div style="margin-top: 18px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.06); border-radius: 10px; padding: 14px 20px; text-align: center;">
+<p style="margin: 0; color: #94a3b8; font-size: 0.85em;">💡 <strong style="color: #fbc30b;">Conclusión:</strong> El diseño UX/UI es <strong style="color: #fbc30b;">fundamental</strong> para crear productos digitales que <strong style="color: #fbc30b;">resuelvan problemas</strong> de forma <strong style="color: #fbc30b;">efectiva</strong>, <strong style="color: #fbc30b;">placentera</strong> y <strong style="color: #fbc30b;">accesible</strong>. La combinación de usabilidad, accesibilidad y diseño centrado en el usuario, junto con herramientas como Figma y Draw.io, permite construir <strong style="color: #fbc30b;">experiencias memorables</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+  <footer style="background: linear-gradient(135deg, #0f172a 0%, #0e3f68 50%, #1e4a7a 100%); color: #ffffff; text-align: center; padding: 20px 30px 15px; border-top: 4px solid #fbc30b;">
+<p style="margin: 0 0 8px 0; font-size: 0.85em; color: #94a3b8; line-height: 1.4;"><em>Soporte y asistencia en caso de inconvenientes con la plataforma.</em> <br><strong style="color: #fbc30b; font-size: 1.05em;">Dirección de Educación a Distancia - UNIVO</strong></p>
+<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; font-size: 0.8em; color: #94a3b8; margin-bottom: 8px;">
+<div style="display: flex; align-items: center; gap: 6px;">📞 <span>Tel. 2668-3700 Ext. 3747</span></div>
+<div style="display: flex; align-items: center; gap: 6px;">📧 <a style="color: #fbc30b; text-decoration: none;" href="mailto:educacion.distancia@univo.edu.sv">educacion.distancia@univo.edu.sv</a></div>
+<div style="display: flex; align-items: center; gap: 6px;">🕒 <span>Lunes a viernes: 8:00 a. m. a 6:00 p. m.</span></div>
+</div>
+<div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 10px;">
+<p style="margin: 0; font-size: 0.7em; color: #64748b;"><strong>© 2026 Derechos Reservados Universidad de Oriente — STUDIUM EST VIA VERITATIS</strong></p>
+</div>
+</footer></div>
+  </main>
+</body>
+</html>
