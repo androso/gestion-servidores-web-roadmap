@@ -1,6 +1,13 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Balsamiq_Sans, Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
+
+const balsamiqSans = Balsamiq_Sans({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-balsamiq-sans',
+  display: 'swap',
+});
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -13,11 +20,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Gestión de Servidores Web — Roadmap',
-  description: 'Roadmap interactivo de la Unidad 1: contenedores web, IIS, Node.js + Express, seguridad y despliegue.',
+  title: 'Course Roadmaps — Visualizador Interactivo',
+  description: 'Visualizador estático e interactivo de rutas de aprendizaje para cursos universitarios.',
   openGraph: {
-    title: 'Gestión de Servidores Web — Roadmap',
-    description: 'Del primer request a un despliegue defendible.',
+    title: 'Course Roadmaps — Visualizador Interactivo',
+    description: 'Rutas de aprendizaje con trazabilidad académica y seguimiento local.',
     type: 'website',
   },
 };
@@ -30,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${balsamiqSans.variable} font-sans antialiased bg-slate-50 text-slate-900 overflow-x-hidden`}
       >
         {children}
       </body>
