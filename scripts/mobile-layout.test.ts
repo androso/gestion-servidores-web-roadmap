@@ -176,6 +176,7 @@ const COURSE_SLUGS = [
   'estructura-de-datos',
   'programacion-orientada-a-eventos',
   'gestion-servidores-web',
+  'diseno-arquitectura-de-sistemas',
 ] as const;
 
 test('every course keeps numbered steps in order and only skips the poster intro', async () => {

@@ -7,6 +7,8 @@ import estructuraDeDatosData from './estructura-de-datos/roadmap.json';
 import estructuraDeDatosTopics from './estructura-de-datos/topics.json';
 import programacionOrientadaAEventosData from './programacion-orientada-a-eventos/roadmap.json';
 import programacionOrientadaAEventosTopics from './programacion-orientada-a-eventos/topics.json';
+import disenoArquitecturaDeSistemasData from './diseno-arquitectura-de-sistemas/roadmap.json';
+import disenoArquitecturaDeSistemasTopics from './diseno-arquitectura-de-sistemas/topics.json';
 
 export const gestionServidoresWebRoadmap: RoadmapDocument = {
   ...(gestionServidoresWebData as unknown as Omit<RoadmapDocument, 'topics'>),
@@ -28,11 +30,17 @@ export const programacionOrientadaAEventosRoadmap: RoadmapDocument = {
   topics: programacionOrientadaAEventosTopics as Record<string, TopicDetails>,
 };
 
+export const disenoArquitecturaDeSistemasRoadmap: RoadmapDocument = {
+  ...(disenoArquitecturaDeSistemasData as unknown as Omit<RoadmapDocument, 'topics'>),
+  topics: disenoArquitecturaDeSistemasTopics as Record<string, TopicDetails>,
+};
+
 export const roadmaps: RoadmapDocument[] = [
   gestionServidoresWebRoadmap,
   cienciaDeDatosRoadmap,
   estructuraDeDatosRoadmap,
   programacionOrientadaAEventosRoadmap,
+  disenoArquitecturaDeSistemasRoadmap,
 ];
 
 export const roadmapsBySlug: Record<string, RoadmapDocument> = {
@@ -41,6 +49,7 @@ export const roadmapsBySlug: Record<string, RoadmapDocument> = {
   'ciencia-de-datos': cienciaDeDatosRoadmap,
   'estructura-de-datos': estructuraDeDatosRoadmap,
   'programacion-orientada-a-eventos': programacionOrientadaAEventosRoadmap,
+  'diseno-arquitectura-de-sistemas': disenoArquitecturaDeSistemasRoadmap,
 };
 
 export function getRoadmapBySlug(slug?: string | null): RoadmapDocument {

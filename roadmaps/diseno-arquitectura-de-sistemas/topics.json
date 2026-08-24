@@ -1,0 +1,607 @@
+{
+  "course-orientation": {
+    "title": "Orientación del módulo",
+    "content": "# Orientación del módulo\n\nLa asignatura **Diseño de Arquitectura de Sistemas** (código DAS, sección A, Ciclo II-2026) se centra en el ciclo de desarrollo de la arquitectura de un proyecto. Ese ciclo equivale a construir el sistema en las etapas de requerimientos, diseño, documentación y evaluación.\n\nLa competencia del curso es desarrollar un proyecto de arquitectura de software utilizando el ciclo de vida del desarrollo de software. El docente es el Ing. Carlos Filiberto Alfaro Castro; las sesiones son virtuales, lunes y miércoles de 6:00 a 7:40 p. m.\n\nCada cómputo combina dos actividades (30 % + 30 %) y un parcial (40 %). La IA generativa está permitida solo como apoyo (búsqueda, organización, comprensión), no para elaborar por completo productos que deban evidenciar desempeño personal.\n\n### Debes poder\n- Explicar el foco del módulo y su competencia.\n- Relacionar las cuatro etapas del ciclo con las metodologías de desarrollo.\n- Ubicar las evaluaciones del Cómputo 1 (actividades y Parcial I).",
+    "sourceRefs": [
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 1/7 — Nombre, código DAS y ciclo"
+      },
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 2/7 — Descripción y competencias del curso"
+      },
+      {
+        "label": "Clase Bienvenida.pdf",
+        "locator": "Diapositiva 3 — Competencias de la Asignatura"
+      },
+      {
+        "label": "Clase Bienvenida.pdf",
+        "locator": "Diapositiva 5 — Metodología de evaluación"
+      }
+    ]
+  },
+  "architecture-cycle": {
+    "title": "Cuatro etapas del ciclo",
+    "content": "# Cuatro etapas del ciclo\n\nEl sílabo y la clase de bienvenida insisten en el mismo recorte: la arquitectura se desarrolla junto con la construcción del sistema, no al margen de la metodología.\n\n| Etapa | Papel en el módulo |\n| --- | --- |\n| Requerimientos | Qué debe hacer el sistema y bajo qué condiciones |\n| Diseño | Organización de componentes, integración y estilos |\n| Documentación | Comunicar decisiones, vistas y supuestos |\n| Evaluación | Detectar riesgos y oportunidades de mejora |\n\nLos resultados de aprendizaje RA 1–RA 10 recorren ese ciclo: de conceptos y stakeholders hasta SAD, métodos de evaluación y defensa de una propuesta alineada al negocio.",
+    "sourceRefs": [
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 2/7 — Descripción del curso"
+      },
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "pp. 2–3/7 — Resultados de aprendizaje RA 1 a RA 10"
+      },
+      {
+        "label": "Clase Bienvenida.pdf",
+        "locator": "Diapositiva 4 — Generalidades de la asignatura"
+      }
+    ]
+  },
+  "what-is-architecture": {
+    "title": "Qué es arquitectura de software",
+    "content": "# Qué es arquitectura de software\n\nLa arquitectura es la estructura que orienta cómo se organiza y evoluciona un sistema. Define las decisiones importantes: componentes, relaciones, restricciones y criterios de calidad.\n\nLa analogía de la clase es construir un edificio: planos, materiales, estructura y seguridad. En software, esos «planos» son decisiones técnicas que evitan improvisar durante la construcción.\n\n> Una arquitectura no es un dibujo decorativo: es el conjunto de decisiones de alto impacto que dan forma al sistema.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 03 — ¿Qué es la arquitectura de software?"
+      }
+    ]
+  },
+  "architecture-design-code": {
+    "title": "Arquitectura, diseño y código",
+    "content": "# Arquitectura, diseño y código\n\nTres niveles relacionados, pero no equivalentes:\n\n| Nivel | Qué decide |\n| --- | --- |\n| Arquitectura | Estilos, componentes, integración, despliegue y calidad |\n| Diseño | Clases, interfaces, datos, pantallas y flujos internos |\n| Código | Implementación concreta con un lenguaje y herramientas |\n\nConfundirlos produce dos errores simétricos: tratar cada clase como «arquitectura», o creer que un diagrama de despliegue sustituye el diseño detallado.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 04 — Arquitectura, diseño y código"
+      }
+    ]
+  },
+  "why-before-coding": {
+    "title": "Por qué importa antes de programar",
+    "content": "# Por qué importa antes de programar\n\nLa arquitectura reduce riesgos que luego son costosos de corregir:\n\n- **Evita retrabajo:** da una dirección técnica antes de que cada persona construya por separado.\n- **Ordena decisiones:** justifica por qué se elige una tecnología, estilo o patrón.\n- **Mejora comunicación:** permite explicar la solución a usuarios, equipo y dirección.\n- **Cuida calidad:** considera seguridad, rendimiento y mantenimiento desde el inicio.\n\nEl recorrido que propone la clase es: problema → decisiones → construcción → evolución.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 05 — ¿Por qué importa antes de programar?"
+      }
+    ]
+  },
+  "business-to-decisions": {
+    "title": "Del negocio a las decisiones",
+    "content": "# Del negocio a las decisiones\n\nUna arquitectura no solo responde a tecnología: responde a necesidades. La cadena de la clase es:\n\n**Objetivos del negocio → requerimientos → drivers arquitectónicos → decisiones técnicas → sistema viable.**\n\nEjemplo: si el negocio necesita atención 24/7, la arquitectura debe considerar disponibilidad, respaldo, monitoreo y tolerancia a fallos.\n\nLos *stakeholders* (usuarios, cliente, desarrollo, soporte, seguridad, dirección) y los *drivers* (requerimientos críticos, restricciones tecnológicas, presupuesto, seguridad, escalabilidad, integración) son el origen de esas decisiones.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 06 — Arquitectura y objetivos del negocio"
+      },
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 07 — Stakeholders y drivers arquitectónicos"
+      }
+    ]
+  },
+  "solution-components": {
+    "title": "Piezas de una solución",
+    "content": "# Piezas de una solución\n\nPensar en arquitectura es pensar en piezas, responsabilidades y comunicación. La clase agrupa:\n\n- Interfaz de usuario (web / móvil)\n- Lógica de negocio (servicios)\n- Persistencia (base de datos)\n- Sistemas externos (API / integración)\n\nAtravesando esas piezas aparecen seguridad, monitoreo y despliegue. Cada componente debe tener un propósito claro: cuando todo depende de todo, el sistema se vuelve difícil de cambiar.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 08 — Componentes generales de una solución"
+      }
+    ]
+  },
+  "styles-and-quality": {
+    "title": "Estilos y atributos de calidad",
+    "content": "# Estilos y atributos de calidad\n\nUn estilo propone una forma de organizar el sistema:\n\n| Estilo | Idea |\n| --- | --- |\n| Capas | Presentación, negocio y datos con responsabilidades por nivel |\n| Cliente-servidor | Separa quien solicita de quien procesa y responde |\n| Microservicios | Servicios pequeños, independientes y comunicados |\n\nLos atributos de calidad describen lo que el sistema **debe ser**, además de lo que debe hacer: rendimiento, escalabilidad, disponibilidad, seguridad, modificabilidad y usabilidad.\n\nUna decisión siempre favorece algunos atributos y puede afectar otros. Por eso se documenta y se justifica. El rol del arquitecto es escuchar, identificar riesgos, proponer estructuras, justificar y comunicar — equilibrando calidad, costo, tiempo, equipo y objetivos del negocio.",
+    "sourceRefs": [
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 09 — Primeros estilos arquitectónicos"
+      },
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 10 — Atributos de calidad"
+      },
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 11 — El rol del arquitecto de software"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "SEI — Software Architecture",
+        "url": "https://www.sei.cmu.edu/our-work/software-architecture/"
+      }
+    ]
+  },
+  "software-to-it": {
+    "title": "De software a arquitectura de TI",
+    "content": "# De software a arquitectura de TI\n\nLa arquitectura de software orienta un sistema: componentes, relaciones, restricciones y calidad. Una organización, sin embargo, también tiene procesos, información, infraestructura, reglas, personas y servicios.\n\nLa arquitectura de TI describe cómo las capacidades tecnológicas apoyan la estrategia y el funcionamiento institucional. Dentro de esa visión hay varios tipos, cada uno con un propósito y un nivel de decisión distinto.\n\n> La arquitectura de software es una parte de una arquitectura de TI más amplia. No sustituye a la de negocio, datos, aplicaciones o tecnología; se relaciona con ellas.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
+        "locator": "p. 1/4 — De la arquitectura de software a la arquitectura de TI"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 1 — Tipos de arquitectura de tecnologías de información"
+      }
+    ]
+  },
+  "enterprise-business": {
+    "title": "Empresarial y de negocio",
+    "content": "# Empresarial y de negocio\n\n**Arquitectura empresarial** integra estrategia, capacidades, información, aplicaciones y tecnología. Sirve para ver el estado actual, definir un estado futuro, coordinar iniciativas y construir una hoja de ruta. Ejemplo universitario: digitalizar matrícula, servicios en línea, expediente e indicadores.\n\n**Arquitectura de negocio** describe cómo funciona la organización: procesos, actores, reglas y servicios. Su interés principal no es la tecnología específica, sino el trabajo que se realiza.\n\n| Elemento | Ejemplo universitario |\n| --- | --- |\n| Proceso | Matrícula |\n| Actor | Estudiante, coordinador, tesorería |\n| Regla | No permitir matrícula con deuda pendiente |\n\nPregunta empresarial: ¿hacia dónde se dirige la organización? Pregunta de negocio: ¿cómo trabajamos?",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
+        "locator": "p. 1/4 — Arquitectura empresarial y arquitectura de negocio"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 2 — Arquitectura empresarial"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 3 — Arquitectura de negocio"
+      }
+    ]
+  },
+  "data-architecture": {
+    "title": "Arquitectura de datos",
+    "content": "# Arquitectura de datos\n\nDefine cómo se organiza, administra, integra, protege y utiliza la información: modelos y dominios, calidad e integridad, propiedad, privacidad, respaldo, retención e integración entre sistemas.\n\nProblema típico: el mismo estudiante aparece con datos distintos en admisiones, registro académico y finanzas. Eso no se resuelve solo cambiando la interfaz de una aplicación.\n\nPregunta: ¿qué información usamos y quién es responsable de ella?",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
+        "locator": "p. 2/4 — Arquitectura de datos o información"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 4 — Arquitectura de datos"
+      }
+    ]
+  },
+  "applications-tech": {
+    "title": "Aplicaciones e infraestructura",
+    "content": "# Aplicaciones e infraestructura\n\n**Arquitectura de aplicaciones** describe el conjunto de sistemas, la función de cada uno y cómo se relacionan. Busca evitar duplicidad, dependencia innecesaria y falta de integración. En el ejemplo: sistema académico, financiero, portal y plataforma de reportes, con autenticación, APIs e intercambio de datos.\n\n**Arquitectura tecnológica** define la plataforma: servidores, nube, almacenamiento, sistemas operativos, redes, acceso remoto, balanceo, monitoreo, respaldo, disponibilidad y recuperación.\n\nPreguntas: ¿qué sistemas apoyan el negocio? ¿sobre qué plataforma operan y cómo se sostienen?",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
+        "locator": "p. 2/4 — Arquitectura de aplicaciones y arquitectura tecnológica"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 5 — Arquitectura de aplicaciones"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 6 — Arquitectura tecnológica"
+      }
+    ]
+  },
+  "software-in-ti": {
+    "title": "Software dentro de TI",
+    "content": "# Software dentro de TI\n\nLa arquitectura de software se concentra en la estructura interna de una solución: componentes, responsabilidades, interfaces, integración, despliegue y atributos de calidad. Ahí aparecen estilos como capas, cliente-servidor o microservicios.\n\nDebe responder a las otras arquitecturas: una regla de negocio afecta la lógica; una política de datos condiciona el almacenamiento; una restricción tecnológica limita el despliegue.\n\nEn el caso **Universidad Horizonte** (matrícula en línea, pagos, expediente, reportes y migración a la nube) cada tipo de arquitectura toma decisiones distintas que hay que coordinar. Una decisión tecnológica aislada puede resolver un problema inmediato; una arquitectura integrada permite ver efectos, dependencias y riesgos antes de implementar.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
+        "locator": "pp. 3–4/4 — Arquitectura de software, relación entre tipos y caso integrador"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 7 — Arquitectura de software"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 8 — ¿Cómo se relacionan?"
+      },
+      {
+        "label": "Presentacion S3s1.pdf",
+        "locator": "Diapositiva 9 — Caso integrador: Universidad Horizonte"
+      }
+    ]
+  },
+  "why-process": {
+    "title": "Por qué un proceso arquitectónico",
+    "content": "# Por qué un proceso arquitectónico\n\nUna arquitectura no surge de manera espontánea. Programar sin proceso aumenta dependencias innecesarias, duplicidad, problemas de seguridad, dificultad de mantenimiento y costos de corrección.\n\n| Sin proceso | Con proceso |\n| --- | --- |\n| Decisiones aisladas | Problema claro |\n| Componentes confusos | Drivers identificados |\n| Retrabajo | Decisiones justificadas |\n| Riesgos tarde | Arquitectura evaluada |\n\n> El resultado no es solo un diagrama: es una arquitectura entendida, justificada, comunicada y lista para guiar el desarrollo.\n\nAnalogía: necesidad → plano → construcción. Programar sin arquitectura es construir sin plano.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
+        "locator": "p. 1/5 — ¿Por qué hablar de proceso arquitectónico?"
+      },
+      {
+        "label": "Presentacion S3s2.pdf",
+        "locator": "Diapositiva 2 — ¿Por qué seguir un proceso?"
+      },
+      {
+        "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "Diapositiva 2 — Arquitectura: ordenar antes de construir"
+      }
+    ]
+  },
+  "process-stages": {
+    "title": "Seis etapas del proceso",
+    "content": "# Seis etapas del proceso\n\n| Etapa | Pregunta central | Producto |\n| --- | --- | --- |\n| 1. Contexto y alcance | ¿Qué problema y hasta dónde? | Problema, límites y actores |\n| 2. Requerimientos y restricciones | ¿Qué debe hacer y bajo qué condiciones? | RF, RNF y restricciones |\n| 3. Drivers | ¿Qué factores pesan más? | Lista priorizada |\n| 4. Decisiones | ¿Cómo se organiza la solución? | Componentes, datos, integración, despliegue |\n| 5. Documentación | ¿Cómo se comunica? | Vistas, diagramas, escenarios, justificaciones |\n| 6. Evaluación | ¿Qué riesgos y mejoras? | Riesgos, recomendaciones y ajustes |\n\nEl bloque más amplio del proceso se resume como análisis → diseño → validación → evolución.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
+        "locator": "p. 1/5 — Etapas generales del proceso"
+      },
+      {
+        "label": "Presentacion S3s2.pdf",
+        "locator": "Diapositiva 3 — El proceso arquitectónico"
+      },
+      {
+        "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "Diapositiva 3 — El proceso arquitectónico"
+      }
+    ]
+  },
+  "context-scope": {
+    "title": "Contexto y alcance",
+    "content": "# Contexto y alcance\n\nLa arquitectura debe responder a una situación concreta. Preguntas guía: propósito, problema, quiénes lo usarán, qué procesos cubre, qué queda fuera y qué restricciones existen.\n\nEl **alcance** define qué entra y qué queda fuera. Evita expectativas ambiguas y cambios sin control.\n\nEjemplo académico: matrícula, grupos y notas pueden estar dentro; nómina o inventario, fuera. Sin contexto claro, una decisión puede ser correcta en teoría e inadecuada para la organización.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
+        "locator": "p. 2/5 — Contexto y alcance"
+      },
+      {
+        "label": "Presentacion S3s2.pdf",
+        "locator": "Diapositiva 4 — Comprender contexto y alcance"
+      },
+      {
+        "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "Diapositiva 4 — Comprender el contexto y el alcance"
+      }
+    ]
+  },
+  "req-drivers": {
+    "title": "Requerimientos, restricciones y drivers",
+    "content": "# Requerimientos, restricciones y drivers\n\nNo todo requisito pesa igual.\n\n| Elemento | Descripción | Ejemplo |\n| --- | --- | --- |\n| Funcional | Lo que el sistema debe hacer | Registrar matrícula, consultar notas |\n| No funcional | Cómo debe comportarse | Seguridad, rendimiento, disponibilidad |\n| Restricción | Limita alternativas | Presupuesto, tecnología, normativa |\n| Driver | Factor que más influye en la arquitectura | Seguridad crítica, integración externa, alta carga |\n\nLos drivers no son «más requisitos»: son los pocos factores que realmente doblan el diseño.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
+        "locator": "p. 2/5 — Requerimientos, restricciones y drivers"
+      },
+      {
+        "label": "Presentacion S3s2.pdf",
+        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers"
+      },
+      {
+        "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers"
+      }
+    ]
+  },
+  "decide-document-evaluate": {
+    "title": "Decidir, documentar y evaluar",
+    "content": "# Decidir, documentar y evaluar\n\n**Decisiones:** estilo (capas, cliente-servidor, servicios), módulos y responsabilidades, datos y acceso, ambientes y crecimiento. Cada alternativa tiene consecuencias: microservicios pueden dar independencia de equipos y subir la complejidad de integración y monitoreo.\n\n**Documentación:** comunica qué se decidió, por qué, qué alternativas se evaluaron y qué consecuencias tiene. Incluye vistas, diagramas, escenarios, riesgos y supuestos. No es llenar páginas.\n\n**Evaluación temprana:** cumplimiento, atributos de calidad, dependencias críticas, costo de cambio y riesgos técnicos. Preguntas: ¿será seguro?, ¿podrá crecer?, ¿qué pasa si falla un componente? Evaluar antes de construir todo suele ser más barato que corregir después.\n\nEl mini caso de plataforma universitaria (estudiantes, asignaturas, matrículas, calificaciones y pagos) aplica este recorrido con drivers de seguridad, demanda en matrícula, integración de pagos y disponibilidad.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
+        "locator": "pp. 3–5/5 — Decisiones, documentación, evaluación y caso breve"
+      },
+      {
+        "label": "Presentacion S3s2.pdf",
+        "locator": "Diapositivas 6–8 — Decisiones, documentar y evaluar"
+      },
+      {
+        "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "Diapositivas 6–9 — Decisiones, documentación, evaluación y mini caso"
+      }
+    ]
+  },
+  "organize-process": {
+    "title": "Organizar el proceso",
+    "content": "# Organizar el proceso\n\nOrganizar el proceso no es solo dibujar componentes: es establecer una secuencia de comprensión, recopilación, decisión, documentación y validación antes de construir.\n\nLa arquitectura **no es un momento único**. Es continuo: análisis, decisión, comunicación, validación y evolución. Las etapas no siempre son lineales; se vuelve atrás cuando aparece información o riesgos.\n\nEtapas de organización en la lectura: contexto; stakeholders; RF/RNF/restricciones; drivers; alternativas y estilos; componentes; documentar decisiones; evaluar con escenarios; ajustar y preparar evolución.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "p. 1/4 — ¿Qué significa organizar el proceso arquitectónico?"
+      },
+      {
+        "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "p. 2/4 — Etapas del proceso arquitectónico"
+      },
+      {
+        "label": "Presentacion S4s1.pdf",
+        "locator": "Diapositiva 2 — ¿Qué significa organizar el proceso?"
+      },
+      {
+        "label": "Presentacion S4s1.pdf",
+        "locator": "Diapositiva 4 — Etapas principales"
+      }
+    ]
+  },
+  "process-inputs": {
+    "title": "Entradas del proceso",
+    "content": "# Entradas del proceso\n\nAntes de proponer una arquitectura hay que recopilar información; si no, se diseña algo atractivo e inadecuado.\n\n| Entrada | Descripción | Ejemplo |\n| --- | --- | --- |\n| Objetivos del negocio | Resultados esperados | Reducir tiempos de matrícula |\n| Requerimientos | Funciones y cualidades | Registrar matrícula y responder rápido |\n| Restricciones | Condiciones que limitan | Presupuesto, tecnología, normativa |\n| Stakeholders | Interesados o afectados | Estudiantes, docentes, administración, finanzas |\n| Sistemas existentes | Lo que hay que integrar | Autenticación institucional y pagos externos |\n\nLa presentación agrupa esas entradas en negocio, sistema y personas.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "p. 1/4 — Entradas del proceso"
+      },
+      {
+        "label": "Presentacion S4s1.pdf",
+        "locator": "Diapositiva 3 — Entradas del proceso arquitectónico"
+      },
+      {
+        "label": "Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "p. 1/2 — A. Entradas del proceso"
+      }
+    ]
+  },
+  "artifacts": {
+    "title": "Artefactos y registro de decisiones",
+    "content": "# Artefactos y registro de decisiones\n\nUna decisión arquitectónica tiene impacto en estructura, calidad, mantenimiento o evolución. Debe documentarse justificación, alternativa y consecuencia; no basta con decir qué se eligió.\n\n| Decisión | Qué registrar |\n| --- | --- |\n| Componente | Responsabilidad, límites y datos |\n| Integración | Forma de comunicación |\n| Datos | Fuente oficial, almacenamiento, acceso y protección |\n| Despliegue | Ambiente de operación |\n| Calidad | Atributos priorizados |\n\nArtefactos básicos: mapa de contexto, lista o matriz de stakeholders, matriz de requerimientos y drivers, diagrama de componentes. De control: registro de decisiones, lista de riesgos, escenarios de calidad y recomendaciones.\n\nEn el caso universitario: autenticación institucional y pagos externos como restricción; disponibilidad en matrícula y seguridad como drivers; separar módulo académico, financiero y autenticación como decisión inicial.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "pp. 2–3/4 — Organización de decisiones, artefactos y caso breve"
+      },
+      {
+        "label": "Presentacion S4s1.pdf",
+        "locator": "Diapositivas 5–7 — Decisiones, artefactos y caso"
+      },
+      {
+        "label": "Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
+        "locator": "pp. 1–2/2 — B. Organización de decisiones y C. Artefactos"
+      }
+    ]
+  },
+  "architect-role": {
+    "title": "El rol del arquitecto",
+    "content": "# El rol del arquitecto\n\nEl arquitecto orienta las decisiones estructurales: comprende el problema, escucha interesados, identifica riesgos y propone una estructura para construir, mantener y evolucionar el sistema.\n\nNo se limita a diagramar. Aporta alineación negocio–tecnología, reduce ambigüedad, facilita evolución y mejora comunicación. En proyectos pequeños el rol puede recaer en un desarrollador experimentado; en medianos o grandes suele ser más formal y coordinar negocio, datos, seguridad e infraestructura.\n\n> El arquitecto no decide aislado. Sus decisiones se construyen con información del negocio, usuarios, equipo técnico, seguridad, datos e infraestructura.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Apoyo.pdf",
+        "locator": "p. 1/4 — El arquitecto de software dentro del proyecto"
+      },
+      {
+        "label": "presentacion s4s2.pdf",
+        "locator": "Diapositiva 2 — ¿Quién es el arquitecto de software?"
+      },
+      {
+        "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
+        "locator": "Diapositiva 11 — El rol del arquitecto de software"
+      }
+    ]
+  },
+  "architect-skills": {
+    "title": "Responsabilidades y características",
+    "content": "# Responsabilidades y características\n\nResponsabilidades: contexto y restricciones; RF, RNF y drivers; componentes e interfaces; evaluar alternativas; riesgos; acompañar al equipo; comunicar con vistas y decisiones.\n\n| Característica | Ejemplo |\n| --- | --- |\n| Visión sistémica | Relaciona matrícula, pagos, autenticación y reportes |\n| Pensamiento crítico | Compara integración directa frente a servicios intermedios |\n| Comunicación | Riesgos a dirección y detalle al equipo |\n| Criterio técnico | Separación de capas o componentes |\n| Gestión de riesgos | Caída en períodos de matrícula |\n| Orientación al negocio | Prioriza disponibilidad si la operación no puede detenerse |\n\nDebe justificar componentes, integración, datos, seguridad, despliegue y compromisos de calidad. Cada stakeholder (estudiantes, docentes, administración, finanzas, seguridad, desarrollo) aporta preocupaciones distintas.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Apoyo.pdf",
+        "locator": "pp. 1–3/4 — Responsabilidades, características, decisiones y relación con stakeholders"
+      },
+      {
+        "label": "presentacion s4s2.pdf",
+        "locator": "Diapositivas 3–6 — Responsabilidades, características, decisiones y stakeholders"
+      }
+    ]
+  },
+  "no-architect-risks": {
+    "title": "Riesgos sin liderazgo arquitectónico",
+    "content": "# Riesgos sin liderazgo arquitectónico\n\nCuando falta liderazgo arquitectónico suele ocurrir:\n\n- Cada equipo desarrolla sin una estructura común.\n- Se mezclan responsabilidades académicas, financieras y de seguridad.\n- Las integraciones se vuelven frágiles.\n- Un cambio pequeño afecta muchas partes.\n- No se documentan decisiones y se pierde conocimiento.\n- Los atributos de calidad se atienden demasiado tarde.\n\nLa presentación lo resume como estructura débil, comunicación pobre y calidad tardía. Un buen arquitecto equilibra simplicidad y anticipación: evita complejidad innecesaria y prevé crecimiento.\n\nEn la plataforma universitaria debe coordinar académico, finanzas, autenticación y pagos externos; decidir separación de módulos, relaciones y control de acceso; comunicar con diagramas, riesgos, justificación y alternativas.",
+    "sourceRefs": [
+      {
+        "label": "Lectura_Apoyo.pdf",
+        "locator": "p. 4/4 — Riesgos comunes cuando no hay liderazgo arquitectónico"
+      },
+      {
+        "label": "presentacion s4s2.pdf",
+        "locator": "Diapositiva 7 — Riesgos si no hay liderazgo arquitectónico"
+      },
+      {
+        "label": "presentacion s4s2.pdf",
+        "locator": "Diapositiva 8 — Caso: plataforma universitaria"
+      }
+    ]
+  },
+  "stakeholder-concept": {
+    "title": "Qué es un stakeholder",
+    "content": "# Qué es un stakeholder\n\nUn stakeholder es toda persona, grupo u organización con interés en el sistema, influencia sobre él, o que puede verse afectada por sus resultados — directa o indirectamente. Incluye a quienes financian, regulan, mantienen, integran o dependen del sistema, aunque nunca lo operen.\n\nEl **usuario final** interactúa con la interfaz. Todo usuario es stakeholder; no todo stakeholder es usuario.\n\nIdentificarlos temprano permite descubrir necesidades, reconocer restricciones, anticipar conflictos, comprender riesgos y fundamentar decisiones en evidencia, no en supuestos. Sus necesidades se traducen en requisitos, restricciones, objetivos de negocio, riesgos y criterios de calidad.",
+    "sourceRefs": [
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 2 — ¿Qué es un stakeholder?"
+      },
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 3 — ¿Por qué identificar stakeholders?"
+      },
+      {
+        "label": "lectura apoyo s5s1.pdf",
+        "locator": "pp. 2–3/10 — Concepto de stakeholder e importancia para la arquitectura"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "ISO/IEC/IEEE 42010:2011 — Architecture description",
+        "url": "https://www.iso.org/standard/50508.html"
+      },
+      {
+        "type": "official",
+        "title": "SEI — Software Architecture",
+        "url": "https://www.sei.cmu.edu/our-work/software-architecture/"
+      }
+    ]
+  },
+  "stakeholder-taxonomy": {
+    "title": "Internos, externos y taxonomía",
+    "content": "# Internos, externos y taxonomía\n\nInternos y externos son igualmente relevantes.\n\n**Internos (presentación):** dirección, usuarios, desarrollo, soporte, infraestructura, seguridad.\n\n**Externos:** clientes, proveedores, organismos reguladores, socios, servicios externos (APIs, pagos, nube).\n\nLa lectura añade una taxonomía práctica: internos, externos, de negocio, técnicos, usuarios, operación y soporte. Las categorías no son excluyentes: un médico jefe puede ser usuario y stakeholder de negocio a la vez.\n\nCada grupo observa el sistema distinto: gerencia (costo y ROI), usuario (uso, rendimiento, disponibilidad), seguridad (datos y acceso), infraestructura (escala y recursos), desarrollo (mantenibilidad y deuda técnica).",
+    "sourceRefs": [
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 4 — Stakeholders internos y externos"
+      },
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 6 — Stakeholders y arquitectura: preocupaciones distintas"
+      },
+      {
+        "label": "lectura apoyo s5s1.pdf",
+        "locator": "pp. 3–4/10 — Tipos de stakeholders"
+      }
+    ]
+  },
+  "identify-method": {
+    "title": "Cómo identificarlos",
+    "content": "# Cómo identificarlos\n\nLa lista no es estática: se revisa a lo largo del proyecto.\n\n**Técnica de la presentación (6 pasos):** comprender el propósito; quién lo utiliza; quién toma decisiones; quién lo mantiene; entidades externas; quién puede verse afectado.\n\n**Proceso de la lectura:** analizar el contexto organizacional; listar áreas funcionales; aplicar la taxonomía; entrevistar representantes; validar completitud con el equipo; documentar y priorizar.\n\nPreguntas orientadoras: ¿quién usa?, ¿quién financia o aprueba?, ¿quién administra la información?, ¿quién mantiene?, ¿qué entidades externas interactúan?, ¿quién se afecta si falla?\n\nCasos de práctica: clínica de citas (pacientes, médicos, recepción, administración, TI, aseguradoras) y registro académico universitario (inscripción, notas, reportes y normativa de datos personales).",
+    "sourceRefs": [
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 8 — Técnica para identificar stakeholders"
+      },
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 9 — Preguntas orientadoras"
+      },
+      {
+        "label": "lectura apoyo s5s1.pdf",
+        "locator": "pp. 5–7/10 — Procedimiento de seis pasos y caso de citas médicas"
+      }
+    ]
+  },
+  "identify-errors": {
+    "title": "Errores al identificar",
+    "content": "# Errores al identificar\n\n- **Solo usuarios:** omite decisores y áreas de soporte; la arquitectura puede ser usable e inviable en cumplimiento o mantenimiento.\n- **Olvidar áreas técnicas:** infraestructura, seguridad y operaciones imponen restricciones reales.\n- **Ignorar externos:** reguladores, socios y proveedores definen cumplimiento e integración.\n- **Asumir sin consultar:** las suposiciones no validadas generan requisitos incorrectos y retrabajo.\n- **No actualizar la lista:** aparecen actores nuevos y cambian prioridades.\n\nLa cadena de valor de la lectura es: stakeholders → necesidades y preocupaciones → decisiones arquitectónicas. Una arquitectura que no se puede trazar hasta esas necesidades queda sin justificación.",
+    "sourceRefs": [
+      {
+        "label": "s5s1arq.pdf",
+        "locator": "Diapositiva 10 — Errores frecuentes al identificar stakeholders"
+      },
+      {
+        "label": "lectura apoyo s5s1.pdf",
+        "locator": "pp. 8–9/10 — Errores comunes y cierre"
+      }
+    ]
+  },
+  "analyze-stakeholders": {
+    "title": "De identificar a analizar",
+    "content": "# De identificar a analizar\n\nIdentificar responde *quiénes intervienen*. Analizar responde *qué necesitan, cuánto influyen y qué debemos considerar*.\n\nPor cada stakeholder documenta:\n\n| Atributo | Pregunta |\n| --- | --- |\n| Rol | ¿Qué función cumple? |\n| Necesidad | ¿Qué espera obtener o resolver? |\n| Interés | ¿Cuánto le importa el sistema? |\n| Influencia | ¿Puede afectar decisiones? |\n| Preocupación | ¿Qué riesgo le inquieta? |\n| Impacto | ¿Cómo afecta el sistema su trabajo? |\n\nEsa información alimenta atributos de calidad y decisiones de diseño; no es un trámite administrativo.",
+    "sourceRefs": [
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 2 — De Identificar a Analizar"
+      },
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 3 — Información clave por stakeholder"
+      },
+      {
+        "label": "lectura apoyo s5s2.pdf",
+        "locator": "p. 2/5 — De identificar a analizar"
+      }
+    ]
+  },
+  "interest-influence": {
+    "title": "Matriz interés–influencia",
+    "content": "# Matriz interés–influencia\n\n**Interés:** importancia del sistema para el stakeholder (trabajo diario, objetivos, expectativas).\n\n**Influencia:** capacidad de aprobar, vetar, controlar recursos o cambiar el rumbo.\n\nNo siempre van juntos: un usuario puede tener alto interés y baja influencia; un directivo, alta influencia y bajo interés. Cada combinación pide una estrategia distinta de comunicación y participación.\n\nLa matriz no es estática: conviene revisarla en hitos. Un usuario con bajo interés inicial puede volverse crítico en producción.",
+    "sourceRefs": [
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 4 — Interés e influencia: conceptos clave"
+      },
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 5 — Matriz interés–influencia"
+      },
+      {
+        "label": "lectura apoyo s5s2.pdf",
+        "locator": "pp. 2–3/5 — Interés, influencia y la matriz de clasificación"
+      }
+    ]
+  },
+  "need-vs-tech": {
+    "title": "Necesidad vs solución técnica",
+    "content": "# Necesidad vs solución técnica\n\nLas necesidades se clasifican con implicación arquitectónica: funcionalidad, seguridad, rendimiento, facilidad de uso, disponibilidad, costos y cumplimiento.\n\nUn error frecuente es convertir de inmediato una necesidad en tecnología. Ejemplo de la sesión: «el médico necesita consultar rápidamente el expediente» no implica «app nativa con base local». Primero: ¿cuántos registros?, ¿qué dispositivos?, ¿hay red? Luego se decide.\n\n> Una necesidad expresada no debe convertirse automáticamente en una decisión tecnológica. Primero se analiza; luego se diseña.",
+    "sourceRefs": [
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 6 — Identificación de necesidades"
+      },
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 7 — Necesidad vs. solución técnica"
+      },
+      {
+        "label": "lectura apoyo s5s2.pdf",
+        "locator": "p. 3/5 — Necesidades, conflictos y caso aplicado"
+      }
+    ]
+  },
+  "conflicts-priority": {
+    "title": "Conflictos y priorización",
+    "content": "# Conflictos y priorización\n\nLos conflictos son habituales: usuario (acceso fácil) vs seguridad (controles); gerencia (costo) vs infraestructura (estabilidad). La arquitectura no satisface todo al 100 %; el arquitecto documenta tensiones, analiza trade-offs y justifica con criterios explícitos.\n\nEn citas médicas (presentación): paciente (alto interés, baja influencia), médico (alto/alto), administración (medio/alto), TI (medio/medio), aseguradora (bajo/alto).\n\nPrioriza con criticidad (¿falla el sistema?), riesgo (seguridad o legalidad), impacto (usuarios o procesos) y restricciones (tiempo, presupuesto, tecnología). Alta criticidad + alto impacto debe reflejarse en una decisión documentada; lo de baja prioridad puede diferirse o resolverse con configuración.\n\nFlujo de las dos sesiones: identificar → analizar → priorizar → decidir.",
+    "sourceRefs": [
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 8 — Conflictos entre stakeholders"
+      },
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 9 — Caso práctico: sistema de citas médicas"
+      },
+      {
+        "label": "s5s2arq.pdf",
+        "locator": "Diapositiva 10 — Priorización de necesidades"
+      },
+      {
+        "label": "lectura apoyo s5s2.pdf",
+        "locator": "pp. 4–5/5 — Priorización y síntesis del proceso"
+      }
+    ]
+  },
+  "clinic-case": {
+    "title": "Actividad 1: citas médicas",
+    "content": "# Actividad 1: citas médicas\n\nPonderación **30 %** del Cómputo 1. Grupos de hasta 5. Entrega: miércoles 26 de agosto de 2026 (−2 puntos por día de retraso). El sílabo listaba el 12/08/2026; la pauta de la actividad fija el 26/08/2026.\n\n**Caso:** una clínica privada digitaliza citas hoy telefónicas y presenciales (duplicidad, poca visibilidad de agenda, retrasos). Pacientes consultan disponibilidad, solicitan o cancelan y reciben notificaciones; médicos ven agenda; recepción gestiona citas y llegada; administración consulta indicadores. Integración con notificaciones externas. Hay que proteger datos personales, mantener disponibilidad en jornada, permitir crecimiento, aprovechar infraestructura existente y respetar un plazo limitado.\n\n**No se pide** diseñar la arquitectura completa ni elegir estilo. El propósito es analizar contexto e identificar lo que orientará decisiones posteriores.\n\nDesarrollo mínimo: contexto y alcance (incluye / no incluye); ≥5 stakeholders con necesidad, influencia y prioridad; ≥6 RF y ≥5 RNF verificables; ≥4 drivers justificados; ≥3 restricciones; 3 elementos más críticos y conclusión (máximo dos párrafos).",
+    "sourceRefs": [
+      {
+        "label": "Actividad_Evaluativa_1.pdf",
+        "locator": "p. 1/5 — Indicaciones generales y caso"
+      },
+      {
+        "label": "Actividad_Evaluativa_1.pdf",
+        "locator": "pp. 2–3/5 — Desarrollo de la actividad (3.1 a 3.6)"
+      },
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 5/7 — Cómputo 1: análisis de stakeholders, requerimientos y drivers"
+      }
+    ]
+  },
+  "deliverables": {
+    "title": "Entregables y rúbrica",
+    "content": "# Entregables y rúbrica\n\n1. **PDF:** portada con nombres y carnets; contexto y alcance; matriz de stakeholders; RF y RNF; drivers y justificación; restricciones; priorización y conclusión.\n2. **Video de 6 a 8 minutos:** cámara al inicio y presentación. Todos participan de forma identificable. Sin video la actividad no se califica; quien no participe no obtiene la nota grupal hasta evidenciar dominio.\n\nEl video cubre caso y alcance, stakeholders, diferencia RF/RNF con ejemplos, defensa de drivers, restricciones y priorización.\n\n| Criterio | Valor |\n| --- | --- |\n| Análisis técnico del caso | 50 % |\n| Documento y coherencia | 30 % |\n| Defensa del trabajo | 20 % |\n\nLa calificación es grupal, pero cada integrante debe evidenciar participación en la defensa.",
+    "sourceRefs": [
+      {
+        "label": "Actividad_Evaluativa_1.pdf",
+        "locator": "pp. 3–5/5 — Entregables, rúbrica y condición de evaluación"
+      }
+    ]
+  },
+  "next-parcial": {
+    "title": "Hacia requerimientos y Parcial I",
+    "content": "# Hacia requerimientos y Parcial I\n\nCon el material de las semanas 1–5 ya puedes explicar conceptos y tipos de arquitectura, el proceso, el rol del arquitecto y el análisis de stakeholders. El sílabo continúa así:\n\n| Fecha | Tema |\n| --- | --- |\n| 24/08/2026 | Requerimientos funcionales y no funcionales relacionados con la arquitectura |\n| 26/08/2026 | Drivers arquitectónicos y restricciones técnicas |\n| 31/08/2026 | Parcial I |\n\nEl Parcial I cubre fundamentos de arquitectura, stakeholders, requerimientos, drivers, escenarios y estilos. La segunda actividad del Cómputo 1 (diseño conceptual y selección de estilo, 30 %) aparece en el sílabo con fecha 19/08/2026; confirma en aula las fechas vigentes, como ocurrió con la Actividad 1.\n\nRA de este tramo: RA 1 (conceptos, tipos, procesos y elementos), RA 2 (rol del arquitecto) y RA 3 (stakeholders, requerimientos y drivers de un caso).",
+    "sourceRefs": [
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 3/7 — Calendario: 24/08 requerimientos, 26/08 drivers, 31/08 Parcial I"
+      },
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 5/7 — Cómputo 1: Parcial I, fundamentos, stakeholders, drivers, escenarios y estilos"
+      },
+      {
+        "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
+        "locator": "p. 2/7 — Resultados de aprendizaje RA 1, RA 2 y RA 3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1152 @@
+{
+  "schemaVersion": 1,
+  "slug": "diseno-arquitectura-de-sistemas",
+  "title": "Diseño de Arquitectura de Sistemas",
+  "description": "Ruta actualmente impartida: fundamentos de arquitectura de software, tipos de arquitectura de TI, proceso arquitectónico, rol del arquitecto, stakeholders y la Actividad Evaluativa 1 (clínica de citas).",
+  "canvas": {
+    "width": 1280,
+    "height": 3100,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 8,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -60,
+      "y": -190,
+      "zoom": 0.84
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": {
+        "x": 90,
+        "y": 16
+      },
+      "size": {
+        "width": 700,
+        "height": 52
+      },
+      "data": {
+        "text": "Diseño de Arquitectura de Sistemas",
+        "style": {
+          "fontSize": 26,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "subtitle-para",
+      "type": "paragraph",
+      "position": {
+        "x": 90,
+        "y": 80
+      },
+      "size": {
+        "width": 700,
+        "height": 88
+      },
+      "data": {
+        "text": "Ruta actualmente impartida (sílabo DAS, semanas 1–5): sigue los números por la columna izquierda y estudia cada apoyo claro de la derecha antes de bajar al siguiente paso.",
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "progress-legend",
+      "type": "legend",
+      "position": {
+        "x": 900,
+        "y": 16
+      },
+      "size": {
+        "width": 320,
+        "height": 212
+      },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          {
+            "label": "Sigue los números: 01, 02, 03…",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "Paso principal de la ruta",
+            "color": "#f9d95c"
+          },
+          {
+            "label": "Concepto de apoyo del paso",
+            "color": "#fff2a8"
+          },
+          {
+            "label": "La flecha indica qué estudiar después",
+            "color": "#2563eb"
+          },
+          {
+            "label": "En aprendizaje",
+            "color": "#dad1fd"
+          },
+          {
+            "label": "Completado",
+            "color": "#cbd5e1"
+          },
+          {
+            "label": "Pulsa un bloque para el detalle",
+            "color": "#111827"
+          }
+        ]
+      }
+    },
+    {
+      "id": "course-orientation",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 290
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Orientación del módulo",
+        "order": "01",
+        "detail": "Competencia: desarrollar un proyecto de arquitectura con el ciclo de vida del software."
+      }
+    },
+    {
+      "id": "architecture-cycle",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 294
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Cuatro etapas del ciclo",
+        "order": "02",
+        "detail": "Requerimientos, diseño, documentación y evaluación, dentro de la metodología de desarrollo."
+      }
+    },
+    {
+      "id": "what-is-architecture",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 426
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Qué es arquitectura de software",
+        "order": "03",
+        "detail": "Decisiones de alto impacto: componentes, relaciones, restricciones y calidad."
+      }
+    },
+    {
+      "id": "architecture-design-code",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 430
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Arquitectura, diseño y código",
+        "order": "04",
+        "detail": "Tres niveles relacionados: no equivalen ni se sustituyen entre sí."
+      }
+    },
+    {
+      "id": "why-before-coding",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 562
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Por qué importa antes de programar",
+        "order": "05",
+        "detail": "Reduce retrabajo, ordena decisiones, comunica y cuida calidad desde el inicio."
+      }
+    },
+    {
+      "id": "business-to-decisions",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 566
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Del negocio a las decisiones",
+        "order": "06",
+        "detail": "Objetivos → requerimientos → drivers → decisiones técnicas viables."
+      }
+    },
+    {
+      "id": "solution-components",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 698
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Piezas de una solución",
+        "order": "07",
+        "detail": "Interfaz, lógica de negocio, persistencia e integración con sistemas externos."
+      }
+    },
+    {
+      "id": "styles-and-quality",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 702
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Estilos y atributos de calidad",
+        "order": "08",
+        "detail": "Capas, cliente-servidor y microservicios; rendimiento, seguridad y más."
+      }
+    },
+    {
+      "id": "section-foundations",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 240
+      },
+      "size": {
+        "width": 1200,
+        "height": 580
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "01 · Fundamentos de arquitectura de software"
+      }
+    },
+    {
+      "id": "software-to-it",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 870
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "De software a arquitectura de TI",
+        "order": "09",
+        "detail": "El software es una parte de TI: no sustituye negocio, datos, aplicaciones ni tecnología."
+      }
+    },
+    {
+      "id": "enterprise-business",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1006
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Empresarial y de negocio",
+        "order": "10",
+        "detail": "Estrategia y capacidades; procesos, actores, reglas y servicios institucionales."
+      }
+    },
+    {
+      "id": "data-architecture",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1010
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Arquitectura de datos",
+        "order": "11",
+        "detail": "Fuentes oficiales, calidad, propiedad, privacidad, integración y respaldo."
+      }
+    },
+    {
+      "id": "applications-tech",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1142
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Aplicaciones e infraestructura",
+        "order": "12",
+        "detail": "Mapa de sistemas e integraciones; servidores, nube, redes y operación."
+      }
+    },
+    {
+      "id": "software-in-ti",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1146
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Software dentro de TI",
+        "order": "13",
+        "detail": "Componentes, interfaces, despliegue y estilos responden a las demás arquitecturas."
+      }
+    },
+    {
+      "id": "section-it-types",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 830
+      },
+      "size": {
+        "width": 1200,
+        "height": 430
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "02 · Tipos de arquitectura de TI"
+      }
+    },
+    {
+      "id": "why-process",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1310
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Por qué un proceso arquitectónico",
+        "order": "14",
+        "detail": "Sin proceso: decisiones aisladas, retrabajo y riesgos descubiertos tarde."
+      }
+    },
+    {
+      "id": "process-stages",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1314
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Seis etapas del proceso",
+        "order": "15",
+        "detail": "Contexto, requerimientos, drivers, decisiones, documentación y evaluación."
+      }
+    },
+    {
+      "id": "context-scope",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1446
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Contexto y alcance",
+        "order": "16",
+        "detail": "Propósito, actores, procesos incluidos y límites explícitos de la solución."
+      }
+    },
+    {
+      "id": "req-drivers",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1450
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Requerimientos, restricciones y drivers",
+        "order": "17",
+        "detail": "No todo requisito pesa igual: los drivers guían las decisiones de mayor impacto."
+      }
+    },
+    {
+      "id": "decide-document-evaluate",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1582
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Decidir, documentar y evaluar",
+        "order": "18",
+        "detail": "Justificar estilo, componentes, datos y despliegue; comunicar y buscar riesgos temprano."
+      }
+    },
+    {
+      "id": "organize-process",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1586
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Organizar el proceso",
+        "order": "19",
+        "detail": "Análisis e iteración: el proceso no es un momento único ni siempre lineal."
+      }
+    },
+    {
+      "id": "process-inputs",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1718
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Entradas del proceso",
+        "order": "20",
+        "detail": "Objetivos, requerimientos, restricciones, stakeholders y sistemas existentes."
+      }
+    },
+    {
+      "id": "artifacts",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1722
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Artefactos y registro de decisiones",
+        "order": "21",
+        "detail": "Contexto, matrices, componentes, ADR, riesgos y escenarios de calidad."
+      }
+    },
+    {
+      "id": "section-process",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 1270
+      },
+      "size": {
+        "width": 1200,
+        "height": 570
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "03 · Proceso de arquitectura"
+      }
+    },
+    {
+      "id": "architect-role",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1890
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "El rol del arquitecto",
+        "order": "22",
+        "detail": "Analiza, decide, comunica impacto y acompaña; no se limita a dibujar diagramas."
+      }
+    },
+    {
+      "id": "architect-skills",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1894
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Responsabilidades y características",
+        "order": "23",
+        "detail": "Visión sistémica, criterio técnico, comunicación, riesgos y orientación al negocio."
+      }
+    },
+    {
+      "id": "no-architect-risks",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2026
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Riesgos sin liderazgo arquitectónico",
+        "order": "24",
+        "detail": "Responsabilidades mezcladas, decisiones no registradas y calidad atendida tarde."
+      }
+    },
+    {
+      "id": "section-architect",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 1850
+      },
+      "size": {
+        "width": 1200,
+        "height": 300
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "04 · El arquitecto de software"
+      }
+    },
+    {
+      "id": "stakeholder-concept",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2200
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Qué es un stakeholder",
+        "order": "25",
+        "detail": "Toda parte con interés, influencia o impacto; el usuario final es solo un subconjunto."
+      }
+    },
+    {
+      "id": "stakeholder-taxonomy",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2204
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Internos, externos y taxonomía",
+        "order": "26",
+        "detail": "Negocio, técnicos, usuarios, operación, reguladores y proveedores en paralelo."
+      }
+    },
+    {
+      "id": "identify-method",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2336
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Cómo identificarlos",
+        "order": "27",
+        "detail": "Seis pasos: contexto, áreas, taxonomía, entrevistas, validación y priorización."
+      }
+    },
+    {
+      "id": "identify-errors",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2340
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Errores al identificar",
+        "order": "28",
+        "detail": "Solo usuarios, olvidar áreas técnicas, ignorar externos y asumir sin consultar."
+      }
+    },
+    {
+      "id": "analyze-stakeholders",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2472
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "De identificar a analizar",
+        "order": "29",
+        "detail": "Documentar rol, necesidad, interés, influencia, preocupación e impacto."
+      }
+    },
+    {
+      "id": "interest-influence",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2476
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Matriz interés–influencia",
+        "order": "30",
+        "detail": "Clasifica atención: alto interés no implica alta influencia, y viceversa."
+      }
+    },
+    {
+      "id": "need-vs-tech",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2608
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Necesidad vs solución técnica",
+        "order": "31",
+        "detail": "No convertir un pedido en tecnología antes de entender contexto y atributo de calidad."
+      }
+    },
+    {
+      "id": "conflicts-priority",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2612
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Conflictos y priorización",
+        "order": "32",
+        "detail": "Criticidad, riesgo, impacto y restricciones; el arquitecto documenta trade-offs."
+      }
+    },
+    {
+      "id": "section-stakeholders",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2160
+      },
+      "size": {
+        "width": 1200,
+        "height": 560
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "05 · Stakeholders"
+      }
+    },
+    {
+      "id": "clinic-case",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2770
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Actividad 1: citas médicas",
+        "order": "33",
+        "detail": "Analizar contexto, stakeholders, RF/RNF, drivers y restricciones; aún no elegir estilo."
+      }
+    },
+    {
+      "id": "deliverables",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2774
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Entregables y rúbrica",
+        "order": "34",
+        "detail": "PDF grupal y video de 6–8 min; análisis 50 %, documento 30 %, defensa 20 %."
+      }
+    },
+    {
+      "id": "next-parcial",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2906
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Hacia requerimientos y Parcial I",
+        "order": "35",
+        "detail": "Siguiente en el sílabo: RF/RNF, drivers y restricciones; Parcial I el 31/08/2026."
+      }
+    },
+    {
+      "id": "apply-note",
+      "type": "paragraph",
+      "position": {
+        "x": 910,
+        "y": 2774
+      },
+      "size": {
+        "width": 310,
+        "height": 88
+      },
+      "data": {
+        "text": "No diseñes la arquitectura completa en la Actividad 1: el propósito es orientar decisiones posteriores.",
+        "style": {
+          "fontSize": 13,
+          "textAlign": "left"
+        }
+      }
+    },
+    {
+      "id": "section-apply",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2730
+      },
+      "size": {
+        "width": 1200,
+        "height": 300
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "06 · Caso evaluativo y cierre del tramo"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-subtitle",
+      "source": "title-node",
+      "target": "subtitle-para",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-subtitle-orientation",
+      "source": "subtitle-para",
+      "target": "course-orientation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-orientation-cycle",
+      "source": "course-orientation",
+      "target": "architecture-cycle",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-orientation-what",
+      "source": "course-orientation",
+      "target": "what-is-architecture",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-what-levels",
+      "source": "what-is-architecture",
+      "target": "architecture-design-code",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-what-why",
+      "source": "what-is-architecture",
+      "target": "why-before-coding",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-why-business",
+      "source": "why-before-coding",
+      "target": "business-to-decisions",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-why-components",
+      "source": "why-before-coding",
+      "target": "solution-components",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-components-styles",
+      "source": "solution-components",
+      "target": "styles-and-quality",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-components-it",
+      "source": "solution-components",
+      "target": "software-to-it",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-it-enterprise",
+      "source": "software-to-it",
+      "target": "enterprise-business",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-enterprise-data",
+      "source": "enterprise-business",
+      "target": "data-architecture",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-enterprise-apps",
+      "source": "enterprise-business",
+      "target": "applications-tech",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-apps-software",
+      "source": "applications-tech",
+      "target": "software-in-ti",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-apps-process",
+      "source": "applications-tech",
+      "target": "why-process",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-whyproc-stages",
+      "source": "why-process",
+      "target": "process-stages",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-whyproc-context",
+      "source": "why-process",
+      "target": "context-scope",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-context-drivers",
+      "source": "context-scope",
+      "target": "req-drivers",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-context-decide",
+      "source": "context-scope",
+      "target": "decide-document-evaluate",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-decide-organize",
+      "source": "decide-document-evaluate",
+      "target": "organize-process",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-decide-inputs",
+      "source": "decide-document-evaluate",
+      "target": "process-inputs",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-inputs-artifacts",
+      "source": "process-inputs",
+      "target": "artifacts",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-inputs-role",
+      "source": "process-inputs",
+      "target": "architect-role",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-role-skills",
+      "source": "architect-role",
+      "target": "architect-skills",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-role-risks",
+      "source": "architect-role",
+      "target": "no-architect-risks",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-risks-stake",
+      "source": "no-architect-risks",
+      "target": "stakeholder-concept",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-stake-tax",
+      "source": "stakeholder-concept",
+      "target": "stakeholder-taxonomy",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-stake-method",
+      "source": "stakeholder-concept",
+      "target": "identify-method",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-method-errors",
+      "source": "identify-method",
+      "target": "identify-errors",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-method-analyze",
+      "source": "identify-method",
+      "target": "analyze-stakeholders",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-analyze-matrix",
+      "source": "analyze-stakeholders",
+      "target": "interest-influence",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-analyze-need",
+      "source": "analyze-stakeholders",
+      "target": "need-vs-tech",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-need-conflicts",
+      "source": "need-vs-tech",
+      "target": "conflicts-priority",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-need-clinic",
+      "source": "need-vs-tech",
+      "target": "clinic-case",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-clinic-deliv",
+      "source": "clinic-case",
+      "target": "deliverables",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-clinic-next",
+      "source": "clinic-case",
+      "target": "next-parcial",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    }
+  ]
+}
