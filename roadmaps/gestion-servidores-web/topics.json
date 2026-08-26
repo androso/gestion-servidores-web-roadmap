@@ -5,7 +5,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "3. - Mini glosario"
+        "locator": "3. - Mini glosario",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -22,7 +23,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "3. - Mini glosario"
+        "locator": "3. - Mini glosario",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -39,7 +41,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "3. - Mini glosario"
+        "locator": "3. - Mini glosario",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -56,7 +59,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "3. - Mini glosario"
+        "locator": "3. - Mini glosario",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -73,11 +77,13 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "4. El restaurante"
+        "locator": "4. El restaurante",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "5. ¿Cuándo se necesita la cocina?"
+        "locator": "5. ¿Cuándo se necesita la cocina?",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -94,7 +100,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "8. El ciclo de vida – el turno de un empleado"
+        "locator": "8. El ciclo de vida – el turno de un empleado",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -111,11 +118,13 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "6. ¿Qué es, formalmente, un contenedor web?"
+        "locator": "6. ¿Qué es, formalmente, un contenedor web?",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "9. Comparando contenedores reales de la industria"
+        "locator": "9. Comparando contenedores reales de la industria",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -132,7 +141,8 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "7. El recorrido completo de una petición"
+        "locator": "7. El recorrido completo de una petición",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -149,11 +159,13 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "11. Nuestro primer “contenedor” (1/2): imports y handler"
+        "locator": "11. Nuestro primer “contenedor” (1/2): imports y handler",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "4. Servlet = route handler: el mismo concepto"
+        "locator": "4. Servlet = route handler: el mismo concepto",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       }
     ],
     "resources": [
@@ -170,11 +182,13 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "10. Antes de programar: preparar el proyecto"
+        "locator": "10. Antes de programar: preparar el proyecto",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "10. Paso 2 (cont.): de TypeScript a JavaScript"
+        "locator": "10. Paso 2 (cont.): de TypeScript a JavaScript",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -191,15 +205,18 @@
     "sourceRefs": [
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "12. Nuestro primer “contenedor” (2/2): el servidor HTTP"
+        "locator": "12. Nuestro primer “contenedor” (2/2): el servidor HTTP",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "13. Línea por línea: ¿qué hace cada parte?"
+        "locator": "13. Línea por línea: ¿qué hace cada parte?",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       },
       {
         "label": "Clase 02 — Introducción a los Contenedores Web",
-        "locator": "16. Ejercicio individual"
+        "locator": "16. Ejercicio individual",
+        "url": "/gestion-servidores-web/materiales/clase-02-gsw.pdf"
       }
     ],
     "resources": [
@@ -216,15 +233,18 @@
     "sourceRefs": [
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "4. Correos vs. trámites"
+        "locator": "4. Correos vs. trámites",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "6. Servidor web (puro): qué hace"
+        "locator": "6. Servidor web (puro): qué hace",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "7. Contenedor web: qué hace"
+        "locator": "7. Contenedor web: qué hace",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       }
     ],
     "resources": [
@@ -241,11 +261,13 @@
     "sourceRefs": [
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "5. ¿Cuál oficina necesito?"
+        "locator": "5. ¿Cuál oficina necesito?",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "9. Tabla comparativa"
+        "locator": "9. Tabla comparativa",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       }
     ],
     "resources": [
@@ -262,11 +284,13 @@
     "sourceRefs": [
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "8. Software que combina ambos roles"
+        "locator": "8. Software que combina ambos roles",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "10. Arquitectura típica en producción"
+        "locator": "10. Arquitectura típica en producción",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       }
     ],
     "resources": [
@@ -283,15 +307,18 @@
     "sourceRefs": [
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "11. Versión A – “Servidor” puro (solo entrega un archivo)"
+        "locator": "11. Versión A – “Servidor” puro (solo entrega un archivo)",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "13. Versión B – “Contenedor” (calcula según quién pregunta)"
+        "locator": "13. Versión B – “Contenedor” (calcula según quién pregunta)",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       },
       {
         "label": "Clase 03 — Contenedor Web vs Servidor Web",
-        "locator": "15. Ejecutarlas y compararlas"
+        "locator": "15. Ejecutarlas y compararlas",
+        "url": "/gestion-servidores-web/materiales/clase-03-gsw.pdf"
       }
     ],
     "resources": [
@@ -308,11 +335,13 @@
     "sourceRefs": [
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "6. ¿Qué es un SLA, en concreto?"
+        "locator": "6. ¿Qué es un SLA, en concreto?",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       },
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "10. ¿Cómo decido? – árbol de decisión rápido"
+        "locator": "10. ¿Cómo decido? – árbol de decisión rápido",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       }
     ],
     "resources": [
@@ -329,11 +358,13 @@
     "sourceRefs": [
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "5. Contenedores propietarios"
+        "locator": "5. Contenedores propietarios",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       },
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "8. Quién usa qué: ejemplos reales"
+        "locator": "8. Quién usa qué: ejemplos reales",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       }
     ],
     "resources": [
@@ -350,11 +381,13 @@
     "sourceRefs": [
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "7. Contenedores de libre distribución"
+        "locator": "7. Contenedores de libre distribución",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       },
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "9. Tabla comparativa de decisión"
+        "locator": "9. Tabla comparativa de decisión",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       }
     ],
     "resources": [
@@ -371,15 +404,18 @@
     "sourceRefs": [
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "11. Para este módulo"
+        "locator": "11. Para este módulo",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       },
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "12. Caso ya resuelto: clínica pequeña"
+        "locator": "12. Caso ya resuelto: clínica pequeña",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       },
       {
         "label": "Clase 04 — Propietarios vs. Libre Distribución",
-        "locator": "4. Comprar casa vs. construir con planos abiertos"
+        "locator": "4. Comprar casa vs. construir con planos abiertos",
+        "url": "/gestion-servidores-web/materiales/clase-04-gsw.pdf"
       }
     ],
     "resources": [
@@ -396,15 +432,18 @@
     "sourceRefs": [
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "4. ¿Qué es IIS, en palabras sencillas?"
+        "locator": "4. ¿Qué es IIS, en palabras sencillas?",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       },
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "6. Equipo necesario"
+        "locator": "6. Equipo necesario",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       },
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "8. VirtualBox – crear la máquina virtual (pasos)"
+        "locator": "8. VirtualBox – crear la máquina virtual (pasos)",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       }
     ],
     "resources": [
@@ -421,19 +460,23 @@
     "sourceRefs": [
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "5. ¿Qué es un “rol” en Windows Server?"
+        "locator": "5. ¿Qué es un “rol” en Windows Server?",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       },
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "11. Instalación – Opción A: Server Manager (interfaz gráfica)"
+        "locator": "11. Instalación – Opción A: Server Manager (interfaz gráfica)",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       },
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "12. Instalación – Opción B: PowerShell"
+        "locator": "12. Instalación – Opción B: PowerShell",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       },
       {
         "label": "Clase 05 — Instalación de IIS",
-        "locator": "14. Verificación de la instalación"
+        "locator": "14. Verificación de la instalación",
+        "url": "/gestion-servidores-web/materiales/clase-05-gsw.pdf"
       }
     ],
     "resources": [
@@ -450,15 +493,18 @@
     "sourceRefs": [
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "4. Conceptos clave de IIS Manager"
+        "locator": "4. Conceptos clave de IIS Manager",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "8. Paso 1: crear la carpeta del sitio"
+        "locator": "8. Paso 1: crear la carpeta del sitio",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "12. Paso 4: crear el sitio en IIS"
+        "locator": "12. Paso 4: crear el sitio en IIS",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -475,11 +521,13 @@
     "sourceRefs": [
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "4. Conceptos clave de IIS Manager"
+        "locator": "4. Conceptos clave de IIS Manager",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "14. Paso 6: probar en el navegador"
+        "locator": "14. Paso 6: probar en el navegador",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -496,11 +544,13 @@
     "sourceRefs": [
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "5. El centro comercial, en diagrama"
+        "locator": "5. El centro comercial, en diagrama",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "13. Paso 5: Application Pool dedicado"
+        "locator": "13. Paso 5: Application Pool dedicado",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -517,11 +567,13 @@
     "sourceRefs": [
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "6. ¿Qué es iisnode?"
+        "locator": "6. ¿Qué es iisnode?",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "11. Paso 3: el web.config que conecta IIS con iisnode"
+        "locator": "11. Paso 3: el web.config que conecta IIS con iisnode",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -538,11 +590,13 @@
     "sourceRefs": [
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "15. Errores comunes en iisnode"
+        "locator": "15. Errores comunes en iisnode",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       },
       {
         "label": "Clase 06 — Configuración básica de IIS",
-        "locator": "16. El camino completo, de un vistazo"
+        "locator": "16. El camino completo, de un vistazo",
+        "url": "/gestion-servidores-web/materiales/clase-06-gsw.pdf"
       }
     ],
     "resources": [
@@ -559,15 +613,18 @@
     "sourceRefs": [
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "4. ¿Por qué Node.js + Express?"
+        "locator": "4. ¿Por qué Node.js + Express?",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "6. Paso 1: instalar Node.js y npm"
+        "locator": "6. Paso 1: instalar Node.js y npm",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "7. Paso 2: instalar TypeScript globalmente"
+        "locator": "7. Paso 2: instalar TypeScript globalmente",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       }
     ],
     "resources": [
@@ -584,7 +641,8 @@
     "sourceRefs": [
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "8. Paso 3: usuario de servicio dedicado"
+        "locator": "8. Paso 3: usuario de servicio dedicado",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       }
     ],
     "resources": [
@@ -601,15 +659,18 @@
     "sourceRefs": [
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "9. Paso 4: crear el proyecto Express"
+        "locator": "9. Paso 4: crear el proyecto Express",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "10. Paso 4 (cont.): servidor.ts"
+        "locator": "10. Paso 4 (cont.): servidor.ts",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "11. Compilar y probar manualmente"
+        "locator": "11. Compilar y probar manualmente",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       }
     ],
     "resources": [
@@ -626,19 +687,23 @@
     "sourceRefs": [
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "12. ¿Qué es un “servicio del sistema”?"
+        "locator": "12. ¿Qué es un “servicio del sistema”?",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "13. Paso 5: crear el servicio – Linux (systemd)"
+        "locator": "13. Paso 5: crear el servicio – Linux (systemd)",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "14. Paso 5: crear el servicio – macOS (launchd)"
+        "locator": "14. Paso 5: crear el servicio – macOS (launchd)",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "15. Paso 5: crear el servicio – Windows (NSSM)"
+        "locator": "15. Paso 5: crear el servicio – Windows (NSSM)",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       }
     ],
     "resources": [
@@ -655,11 +720,13 @@
     "sourceRefs": [
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "16. Paso 6: habilitar y arrancar el servicio"
+        "locator": "16. Paso 6: habilitar y arrancar el servicio",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       },
       {
         "label": "Clase 07 — Node.js + Express",
-        "locator": "18. IIS (Clase 6) vs. Node/Express (hoy): mismo patrón"
+        "locator": "18. IIS (Clase 6) vs. Node/Express (hoy): mismo patrón",
+        "url": "/gestion-servidores-web/materiales/clase-07-gsw.pdf"
       }
     ],
     "resources": [
@@ -676,19 +743,23 @@
     "sourceRefs": [
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "5. ¿Por qué Express y no solo http.createServer?"
+        "locator": "5. ¿Por qué Express y no solo http.createServer?",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "6. Ruta 1: /saludo – saludo personalizado"
+        "locator": "6. Ruta 1: /saludo – saludo personalizado",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "7. Ruta 2: /info – información calculada al momento"
+        "locator": "7. Ruta 2: /info – información calculada al momento",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "8. Ruta 3: /cotizacion – cálculo con validación"
+        "locator": "8. Ruta 3: /cotizacion – cálculo con validación",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       }
     ],
     "resources": [
@@ -705,15 +776,18 @@
     "sourceRefs": [
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "9. ¿Por qué validar antes de calcular?"
+        "locator": "9. ¿Por qué validar antes de calcular?",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "10. Recompilar y reiniciar el servicio"
+        "locator": "10. Recompilar y reiniciar el servicio",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       },
       {
         "label": "Clase 08 — Rutas dinámicas en Express",
-        "locator": "12. Ejercicio individual"
+        "locator": "12. Ejercicio individual",
+        "url": "/gestion-servidores-web/materiales/clase-08-gsw.pdf"
       }
     ],
     "resources": [
@@ -730,7 +804,8 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "4. La mentalidad correcta: pensar como atacante"
+        "locator": "4. La mentalidad correcta: pensar como atacante",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -747,7 +822,8 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "5. Medida 1: validar siempre la entrada del usuario"
+        "locator": "5. Medida 1: validar siempre la entrada del usuario",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -764,11 +840,13 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "6. Medida 2: no exponer detalles internos en errores"
+        "locator": "6. Medida 2: no exponer detalles internos en errores",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       },
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "7. ¿Qué revela exactamente un err.stack?"
+        "locator": "7. ¿Qué revela exactamente un err.stack?",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -785,11 +863,13 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "8. Medida 3: cabeceras de seguridad con helmet"
+        "locator": "8. Medida 3: cabeceras de seguridad con helmet",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       },
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "10. Medida 5: limitar peticiones por usuario"
+        "locator": "10. Medida 5: limitar peticiones por usuario",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -806,11 +886,13 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "9. Medida 4: no correr el proceso como root"
+        "locator": "9. Medida 4: no correr el proceso como root",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       },
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "12. Principio transversal: menor privilegio"
+        "locator": "12. Principio transversal: menor privilegio",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -827,7 +909,8 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "11. Seguridad en IIS"
+        "locator": "11. Seguridad en IIS",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -844,11 +927,13 @@
     "sourceRefs": [
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "13. Ejercicio individual"
+        "locator": "13. Ejercicio individual",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       },
       {
         "label": "Clase 09 — Buenas prácticas y seguridad",
-        "locator": "14. Pista para el ejercicio"
+        "locator": "14. Pista para el ejercicio",
+        "url": "/gestion-servidores-web/materiales/clase-09-gsw.pdf"
       }
     ],
     "resources": [
@@ -865,15 +950,18 @@
     "sourceRefs": [
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "4. El caso a resolver"
+        "locator": "4. El caso a resolver",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       },
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "6. Tareas: Node.js / Express"
+        "locator": "6. Tareas: Node.js / Express",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       },
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "7. Tareas: IIS"
+        "locator": "7. Tareas: IIS",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       }
     ],
     "resources": [
@@ -890,11 +978,13 @@
     "sourceRefs": [
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "8. Documentación final"
+        "locator": "8. Documentación final",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       },
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "9. Rúbrica"
+        "locator": "9. Rúbrica",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       }
     ],
     "resources": [
@@ -911,11 +1001,13 @@
     "sourceRefs": [
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "10. Cierre: ¿qué entra en el Parcial 1?"
+        "locator": "10. Cierre: ¿qué entra en el Parcial 1?",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       },
       {
         "label": "Clase 10 — Despliegue integrador",
-        "locator": "11. Resumen de la Unidad 1"
+        "locator": "11. Resumen de la Unidad 1",
+        "url": "/gestion-servidores-web/materiales/clase-10-gsw.pdf"
       }
     ],
     "resources": [

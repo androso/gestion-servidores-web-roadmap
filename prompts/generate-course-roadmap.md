@@ -10,7 +10,7 @@ Esta guía define el procedimiento estándar para que un agente de repositorio (
 2. **Prohibido copiar activos o contenido restringido**: No copiar assets propietarios, SVGs cerrados ni contenido con derechos restrictivos de plataformas externas.
 3. **Trazabilidad académica estricta**: Cada tema o subtema debe incluir al menos una referencia de origen (`sourceRefs`) con etiqueta y localizador exacto (número de diapositiva, sección de guía, página de lectura). Verificar el localizador contra el archivo real; si no existe en el documento de clase, usar el encabezado exacto del sílabo. Nunca inventar un rango de páginas o diapositivas.
 4. **Recursos verificados exclusivamente**: Solo incluir enlaces externos HTTP/HTTPS públicos y verificables cuyo título coincida con el destino. Nunca inventar enlaces ni sustituir una página precisa por la portada genérica del sitio.
-5. **No desplegar documentos fuente**: Antes de verificar el build, mover todos los archivos suministrados del curso a `course-inputs/<slug>/` (ruta ignorada por git). La aplicación solo importa los JSON derivados. No publicar PDFs ni Markdown de clase desde `public/`.
+5. **Documentos fuente y PDFs de clase**: Guardar los originales en `course-inputs/<slug>/` (ignorado por git). Copiar los PDFs de clase a `public/<slug>/materiales/` y enlazarlos en `sourceRefs.url` con una ruta absoluta del sitio (`/ciencia-de-datos/materiales/...`). No publicar Markdown de autoría. Un servidor estático basta: con `Content-Type: application/pdf` y sin `Content-Disposition: attachment`, el visor del navegador abre el archivo en lugar de forzar la descarga.
 6. **Vista inicial autorada, no auto-ajuste**: Cada documento debe declarar un `canvas.initialViewport` legible (y `mobileInitialViewport` opcional). Prohibido el `fitView` automático al cargar el documento completo. Fit View es una acción explícita del visitante; Reset debe devolver al viewport autorado. El `minZoom` debe ser lo bastante bajo para que Fit View muestre el documento completo en un área de 1280×800; con documentos altos esto significa valores cercanos a `0.15`, no `0.35`.
 7. **Grafo de aprendizaje completo**: Cada nodo `topic` o `subtopic` debe participar en al menos un edge. Leyendas, etiquetas, párrafos y grupos de enlaces se usan solo donde mejoran la jerarquía, no como relleno.
 
@@ -61,7 +61,7 @@ Esta guía define el procedimiento estándar para que un agente de repositorio (
 1. Para cada nodo de tipo `topic` o `subtopic`:
    - Escribir `data.detail` (una frase) para el bloque del mapa.
    - Redactar explicación técnica concisa y estructurada en formato Markdown (`content`) para el cajón. El cajón renderiza GFM (tablas, listas, citas y código en línea) y omite el `# <Título>` inicial porque ya muestra el título del tema.
-   - Definir `sourceRefs` obligatorios con `label` y `locator` específico verificado. No incluir URLs a archivos de `course-inputs/` ni rutas `/servidores/`.
+   - Definir `sourceRefs` obligatorios con `label`, `locator` específico verificado y `url` al PDF en `public/<slug>/materiales/` cuando el archivo exista. No apuntar a `course-inputs/`.
    - Añadir `resources` externos solo si la URL es HTTP/HTTPS, accesible y el título describe el destino real.
 
 ### Paso 4: Creación de Archivos JSON

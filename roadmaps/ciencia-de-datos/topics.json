@@ -5,15 +5,18 @@
     "sourceRefs": [
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 5/14 — Descripción de la asignatura"
+        "locator": "p. 5/14 — Descripción de la asignatura",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       },
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 10/14 — Competencias"
+        "locator": "p. 10/14 — Competencias",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       },
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 2–6/31 — Introducción a Data Science"
+        "locator": "pp. 2–6/31 — Introducción a Data Science",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       }
     ]
   },
@@ -23,7 +26,8 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 3–6/31 — Estadística, computación y área de aplicación"
+        "locator": "pp. 3–6/31 — Estadística, computación y área de aplicación",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       }
     ]
   },
@@ -33,7 +37,8 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 7–12/31 — Ciclo de la ciencia de datos"
+        "locator": "pp. 7–12/31 — Ciclo de la ciencia de datos",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       }
     ]
   },
@@ -43,7 +48,8 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "p. 9/31 — Definición del problema y recolección de datos"
+        "locator": "p. 9/31 — Definición del problema y recolección de datos",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       }
     ]
   },
@@ -53,11 +59,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 14–16/31 — Análisis exploratorio de los datos"
+        "locator": "pp. 14–16/31 — Análisis exploratorio de los datos",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 1–3/18 — Carga, estructura e histogramas de calidad del aire"
+        "locator": "pp. 1–3/18 — Carga, estructura e histogramas de calidad del aire",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -67,11 +75,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "p. 17/31 — Verificación de tipos de datos"
+        "locator": "p. 17/31 — Verificación de tipos de datos",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 3–4/18 — Tipos e identificación de correcciones"
+        "locator": "pp. 3–4/18 — Tipos e identificación de correcciones",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -81,11 +91,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 18–21/31 — Valores faltantes y estrategias"
+        "locator": "pp. 18–21/31 — Valores faltantes y estrategias",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 4–7/18 — Conteo y porcentaje de valores nulos"
+        "locator": "pp. 4–7/18 — Conteo y porcentaje de valores nulos",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -95,11 +107,13 @@
     "sourceRefs": [
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 3–5/20 — Ceros incongruentes, faltantes e imputación"
+        "locator": "pp. 3–5/20 — Ceros incongruentes, faltantes e imputación",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       },
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 3/4 — Dataset 2: UNKNOWN, ERROR y categorías inconsistentes"
+        "locator": "p. 3/4 — Dataset 2: UNKNOWN, ERROR y categorías inconsistentes",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       }
     ]
   },
@@ -109,11 +123,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 19–21/31 — Alternativas para valores faltantes"
+        "locator": "pp. 19–21/31 — Alternativas para valores faltantes",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 7–9/18 — Eliminación por porcentaje e imputación"
+        "locator": "pp. 7–9/18 — Eliminación por porcentaje e imputación",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -123,11 +139,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 19–21/31 — Media, mediana, moda, adyacentes y eliminación"
+        "locator": "pp. 19–21/31 — Media, mediana, moda, adyacentes y eliminación",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 8–9/18 — Reemplazo de nulos por la media"
+        "locator": "pp. 8–9/18 — Reemplazo de nulos por la media",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -137,11 +155,13 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "p. 3/18 — Histogramas de variables numéricas"
+        "locator": "p. 3/18 — Histogramas de variables numéricas",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 2–4/17 — Descriptivos, histogramas y diagramas de caja"
+        "locator": "pp. 2–4/17 — Descriptivos, histogramas y diagramas de caja",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   },
@@ -151,15 +171,18 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "p. 10/17 — Gráfico stripplot/enjambre"
+        "locator": "p. 10/17 — Gráfico stripplot/enjambre",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "p. 11/17 — Diagrama de violín"
+        "locator": "p. 11/17 — Diagrama de violín",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       },
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 6–7/20 — Stripplots y violines por Outcome"
+        "locator": "pp. 6–7/20 — Stripplots y violines por Outcome",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       }
     ]
   },
@@ -169,11 +192,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 22–28/31 — Valores atípicos, detección y tratamiento"
+        "locator": "pp. 22–28/31 — Valores atípicos, detección y tratamiento",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 9–12/18 — Comparación de métodos de valores atípicos"
+        "locator": "pp. 9–12/18 — Comparación de métodos de valores atípicos",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -183,11 +208,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 24–27/31 — IQR, desviación, puntuación Z y Z modificada"
+        "locator": "pp. 24–27/31 — IQR, desviación, puntuación Z y Z modificada",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 4–8/17 — Comparación IQR, desviación, Z y Z modificada"
+        "locator": "pp. 4–8/17 — Comparación IQR, desviación, Z y Z modificada",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   },
@@ -197,11 +224,13 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 13–14/18 — Isolation Forest en calidad del aire"
+        "locator": "pp. 13–14/18 — Isolation Forest en calidad del aire",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 8–9/17 — Isolation Forest en calidad del vino"
+        "locator": "pp. 8–9/17 — Isolation Forest en calidad del vino",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   },
@@ -211,15 +240,18 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 8–9/17 — Isolation Forest con contamination=0.05"
+        "locator": "pp. 8–9/17 — Isolation Forest con contamination=0.05",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       },
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 12–13/20 — 39 anomalías con contamination=0.05"
+        "locator": "pp. 12–13/20 — 39 anomalías con contamination=0.05",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       },
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "pp. 8–9/15 — 50 anomalías con contamination=0.05"
+        "locator": "pp. 8–9/15 — 50 anomalías con contamination=0.05",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       }
     ]
   },
@@ -229,11 +261,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 29–31/31 — Correlación y usos en EDA"
+        "locator": "pp. 29–31/31 — Correlación y usos en EDA",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 1- CDD -Semana 02.pdf",
-        "locator": "pp. 15–18/18 — Matrices de correlación de contaminantes"
+        "locator": "pp. 15–18/18 — Matrices de correlación de contaminantes",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%201-%20CDD%20-Semana%2002.pdf"
       }
     ]
   },
@@ -243,11 +277,13 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "p. 30/31 — Pearson, Spearman y Kendall"
+        "locator": "p. 30/31 — Pearson, Spearman y Kendall",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 12–15/17 — Correlaciones Pearson, Spearman y Kendall"
+        "locator": "pp. 12–15/17 — Correlaciones Pearson, Spearman y Kendall",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   },
@@ -257,11 +293,13 @@
     "sourceRefs": [
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 10/14 — Competencia 3: metodologías de evaluación de modelos"
+        "locator": "p. 10/14 — Competencia 3: metodologías de evaluación de modelos",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 7–10/10 — División, ajuste y evaluación de Poisson múltiple"
+        "locator": "pp. 7–10/10 — División, ajuste y evaluación de Poisson múltiple",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       }
     ]
   },
@@ -271,11 +309,13 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 15–17/17 — Estandarización, KNN, accuracy y validación cruzada"
+        "locator": "pp. 15–17/17 — Estandarización, KNN, accuracy y validación cruzada",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       },
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 19–20/20 — Accuracy y matriz de confusión logística"
+        "locator": "pp. 19–20/20 — Accuracy y matriz de confusión logística",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       }
     ]
   },
@@ -285,11 +325,13 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 15–17/17 — Implementación de KNN para calidad del vino"
+        "locator": "pp. 15–17/17 — Implementación de KNN para calidad del vino",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       },
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 8/14 — Clasificación kNN"
+        "locator": "p. 8/14 — Clasificación kNN",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       }
     ]
   },
@@ -299,7 +341,8 @@
     "sourceRefs": [
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 15–17/17 — KNN, inconsistencia de escalado y mejor k=21"
+        "locator": "pp. 15–17/17 — KNN, inconsistencia de escalado y mejor k=21",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   },
@@ -309,11 +352,13 @@
     "sourceRefs": [
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 17–20/20 — Regresión logística para Outcome"
+        "locator": "pp. 17–20/20 — Regresión logística para Outcome",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       },
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 8/14 — Regresión logística"
+        "locator": "p. 8/14 — Regresión logística",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       }
     ]
   },
@@ -323,7 +368,8 @@
     "sourceRefs": [
       {
         "label": "Clase 05 -CCD - Ejemplo.pdf",
-        "locator": "pp. 18–20/20 — Resumen Logit, predictores significativos y accuracy"
+        "locator": "pp. 18–20/20 — Resumen Logit, predictores significativos y accuracy",
+        "url": "/ciencia-de-datos/materiales/Clase%2005%20-CCD%20-%20Ejemplo.pdf"
       }
     ]
   },
@@ -333,11 +379,13 @@
     "sourceRefs": [
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "pp. 12–15/15 — Regresión lineal simple y múltiple"
+        "locator": "pp. 12–15/15 — Regresión lineal simple y múltiple",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       },
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 2/4 — Dataset 1: precio_hora y salario"
+        "locator": "p. 2/4 — Dataset 1: precio_hora y salario",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       }
     ]
   },
@@ -347,7 +395,8 @@
     "sourceRefs": [
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "pp. 12–15/15 — Modelos simple, múltiple y resumen OLS"
+        "locator": "pp. 12–15/15 — Modelos simple, múltiple y resumen OLS",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       }
     ]
   },
@@ -357,7 +406,8 @@
     "sourceRefs": [
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "pp. 14–15/15 — Resumen OLS y número de condición 2.13e3"
+        "locator": "pp. 14–15/15 — Resumen OLS y número de condición 2.13e3",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       }
     ]
   },
@@ -367,7 +417,8 @@
     "sourceRefs": [
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "pp. 13–15/15 — R² múltiple 0.005 y ningún predictor significativo"
+        "locator": "pp. 13–15/15 — R² múltiple 0.005 y ningún predictor significativo",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       }
     ]
   },
@@ -377,7 +428,8 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "pp. 2–4/12 — Datos de conteo y contraste con otros modelos"
+        "locator": "pp. 2–4/12 — Datos de conteo y contraste con otros modelos",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       }
     ]
   },
@@ -387,7 +439,8 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "p. 6/12 — Equidispersión, sobredispersión y errores estándar"
+        "locator": "p. 6/12 — Equidispersión, sobredispersión y errores estándar",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       }
     ]
   },
@@ -397,7 +450,8 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "pp. 7–10/12 — Distribución, enlace log y media exponencial"
+        "locator": "pp. 7–10/12 — Distribución, enlace log y media exponencial",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       }
     ]
   },
@@ -407,11 +461,13 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "pp. 8–10/12 — Coeficientes, enlace log y conteo esperado"
+        "locator": "pp. 8–10/12 — Coeficientes, enlace log y conteo esperado",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 5–6/10 — Coeficiente de atemp y curva simple"
+        "locator": "pp. 5–6/10 — Coeficiente de atemp y curva simple",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       }
     ]
   },
@@ -421,11 +477,13 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "pp. 11–12/12 — PoissonRegressor, parámetros y métodos"
+        "locator": "pp. 11–12/12 — PoissonRegressor, parámetros y métodos",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 5–9/10 — Implementación predictiva y GLM"
+        "locator": "pp. 5–9/10 — Implementación predictiva y GLM",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       }
     ]
   },
@@ -435,15 +493,18 @@
     "sourceRefs": [
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "p. 12/12 — Descripción de score (discrepante con los ejemplos)"
+        "locator": "p. 12/12 — Descripción de score (discrepante con los ejemplos)",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "p. 5/10 — D² simple 0.368826"
+        "locator": "p. 5/10 — D² simple 0.368826",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       },
       {
         "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
-        "locator": "p. 6/8 — D² de entrenamiento 0.528553"
+        "locator": "p. 6/8 — D² de entrenamiento 0.528553",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CCD%20-%20Poisson%20-%20Ejemplo%202.pdf"
       }
     ]
   },
@@ -453,11 +514,13 @@
     "sourceRefs": [
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 1–4/10 — Datos y exploración de alquileres"
+        "locator": "pp. 1–4/10 — Datos y exploración de alquileres",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 5–7/10 — Poisson simple, curva y GLM"
+        "locator": "pp. 5–7/10 — Poisson simple, curva y GLM",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       }
     ]
   },
@@ -467,11 +530,13 @@
     "sourceRefs": [
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "p. 8/10 — Poisson múltiple y D² train 0.774602"
+        "locator": "p. 8/10 — Poisson múltiple y D² train 0.774602",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       },
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "p. 9/10 — GLM múltiple y residuos"
+        "locator": "p. 9/10 — GLM múltiple y residuos",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       }
     ]
   },
@@ -481,11 +546,13 @@
     "sourceRefs": [
       {
         "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
-        "locator": "pp. 1–2/8 — Datos, tipos y conversión de Date"
+        "locator": "pp. 1–2/8 — Datos, tipos y conversión de Date",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CCD%20-%20Poisson%20-%20Ejemplo%202.pdf"
       },
       {
         "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
-        "locator": "pp. 5–7/8 — Variables temporales, modelo, D² y GLM"
+        "locator": "pp. 5–7/8 — Variables temporales, modelo, D² y GLM",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CCD%20-%20Poisson%20-%20Ejemplo%202.pdf"
       }
     ]
   },
@@ -495,11 +562,13 @@
     "sourceRefs": [
       {
         "label": "Clase 08 - CDD - Ejemplo 1.pdf",
-        "locator": "pp. 9–10/10 — GLM, residuos y valores reales vs predichos"
+        "locator": "pp. 9–10/10 — GLM, residuos y valores reales vs predichos",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CDD%20-%20Ejemplo%201.pdf"
       },
       {
         "label": "Clase 08 - CCD - Poisson - Ejemplo 2.pdf",
-        "locator": "pp. 6–8/8 — D², GLM y serie real vs predicha"
+        "locator": "pp. 6–8/8 — D², GLM y serie real vs predicha",
+        "url": "/ciencia-de-datos/materiales/Clase%2008%20-%20CCD%20-%20Poisson%20-%20Ejemplo%202.pdf"
       }
     ]
   },
@@ -509,11 +578,13 @@
     "sourceRefs": [
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2"
+        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       },
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 2/4 — Dataset 1: empleados, EDA y regresión"
+        "locator": "p. 2/4 — Dataset 1: empleados, EDA y regresión",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       }
     ]
   },
@@ -523,11 +594,13 @@
     "sourceRefs": [
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2"
+        "locator": "p. 1/4 — Asignación: Campos Andrade, Anibal Josue, Dataset 1 y Dataset 2",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       },
       {
         "label": "CCD ACT1.pdf",
-        "locator": "p. 3/4 — Dataset 2: transacciones de cafetería"
+        "locator": "p. 3/4 — Dataset 2: transacciones de cafetería",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       }
     ]
   },
@@ -537,15 +610,18 @@
     "sourceRefs": [
       {
         "label": "Clase 01 - S1 - CDD.pdf",
-        "locator": "pp. 7–12/31 — Ciclo completo de ciencia de datos"
+        "locator": "pp. 7–12/31 — Ciclo completo de ciencia de datos",
+        "url": "/ciencia-de-datos/materiales/Clase%2001%20-%20S1%20-%20CDD.pdf"
       },
       {
         "label": "Generalidades de la asignatura - CDD-1.pdf",
-        "locator": "p. 11/14 — Metodología práctica y trabajo autónomo"
+        "locator": "p. 11/14 — Metodología práctica y trabajo autónomo",
+        "url": "/ciencia-de-datos/materiales/Generalidades%20de%20la%20asignatura%20-%20CDD-1.pdf"
       },
       {
         "label": "CCD ACT1.pdf",
-        "locator": "pp. 2–3/4 — Actividades de Dataset 1 y Dataset 2"
+        "locator": "pp. 2–3/4 — Actividades de Dataset 1 y Dataset 2",
+        "url": "/ciencia-de-datos/materiales/CCD%20ACT1.pdf"
       }
     ]
   },
@@ -555,15 +631,18 @@
     "sourceRefs": [
       {
         "label": "Clase 06 - CCD - S3.pdf",
-        "locator": "p. 15/15 — R²=0.005, ningún p<0.05 y recomendación de revisión"
+        "locator": "p. 15/15 — R²=0.005, ningún p<0.05 y recomendación de revisión",
+        "url": "/ciencia-de-datos/materiales/Clase%2006%20-%20CCD%20-%20S3.pdf"
       },
       {
         "label": "Clase 07 - CDD - Regresión de Poisson.pdf",
-        "locator": "p. 6/12 — Limitaciones por sobredispersión e independencia"
+        "locator": "p. 6/12 — Limitaciones por sobredispersión e independencia",
+        "url": "/ciencia-de-datos/materiales/Clase%2007%20-%20CDD%20-%20Regresi%C3%B3n%20de%20Poisson.pdf"
       },
       {
         "label": "Ejemplo 02 - Clase 04 - CDD.pdf",
-        "locator": "pp. 15–17/17 — Ejemplo KNN con evaluación y escalado inconsistentes"
+        "locator": "pp. 15–17/17 — Ejemplo KNN con evaluación y escalado inconsistentes",
+        "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
   }

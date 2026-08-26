@@ -5,19 +5,23 @@
     "sourceRefs": [
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 1/7 — Nombre, código DAS y ciclo"
+        "locator": "p. 1/7 — Nombre, código DAS y ciclo",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 2/7 — Descripción y competencias del curso"
+        "locator": "p. 2/7 — Descripción y competencias del curso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Clase Bienvenida.pdf",
-        "locator": "Diapositiva 3 — Competencias de la Asignatura"
+        "locator": "Diapositiva 3 — Competencias de la Asignatura",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase%20Bienvenida.pdf"
       },
       {
         "label": "Clase Bienvenida.pdf",
-        "locator": "Diapositiva 5 — Metodología de evaluación"
+        "locator": "Diapositiva 5 — Metodología de evaluación",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase%20Bienvenida.pdf"
       }
     ]
   },
@@ -27,15 +31,18 @@
     "sourceRefs": [
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 2/7 — Descripción del curso"
+        "locator": "p. 2/7 — Descripción del curso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "pp. 2–3/7 — Resultados de aprendizaje RA 1 a RA 10"
+        "locator": "pp. 2–3/7 — Resultados de aprendizaje RA 1 a RA 10",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Clase Bienvenida.pdf",
-        "locator": "Diapositiva 4 — Generalidades de la asignatura"
+        "locator": "Diapositiva 4 — Generalidades de la asignatura",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase%20Bienvenida.pdf"
       }
     ]
   },
@@ -45,7 +52,8 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 03 — ¿Qué es la arquitectura de software?"
+        "locator": "Diapositiva 03 — ¿Qué es la arquitectura de software?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -55,7 +63,8 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 04 — Arquitectura, diseño y código"
+        "locator": "Diapositiva 04 — Arquitectura, diseño y código",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -65,7 +74,8 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 05 — ¿Por qué importa antes de programar?"
+        "locator": "Diapositiva 05 — ¿Por qué importa antes de programar?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -75,11 +85,13 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 06 — Arquitectura y objetivos del negocio"
+        "locator": "Diapositiva 06 — Arquitectura y objetivos del negocio",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 07 — Stakeholders y drivers arquitectónicos"
+        "locator": "Diapositiva 07 — Stakeholders y drivers arquitectónicos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -89,7 +101,8 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 08 — Componentes generales de una solución"
+        "locator": "Diapositiva 08 — Componentes generales de una solución",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -99,15 +112,18 @@
     "sourceRefs": [
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 09 — Primeros estilos arquitectónicos"
+        "locator": "Diapositiva 09 — Primeros estilos arquitectónicos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 10 — Atributos de calidad"
+        "locator": "Diapositiva 10 — Atributos de calidad",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 11 — El rol del arquitecto de software"
+        "locator": "Diapositiva 11 — El rol del arquitecto de software",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ],
     "resources": [
@@ -124,11 +140,13 @@
     "sourceRefs": [
       {
         "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
-        "locator": "p. 1/4 — De la arquitectura de software a la arquitectura de TI"
+        "locator": "p. 1/4 — De la arquitectura de software a la arquitectura de TI",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Tipos_Arquitectura_TI_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 1 — Tipos de arquitectura de tecnologías de información"
+        "locator": "Diapositiva 1 — Tipos de arquitectura de tecnologías de información",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       }
     ]
   },
@@ -138,15 +156,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
-        "locator": "p. 1/4 — Arquitectura empresarial y arquitectura de negocio"
+        "locator": "p. 1/4 — Arquitectura empresarial y arquitectura de negocio",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Tipos_Arquitectura_TI_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 2 — Arquitectura empresarial"
+        "locator": "Diapositiva 2 — Arquitectura empresarial",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 3 — Arquitectura de negocio"
+        "locator": "Diapositiva 3 — Arquitectura de negocio",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       }
     ]
   },
@@ -156,11 +177,13 @@
     "sourceRefs": [
       {
         "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
-        "locator": "p. 2/4 — Arquitectura de datos o información"
+        "locator": "p. 2/4 — Arquitectura de datos o información",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Tipos_Arquitectura_TI_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 4 — Arquitectura de datos"
+        "locator": "Diapositiva 4 — Arquitectura de datos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       }
     ]
   },
@@ -170,15 +193,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
-        "locator": "p. 2/4 — Arquitectura de aplicaciones y arquitectura tecnológica"
+        "locator": "p. 2/4 — Arquitectura de aplicaciones y arquitectura tecnológica",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Tipos_Arquitectura_TI_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 5 — Arquitectura de aplicaciones"
+        "locator": "Diapositiva 5 — Arquitectura de aplicaciones",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 6 — Arquitectura tecnológica"
+        "locator": "Diapositiva 6 — Arquitectura tecnológica",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       }
     ]
   },
@@ -188,19 +214,23 @@
     "sourceRefs": [
       {
         "label": "Lectura_Tipos_Arquitectura_TI_UNIVO.pdf",
-        "locator": "pp. 3–4/4 — Arquitectura de software, relación entre tipos y caso integrador"
+        "locator": "pp. 3–4/4 — Arquitectura de software, relación entre tipos y caso integrador",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Tipos_Arquitectura_TI_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 7 — Arquitectura de software"
+        "locator": "Diapositiva 7 — Arquitectura de software",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 8 — ¿Cómo se relacionan?"
+        "locator": "Diapositiva 8 — ¿Cómo se relacionan?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       },
       {
         "label": "Presentacion S3s1.pdf",
-        "locator": "Diapositiva 9 — Caso integrador: Universidad Horizonte"
+        "locator": "Diapositiva 9 — Caso integrador: Universidad Horizonte",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s1.pdf"
       }
     ]
   },
@@ -210,15 +240,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
-        "locator": "p. 1/5 — ¿Por qué hablar de proceso arquitectónico?"
+        "locator": "p. 1/5 — ¿Por qué hablar de proceso arquitectónico?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Proceso_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s2.pdf",
-        "locator": "Diapositiva 2 — ¿Por qué seguir un proceso?"
+        "locator": "Diapositiva 2 — ¿Por qué seguir un proceso?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s2.pdf"
       },
       {
         "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "Diapositiva 2 — Arquitectura: ordenar antes de construir"
+        "locator": "Diapositiva 2 — Arquitectura: ordenar antes de construir",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -228,15 +261,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
-        "locator": "p. 1/5 — Etapas generales del proceso"
+        "locator": "p. 1/5 — Etapas generales del proceso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Proceso_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s2.pdf",
-        "locator": "Diapositiva 3 — El proceso arquitectónico"
+        "locator": "Diapositiva 3 — El proceso arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s2.pdf"
       },
       {
         "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "Diapositiva 3 — El proceso arquitectónico"
+        "locator": "Diapositiva 3 — El proceso arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -246,15 +282,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
-        "locator": "p. 2/5 — Contexto y alcance"
+        "locator": "p. 2/5 — Contexto y alcance",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Proceso_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s2.pdf",
-        "locator": "Diapositiva 4 — Comprender contexto y alcance"
+        "locator": "Diapositiva 4 — Comprender contexto y alcance",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s2.pdf"
       },
       {
         "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "Diapositiva 4 — Comprender el contexto y el alcance"
+        "locator": "Diapositiva 4 — Comprender el contexto y el alcance",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -264,15 +303,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
-        "locator": "p. 2/5 — Requerimientos, restricciones y drivers"
+        "locator": "p. 2/5 — Requerimientos, restricciones y drivers",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Proceso_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s2.pdf",
-        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers"
+        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s2.pdf"
       },
       {
         "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers"
+        "locator": "Diapositiva 5 — Requerimientos, restricciones y drivers",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -282,15 +324,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Proceso_Arquitectura_Software_UNIVO.pdf",
-        "locator": "pp. 3–5/5 — Decisiones, documentación, evaluación y caso breve"
+        "locator": "pp. 3–5/5 — Decisiones, documentación, evaluación y caso breve",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Proceso_Arquitectura_Software_UNIVO.pdf"
       },
       {
         "label": "Presentacion S3s2.pdf",
-        "locator": "Diapositivas 6–8 — Decisiones, documentar y evaluar"
+        "locator": "Diapositivas 6–8 — Decisiones, documentar y evaluar",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S3s2.pdf"
       },
       {
         "label": "Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "Diapositivas 6–9 — Decisiones, documentación, evaluación y mini caso"
+        "locator": "Diapositivas 6–9 — Decisiones, documentación, evaluación y mini caso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Semana2_Lunes_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -300,19 +345,23 @@
     "sourceRefs": [
       {
         "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "p. 1/4 — ¿Qué significa organizar el proceso arquitectónico?"
+        "locator": "p. 1/4 — ¿Qué significa organizar el proceso arquitectónico?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       },
       {
         "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "p. 2/4 — Etapas del proceso arquitectónico"
+        "locator": "p. 2/4 — Etapas del proceso arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       },
       {
         "label": "Presentacion S4s1.pdf",
-        "locator": "Diapositiva 2 — ¿Qué significa organizar el proceso?"
+        "locator": "Diapositiva 2 — ¿Qué significa organizar el proceso?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S4s1.pdf"
       },
       {
         "label": "Presentacion S4s1.pdf",
-        "locator": "Diapositiva 4 — Etapas principales"
+        "locator": "Diapositiva 4 — Etapas principales",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S4s1.pdf"
       }
     ]
   },
@@ -322,15 +371,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "p. 1/4 — Entradas del proceso"
+        "locator": "p. 1/4 — Entradas del proceso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       },
       {
         "label": "Presentacion S4s1.pdf",
-        "locator": "Diapositiva 3 — Entradas del proceso arquitectónico"
+        "locator": "Diapositiva 3 — Entradas del proceso arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S4s1.pdf"
       },
       {
         "label": "Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "p. 1/2 — A. Entradas del proceso"
+        "locator": "p. 1/2 — A. Entradas del proceso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -340,15 +392,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "pp. 2–3/4 — Organización de decisiones, artefactos y caso breve"
+        "locator": "pp. 2–3/4 — Organización de decisiones, artefactos y caso breve",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       },
       {
         "label": "Presentacion S4s1.pdf",
-        "locator": "Diapositivas 5–7 — Decisiones, artefactos y caso"
+        "locator": "Diapositivas 5–7 — Decisiones, artefactos y caso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Presentacion%20S4s1.pdf"
       },
       {
         "label": "Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf",
-        "locator": "pp. 1–2/2 — B. Organización de decisiones y C. Artefactos"
+        "locator": "pp. 1–2/2 — B. Organización de decisiones y C. Artefactos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Ejercicio_Organizacion_Proceso_Arquitectura_UNIVO.pdf"
       }
     ]
   },
@@ -358,15 +413,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Apoyo.pdf",
-        "locator": "p. 1/4 — El arquitecto de software dentro del proyecto"
+        "locator": "p. 1/4 — El arquitecto de software dentro del proyecto",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Apoyo.pdf"
       },
       {
         "label": "presentacion s4s2.pdf",
-        "locator": "Diapositiva 2 — ¿Quién es el arquitecto de software?"
+        "locator": "Diapositiva 2 — ¿Quién es el arquitecto de software?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/presentacion%20s4s2.pdf"
       },
       {
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
-        "locator": "Diapositiva 11 — El rol del arquitecto de software"
+        "locator": "Diapositiva 11 — El rol del arquitecto de software",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
       }
     ]
   },
@@ -376,11 +434,13 @@
     "sourceRefs": [
       {
         "label": "Lectura_Apoyo.pdf",
-        "locator": "pp. 1–3/4 — Responsabilidades, características, decisiones y relación con stakeholders"
+        "locator": "pp. 1–3/4 — Responsabilidades, características, decisiones y relación con stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Apoyo.pdf"
       },
       {
         "label": "presentacion s4s2.pdf",
-        "locator": "Diapositivas 3–6 — Responsabilidades, características, decisiones y stakeholders"
+        "locator": "Diapositivas 3–6 — Responsabilidades, características, decisiones y stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/presentacion%20s4s2.pdf"
       }
     ]
   },
@@ -390,15 +450,18 @@
     "sourceRefs": [
       {
         "label": "Lectura_Apoyo.pdf",
-        "locator": "p. 4/4 — Riesgos comunes cuando no hay liderazgo arquitectónico"
+        "locator": "p. 4/4 — Riesgos comunes cuando no hay liderazgo arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Lectura_Apoyo.pdf"
       },
       {
         "label": "presentacion s4s2.pdf",
-        "locator": "Diapositiva 7 — Riesgos si no hay liderazgo arquitectónico"
+        "locator": "Diapositiva 7 — Riesgos si no hay liderazgo arquitectónico",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/presentacion%20s4s2.pdf"
       },
       {
         "label": "presentacion s4s2.pdf",
-        "locator": "Diapositiva 8 — Caso: plataforma universitaria"
+        "locator": "Diapositiva 8 — Caso: plataforma universitaria",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/presentacion%20s4s2.pdf"
       }
     ]
   },
@@ -408,15 +471,18 @@
     "sourceRefs": [
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 2 — ¿Qué es un stakeholder?"
+        "locator": "Diapositiva 2 — ¿Qué es un stakeholder?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 3 — ¿Por qué identificar stakeholders?"
+        "locator": "Diapositiva 3 — ¿Por qué identificar stakeholders?",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "lectura apoyo s5s1.pdf",
-        "locator": "pp. 2–3/10 — Concepto de stakeholder e importancia para la arquitectura"
+        "locator": "pp. 2–3/10 — Concepto de stakeholder e importancia para la arquitectura",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s1.pdf"
       }
     ],
     "resources": [
@@ -438,15 +504,18 @@
     "sourceRefs": [
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 4 — Stakeholders internos y externos"
+        "locator": "Diapositiva 4 — Stakeholders internos y externos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 6 — Stakeholders y arquitectura: preocupaciones distintas"
+        "locator": "Diapositiva 6 — Stakeholders y arquitectura: preocupaciones distintas",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "lectura apoyo s5s1.pdf",
-        "locator": "pp. 3–4/10 — Tipos de stakeholders"
+        "locator": "pp. 3–4/10 — Tipos de stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s1.pdf"
       }
     ]
   },
@@ -456,15 +525,18 @@
     "sourceRefs": [
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 8 — Técnica para identificar stakeholders"
+        "locator": "Diapositiva 8 — Técnica para identificar stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 9 — Preguntas orientadoras"
+        "locator": "Diapositiva 9 — Preguntas orientadoras",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "lectura apoyo s5s1.pdf",
-        "locator": "pp. 5–7/10 — Procedimiento de seis pasos y caso de citas médicas"
+        "locator": "pp. 5–7/10 — Procedimiento de seis pasos y caso de citas médicas",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s1.pdf"
       }
     ]
   },
@@ -474,11 +546,13 @@
     "sourceRefs": [
       {
         "label": "s5s1arq.pdf",
-        "locator": "Diapositiva 10 — Errores frecuentes al identificar stakeholders"
+        "locator": "Diapositiva 10 — Errores frecuentes al identificar stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s1arq.pdf"
       },
       {
         "label": "lectura apoyo s5s1.pdf",
-        "locator": "pp. 8–9/10 — Errores comunes y cierre"
+        "locator": "pp. 8–9/10 — Errores comunes y cierre",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s1.pdf"
       }
     ]
   },
@@ -488,15 +562,18 @@
     "sourceRefs": [
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 2 — De Identificar a Analizar"
+        "locator": "Diapositiva 2 — De Identificar a Analizar",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 3 — Información clave por stakeholder"
+        "locator": "Diapositiva 3 — Información clave por stakeholder",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "lectura apoyo s5s2.pdf",
-        "locator": "p. 2/5 — De identificar a analizar"
+        "locator": "p. 2/5 — De identificar a analizar",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s2.pdf"
       }
     ]
   },
@@ -506,15 +583,18 @@
     "sourceRefs": [
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 4 — Interés e influencia: conceptos clave"
+        "locator": "Diapositiva 4 — Interés e influencia: conceptos clave",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 5 — Matriz interés–influencia"
+        "locator": "Diapositiva 5 — Matriz interés–influencia",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "lectura apoyo s5s2.pdf",
-        "locator": "pp. 2–3/5 — Interés, influencia y la matriz de clasificación"
+        "locator": "pp. 2–3/5 — Interés, influencia y la matriz de clasificación",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s2.pdf"
       }
     ]
   },
@@ -524,15 +604,18 @@
     "sourceRefs": [
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 6 — Identificación de necesidades"
+        "locator": "Diapositiva 6 — Identificación de necesidades",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 7 — Necesidad vs. solución técnica"
+        "locator": "Diapositiva 7 — Necesidad vs. solución técnica",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "lectura apoyo s5s2.pdf",
-        "locator": "p. 3/5 — Necesidades, conflictos y caso aplicado"
+        "locator": "p. 3/5 — Necesidades, conflictos y caso aplicado",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s2.pdf"
       }
     ]
   },
@@ -542,19 +625,23 @@
     "sourceRefs": [
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 8 — Conflictos entre stakeholders"
+        "locator": "Diapositiva 8 — Conflictos entre stakeholders",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 9 — Caso práctico: sistema de citas médicas"
+        "locator": "Diapositiva 9 — Caso práctico: sistema de citas médicas",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "s5s2arq.pdf",
-        "locator": "Diapositiva 10 — Priorización de necesidades"
+        "locator": "Diapositiva 10 — Priorización de necesidades",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/s5s2arq.pdf"
       },
       {
         "label": "lectura apoyo s5s2.pdf",
-        "locator": "pp. 4–5/5 — Priorización y síntesis del proceso"
+        "locator": "pp. 4–5/5 — Priorización y síntesis del proceso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/lectura%20apoyo%20s5s2.pdf"
       }
     ]
   },
@@ -564,15 +651,18 @@
     "sourceRefs": [
       {
         "label": "Actividad_Evaluativa_1.pdf",
-        "locator": "p. 1/5 — Indicaciones generales y caso"
+        "locator": "p. 1/5 — Indicaciones generales y caso",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Actividad_Evaluativa_1.pdf"
       },
       {
         "label": "Actividad_Evaluativa_1.pdf",
-        "locator": "pp. 2–3/5 — Desarrollo de la actividad (3.1 a 3.6)"
+        "locator": "pp. 2–3/5 — Desarrollo de la actividad (3.1 a 3.6)",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Actividad_Evaluativa_1.pdf"
       },
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 5/7 — Cómputo 1: análisis de stakeholders, requerimientos y drivers"
+        "locator": "p. 5/7 — Cómputo 1: análisis de stakeholders, requerimientos y drivers",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       }
     ]
   },
@@ -582,7 +672,8 @@
     "sourceRefs": [
       {
         "label": "Actividad_Evaluativa_1.pdf",
-        "locator": "pp. 3–5/5 — Entregables, rúbrica y condición de evaluación"
+        "locator": "pp. 3–5/5 — Entregables, rúbrica y condición de evaluación",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Actividad_Evaluativa_1.pdf"
       }
     ]
   },
@@ -592,15 +683,18 @@
     "sourceRefs": [
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 3/7 — Calendario: 24/08 requerimientos, 26/08 drivers, 31/08 Parcial I"
+        "locator": "p. 3/7 — Calendario: 24/08 requerimientos, 26/08 drivers, 31/08 Parcial I",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 5/7 — Cómputo 1: Parcial I, fundamentos, stakeholders, drivers, escenarios y estilos"
+        "locator": "p. 5/7 — Cómputo 1: Parcial I, fundamentos, stakeholders, drivers, escenarios y estilos",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       },
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
-        "locator": "p. 2/7 — Resultados de aprendizaje RA 1, RA 2 y RA 3"
+        "locator": "p. 2/7 — Resultados de aprendizaje RA 1, RA 2 y RA 3",
+        "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
       }
     ]
   }

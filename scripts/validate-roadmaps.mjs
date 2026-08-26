@@ -41,6 +41,16 @@ export function isAllowedUrl(value) {
   }
 }
 
+function missingPublicPdf(url, publicDir) {
+  const pathname = url.split('#')[0].split('?')[0];
+  if (!pathname.startsWith('/') || !pathname.toLowerCase().endsWith('.pdf')) {
+    return null;
+  }
+  const relativePath = decodeURIComponent(pathname.replace(/^\//, ''));
+  const diskPath = path.join(publicDir, relativePath);
+  return fs.existsSync(diskPath) ? null : relativePath;
+}
+
 // A study step is a two-digit number, optionally suffixed to mark a parallel branch (20a / 20b).
 const STEP_PATTERN = /^\d{2,}[a-z]?$/;
 
@@ -419,6 +429,12 @@ export function validateRoadmapDocument(doc, options = {}) {
           if (ref && ref.url !== undefined && !isAllowedUrl(ref.url)) {
             addError(trackableId, `Invalid URL '${ref.url}'`);
           }
+          if (ref && typeof ref.url === 'string' && options.publicDir) {
+            const missingPdf = missingPublicPdf(ref.url, options.publicDir);
+            if (missingPdf) {
+              addError(trackableId, `Source PDF is missing on disk: ${missingPdf}`);
+            }
+          }
         }
       }
 
@@ -437,6 +453,11 @@ export function validateRoadmapDocument(doc, options = {}) {
               addError(trackableId, 'Resource requires non-empty url');
             } else if (!isAllowedUrl(res.url)) {
               addError(trackableId, `Invalid URL '${res.url}'`);
+            } else if (options.publicDir) {
+              const missingPdf = missingPublicPdf(res.url, options.publicDir);
+              if (missingPdf) {
+                addError(trackableId, `Resource PDF is missing on disk: ${missingPdf}`);
+              }
             }
           }
         }
@@ -554,7 +575,10 @@ if (isMain) {
   }
 
   for (const entry of collectionEntries) {
-    const result = validateRoadmapDocument(entry.document, { fallbackSlug: entry.directory });
+    const result = validateRoadmapDocument(entry.document, {
+      fallbackSlug: entry.directory,
+      publicDir: path.join(rootDir, 'public'),
+    });
     totalValidated++;
     const disconnected = result.stats?.disconnectedCount ?? 0;
     const trackable = result.stats?.trackableCount ?? 0;

@@ -214,6 +214,20 @@ test('rejects a disconnected topic', () => {
   assert.ok(result.errors.some((e) => e.includes('orphan-card') && e.includes('topic/subtopic is disconnected')));
 });
 
+test('rejects a local PDF url that is missing from public/', () => {
+  const doc = createValidMinimalDoc();
+  doc.topics['topic-1'].sourceRefs = [
+    {
+      label: 'Missing.pdf',
+      locator: 'p. 1',
+      url: '/minimal-course/materiales/Missing.pdf',
+    },
+  ];
+  const result = validateRoadmapDocument(doc, { publicDir: '/tmp' });
+  assert.equal(result.valid, false);
+  assert.ok(result.errors.some((e) => e.includes('Source PDF is missing on disk')));
+});
+
 test('rejects an invalid URL protocol', () => {
   const doc = createValidMinimalDoc();
   doc.topics['topic-1'].resources = [

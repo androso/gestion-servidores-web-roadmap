@@ -11,7 +11,7 @@
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
     "validate:roadmaps": "node scripts/validate-roadmaps.mjs",
-    "test:roadmaps": "node --test scripts/validate-roadmaps.test.mjs && node --test --experimental-strip-types --no-warnings scripts/mobile-layout.test.ts"
+    "test:roadmaps": "node --test scripts/validate-roadmaps.test.mjs && node --test --experimental-strip-types --no-warnings scripts/mobile-layout.test.ts scripts/pdf-source.test.ts"
   },
   "dependencies": {
     "@xyflow/react": "^12.11.3",

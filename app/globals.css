@@ -212,6 +212,7 @@ button {
 }
 
 .topic-drawer-panel {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -248,7 +249,8 @@ button {
 }
 
 .topic-drawer-close:focus-visible,
-.topic-status-btn:focus-visible {
+.topic-status-btn:focus-visible,
+.topic-pdf-actions a:focus-visible {
   outline: 2px solid #1d4ed8;
   outline-offset: 2px;
 }
@@ -285,6 +287,58 @@ button {
   min-height: 0;
   overflow-y: auto;
   padding: 16px 16px 24px;
+}
+
+.topic-pdf-viewer {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  background: #0f172a;
+}
+
+.topic-pdf-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 8px 12px;
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.topic-pdf-title {
+  margin: 0;
+  min-width: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.topic-pdf-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.topic-pdf-actions a {
+  color: #bfdbfe;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.topic-pdf-frame {
+  flex: 1;
+  min-height: 0;
+  width: 100%;
+  border: 0;
+  background: #fff;
 }
 
 .topic-drawer-title {

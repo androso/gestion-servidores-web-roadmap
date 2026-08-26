@@ -4,6 +4,7 @@ export * from './roadmap-node';
 export * from './roadmap-edge';
 export * from './roadmap-canvas';
 export * from './topic-drawer';
+export * from './pdf-source';
 export * from './interactive-renderer';
 export * from './use-roadmap-progress';
 export * from './use-mobile-viewport';
