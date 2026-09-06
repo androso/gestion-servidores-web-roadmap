@@ -9,6 +9,8 @@ import programacionOrientadaAEventosData from './programacion-orientada-a-evento
 import programacionOrientadaAEventosTopics from './programacion-orientada-a-eventos/topics.json';
 import disenoArquitecturaDeSistemasData from './diseno-arquitectura-de-sistemas/roadmap.json';
 import disenoArquitecturaDeSistemasTopics from './diseno-arquitectura-de-sistemas/topics.json';
+import aplicacionTecnicasIngenieriaSoftwareData from './aplicacion-tecnicas-ingenieria-software/roadmap.json';
+import aplicacionTecnicasIngenieriaSoftwareTopics from './aplicacion-tecnicas-ingenieria-software/topics.json';
 
 export const gestionServidoresWebRoadmap: RoadmapDocument = {
   ...(gestionServidoresWebData as unknown as Omit<RoadmapDocument, 'topics'>),
@@ -35,12 +37,18 @@ export const disenoArquitecturaDeSistemasRoadmap: RoadmapDocument = {
   topics: disenoArquitecturaDeSistemasTopics as Record<string, TopicDetails>,
 };
 
+export const aplicacionTecnicasIngenieriaSoftwareRoadmap: RoadmapDocument = {
+  ...(aplicacionTecnicasIngenieriaSoftwareData as unknown as Omit<RoadmapDocument, 'topics'>),
+  topics: aplicacionTecnicasIngenieriaSoftwareTopics as Record<string, TopicDetails>,
+};
+
 export const roadmaps: RoadmapDocument[] = [
   gestionServidoresWebRoadmap,
   cienciaDeDatosRoadmap,
   estructuraDeDatosRoadmap,
   programacionOrientadaAEventosRoadmap,
   disenoArquitecturaDeSistemasRoadmap,
+  aplicacionTecnicasIngenieriaSoftwareRoadmap,
 ];
 
 export const roadmapsBySlug: Record<string, RoadmapDocument> = {
@@ -50,6 +58,8 @@ export const roadmapsBySlug: Record<string, RoadmapDocument> = {
   'estructura-de-datos': estructuraDeDatosRoadmap,
   'programacion-orientada-a-eventos': programacionOrientadaAEventosRoadmap,
   'diseno-arquitectura-de-sistemas': disenoArquitecturaDeSistemasRoadmap,
+  'aplicacion-tecnicas-ingenieria-software': aplicacionTecnicasIngenieriaSoftwareRoadmap,
+  'atis': aplicacionTecnicasIngenieriaSoftwareRoadmap,
 };
 
 export function getRoadmapBySlug(slug?: string | null): RoadmapDocument {

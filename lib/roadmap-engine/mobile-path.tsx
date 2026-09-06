@@ -99,6 +99,11 @@ function PathTopic({
           {node.data.order}
         </span>
       ) : null}
+      {node.data.week ? (
+        <span className="roadmap-node-week" aria-hidden="true">
+          {node.data.week}
+        </span>
+      ) : null}
       <div className="roadmap-card-body">
         {!node.data.order && node.data.code ? (
           <span className="roadmap-node-code">{node.data.code}</span>

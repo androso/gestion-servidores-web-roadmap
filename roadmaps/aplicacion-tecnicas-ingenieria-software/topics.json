@@ -1,0 +1,441 @@
+{
+  "t-panorama-curso": {
+    "title": "Panorama del curso y proyecto integrador",
+    "content": "La asignatura **Aplicación de Técnicas de Ingeniería de Software** (UNIVO, Ing. Karla Cecilia Cruz de González) simula el entorno real de una empresa de desarrollo: el énfasis está en la **documentación profesional** del proyecto, no solo en codificar.\n\n### Key Concepts\n- **Competencias**: analizar problemas y proponer soluciones de software, modelar con UML, aplicar Scrum, documentar con RUP, administrar con Git/GitHub y aplicar principios de calidad.\n- **Metodología eminentemente práctica**: explicaciones guiadas, talleres, estudios de caso, trabajo colaborativo y retroalimentación continua.\n- **Proyecto integrador**: cada unidad aporta un componente al proyecto del equipo; las clases sirven para verificar avances semana a semana.\n- **Evaluación por cómputos**: cada cómputo combina dos laboratorios y prácticas/asistencia (Cómputos 1 y 2: 40/40/20; Cómputo 3: 25/25/25 + evaluación final 25).\n\n### What you must master\n- Explicar qué documentación se construirá a lo largo del ciclo (problema, requisitos, UML, backlog, arquitectura, configuración, calidad).\n- Ubicar las fechas de Laboratorio 1 y 2 y la ponderación de tu cómputo actual.\n- Describir cómo tu proyecto de equipo se alimenta de cada sesión.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 01 — Presentación del curso y diagnóstico",
+        "locator": "Sección 2. Visión General de la Asignatura",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_01_Presentacion_del_curso.pdf"
+      },
+      {
+        "label": "Sesión 01 — Presentación del curso y diagnóstico",
+        "locator": "Sección 6. Sistema de Evaluación",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_01_Presentacion_del_curso.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Curso ATIS en Canvas (UNIVO)",
+        "url": "https://univo.instructure.com/courses/1760"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "s-equipos-evaluacion": {
+    "title": "Equipos, evaluación y normas",
+    "content": "El curso se trabaja en **equipos fijos de 4 integrantes** durante todo el ciclo, sin cambios permitidos. Cada equipo elige un nombre, un coordinador y una idea preliminar de proyecto.\n\n### Key Concepts\n- **Hoja de equipo en Canvas**: nombre del equipo, nombre completo y carnet de los 4 integrantes, coordinador e idea preliminar (máximo dos líneas).\n- **Normas**: puntualidad, participación activa, respeto, honestidad académica y responsabilidad en las entregas.\n- **Uso de IA**: permitido únicamente como herramienta de apoyo al aprendizaje, de forma ética y responsable.\n- **Evaluación diagnóstica**: falso/verdadero y selección múltiple, individual, sin ponderación; orienta el desarrollo del curso.\n\n### What you must master\n- Conformar el equipo y subir la hoja de equipo a Canvas en la primera semana.\n- Elegir un rol por integrante y sostener contribución activa de todos.\n- Cumplir las fechas de laboratorio: la ponderación ajustada es 50% Lab 1 / 50% Lab 2 por parcial.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 01 — Presentación del curso y diagnóstico",
+        "locator": "Sección «Conformación de equipos de proyecto»",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_01_Presentacion_del_curso.pdf"
+      },
+      {
+        "label": "Sesión 01 — Presentación del curso y diagnóstico",
+        "locator": "Sección 7. Normas del Curso y Recomendaciones",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_01_Presentacion_del_curso.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Prueba diagnóstica en Canvas",
+        "url": "https://univo.instructure.com/courses/1760/assignments/12281"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "s-proyecto-reservaya": {
+    "title": "Proyecto guía ReservaYA",
+    "content": "**ReservaYA** es el caso de estudio común del curso: un sistema de reservas para negocios locales. Sobre este ejemplo la docente demuestra cada artefacto antes de que tu equipo lo aplique a su propio proyecto.\n\n### Key Concepts\n- **Contenidos a documentar sobre ReservaYA**: problema del negocio, requisitos, diagramas UML, backlog, arquitectura, configuración y calidad.\n- **Proyecto integrador propio**: cada equipo elige libremente su dominio (clínica, veterinaria, biblioteca, gimnasio, hotel, restaurante, inventario, taller automotriz, academia virtual, farmacia).\n- El proyecto guía es un **modelo de referencia**: la estructura del Documento de Visión de ReservaYA sirve de plantilla para el documento del equipo.\n\n### What you must master\n- Distinguir qué se hace con el caso guía (ejemplo en clase) y qué se entrega con el proyecto propio (evaluación).\n- Proponer una idea de proyecto viable en dos líneas y refinarla con retroalimentación.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 01 — Presentación del curso y diagnóstico",
+        "locator": "Sección 5. Proyectos del Curso",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_01_Presentacion_del_curso.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Documento de Visión de ReservaYA (plantilla)",
+        "url": "https://docs.google.com/document/d/1OTwKrh55P-mi8OZ-cZSIFHOvyRfgn1XWDtdPfO9771c/edit?usp=sharing"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "t-rup-concepcion": {
+    "title": "RUP y fase de concepción",
+    "content": "**RUP (Rational Unified Process)** es un marco de trabajo que organiza el desarrollo como un **proceso iterativo e incremental** en 4 fases secuenciales, donde cada fase responde una pregunta clave.\n\n### Key Concepts\n- **Concepción**: ¿qué vamos a construir y para quién?\n- **Elaboración**: ¿cómo lo vamos a construir?\n- **Construcción**: construir el sistema.\n- **Transición**: ¿cómo lo entregamos y lo mantenemos?\n- En la fase de **concepción** se define el problema, se establece el alcance y se identifican los interesados; su entregable principal es el **Documento de Visión**.\n\n### What you must master\n- Nombrar las 4 fases de RUP y la pregunta que responde cada una.\n- Explicar por qué RUP es iterativo e incremental, no cascada pura.\n- Relacionar la fase de concepción con el Laboratorio 1 del curso.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 02 — Fase de concepción RUP y documento de visión",
+        "locator": "Sección 2. Metodología RUP (Rational Unified Process)",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_02_Fase_de_concepcion_RUP.pdf"
+      },
+      {
+        "label": "Sesión 02 — Fase de concepción RUP y documento de visión",
+        "locator": "Sección 3. Fase de Concepción y el Documento de Visión",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_02_Fase_de_concepcion_RUP.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Rational Unified Process (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Rational_Unified_Process"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "s-documento-vision": {
+    "title": "Documento de Visión: problema y objetivos",
+    "content": "El Documento de Visión tiene cinco componentes: **problema, objetivo general, objetivos específicos, alcance e interesados**. Los dos primeros son el corazón del documento.\n\n### Key Concepts\n- **Planteamiento del problema**: describe la situación actual y por qué es un problema; es concreto, no genérico, y **no plantea la solución**. Pregunta guía: «¿qué está pasando hoy que el proyecto busca resolver?»\n- **Objetivo general**: una sola oración con la fórmula **verbo en infinitivo + ¿qué? + ¿cómo? + ¿para qué?**\n- **Objetivos específicos**: pasos concretos, verificables y medibles que inician con verbo en infinitivo.\n- **Verbos por etapa**: análisis (analizar, identificar, definir, determinar), diseño (diseñar, modelar, esquematizar), construcción (desarrollar, implementar, integrar, codificar), pruebas (verificar, evaluar, validar, depurar).\n\n### What you must master\n- Redactar un problema sin colar la solución.\n- Construir un objetivo general con la fórmula completa y al menos 3 objetivos específicos coherentes con el problema.\n- Usar el ejemplo resuelto de ReservaYA como referencia de calidad.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 02 — Fase de concepción RUP y documento de visión",
+        "locator": "Sección 4. Guía de Redacción de Componentes",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_02_Fase_de_concepcion_RUP.pdf"
+      },
+      {
+        "label": "Sesión 02 — Fase de concepción RUP y documento de visión",
+        "locator": "Sección 5. Ejemplo Resuelto: ReservaYA",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_02_Fase_de_concepcion_RUP.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Documento de Visión de ReservaYA (plantilla)",
+        "url": "https://docs.google.com/document/d/1OTwKrh55P-mi8OZ-cZSIFHOvyRfgn1XWDtdPfO9771c/edit?usp=sharing"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "s-alcance-stakeholders": {
+    "title": "Alcance e interesados",
+    "content": "El alcance delimita el compromiso del proyecto; los interesados definen a quién le importa. Ambos protegen al equipo de cambios sin control.\n\n### Key Concepts\n- **Dentro del proyecto**: funcionalidades que sí se construirán (en ReservaYA: registro/login, publicación de servicios, calendario de disponibilidad, confirmación/cancelación).\n- **Fuera del proyecto (por ahora)**: funcionalidades explícitamente pendientes (pagos en línea, app móvil nativa, sistema de reseñas).\n- **Beneficios de delimitar**: evita el *scope creep*, reduce conflictos y facilita la planificación.\n- **Stakeholders**: personas o grupos afectados por el proyecto o interesados en su éxito — usuarios finales, dueños del negocio, equipo de desarrollo, cliente académico.\n\n### What you must master\n- Redactar dos listas explícitas: dentro y fuera del alcance.\n- Identificar al menos 4 tipos de interesados de tu proyecto y su interés.\n- Justificar exclusiones como decisiones, no como olvidos.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 02 — Fase de concepción RUP y documento de visión",
+        "locator": "Sección 4. Guía de Redacción de Componentes — Delimitación del Alcance e Interesados",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_02_Fase_de_concepcion_RUP.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Stakeholder (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Stakeholder_(corporate)"
+      }
+    ],
+    "week": "Semana 1"
+  },
+  "s-matriz-riesgos": {
+    "title": "Matriz de riesgos",
+    "content": "Gestionar riesgos es decidir temprano qué puede salir mal y asignar una respuesta concreta antes de que se vuelva crisis. La herramienta del curso es la **matriz de probabilidad × impacto**.\n\n### Key Concepts\n- **Categorías de riesgo**: técnicos, de alcance, de equipo y externos/operativos.\n- **Matriz probabilidad × impacto**: calificación Alta / Media / Baja para priorizar.\n- **Mitigación**: cada riesgo lleva una estrategia específica y factible, no genérica.\n- Una buena entrada de riesgo declara **qué puede pasar, por qué importa y qué hará exactamente el equipo**.\n\n### What you must master\n- Identificar al menos 5 riesgos reales de tu proyecto, cubriendo mínimo 2 categorías.\n- Asignar categoría, probabilidad, impacto y acción exacta de mitigación a cada uno.\n- Mantener la matriz dentro del Documento de Concepción del Laboratorio 1.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 03 — Matriz de riesgos del proyecto",
+        "locator": "Presentación «Riesgos del proyecto: Identificación y mitigación» (9 diapositivas)",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_03_Riesgos_del_proyecto.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Risk matrix (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Risk_matrix"
+      }
+    ],
+    "week": "Semana 2"
+  },
+  "s-modelo-negocio": {
+    "title": "Diagrama del modelo de negocio",
+    "content": "El diagrama del modelo de negocio es la **historia visual** de cómo el sistema produce un resultado: desde la primera acción, pasando por decisiones, hasta la conclusión.\n\n### Key Concepts\n- Identificar el **proceso principal** y sus **participantes** (actores).\n- Ordenar las actividades de inicio a resultado (mínimo 5 pasos en el ejercicio).\n- Modelar **decisiones y flujos alternos**: al menos una decisión que cambie el camino.\n- Herramientas del curso: **Mermaid Live Editor** o **draw.io**.\n- El diagrama se integra al Documento de Concepción del proyecto.\n\n### What you must master\n- Hacer evidente quién actúa, qué sigue, dónde una decisión cambia el flujo y qué resultado se obtiene.\n- Dibujar el primer boceto del proceso de tu rubro y guardar enlace o imagen exportada.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 04 — Diagrama del modelo de negocio",
+        "locator": "Presentación «Diagrama de Modelo de Negocio» (12 diapositivas)",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_04_Diagrama_Modelo_de_Negocio.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Mermaid — documentación oficial",
+        "url": "https://mermaid.js.org/"
+      },
+      {
+        "type": "official",
+        "title": "draw.io (diagrams.net)",
+        "url": "https://app.diagrams.net/"
+      }
+    ],
+    "week": "Semana 2"
+  },
+  "t-laboratorio-1": {
+    "title": "Laboratorio 1 — Documento de Concepción",
+    "content": "El Laboratorio 1 integra todo lo construido en la fase de concepción: **problema, objetivos, alcance, riesgos y modelo de negocio** en un único Documento de Concepción.\n\n### Key Concepts\n- El documento debe tener **claridad y coherencia**: un lector externo debe entender qué problema se resuelve y para quién.\n- Se verifica la **consistencia** entre problema, objetivos y alcance: los objetivos deben responder a la necesidad identificada.\n- Incluye el **diagrama de flujo del proceso principal** del proyecto integrador (boceto con Mermaid o draw.io).\n- Criterio de fallo: «si un extraño lee el documento y no entiende qué problema se resuelve ni para quién, el documento falló».\n\n### What you must master\n- Ensamblar las cinco piezas de concepción en un solo documento sin contradicciones.\n- Alinear el borrador del taller de la Sesión 02 con la plantilla de ReservaYA.\n- Entregar en la fecha del laboratorio (primer cómputo, ponderación 50% ajustada).",
+    "sourceRefs": [
+      {
+        "label": "Sesión 05 — Revisión y entrega del Laboratorio 1",
+        "locator": "Sección «Objective» y «Concepts and techniques covered» de la lección",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-05-%7Cviernes-31-de-julio-de-2026?module_item_id=124316"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Curso ATIS en Canvas (UNIVO)",
+        "url": "https://univo.instructure.com/courses/1760"
+      }
+    ],
+    "week": "Semana 3"
+  },
+  "s-revision-pares": {
+    "title": "Revisión entre pares y entrega",
+    "content": "Antes de entregar, los equipos se revisan mutuamente los documentos de concepción: la retroalimentación entre pares expone ambigüedades que el propio equipo ya no ve.\n\n### Key Concepts\n- **Revisión entre pares**: otro equipo lee tu documento y señala lo que no se entiende.\n- **Lista de verificación implícita**: ¿el problema es concreto? ¿los objetivos responden al problema? ¿el alcance dice qué queda fuera? ¿la matriz de riesgos tiene mitigaciones exactas? ¿el diagrama muestra actores, pasos y una decisión?\n- La entrega formal se hace en Canvas en la fecha establecida.\n\n### What you must master\n- Dar retroalimentación accionable, no genérica («no se entiende quién confirma la cita» en vez de «está confuso»).\n- Incorporar la retroalimentación recibida antes de la entrega final.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 05 — Revisión y entrega del Laboratorio 1",
+        "locator": "Sección «Important findings» de la lección",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-05-%7Cviernes-31-de-julio-de-2026?module_item_id=124316"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Curso ATIS en Canvas (UNIVO)",
+        "url": "https://univo.instructure.com/courses/1760"
+      }
+    ],
+    "week": "Semana 3"
+  },
+  "t-agil-scrum-kanban": {
+    "title": "Manifiesto Ágil, Scrum y Kanban",
+    "content": "La Unidad 2 abre con los fundamentos de la agilidad: los **4 valores y 12 principios del Manifiesto Ágil**, y la diferenciación entre **Scrum**, **Kanban** y los enfoques predictivo e híbrido.\n\n### Key Concepts\n- **Ágil no es ir rápido ni improvisar**: es entregar en trozos para poder corregir barato.\n- **Caso ReservaYA**: el equipo planificó 4 meses y al primer mes el cliente pide cambios (nuevos horarios, cancelación automática, notificaciones). Rechazarlos contradice los valores ágiles; la pregunta es cómo incorporarlos sin perder el control.\n- **Predictivo vs ágil vs híbrido**: se argumenta según estabilidad de requisitos, frecuencia de revisión del cliente y naturaleza del trabajo.\n\n### What you must master\n- Interpretar los 4 valores y reconocer los 12 principios.\n- Diferenciar Scrum y Kanban con precisión.\n- Defender un enfoque atándolo a un valor del Manifiesto, con una ventaja y una dificultad.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 06 — Manifiesto Ágil, Scrum y Kanban",
+        "locator": "Sección «Concepts and techniques covered» de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_06_Manifiesto_Agil_Scrum_Kanban.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Manifiesto para el Desarrollo Ágil de Software",
+        "url": "https://agilemanifesto.org/"
+      },
+      {
+        "type": "official",
+        "title": "Scrum Guide (guía oficial)",
+        "url": "https://scrumguides.org/scrum-guide.html"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-manifiesto-agil": {
+    "title": "Manifiesto Ágil: valores y principios",
+    "content": "El Manifiesto Ágil (2001) define **4 valores** y **12 principios** que priorizan a las personas, el software funcionando, la colaboración con el cliente y la respuesta al cambio.\n\n### Key Concepts\n- **4 valores**: individuos e interacciones sobre procesos y herramientas; software funcionando sobre documentación extensiva; colaboración con el cliente sobre negociación contractual; respuesta ante el cambio sobre seguir un plan.\n- **12 principios**: entrega temprana y continua de valor, bienvenida a los cambios, ciclos cortos, colaboración negocio–desarrollo, equipos autoorganizados, reflexión y ajuste periódicos, entre otros.\n- La agilidad busca **corregir a tiempo**: entregar por partes reduce el costo del error.\n\n### What you must master\n- Recitar y explicar los 4 valores con ejemplos del proyecto integrador.\n- Relacionar al menos 3 principios con decisiones concretas de tu equipo.\n- Explicar por qué «cambiar requisitos» no significa «mala planificación».",
+    "sourceRefs": [
+      {
+        "label": "Sesión 06 — Manifiesto Ágil, Scrum y Kanban",
+        "locator": "Sección «Objective» y «Worked example or dataset» (caso ReservaYA) de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_06_Manifiesto_Agil_Scrum_Kanban.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Los 12 principios del Manifiesto Ágil",
+        "url": "https://agilemanifesto.org/principles.html"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-scrum-vs-kanban": {
+    "title": "Scrum vs Kanban",
+    "content": "Scrum y Kanban son dos formas distintas de operar la agilidad: Scrum trabaja en **sprints con roles y eventos fijos**; Kanban gestiona un **flujo continuo** con límites de trabajo en curso.\n\n### Key Concepts\n- **Scrum**: iteraciones de duración fija (sprints), roles definidos (PO, SM, Developers), eventos de inspección y adaptación.\n- **Kanban**: flujo continuo sin iteraciones obligatorias, tablero con límites WIP (*work in progress*), ideal para soporte y trabajo que llega de forma impredecible.\n- **Híbrido**: combinar periodos de planificación con gestión visual del flujo.\n- La elección depende del contexto: producto nuevo vs en operación, requisitos estables vs cambiantes, incidencias urgentes.\n\n### What you must master\n- Comparar Scrum y Kanban en cadencia, roles, métricas y tipo de trabajo ideal.\n- Justificar cuál conviene a tu proyecto integrador en su fase actual.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 06 — Manifiesto Ágil, Scrum y Kanban",
+        "locator": "Sección «Concepts and techniques covered» de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_06_Manifiesto_Agil_Scrum_Kanban.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Kanban vs. Scrum (Atlassian)",
+        "url": "https://www.atlassian.com/agile/kanban/kanban-vs-scrum"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-product-vs-sprint-backlog": {
+    "title": "Product Backlog vs Sprint Backlog",
+    "content": "La planificación ágil separa **todo lo que se desea** de **lo que se compromete ahora**: esa es la diferencia entre Product Backlog y Sprint Backlog.\n\n### Key Concepts\n- **Product Backlog**: la lista completa y priorizada de funcionalidades deseadas del producto.\n- **Sprint Backlog**: la porción seleccionada que el equipo se compromete a terminar en el sprint.\n- **Ciclo iterativo e incremental**: cada sprint produce un incremento usable del producto.\n- **Caso ReservaYA**: 7 funcionalidades y 2 semanas para un primer resultado — no se hacen todas a la vez, solo las que demuestran el propósito.\n\n### What you must master\n- Priorizar el Product Backlog de tu proyecto y justificar el orden.\n- Seleccionar un Sprint Backlog realista y definir el objetivo del sprint.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 07 — Sprint, Backlog y GitHub Projects",
+        "locator": "Sección «Concepts and techniques covered» y «Worked example or dataset» de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_07_Sprint_Backlog_GitHub_Projects.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "The product backlog (Atlassian Agile Coach)",
+        "url": "https://www.atlassian.com/agile/scrum/backlogs"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-github-projects-sprint0": {
+    "title": "GitHub Projects y Sprint 0",
+    "content": "El backlog cobra vida en un **tablero digital en GitHub Projects**, que es además parte del entregable del Laboratorio 2.\n\n### Key Concepts\n- **Columnas del tablero**: Backlog / En progreso / En revisión / Hecho.\n- Cada funcionalidad se registra con **prioridad y estimación**.\n- **Sprint 0**: se define el objetivo del sprint, la **Definition of Done** inicial y el reparto de responsabilidades.\n- Las tareas se clasifican por estado y se mueven a lo largo del tablero durante el sprint.\n\n### What you must master\n- Crear el tablero de GitHub Projects con las 4 columnas.\n- Configurar Sprint 0 con objetivo, DoD inicial y responsables por ítem.\n- Mantener el tablero actualizado como evidencia de avance del Laboratorio 2.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 07 — Sprint, Backlog y GitHub Projects",
+        "locator": "Sección «Worked example or dataset» (ejercicio del Laboratorio 2) de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_07_Sprint_Backlog_GitHub_Projects.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "GitHub Docs — Planning and tracking with Projects",
+        "url": "https://docs.github.com/en/issues/planning-and-tracking-with-projects"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-historias-usuario": {
+    "title": "Historias de usuario y estimación",
+    "content": "Las historias de usuario convierten necesidades en unidades de trabajo **claras, verificables y estimables**. Una tarjeta que solo dice «hacer las reservas» no se puede planificar; una historia con criterios de aceptación sí.\n\n### Key Concepts\n- **Estructura**: «Como *[actor]*, quiero *[necesidad]*, para *[valor]*» — actor, necesidad y beneficio.\n- **Criterios de aceptación**: condiciones verificables de cada historia (mínimo 3 por historia en la actividad); no son lo mismo que la Definition of Done.\n- **Definition of Done**: estándar común de terminado para todo el equipo.\n- **Planning Poker**: estimación colaborativa justificada por complejidad, esfuerzo, incertidumbre y dependencias.\n- **Evidencia de la sesión** (equipo de 4): 8 historias, ≥3 criterios por historia, prioridad, puntos, DoD y backlog actualizado en GitHub Projects.\n\n### What you must master\n- Redactar historias sin ambigüedades ni duplicados.\n- Distinguir criterios de aceptación (por historia) de DoD (global).\n- Estimar con Planning Poker y defender los puntos asignados.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 08 — Historias de usuario y estimación ágil",
+        "locator": "Secciones «Conceptos y técnicas cubiertos» y «Actividad»; captura Canva de 16 diapositivas",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/sesion-08-historias-de-usuario-y-estimacion.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "User Stories (Mountain Goat Software)",
+        "url": "https://www.mountaingoatsoftware.com/agile/user-stories"
+      },
+      {
+        "type": "video",
+        "title": "Planning Poker Scrum (video de la sesión)",
+        "url": "https://www.youtube.com/watch?v=JjG9PRYLes0"
+      }
+    ],
+    "week": "Semana 4"
+  },
+  "s-roles-eventos-scrum": {
+    "title": "Roles y eventos en Scrum",
+    "content": "Scrum no es solo dividir tareas: es un equipo con **responsabilidades claras** y **eventos frecuentes de inspección y adaptación**.\n\n### Key Concepts\n- **Product Owner**: maximiza el valor del producto y prioriza el backlog.\n- **Scrum Master**: facilita el proceso y remueve impedimentos.\n- **Developers**: construyen el incremento del sprint.\n- **Eventos**: Sprint Planning, Daily Scrum, Sprint Review y Retrospective — espacios formales para inspeccionar y adaptar.\n- **Daily Scrum**: coordinación breve (≤15 min; en la simulación de clase, ≤5 min) orientada al objetivo del sprint.\n\n### What you must master\n- Decidir «¿a quién le corresponde?» ante situaciones del proyecto y justificarlo.\n- Asignar PO / SM / Developers en tu equipo para el proyecto integrador.\n- Conducir una Daily Scrum breve sobre una historia de usuario real.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 09 — Roles y eventos en Scrum",
+        "locator": "Plantillas «Sesion 11- Plantilla de Trabajo.docx» y «Sesion 11- Plantilla Daily Scrum.docx» de la lección",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Sesion_11_Plantilla_de_Trabajo.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Scrum Guide — Scrum Team y eventos",
+        "url": "https://scrumguides.org/scrum-guide.html"
+      }
+    ],
+    "week": "Semana 5"
+  },
+  "s-seleccion-enfoque": {
+    "title": "Selección del enfoque de trabajo",
+    "content": "El enfoque no se elige de memoria: se **justifica con el contexto del caso** y se ata a un valor del Manifiesto Ágil.\n\n### Key Concepts\n- **Caracterización del caso**: producto nuevo vs en operación; requisitos estables vs cambiantes; trabajo continuo vs por periodos; frecuencia de revisión del cliente; incidencias urgentes y acumulación de trabajo.\n- **Decisión**: Scrum, Kanban, predictivo o una combinación.\n- **Justificación completa**: enfoque elegido + valor del Manifiesto relacionado + una ventaja + un riesgo + una acción de mitigación.\n- Casos típicos de la actividad: desarrollo inicial de ReservaYA, soporte/mantenimiento, sistema regulado, proyecto con muchas actividades iniciadas y pocas finalizadas.\n\n### What you must master\n- Completar la ficha de análisis de un caso desconocido en ~25 minutos.\n- Defender oralmente la elección del enfoque con argumentos del contexto, no preferencias.",
+    "sourceRefs": [
+      {
+        "label": "Sesión 10 — ¿Qué enfoque conviene utilizar?",
+        "locator": "Archivo «sesion 10- Actividad en grupo.pdf» y «Sesion 10- Plantilla de trabajo.docx»",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/sesion_10_Actividad_en_grupo.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Kanban vs. Scrum (Atlassian)",
+        "url": "https://www.atlassian.com/agile/kanban/kanban-vs-scrum"
+      }
+    ],
+    "week": "Semana 5"
+  },
+  "t-modelado-uml": {
+    "title": "Modelado UML — diagrama de clases",
+    "content": "La Práctica 01 introduce el **modelado UML** aplicado al caso del equipo: un sistema de **punto de venta e inventario** adaptado al rubro elegido.\n\n### Key Concepts\n- **Notación UML**: clases, atributos, métodos, relaciones y multiplicidad.\n- El primer modelo UML del proyecto **nace del rubro elegido**: las entidades y relaciones deben resolver las necesidades de ese negocio, no un ejemplo genérico.\n- La práctica combina el modelado con la organización ágil: tablero Kanban en Trello o Jira como parte de la evidencia.\n- Herramientas de modelado: **draw.io**, **Lucidchart** o **Mermaid**.\n\n### What you must master\n- Analizar los requerimientos iniciales del caso de estudio de tu rubro.\n- Producir el primer boceto del diagrama de clases del proyecto.\n- Coordinar al equipo (3–4) para entregar un único PDF consolidado.",
+    "sourceRefs": [
+      {
+        "label": "Práctica 01 — Introducción al Modelado UML",
+        "locator": "Guía «Guia_Practica_01_ATIS.pdf» (archivo 445047 de Canvas)",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Guia_Practica_01_ATIS.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "UML — portal oficial del OMG",
+        "url": "https://www.uml.org/"
+      }
+    ],
+    "week": "Semana 5"
+  },
+  "s-entidades-atributos": {
+    "title": "Entidades, atributos y métodos",
+    "content": "El corazón técnico de la práctica es la **extracción de clases** a partir de los requerimientos del caso: identificar qué cosas del negocio se convierten en entidades del sistema.\n\n### Key Concepts\n- **Entidades**: sustantivos centrales del dominio (en un POS: producto, venta, cliente, inventario…).\n- **Atributos**: datos que describe cada clase; **métodos**: operaciones que la clase ofrece.\n- **Multiplicidad**: cuántas instancias de una clase se relacionan con otra (1 a muchos, muchos a muchos…).\n- Las clases deben mapear a necesidades reales del rubro del equipo, no copiarse de un ejemplo.\n\n### What you must master\n- Identificar las clases centrales de tu rubro y justificarlas.\n- Definir atributos, métodos y multiplicidad de cada relación.\n- Modelar el diagrama en draw.io, Lucidchart o Mermaid con notación UML correcta.",
+    "sourceRefs": [
+      {
+        "label": "Práctica 01 — Introducción al Modelado UML",
+        "locator": "Sección «Conceptos y técnicas cubiertos» de la guía de práctica",
+        "url": "/aplicacion-tecnicas-ingenieria-software/materiales/Guia_Practica_01_ATIS.pdf"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "UML Class Diagram Tutorial (Lucidchart)",
+        "url": "https://www.lucidchart.com/pages/uml-class-diagram"
+      }
+    ],
+    "week": "Semana 5"
+  },
+  "s-tablero-entrega-practica": {
+    "title": "Tablero ágil y entrega de la práctica",
+    "content": "La Práctica 01 se entrega como **un único PDF** por equipo, que combina la organización ágil del trabajo con el artefacto técnico.\n\n### Key Concepts\n- **Tablero Kanban** en Trello o Jira: organiza las tareas del equipo durante la práctica.\n- **Contenido del PDF**: portada, justificación del rubro elegido, captura del tablero Kanban e imagen del diagrama de clases.\n- Un solo integrante sube el archivo a Canvas; la entrega tiene fecha y hora límite estrictas.\n\n### What you must master\n- Configurar el tablero Kanban del equipo y mantenerlo como evidencia.\n- Consolidar el PDF único con las 4 secciones exigidas.\n- Cumplir la entrega en Canvas dentro del plazo (cierre duro).",
+    "sourceRefs": [
+      {
+        "label": "Práctica 01 — Introducción al Modelado UML",
+        "locator": "Sección «Actividad» de la guía y asignación «Entrega — Practica 01» en Canvas",
+        "url": "https://univo.instructure.com/courses/1760/assignments/15583"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Trello",
+        "url": "https://trello.com/"
+      },
+      {
+        "type": "official",
+        "title": "Jira Software",
+        "url": "https://www.atlassian.com/software/jira"
+      }
+    ],
+    "week": "Semana 5"
+  }
+}

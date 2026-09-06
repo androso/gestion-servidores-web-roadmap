@@ -1,0 +1,678 @@
+{
+  "schemaVersion": 1,
+  "slug": "aplicacion-tecnicas-ingenieria-software",
+  "title": "Aplicación de Técnicas de Ingeniería de Software",
+  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles y el modelado UML.",
+  "canvas": {
+    "width": 1300,
+    "height": 1340,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 28,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -52,
+      "y": -170,
+      "zoom": 0.85
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": {
+        "x": 90,
+        "y": 20
+      },
+      "size": {
+        "width": 800,
+        "height": 56
+      },
+      "data": {
+        "text": "Aplicación de Técnicas de Ingeniería de Software",
+        "style": {
+          "fontSize": 28,
+          "textAlign": "left"
+        }
+      }
+    },
+    {
+      "id": "section-unidad-1",
+      "type": "section",
+      "zIndex": -1,
+      "position": {
+        "x": 40,
+        "y": 96
+      },
+      "size": {
+        "width": 1220,
+        "height": 524
+      },
+      "data": {
+        "label": "Unidad 1 — Concepción (RUP)"
+      }
+    },
+    {
+      "id": "section-unidad-2",
+      "type": "section",
+      "zIndex": -1,
+      "position": {
+        "x": 40,
+        "y": 620
+      },
+      "size": {
+        "width": 1220,
+        "height": 524
+      },
+      "data": {
+        "label": "Unidad 2 — Metodologías ágiles"
+      }
+    },
+    {
+      "id": "section-uml",
+      "type": "section",
+      "zIndex": -1,
+      "position": {
+        "x": 40,
+        "y": 1144
+      },
+      "size": {
+        "width": 1220,
+        "height": 156
+      },
+      "data": {
+        "label": "Práctica 01 — Modelado UML"
+      }
+    },
+    {
+      "id": "t-panorama-curso",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 120
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Panorama del curso y proyecto integrador",
+        "order": "01",
+        "detail": "Competencias, metodología práctica y evaluación por cómputos de la asignatura.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "s-equipos-evaluacion",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 120
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Equipos, evaluación y normas",
+        "order": "02",
+        "detail": "Equipos fijos de 4, laboratorios por cómputo y uso ético de la IA.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "s-proyecto-reservaya",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 120
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Proyecto guía ReservaYA",
+        "order": "03",
+        "detail": "Caso de estudio común: sistema de reservas para negocios locales.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "t-rup-concepcion",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 250
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "RUP y fase de concepción",
+        "order": "04",
+        "detail": "Proceso iterativo e incremental en 4 fases; la concepción produce el Documento de Visión.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "s-documento-vision",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 250
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Documento de Visión: problema y objetivos",
+        "order": "05",
+        "detail": "Planteamiento del problema, objetivo general y objetivos específicos en infinitivo.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "s-alcance-stakeholders",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 250
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Alcance e interesados",
+        "order": "06",
+        "detail": "Delimitar qué entra y qué queda fuera; identificar a los stakeholders.",
+        "week": "Semana 1"
+      }
+    },
+    {
+      "id": "s-matriz-riesgos",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 380
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Matriz de riesgos",
+        "order": "07",
+        "detail": "Identificar, clasificar y mitigar riesgos con probabilidad × impacto.",
+        "week": "Semana 2"
+      }
+    },
+    {
+      "id": "s-modelo-negocio",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 380
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Diagrama del modelo de negocio",
+        "order": "08",
+        "detail": "Actores, actividades, decisiones y flujos alternos en Mermaid o draw.io.",
+        "week": "Semana 2"
+      }
+    },
+    {
+      "id": "t-laboratorio-1",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 510
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Laboratorio 1 — Documento de Concepción",
+        "order": "09",
+        "detail": "Integrar problema, objetivos, alcance, riesgos y modelo de negocio con coherencia.",
+        "week": "Semana 3"
+      }
+    },
+    {
+      "id": "s-revision-pares",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 510
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Revisión entre pares y entrega",
+        "order": "10",
+        "detail": "Verificar la consistencia problema–objetivos–alcance antes de entregar.",
+        "week": "Semana 3"
+      }
+    },
+    {
+      "id": "t-agil-scrum-kanban",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 640
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Manifiesto Ágil, Scrum y Kanban",
+        "order": "11",
+        "detail": "4 valores, 12 principios y la diferencia entre enfoque predictivo, ágil e híbrido.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-manifiesto-agil",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 640
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Manifiesto Ágil: valores y principios",
+        "order": "12",
+        "detail": "Responder al cambio y entregar valor progresivamente, sin improvisar.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-scrum-vs-kanban",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 640
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Scrum vs Kanban",
+        "order": "13",
+        "detail": "Trabajo por sprints con roles frente a flujo continuo con límites de trabajo.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-product-vs-sprint-backlog",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 770
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Product Backlog vs Sprint Backlog",
+        "order": "14",
+        "detail": "El backlog lista todo lo deseado; el sprint compromete solo una porción.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-github-projects-sprint0",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 770
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "GitHub Projects y Sprint 0",
+        "order": "15",
+        "detail": "Tablero Backlog / En progreso / En revisión / Hecho con prioridad, estimación y DoD.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-historias-usuario",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 900
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Historias de usuario y estimación",
+        "order": "16",
+        "detail": "Formato «Como…, quiero…, para…», criterios de aceptación y Planning Poker.",
+        "week": "Semana 4"
+      }
+    },
+    {
+      "id": "s-roles-eventos-scrum",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 900
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Roles y eventos en Scrum",
+        "order": "17",
+        "detail": "Product Owner, Scrum Master y Developers; la Daily Scrum como inspección y adaptación.",
+        "week": "Semana 5"
+      }
+    },
+    {
+      "id": "s-seleccion-enfoque",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1030
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Selección del enfoque de trabajo",
+        "order": "18",
+        "detail": "Elegir Scrum, Kanban, predictivo o híbrido según el contexto del caso.",
+        "week": "Semana 5"
+      }
+    },
+    {
+      "id": "t-modelado-uml",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1160
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Modelado UML — diagrama de clases",
+        "order": "19",
+        "detail": "Primer modelo UML del proyecto, nacido del rubro elegido por el equipo.",
+        "week": "Semana 5"
+      }
+    },
+    {
+      "id": "s-entidades-atributos",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1160
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Entidades, atributos y métodos",
+        "order": "20",
+        "detail": "Extraer las clases centrales del caso de punto de venta e inventario, con multiplicidad.",
+        "week": "Semana 5"
+      }
+    },
+    {
+      "id": "s-tablero-entrega-practica",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1160
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Tablero ágil y entrega de la práctica",
+        "order": "21",
+        "detail": "Kanban en Trello/Jira y PDF único con portada, justificación, tablero y diagrama.",
+        "week": "Semana 5"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-t-panorama-curso-s-equipos-evaluacion",
+      "source": "t-panorama-curso",
+      "target": "s-equipos-evaluacion",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-equipos-evaluacion-s-proyecto-reservaya",
+      "source": "s-equipos-evaluacion",
+      "target": "s-proyecto-reservaya",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-panorama-curso-t-rup-concepcion",
+      "source": "t-panorama-curso",
+      "target": "t-rup-concepcion",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-rup-concepcion-s-documento-vision",
+      "source": "t-rup-concepcion",
+      "target": "s-documento-vision",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-documento-vision-s-alcance-stakeholders",
+      "source": "s-documento-vision",
+      "target": "s-alcance-stakeholders",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-documento-vision-s-matriz-riesgos",
+      "source": "s-documento-vision",
+      "target": "s-matriz-riesgos",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-alcance-stakeholders-s-modelo-negocio",
+      "source": "s-alcance-stakeholders",
+      "target": "s-modelo-negocio",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-rup-concepcion-t-laboratorio-1",
+      "source": "t-rup-concepcion",
+      "target": "t-laboratorio-1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-laboratorio-1-s-revision-pares",
+      "source": "t-laboratorio-1",
+      "target": "s-revision-pares",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-laboratorio-1-t-agil-scrum-kanban",
+      "source": "t-laboratorio-1",
+      "target": "t-agil-scrum-kanban",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-agil-scrum-kanban-s-manifiesto-agil",
+      "source": "t-agil-scrum-kanban",
+      "target": "s-manifiesto-agil",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-manifiesto-agil-s-scrum-vs-kanban",
+      "source": "s-manifiesto-agil",
+      "target": "s-scrum-vs-kanban",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-manifiesto-agil-s-product-vs-sprint-backlog",
+      "source": "s-manifiesto-agil",
+      "target": "s-product-vs-sprint-backlog",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-scrum-vs-kanban-s-github-projects-sprint0",
+      "source": "s-scrum-vs-kanban",
+      "target": "s-github-projects-sprint0",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-product-vs-sprint-backlog-s-historias-usuario",
+      "source": "s-product-vs-sprint-backlog",
+      "target": "s-historias-usuario",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-github-projects-sprint0-s-roles-eventos-scrum",
+      "source": "s-github-projects-sprint0",
+      "target": "s-roles-eventos-scrum",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-historias-usuario-s-seleccion-enfoque",
+      "source": "s-historias-usuario",
+      "target": "s-seleccion-enfoque",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-roles-eventos-scrum-s-seleccion-enfoque",
+      "source": "s-roles-eventos-scrum",
+      "target": "s-seleccion-enfoque",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-agil-scrum-kanban-t-modelado-uml",
+      "source": "t-agil-scrum-kanban",
+      "target": "t-modelado-uml",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-seleccion-enfoque-t-modelado-uml",
+      "source": "s-seleccion-enfoque",
+      "target": "t-modelado-uml",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-modelado-uml-s-entidades-atributos",
+      "source": "t-modelado-uml",
+      "target": "s-entidades-atributos",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-entidades-atributos-s-tablero-entrega-practica",
+      "source": "s-entidades-atributos",
+      "target": "s-tablero-entrega-practica",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    }
+  ]
+}

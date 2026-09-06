@@ -668,6 +668,31 @@ button {
   letter-spacing: 0.02em;
 }
 
+.roadmap-node-week {
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  height: 20px;
+  padding: 0 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--roadmap-ink);
+  border-radius: 10px;
+  background: var(--roadmap-paper);
+  color: var(--roadmap-ink);
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+.mobile-path-card .roadmap-node-week {
+  top: -8px;
+  right: -6px;
+}
+
 .roadmap-node-card:focus-visible {
   outline: 2.5px solid var(--roadmap-search-match-border);
   outline-offset: 3px;

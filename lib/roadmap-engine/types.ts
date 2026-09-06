@@ -63,6 +63,7 @@ export type TopicNode = BaseNode<
     /** Position in the study sequence, e.g. "07" or "20a" for a parallel branch. */
     order?: string;
     code?: string;
+    week?: string;
     detail?: string;
     style?: NodeStyle;
   }
@@ -75,6 +76,7 @@ export type SubtopicNode = BaseNode<
     /** Position in the study sequence, e.g. "07" or "20a" for a parallel branch. */
     order?: string;
     code?: string;
+    week?: string;
     detail?: string;
     style?: NodeStyle;
   }
@@ -217,6 +219,7 @@ export interface SourceReference {
 
 export interface TopicDetails {
   title: string;
+  week?: string;
   content: string;
   resources?: TopicResource[];
   sourceRefs: SourceReference[];

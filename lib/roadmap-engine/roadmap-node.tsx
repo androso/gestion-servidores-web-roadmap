@@ -150,6 +150,11 @@ function TopicCard({
           {node.data.order}
         </span>
       )}
+      {node.data.week && (
+        <span className="roadmap-node-week" aria-hidden="true">
+          {node.data.week}
+        </span>
+      )}
       <div className="roadmap-card-body">
         {!node.data.order && node.data.code && (
           <span className="roadmap-node-code">{node.data.code}</span>

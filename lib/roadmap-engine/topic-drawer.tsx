@@ -176,9 +176,16 @@ export function TopicDrawer({
         <div className="topic-drawer-head">
           <div className="topic-drawer-handle" aria-hidden="true" />
           <div className="flex items-center justify-between gap-3">
-            <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500">
-              {step ? `Paso ${step}` : `Tema #${nodeId}`}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-xs font-mono font-semibold uppercase tracking-wider text-slate-500">
+                {step ? `Paso ${step}` : `Tema #${nodeId}`}
+              </span>
+              {topic.week && (
+                <span className="text-[11px] font-semibold px-2 py-0.5 rounded-full bg-amber-100 text-amber-900 border border-amber-300">
+                  {topic.week}
+                </span>
+              )}
+            </div>
             <button
               ref={closeButtonRef}
               type="button"
