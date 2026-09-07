@@ -5,7 +5,7 @@
   "description": "Ruta actualmente impartida: fundamentos interdisciplinarios, EDA y calidad de datos, modelos predictivos, regresión de Poisson y aplicación reproducible a los Dataset 1 y 2 asignados.",
   "canvas": {
     "width": 1280,
-    "height": 3740,
+    "height": 4680,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -32,46 +32,97 @@
     {
       "id": "title-node",
       "type": "title",
-      "position": { "x": 140, "y": 16 },
-      "size": { "width": 700, "height": 52 },
+      "position": {
+        "x": 140,
+        "y": 16
+      },
+      "size": {
+        "width": 700,
+        "height": 52
+      },
       "data": {
         "text": "Ciencia de Datos",
-        "style": { "fontSize": 28, "textAlign": "center" }
+        "style": {
+          "fontSize": 28,
+          "textAlign": "center"
+        }
       }
     },
     {
       "id": "subtitle-para",
       "type": "paragraph",
-      "position": { "x": 140, "y": 80 },
-      "size": { "width": 700, "height": 84 },
+      "position": {
+        "x": 140,
+        "y": 80
+      },
+      "size": {
+        "width": 700,
+        "height": 84
+      },
       "data": {
         "text": "De una pregunta bien definida a un análisis reproducible: sigue los números por la columna izquierda y estudia cada apoyo claro de la derecha antes de bajar al siguiente paso.",
-        "style": { "fontSize": 14, "textAlign": "center" }
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
       }
     },
     {
       "id": "progress-legend",
       "type": "legend",
-      "position": { "x": 900, "y": 16 },
-      "size": { "width": 320, "height": 212 },
+      "position": {
+        "x": 900,
+        "y": 16
+      },
+      "size": {
+        "width": 320,
+        "height": 212
+      },
       "data": {
         "title": "Cómo leer la ruta",
         "items": [
-          { "label": "Sigue los números: 01, 02, 03…", "color": "#fbfbf8" },
-          { "label": "Paso principal de la ruta", "color": "#f9d95c" },
-          { "label": "Concepto de apoyo del paso", "color": "#fff2a8" },
-          { "label": "La flecha indica qué estudiar después", "color": "#2563eb" },
-          { "label": "En aprendizaje", "color": "#dad1fd" },
-          { "label": "Completado", "color": "#cbd5e1" },
-          { "label": "Pulsa un bloque para el detalle", "color": "#111827" }
+          {
+            "label": "Sigue los números: 01, 02, 03…",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "Paso principal de la ruta",
+            "color": "#f9d95c"
+          },
+          {
+            "label": "Concepto de apoyo del paso",
+            "color": "#fff2a8"
+          },
+          {
+            "label": "La flecha indica qué estudiar después",
+            "color": "#2563eb"
+          },
+          {
+            "label": "En aprendizaje",
+            "color": "#dad1fd"
+          },
+          {
+            "label": "Completado",
+            "color": "#cbd5e1"
+          },
+          {
+            "label": "Pulsa un bloque para el detalle",
+            "color": "#111827"
+          }
         ]
       }
     },
     {
       "id": "data-science",
       "type": "topic",
-      "position": { "x": 90, "y": 290 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 290
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Ciencia de datos",
         "order": "01",
@@ -81,8 +132,14 @@
     {
       "id": "interdisciplinary",
       "type": "subtopic",
-      "position": { "x": 540, "y": 294 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 294
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Tres pilares interdisciplinarios",
         "order": "02",
@@ -92,8 +149,14 @@
     {
       "id": "lifecycle",
       "type": "topic",
-      "position": { "x": 90, "y": 426 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 426
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Ciclo de ciencia de datos",
         "order": "03",
@@ -103,8 +166,14 @@
     {
       "id": "problem-definition",
       "type": "subtopic",
-      "position": { "x": 540, "y": 430 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 430
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Pregunta, objetivo y alcance",
         "order": "04",
@@ -114,8 +183,14 @@
     {
       "id": "eda-workflow",
       "type": "topic",
-      "position": { "x": 90, "y": 562 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 562
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Flujo de EDA",
         "order": "05",
@@ -125,8 +200,14 @@
     {
       "id": "data-types",
       "type": "subtopic",
-      "position": { "x": 540, "y": 566 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 566
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Tipos y naturaleza de variables",
         "order": "06",
@@ -136,16 +217,30 @@
     {
       "id": "section-foundations",
       "type": "section",
-      "position": { "x": 40, "y": 240 },
-      "size": { "width": 1200, "height": 460 },
+      "position": {
+        "x": 40,
+        "y": 240
+      },
+      "size": {
+        "width": 1200,
+        "height": 460
+      },
       "zIndex": -1,
-      "data": { "label": "01 · Fundamentos y ciclo de trabajo" }
+      "data": {
+        "label": "01 · Fundamentos y ciclo de trabajo"
+      }
     },
     {
       "id": "missing-values",
       "type": "topic",
-      "position": { "x": 90, "y": 800 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 800
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Faltantes y calidad semántica",
         "order": "07",
@@ -155,8 +250,14 @@
     {
       "id": "semantic-invalids",
       "type": "subtopic",
-      "position": { "x": 540, "y": 804 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 804
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Ceros e inválidos semánticos",
         "order": "08",
@@ -166,8 +267,14 @@
     {
       "id": "missing-strategy",
       "type": "topic",
-      "position": { "x": 90, "y": 936 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 936
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Decidir el tratamiento",
         "order": "09",
@@ -177,8 +284,14 @@
     {
       "id": "impute-delete",
       "type": "subtopic",
-      "position": { "x": 540, "y": 940 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 940
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Imputar, eliminar o conservar",
         "order": "10",
@@ -188,8 +301,14 @@
     {
       "id": "distribution-plots",
       "type": "topic",
-      "position": { "x": 90, "y": 1072 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1072
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Visualizar distribuciones",
         "order": "11",
@@ -199,8 +318,14 @@
     {
       "id": "comparative-plots",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1076 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1076
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Histograma, caja, strip y violín",
         "order": "12",
@@ -210,8 +335,14 @@
     {
       "id": "outlier-detection",
       "type": "topic",
-      "position": { "x": 90, "y": 1208 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1208
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Detectar valores atípicos",
         "order": "13",
@@ -221,8 +352,14 @@
     {
       "id": "iqr-z-mad",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1212 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1212
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "IQR, z y z modificada/MAD",
         "order": "14",
@@ -232,8 +369,14 @@
     {
       "id": "isolation-forest",
       "type": "topic",
-      "position": { "x": 90, "y": 1344 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1344
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Isolation Forest",
         "order": "15",
@@ -243,8 +386,14 @@
     {
       "id": "contamination-caveat",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1348 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1348
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Cuidado con contamination",
         "order": "16",
@@ -254,8 +403,14 @@
     {
       "id": "correlation",
       "type": "topic",
-      "position": { "x": 90, "y": 1480 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1480
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Correlación con criterio",
         "order": "17",
@@ -265,8 +420,14 @@
     {
       "id": "correlation-family",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1484 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1484
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Pearson, Spearman y Kendall",
         "order": "18",
@@ -276,16 +437,30 @@
     {
       "id": "section-quality",
       "type": "section",
-      "position": { "x": 40, "y": 730 },
-      "size": { "width": 1200, "height": 920 },
+      "position": {
+        "x": 40,
+        "y": 730
+      },
+      "size": {
+        "width": 1200,
+        "height": 920
+      },
       "zIndex": -1,
-      "data": { "label": "02 · Calidad, exploración y relaciones" }
+      "data": {
+        "label": "02 · Calidad, exploración y relaciones"
+      }
     },
     {
       "id": "evaluation-discipline",
       "type": "topic",
-      "position": { "x": 90, "y": 1750 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1750
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Disciplina de evaluación",
         "order": "19",
@@ -295,8 +470,14 @@
     {
       "id": "split-standardize",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1754 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1754
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Split, escalado y métricas",
         "order": "20",
@@ -306,8 +487,14 @@
     {
       "id": "knn",
       "type": "topic",
-      "position": { "x": 90, "y": 1886 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 1886
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Clasificación KNN",
         "order": "21",
@@ -317,8 +504,14 @@
     {
       "id": "knn-cv",
       "type": "subtopic",
-      "position": { "x": 540, "y": 1890 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 1890
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Validación cruzada y elección de k",
         "order": "22",
@@ -328,8 +521,14 @@
     {
       "id": "logistic-regression",
       "type": "topic",
-      "position": { "x": 90, "y": 2022 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2022
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Regresión logística",
         "order": "23",
@@ -339,8 +538,14 @@
     {
       "id": "logistic-significance",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2026 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2026
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Coeficientes y significancia",
         "order": "24",
@@ -350,8 +555,14 @@
     {
       "id": "linear-regression",
       "type": "topic",
-      "position": { "x": 90, "y": 2158 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2158
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Regresión lineal",
         "order": "25",
@@ -361,8 +572,14 @@
     {
       "id": "simple-multiple",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2162 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2162
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Simple, múltiple y OLS",
         "order": "26",
@@ -372,8 +589,14 @@
     {
       "id": "ols-reading",
       "type": "topic",
-      "position": { "x": 90, "y": 2294 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2294
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Leer críticamente un OLS",
         "order": "27",
@@ -383,8 +606,14 @@
     {
       "id": "weak-r2",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2298 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2298
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "R² débil también es resultado",
         "order": "28",
@@ -394,16 +623,30 @@
     {
       "id": "section-predictive",
       "type": "section",
-      "position": { "x": 40, "y": 1680 },
-      "size": { "width": 1200, "height": 770 },
+      "position": {
+        "x": 40,
+        "y": 1680
+      },
+      "size": {
+        "width": 1200,
+        "height": 770
+      },
       "zIndex": -1,
-      "data": { "label": "03 · Modelos predictivos y evaluación honesta" }
+      "data": {
+        "label": "03 · Modelos predictivos y evaluación honesta"
+      }
     },
     {
       "id": "count-outcomes",
       "type": "topic",
-      "position": { "x": 90, "y": 2550 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2550
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Resultados de conteo",
         "order": "29",
@@ -413,8 +656,14 @@
     {
       "id": "equidispersion",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2554 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2554
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Equidispersión y sobredispersión",
         "order": "30",
@@ -424,8 +673,14 @@
     {
       "id": "log-link",
       "type": "topic",
-      "position": { "x": 90, "y": 2686 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2686
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "GLM Poisson con enlace log",
         "order": "31",
@@ -435,8 +690,14 @@
     {
       "id": "multiplicative-effects",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2690 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2690
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Efectos multiplicativos",
         "order": "32",
@@ -446,8 +707,14 @@
     {
       "id": "poisson-regressor",
       "type": "topic",
-      "position": { "x": 90, "y": 2822 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2822
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "PoissonRegressor",
         "order": "33",
@@ -457,8 +724,14 @@
     {
       "id": "d2-score",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2826 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2826
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "D² de desviancia",
         "order": "34",
@@ -468,8 +741,14 @@
     {
       "id": "bicycle-models",
       "type": "topic",
-      "position": { "x": 90, "y": 2958 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 2958
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Bicicletas: modelo simple",
         "order": "35",
@@ -479,8 +758,14 @@
     {
       "id": "simple-multiple-bikes",
       "type": "subtopic",
-      "position": { "x": 540, "y": 2962 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 2962
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Modelo múltiple y D²",
         "order": "36",
@@ -490,8 +775,14 @@
     {
       "id": "temporal-glm",
       "type": "topic",
-      "position": { "x": 90, "y": 3094 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 3094
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Ingeniería temporal y GLM",
         "order": "37",
@@ -501,8 +792,14 @@
     {
       "id": "diagnostics",
       "type": "subtopic",
-      "position": { "x": 540, "y": 3098 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 3098
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Inferencia, residuos y predicción",
         "order": "38",
@@ -512,62 +809,237 @@
     {
       "id": "section-poisson",
       "type": "section",
-      "position": { "x": 40, "y": 2480 },
-      "size": { "width": 1200, "height": 770 },
+      "position": {
+        "x": 40,
+        "y": 2480
+      },
+      "size": {
+        "width": 1200,
+        "height": 770
+      },
       "zIndex": -1,
-      "data": { "label": "04 · Regresión de Poisson para conteos" }
+      "data": {
+        "label": "04 · Regresión de Poisson para conteos"
+      }
+    },
+    {
+      "id": "gamma-regression",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3280
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Regresión Gamma",
+        "order": "43",
+        "detail": "GLM para respuestas continuas, positivas y asimétricas."
+      }
+    },
+    {
+      "id": "gamma-regressor",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3284
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "GammaRegressor y enlace log",
+        "order": "44",
+        "detail": "sklearn GammaRegressor (alpha, max_iter) y GLM Gamma en statsmodels."
+      }
+    },
+    {
+      "id": "gamma-evaluation",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3420
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Evaluar Gamma: D², predicciones y residuos",
+        "order": "45",
+        "detail": "No basta con coeficientes: D², observados vs estimados y residuos."
+      }
+    },
+    {
+      "id": "gamma-segmentation-alpha",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3556
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Segmentación y regularización Gamma",
+        "order": "46",
+        "detail": "Modelos por subgrupos y grid de alpha maximizando D² en prueba."
+      }
+    },
+    {
+      "id": "tweedie-regression",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3692
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Regresión Tweedie",
+        "order": "47",
+        "detail": "Familia GLM unificada por el parámetro power; útil con ceros y montos positivos."
+      }
+    },
+    {
+      "id": "tweedie-regressor",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3696
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "TweedieRegressor y selección de power",
+        "order": "48",
+        "detail": "sklearn TweedieRegressor (power, alpha, link) y desviación Tweedie media."
+      }
+    },
+    {
+      "id": "parcial-poisson-gamma",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3828
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Checkpoint: Parcial Poisson y Gamma",
+        "order": "49",
+        "detail": "EDA → selección → ajuste → interpretación de Poisson y Gamma."
+      }
+    },
+    {
+      "id": "section-gamma-tweedie",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 3210
+      },
+      "size": {
+        "width": 1200,
+        "height": 760
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "06 · Regresión Gamma y Tweedie"
+      }
     },
     {
       "id": "dataset-one",
       "type": "topic",
-      "position": { "x": 90, "y": 3350 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 4150
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Checkpoint: Dataset 1",
-        "order": "39",
+        "order": "50",
         "detail": "Empleados: EDA, anomalías, correlación y salario vs precio_hora."
       }
     },
     {
       "id": "dataset-two",
       "type": "subtopic",
-      "position": { "x": 540, "y": 3354 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 4154
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Checkpoint: Dataset 2",
-        "order": "40",
+        "order": "51",
         "detail": "Cafetería: calidad, categorías inválidas y consistencia de totales."
       }
     },
     {
       "id": "reproducible-workflow",
       "type": "topic",
-      "position": { "x": 90, "y": 3486 },
-      "size": { "width": 380, "height": 96 },
+      "position": {
+        "x": 90,
+        "y": 4286
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
       "data": {
         "label": "Flujo reproducible de extremo a extremo",
-        "order": "41",
+        "order": "52",
         "detail": "Pregunta, auditoría, EDA, modelo, evaluación y reporte ejecutable."
       }
     },
     {
       "id": "limitations",
       "type": "subtopic",
-      "position": { "x": 540, "y": 3490 },
-      "size": { "width": 330, "height": 88 },
+      "position": {
+        "x": 540,
+        "y": 4290
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
       "data": {
         "label": "Supuestos, límites y evidencia",
-        "order": "42",
+        "order": "53",
         "detail": "Cerrar declarando sesgos, fuga, incertidumbre y próximos pasos."
       }
     },
     {
       "id": "section-applied",
       "type": "section",
-      "position": { "x": 40, "y": 3280 },
-      "size": { "width": 1200, "height": 410 },
+      "position": {
+        "x": 40,
+        "y": 4080
+      },
+      "size": {
+        "width": 1200,
+        "height": 410
+      },
       "zIndex": -1,
-      "data": { "label": "05 · Checkpoint aplicado de Anibal · Dataset 1 + Dataset 2" }
+      "data": {
+        "label": "05 · Checkpoint aplicado de Anibal · Dataset 1 + Dataset 2"
+      }
     }
   ],
   "edges": [
@@ -956,6 +1428,78 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-count-outcomes-gamma-regression",
+      "source": "count-outcomes",
+      "target": "gamma-regression",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-gamma-regression-gamma-regressor",
+      "source": "gamma-regression",
+      "target": "gamma-regressor",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-gamma-regressor-gamma-evaluation",
+      "source": "gamma-regressor",
+      "target": "gamma-evaluation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-gamma-evaluation-gamma-segmentation-alpha",
+      "source": "gamma-evaluation",
+      "target": "gamma-segmentation-alpha",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-gamma-regression-tweedie-regression",
+      "source": "gamma-regression",
+      "target": "tweedie-regression",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-tweedie-regression-tweedie-regressor",
+      "source": "tweedie-regression",
+      "target": "tweedie-regressor",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-poisson-regressor-parcial-poisson-gamma",
+      "source": "poisson-regressor",
+      "target": "parcial-poisson-gamma",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-gamma-evaluation-parcial-poisson-gamma",
+      "source": "gamma-evaluation",
+      "target": "parcial-poisson-gamma",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

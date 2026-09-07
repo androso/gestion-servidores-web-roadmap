@@ -177,6 +177,10 @@ const COURSE_SLUGS = [
   'programacion-orientada-a-eventos',
   'gestion-servidores-web',
   'diseno-arquitectura-de-sistemas',
+  'aplicacion-tecnicas-ingenieria-software',
+  'desarrollo-aplicaciones-moviles-basicas',
+  'gestion-seguridad-sistemas-informaticos',
+  'metodos-numericos',
 ] as const;
 
 test('every course keeps numbered steps in order and only skips the poster intro', async () => {
@@ -236,6 +240,7 @@ test('every course keeps numbered steps in order and only skips the poster intro
           '24b',
           '25b',
           '26b',
+          '26c',
           '27',
         ],
         'gestion-servidores-web: walk fork A, then fork B, then reconverge'

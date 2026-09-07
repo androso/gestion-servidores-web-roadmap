@@ -405,5 +405,27 @@
         "url": "/estructura-de-datos/archivos/425302-Ejemplos.ipynb"
       }
     ]
+  },
+  "lifo-fifo-patterns": {
+    "title": "Patrones LIFO y FIFO",
+    "content": "# Patrones LIFO y FIFO\n\nPilas con listas (append/pop) y colas con collections.deque.\n\nPila: `append` / `pop` sobre listas. Cola: `collections.deque`.\n\n### Fuentes\n- **Práctica 3 — Métodos de listas, sets y patrones LIFO/FIFO** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 3 — Métodos de listas, sets y patrones LIFO/FIFO",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d656181139f28f775c1fce6b7"
+      }
+    ]
+  },
+  "linear-vs-nonlinear": {
+    "title": "Estructuras lineales y no lineales",
+    "content": "# Estructuras lineales y no lineales\n\nSecuencia (listas, pilas, colas) vs jerarquías/redes (árboles, grafos, hash).\n\nLineales: secuencia (listas, pilas, colas). No lineales: jerarquías o redes (árboles, grafos, hash).\n\n### Fuentes\n- **Clase 13 — Estructura de Datos Lineales y No Lineales** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 13 — Estructura de Datos Lineales y No Lineales",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d082a6d65618162812ae9001c0a183f"
+      }
+    ]
   }
 }

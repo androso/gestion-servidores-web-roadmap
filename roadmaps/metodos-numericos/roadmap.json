@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "slug": "metodos-numericos",
+  "title": "Métodos Numéricos",
+  "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI y bisección.",
+  "canvas": {
+    "width": 1280,
+    "height": 1146,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 8,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -60,
+      "y": -190,
+      "zoom": 0.84
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": {
+        "x": 140,
+        "y": 16
+      },
+      "size": {
+        "width": 700,
+        "height": 52
+      },
+      "data": {
+        "text": "Métodos Numéricos",
+        "style": {
+          "fontSize": 26,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "subtitle-para",
+      "type": "paragraph",
+      "position": {
+        "x": 140,
+        "y": 80
+      },
+      "size": {
+        "width": 700,
+        "height": 84
+      },
+      "data": {
+        "text": "Sigue los números por la columna izquierda y estudia cada apoyo de la derecha antes de bajar al siguiente paso.",
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "progress-legend",
+      "type": "legend",
+      "position": {
+        "x": 900,
+        "y": 16
+      },
+      "size": {
+        "width": 320,
+        "height": 212
+      },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          {
+            "label": "Sigue los números: 01, 02, 03…",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "Paso principal de la ruta",
+            "color": "#f9d95c"
+          },
+          {
+            "label": "Concepto de apoyo del paso",
+            "color": "#fff2a8"
+          },
+          {
+            "label": "La flecha indica qué estudiar después",
+            "color": "#2563eb"
+          },
+          {
+            "label": "En aprendizaje",
+            "color": "#dad1fd"
+          },
+          {
+            "label": "Completado",
+            "color": "#cbd5e1"
+          },
+          {
+            "label": "Pulsa un bloque para el detalle",
+            "color": "#111827"
+          }
+        ]
+      }
+    },
+    {
+      "id": "importance-numerical",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 290
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Importancia de los métodos numéricos",
+        "order": "01",
+        "detail": "Resolver problemas sin solución exacta: raíces, interpolación, integración, EDOs."
+      }
+    },
+    {
+      "id": "iterative-error",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 426
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Error iterativo y criterios de parada",
+        "order": "02",
+        "detail": "Error y error porcentual entre iteraciones; tolerancia."
+      }
+    },
+    {
+      "id": "finite-precision",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 562
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Aritmética de precisión finita",
+        "order": "03",
+        "detail": "Punto flotante normalizado; corte, redondeo y error porcentual."
+      }
+    },
+    {
+      "id": "taylor-polynomial",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 698
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Polinomio de Taylor",
+        "order": "04",
+        "detail": "Aproximar funciones con derivadas sucesivas; error numérico y porcentual."
+      }
+    },
+    {
+      "id": "intermediate-value",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 834
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Teorema del Valor Intermedio",
+        "order": "05",
+        "detail": "Cambio de signo en extremos ⇒ al menos una raíz en el intervalo."
+      }
+    },
+    {
+      "id": "bisection-method",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 970
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Método de bisección",
+        "order": "06",
+        "detail": "Punto medio, actualización de intervalo, tolerancia y n ≥ log((b−a)/ε)/log(2)."
+      }
+    },
+    {
+      "id": "section-main",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 240
+      },
+      "size": {
+        "width": 1200,
+        "height": 866
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "01 · Error, precisión y raíces"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-node-subtitle-para",
+      "source": "title-node",
+      "target": "subtitle-para",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-subtitle-para-importance-numerical",
+      "source": "subtitle-para",
+      "target": "importance-numerical",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-importance-numerical-iterative-error",
+      "source": "importance-numerical",
+      "target": "iterative-error",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iterative-error-finite-precision",
+      "source": "iterative-error",
+      "target": "finite-precision",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-finite-precision-taylor-polynomial",
+      "source": "finite-precision",
+      "target": "taylor-polynomial",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-taylor-polynomial-intermediate-value",
+      "source": "taylor-polynomial",
+      "target": "intermediate-value",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-intermediate-value-bisection-method",
+      "source": "intermediate-value",
+      "target": "bisection-method",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    }
+  ]
+}

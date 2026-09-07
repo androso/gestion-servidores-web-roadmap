@@ -5,7 +5,7 @@
   "description": "Unidad 1 según las clases 2–10: analogía del restaurante, servidor vs contenedor, decisión propietario/libre, IIS con iisnode, Express como servicio, seguridad y el caso integrador.",
   "canvas": {
     "width": 1280,
-    "height": 4592,
+    "height": 4780,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -821,7 +821,7 @@
       },
       "size": {
         "width": 580,
-        "height": 954
+        "height": 1080
       },
       "zIndex": -1,
       "data": {
@@ -1092,11 +1092,62 @@
       },
       "size": {
         "width": 1200,
-        "height": 412
+        "height": 620
       },
       "zIndex": -1,
       "data": {
         "label": "06 · Integración — Clase 10"
+      }
+    },
+    {
+      "id": "dynamic-route-params",
+      "type": "subtopic",
+      "position": {
+        "x": 725,
+        "y": 3054
+      },
+      "size": {
+        "width": 450,
+        "height": 88
+      },
+      "data": {
+        "label": "Rutas dinámicas con :id y routers",
+        "order": "26c",
+        "detail": "Segmentos dinámicos, enrutadores modulares y despliegue Express."
+      }
+    },
+    {
+      "id": "hardware-sizing",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4462
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Requerimientos de equipo del servidor web",
+        "order": "37",
+        "detail": "Dimensionar CPU, RAM, disco y red; no confundir con contenedor web."
+      }
+    },
+    {
+      "id": "install-methods",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4598
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Métodos de instalación de servidores web",
+        "order": "38",
+        "detail": "Elegir por rapidez, control y mantenibilidad; imágenes cloud no son magia."
       }
     }
   ],
@@ -1513,6 +1564,33 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-dynamic-routes-dynamic-route-params",
+      "source": "dynamic-routes",
+      "target": "dynamic-route-params",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-parcial-scope-hardware-sizing",
+      "source": "parcial-scope",
+      "target": "hardware-sizing",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-hardware-sizing-install-methods",
+      "source": "hardware-sizing",
+      "target": "install-methods",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
       "arrow": true
     }
   ]

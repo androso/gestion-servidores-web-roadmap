@@ -415,9 +415,26 @@
       },
       "data": {
         "label": "Selección del enfoque de trabajo",
-        "order": "18",
+        "order": "19",
         "detail": "Elegir Scrum, Kanban, predictivo o híbrido según el contexto del caso.",
         "week": "Semana 5"
+      }
+    },
+    {
+      "id": "t-plan-agil-backlog",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1030
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Plan de Proyecto Ágil y Backlog (Práctica 02)",
+        "order": "18",
+        "detail": "Roles Scrum, historias con criterios de aceptación y Product Backlog del Sprint 0."
       }
     },
     {
@@ -433,7 +450,7 @@
       },
       "data": {
         "label": "Modelado UML — diagrama de clases",
-        "order": "19",
+        "order": "20",
         "detail": "Primer modelo UML del proyecto, nacido del rubro elegido por el equipo.",
         "week": "Semana 5"
       }
@@ -451,7 +468,7 @@
       },
       "data": {
         "label": "Entidades, atributos y métodos",
-        "order": "20",
+        "order": "21",
         "detail": "Extraer las clases centrales del caso de punto de venta e inventario, con multiplicidad.",
         "week": "Semana 5"
       }
@@ -469,7 +486,7 @@
       },
       "data": {
         "label": "Tablero ágil y entrega de la práctica",
-        "order": "21",
+        "order": "22",
         "detail": "Kanban en Trello/Jira y PDF único con portada, justificación, tablero y diagrama.",
         "week": "Semana 5"
       }
@@ -672,6 +689,24 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-historias-usuario-t-plan-agil-backlog",
+      "source": "s-historias-usuario",
+      "target": "t-plan-agil-backlog",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-s-roles-eventos-scrum-t-plan-agil-backlog",
+      "source": "s-roles-eventos-scrum",
+      "target": "t-plan-agil-backlog",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

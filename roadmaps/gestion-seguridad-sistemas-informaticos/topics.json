@@ -1,0 +1,90 @@
+{
+  "info-security-intro": {
+    "title": "Introducción a la seguridad de la información",
+    "content": "# Introducción a la seguridad de la información\n\nRiesgos se mitigan, no desaparecen; información como activo crítico.\n\n### Fuentes\n- **Clase 1 — Introducción a la seguridad de la información** — Definiciones / Idea",
+    "sourceRefs": [
+      {
+        "label": "Clase 1 — Introducción a la seguridad de la información",
+        "locator": "Definiciones / Idea",
+        "url": "https://app.notion.com/p/39e82a6d656180909bf1da2c87c4178c"
+      }
+    ]
+  },
+  "cia-pdca": {
+    "title": "Triángulo CIA y ciclo PDCA",
+    "content": "# Triángulo CIA y ciclo PDCA\n\nConfidencialidad, integridad, disponibilidad; Plan-Do-Check-Act del SGSI.\n\n### Fuentes\n- **Clase 1 — Introducción** — Modelo PDCA / Triángulo CIA",
+    "sourceRefs": [
+      {
+        "label": "Clase 1 — Introducción",
+        "locator": "Modelo PDCA / Triángulo CIA",
+        "url": "https://app.notion.com/p/39e82a6d656180909bf1da2c87c4178c"
+      }
+    ]
+  },
+  "authn-authz": {
+    "title": "Autenticación, autorización y no repudio",
+    "content": "# Autenticación, autorización y no repudio\n\nSabe/tiene/es; niveles de sensibilidad; tercero en no repudio.\n\n### Fuentes\n- **Clase 1 — Introducción** — Autenticación / Autorización / No repudio",
+    "sourceRefs": [
+      {
+        "label": "Clase 1 — Introducción",
+        "locator": "Autenticación / Autorización / No repudio",
+        "url": "https://app.notion.com/p/39e82a6d656180909bf1da2c87c4178c"
+      }
+    ]
+  },
+  "itil-security": {
+    "title": "ITIL y gestión de servicios seguros",
+    "content": "# ITIL y gestión de servicios seguros\n\nIncidentes, cambios, problemas, disponibilidad y continuidad.\n\n### Fuentes\n- **Clase 2 — Estándar de seguridad ITIL** — Objetivos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 2 — Estándar de seguridad ITIL",
+        "locator": "Objetivos / Idea clave",
+        "url": "https://app.notion.com/p/3ab82a6d65618193b158efdd49f5f8ca"
+      }
+    ]
+  },
+  "cisa-audit": {
+    "title": "CISA y auditoría informática",
+    "content": "# CISA y auditoría informática\n\nEvaluar controles, reunir evidencia y remediación bajo ITAF/COBIT.\n\n### Fuentes\n- **Clase 3 — CISA y auditoría informática** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 3 — CISA y auditoría informática",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3aa82a6d6561811193dad509a6ccb48a"
+      }
+    ]
+  },
+  "cmmi-secure-dev": {
+    "title": "CMMI y desarrollo seguro",
+    "content": "# CMMI y desarrollo seguro\n\nMadurez de procesos con seguridad desde el inicio del ciclo de vida.\n\n### Fuentes\n- **Clase 4 — CMMI aplicado al desarrollo seguro** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 4 — CMMI aplicado al desarrollo seguro",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3bb82a6d656181e7a4b0cdcf6670932f"
+      }
+    ]
+  },
+  "iso27000-family": {
+    "title": "Familia ISO/IEC 27000",
+    "content": "# Familia ISO/IEC 27000\n\n27001 SGSI certificable; 27002 controles; extensiones nube/privacidad/incidentes.\n\n### Fuentes\n- **Clase 5 — La familia ISO/IEC 27000** — Mapa / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 5 — La familia ISO/IEC 27000",
+        "locator": "Mapa / Idea clave",
+        "url": "https://app.notion.com/p/3c282a6d6561815e988efa2769977fa9"
+      }
+    ]
+  },
+  "cobit-governance": {
+    "title": "COBIT y gobierno de TI",
+    "content": "# COBIT y gobierno de TI\n\nGobierno vs gestión; dominios EDM/APO/BAI/DSS/MEA; fallos de gobierno.\n\n### Fuentes\n- **Clase 6 — COBIT y el Gobierno de TI** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 6 — COBIT y el Gobierno de TI",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3c882a6d65618102954dc4f395d4448f"
+      }
+    ]
+  }
+}

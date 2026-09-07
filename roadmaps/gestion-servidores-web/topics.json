@@ -1017,5 +1017,38 @@
         "url": "https://developer.mozilla.org/es/docs/Learn_web_development/Extensions/Server-side"
       }
     ]
+  },
+  "dynamic-route-params": {
+    "title": "Rutas dinámicas con :id y routers",
+    "content": "# Rutas dinámicas con :id y routers\n\nSegmentos dinámicos, enrutadores modulares y despliegue Express.\n\nSegmentos dinámicos (`:id`), enrutadores modulares y despliegue de Express.\n\n### Fuentes\n- **Práctica 3 — Construcción y despliegue de rutas dinámicas en Express** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 3 — Construcción y despliegue de rutas dinámicas en Express",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ce82a6d65618117800dcad6ab3c864c"
+      }
+    ]
+  },
+  "hardware-sizing": {
+    "title": "Requerimientos de equipo del servidor web",
+    "content": "# Requerimientos de equipo del servidor web\n\nDimensionar CPU, RAM, disco y red; no confundir con contenedor web.\n\nDimensionar CPU, RAM, disco y red. Distinguir el equipo del contenedor web.\n\n### Fuentes\n- **Clase 13 — Requerimientos de equipo para instalación** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 13 — Requerimientos de equipo para instalación",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d6561816e9f2dc707e4a418c1"
+      }
+    ]
+  },
+  "install-methods": {
+    "title": "Métodos de instalación de servidores web",
+    "content": "# Métodos de instalación de servidores web\n\nElegir por rapidez, control y mantenibilidad; imágenes cloud no son magia.\n\nCriterios de elección: rapidez, control y mantenibilidad. Las imágenes cloud no sustituyen el criterio de instalación.\n\n### Fuentes\n- **Clase 14 — Métodos de Instalación de Servidores Web** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — Métodos de Instalación de Servidores Web",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cf82a6d6561815ea87df7accd4fa505"
+      }
+    ]
   }
 }

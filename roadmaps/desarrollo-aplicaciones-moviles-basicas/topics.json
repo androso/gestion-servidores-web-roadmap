@@ -1,0 +1,120 @@
+{
+  "rn-fundamentals": {
+    "title": "Fundamentos de React Native",
+    "content": "# Fundamentos de React Native\n\nUn código JS para iOS y Android; View/Text, JSX y Hot Reload.\n\n### Fuentes\n- **Clase 1 — Fundamentos de React Native** — Conceptos técnicos",
+    "sourceRefs": [
+      {
+        "label": "Clase 1 — Fundamentos de React Native",
+        "locator": "Conceptos técnicos",
+        "url": "https://app.notion.com/p/39c82a6d6561809a9d0ac6b3b811607b"
+      }
+    ]
+  },
+  "components-usestate": {
+    "title": "Componentes e interfaces con useState",
+    "content": "# Componentes e interfaces con useState\n\nPráctica: templates, buttons y counter app.\n\n### Fuentes\n- **Práctica 03 — Components and Interfaces (useState counter)** — title\n- **Práctica 02 — Templates, buttons and counter app** — title",
+    "sourceRefs": [
+      {
+        "label": "Práctica 03 — Components and Interfaces (useState counter)",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3d282a6d656181bba4d2cdb6105eb808"
+      },
+      {
+        "label": "Práctica 02 — Templates, buttons and counter app",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3cd82a6d65618151a64eda1d18324537"
+      }
+    ]
+  },
+  "clean-mvvm": {
+    "title": "Arquitectura limpia y MVVM",
+    "content": "# Arquitectura limpia y MVVM\n\nReglas de negocio desacopladas de UI, framework y BD; ViewModel intermedia.\n\n### Fuentes\n- **Clase 3 — Arquitectura limpia MVVM** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 3 — Arquitectura limpia MVVM",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3ad82a6d6561811e89caf833d9b2a08d"
+      }
+    ]
+  },
+  "login-register-ui": {
+    "title": "UI de Login y Registro",
+    "content": "# UI de Login y Registro\n\nPantallas ShopEase: login, toggle de contraseña y Sign up.\n\n### Fuentes\n- **Clase 4 — Pantalla de Login ShopEase** — title\n- **Clase 5 — Login toggle y Sign up** — title\n- **Clase 6 — Módulo de registro UI** — title",
+    "sourceRefs": [
+      {
+        "label": "Clase 4 — Pantalla de Login ShopEase",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3ad82a6d6561818b94cefdc96f3523b3"
+      },
+      {
+        "label": "Clase 5 — Login toggle y Sign up",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3ad82a6d6561811d8153cb3c3f1cb714"
+      },
+      {
+        "label": "Clase 6 — Módulo de registro UI",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3ad82a6d656181b2b1c0d080b8e7a351"
+      }
+    ]
+  },
+  "auth-services": {
+    "title": "Consumo de login y registro",
+    "content": "# Consumo de login y registro\n\nLlamar servicios de autenticación desde el ViewModel.\n\n### Fuentes\n- **Clase 7 — Consumo del servicio de login** — title\n- **Clase 8 — Consumo del servicio de registro** — title",
+    "sourceRefs": [
+      {
+        "label": "Clase 7 — Consumo del servicio de login",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3bb82a6d656181289e53e4c80e14eb44"
+      },
+      {
+        "label": "Clase 8 — Consumo del servicio de registro",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3bb82a6d656181c49cf2d3e0bdc7af80"
+      }
+    ]
+  },
+  "drawer-navigation": {
+    "title": "Drawer Navigation y rutas protegidas",
+    "content": "# Drawer Navigation y rutas protegidas\n\nMenú lateral tras login; route groups (protected) en Expo Router.\n\n### Fuentes\n- **Clase 9 — Creación del Drawer** — Objetivo / Conceptos\n- **Clase 10 — Creación del Drawer, parte 2** — title",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — Creación del Drawer",
+        "locator": "Objetivo / Conceptos",
+        "url": "https://app.notion.com/p/3c182a6d656181a38031e8c1a693a8c9"
+      },
+      {
+        "label": "Clase 10 — Creación del Drawer, parte 2",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3c282a6d65618188b1b4dd6e72c04742"
+      }
+    ]
+  },
+  "auth-context-asyncstorage": {
+    "title": "AuthContext y AsyncStorage",
+    "content": "# AuthContext y AsyncStorage\n\nSesión persistente: token, user, loadSession/saveSession/clearSession.\n\n### Fuentes\n- **Clase 11 — Creación de contexto con AsyncStorage** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — Creación de contexto con AsyncStorage",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3c882a6d65618142a349d3ed32107747"
+      }
+    ]
+  },
+  "dashboard-panel": {
+    "title": "Panel principal ShopEase",
+    "content": "# Panel principal ShopEase\n\nHeader custom, filtros de categoría y búsqueda; base del home autenticado.\n\n### Fuentes\n- **Clase 13 — Panel principal de la aplicación** — Objetivo / Idea clave\n- **Clase 14 — Panel principal parte 2: tarjetas de productos** — title",
+    "sourceRefs": [
+      {
+        "label": "Clase 13 — Panel principal de la aplicación",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3ce82a6d656181348218c21a708d660f"
+      },
+      {
+        "label": "Clase 14 — Panel principal parte 2: tarjetas de productos",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3d082a6d656181fba56ec1399071351b"
+      }
+    ]
+  }
+}

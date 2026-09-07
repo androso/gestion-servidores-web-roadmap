@@ -679,7 +679,7 @@
   },
   "next-parcial": {
     "title": "Hacia requerimientos y Parcial I",
-    "content": "# Hacia requerimientos y Parcial I\n\nCon el material de las semanas 1–5 ya puedes explicar conceptos y tipos de arquitectura, el proceso, el rol del arquitecto y el análisis de stakeholders. El sílabo continúa así:\n\n| Fecha | Tema |\n| --- | --- |\n| 24/08/2026 | Requerimientos funcionales y no funcionales relacionados con la arquitectura |\n| 26/08/2026 | Drivers arquitectónicos y restricciones técnicas |\n| 31/08/2026 | Parcial I |\n\nEl Parcial I cubre fundamentos de arquitectura, stakeholders, requerimientos, drivers, escenarios y estilos. La segunda actividad del Cómputo 1 (diseño conceptual y selección de estilo, 30 %) aparece en el sílabo con fecha 19/08/2026; confirma en aula las fechas vigentes, como ocurrió con la Actividad 1.\n\nRA de este tramo: RA 1 (conceptos, tipos, procesos y elementos), RA 2 (rol del arquitecto) y RA 3 (stakeholders, requerimientos y drivers de un caso).",
+    "content": "# Hacia requerimientos y Parcial I\n\nTras el análisis de stakeholders el recorrido sigue hacia requerimientos, drivers y escenarios de calidad; el Parcial I cierra este tramo.\n\nEl mapa continúa en la columna izquierda: RF/RNF, drivers vs restricciones y escenarios de seis elementos.\n\n### Fuentes\n- **Syllabus-Diseño de Arquitectura de Sistemas_.pdf** — p. 3/7 — Calendario: 24/08 requerimientos, 26/08 drivers, 31/08 Parcial I\n- **Syllabus-Diseño de Arquitectura de Sistemas_.pdf** — p. 5/7 — Cómputo 1: Parcial I, fundamentos, stakeholders, drivers, escenarios y estilos\n- **Syllabus-Diseño de Arquitectura de Sistemas_.pdf** — p. 2/7 — Resultados de aprendizaje RA 1, RA 2 y RA 3\n- **Clase 14 — Parcial I Diseño de Arquitectura** — Parcial I",
     "sourceRefs": [
       {
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
@@ -695,6 +695,49 @@
         "label": "Syllabus-Diseño de Arquitectura de Sistemas_.pdf",
         "locator": "p. 2/7 — Resultados de aprendizaje RA 1, RA 2 y RA 3",
         "url": "/diseno-arquitectura-de-sistemas/materiales/Syllabus-Dise%C3%B1o%20de%20Arquitectura%20de%20Sistemas_.pdf"
+      },
+      {
+        "label": "Clase 14 — Parcial I Diseño de Arquitectura",
+        "locator": "Parcial I",
+        "url": "https://app.notion.com/p/3d082a6d6561817bb56dc7daaa992476"
+      }
+    ]
+  },
+  "functional-nonfunctional": {
+    "title": "Requerimientos funcionales y no funcionales",
+    "content": "# Requerimientos funcionales y no funcionales\n\nDe necesidades de stakeholders a requerimientos arquitectónicamente significativos.\n\n### Fuentes\n- **Clase 11 — Requerimientos funcionales y no funcionales** — Objetivo / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — Requerimientos funcionales y no funcionales",
+        "locator": "Objetivo / Conceptos",
+        "url": "https://app.notion.com/p/3cd82a6d656181b1a32dd396b5fc9437"
+      }
+    ]
+  },
+  "drivers-vs-constraints": {
+    "title": "Drivers arquitectónicos vs restricciones",
+    "content": "# Drivers arquitectónicos vs restricciones\n\nDrivers orientan decisiones; restricciones limitan alternativas.\n\n### Fuentes\n- **Clase 12 — Drivers arquitectónicos y restricciones técnicas** — Objetivo / Idea clave\n- **Práctica 03 — Requerimientos, Drivers y Restricciones** — Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — Drivers arquitectónicos y restricciones técnicas",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d65618167aa53e898df0291cc"
+      },
+      {
+        "label": "Práctica 03 — Requerimientos, Drivers y Restricciones",
+        "locator": "Conceptos",
+        "url": "https://app.notion.com/p/3cf82a6d656181758b0ed2525fda290b"
+      }
+    ]
+  },
+  "quality-scenarios": {
+    "title": "Escenarios de calidad",
+    "content": "# Escenarios de calidad\n\nSeis elementos: fuente, estímulo, ambiente, artefacto, respuesta y medida.\n\nLos seis elementos del escenario: fuente, estímulo, ambiente, artefacto, respuesta y medida.\n\n### Fuentes\n- **Clase 13 — Escenarios arquitectónicos y atributos de calidad** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 13 — Escenarios arquitectónicos y atributos de calidad",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d082a6d65618115a28cf2a61e1612d0"
       }
     ]
   }

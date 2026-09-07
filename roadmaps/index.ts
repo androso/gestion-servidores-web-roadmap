@@ -11,6 +11,12 @@ import disenoArquitecturaDeSistemasData from './diseno-arquitectura-de-sistemas/
 import disenoArquitecturaDeSistemasTopics from './diseno-arquitectura-de-sistemas/topics.json';
 import aplicacionTecnicasIngenieriaSoftwareData from './aplicacion-tecnicas-ingenieria-software/roadmap.json';
 import aplicacionTecnicasIngenieriaSoftwareTopics from './aplicacion-tecnicas-ingenieria-software/topics.json';
+import desarrolloAplicacionesMovilesBasicasData from './desarrollo-aplicaciones-moviles-basicas/roadmap.json';
+import desarrolloAplicacionesMovilesBasicasTopics from './desarrollo-aplicaciones-moviles-basicas/topics.json';
+import gestionSeguridadSistemasInformaticosData from './gestion-seguridad-sistemas-informaticos/roadmap.json';
+import gestionSeguridadSistemasInformaticosTopics from './gestion-seguridad-sistemas-informaticos/topics.json';
+import metodosNumericosData from './metodos-numericos/roadmap.json';
+import metodosNumericosTopics from './metodos-numericos/topics.json';
 
 export const gestionServidoresWebRoadmap: RoadmapDocument = {
   ...(gestionServidoresWebData as unknown as Omit<RoadmapDocument, 'topics'>),
@@ -42,6 +48,21 @@ export const aplicacionTecnicasIngenieriaSoftwareRoadmap: RoadmapDocument = {
   topics: aplicacionTecnicasIngenieriaSoftwareTopics as Record<string, TopicDetails>,
 };
 
+export const desarrolloAplicacionesMovilesBasicasRoadmap: RoadmapDocument = {
+  ...(desarrolloAplicacionesMovilesBasicasData as unknown as Omit<RoadmapDocument, 'topics'>),
+  topics: desarrolloAplicacionesMovilesBasicasTopics as Record<string, TopicDetails>,
+};
+
+export const gestionSeguridadSistemasInformaticosRoadmap: RoadmapDocument = {
+  ...(gestionSeguridadSistemasInformaticosData as unknown as Omit<RoadmapDocument, 'topics'>),
+  topics: gestionSeguridadSistemasInformaticosTopics as Record<string, TopicDetails>,
+};
+
+export const metodosNumericosRoadmap: RoadmapDocument = {
+  ...(metodosNumericosData as unknown as Omit<RoadmapDocument, 'topics'>),
+  topics: metodosNumericosTopics as Record<string, TopicDetails>,
+};
+
 export const roadmaps: RoadmapDocument[] = [
   gestionServidoresWebRoadmap,
   cienciaDeDatosRoadmap,
@@ -49,6 +70,9 @@ export const roadmaps: RoadmapDocument[] = [
   programacionOrientadaAEventosRoadmap,
   disenoArquitecturaDeSistemasRoadmap,
   aplicacionTecnicasIngenieriaSoftwareRoadmap,
+  desarrolloAplicacionesMovilesBasicasRoadmap,
+  gestionSeguridadSistemasInformaticosRoadmap,
+  metodosNumericosRoadmap,
 ];
 
 export const roadmapsBySlug: Record<string, RoadmapDocument> = {
@@ -60,6 +84,9 @@ export const roadmapsBySlug: Record<string, RoadmapDocument> = {
   'diseno-arquitectura-de-sistemas': disenoArquitecturaDeSistemasRoadmap,
   'aplicacion-tecnicas-ingenieria-software': aplicacionTecnicasIngenieriaSoftwareRoadmap,
   'atis': aplicacionTecnicasIngenieriaSoftwareRoadmap,
+  'desarrollo-aplicaciones-moviles-basicas': desarrolloAplicacionesMovilesBasicasRoadmap,
+  'gestion-seguridad-sistemas-informaticos': gestionSeguridadSistemasInformaticosRoadmap,
+  'metodos-numericos': metodosNumericosRoadmap,
 };
 
 export function getRoadmapBySlug(slug?: string | null): RoadmapDocument {
