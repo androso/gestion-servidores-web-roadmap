@@ -925,6 +925,23 @@
       }
     },
     {
+      "id": "tweedie-zeros-p-selection",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3832
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Tweedie con ceros: p óptima vs OLS y Gamma",
+        "order": "49",
+        "detail": "Respuesta semicontinua (lluvia con masa en cero); barrido de p en [1.1, 1.9] maximizando D²; comparar Tweedie con OLS y Gamma."
+      }
+    },
+    {
       "id": "parcial-poisson-gamma",
       "type": "topic",
       "position": {
@@ -937,7 +954,7 @@
       },
       "data": {
         "label": "Checkpoint: Parcial Poisson y Gamma",
-        "order": "49",
+        "order": "50",
         "detail": "EDA → selección → ajuste → interpretación de Poisson y Gamma."
       }
     },
@@ -970,7 +987,7 @@
       },
       "data": {
         "label": "Checkpoint: Dataset 1",
-        "order": "50",
+        "order": "51",
         "detail": "Empleados: EDA, anomalías, correlación y salario vs precio_hora."
       }
     },
@@ -987,7 +1004,7 @@
       },
       "data": {
         "label": "Checkpoint: Dataset 2",
-        "order": "51",
+        "order": "52",
         "detail": "Cafetería: calidad, categorías inválidas y consistencia de totales."
       }
     },
@@ -1004,7 +1021,7 @@
       },
       "data": {
         "label": "Flujo reproducible de extremo a extremo",
-        "order": "52",
+        "order": "53",
         "detail": "Pregunta, auditoría, EDA, modelo, evaluación y reporte ejecutable."
       }
     },
@@ -1021,7 +1038,7 @@
       },
       "data": {
         "label": "Supuestos, límites y evidencia",
-        "order": "53",
+        "order": "54",
         "detail": "Cerrar declarando sesgos, fuga, incertidumbre y próximos pasos."
       }
     },
@@ -1481,6 +1498,15 @@
       "target": "tweedie-regressor",
       "sourceHandle": "right",
       "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-tweedie-regressor-tweedie-zeros-p-selection",
+      "source": "tweedie-regressor",
+      "target": "tweedie-zeros-p-selection",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
       "route": "straight",
       "arrow": true
     },
