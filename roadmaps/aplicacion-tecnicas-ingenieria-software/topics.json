@@ -437,5 +437,16 @@
       }
     ],
     "week": "Semana 5"
+  },
+  "t-plan-agil-backlog": {
+    "title": "Plan de Proyecto Ágil y Backlog (Práctica 02)",
+    "content": "# Plan de Proyecto Ágil y Backlog (Práctica 02)\n\nRoles Scrum, historias con criterios de aceptación y Product Backlog del Sprint 0.\n\nLa práctica cubre roles Scrum, historias con criterios de aceptación y el Product Backlog del Sprint 0.\n\n### Fuentes\n- **Práctica 02 — Plan de Proyecto Ágil y Backlog** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 02 — Plan de Proyecto Ágil y Backlog",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d182a6d6561819098b8e19940f8e7d2"
+      }
+    ]
   }
 }

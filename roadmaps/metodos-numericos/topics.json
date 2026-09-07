@@ -1,0 +1,83 @@
+{
+  "importance-numerical": {
+    "title": "Importancia de los métodos numéricos",
+    "content": "# Importancia de los métodos numéricos\n\nResolver problemas sin solución exacta: raíces, interpolación, integración, EDOs.\n\n### Fuentes\n- **14/07/2026 — Importancia de los métodos numéricos** — Objetivo",
+    "sourceRefs": [
+      {
+        "label": "14/07/2026 — Importancia de los métodos numéricos",
+        "locator": "Objetivo",
+        "url": "https://app.notion.com/p/3c182a6d6561813285c3cf860c05ace3"
+      }
+    ]
+  },
+  "iterative-error": {
+    "title": "Error iterativo y criterios de parada",
+    "content": "# Error iterativo y criterios de parada\n\nError y error porcentual entre iteraciones; tolerancia.\n\n### Fuentes\n- **16/07/2026 — Aplicaciones del error iterativo** — Objetivo",
+    "sourceRefs": [
+      {
+        "label": "16/07/2026 — Aplicaciones del error iterativo",
+        "locator": "Objetivo",
+        "url": "https://app.notion.com/p/3c182a6d65618164b0d2f82eb738e059"
+      }
+    ]
+  },
+  "finite-precision": {
+    "title": "Aritmética de precisión finita",
+    "content": "# Aritmética de precisión finita\n\nPunto flotante normalizado; corte, redondeo y error porcentual.\n\n### Fuentes\n- **28/07/2026 — Aritmética de precisión finita** — Objetivo\n- **23/07/2026 — Sistemas de numeración y aritmética de precisión finita** — title",
+    "sourceRefs": [
+      {
+        "label": "28/07/2026 — Aritmética de precisión finita",
+        "locator": "Objetivo",
+        "url": "https://app.notion.com/p/3c182a6d656181e8a28ad7e94fedb437"
+      },
+      {
+        "label": "23/07/2026 — Sistemas de numeración y aritmética de precisión finita",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3c182a6d65618108baa4fc66e12ead27"
+      }
+    ]
+  },
+  "taylor-polynomial": {
+    "title": "Polinomio de Taylor",
+    "content": "# Polinomio de Taylor\n\nAproximar funciones con derivadas sucesivas; error numérico y porcentual.\n\n### Fuentes\n- **18/08/2026 — El Polinomio de Taylor** — Contenido / competencias\n- **Clase 11 — Aplicaciones del Polinomio de Taylor** — title",
+    "sourceRefs": [
+      {
+        "label": "18/08/2026 — El Polinomio de Taylor",
+        "locator": "Contenido / competencias",
+        "url": "https://app.notion.com/p/3c182a6d656181bfba8ce7494cb40fac"
+      },
+      {
+        "label": "Clase 11 — Aplicaciones del Polinomio de Taylor",
+        "locator": "title",
+        "url": "https://app.notion.com/p/3c882a6d65618185af5acd97a57fe7a9"
+      }
+    ]
+  },
+  "intermediate-value": {
+    "title": "Teorema del Valor Intermedio",
+    "content": "# Teorema del Valor Intermedio\n\nCambio de signo en extremos ⇒ al menos una raíz en el intervalo.\n\n### Fuentes\n- **13/08/2026 — Teorema del Valor Intermedio** — Contenido",
+    "sourceRefs": [
+      {
+        "label": "13/08/2026 — Teorema del Valor Intermedio",
+        "locator": "Contenido",
+        "url": "https://app.notion.com/p/3c182a6d6561814a84f3ec1692a9f06d"
+      }
+    ]
+  },
+  "bisection-method": {
+    "title": "Método de bisección",
+    "content": "# Método de bisección\n\nPunto medio, actualización de intervalo, tolerancia y n ≥ log((b−a)/ε)/log(2).\n\n### Fuentes\n- **Clase 12 — Método de bisección** — Conceptos / Idea clave\n- **Clase 13 — Bisección: error, iteraciones e implementación en Python** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — Método de bisección",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d656181b0ac36d7669da4aee9"
+      },
+      {
+        "label": "Clase 13 — Bisección: error, iteraciones e implementación en Python",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cf82a6d656181d0a374ecc28fe9499c"
+      }
+    ]
+  }
+}

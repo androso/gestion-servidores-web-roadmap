@@ -593,5 +593,27 @@
         "url": "/programacion-orientada-a-eventos/clases/clase-10-miercoles-19-08-26.html"
       }
     ]
+  },
+  "tsconfig-mastery": {
+    "title": "Dominar tsconfig.json",
+    "content": "# Dominar tsconfig.json\n\ncompilerOptions, target/lib, módulos, strict, rootDir/outDir.\n\nOpciones citadas: `compilerOptions`, `target`/`lib`, módulos, `strict`, `rootDir`/`outDir`.\n\n### Fuentes\n- **Práctica 2 — Dominando el archivo tsconfig.json** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 2 — Dominando el archivo tsconfig.json",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d65618191a0a1d4a4b7f4863e"
+      }
+    ]
+  },
+  "custom-event-emitter-lab": {
+    "title": "Laboratorio: EventEmitter propio",
+    "content": "# Laboratorio: EventEmitter propio\n\nPatrón Observador con on/emit y payload tipado en TypeScript.\n\nImplementar `on`/`emit` con payload tipado en TypeScript (patrón Observador).\n\n### Fuentes\n- **Práctica 3 — Construyendo un Sistema de Eventos (Event Emitter)** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 3 — Construyendo un Sistema de Eventos (Event Emitter)",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d082a6d656181f789bbda3f4e1630b7"
+      }
+    ]
   }
 }

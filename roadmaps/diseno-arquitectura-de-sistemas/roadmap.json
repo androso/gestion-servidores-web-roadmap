@@ -5,7 +5,7 @@
   "description": "Ruta actualmente impartida: fundamentos de arquitectura de software, tipos de arquitectura de TI, proceso arquitectónico, rol del arquitecto, stakeholders y la Actividad Evaluativa 1 (clínica de citas).",
   "canvas": {
     "width": 1280,
-    "height": 3100,
+    "height": 3480,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -784,7 +784,7 @@
       "data": {
         "label": "Hacia requerimientos y Parcial I",
         "order": "35",
-        "detail": "Siguiente en el sílabo: RF/RNF, drivers y restricciones; Parcial I el 31/08/2026."
+        "detail": "Tras stakeholders: requerimientos, drivers y escenarios de calidad; Parcial I."
       }
     },
     {
@@ -815,11 +815,78 @@
       },
       "size": {
         "width": 1200,
-        "height": 300
+        "height": 280
       },
       "zIndex": -1,
       "data": {
         "label": "06 · Caso evaluativo y cierre del tramo"
+      }
+    },
+    {
+      "id": "functional-nonfunctional",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3042
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Requerimientos funcionales y no funcionales",
+        "order": "36",
+        "detail": "De necesidades de stakeholders a requerimientos arquitectónicamente significativos."
+      }
+    },
+    {
+      "id": "drivers-vs-constraints",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3178
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Drivers arquitectónicos vs restricciones",
+        "order": "37",
+        "detail": "Drivers orientan decisiones; restricciones limitan alternativas."
+      }
+    },
+    {
+      "id": "quality-scenarios",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3314
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Escenarios de calidad",
+        "order": "38",
+        "detail": "Seis elementos: fuente, estímulo, ambiente, artefacto, respuesta y medida."
+      }
+    },
+    {
+      "id": "section-requirements",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2980
+      },
+      "size": {
+        "width": 1200,
+        "height": 460
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "07 · Requerimientos, drivers y escenarios"
       }
     }
   ],
@@ -1143,6 +1210,42 @@
       "id": "e-clinic-next",
       "source": "clinic-case",
       "target": "next-parcial",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-analyze-stakeholders-functional-nonfunctional",
+      "source": "analyze-stakeholders",
+      "target": "functional-nonfunctional",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-next-parcial-functional-nonfunctional",
+      "source": "next-parcial",
+      "target": "functional-nonfunctional",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-functional-nonfunctional-drivers-vs-constraints",
+      "source": "functional-nonfunctional",
+      "target": "drivers-vs-constraints",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-drivers-vs-constraints-quality-scenarios",
+      "source": "drivers-vs-constraints",
+      "target": "quality-scenarios",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",

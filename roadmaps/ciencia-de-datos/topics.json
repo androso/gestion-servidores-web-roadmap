@@ -645,5 +645,97 @@
         "url": "/ciencia-de-datos/materiales/Ejemplo%2002%20-%20Clase%2004%20-%20CDD.pdf"
       }
     ]
+  },
+  "gamma-regression": {
+    "title": "Regresión Gamma",
+    "content": "# Regresión Gamma\n\nGLM para respuestas continuas, positivas y asimétricas.\n\n### Fuentes\n- **Clase 9 — 21/08/2026 — Regresión Gamma** — Conceptos y técnicas / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — 21/08/2026 — Regresión Gamma",
+        "locator": "Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3c482a6d6561815497dfd169deffcdc8"
+      }
+    ]
+  },
+  "gamma-regressor": {
+    "title": "GammaRegressor y enlace log",
+    "content": "# GammaRegressor y enlace log\n\nsklearn GammaRegressor (alpha, max_iter) y GLM Gamma en statsmodels.\n\nHiperparámetros citados: `alpha`, `max_iter`. Enlace log en el GLM Gamma.\n\n### Fuentes\n- **Clase 9 — Regresión Gamma** — Scikit-Learn GammaRegressor\n- **Clase 10 — Aplicación e interpretación de Regresión Gamma** — Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — Regresión Gamma",
+        "locator": "Scikit-Learn GammaRegressor",
+        "url": "https://app.notion.com/p/3c482a6d6561815497dfd169deffcdc8"
+      },
+      {
+        "label": "Clase 10 — Aplicación e interpretación de Regresión Gamma",
+        "locator": "Conceptos",
+        "url": "https://app.notion.com/p/3c882a6d656181c6a581f4822915a147"
+      }
+    ]
+  },
+  "gamma-evaluation": {
+    "title": "Evaluar Gamma: D², predicciones y residuos",
+    "content": "# Evaluar Gamma: D², predicciones y residuos\n\nNo basta con coeficientes: D², observados vs estimados y residuos.\n\nMétricas y chequeos: D², predicciones (observados vs estimados) y residuos.\n\n### Fuentes\n- **Clase 11 — Ajuste, interpretación y evaluación Gamma** — Objetivo / Idea clave\n- **Clase 10 — Aplicación e interpretación** — Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — Ajuste, interpretación y evaluación Gamma",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d65618184a264ef2ad116ec49"
+      },
+      {
+        "label": "Clase 10 — Aplicación e interpretación",
+        "locator": "Idea clave",
+        "url": "https://app.notion.com/p/3c882a6d656181c6a581f4822915a147"
+      }
+    ]
+  },
+  "gamma-segmentation-alpha": {
+    "title": "Segmentación y regularización Gamma",
+    "content": "# Segmentación y regularización Gamma\n\nModelos por subgrupos y grid de alpha maximizando D² en prueba.\n\nAjuste por subgrupos y búsqueda de `alpha` que maximice D² en prueba.\n\n### Fuentes\n- **Práctica 3 — Modelado, segmentación y regularización Gamma** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 3 — Modelado, segmentación y regularización Gamma",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ce82a6d65618180abf1d758e2e1a2c2"
+      }
+    ]
+  },
+  "tweedie-regression": {
+    "title": "Regresión Tweedie",
+    "content": "# Regresión Tweedie\n\nFamilia GLM unificada por el parámetro power; útil con ceros y montos positivos.\n\nEl parámetro `power` unifica la familia; el detalle cubre ceros y montos positivos.\n\n### Fuentes\n- **Clase 12 — La regresión Tweedie** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — La regresión Tweedie",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3cd82a6d6561817eaf2cc374fcd6c383"
+      }
+    ]
+  },
+  "tweedie-regressor": {
+    "title": "TweedieRegressor y selección de power",
+    "content": "# TweedieRegressor y selección de power\n\nsklearn TweedieRegressor (power, alpha, link) y desviación Tweedie media.\n\nParámetros: `power`, `alpha`, `link`. Evaluación con desviación Tweedie media.\n\n### Fuentes\n- **Clase 12 — La regresión Tweedie** — Conceptos\n- **Clase 13 — Modelización y evaluación Tweedie** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — La regresión Tweedie",
+        "locator": "Conceptos",
+        "url": "https://app.notion.com/p/3cd82a6d6561817eaf2cc374fcd6c383"
+      },
+      {
+        "label": "Clase 13 — Modelización y evaluación Tweedie",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d282a6d6561814d9109c5004e2a3f3e"
+      }
+    ]
+  },
+  "parcial-poisson-gamma": {
+    "title": "Checkpoint: Parcial Poisson y Gamma",
+    "content": "# Checkpoint: Parcial Poisson y Gamma\n\nEDA → selección → ajuste → interpretación de Poisson y Gamma.\n\nRecorrido del parcial: EDA, selección de modelo, ajuste e interpretación (Poisson y Gamma).\n\n### Fuentes\n- **Clase 14 — Primer Examen Parcial (Poisson y Gamma)** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — Primer Examen Parcial (Poisson y Gamma)",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3d382a6d656181d1a839e43055a54d95"
+      }
+    ]
   }
 }

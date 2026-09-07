@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "slug": "desarrollo-aplicaciones-moviles-basicas",
+  "title": "Desarrollo de Aplicaciones Móviles Básicas",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer y panel ShopEase.",
+  "canvas": {
+    "width": 1280,
+    "height": 1282,
+    "minZoom": 0.15,
+    "maxZoom": 1.75,
+    "initialViewport": {
+      "x": 170,
+      "y": 8,
+      "zoom": 0.86
+    },
+    "mobileInitialViewport": {
+      "x": -60,
+      "y": -190,
+      "zoom": 0.84
+    }
+  },
+  "theme": {
+    "paper": "#fbfbf8",
+    "ink": "#111827",
+    "topicBg": "#f9d95c",
+    "subtopicBg": "#fff2a8",
+    "connectorColor": "#2563eb",
+    "progressBg": "#dad1fd",
+    "searchMatchBorder": "#1d4ed8"
+  },
+  "nodes": [
+    {
+      "id": "title-node",
+      "type": "title",
+      "position": {
+        "x": 140,
+        "y": 16
+      },
+      "size": {
+        "width": 700,
+        "height": 52
+      },
+      "data": {
+        "text": "Desarrollo de Aplicaciones Móviles Básicas",
+        "style": {
+          "fontSize": 26,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "subtitle-para",
+      "type": "paragraph",
+      "position": {
+        "x": 140,
+        "y": 80
+      },
+      "size": {
+        "width": 700,
+        "height": 84
+      },
+      "data": {
+        "text": "Sigue los números por la columna izquierda y estudia cada apoyo de la derecha antes de bajar al siguiente paso.",
+        "style": {
+          "fontSize": 14,
+          "textAlign": "center"
+        }
+      }
+    },
+    {
+      "id": "progress-legend",
+      "type": "legend",
+      "position": {
+        "x": 900,
+        "y": 16
+      },
+      "size": {
+        "width": 320,
+        "height": 212
+      },
+      "data": {
+        "title": "Cómo leer la ruta",
+        "items": [
+          {
+            "label": "Sigue los números: 01, 02, 03…",
+            "color": "#fbfbf8"
+          },
+          {
+            "label": "Paso principal de la ruta",
+            "color": "#f9d95c"
+          },
+          {
+            "label": "Concepto de apoyo del paso",
+            "color": "#fff2a8"
+          },
+          {
+            "label": "La flecha indica qué estudiar después",
+            "color": "#2563eb"
+          },
+          {
+            "label": "En aprendizaje",
+            "color": "#dad1fd"
+          },
+          {
+            "label": "Completado",
+            "color": "#cbd5e1"
+          },
+          {
+            "label": "Pulsa un bloque para el detalle",
+            "color": "#111827"
+          }
+        ]
+      }
+    },
+    {
+      "id": "rn-fundamentals",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 290
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Fundamentos de React Native",
+        "order": "01",
+        "detail": "Un código JS para iOS y Android; View/Text, JSX y Hot Reload."
+      }
+    },
+    {
+      "id": "components-usestate",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 294
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Componentes e interfaces con useState",
+        "order": "02",
+        "detail": "Práctica: templates, buttons y counter app."
+      }
+    },
+    {
+      "id": "clean-mvvm",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 426
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Arquitectura limpia y MVVM",
+        "order": "03",
+        "detail": "Reglas de negocio desacopladas de UI, framework y BD; ViewModel intermedia."
+      }
+    },
+    {
+      "id": "login-register-ui",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 562
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "UI de Login y Registro",
+        "order": "04",
+        "detail": "Pantallas ShopEase: login, toggle de contraseña y Sign up."
+      }
+    },
+    {
+      "id": "auth-services",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 698
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Consumo de login y registro",
+        "order": "05",
+        "detail": "Llamar servicios de autenticación desde el ViewModel."
+      }
+    },
+    {
+      "id": "drawer-navigation",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 834
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Drawer Navigation y rutas protegidas",
+        "order": "06",
+        "detail": "Menú lateral tras login; route groups (protected) en Expo Router."
+      }
+    },
+    {
+      "id": "auth-context-asyncstorage",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 970
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "AuthContext y AsyncStorage",
+        "order": "07",
+        "detail": "Sesión persistente: token, user, loadSession/saveSession/clearSession."
+      }
+    },
+    {
+      "id": "dashboard-panel",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1106
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Panel principal ShopEase",
+        "order": "08",
+        "detail": "Header custom, filtros de categoría y búsqueda; base del home autenticado."
+      }
+    },
+    {
+      "id": "section-main",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 240
+      },
+      "size": {
+        "width": 1200,
+        "height": 1002
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "01 · ShopEase en React Native"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-title-node-subtitle-para",
+      "source": "title-node",
+      "target": "subtitle-para",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-subtitle-para-rn-fundamentals",
+      "source": "subtitle-para",
+      "target": "rn-fundamentals",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-rn-fundamentals-components-usestate",
+      "source": "rn-fundamentals",
+      "target": "components-usestate",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-rn-fundamentals-clean-mvvm",
+      "source": "rn-fundamentals",
+      "target": "clean-mvvm",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-clean-mvvm-login-register-ui",
+      "source": "clean-mvvm",
+      "target": "login-register-ui",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-login-register-ui-auth-services",
+      "source": "login-register-ui",
+      "target": "auth-services",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-auth-services-drawer-navigation",
+      "source": "auth-services",
+      "target": "drawer-navigation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-drawer-navigation-auth-context-asyncstorage",
+      "source": "drawer-navigation",
+      "target": "auth-context-asyncstorage",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-auth-context-asyncstorage-dashboard-panel",
+      "source": "auth-context-asyncstorage",
+      "target": "dashboard-panel",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    }
+  ]
+}
