@@ -86,5 +86,27 @@
         "url": "https://app.notion.com/p/3c882a6d65618102954dc4f395d4448f"
       }
     ]
+  },
+  "nist-csf-20": {
+    "title": "NIST Cybersecurity Framework 2.0",
+    "content": "# NIST Cybersecurity Framework 2.0\n\nGestión de riesgos con seis funciones: Govern, Identify, Protect, Detect, Respond y Recover.\n\nComplementa ISO 27000 y COBIT ya presentes en la ruta.\n\n### Fuentes\n- **Clase 7 — 01/09/2026 — Evaluación de aprendizajes del primer cómputo** — Conceptos y técnicas cubiertos / NIST CSF 2.0",
+    "sourceRefs": [
+      {
+        "label": "Clase 7 — 01/09/2026 — Evaluación de aprendizajes del primer cómputo",
+        "locator": "Conceptos y técnicas cubiertos / NIST CSF 2.0",
+        "url": "https://app.notion.com/p/3cf82a6d65618185a5e8f0012c5b10e1"
+      }
+    ]
+  },
+  "parcial-seguridad-c1": {
+    "title": "Checkpoint: Parcial 1 seguridad (estándares y riesgos)",
+    "content": "# Checkpoint: Parcial 1 seguridad (estándares y riesgos)\n\nAplicar gestión, estándares/marcos, controles y riesgos de las clases 1–6; no solo memorizar un tema.\n\nAplicación del clúster (sesiones 1–6), no memorización aislada.\n\n### Fuentes\n- **Clase 7 — 01/09/2026 — Evaluación de aprendizajes del primer cómputo** — Objetivo de aprendizaje / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 7 — 01/09/2026 — Evaluación de aprendizajes del primer cómputo",
+        "locator": "Objetivo de aprendizaje / Idea clave",
+        "url": "https://app.notion.com/p/3cf82a6d65618185a5e8f0012c5b10e1"
+      }
+    ]
   }
 }

@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-seguridad-sistemas-informaticos",
   "title": "Gestión de Seguridad de Sistemas Informáticos",
-  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000 y COBIT.",
+  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT y NIST CSF 2.0.",
   "canvas": {
     "width": 1280,
-    "height": 1282,
+    "height": 1580,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -249,6 +249,40 @@
       }
     },
     {
+      "id": "nist-csf-20",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1242
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "NIST Cybersecurity Framework 2.0",
+        "order": "09",
+        "detail": "Gestión de riesgos con seis funciones: Govern, Identify, Protect, Detect, Respond y Recover."
+      }
+    },
+    {
+      "id": "parcial-seguridad-c1",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1378
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Checkpoint: Parcial 1 seguridad (estándares y riesgos)",
+        "order": "10",
+        "detail": "Aplicar gestión, estándares/marcos, controles y riesgos de las clases 1–6; no solo memorizar un tema."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -257,7 +291,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1002
+        "height": 1274
       },
       "zIndex": -1,
       "data": {
@@ -345,6 +379,42 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-cobit-governance-nist-csf-20",
+      "source": "cobit-governance",
+      "target": "nist-csf-20",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-nist-csf-20-parcial-seguridad-c1",
+      "source": "nist-csf-20",
+      "target": "parcial-seguridad-c1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iso27000-family-parcial-seguridad-c1",
+      "source": "iso27000-family",
+      "target": "parcial-seguridad-c1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-cobit-governance-parcial-seguridad-c1",
+      "source": "cobit-governance",
+      "target": "parcial-seguridad-c1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

@@ -727,6 +727,17 @@
       }
     ]
   },
+  "tweedie-zeros-p-selection": {
+    "title": "Tweedie con ceros: p óptima vs OLS y Gamma",
+    "content": "# Tweedie con ceros: p óptima vs OLS y Gamma\n\nRespuesta semicontinua (lluvia con masa en cero); barrido de p en [1.1, 1.9] maximizando D²; comparar Tweedie con OLS y Gamma.\n\n1<p<2 modela ceros y positivos sesgados juntos; calibrar p por D² importa tanto como los coeficientes del enlace log.\n\n### Fuentes\n- **Práctica 4 — 06/09/2026 — Regresión Tweedie** — Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — 06/09/2026 — Regresión Tweedie",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3d482a6d656181cb9df0c90060c6e801"
+      }
+    ]
+  },
   "parcial-poisson-gamma": {
     "title": "Checkpoint: Parcial Poisson y Gamma",
     "content": "# Checkpoint: Parcial Poisson y Gamma\n\nEDA → selección → ajuste → interpretación de Poisson y Gamma.\n\nRecorrido del parcial: EDA, selección de modelo, ajuste e interpretación (Poisson y Gamma).\n\n### Fuentes\n- **Clase 14 — Primer Examen Parcial (Poisson y Gamma)** — Objetivo / Idea clave",
