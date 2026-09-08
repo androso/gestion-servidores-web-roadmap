@@ -116,5 +116,21 @@
         "url": "https://app.notion.com/p/3d082a6d656181fba56ec1399071351b"
       }
     ]
+  },
+  "panel-search-category-filter": {
+    "title": "Búsqueda y filtrado por categorías",
+    "content": "# Búsqueda y filtrado por categorías\n\nContinuación del panel principal de ShopEase (Clase 15, 07/09/2026, semana 08, modalidad virtual grabada). Agregar componentes de UI: gestión de entradas e interacción de búsqueda, y segmentación/filtrado por categorías.\n\n### Conceptos cubiertos\n- Continuación del panel principal (ShopEase)\n- Agregar componentes de UI al panel principal\n- Gestión de entradas e interacción de búsqueda\n- Segmentación y filtrado por categorías\n\n> El panel principal se construye por etapas; esta sesión enfoca búsqueda y filtrado por categorías antes de la actividad evaluada.\n\nLa lección indica que la actividad del panel principal y la UI del perfil de usuario se estará realizando la próxima clase. Herramienta: React Native.\n\n### Fuentes\n- **Clase 15 — 07/09/2026 — Continuación del panel principal (UI)** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 15**",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 07/09/2026 — Continuación del panel principal (UI)",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d65618100af92dc5489d6f162"
+      },
+      {
+        "label": "Lección Canvas — Clase 15",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-15"
+      }
+    ]
   }
 }
