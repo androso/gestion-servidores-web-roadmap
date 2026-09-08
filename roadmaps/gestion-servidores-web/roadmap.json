@@ -5,7 +5,7 @@
   "description": "Unidad 1 según las clases 2–10: analogía del restaurante, servidor vs contenedor, decisión propietario/libre, IIS con iisnode, Express como servicio, seguridad y el caso integrador.",
   "canvas": {
     "width": 1280,
-    "height": 4780,
+    "height": 4960,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1092,11 +1092,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 620
+        "height": 800
       },
       "zIndex": -1,
       "data": {
-        "label": "06 · Integración — Clase 10"
+        "label": "06 · Integración y Unidad 2 — Clases 10–15"
       }
     },
     {
@@ -1134,6 +1134,23 @@
       }
     },
     {
+      "id": "hardware-sizing-lab",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 4468
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Práctica: cálculo de dimensionamiento",
+        "order": "38",
+        "detail": "Ejercicios de CPU, RAM, disco y red con evidencia en PDF."
+      }
+    },
+    {
       "id": "install-methods",
       "type": "topic",
       "position": {
@@ -1146,8 +1163,25 @@
       },
       "data": {
         "label": "Métodos de instalación de servidores web",
-        "order": "38",
+        "order": "39",
         "detail": "Elegir por rapidez, control y mantenibilidad; imágenes cloud no son magia."
+      }
+    },
+    {
+      "id": "proprietary-server-install",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4734
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Instalar un servidor web propietario",
+        "order": "40",
+        "detail": "IIS: sitio puro vs iisnode, directorios virtuales y uso real de la VM."
       }
     }
   ],
@@ -1585,12 +1619,39 @@
       "arrow": true
     },
     {
+      "id": "e-hardware-sizing-hardware-sizing-lab",
+      "source": "hardware-sizing",
+      "target": "hardware-sizing-lab",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
       "id": "e-hardware-sizing-install-methods",
       "source": "hardware-sizing",
       "target": "install-methods",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-install-methods-proprietary-server-install",
+      "source": "install-methods",
+      "target": "proprietary-server-install",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-hardware-sizing-proprietary-server-install",
+      "source": "hardware-sizing",
+      "target": "proprietary-server-install",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

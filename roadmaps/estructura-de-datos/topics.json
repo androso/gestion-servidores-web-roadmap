@@ -427,5 +427,27 @@
         "url": "https://app.notion.com/p/3d082a6d65618162812ae9001c0a183f"
       }
     ]
+  },
+  "parcial-1-briefing": {
+    "title": "Parcial 1: teoría y práctica escritas",
+    "content": "# Parcial 1: teoría y práctica escritas\n\nEvaluación presencial el **03/09/2026**: inicio 10:40 a.m., fin 12:00 m. (America/El_Salvador). Llegar al menos 10 minutos antes.\n\nEl examen combina:\n\n- sección teórica con conceptos vistos hasta la fecha;\n- sección práctica de planteamiento y resolución lógica / código a mano según indique el docente.\n\nMateriales: lápiz, lapiceros azul o negro y borrador. No hay dispositivos electrónicos salvo indicación explícita en el aula.\n\n### Fuentes\n- **Clase 14 — 03/09/2026 — Explicación del Parcial 1** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — 03/09/2026 — Explicación del Parcial 1",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d656181828a1bfcf1c8d71c1d"
+      }
+    ]
+  },
+  "fifo-lifo-sets-lab": {
+    "title": "Integrar FIFO, LIFO y sets",
+    "content": "# Integrar FIFO, LIFO y sets\n\nPráctica 4 (07/09/2026): diseñar e integrar las tres estructuras en un flujo continuo (simulación de supermercado) y justificar cada elección.\n\n- Fila en caja: cola FIFO con `collections.deque` y `popleft()`.\n- Bolsa de productos: pila LIFO (`pop()` del último ingresado).\n- Cupones o membresías: conjuntos para códigos únicos y evitar repetición.\n\nEntrega: `.ipynb` o `.py` con la simulación completa.\n\n### Fuentes\n- **Práctica 4 — 07/09/2026 — Aplicando estructuras FIFO, LIFO y Sets** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — 07/09/2026 — Aplicando estructuras FIFO, LIFO y Sets",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d656181a2bb95dcbd6a781e5e"
+      }
+    ]
   }
 }

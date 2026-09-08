@@ -5,7 +5,7 @@
   "description": "Ruta completa de las clases 1–10: paradigma reactivo, TypeScript, EventEmitter, DOM, interfaces, layouts, práctica Spider-Verse, UX/UI, accesibilidad y laboratorio de biblioteca.",
   "canvas": {
     "width": 1280,
-    "height": 2600,
+    "height": 2860,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -738,11 +738,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 560
+        "height": 900
       },
       "zIndex": -1,
       "data": {
-        "label": "05 · Calidad e integración — Clases 9–10"
+        "label": "05 · Calidad, frameworks y proyecto — Clases 9–11"
       }
     },
     {
@@ -777,6 +777,40 @@
         "label": "Laboratorio: EventEmitter propio",
         "order": "35",
         "detail": "Patrón Observador con on/emit y payload tipado en TypeScript."
+      }
+    },
+    {
+      "id": "frameworks-classification",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2560
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Frameworks: clasificación y análisis",
+        "order": "36",
+        "detail": "Framework vs librería; frontend, backend, fullstack y NestJS en POE."
+      }
+    },
+    {
+      "id": "event-oriented-final-project",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2696
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Proyecto final orientado a eventos",
+        "order": "37",
+        "detail": "Problema real (oriente/UNIVO) con framework, docs IEEE y demo."
       }
     }
   ],
@@ -1112,6 +1146,24 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-custom-event-emitter-lab-frameworks-classification",
+      "source": "custom-event-emitter-lab",
+      "target": "frameworks-classification",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-frameworks-classification-event-oriented-final-project",
+      "source": "frameworks-classification",
+      "target": "event-oriented-final-project",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
       "arrow": true
     }
   ]
