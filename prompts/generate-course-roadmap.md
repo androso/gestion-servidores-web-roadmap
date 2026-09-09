@@ -2,6 +2,19 @@
 
 Esta guía define el procedimiento estándar para que un agente de repositorio (Codex, Gemini CLI u otro) genere e integre una ruta de aprendizaje interactiva a partir de documentos de curso locales.
 
+## Estándar conceptual obligatorio
+
+Antes de diseñar, migrar o reorganizar cualquier roadmap, **leer y aplicar `prompts/conceptual-roadmap-standard.md`**. Ese documento define la arquitectura pedagógica común del repositorio y no es opcional.
+
+La precedencia entre ambos documentos es:
+
+- `prompts/conceptual-roadmap-standard.md` gobierna la **topología pedagógica**: dependencias conceptuales, orden de estudio, ramas, checkpoints, relación entre teoría y aplicación y organización de secciones.
+- Esta guía, `prompts/generate-course-roadmap.md`, gobierna la **implementación mecánica**: esquema JSON, geometría, handles, validación, registro, recursos y revisión visual.
+- Si una recomendación de esta guía sobre topología entra en tensión con el estándar conceptual, seguir el estándar conceptual **sin violar el esquema, el validador ni las restricciones técnicas**.
+- La “columna vertebral con apoyos laterales” es un patrón visual preferido, no una autorización para convertir alternativas conceptuales en una cadena artificial. Cuando el estándar conceptual requiera ramas paralelas, la geometría debe adaptarse a ellas.
+
+Un roadmap nuevo no se considera correctamente autorado si el agente no ha revisado ambos documentos.
+
 ---
 
 ## 1. Principios y Reglas Inviolables
@@ -28,31 +41,34 @@ Esta guía define el procedimiento estándar para que un agente de repositorio (
    - Localizadores exactos verificados en el archivo (por ejemplo, `Diapositiva 7 — El recorrido completo de una petición`).
 
 ### Paso 2: Diseño de Topología y Geometría Absoluta
-1. Usar siempre la **columna vertebral con apoyos laterales**, porque es la única silueta que responde «¿qué estudio después de X?» sin ambigüedad:
-   - Los pasos principales de la ruta son `topic` y se apilan en una sola columna izquierda (por ejemplo `x: 90`, ancho 380).
-   - Los conceptos de apoyo son `subtopic` y se colocan a la derecha, en la misma fila del paso que amplían (por ejemplo `x: 540` y `x: 910`).
-   - Las ramas paralelas (elegir una tecnología, no ambas) ocupan dos columnas hermanas con su propia `section`, y vuelven a unirse en un paso común.
+1. Usar por defecto la **columna vertebral con apoyos laterales** cuando represente correctamente la progresión conceptual:
+   - Los pasos principales de la ruta son `topic` y normalmente se apilan en una columna principal.
+   - Los conceptos de apoyo son `subtopic` y se colocan junto al paso que amplían.
+   - Las ramas paralelas deben ocupar carriles o columnas propias y conservar una lectura inequívoca como alternativas.
    - Prohibido usar una rejilla uniforme donde todas las tarjetas parecen iguales: sin jerarquía visual no hay orden de lectura.
+   - Prohibido forzar una columna única si eso convierte alternativas conceptuales en falsos prerrequisitos secuenciales.
 2. Numerar la secuencia de estudio en `data.order` para **cada** `topic` y `subtopic`:
    - Formato `"01"`, `"02"`, … y sufijo de rama para caminos paralelos: `"20a"` / `"20b"`.
-   - La numeración recorre cada fila: primero el paso de la columna vertebral, después sus apoyos de izquierda a derecha.
+   - La numeración debe reflejar la progresión pedagógica definida por el estándar conceptual.
    - Invariante obligatorio: en todo `edge`, el número del origen debe ser menor que el del destino. El validador lo rechaza si no se cumple.
    - Los números son únicos y sustituyen a cualquier código temático. No inventar códigos tipo `F01`/`C05`: numeran por tema, no por orden, y contradicen el recorrido real.
 3. Asignar coordenadas absolutas `position: { x, y }` y dimensiones `size: { width, height }`:
-   - Tarjetas de la columna vertebral: 360–450px de ancho, 96–100px de alto.
-   - Tarjetas de apoyo: 300–330px de ancho, 88px de alto.
+   - Tarjetas de la columna vertebral: 360–450px de ancho, 96–100px de alto como referencia general.
+   - Tarjetas de apoyo: 300–330px de ancho, 88px de alto como referencia general.
+   - En ramas paralelas se pueden ajustar dimensiones cuando sea necesario para mantener carriles claros, siempre que el texto siga siendo legible y el validador pase.
    - Cada `topic`/`subtopic` declara `data.detail`: una frase corta visible en el mapa, distinta del Markdown del cajón.
-   - Separación entre filas: 120–140px, para que la insignia numerada no toque la tarjeta de arriba.
-   - Espaciado horizontal mínimo entre columnas: 60px.
+   - Separación entre filas: suficiente para que insignias, flechas y tarjetas no se toquen.
+   - Espaciado horizontal suficiente para que cada rama tenga un carril visual propio.
    - Secciones de fondo (`section`): `zIndex: -1` cubriendo el área del módulo correspondiente; no interceptan clics ni se conectan.
    - Los párrafos de nota no deben caer sobre el trazado de un conector: colocarlos en una columna libre de la misma fila.
 4. Bloques conectables: `title`, `topic`, `subtopic`, `paragraph`, `label`, `button`. No conectar `section`, `legend`, `linkGroup` ni `line`.
 5. Asignar conectores (`edges`) con `sourceHandle` y `targetHandle` obligatorios (`top`, `bottom`, `left`, `right`).
    - **Todo `edge` lleva `arrow: true`.** Sin punta de flecha el sentido del recorrido es invisible y el mapa deja de indicar qué va después.
    - Usar `route: "smoothstep" | "bezier" | "straight"`.
-   - Paso principal → siguiente paso principal: `bottom` → `top` `straight`.
-   - Paso principal → apoyo, y apoyo → apoyo de la misma fila: `right` → `left` `straight`.
-   - Horquillas, convergencias y saltos entre secciones: `smoothstep`.
+   - Paso principal → siguiente paso principal: preferir `bottom` → `top` `straight` cuando no haya bifurcación.
+   - Paso principal → apoyo, y apoyo → apoyo de la misma fila: normalmente `right` → `left` `straight`.
+   - Horquillas, convergencias y saltos entre secciones: usar el trazado que mantenga cada dependencia fuera de tarjetas no relacionadas.
+   - **Un conector no debe atravesar una tarjeta ajena a esa dependencia.** Si ocurre, cambiar posiciones, carriles o handles; no aceptar un edge oculto bajo nodos.
    - El motor adelgaza y atenúa por sí solo los conectores que tocan un `subtopic`, de modo que la ruta principal resalta. No hace falta declarar estilos para conseguirlo.
 6. Incluir una `legend` que explique cómo leer el mapa: que se sigue la numeración, qué distingue un paso principal de un concepto de apoyo y qué significan los sufijos de rama.
 7. Inspeccionar el texto de cada nodo al zoom del `initialViewport` (no al zoom mínimo). No debe haber recorte, elipsis ni tarjetas solapadas (salvo `section` y `line`).
@@ -63,6 +79,7 @@ Esta guía define el procedimiento estándar para que un agente de repositorio (
    - Redactar explicación técnica concisa y estructurada en formato Markdown (`content`) para el cajón. El cajón renderiza GFM (tablas, listas, citas y código en línea) y omite el `# <Título>` inicial porque ya muestra el título del tema.
    - Definir `sourceRefs` obligatorios con `label`, `locator` específico verificado y `url` al PDF en `public/<slug>/materiales/` cuando el archivo exista. No apuntar a `course-inputs/`.
    - Añadir `resources` externos solo si la URL es HTTP/HTTPS, accesible y el título describe el destino real.
+   - Si la ruta introduce una corrección metodológica frente al material de clase, identificar explícitamente qué afirma la fuente y qué se corrige en la guía; no reescribir silenciosamente el contenido original.
 
 ### Paso 4: Creación de Archivos JSON
 Crear el directorio `roadmaps/<slug>/` con:
@@ -135,6 +152,7 @@ Si el validador reporta errores de límites de lienzo, nodos desconectados, hand
    - Que el zoom inicial sea el autorado, no el mínimo ni un fit del documento entero.
    - Que ningún nodo quede cortado, con elipsis, ni sobreponga a otro nodo de contenido.
    - Que los conectores tengan trazados limpios y no atraviesen tarjetas de forma confusa.
+   - Que las ramas alternativas se lean como ramas y no como una secuencia accidental provocada por cruces de edges.
    - Que la búsqueda resalte los nodos correctos sin escalarlos.
    - Que Fit View muestre el documento completo y que Reset vuelva al viewport autorado.
    - Que al hacer clic en un tema se abra el panel lateral con su contenido Markdown y referencias, con contraste legible y tablas renderizadas como tablas.
