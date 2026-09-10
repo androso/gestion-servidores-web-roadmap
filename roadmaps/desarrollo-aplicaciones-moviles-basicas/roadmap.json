@@ -5,7 +5,7 @@
   "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer y panel ShopEase.",
   "canvas": {
     "width": 1280,
-    "height": 1282,
+    "height": 1450,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -249,6 +249,23 @@
       }
     },
     {
+      "id": "panel-search-category-filter",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1242
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Búsqueda y filtrado por categorías",
+        "order": "09",
+        "detail": "Clase 15: entradas de búsqueda y segmentación por categorías en el panel ShopEase."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -257,7 +274,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1002
+        "height": 1160
       },
       "zIndex": -1,
       "data": {
@@ -342,6 +359,15 @@
       "id": "e-auth-context-asyncstorage-dashboard-panel",
       "source": "auth-context-asyncstorage",
       "target": "dashboard-panel",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-dashboard-panel-search-category-filter",
+      "source": "dashboard-panel",
+      "target": "panel-search-category-filter",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",

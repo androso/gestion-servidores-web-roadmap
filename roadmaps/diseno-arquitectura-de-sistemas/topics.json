@@ -740,5 +740,38 @@
         "url": "https://app.notion.com/p/3d082a6d65618115a28cf2a61e1612d0"
       }
     ]
+  },
+  "practica-04-quality-scenarios": {
+    "title": "Práctica 04 — Escenarios arquitectónicos y atributos de calidad",
+    "content": "# Práctica 04 — Escenarios arquitectónicos y atributos de calidad\n\n**Objetivo:** identificar requerimientos, drivers arquitectónicos y restricciones técnicas de un sistema. Tema de la sesión: escenarios arquitectónicos; atributos de calidad; relación entre requerimientos, drivers y atributos de calidad.\n\n### Conceptos cubiertos\n- Escenarios arquitectónicos\n- Atributos de calidad\n- Relación entre requerimientos, drivers y atributos de calidad\n- Identificación de requerimientos, drivers arquitectónicos y restricciones técnicas\n\n> Los escenarios y atributos de calidad conectan requerimientos y drivers con las decisiones de arquitectura.\n\n**Actividad:** práctica evaluada (Practica 4 / assignment 16203). Analizar el problema planteado y subir la entrega en PDF o imagen. Una semana para entregar; el docente indica que no habrá prórrogas. Fecha de la práctica en Canvas: 08/09/2026. Entrega: 15/09/2026 23:59 America/El_Salvador (`due_at` 2026-09-16T05:59:59Z).\n\n### Fuentes\n- **Práctica 04 — 08/09/2026 — Escenarios arquitectónicos y atributos de calidad** — Objetivo / Conceptos / Idea clave\n- **Lección de Canvas — Practica 04: 08/09/2026**",
+    "sourceRefs": [
+      {
+        "label": "Práctica 04 — 08/09/2026 — Escenarios arquitectónicos y atributos de calidad",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d656181528740e93a635617bf"
+      },
+      {
+        "label": "Lección de Canvas — Practica 04: 08/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-04-08-slash-09-slash-2026"
+      },
+      {
+        "label": "Entrega — Practica 4",
+        "locator": "assignment 16203",
+        "url": "https://univo.instructure.com/courses/1759/assignments/16203"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Diapositivas (Canva)",
+        "url": "https://canva.link/u962gsb6dfkcu52"
+      },
+      {
+        "type": "video",
+        "title": "Video práctico",
+        "url": "https://youtu.be/LaibHAbFTso"
+      }
+    ]
   }
 }

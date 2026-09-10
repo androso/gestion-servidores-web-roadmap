@@ -5,7 +5,7 @@
   "description": "Ruta actualmente impartida: fundamentos de arquitectura de software, tipos de arquitectura de TI, proceso arquitectónico, rol del arquitecto, stakeholders y la Actividad Evaluativa 1 (clínica de citas).",
   "canvas": {
     "width": 1280,
-    "height": 3480,
+    "height": 3620,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -882,11 +882,28 @@
       },
       "size": {
         "width": 1200,
-        "height": 460
+        "height": 580
       },
       "zIndex": -1,
       "data": {
         "label": "07 · Requerimientos, drivers y escenarios"
+      }
+    },
+    {
+      "id": "practica-04-quality-scenarios",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3318
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Práctica 04: escenarios y atributos",
+        "order": "39",
+        "detail": "Escenarios y atributos de calidad conectan requerimientos y drivers con las decisiones de arquitectura."
       }
     }
   ],
@@ -1248,6 +1265,15 @@
       "target": "quality-scenarios",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-quality-scenarios-practica-04",
+      "source": "quality-scenarios",
+      "target": "practica-04-quality-scenarios",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     }
