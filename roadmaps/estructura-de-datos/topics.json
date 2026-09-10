@@ -449,5 +449,53 @@
         "url": "https://app.notion.com/p/3d582a6d656181a2bb95dcbd6a781e5e"
       }
     ]
+  },
+  "python-functions": {
+    "title": "Funciones en Python",
+    "content": "# Funciones en Python\n\nUna función encapsula lógica reutilizable: se define una vez y se llama cuando hace falta, en lugar de copiar el mismo bloque.\n\nLa Clase 15 trabaja la **definición** y la **utilidad** de las funciones en Python: nombrar un procedimiento, agruparlo y volver a usarlo.\n\nIdea clave: las funciones organizan el código; las clases y los objetos son el siguiente nivel de organización.\n\n### Qué debes poder\n- Definir una función en Python.\n- Explicar para qué sirve encapsular lógica reutilizable.",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 08/09/2026 — Funciones y clases",
+        "locator": "Funciones en Python (definición, utilidad)",
+        "url": "https://app.notion.com/p/3d782a6d656181479e27e0951926a17b"
+      },
+      {
+        "label": "Canvas — Clase 15 Funciones y clases",
+        "locator": "Clase 15 — 08/09/26",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-15-funciones-y-clases-08-09-26"
+      }
+    ]
+  },
+  "python-params-return": {
+    "title": "Parámetros, argumentos y return",
+    "content": "# Parámetros, argumentos y return\n\n- **Parámetros:** nombres que la función declara para recibir datos.\n- **Argumentos:** valores que se pasan al llamar la función.\n- **`return`:** envía un resultado hacia quien llamó; sin él, la función hace el trabajo pero no entrega un valor.\n\nPractica el mismo flujo de la sesión: definir, pasar argumentos y devolver con `return`.",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 08/09/2026 — Funciones y clases",
+        "locator": "Parámetros, argumentos y return",
+        "url": "https://app.notion.com/p/3d782a6d656181479e27e0951926a17b"
+      },
+      {
+        "label": "Canvas — Clase 15 Funciones y clases",
+        "locator": "Clase 15 — 08/09/26",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-15-funciones-y-clases-08-09-26"
+      }
+    ]
+  },
+  "python-classes-objects": {
+    "title": "Clase y objeto",
+    "content": "# Clase y objeto\n\nConcepto básico de la Clase 15:\n\n- **Clase:** molde o tipo que describe datos y comportamiento.\n- **Objeto:** instancia concreta de esa clase.\n\nLas funciones encapsulan lógica reutilizable; las clases y los objetos son el siguiente nivel de organización del código.",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 08/09/2026 — Funciones y clases",
+        "locator": "Clase y objeto (concepto básico)",
+        "url": "https://app.notion.com/p/3d782a6d656181479e27e0951926a17b"
+      },
+      {
+        "label": "Canvas — Clase 15 Funciones y clases",
+        "locator": "Clase 15 — 08/09/26",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-15-funciones-y-clases-08-09-26"
+      }
+    ]
   }
 }

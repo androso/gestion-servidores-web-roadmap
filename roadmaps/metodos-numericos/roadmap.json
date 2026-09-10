@@ -5,7 +5,7 @@
   "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI y bisección.",
   "canvas": {
     "width": 1280,
-    "height": 1146,
+    "height": 1380,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -215,6 +215,40 @@
       }
     },
     {
+      "id": "python-bisection",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 974
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Bisección en Python",
+        "order": "07",
+        "detail": "Implementar el mismo procedimiento analítico y registrar iteraciones."
+      }
+    },
+    {
+      "id": "parcial-1-scope",
+      "type": "subtopic",
+      "position": {
+        "x": 90,
+        "y": 1106
+      },
+      "size": {
+        "width": 380,
+        "height": 88
+      },
+      "data": {
+        "label": "Alcance del Parcial 1",
+        "order": "08",
+        "detail": "Existencia de soluciones, raíces/derivadas, Taylor, error % e integrales."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -223,7 +257,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 866
+        "height": 1000
       },
       "zIndex": -1,
       "data": {
@@ -290,6 +324,24 @@
       "id": "e-intermediate-value-bisection-method",
       "source": "intermediate-value",
       "target": "bisection-method",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-bisection-method-python-bisection",
+      "source": "bisection-method",
+      "target": "python-bisection",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-bisection-method-parcial-1-scope",
+      "source": "bisection-method",
+      "target": "parcial-1-scope",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
