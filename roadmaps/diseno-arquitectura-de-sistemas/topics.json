@@ -732,12 +732,17 @@
   },
   "quality-scenarios": {
     "title": "Escenarios de calidad",
-    "content": "# Escenarios de calidad\n\nSeis elementos: fuente, estímulo, ambiente, artefacto, respuesta y medida.\n\nLos seis elementos del escenario: fuente, estímulo, ambiente, artefacto, respuesta y medida.\n\n### Fuentes\n- **Clase 13 — Escenarios arquitectónicos y atributos de calidad** — Conceptos / Idea clave",
+    "content": "# Escenarios de calidad\n\nSeis elementos: fuente, estímulo, ambiente, artefacto, respuesta y medida.\n\nLos escenarios arquitectónicos relacionan requerimientos, drivers y atributos de calidad. Hay que identificar requerimientos, drivers arquitectónicos y restricciones técnicas.\n\n### Fuentes\n- **Clase 13 — Escenarios arquitectónicos y atributos de calidad** — Conceptos / Idea clave\n- **Práctica 04 — 08/09/2026 — Escenarios arquitectónicos y atributos de calidad** — Conceptos / Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 13 — Escenarios arquitectónicos y atributos de calidad",
         "locator": "Conceptos / Idea clave",
         "url": "https://app.notion.com/p/3d082a6d65618115a28cf2a61e1612d0"
+      },
+      {
+        "label": "Práctica 04 — 08/09/2026 — Escenarios arquitectónicos y atributos de calidad",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d656181528740e93a635617bf"
       }
     ]
   },

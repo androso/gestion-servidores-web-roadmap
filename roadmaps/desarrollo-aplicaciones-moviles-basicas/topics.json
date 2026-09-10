@@ -132,5 +132,16 @@
         "url": "https://univo.instructure.com/courses/1763/pages/clase-15"
       }
     ]
+  },
+  "profile-screen": {
+    "title": "Pantalla de perfil de usuario",
+    "content": "# Pantalla de perfil de usuario\n\nObjetivo: pantalla de perfil e información personal (identidad, estadísticas de órdenes/puntos, configuración de cuenta).\n\nProfileScreen es una pantalla dedicada de identidad y configuración, con retorno al dashboard. Incluye tarjeta de identificación (avatar circular, nombre, membresía), ScrollView y cameraBtn para la foto de perfil. Navegación con `router.back()` / TouchableOpacity. Herramienta: React Native. La actividad evaluada está UNAVAILABLE (próxima semana).\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Pantalla de Perfil de Usuario** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Pantalla de Perfil de Usuario",
+        "locator": "Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d782a6d656181319046eadd3d5c2825"
+      }
+    ]
   }
 }
