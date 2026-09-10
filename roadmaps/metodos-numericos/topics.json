@@ -66,7 +66,7 @@
   },
   "bisection-method": {
     "title": "Método de bisección",
-    "content": "# Método de bisección\n\nPunto medio, actualización de intervalo, tolerancia y n ≥ log((b−a)/ε)/log(2).\n\n### Fuentes\n- **Clase 12 — Método de bisección** — Conceptos / Idea clave\n- **Clase 13 — Bisección: error, iteraciones e implementación en Python** — Objetivo / Idea clave",
+    "content": "# Método de bisección\n\nParte de un intervalo `[a, b]` donde hay cambio de signo, toma el **punto medio**, y actualiza el extremo según el signo hasta cumplir la **tolerancia**.\n\nLa Clase 12 introduce el método; la 13 y la 15 lo aplican con error, iteraciones e implementación.\n\nIdea clave (Clase 15): la bisección acota la raíz actualizando el intervalo hasta cumplir la tolerancia; el código debe reflejar el mismo procedimiento analítico.\n\nFórmula de iteraciones (Clase 12–13): `n ≥ log((b−a)/ε)/log(2)`.",
     "sourceRefs": [
       {
         "label": "Clase 12 — Método de bisección",
@@ -77,6 +77,43 @@
         "label": "Clase 13 — Bisección: error, iteraciones e implementación en Python",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3cf82a6d656181d0a374ecc28fe9499c"
+      },
+      {
+        "label": "Clase 15 — 08/09/2026 — Método de Bisección: aplicación, error e implementación en Python",
+        "locator": "Método de bisección (intervalo, punto medio, iteraciones)",
+        "url": "https://app.notion.com/p/3d782a6d6561812e82eefe2aa078b481"
+      },
+      {
+        "label": "Canvas — Clase 15 08/09/2026",
+        "locator": "Clase 15",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-15-08-slash-09-slash-2026"
+      }
+    ]
+  },
+  "python-bisection": {
+    "title": "Bisección en Python",
+    "content": "# Bisección en Python\n\nLa Clase 15 pide implementar el método en Python **y registrar las iteraciones**: intervalo, punto medio, criterios de error/tolerancia, ejemplos matemáticos y un problema aplicado.\n\nEl código no es otra receta: debe seguir el mismo procedimiento analítico (acotar la raíz actualizando el intervalo hasta la tolerancia).",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 08/09/2026 — Método de Bisección: aplicación, error e implementación en Python",
+        "locator": "Implementación en Python y registro de iteraciones",
+        "url": "https://app.notion.com/p/3d782a6d6561812e82eefe2aa078b481"
+      },
+      {
+        "label": "Canvas — Clase 15 08/09/2026",
+        "locator": "Clase 15",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-15-08-slash-09-slash-2026"
+      }
+    ]
+  },
+  "parcial-1-scope": {
+    "title": "Alcance del Parcial 1",
+    "content": "# Alcance del Parcial 1\n\nEl primer examen parcial (Clase 14, 03/09/2026) cubre:\n\n- existencia de soluciones\n- raíces y derivadas\n- polinomio de Taylor\n- error porcentual\n- aproximaciones para integrales\n\nEs un hito de evaluación de lo ya estudiado, no un tema nuevo de enseñanza.",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — 03/09/2026 — Primer Examen Parcial",
+        "locator": "Cobertura del parcial",
+        "url": "https://app.notion.com/p/3d782a6d65618164a6cae469105e0d69"
       }
     ]
   }
