@@ -615,5 +615,27 @@
         "url": "https://app.notion.com/p/3d082a6d656181f789bbda3f4e1630b7"
       }
     ]
+  },
+  "frameworks-classification": {
+    "title": "Frameworks: clasificación y análisis",
+    "content": "# Frameworks: clasificación y análisis\n\nUn framework es una estructura de soporte con arquitectura, herramientas y convenciones (inversión de control). Una librería se invoca; el framework llama al código de la aplicación.\n\nClasificación vista en clase:\n\n- frontend: React, Angular, Vue, Svelte;\n- backend: Node.js, Django, FastAPI y otros cubiertos en la página;\n- fullstack, con NestJS como ejemplo ligado a sistemas orientados a eventos.\n\nLos frameworks dictan arquitectura y aceleran POE: varios están pensados para eventos, suscripciones y flujos asíncronos.\n\n### Fuentes\n- **Clase 11 — 24/08/2026 — Frameworks: clasificación y análisis** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 24/08/2026 — Frameworks: clasificación y análisis",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d656181238794ca5f3fe5ccb4"
+      }
+    ]
+  },
+  "event-oriented-final-project": {
+    "title": "Proyecto final orientado a eventos",
+    "content": "# Proyecto final orientado a eventos\n\nDiseñar, desarrollar y documentar una aplicación funcional que resuelva una problemática real de la zona oriental de El Salvador o de la Universidad de Oriente, usando un framework y principios de POE.\n\nConceptos del enunciado:\n\n- framework moderno justificado (NestJS, React, Next.js, etc.);\n- arquitectura orientada a eventos (emisores, oyentes, EventEmitter);\n- documentación IEEE, informe UNIVO, artículo IEEE, repositorio GitHub y video demo (3–5 min).\n\nEntregables: DOC1 investigación IEEE, DOC2 informe de cátedra UNIVO (PDF), DOC3 artículo IEEE 4–6 páginas (≥5 refs), README y demo.\n\n### Fuentes\n- **Proyecto Final — Sistemas Orientados a Eventos (propuesta)** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Proyecto Final — Sistemas Orientados a Eventos (propuesta)",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d6561814d80bcd1857af693ec"
+      }
+    ]
   }
 }

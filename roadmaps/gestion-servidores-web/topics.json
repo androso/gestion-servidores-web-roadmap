@@ -1040,6 +1040,17 @@
       }
     ]
   },
+  "hardware-sizing-lab": {
+    "title": "Práctica: cálculo de dimensionamiento",
+    "content": "# Práctica: cálculo de dimensionamiento\n\nPráctica 4 (08/09/2026, CT7): comprobar CPU, RAM, disco y red antes de instalar un servidor web. Es el repaso práctico de Clase 13 / Unidad 2.\n\nEntrega: PDF con capturas de la solución del cálculo dimensional.\n\n### Fuentes\n- **Práctica 4 — 08/09/2026 — Dimensionamiento de equipo para servidor web** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — 08/09/2026 — Dimensionamiento de equipo para servidor web",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d6561814380c2c139a3796504"
+      }
+    ]
+  },
   "install-methods": {
     "title": "Métodos de instalación de servidores web",
     "content": "# Métodos de instalación de servidores web\n\nElegir por rapidez, control y mantenibilidad; imágenes cloud no son magia.\n\nCriterios de elección: rapidez, control y mantenibilidad. Las imágenes cloud no sustituyen el criterio de instalación.\n\n### Fuentes\n- **Clase 14 — Métodos de Instalación de Servidores Web** — Objetivo / Idea clave",
@@ -1048,6 +1059,17 @@
         "label": "Clase 14 — Métodos de Instalación de Servidores Web",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3cf82a6d6561815ea87df7accd4fa505"
+      }
+    ]
+  },
+  "proprietary-server-install": {
+    "title": "Instalar un servidor web propietario",
+    "content": "# Instalar un servidor web propietario\n\nClase 15 (07/09/2026): instalar y configurar IIS como servidor web propietario.\n\n- Distinguir rol de **servidor web puro** frente a contenedor de aplicaciones (`iisnode`).\n- Crear sitios con **directorios virtuales** en el mismo IIS.\n- Contrastar el dimensionamiento teórico (Clase 13) con CPU, RAM, disco y red realmente usados por la VM.\n\n### Fuentes\n- **Clase 15 — 07/09/2026 — Instalación de un Servidor Web Propietario** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 07/09/2026 — Instalación de un Servidor Web Propietario",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d582a6d6561815e8c1adb86c5dbdacd"
       }
     ]
   }

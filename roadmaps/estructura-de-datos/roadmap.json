@@ -5,7 +5,7 @@
   "description": "Ruta basada únicamente en las clases sustantivas 1–5 y 9–10, más la Práctica 1: entorno Python, tipos, rangos, cadenas y estructuras list, tuple y set.",
   "canvas": {
     "width": 1280,
-    "height": 2080,
+    "height": 2360,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -485,11 +485,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 480
+        "height": 720
       },
       "zIndex": -1,
       "data": {
-        "label": "03 · Evidencia — Práctica 1"
+        "label": "03 · Evidencia — Prácticas y Parcial 1"
       }
     },
     {
@@ -524,6 +524,40 @@
         "label": "Estructuras lineales y no lineales",
         "order": "22",
         "detail": "Secuencia (listas, pilas, colas) vs jerarquías/redes (árboles, grafos, hash)."
+      }
+    },
+    {
+      "id": "parcial-1-briefing",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2048
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Parcial 1: teoría y práctica escritas",
+        "order": "23",
+        "detail": "Examen presencial 03/09: conceptos vistos + resolución lógica a mano."
+      }
+    },
+    {
+      "id": "fifo-lifo-sets-lab",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2184
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Integrar FIFO, LIFO y sets",
+        "order": "24",
+        "detail": "Simulación de supermercado: cola en caja, pila de bolsa y cupones únicos."
       }
     }
   ],
@@ -739,6 +773,33 @@
       "id": "e-lifo-fifo-patterns-linear-vs-nonlinear",
       "source": "lifo-fifo-patterns",
       "target": "linear-vs-nonlinear",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-linear-vs-nonlinear-parcial-1-briefing",
+      "source": "linear-vs-nonlinear",
+      "target": "parcial-1-briefing",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lifo-fifo-patterns-fifo-lifo-sets-lab",
+      "source": "lifo-fifo-patterns",
+      "target": "fifo-lifo-sets-lab",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-parcial-1-briefing-fifo-lifo-sets-lab",
+      "source": "parcial-1-briefing",
+      "target": "fifo-lifo-sets-lab",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
