@@ -5,7 +5,7 @@
   "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer y panel ShopEase.",
   "canvas": {
     "width": 1280,
-    "height": 1450,
+    "height": 1586,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -266,6 +266,23 @@
       }
     },
     {
+      "id": "profile-screen",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1378
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Pantalla de perfil de usuario",
+        "order": "10",
+        "detail": "ProfileScreen con avatar, membresía, stats y retorno al dashboard."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -274,7 +291,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1160
+        "height": 1296
       },
       "zIndex": -1,
       "data": {
@@ -368,6 +385,15 @@
       "id": "e-dashboard-panel-search-category-filter",
       "source": "dashboard-panel",
       "target": "panel-search-category-filter",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-panel-search-category-filter-profile-screen",
+      "source": "panel-search-category-filter",
+      "target": "profile-screen",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
