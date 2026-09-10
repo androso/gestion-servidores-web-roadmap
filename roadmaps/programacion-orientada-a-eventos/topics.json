@@ -637,5 +637,50 @@
         "url": "https://app.notion.com/p/3d582a6d6561814d80bcd1857af693ec"
       }
     ]
+  },
+  "frameworks-by-type": {
+    "title": "FE, backend, fullstack y mobile",
+    "content": "# FE, backend, fullstack y mobile\n\nClasificación de la galería:\n\n- **Frontend:** React, Angular, Vue.js (Svelte como ejemplo adicional).\n- **Backend:** Laravel, Django, Spring Boot.\n- **Fullstack:** Next.js.\n- **Mobile:** Flutter, React Native.\n\nEl video de ejemplo sobre Svelte: https://www.youtube.com/watch?v=sH8KEO20lDg",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — 26/08/2026 — Galería de infografías: Frameworks",
+        "locator": "Frameworks por tipo (FE/BE/Fullstack/Mobile)",
+        "url": "https://app.notion.com/p/3d782a6d6561819c9cb3da99b255c669"
+      }
+    ],
+    "resources": [
+      {
+        "type": "video",
+        "title": "Ejemplo Svelte (YouTube)",
+        "url": "https://www.youtube.com/watch?v=sH8KEO20lDg"
+      }
+    ]
+  },
+  "frameworks-gallery-deliverable": {
+    "title": "Infografía 1920×1080 y video",
+    "content": "# Infografía 1920×1080 y video\n\nEntrega por equipo:\n\n- infografía **1920×1080**\n- video de **3–5 minutos**\n\nEl producto debe comparar ecosistemas por tipo, no listar logos sin criterio.",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — 26/08/2026 — Galería de infografías: Frameworks",
+        "locator": "Entrega: infografía 1920x1080 + video 3–5 min",
+        "url": "https://app.notion.com/p/3d782a6d6561819c9cb3da99b255c669"
+      }
+    ]
+  },
+  "frameworks-infographic-gallery": {
+    "title": "Galería de infografías: frameworks",
+    "content": "# Galería de infografías: frameworks\n\nLa Clase 12 compara ecosistemas de frameworks por tipo (frontend, backend, fullstack y mobile) mediante investigación visual y un video corto.\n\nNo es una clase de implementación: el trabajo es investigar, clasificar y comunicar diferencias entre ecosistemas.\n\nIdea clave: comparar ecosistemas de frameworks por tipo mediante infografía y video corto.",
+    "sourceRefs": [
+      {
+        "label": "Clase 12 — 26/08/2026 — Galería de infografías: Frameworks",
+        "locator": "Galería / idea clave",
+        "url": "https://app.notion.com/p/3d782a6d6561819c9cb3da99b255c669"
+      },
+      {
+        "label": "Canvas — Clase 12 miércoles 26/08/26",
+        "locator": "Clase 12",
+        "url": "https://univo.instructure.com/courses/1742/pages/clase-12-miercoles-26-slash-08-slash-26"
+      }
+    ]
   }
 }

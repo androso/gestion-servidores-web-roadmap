@@ -1072,5 +1072,43 @@
         "url": "https://app.notion.com/p/3d582a6d6561815e8c1adb86c5dbdacd"
       }
     ]
+  },
+  "http-https-redirect": {
+    "title": "Redirección HTTP → HTTPS",
+    "content": "# Redirección HTTP → HTTPS\n\nAdemás del certificado, la sesión pide **redirección automática de HTTP hacia HTTPS** para que el sitio propietario no quede escuchando tráfico plano.\n\nHTTPS = certificado + redirección; ambos forman la configuración inicial de producción (en lab, con certificado autofirmado).",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Configuración Inicial del Servidor Web Propietario (HTTPS)",
+        "locator": "Redirección automática HTTP → HTTPS",
+        "url": "https://app.notion.com/p/3d782a6d6561812ca90df3642c2d9e1d"
+      }
+    ]
+  },
+  "iis-https-initial-config": {
+    "title": "HTTPS en el servidor propietario",
+    "content": "# HTTPS en el servidor propietario\n\nLa Clase 16 cubre la **configuración inicial del servidor web propietario** con HTTPS.\n\nEn producción, HTTPS (no HTTP plano) es requisito. El laboratorio se hace en **IIS / Windows Server VM**: certificado + redirección.\n\nIdea clave: HTTPS (certificado + redirección) es requisito de producción; en lab se practica con certificado autofirmado en IIS.",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Configuración Inicial del Servidor Web Propietario (HTTPS)",
+        "locator": "HTTPS vs HTTP en producción / configuración inicial",
+        "url": "https://app.notion.com/p/3d782a6d6561812ca90df3642c2d9e1d"
+      },
+      {
+        "label": "Canvas — Clase 16 miércoles 09 de septiembre",
+        "locator": "Clase 16",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-16-miercoles-09-de-septiembre"
+      }
+    ]
+  },
+  "iis-self-signed-cert": {
+    "title": "Certificado autofirmado en IIS",
+    "content": "# Certificado autofirmado en IIS\n\nEn el laboratorio el certificado no es de una CA pública: se practica un **certificado autofirmado en IIS** sobre la VM Windows Server.\n\nSirve para encender HTTPS en el sitio propietario sin exponer un flujo de producción real. No documentes credenciales de sesión en el cuaderno del repo.",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Configuración Inicial del Servidor Web Propietario (HTTPS)",
+        "locator": "Certificado autofirmado en IIS",
+        "url": "https://app.notion.com/p/3d782a6d6561812ca90df3642c2d9e1d"
+      }
+    ]
   }
 }

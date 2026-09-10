@@ -5,7 +5,7 @@
   "description": "Ruta completa de las clases 1–10: paradigma reactivo, TypeScript, EventEmitter, DOM, interfaces, layouts, práctica Spider-Verse, UX/UI, accesibilidad y laboratorio de biblioteca.",
   "canvas": {
     "width": 1280,
-    "height": 2860,
+    "height": 3220,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -738,7 +738,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 900
+        "height": 840
       },
       "zIndex": -1,
       "data": {
@@ -811,6 +811,73 @@
         "label": "Proyecto final orientado a eventos",
         "order": "37",
         "detail": "Problema real (oriente/UNIVO) con framework, docs IEEE y demo."
+      }
+    },
+    {
+      "id": "frameworks-infographic-gallery",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2832
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Galería de infografías: frameworks",
+        "order": "38",
+        "detail": "Comparar ecosistemas FE, backend, fullstack y mobile con infografía y video."
+      }
+    },
+    {
+      "id": "frameworks-by-type",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2836
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "FE, backend, fullstack y mobile",
+        "order": "39",
+        "detail": "React, Angular, Vue, Svelte; Laravel, Django, Spring; Next.js; Flutter, RN."
+      }
+    },
+    {
+      "id": "frameworks-gallery-deliverable",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 2836
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Infografía 1920×1080 y video",
+        "order": "40",
+        "detail": "Entrega por equipo: infografía 1920×1080 y video de 3–5 min."
+      }
+    },
+    {
+      "id": "section-frameworks-gallery",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2810
+      },
+      "size": {
+        "width": 1200,
+        "height": 330
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "06 · Frameworks — Clase 12"
       }
     }
   ],
@@ -1163,6 +1230,33 @@
       "target": "event-oriented-final-project",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-event-oriented-final-project-frameworks-infographic-gallery",
+      "source": "event-oriented-final-project",
+      "target": "frameworks-infographic-gallery",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-frameworks-infographic-gallery-frameworks-by-type",
+      "source": "frameworks-infographic-gallery",
+      "target": "frameworks-by-type",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-frameworks-by-type-frameworks-gallery-deliverable",
+      "source": "frameworks-by-type",
+      "target": "frameworks-gallery-deliverable",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     }
