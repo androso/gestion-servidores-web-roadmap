@@ -106,6 +106,33 @@
       }
     ]
   },
+  "newton-method": {
+    "title": "Método de Newton",
+    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada**.\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo** (la precisión de cada aproximación). Es continuación del método de bisección: conviene repasarlo antes.\n\nIdea clave: Newton parte de una estimación inicial; el error en cada iteración mide la precisión de la raíz aproximada.",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3d882a6d656181fcb6f5fc81e0115c2b"
+      },
+      {
+        "label": "Canvas — Clase 16 10/09/2026",
+        "locator": "Clase 16",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-16-10-slash-09-slash-2026"
+      }
+    ]
+  },
+  "newton-examples": {
+    "title": "Ejemplos guiados de Newton",
+    "content": "# Ejemplos guiados de Newton\n\nEn la sesión se resuelven **ejercicios guiados** calculando aproximaciones sucesivas y error.\n\nEl notebook *Ejemplo Clase 16* (partícula en plano inclinado) aplica Newton en Python/Jupyter: iteraciones, error y precisión de las aproximaciones.",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
+        "locator": "Actividad / Archivos (Ejemplo-Clase-16)",
+        "url": "https://app.notion.com/p/3d882a6d656181fcb6f5fc81e0115c2b"
+      }
+    ]
+  },
   "parcial-1-scope": {
     "title": "Alcance del Parcial 1",
     "content": "# Alcance del Parcial 1\n\nEl primer examen parcial (Clase 14, 03/09/2026) cubre:\n\n- existencia de soluciones\n- raíces y derivadas\n- polinomio de Taylor\n- error porcentual\n- aproximaciones para integrales\n\nEs un hito de evaluación de lo ya estudiado, no un tema nuevo de enseñanza.",
