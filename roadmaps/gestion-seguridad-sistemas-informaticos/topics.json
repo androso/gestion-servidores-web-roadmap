@@ -108,5 +108,27 @@
         "url": "https://app.notion.com/p/3cf82a6d65618185a5e8f0012c5b10e1"
       }
     ]
+  },
+  "crypto-fundamentals": {
+    "title": "Fundamentos de criptografía",
+    "content": "# Fundamentos de criptografía\n\nCifrado, claves y algoritmos; base para proteger información.\n\n### Conceptos cubiertos\n- Conceptos básicos: cifrado, claves y algoritmos\n- Encriptación aplicada (Cloudflare Learning)\n\n### Fuentes\n- **Clase 8 — 08/09/2026 — Fundamentos de Criptografía** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 8 — 08/09/2026 — Fundamentos de Criptografía",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3d882a6d6561817c8a6df3c3090b7acd"
+      }
+    ]
+  },
+  "symmetric-asymmetric-hash": {
+    "title": "Cifrado simétrico, asimétrico y hash",
+    "content": "# Cifrado simétrico, asimétrico y hash\n\nDiferenciar simétrico vs asimétrico y funciones hash; RSA como ejemplo asimétrico.\n\n### Conceptos cubiertos\n- Cifrado simétrico vs asimétrico\n- Funciones hash\n- Cifrado RSA / criptografía asimétrica (Python video)\n\n### Fuentes\n- **Clase 8 — Fundamentos de Criptografía** — Conceptos: simétrico/asimétrico/hash/RSA",
+    "sourceRefs": [
+      {
+        "label": "Clase 8 — Fundamentos de Criptografía",
+        "locator": "Conceptos: simétrico/asimétrico/hash/RSA",
+        "url": "https://app.notion.com/p/3d882a6d6561817c8a6df3c3090b7acd"
+      }
+    ]
   }
 }
