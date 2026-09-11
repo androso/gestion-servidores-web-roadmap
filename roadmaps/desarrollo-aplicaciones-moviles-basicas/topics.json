@@ -143,5 +143,16 @@
         "url": "https://app.notion.com/p/3d782a6d656181319046eadd3d5c2825"
       }
     ]
+  },
+  "calculator-ui-practice": {
+    "title": "UI de calculadora básica (práctica)",
+    "content": "# UI de calculadora básica (práctica)\n\nConstruir e interpretar una UI de calculadora básica en React Native y documentar entrega.\n\n### Conceptos cubiertos\n- UI de calculadora básica en React Native\n- Fundamentos de apps nativas según la práctica\n- Entrega Canvas PDF/imagen\n\n### Fuentes\n- **Práctica 04 — 11/09/2026 — Calculadora básica UI** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 04 — 11/09/2026 — Calculadora básica UI",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3d882a6d6561818b95fbc2dcbd911f66"
+      }
+    ]
   }
 }

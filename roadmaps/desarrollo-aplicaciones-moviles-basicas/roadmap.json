@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer y panel ShopEase.",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer, panel ShopEase y práctica de UI de calculadora.",
   "canvas": {
     "width": 1280,
-    "height": 1586,
+    "height": 1722,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -283,6 +283,23 @@
       }
     },
     {
+      "id": "calculator-ui-practice",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1514
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "UI de calculadora básica (práctica)",
+        "order": "11",
+        "detail": "Construir e interpretar una UI de calculadora básica en React Native y documentar entrega."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -291,7 +308,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1296
+        "height": 1432
       },
       "zIndex": -1,
       "data": {
@@ -394,6 +411,15 @@
       "id": "e-panel-search-category-filter-profile-screen",
       "source": "panel-search-category-filter",
       "target": "profile-screen",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-profile-screen-calculator-ui-practice",
+      "source": "profile-screen",
+      "target": "calculator-ui-practice",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",

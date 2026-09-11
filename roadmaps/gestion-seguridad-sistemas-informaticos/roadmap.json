@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-seguridad-sistemas-informaticos",
   "title": "Gestión de Seguridad de Sistemas Informáticos",
-  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT y NIST CSF 2.0.",
+  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0 y fundamentos de criptografía.",
   "canvas": {
     "width": 1280,
-    "height": 1580,
+    "height": 1716,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -283,6 +283,40 @@
       }
     },
     {
+      "id": "crypto-fundamentals",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1514
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Fundamentos de criptografía",
+        "order": "11",
+        "detail": "Cifrado, claves y algoritmos; base para proteger información."
+      }
+    },
+    {
+      "id": "symmetric-asymmetric-hash",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1518
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Cifrado simétrico, asimétrico y hash",
+        "order": "12",
+        "detail": "Diferenciar simétrico vs asimétrico y funciones hash; RSA como ejemplo asimétrico."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -291,7 +325,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1274
+        "height": 1410
       },
       "zIndex": -1,
       "data": {
@@ -415,6 +449,33 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-nist-csf-20-crypto-fundamentals",
+      "source": "nist-csf-20",
+      "target": "crypto-fundamentals",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-parcial-seguridad-c1-crypto-fundamentals",
+      "source": "parcial-seguridad-c1",
+      "target": "crypto-fundamentals",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-crypto-fundamentals-symmetric-asymmetric-hash",
+      "source": "crypto-fundamentals",
+      "target": "symmetric-asymmetric-hash",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
       "arrow": true
     }
   ]
