@@ -778,5 +778,75 @@
         "url": "https://youtu.be/LaibHAbFTso"
       }
     ]
+  },
+  "layered-client-server": {
+    "title": "Estilos: capas y cliente-servidor",
+    "content": "# Estilos: capas y cliente-servidor\n\nIdentificar características de la arquitectura en capas y del modelo cliente-servidor; analizar ventajas, limitaciones y riesgos; relacionar la selección de estilo con requerimientos, drivers y atributos de calidad.\n\n### Conceptos cubiertos\n- Arquitectura en capas\n- Modelo cliente-servidor\n- Relación con drivers, restricciones y atributos de calidad\n- Ventajas, limitaciones y riesgos de cada estilo\n\nLa elección de estilo (capas vs cliente-servidor) debe alinearse con drivers, restricciones y atributos de calidad, no solo con las ventajas aparentes del estilo.\n\n### Fuentes\n- **Clase 15 — 09/09/2026 — Estilos arquitectónicos: capas y cliente-servidor** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 09/09/2026 — Estilos arquitectónicos: capas y cliente-servidor",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3d982a6d65618185936ee6283af33270"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Clase 15",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-15"
+      },
+      {
+        "type": "video",
+        "title": "Videoclase (Vimeo)",
+        "url": "https://vimeo.com/1226111145"
+      }
+    ]
+  },
+  "enrollment-layers-cs-case": {
+    "title": "Mini caso: matrícula universitaria",
+    "content": "# Mini caso: matrícula universitaria\n\nMini caso: identificación de estilos arquitectónicos. Analizar un sistema de matrícula universitaria (PC y móviles): dónde se observa cliente-servidor; cómo organizarlo en capas; qué atributo de calidad se afecta si falla el servidor central.\n\nLa sesión adjunta el PDF `sesion_1_estilos_capas_cliente_servidor.pdf`.\n\n### Fuentes\n- **Clase 15 — 09/09/2026 — Estilos arquitectónicos: capas y cliente-servidor** — Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 09/09/2026 — Estilos arquitectónicos: capas y cliente-servidor",
+        "locator": "Actividad / Archivos adjuntos",
+        "url": "https://app.notion.com/p/3d982a6d65618185936ee6283af33270"
+      }
+    ]
+  },
+  "monolith-microservices-soa": {
+    "title": "Monolito, microservicios y SOA",
+    "content": "# Monolito, microservicios y SOA\n\nDiferenciar arquitectura monolítica, microservicios y SOA; analizar ventajas, limitaciones y trade-offs de cada estilo.\n\n### Conceptos cubiertos\n- Arquitectura monolítica\n- Microservicios\n- Arquitectura orientada a servicios (SOA)\n- Trade-offs: complejidad, integración, escalabilidad, restricciones operativas\n\nLa selección entre monolito, microservicios y SOA depende de restricciones y atributos de calidad del sistema, no únicamente de las ventajas del estilo.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3d982a6d656181e08542da6d48190d13"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Clase 16",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-16"
+      }
+    ]
+  },
+  "style-decision-lab": {
+    "title": "Laboratorio: decidir el estilo",
+    "content": "# Laboratorio: decidir el estilo\n\nLaboratorio interactivo (formativo, sin ponderación ni entrega en Canvas): completar el simulador y casos de decisión; elegir estilo considerando necesidades, restricciones, atributos de calidad, riesgos y complejidad operativa — no solo ventajas.\n\nLa página de clase no adjunta PDF de diapositivas; el material de la sesión es el laboratorio web.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA** — Actividad / Recursos",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA",
+        "locator": "Actividad / Laboratorio interactivo",
+        "url": "https://app.notion.com/p/3d982a6d656181e08542da6d48190d13"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Laboratorio interactivo (Netlify)",
+        "url": "https://luminous-bienenstitch-d2f902.netlify.app/"
+      }
+    ]
   }
 }

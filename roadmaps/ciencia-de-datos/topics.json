@@ -373,6 +373,50 @@
       }
     ]
   },
+  "multinomial-logistic": {
+    "title": "Logística multinomial",
+    "content": "# Logística multinomial\n\nComprender los fundamentos de la regresión logística multinomial (vs binaria), interpretar probabilidades Softmax y reconocer la entropía cruzada en el entrenamiento.\n\n### Conceptos cubiertos\n- Regresión logística multinomial (extensión de la binaria)\n- Función Softmax y asignación de clase por máxima probabilidad\n- Pérdida de entropía cruzada (introducción al entrenamiento)\n- Aplicaciones de clasificación multiclase\n\nSoftmax convierte puntuaciones en probabilidades por clase; la clase predicha es la de mayor probabilidad; la entropía cruzada guía el entrenamiento multiclase.\n\n### Fuentes\n- **Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3d982a6d656181c29b2fe145ab6bdc64"
+      }
+    ]
+  },
+  "softmax-cross-entropy": {
+    "title": "Softmax y entropía cruzada",
+    "content": "# Softmax y entropía cruzada\n\nSesión presencial 11/09/2026: repasar logística binaria; introducción a multinomial, Softmax y entropía cruzada; discutir ejemplos de clasificación con más de dos categorías. Material: PDFs de clase + notebooks de ejemplo.\n\nSoftmax convierte puntuaciones en probabilidades por clase; la clase predicha es la de mayor probabilidad; la entropía cruzada guía el entrenamiento multiclase.\n\n### Fuentes\n- **Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial** — Actividad / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial",
+        "locator": "Actividad / Idea clave / Archivos adjuntos",
+        "url": "https://app.notion.com/p/3d982a6d656181c29b2fe145ab6bdc64"
+      }
+    ]
+  },
+  "multinomial-iris-application": {
+    "title": "Aplicar multinomial (Iris)",
+    "content": "# Aplicar multinomial (Iris)\n\nAplicar regresión logística multinomial (Iris: longitud/ancho de pétalo), interpretar coeficientes y fronteras, y evaluar con accuracy, matriz de confusión, precisión, recall y F1.\n\n### Conceptos cubiertos\n- EDA y estandarización de variables predictoras\n- Ajuste de regresión logística multinomial\n- Interpretación de coeficientes, interceptos, frontera de decisión y superficies de probabilidad\n- Métricas: accuracy, matriz de confusión, precisión, recall, F1-score\n\nSesión virtual 12/09/2026: ejemplo guiado con Iris (3 clases); EDA, preparación, ajuste, interpretación y evaluación del modelo.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Objetivo / Conceptos / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Actividad",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      }
+    ]
+  },
+  "multinomial-evaluation-metrics": {
+    "title": "Evaluar: matriz y F1",
+    "content": "# Evaluar: matriz y F1\n\nLa evaluación multinomial no se limita al accuracy: matriz de confusión y métricas por clase permiten juzgar el desempeño real del clasificador.\n\nMétricas cubiertas: accuracy, matriz de confusión, precisión, recall y F1-score.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Idea clave / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial",
+        "locator": "Idea clave / Conceptos: métricas",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      }
+    ]
+  },
   "linear-regression": {
     "title": "Regresión lineal",
     "content": "# Regresión lineal\n\nLa regresión lineal estima una respuesta continua mediante una combinación de predictores. En forma simple usa una variable; en forma múltiple ajusta efectos parciales manteniendo las demás constantes.\n\nAntes de interpretar:\n\n- confirma que la respuesta sea continua y la relación tenga sentido;\n- revisa residuos, linealidad y varianza;\n- evita identificadores como predictores;\n- separa train/test si el objetivo es predecir;\n- conserva unidades al explicar coeficientes.\n\nEn la actividad, Dataset 1 pide analizar `precio_hora` y `salario` con regresión lineal.",

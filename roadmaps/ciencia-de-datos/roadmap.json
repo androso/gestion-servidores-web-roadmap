@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "ciencia-de-datos",
   "title": "Ciencia de Datos",
-  "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta, diagnóstico de GLM y aplicación reproducible.",
+  "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta (incluida la logística multinomial), diagnóstico de GLM y aplicación reproducible.",
   "canvas": {
     "width": 1280,
-    "height": 4750,
+    "height": 5220,
     "minZoom": 0.13,
     "maxZoom": 1.75,
     "initialViewport": { "x": 150, "y": 8, "zoom": 0.84 },
@@ -38,6 +38,7 @@
     { "id": "section-response-models", "type": "section", "position": { "x": 40, "y": 2320 }, "size": { "width": 1200, "height": 1080 }, "zIndex": -1, "data": { "label": "04 · Elegir modelo según la naturaleza de la respuesta" } },
     { "id": "section-diagnostics", "type": "section", "position": { "x": 40, "y": 3440 }, "size": { "width": 1200, "height": 430 }, "zIndex": -1, "data": { "label": "05 · Diagnóstico y ejemplos aplicados" } },
     { "id": "section-applied", "type": "section", "position": { "x": 40, "y": 3910 }, "size": { "width": 1200, "height": 700 }, "zIndex": -1, "data": { "label": "06 · Flujo reproducible y checkpoints" } },
+    { "id": "section-multinomial", "type": "section", "position": { "x": 40, "y": 4650 }, "size": { "width": 1200, "height": 420 }, "zIndex": -1, "data": { "label": "07 · Clasificación multinomial" } },
 
     { "id": "data-science", "type": "topic", "position": { "x": 90, "y": 290 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Ciencia de datos", "order": "01", "detail": "Transformar datos en decisiones, no solo ejecutar herramientas." } },
     { "id": "interdisciplinary", "type": "subtopic", "position": { "x": 540, "y": 294 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Tres pilares interdisciplinarios", "order": "02", "detail": "Estadística, computación y conocimiento del dominio." } },
@@ -62,7 +63,7 @@
     { "id": "split-standardize", "type": "subtopic", "position": { "x": 540, "y": 1864 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Split, escalado y métricas", "order": "20", "detail": "Ajustar el escalador solo en train y evaluar solo en datos no vistos." } },
     { "id": "knn", "type": "topic", "position": { "x": 90, "y": 2000 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Clasificación KNN", "order": "21", "detail": "La clase depende de vecinos y de una distancia comparable." } },
     { "id": "knn-cv", "type": "subtopic", "position": { "x": 540, "y": 2004 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Validación cruzada y elección de k", "order": "22", "detail": "El ejemplo reporta k=21, pero su evaluación mezcla escalas y train." } },
-    { "id": "response-family-guide", "type": "paragraph", "position": { "x": 130, "y": 2335 }, "size": { "width": 1020, "height": 150 }, "data": { "text": "Ramas alternativas: elige el modelo por la respuesta y por la relación que quieres modelar. Y binaria → logística; Y continua cuya media condicional se relaciona aproximadamente de forma lineal con X → regresión lineal/OLS; conteo → Poisson; continua positiva y asimétrica → Gamma; ceros junto con valores positivos continuos → Tweedie. Las ramas no son prerrequisitos entre sí.", "style": { "fontSize": 14, "textAlign": "center" } } },
+    { "id": "response-family-guide", "type": "paragraph", "position": { "x": 130, "y": 2335 }, "size": { "width": 1020, "height": 150 }, "data": { "text": "Ramas alternativas: elige el modelo por la respuesta y por la relación que quieres modelar. Y binaria → logística; Y con más de dos categorías → logística multinomial (Softmax), extensión de la binaria; Y continua cuya media condicional se relaciona aproximadamente de forma lineal con X → regresión lineal/OLS; conteo → Poisson; continua positiva y asimétrica → Gamma; ceros junto con valores positivos continuos → Tweedie. Las ramas no son prerrequisitos entre sí.", "style": { "fontSize": 14, "textAlign": "center" } } },
 
     { "id": "linear-regression", "type": "topic", "position": { "x": 55, "y": 2530 }, "size": { "width": 210, "height": 108 }, "data": { "label": "Regresión lineal", "order": "25", "detail": "Media continua aproximadamente lineal en X." } },
     { "id": "simple-multiple", "type": "subtopic", "position": { "x": 55, "y": 2668 }, "size": { "width": 210, "height": 108 }, "data": { "label": "Simple, múltiple y OLS", "order": "26", "detail": "Comparar ajuste, efectos, incertidumbre y supuestos." } },
@@ -98,7 +99,12 @@
     { "id": "dataset-one", "type": "topic", "position": { "x": 90, "y": 3990 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Checkpoint: Dataset 1", "order": "47", "detail": "Empleados: EDA, anomalías, correlación y salario vs precio_hora." } },
     { "id": "dataset-two", "type": "subtopic", "position": { "x": 540, "y": 3994 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Checkpoint: Dataset 2", "order": "48", "detail": "Cafetería: calidad, categorías inválidas y consistencia de totales." } },
     { "id": "reproducible-workflow", "type": "topic", "position": { "x": 90, "y": 4130 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Flujo reproducible de extremo a extremo", "order": "49", "detail": "Pregunta, auditoría, EDA, modelo, evaluación y reporte ejecutable." } },
-    { "id": "limitations", "type": "subtopic", "position": { "x": 540, "y": 4134 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Supuestos, límites y evidencia", "order": "50", "detail": "Cerrar declarando sesgos, fuga, incertidumbre y próximos pasos." } }
+    { "id": "limitations", "type": "subtopic", "position": { "x": 540, "y": 4134 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Supuestos, límites y evidencia", "order": "50", "detail": "Cerrar declarando sesgos, fuga, incertidumbre y próximos pasos." } },
+
+    { "id": "multinomial-logistic", "type": "topic", "position": { "x": 90, "y": 4710 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Logística multinomial", "order": "51", "detail": "Extensión de la binaria: Softmax y entropía cruzada." } },
+    { "id": "softmax-cross-entropy", "type": "subtopic", "position": { "x": 540, "y": 4714 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Softmax y entropía cruzada", "order": "52", "detail": "Probabilidades por clase; la predicha es la de mayor probabilidad." } },
+    { "id": "multinomial-iris-application", "type": "topic", "position": { "x": 90, "y": 4850 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Aplicar multinomial (Iris)", "order": "53", "detail": "EDA, estandarización, ajuste e interpretación con pétalo de Iris." } },
+    { "id": "multinomial-evaluation-metrics", "type": "subtopic", "position": { "x": 540, "y": 4854 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Evaluar: matriz y F1", "order": "54", "detail": "Accuracy, matriz de confusión, precisión, recall y F1 por clase." } }
   ],
   "edges": [
     { "id": "e-title-node-subtitle-para", "source": "title-node", "target": "subtitle-para", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
@@ -136,6 +142,10 @@
     { "id": "e-simple-multiple-ols-reading", "source": "simple-multiple", "target": "ols-reading", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-ols-reading-weak-r2", "source": "ols-reading", "target": "weak-r2", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-logistic-regression-logistic-significance", "source": "logistic-regression", "target": "logistic-significance", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-logistic-significance-multinomial-logistic", "source": "logistic-significance", "target": "multinomial-logistic", "sourceHandle": "bottom", "targetHandle": "top", "route": "bezier", "arrow": true },
+    { "id": "e-multinomial-logistic-softmax-cross-entropy", "source": "multinomial-logistic", "target": "softmax-cross-entropy", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-multinomial-logistic-multinomial-iris-application", "source": "multinomial-logistic", "target": "multinomial-iris-application", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-multinomial-iris-application-multinomial-evaluation-metrics", "source": "multinomial-iris-application", "target": "multinomial-evaluation-metrics", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
     { "id": "e-count-outcomes-equidispersion", "source": "count-outcomes", "target": "equidispersion", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-equidispersion-log-link", "source": "equidispersion", "target": "log-link", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-log-link-multiplicative-effects", "source": "log-link", "target": "multiplicative-effects", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
