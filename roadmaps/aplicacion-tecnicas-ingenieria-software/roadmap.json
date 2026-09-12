@@ -5,7 +5,7 @@
   "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML.",
   "canvas": {
     "width": 1300,
-    "height": 1340,
+    "height": 1500,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -90,7 +90,7 @@
       },
       "size": {
         "width": 1220,
-        "height": 156
+        "height": 280
       },
       "data": {
         "label": "Práctica 01 — Modelado UML"
@@ -425,7 +425,7 @@
       "type": "subtopic",
       "position": {
         "x": 920,
-        "y": 1030
+        "y": 1288
       },
       "size": {
         "width": 320,
