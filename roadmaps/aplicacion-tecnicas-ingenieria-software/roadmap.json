@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "slug": "aplicacion-tecnicas-ingenieria-software",
   "title": "Aplicación de Técnicas de Ingeniería de Software",
-  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles y el modelado UML.",
+  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML.",
   "canvas": {
     "width": 1300,
     "height": 1340,
@@ -421,6 +421,23 @@
       }
     },
     {
+      "id": "s-parcial-1-concepcion-agil",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1030
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Checkpoint: Parcial 1 (RUP y ágil)",
+        "order": "23",
+        "detail": "Examen: concepción RUP y fundamentos ágiles; no es un tema nuevo ni un puente entre conceptos."
+      }
+    },
+    {
       "id": "t-plan-agil-backlog",
       "type": "topic",
       "position": {
@@ -653,6 +670,24 @@
       "sourceHandle": "left",
       "targetHandle": "right",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-s-seleccion-enfoque-s-parcial-1-concepcion-agil",
+      "source": "s-seleccion-enfoque",
+      "target": "s-parcial-1-concepcion-agil",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-laboratorio-1-s-parcial-1-concepcion-agil",
+      "source": "t-laboratorio-1",
+      "target": "s-parcial-1-concepcion-agil",
+      "sourceHandle": "right",
+      "targetHandle": "top",
+      "route": "bezier",
       "arrow": true
     },
     {

@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "diseno-arquitectura-de-sistemas",
   "title": "Diseño de Arquitectura de Sistemas",
-  "description": "Ruta actualmente impartida: fundamentos de arquitectura de software, tipos de arquitectura de TI, proceso arquitectónico, rol del arquitecto, stakeholders y la Actividad Evaluativa 1 (clínica de citas).",
+  "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, hasta la elección de estilos (capas, cliente-servidor, monolito, microservicios y SOA).",
   "canvas": {
     "width": 1280,
-    "height": 3620,
+    "height": 4180,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -60,7 +60,7 @@
         "height": 88
       },
       "data": {
-        "text": "Ruta actualmente impartida (sílabo DAS, semanas 1–5): sigue los números por la columna izquierda y estudia cada apoyo claro de la derecha antes de bajar al siguiente paso.",
+        "text": "Ruta conceptual: sigue los números por la columna izquierda y estudia cada apoyo claro de la derecha antes de bajar al siguiente paso. Los estilos se eligen después de drivers, restricciones y atributos de calidad.",
         "style": {
           "fontSize": 14,
           "textAlign": "center"
@@ -890,6 +890,90 @@
       }
     },
     {
+      "id": "section-styles",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 3590
+      },
+      "size": {
+        "width": 1200,
+        "height": 420
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "08 · Estilos arquitectónicos"
+      }
+    },
+    {
+      "id": "layered-client-server",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3650
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Estilos: capas y cliente-servidor",
+        "order": "40",
+        "detail": "Características, ventajas, limitaciones y riesgos; alinear el estilo con drivers y calidad."
+      }
+    },
+    {
+      "id": "enrollment-layers-cs-case",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3654
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Mini caso: matrícula universitaria",
+        "order": "41",
+        "detail": "Dónde hay cliente-servidor, cómo organizarlo en capas y qué calidad falla si cae el servidor."
+      }
+    },
+    {
+      "id": "monolith-microservices-soa",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3790
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Monolito, microservicios y SOA",
+        "order": "42",
+        "detail": "Diferenciar los tres estilos y sus trade-offs de complejidad, integración y escalabilidad."
+      }
+    },
+    {
+      "id": "style-decision-lab",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3794
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Laboratorio: decidir el estilo",
+        "order": "43",
+        "detail": "Simulador Netlify: elegir según necesidades, restricciones, calidad, riesgos y operación."
+      }
+    },
+    {
       "id": "practica-04-quality-scenarios",
       "type": "subtopic",
       "position": {
@@ -1272,6 +1356,42 @@
       "id": "e-quality-scenarios-practica-04",
       "source": "quality-scenarios",
       "target": "practica-04-quality-scenarios",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-quality-scenarios-layered-client-server",
+      "source": "quality-scenarios",
+      "target": "layered-client-server",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-layered-client-server-enrollment-case",
+      "source": "layered-client-server",
+      "target": "enrollment-layers-cs-case",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-layered-client-server-monolith-microservices-soa",
+      "source": "layered-client-server",
+      "target": "monolith-microservices-soa",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-monolith-microservices-soa-style-decision-lab",
+      "source": "monolith-microservices-soa",
+      "target": "style-decision-lab",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",

@@ -438,6 +438,29 @@
     ],
     "week": "Semana 5"
   },
+  "s-parcial-1-concepcion-agil": {
+    "title": "Checkpoint: Parcial 1 (RUP y ágil)",
+    "content": "# Checkpoint: Parcial 1 (RUP y ágil)\n\nAplicar técnicas de la fase de concepción de RUP y fundamentos de metodologías ágiles para definir, analizar y organizar el inicio de un proyecto de software a partir de una situación problemática (evaluación parcial).\n\n### Conceptos cubiertos\n- Fase de concepción RUP\n- Fundamentos de metodologías ágiles\n- Preguntas objetivas + caso práctico\n- Evaluación individual, un intento, 100 minutos\n\nPrimer Examen Parcial (presencial). Parte objetiva (~40 min) y caso práctico (~50 min) + revisión (~10 min). Sin apuntes, comunicación ni IA. Entrega vía Canvas assignment 16399.\n\nEl parcial evalúa comprensión y aplicación (no solo memorización) de concepción RUP y ágil; justificar decisiones con vocabulario técnico. Es un hito de evaluación, no un tema nuevo de enseñanza.\n\n### Fuentes\n- **Sesión 11 — 28/08/2026 — Primer Examen Parcial** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 11 — 28/08/2026 — Primer Examen Parcial",
+        "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
+        "url": "https://app.notion.com/p/3d982a6d6561818688fae807160eb313"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Sesión 11",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-11-%7Cviernes-28-de-agosto-de-2026"
+      },
+      {
+        "type": "official",
+        "title": "Examen (assignment 16399)",
+        "url": "https://univo.instructure.com/courses/1760/assignments/16399"
+      }
+    ]
+  },
   "t-plan-agil-backlog": {
     "title": "Plan de Proyecto Ágil y Backlog (Práctica 02)",
     "content": "# Plan de Proyecto Ágil y Backlog (Práctica 02)\n\nRoles Scrum, historias con criterios de aceptación y Product Backlog del Sprint 0.\n\nLa práctica cubre roles Scrum, historias con criterios de aceptación y el Product Backlog del Sprint 0.\n\n### Fuentes\n- **Práctica 02 — Plan de Proyecto Ágil y Backlog** — Objetivo / Conceptos / Idea clave",
