@@ -397,22 +397,47 @@
   },
   "multinomial-iris-application": {
     "title": "Aplicar multinomial (Iris)",
-    "content": "# Aplicar multinomial (Iris)\n\nAplicar regresión logística multinomial (Iris: longitud/ancho de pétalo), interpretar coeficientes y fronteras, y evaluar con accuracy, matriz de confusión, precisión, recall y F1.\n\n### Conceptos cubiertos\n- EDA y estandarización de variables predictoras\n- Ajuste de regresión logística multinomial\n- Interpretación de coeficientes, interceptos, frontera de decisión y superficies de probabilidad\n- Métricas: accuracy, matriz de confusión, precisión, recall, F1-score\n\nSesión virtual 12/09/2026: ejemplo guiado con Iris (3 clases); EDA, preparación, ajuste, interpretación y evaluación del modelo.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Objetivo / Conceptos / Actividad",
+    "content": "# Aplicar multinomial (Iris)\n\nAplicar regresión logística multinomial (Iris: longitud/ancho de pétalo), interpretar coeficientes y fronteras, y evaluar con accuracy, matriz de confusión, precisión, recall y F1.\n\n### Conceptos cubiertos\n- EDA y estandarización de variables predictoras\n- Ajuste de regresión logística multinomial\n- Interpretación de coeficientes, interceptos, frontera de decisión y superficies de probabilidad\n- Métricas: accuracy, matriz de confusión, precisión, recall, F1-score\n\nSesión virtual 12/09/2026: ejemplo guiado con Iris (3 clases); EDA, preparación, ajuste, interpretación y evaluación del modelo. Material de la nota: `Clase_16_CDD_Regresion_Multinomial.pdf`, `Ejemplo_2_Regresion_Logistica_Multinomial.pdf` e `iris.csv`.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Objetivo / Conceptos / Actividad / Archivos adjuntos",
     "sourceRefs": [
       {
         "label": "Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial",
         "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Actividad",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      },
+      {
+        "label": "Clase 16 — Clase_16_CDD_Regresion_Multinomial.pdf",
+        "locator": "Archivos adjuntos — PDF de clase (regresión logística multinomial)",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      },
+      {
+        "label": "Clase 16 — Ejemplo_2_Regresion_Logistica_Multinomial.pdf",
+        "locator": "Archivos adjuntos — ejemplo multinomial (Iris: longitud/ancho de pétalo)",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      },
+      {
+        "label": "Clase 16 — iris.csv",
+        "locator": "Archivos adjuntos — dataset Iris (3 clases) del ejemplo guiado",
         "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
       }
     ]
   },
   "multinomial-evaluation-metrics": {
     "title": "Evaluar: matriz y F1",
-    "content": "# Evaluar: matriz y F1\n\nLa evaluación multinomial no se limita al accuracy: matriz de confusión y métricas por clase permiten juzgar el desempeño real del clasificador.\n\nMétricas cubiertas: accuracy, matriz de confusión, precisión, recall y F1-score.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Idea clave / Conceptos",
+    "content": "# Evaluar: matriz y F1\n\nLa evaluación multinomial no se limita al accuracy: matriz de confusión y métricas por clase permiten juzgar el desempeño real del clasificador.\n\nMétricas cubiertas: accuracy, matriz de confusión, precisión, recall y F1-score. La evidencia de clase está en el PDF de clase, el ejemplo multinomial y el conjunto `iris.csv` de la nota del 12/09/2026.\n\n### Fuentes\n- **Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial** — Idea clave / Conceptos / Archivos adjuntos",
     "sourceRefs": [
       {
         "label": "Clase 16 — 12/09/2026 — Aplicación y evaluación de la regresión logística multinomial",
         "locator": "Idea clave / Conceptos: métricas",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      },
+      {
+        "label": "Clase 16 — Clase_16_CDD_Regresion_Multinomial.pdf",
+        "locator": "Archivos adjuntos — evaluación multinomial (accuracy, matriz, precisión, recall, F1)",
+        "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      },
+      {
+        "label": "Clase 16 — Ejemplo_2_Regresion_Logistica_Multinomial.pdf",
+        "locator": "Archivos adjuntos — ejemplo de evaluación sobre Iris",
         "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
       }
     ]
