@@ -1110,5 +1110,81 @@
         "url": "https://app.notion.com/p/3d782a6d6561812ca90df3642c2d9e1d"
       }
     ]
+  },
+  "apache-libre-install": {
+    "title": "Instalar Apache HTTP Server",
+    "content": "# Instalar Apache HTTP Server\n\nClase 17 (14/09/2026, Semana 09): instalar **Apache HTTP Server** en Linux, macOS o Windows y **verificar** que funciona.\n\nApache es el servidor web de **libre distribución** de esta unidad. El laboratorio usa el binario/servicio Apache, no el contenedor Express.\n\n### Fuentes\n- **Clase 17 — 14/09/2026 — Instalación de un Servidor Web de Libre Distribución (Apache)** — Objetivo / Herramientas",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 14/09/2026 — Instalación de un Servidor Web de Libre Distribución (Apache)",
+        "locator": "Objetivo / Herramientas / Verificación de instalación",
+        "url": "https://app.notion.com/p/3dc82a6d656181cb8763f37ffedb66db"
+      },
+      {
+        "label": "Canvas — Clase 17 lunes 14 de septiembre",
+        "locator": "Clase 17",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-17-lunes-14-de-septiembre"
+      }
+    ]
+  },
+  "apache-vs-express": {
+    "title": "Apache vs Express/TypeScript",
+    "content": "# Apache vs Express/TypeScript\n\nApache es el **servidor web puro** (libre distribución). Express/TypeScript es el **contenedor de aplicación** ya visto en la Unidad 1.\n\nSon roles distintos que después se conectan con **proxy**. No sustituyen el uno al otro: Apache entrega; Express calcula.\n\nIdea clave de la Clase 17: distinguir esos roles antes de configurar sitios y módulos.",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 14/09/2026 — Instalación de un Servidor Web de Libre Distribución (Apache)",
+        "locator": "Idea clave / servidor web puro vs contenedor",
+        "url": "https://app.notion.com/p/3dc82a6d656181cb8763f37ffedb66db"
+      }
+    ]
+  },
+  "apache-config-layout": {
+    "title": "Archivos de configuración de Apache",
+    "content": "# Archivos de configuración de Apache\n\nTras instalar y verificar Apache, la sesión pide **explorar la estructura de archivos de configuración** del servidor.\n\nEsa exploración es el puente hacia virtual hosts y módulos (Clase 18): hay que saber dónde vive la configuración antes de crear un segundo sitio.",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 14/09/2026 — Instalación de un Servidor Web de Libre Distribución (Apache)",
+        "locator": "Conceptos: estructura de archivos de configuración",
+        "url": "https://app.notion.com/p/3dc82a6d656181cb8763f37ffedb66db"
+      }
+    ]
+  },
+  "apache-virtual-hosts": {
+    "title": "Virtual hosts en Apache",
+    "content": "# Virtual hosts en Apache\n\nClase 18 (16/09/2026, Semana 09): crear un **Virtual Host** para servir un **segundo sitio independiente** en el mismo Apache.\n\nVarios sitios pueden convivir en un proceso Apache; el virtual host es el aislamiento de nombre/document root, no un segundo contenedor Express.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Configuración de Apache (Virtual hosts y módulos)** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Configuración de Apache (Virtual hosts y módulos)",
+        "locator": "Objetivo / Virtual Hosts / segundo sitio independiente",
+        "url": "https://app.notion.com/p/3dc82a6d656181c7a890d3547fe0324e"
+      },
+      {
+        "label": "Canvas — Clase 18 miércoles 16 de septiembre",
+        "locator": "Clase 18",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-18-miercoles-16-de-septiembre"
+      }
+    ]
+  },
+  "apache-modules": {
+    "title": "Módulos de Apache",
+    "content": "# Módulos de Apache\n\nAdemás del virtual host, la Clase 18 pide **habilitar módulos** y entender **qué hace cada uno**.\n\nLos módulos extienden el servidor (no reemplazan el sitio). La habilitación es un paso de configuración, no de reinstalación.",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Configuración de Apache (Virtual hosts y módulos)",
+        "locator": "Conceptos: módulos de Apache (habilitación y roles)",
+        "url": "https://app.notion.com/p/3dc82a6d656181c7a890d3547fe0324e"
+      }
+    ]
+  },
+  "apache-mod-proxy": {
+    "title": "mod_proxy hacia Express",
+    "content": "# mod_proxy hacia Express\n\nLa Clase 18 **prepara `mod_proxy`** como base para conectar Apache con Express/TypeScript en la Clase 19.\n\nIdea clave: los virtual hosts permiten varios sitios en un mismo Apache; los módulos (incluido `mod_proxy`) extienden el servidor hacia el contenedor Express/TypeScript.",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Configuración de Apache (Virtual hosts y módulos)",
+        "locator": "mod_proxy (preparación hacia Clase 19) / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d656181c7a890d3547fe0324e"
+      }
+    ]
   }
 }
