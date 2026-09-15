@@ -374,13 +374,18 @@
     ]
   },
   "multinomial-logistic": {
-    "title": "Logística multinomial",
-    "content": "# Logística multinomial\n\nComprender los fundamentos de la regresión logística multinomial (vs binaria), interpretar probabilidades Softmax y reconocer la entropía cruzada en el entrenamiento.\n\n### Conceptos cubiertos\n- Regresión logística multinomial (extensión de la binaria)\n- Función Softmax y asignación de clase por máxima probabilidad\n- Pérdida de entropía cruzada (introducción al entrenamiento)\n- Aplicaciones de clasificación multiclase\n\nSoftmax convierte puntuaciones en probabilidades por clase; la clase predicha es la de mayor probabilidad; la entropía cruzada guía el entrenamiento multiclase.\n\n### Fuentes\n- **Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial** — Objetivo / Conceptos / Idea clave",
+    "title": "Regresión logística multinomial (Softmax)",
+    "content": "# Regresión logística multinomial (Softmax)\n\nComprender los fundamentos de la regresión logística multinomial (vs binaria), interpretar probabilidades Softmax y reconocer la entropía cruzada en el entrenamiento.\n\n### Conceptos cubiertos\n- Regresión logística multinomial (extensión de la binaria)\n- Función Softmax y asignación de clase por máxima probabilidad\n- Pérdida de entropía cruzada (introducción al entrenamiento)\n- Aplicaciones de clasificación multiclase\n\nSoftmax convierte puntuaciones en probabilidades por clase; la clase predicha es la de mayor probabilidad; la entropía cruzada guía el entrenamiento multiclase.\n\nLa logística multinomial predice variables cualitativas con más de dos categorías: convierte biomarcadores continuos en probabilidades sobre varias clases, interpreta coeficientes de momios y evalúa la exactitud diagnóstica multiclase.\n\n### Fuentes\n- **Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial** — Objetivo / Conceptos / Idea clave\n- **Práctica 5 — 13/09/2026 — Regresión Logística Multinomial** — Objetivo / Conceptos / Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 15 — 11/09/2026 — Introducción a la Regresión Logística Multinomial",
         "locator": "Objetivo de aprendizaje / Conceptos y técnicas / Idea clave",
         "url": "https://app.notion.com/p/3d982a6d656181c29b2fe145ab6bdc64"
+      },
+      {
+        "label": "Práctica 5 — 13/09/2026 — Regresión Logística Multinomial",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d656181cab354cfbb39fc28dc"
       }
     ]
   },
@@ -439,6 +444,39 @@
         "label": "Clase 16 — Ejemplo_2_Regresion_Logistica_Multinomial.pdf",
         "locator": "Archivos adjuntos — ejemplo de evaluación sobre Iris",
         "url": "https://app.notion.com/p/3d982a6d6561819c9c93fcf01fc14c02"
+      }
+    ]
+  },
+  "multinomial-sklearn-mnlogit": {
+    "title": "sklearn LogisticRegression y MNLogit",
+    "content": "# sklearn LogisticRegression y MNLogit\n\nPipeline de la práctica: `LabelEncoder` sobre la etiqueta y `StandardScaler` sobre los predictores; ajustar `LogisticRegression(solver='lbfgs', max_iter=500)` en modo multinomial; interpretar coeficientes e interceptos. Complementar con `statsmodels.MNLogit` y reportar significancia (`p<0.05`).\n\n### Fuentes\n- **Práctica 5 — Regresión Logística Multinomial** — Conceptos / Actividad pasos 2–3 y 5",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — Regresión Logística Multinomial",
+        "locator": "Conceptos / Actividad pasos 2–3 y 5",
+        "url": "https://app.notion.com/p/3dc82a6d656181cab354cfbb39fc28dc"
+      }
+    ]
+  },
+  "multinomial-decision-surfaces": {
+    "title": "Fronteras 2D y superficies de probabilidad 3D",
+    "content": "# Fronteras 2D y superficies de probabilidad 3D\n\nVisualizar cómo el clasificador particiona el espacio de riesgo: fronteras de decisión 2D y superficies de probabilidad 3D por clase. Hacen visible cómo Softmax asigna regiones a cada categoría.\n\n### Fuentes\n- **Práctica 5 — Regresión Logística Multinomial** — Conceptos / Actividad paso 4 / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — Regresión Logística Multinomial",
+        "locator": "Conceptos / Actividad paso 4 / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d656181cab354cfbb39fc28dc"
+      }
+    ]
+  },
+  "practica-5-cardiotocographic": {
+    "title": "Práctica 5: Cardiotocographic (NSP)",
+    "content": "# Práctica 5: Cardiotocographic (NSP)\n\nDataset `Cardiotocographic.csv` con etiquetas NSP (Normal, Sospechoso, Patológico). Predictores `LB` y `ASTV`. Incluye scatter multiclase, matriz de confusión y métricas accuracy, precisión, recall y F1 macro. Entrega: PDF del cuaderno ejecutado.\n\n### Fuentes\n- **Práctica 5 — 13/09/2026 — Regresión Logística Multinomial** — Conceptos / Actividad / Recursos dataset",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — 13/09/2026 — Regresión Logística Multinomial",
+        "locator": "Conceptos / Actividad / Recursos dataset",
+        "url": "https://app.notion.com/p/3dc82a6d656181cab354cfbb39fc28dc"
       }
     ]
   },
