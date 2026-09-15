@@ -92,12 +92,28 @@
   },
   "auth-context-asyncstorage": {
     "title": "AuthContext y AsyncStorage",
-    "content": "# AuthContext y AsyncStorage\n\nSesión persistente: token, user, loadSession/saveSession/clearSession.\n\n### Fuentes\n- **Clase 11 — Creación de contexto con AsyncStorage** — Objetivo / Idea clave",
+    "content": "# AuthContext y AsyncStorage\n\nSesión persistente: token, user, loadSession/saveSession/clearSession.\n\n### Fuentes\n- **Clase 11 — Creación de contexto con AsyncStorage** — Objetivo / Idea clave\n- **Clase 17 — 14/09/2026 — Gestión de estado de autenticación y UI de perfil** — Conceptos AuthContext / Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 11 — Creación de contexto con AsyncStorage",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3c882a6d65618142a349d3ed32107747"
+      },
+      {
+        "label": "Clase 17 — 14/09/2026 — Gestión de estado de autenticación y UI de perfil",
+        "locator": "Conceptos AuthContext / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d656181b49dfff310c11f987e"
+      }
+    ]
+  },
+  "profile-ui-auth-state": {
+    "title": "UI de perfil con estado de autenticación",
+    "content": "# UI de perfil con estado de autenticación\n\nIntegrar `AuthContext` con los datos del token de login. Construir una UI React Native/Expo Router escroleable fiel al mockup: avatar, insignias Points/Orders, text-inputs y botón flotante `cameraBtn`. Cuidar el posicionamiento relativo y depurar en emuladores.\n\n### Fuentes\n- **Clase 17 — 14/09/2026 — Gestión de estado de autenticación y UI de perfil** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 14/09/2026 — Gestión de estado de autenticación y UI de perfil",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d656181b49dfff310c11f987e"
       }
     ]
   },

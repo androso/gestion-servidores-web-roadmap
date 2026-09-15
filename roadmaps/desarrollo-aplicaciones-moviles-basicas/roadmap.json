@@ -232,6 +232,23 @@
       }
     },
     {
+      "id": "profile-ui-auth-state",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 974
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "UI de perfil con estado de autenticación",
+        "order": "12",
+        "detail": "Perfil escroleable alimentado por AuthContext/token; avatar, insignias, inputs, cameraBtn."
+      }
+    },
+    {
       "id": "dashboard-panel",
       "type": "topic",
       "position": {
@@ -386,6 +403,15 @@
       "target": "auth-context-asyncstorage",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-auth-context-asyncstorage-profile-ui-auth-state",
+      "source": "auth-context-asyncstorage",
+      "target": "profile-ui-auth-state",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     },
