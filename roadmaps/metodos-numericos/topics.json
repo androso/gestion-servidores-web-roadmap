@@ -108,11 +108,11 @@
   },
   "newton-method": {
     "title": "Método de Newton",
-    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada**.\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo** (la precisión de cada aproximación). Es continuación del método de bisección: conviene repasarlo antes.\n\nIdea clave: Newton parte de una estimación inicial; el error en cada iteración mide la precisión de la raíz aproximada.",
+    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada**.\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo** (la precisión de cada aproximación). Es continuación del método de bisección: conviene repasarlo antes.\n\nMaterial de la nota (actualizado 12/09/2026): PDF `Clase 16 - Análisis Numérico.pdf` (antes UNAVAILABLE).\n\nIdea clave: Newton parte de una estimación inicial; el error en cada iteración mide la precisión de la raíz aproximada.",
     "sourceRefs": [
       {
         "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
-        "locator": "Objetivo / Conceptos / Idea clave",
+        "locator": "Objetivo / Conceptos / Idea clave / PDF Clase 16 - Análisis Numérico",
         "url": "https://app.notion.com/p/3d882a6d656181fcb6f5fc81e0115c2b"
       },
       {
@@ -124,11 +124,11 @@
   },
   "newton-examples": {
     "title": "Ejemplos guiados de Newton",
-    "content": "# Ejemplos guiados de Newton\n\nEn la sesión se resuelven **ejercicios guiados** calculando aproximaciones sucesivas y error.\n\nEl notebook *Ejemplo Clase 16* (partícula en plano inclinado) aplica Newton en Python/Jupyter: iteraciones, error y precisión de las aproximaciones.",
+    "content": "# Ejemplos guiados de Newton\n\nEn la sesión se resuelven **ejercicios guiados** calculando aproximaciones sucesivas y error.\n\nNotebooks de la nota (Python/Jupyter, también como PDF):\n\n- `Ejemplos - Método de Newton - Clase 16.ipynb`\n- `Ejemplo - Clase 16.ipynb` (partícula en plano inclinado)\n\nAplican Newton: iteraciones, error y precisión de las aproximaciones.",
     "sourceRefs": [
       {
         "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
-        "locator": "Actividad / Archivos (Ejemplo-Clase-16)",
+        "locator": "Actividad / Archivos (Ejemplos-Metodo-de-Newton-Clase-16 y Ejemplo-Clase-16)",
         "url": "https://app.notion.com/p/3d882a6d656181fcb6f5fc81e0115c2b"
       }
     ]

@@ -682,5 +682,69 @@
         "url": "https://univo.instructure.com/courses/1742/pages/clase-12-miercoles-26-slash-08-slash-26"
       }
     ]
+  },
+  "event-delegation-lifecycle": {
+    "title": "Delegación y ciclo de vida en el DOM",
+    "content": "# Delegación y ciclo de vida en el DOM\n\nPráctica 4: gestionar eventos en interfaces escalables **sin saturar recursos del navegador**.\n\nUn único manejador en el **contenedor padre** (delegación + bubbling) escala mejor que un listener por cada botón dinámico.\n\nHerramientas de la práctica: Visual Studio Code, Node.js y `tsc -w`, navegador con DevTools.\n\n### Fuentes\n- **Práctica 4 — Delegación de Eventos y Ciclo de Vida en el DOM** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — Delegación de Eventos y Ciclo de Vida en el DOM",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3dc82a6d6561816fa55cdcc7ca871d73"
+      },
+      {
+        "label": "Canvas — Practica 4",
+        "locator": "Practica 4",
+        "url": "https://univo.instructure.com/courses/1742/pages/practica-4"
+      }
+    ],
+    "resources": [
+      {
+        "type": "video",
+        "title": "Video de práctica (YouTube)",
+        "url": "https://youtu.be/Pf9tgPGcdxA"
+      }
+    ]
+  },
+  "bubbling-capturing": {
+    "title": "Bubbling, capturing y target",
+    "content": "# Bubbling, capturing y target\n\nFases de propagación en el DOM: **bubbling** y **capturing**.\n\nDistinguir `event.target` (quién disparó) de `event.currentTarget` (quién tiene el listener). Eso permite un solo oyente en el padre sin registrar cada botón nuevo.",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — Delegación de Eventos y Ciclo de Vida en el DOM",
+        "locator": "Conceptos: bubbling/capturing y target vs currentTarget",
+        "url": "https://app.notion.com/p/3dc82a6d6561816fa55cdcc7ca871d73"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Evento bubbling en JavaScript (freeCodeCamp)",
+        "url": "https://www.freecodecamp.org/espanol/news/evento-bubbling-en-javascript-como-funciona-la-propagacion-de-eventos-con-ejemplos/"
+      },
+      {
+        "type": "article",
+        "title": "Propagación y captura (javascript.info)",
+        "url": "https://es.javascript.info/bubbling-and-capturing"
+      }
+    ]
+  },
+  "gestor-tareas-delegation": {
+    "title": "GestorTareas con data-*",
+    "content": "# GestorTareas con data-*\n\nConstruir la clase **GestorTareas** con lista dinámica. Completar y eliminar van por **un solo listener** en el padre.\n\nTipado estricto con selectores, `Element.closest()` y atributos `data-*` en TypeScript. Evitar listeners repetitivos en elementos dinámicos para no saturar memoria.\n\nAsistencia de la práctica: formulario de Google Forms enlazado en la nota.",
+    "sourceRefs": [
+      {
+        "label": "Práctica 4 — Delegación de Eventos y Ciclo de Vida en el DOM",
+        "locator": "Actividad: GestorTareas, closest, data-*",
+        "url": "https://app.notion.com/p/3dc82a6d6561816fa55cdcc7ca871d73"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Delegación de eventos (freeCodeCamp)",
+        "url": "https://www.freecodecamp.org/espanol/news/delegacion-de-eventos-en-javascript-explicado-con-un-ejemplo/"
+      }
+    ]
   }
 }
