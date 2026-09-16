@@ -5,7 +5,7 @@
   "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, hasta la elección de estilos (capas, cliente-servidor, monolito, microservicios y SOA).",
   "canvas": {
     "width": 1280,
-    "height": 4180,
+    "height": 4320,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -898,7 +898,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 420
+        "height": 560
       },
       "zIndex": -1,
       "data": {
@@ -971,6 +971,23 @@
         "label": "Laboratorio: decidir el estilo",
         "order": "43",
         "detail": "Simulador Netlify: elegir según necesidades, restricciones, calidad, riesgos y operación."
+      }
+    },
+    {
+      "id": "practica-05-architectural-styles",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3930
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Práctica 05: estilos arquitectónicos",
+        "order": "44",
+        "detail": "Explicar características, componentes y trade-offs; entregar la práctica evaluada (assignment 16569)."
       }
     },
     {
@@ -1394,6 +1411,24 @@
       "target": "style-decision-lab",
       "sourceHandle": "right",
       "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-layered-client-server-practica-05",
+      "source": "layered-client-server",
+      "target": "practica-05-architectural-styles",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-monolith-microservices-soa-practica-05",
+      "source": "monolith-microservices-soa",
+      "target": "practica-05-architectural-styles",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
       "route": "straight",
       "arrow": true
     }
