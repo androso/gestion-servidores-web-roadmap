@@ -746,5 +746,60 @@
         "url": "https://www.freecodecamp.org/espanol/news/delegacion-de-eventos-en-javascript-explicado-con-un-ejemplo/"
       }
     ]
+  },
+  "nextjs-fullstack": {
+    "title": "Next.js: framework full stack",
+    "content": "# Next.js: framework full stack\n\nNext.js frente a React: React es una **librería de UI**; Next.js es un **framework** con routing, SSR/SSG y APIs en el mismo proyecto.\n\nEncaja en sistemas orientados a eventos porque frontend y backend conviven en una sola base: modalidad **FULL STACK**.\n\nClase 14 (miércoles 02/09/2026): introducción, características, App Router, renderizado, ventajas/desventajas y casos de uso.\n\n### Fuentes\n- **Clase 14 — 02/09/2026 — Next.js: Framework Full Stack** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — 02/09/2026 — Next.js: Framework Full Stack",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3de82a6d656181d2bda4f0558389a3ff"
+      }
+    ]
+  },
+  "nextjs-rendering": {
+    "title": "SSR, SSG, ISR y CSR",
+    "content": "# SSR, SSG, ISR y CSR\n\nNext.js permite **mezclar estrategias de renderizado según la página**:\n\n- **SSR** — servidor en cada petición\n- **SSG** — HTML estático en build\n- **ISR** — regeneración incremental\n- **CSR** — en el cliente\n\nElegir la estrategia según frescura de datos, SEO y carga del servidor.\n\n### Fuentes\n- **Clase 14 — 02/09/2026 — Next.js: Framework Full Stack** — Conceptos / Renderizado",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — 02/09/2026 — Next.js: Framework Full Stack",
+        "locator": "Conceptos / Renderizado",
+        "url": "https://app.notion.com/p/3de82a6d656181d2bda4f0558389a3ff"
+      }
+    ]
+  },
+  "nextjs-app-router": {
+    "title": "App Router y Server Components",
+    "content": "# App Router y Server Components\n\nEl **App Router** se basa en el sistema de archivos: rutas, **Server Components**, layouts anidados y streaming.\n\nTambién cubre optimización de imágenes, CSS/SASS y API routes en el mismo proyecto.\n\n### Fuentes\n- **Clase 14 — 02/09/2026 — Next.js: Framework Full Stack** — Conceptos / App Router",
+    "sourceRefs": [
+      {
+        "label": "Clase 14 — 02/09/2026 — Next.js: Framework Full Stack",
+        "locator": "Conceptos / App Router",
+        "url": "https://app.notion.com/p/3de82a6d656181d2bda4f0558389a3ff"
+      }
+    ]
+  },
+  "debounce-pattern": {
+    "title": "Patrón Debounce",
+    "content": "# Patrón Debounce\n\nEventos de alta frecuencia (p. ej. `input` continuo en un buscador) sobrecargan el hilo si cada tecla dispara trabajo pesado.\n\n**Debounce** cancela y retrasa la ejecución: la acción corre cuando el usuario **pausa**, no en cada disparo.\n\nSe apoya en closures y funciones de orden superior para retener el estado del temporizador.\n\nPráctica 5 presencial en TypeScript (fecha UNAVAILABLE).\n\n### Fuentes\n- **Práctica 5 — UNAVAILABLE — Control de Flujo de Eventos: Patrón Debounce** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — UNAVAILABLE — Control de Flujo de Eventos: Patrón Debounce",
+        "locator": "Objetivo / Idea clave",
+        "url": "https://app.notion.com/p/3de82a6d6561815c956fc29c2e910669"
+      }
+    ]
+  },
+  "debounce-typescript": {
+    "title": "debounce tipado con genéricos",
+    "content": "# debounce tipado con genéricos\n\nImplementar una utilidad `debounce` tipada con **genéricos** y `Parameters<T>` en TypeScript. Conectarla a un campo de **búsqueda en vivo**.\n\nContrastar eventos nativos (cada tecla) frente a las operaciones reales que ocurren **después de la pausa** del usuario.\n\nHerramientas de la práctica: VS Code, `tsc -w`, navegador. Estilos en `styles-1.css`.\n\n### Fuentes\n- **Práctica 5 — UNAVAILABLE — Control de Flujo de Eventos: Patrón Debounce** — Conceptos / Actividad / Tipado avanzado",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — UNAVAILABLE — Control de Flujo de Eventos: Patrón Debounce",
+        "locator": "Conceptos / Actividad / Tipado avanzado",
+        "url": "https://app.notion.com/p/3de82a6d6561815c956fc29c2e910669"
+      }
+    ]
   }
 }
