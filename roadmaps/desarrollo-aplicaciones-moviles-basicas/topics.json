@@ -170,5 +170,32 @@
         "url": "https://app.notion.com/p/3d882a6d6561818b95fbc2dcbd911f66"
       }
     ]
+  },
+  "user-update-service": {
+    "title": "Consumo del servicio de actualización de usuario",
+    "content": "# Consumo del servicio de actualización de usuario\n\nObjetivo: consumir el servicio de actualización de usuario en apps móviles multiplataforma: integrar React Context con vistas nativas escroleables, serializar con FormData (`multipart/form-data`), autenticar con JWT Bearer y manejar errores HTTP de producción con Axios.\n\n### Conceptos cubiertos\n- Consumo síncrono/asíncrono de endpoints de producción (modelo de dominio ↔ respuestas del servidor)\n- Clientes HTTP asíncronos con TypeScript (`Promise<T>`): métodos POST y PUT\n- Seguridad de sesión: tokens JWT con prefijo Bearer\n- Integración de estados globales (React Context) con datos de perfil en dispositivo\n\n> Actualizar el perfil del usuario requiere un cliente HTTP tipado (POST/PUT) con FormData, autenticación Bearer JWT y manejo defensivo de errores Axios para no romper la UI.\n\nNo hay tarea formal en esta clase; aplicar más adelante en el proyecto. Herramientas: React Native, Expo, React Context, Axios, TypeScript, FormData, JWT Bearer.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Consumo de servicio de actualización del usuario** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 18**",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Consumo de servicio de actualización del usuario",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3de82a6d656181d096f4d58c7a41f873"
+      },
+      {
+        "label": "Lección Canvas — Clase 18",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-18"
+      }
+    ]
+  },
+  "formdata-multipart": {
+    "title": "FormData multipart y errores Axios",
+    "content": "# FormData multipart y errores Axios\n\nSerializar datos de perfil con objetos binarios nativos `FormData` (`multipart/form-data`). Tratamiento defensivo de errores HTTP: `try-catch` + `axios.isAxiosError()`; aislar 400/500 y alertas amigables en la UI.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Consumo de servicio de actualización del usuario** — Conceptos: FormData / Axios errors",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Consumo de servicio de actualización del usuario",
+        "locator": "Conceptos: FormData / Axios errors",
+        "url": "https://app.notion.com/p/3de82a6d656181d096f4d58c7a41f873"
+      }
+    ]
   }
 }

@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer, panel ShopEase y práctica de UI de calculadora.",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer, panel ShopEase, perfil y consumo del servicio de actualización de usuario.",
   "canvas": {
     "width": 1280,
-    "height": 1722,
+    "height": 1900,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -317,6 +317,40 @@
       }
     },
     {
+      "id": "user-update-service",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1650
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Consumo del servicio de actualización de usuario",
+        "order": "13",
+        "detail": "POST/PUT tipados con FormData, Bearer JWT y manejo defensivo Axios para actualizar perfil."
+      }
+    },
+    {
+      "id": "formdata-multipart",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1654
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "FormData multipart y errores Axios",
+        "order": "14",
+        "detail": "Serializar perfil con FormData; try-catch + axios.isAxiosError para 400/500 en UI."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -325,7 +359,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1432
+        "height": 1570
       },
       "zIndex": -1,
       "data": {
@@ -448,6 +482,33 @@
       "target": "calculator-ui-practice",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-calculator-ui-practice-user-update-service",
+      "source": "calculator-ui-practice",
+      "target": "user-update-service",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-profile-ui-auth-state-user-update-service",
+      "source": "profile-ui-auth-state",
+      "target": "user-update-service",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-user-update-service-formdata-multipart",
+      "source": "user-update-service",
+      "target": "formdata-multipart",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     }
