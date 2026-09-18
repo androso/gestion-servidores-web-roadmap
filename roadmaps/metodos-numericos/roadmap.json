@@ -5,7 +5,7 @@
   "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección y Newton para raíces de ecuaciones no lineales.",
   "canvas": {
     "width": 1280,
-    "height": 1620,
+    "height": 1780,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -262,7 +262,7 @@
       "data": {
         "label": "Método de Newton",
         "order": "09",
-        "detail": "Aproxima raíces de ecuaciones no lineales desde una estimación inicial; formulación, criterios de parada, pseudocódigo y error iterativo (continuación de bisección)."
+        "detail": "Aproxima raíces de ecuaciones no lineales desde una estimación inicial; formulación iterativa, tolerancia/error y tablas de iteraciones (continuación de bisección)."
       }
     },
     {
@@ -279,7 +279,24 @@
       "data": {
         "label": "Ejemplos guiados de Newton",
         "order": "10",
-        "detail": "Ejercicios paso a paso (incl. notebook Ejemplo Clase 16: partícula en plano inclinado) calculando iteraciones, error y precisión."
+        "detail": "Ejercicios paso a paso calculando iteraciones, error y precisión; tablas de convergencia (incl. ejemplos de Clase 18)."
+      }
+    },
+    {
+      "id": "python-newton",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1476
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Newton en Python",
+        "order": "11",
+        "detail": "Implementar el algoritmo iterativo en Python/Jupyter y registrar tablas de iteraciones y errores."
       }
     },
     {
@@ -307,7 +324,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 280
+        "height": 420
       },
       "zIndex": -1,
       "data": {
@@ -412,6 +429,24 @@
       "target": "newton-examples",
       "sourceHandle": "right",
       "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-newton-method-python-newton",
+      "source": "newton-method",
+      "target": "python-newton",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-newton-examples-python-newton",
+      "source": "newton-examples",
+      "target": "python-newton",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
       "route": "straight",
       "arrow": true
     }
