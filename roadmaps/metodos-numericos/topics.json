@@ -108,7 +108,7 @@
   },
   "newton-method": {
     "title": "Método de Newton",
-    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada**.\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo** (la precisión de cada aproximación). Es continuación del método de bisección: conviene repasarlo antes.\n\nMaterial de la nota (actualizado 12/09/2026): PDF `Clase 16 - Análisis Numérico.pdf` (antes UNAVAILABLE).\n\nIdea clave: Newton parte de una estimación inicial; el error en cada iteración mide la precisión de la raíz aproximada.",
+    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada** (tolerancia y error).\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo**. La Clase 18 (presencial 17/09/2026, Semana 09) continúa el método: formulación matemática, proceso iterativo y tablas de iteraciones para analizar convergencia y precisión. Es continuación de bisección: conviene repasarlo, junto con funciones no lineales, derivadas y métodos iterativos.\n\nMaterial de la nota Clase 16 (actualizado 12/09/2026): PDF `Clase 16 - Análisis Numérico.pdf` (antes UNAVAILABLE).\n\nIdea clave: Newton actualiza una estimación inicial con la fórmula iterativa hasta cumplir el criterio de parada; las tablas de iteraciones permiten analizar convergencia y precisión.",
     "sourceRefs": [
       {
         "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
@@ -119,17 +119,43 @@
         "label": "Canvas — Clase 16 10/09/2026",
         "locator": "Clase 16",
         "url": "https://univo.instructure.com/courses/1739/pages/clase-16-10-slash-09-slash-2026"
+      },
+      {
+        "label": "Clase 18 — 17/09/2026 — Método de Newton: resolución de ecuaciones no lineales e implementación en Python",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3df82a6d656181908a74d21eb5b07236"
+      },
+      {
+        "label": "Canvas Clase 18 - 17/09/2026",
+        "locator": "page",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-18-17-slash-09-slash-2026"
       }
     ]
   },
   "newton-examples": {
     "title": "Ejemplos guiados de Newton",
-    "content": "# Ejemplos guiados de Newton\n\nEn la sesión se resuelven **ejercicios guiados** calculando aproximaciones sucesivas y error.\n\nNotebooks de la nota (Python/Jupyter, también como PDF):\n\n- `Ejemplos - Método de Newton - Clase 16.ipynb`\n- `Ejemplo - Clase 16.ipynb` (partícula en plano inclinado)\n\nAplican Newton: iteraciones, error y precisión de las aproximaciones.",
+    "content": "# Ejemplos guiados de Newton\n\nEn las sesiones se resuelven **ejercicios guiados** calculando aproximaciones sucesivas, error y precisión; las **tablas de iteraciones** muestran convergencia de las raíces aproximadas.\n\nNotebooks de Clase 16 (Python/Jupyter, también como PDF):\n\n- `Ejemplos - Método de Newton - Clase 16.ipynb`\n- `Ejemplo - Clase 16.ipynb` (partícula en plano inclinado)\n\nClase 18: procedimiento de Newton + ejercicios prácticos registrando iteraciones y errores. Recursos: PDF `Clase-18-Semana-09-AMN.pdf` y notebook `Ejemplos-Clase-18`.",
     "sourceRefs": [
       {
         "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
         "locator": "Actividad / Archivos (Ejemplos-Metodo-de-Newton-Clase-16 y Ejemplo-Clase-16)",
         "url": "https://app.notion.com/p/3d882a6d656181fcb6f5fc81e0115c2b"
+      },
+      {
+        "label": "Clase 18 — 17/09/2026 — Método de Newton",
+        "locator": "Actividad / Archivos",
+        "url": "https://app.notion.com/p/3df82a6d656181908a74d21eb5b07236"
+      }
+    ]
+  },
+  "python-newton": {
+    "title": "Newton en Python",
+    "content": "# Newton en Python\n\nLa Clase 18 pide implementar el algoritmo iterativo de Newton en **Python / Jupyter** y **registrar tablas de iteraciones y errores** (criterio de parada).\n\nMisma idea que bisección en Python: el código debe reflejar el procedimiento analítico. Notebook de ejemplos adjunto: `Ejemplos-Clase-18.ipynb` (también como PDF).",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 17/09/2026 — Método de Newton: resolución de ecuaciones no lineales e implementación en Python",
+        "locator": "Herramientas / Archivos / Conceptos (implementación Python)",
+        "url": "https://app.notion.com/p/3df82a6d656181908a74d21eb5b07236"
       }
     ]
   },
