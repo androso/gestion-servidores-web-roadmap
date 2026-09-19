@@ -471,5 +471,133 @@
         "url": "https://app.notion.com/p/3d182a6d6561819098b8e19940f8e7d2"
       }
     ]
+  },
+  "t-uml-fundamentals": {
+    "title": "Fundamentos de UML",
+    "content": "# Fundamentos de UML\n\nIntroducir el modelado UML: por qué representar un sistema antes de construirlo. UML sirve para comunicar estructura y comportamiento antes de construir.\n\n### Conceptos cubiertos\n- Fundamentos de UML\n- Representar un sistema antes de construirlo\n\n### Fuentes\n- **Sesión 13 — 04/09/2026 — Introducción al modelado UML** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 13 — 04/09/2026 — Introducción al modelado UML",
+        "locator": "Objetivo de aprendizaje / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181e4ad50ceec466d4fa4"
+      },
+      {
+        "label": "Canvas — Sesión 13",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-13-%7Cviernes-4-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-uml-estructural-vs-comportamiento": {
+    "title": "Diagramas estructurales vs. de comportamiento",
+    "content": "# Diagramas estructurales vs. de comportamiento\n\nDiferenciar diagramas estructurales vs. de comportamiento y relacionar cada tipo con las preguntas que responde.\n\n### Conceptos cubiertos\n- Diagramas estructurales vs. de comportamiento\n\n> UML sirve para comunicar estructura y comportamiento antes de construir; el diagrama correcto depende de la pregunta que se quiere responder sobre el sistema.\n\n### Fuentes\n- **Sesión 13 — Introducción al modelado UML** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 13 — 04/09/2026 — Introducción al modelado UML",
+        "locator": "Conceptos: diagramas estructurales vs. de comportamiento",
+        "url": "https://app.notion.com/p/3e082a6d656181e4ad50ceec466d4fa4"
+      },
+      {
+        "label": "Canvas — Sesión 13",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-13-%7Cviernes-4-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-uml-seleccion-diagrama": {
+    "title": "Selección del diagrama apropiado",
+    "content": "# Selección del diagrama apropiado\n\nSeleccionar el diagrama según la perspectiva: el diagrama correcto depende de la pregunta que se quiere responder sobre el sistema.\n\n### Conceptos cubiertos\n- Selección del diagrama apropiado según la perspectiva\n- Quiz Genially: qué diagrama utilizar\n\n### Fuentes\n- **Sesión 13 — Introducción al modelado UML** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 13 — 04/09/2026 — Introducción al modelado UML",
+        "locator": "Conceptos: selección del diagrama / Quiz Genially",
+        "url": "https://app.notion.com/p/3e082a6d656181e4ad50ceec466d4fa4"
+      },
+      {
+        "label": "Canvas — Sesión 13",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-13-%7Cviernes-4-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-caso-reservaya-uml": {
+    "title": "Caso ReservaYA en UML",
+    "content": "# Caso ReservaYA en UML\n\nAplicar el modelado UML al caso ReservaYA y al proyecto integrador: relacionar cada tipo de diagrama con las preguntas que responde en ese dominio.\n\n### Conceptos cubiertos\n- Caso de estudio ReservaYA\n\n### Fuentes\n- **Sesión 13 — Introducción al modelado UML** — Objetivo / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Sesión 13 — 04/09/2026 — Introducción al modelado UML",
+        "locator": "Objetivo / Conceptos: caso ReservaYA",
+        "url": "https://app.notion.com/p/3e082a6d656181e4ad50ceec466d4fa4"
+      },
+      {
+        "label": "Canvas — Sesión 13",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-13-%7Cviernes-4-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "t-diagrama-clases": {
+    "title": "Diagrama de clases",
+    "content": "# Diagrama de clases\n\nConstruir un diagrama de clases: identificar clases, atributos, métodos y relaciones; aplicar a ReservaYA y al proyecto integrador.\n\nEl diagrama de clases documenta la estructura del dominio: qué conoce cada clase, qué hace y cómo se relacionan, con multiplicidades explícitas.\n\n### Fuentes\n- **Sesión 14 — 05/09/2026 — Diagrama de clases** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 14 — 05/09/2026 — Diagrama de clases",
+        "locator": "Objetivo de aprendizaje / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181069c91f12445e22c1c"
+      },
+      {
+        "label": "Canvas — Sesión 14",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-14-%7Csabado-5-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-clase-anatomia": {
+    "title": "Anatomía de una clase",
+    "content": "# Anatomía de una clase\n\nIdentificar clases, atributos y métodos. Anatomía de una clase: nombre, atributos y métodos.\n\n### Fuentes\n- **Sesión 14 — Diagrama de clases** — Conceptos: anatomía de una clase",
+    "sourceRefs": [
+      {
+        "label": "Sesión 14 — 05/09/2026 — Diagrama de clases",
+        "locator": "Conceptos: anatomía de una clase (nombre, atributos, métodos)",
+        "url": "https://app.notion.com/p/3e082a6d656181069c91f12445e22c1c"
+      },
+      {
+        "label": "Canvas — Sesión 14",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-14-%7Csabado-5-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-visibilidad-uml": {
+    "title": "Visibilidad (+, −, #)",
+    "content": "# Visibilidad (+, −, #)\n\nVisibilidad en el diagrama de clases: **+** público, **−** privado y **#** protegido.\n\n### Fuentes\n- **Sesión 14 — Diagrama de clases** — Conceptos: visibilidad",
+    "sourceRefs": [
+      {
+        "label": "Sesión 14 — 05/09/2026 — Diagrama de clases",
+        "locator": "Conceptos: visibilidad (+ público, − privado, # protegido)",
+        "url": "https://app.notion.com/p/3e082a6d656181069c91f12445e22c1c"
+      },
+      {
+        "label": "Canvas — Sesión 14",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-14-%7Csabado-5-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-relaciones-multiplicidades": {
+    "title": "Relaciones y multiplicidades",
+    "content": "# Relaciones y multiplicidades\n\nDiferenciar asociación, herencia, agregación y composición; interpretar multiplicidades explícitas en el diagrama de clases.\n\nCaso ReservaYA → diagrama de clases del proyecto integrador.\n\n### Conceptos cubiertos\n- Relaciones: asociación, herencia, agregación, composición\n- Multiplicidades\n\n### Fuentes\n- **Sesión 14 — Diagrama de clases** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 14 — 05/09/2026 — Diagrama de clases",
+        "locator": "Conceptos: relaciones y multiplicidades / Caso ReservaYA",
+        "url": "https://app.notion.com/p/3e082a6d656181069c91f12445e22c1c"
+      },
+      {
+        "label": "Canvas — Sesión 14",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-14-%7Csabado-5-de-septiembre-de-2026"
+      }
+    ]
   }
 }

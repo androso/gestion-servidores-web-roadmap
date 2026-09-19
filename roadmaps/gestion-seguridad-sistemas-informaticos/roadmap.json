@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-seguridad-sistemas-informaticos",
   "title": "Gestión de Seguridad de Sistemas Informáticos",
-  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0 y fundamentos de criptografía.",
+  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0, criptografía y funciones hash para integridad.",
   "canvas": {
     "width": 1280,
-    "height": 1716,
+    "height": 1960,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -317,6 +317,57 @@
       }
     },
     {
+      "id": "hash-functions-integrity",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1650
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Funciones hash e integridad",
+        "order": "13",
+        "detail": "Un hash es una huella digital: cualquier cambio produce un valor distinto."
+      }
+    },
+    {
+      "id": "detecting-modifications",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1654
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Detección de modificaciones",
+        "order": "14",
+        "detail": "Aplicar hashes para detectar cambios en archivos o datos."
+      }
+    },
+    {
+      "id": "integrasoft-hash-case",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1786
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Caso IntegraSoft CA",
+        "order": "15",
+        "detail": "Analizar escenarios de ciberseguridad con hashes (caso IntegraSoft CA)."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -325,7 +376,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1410
+        "height": 1688
       },
       "zIndex": -1,
       "data": {
@@ -475,6 +526,42 @@
       "target": "symmetric-asymmetric-hash",
       "sourceHandle": "right",
       "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-crypto-fundamentals-hash-functions-integrity",
+      "source": "crypto-fundamentals",
+      "target": "hash-functions-integrity",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-symmetric-asymmetric-hash-hash-functions-integrity",
+      "source": "symmetric-asymmetric-hash",
+      "target": "hash-functions-integrity",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-hash-functions-integrity-detecting-modifications",
+      "source": "hash-functions-integrity",
+      "target": "detecting-modifications",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-detecting-modifications-integrasoft-hash-case",
+      "source": "detecting-modifications",
+      "target": "integrasoft-hash-case",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
       "route": "straight",
       "arrow": true
     }

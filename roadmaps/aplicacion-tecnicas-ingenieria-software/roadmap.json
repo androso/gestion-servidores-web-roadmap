@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "aplicacion-tecnicas-ingenieria-software",
   "title": "Aplicación de Técnicas de Ingeniería de Software",
-  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML.",
+  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML (fundamentos y diagrama de clases).",
   "canvas": {
     "width": 1300,
-    "height": 1500,
+    "height": 1920,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -94,6 +94,22 @@
       },
       "data": {
         "label": "Práctica 01 — Modelado UML"
+      }
+    },
+    {
+      "id": "section-uml-sesiones",
+      "type": "section",
+      "zIndex": -1,
+      "position": {
+        "x": 40,
+        "y": 1424
+      },
+      "size": {
+        "width": 1220,
+        "height": 440
+      },
+      "data": {
+        "label": "Modelado UML — fundamentos y diagrama de clases"
       }
     },
     {
@@ -507,6 +523,142 @@
         "detail": "Kanban en Trello/Jira y PDF único con portada, justificación, tablero y diagrama.",
         "week": "Semana 5"
       }
+    },
+    {
+      "id": "t-uml-fundamentals",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1450
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Fundamentos de UML",
+        "order": "24",
+        "detail": "Representar el sistema antes de construirlo: UML comunica estructura y comportamiento."
+      }
+    },
+    {
+      "id": "s-uml-estructural-vs-comportamiento",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1454
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Diagramas estructurales vs. de comportamiento",
+        "order": "25",
+        "detail": "Diferenciar qué muestra la estructura estática y qué muestra el comportamiento."
+      }
+    },
+    {
+      "id": "s-uml-seleccion-diagrama",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1454
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Selección del diagrama apropiado",
+        "order": "26",
+        "detail": "El diagrama correcto depende de la pregunta que se quiere responder sobre el sistema."
+      }
+    },
+    {
+      "id": "s-caso-reservaya-uml",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1584
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Caso ReservaYA en UML",
+        "order": "27",
+        "detail": "Aplicar la selección de diagramas al caso ReservaYA y al proyecto integrador."
+      }
+    },
+    {
+      "id": "t-diagrama-clases",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1714
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Diagrama de clases",
+        "order": "28",
+        "detail": "Documentar la estructura del dominio: qué conoce cada clase, qué hace y cómo se relacionan."
+      }
+    },
+    {
+      "id": "s-clase-anatomia",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1718
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Anatomía de una clase",
+        "order": "29",
+        "detail": "Nombre, atributos y métodos; identificar clases a partir del dominio."
+      }
+    },
+    {
+      "id": "s-visibilidad-uml",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1584
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Visibilidad (+, −, #)",
+        "order": "30",
+        "detail": "Público (+), privado (−) y protegido (#) en atributos y métodos."
+      }
+    },
+    {
+      "id": "s-relaciones-multiplicidades",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1718
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Relaciones y multiplicidades",
+        "order": "31",
+        "detail": "Asociación, herencia, agregación y composición, con multiplicidades explícitas."
+      }
     }
   ],
   "edges": [
@@ -742,6 +894,105 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-modelado-uml-t-uml-fundamentals",
+      "source": "t-modelado-uml",
+      "target": "t-uml-fundamentals",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-uml-fundamentals-s-uml-estructural-vs-comportamiento",
+      "source": "t-uml-fundamentals",
+      "target": "s-uml-estructural-vs-comportamiento",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-uml-estructural-vs-comportamiento-s-uml-seleccion-diagrama",
+      "source": "s-uml-estructural-vs-comportamiento",
+      "target": "s-uml-seleccion-diagrama",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-uml-estructural-vs-comportamiento-s-caso-reservaya-uml",
+      "source": "s-uml-estructural-vs-comportamiento",
+      "target": "s-caso-reservaya-uml",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-uml-seleccion-diagrama-s-caso-reservaya-uml",
+      "source": "s-uml-seleccion-diagrama",
+      "target": "s-caso-reservaya-uml",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-uml-fundamentals-t-diagrama-clases",
+      "source": "t-uml-fundamentals",
+      "target": "t-diagrama-clases",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-caso-reservaya-uml-t-diagrama-clases",
+      "source": "s-caso-reservaya-uml",
+      "target": "t-diagrama-clases",
+      "sourceHandle": "left",
+      "targetHandle": "right",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagrama-clases-s-clase-anatomia",
+      "source": "t-diagrama-clases",
+      "target": "s-clase-anatomia",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-caso-reservaya-uml-s-visibilidad-uml",
+      "source": "s-caso-reservaya-uml",
+      "target": "s-visibilidad-uml",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-visibilidad-uml-s-relaciones-multiplicidades",
+      "source": "s-visibilidad-uml",
+      "target": "s-relaciones-multiplicidades",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-clase-anatomia-s-relaciones-multiplicidades",
+      "source": "s-clase-anatomia",
+      "target": "s-relaciones-multiplicidades",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
       "arrow": true
     }
   ]

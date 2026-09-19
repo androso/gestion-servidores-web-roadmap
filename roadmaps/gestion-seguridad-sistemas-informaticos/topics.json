@@ -130,5 +130,65 @@
         "url": "https://app.notion.com/p/3d882a6d6561817c8a6df3c3090b7acd"
       }
     ]
+  },
+  "hash-functions-integrity": {
+    "title": "Funciones hash e integridad",
+    "content": "# Funciones hash e integridad\n\nComprender funciones hash y su rol en la integridad de la información. Un hash es una huella digital: cualquier cambio en los datos produce un valor distinto y permite verificar integridad.\n\n### Conceptos cubiertos\n- Funciones hash e integridad (huella digital)\n- Referencia NIST Hash Functions\n- Recurso interactivo Google Apps Script / Simulador Hash\n\n### Fuentes\n- **Clase 9 — 15/09/2026 — Funciones Hash e Integridad** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — 15/09/2026 — Funciones Hash e Integridad",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181b7af68d5f316b46b77"
+      },
+      {
+        "label": "Canvas — Hash e integridad",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/hash-e-integridad"
+      },
+      {
+        "label": "NIST Hash Functions",
+        "locator": "Referencia citada en la nota de clase",
+        "url": "https://csrc.nist.gov/projects/hash-functions"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "NIST Hash Functions",
+        "url": "https://csrc.nist.gov/projects/hash-functions"
+      }
+    ]
+  },
+  "detecting-modifications": {
+    "title": "Detección de modificaciones",
+    "content": "# Detección de modificaciones\n\nAplicar hashes para detectar modificaciones en archivos o datos.\n\n### Fuentes\n- **Clase 9 — Funciones Hash e Integridad** — Objetivo / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — 15/09/2026 — Funciones Hash e Integridad",
+        "locator": "Objetivo / Conceptos: detección de modificaciones",
+        "url": "https://app.notion.com/p/3e082a6d656181b7af68d5f316b46b77"
+      },
+      {
+        "label": "Canvas — Hash e integridad",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/hash-e-integridad"
+      }
+    ]
+  },
+  "integrasoft-hash-case": {
+    "title": "Caso IntegraSoft CA",
+    "content": "# Caso IntegraSoft CA\n\nAnalizar escenarios de ciberseguridad (caso IntegraSoft CA) aplicando funciones hash e integridad.\n\n### Fuentes\n- **Clase 9 — Funciones Hash e Integridad** — Objetivo / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 9 — 15/09/2026 — Funciones Hash e Integridad",
+        "locator": "Conceptos: caso IntegraSoft CA",
+        "url": "https://app.notion.com/p/3e082a6d656181b7af68d5f316b46b77"
+      },
+      {
+        "label": "Canvas — Hash e integridad",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/hash-e-integridad"
+      }
+    ]
   }
 }

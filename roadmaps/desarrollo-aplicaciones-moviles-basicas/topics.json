@@ -162,12 +162,22 @@
   },
   "calculator-ui-practice": {
     "title": "UI de calculadora básica (práctica)",
-    "content": "# UI de calculadora básica (práctica)\n\nConstruir e interpretar una UI de calculadora básica en React Native y documentar entrega.\n\n### Conceptos cubiertos\n- UI de calculadora básica en React Native\n- Fundamentos de apps nativas según la práctica\n- Entrega Canvas PDF/imagen\n\n### Fuentes\n- **Práctica 04 — 11/09/2026 — Calculadora básica UI** — Objetivo / Idea clave",
+    "content": "# UI de calculadora básica (práctica)\n\nComprender fundamentos de UI nativa con React Native mediante el desarrollo de una app de calculadora básica. Práctica de UI: montar una calculadora básica en React Native y documentar la entrega en Canvas (PDF o imagen).\n\n### Conceptos cubiertos\n- UI de calculadora básica en React Native\n- Entrega en PDF o imagen\n\n### Fuentes\n- **Práctica 04 — 11/09/2026 — Calculadora básica UI** — Objetivo / Idea clave\n- **Práctica 05 — 18/09/2026 — Calculadora básica UI** — Objetivo / Conceptos / Idea clave",
     "sourceRefs": [
       {
         "label": "Práctica 04 — 11/09/2026 — Calculadora básica UI",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3d882a6d6561818b95fbc2dcbd911f66"
+      },
+      {
+        "label": "Práctica 05 — 18/09/2026 — Calculadora básica UI",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181cdb65cdd788c129d6b"
+      },
+      {
+        "label": "Canvas — Práctica 05",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1763/pages/practica-05-18-slash-09-slash-2026"
       }
     ]
   },
