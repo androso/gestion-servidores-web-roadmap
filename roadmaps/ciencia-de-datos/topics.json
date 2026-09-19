@@ -855,5 +855,85 @@
         "url": "https://app.notion.com/p/3d382a6d656181d1a839e43055a54d95"
       }
     ]
+  },
+  "svm-classification": {
+    "title": "SVM para clasificación",
+    "content": "# SVM para clasificación\n\nIntroducir Máquinas de Vectores de Soporte (SVM) supervisadas para clasificación y sus ventajas en clasificación.\n\n### Conceptos cubiertos\n- SVM supervisado para clasificación\n- Ejemplos prácticos con datasets\n\n> SVM busca el hiperplano de máximo margen; kernels e hiperparámetros C/gamma controlan la forma de la frontera de decisión.\n\n### Fuentes\n- **Clase 17 — 18/09/2026 — Introducción a SVM** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
+      },
+      {
+        "label": "Canvas — Clase 17",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      }
+    ]
+  },
+  "svm-hyperplane-margin": {
+    "title": "Hiperplano, vectores de soporte y margen",
+    "content": "# Hiperplano, vectores de soporte y margen\n\nHiperplano, vectores de soporte y maximización del margen. SVM busca el hiperplano de máximo margen.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
+        "locator": "Conceptos: hiperplano, vectores de soporte, margen",
+        "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
+      },
+      {
+        "label": "Canvas — Clase 17",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      }
+    ]
+  },
+  "svm-linear-nonlinear": {
+    "title": "SVM lineal vs no lineal",
+    "content": "# SVM lineal vs no lineal\n\nSVM lineal vs no lineal: modelos lineales y no lineales.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Objetivo / Conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
+        "locator": "Conceptos: modelos lineales y no lineales",
+        "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
+      },
+      {
+        "label": "Canvas — Clase 17",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      }
+    ]
+  },
+  "svm-kernels": {
+    "title": "Funciones kernel",
+    "content": "# Funciones kernel\n\nFunciones kernel: los kernels, junto con C y gamma, controlan la forma de la frontera de decisión.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
+        "locator": "Conceptos: funciones kernel / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
+      },
+      {
+        "label": "Canvas — Clase 17",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      }
+    ]
+  },
+  "svm-c-gamma": {
+    "title": "Hiperparámetros C y gamma",
+    "content": "# Hiperparámetros C y gamma\n\nHiperparámetros C y gamma / fronteras de decisión. Kernels e hiperparámetros C/gamma controlan la forma de la frontera de decisión.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
+        "locator": "Conceptos: hiperparámetros C y gamma / Idea clave",
+        "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
+      },
+      {
+        "label": "Canvas — Clase 17",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      }
+    ]
   }
 }
