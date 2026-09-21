@@ -843,7 +843,7 @@
   },
   "style-decision-lab": {
     "title": "Laboratorio: decidir el estilo",
-    "content": "# Laboratorio: decidir el estilo\n\nLaboratorio interactivo (formativo, sin ponderación ni entrega en Canvas): completar el simulador y casos de decisión; elegir estilo considerando necesidades, restricciones, atributos de calidad, riesgos y complejidad operativa — no solo ventajas.\n\nLa página de clase no adjunta PDF de diapositivas; el material de la sesión es el laboratorio web.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA** — Actividad / Recursos\n- **Práctica 05 — 16/09/2026 — Estilos arquitectónicos de sistemas** — Idea clave (trade-offs al elegir un estilo)",
+    "content": "# Laboratorio: decidir el estilo\n\nLaboratorio interactivo (formativo, sin ponderación ni entrega en Canvas): completar el simulador y casos de decisión; elegir estilo considerando necesidades, restricciones, atributos de calidad, riesgos y complejidad operativa — no solo ventajas.\n\nLa página de clase no adjunta PDF de diapositivas; el material de la sesión es el laboratorio web.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA** — Actividad / Recursos\n- **Práctica 05 — 16/09/2026 — Estilos arquitectónicos de sistemas** — Idea clave (trade-offs al elegir un estilo)\n- **Clase 17 — Comparación y selección de estilos** — Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 16 — 09/09/2026 — Estilos arquitectónicos: monolítica, microservicios y SOA",
@@ -854,6 +854,11 @@
         "label": "Práctica 05 — 16/09/2026 — Estilos arquitectónicos de sistemas",
         "locator": "Idea clave (trade-offs entre componentes, acoplamiento y atributos de calidad)",
         "url": "https://app.notion.com/p/3dd82a6d656181819ecec43e291ff4a3"
+      },
+      {
+        "label": "Clase 17 — Comparación y selección de estilos",
+        "locator": "Idea clave",
+        "url": "https://app.notion.com/p/3e282a6d656181f59211ebc9a7eaa107"
       }
     ],
     "resources": [
@@ -894,6 +899,65 @@
         "type": "video",
         "title": "Video práctico",
         "url": "https://youtu.be/rnpSPVBzAgg"
+      }
+    ]
+  },
+  "style-selection-criteria": {
+    "title": "Criterios de selección de estilos",
+    "content": "# Criterios de selección de estilos\n\nComparar estilos y elegir según requerimientos, drivers, restricciones y atributos de calidad — no por popularidad tecnológica.\n\n### Conceptos cubiertos\n- Comparación de estilos arquitectónicos\n- Criterios de selección según el contexto\n- Justificación de decisiones con base en atributos de calidad\n- Relación requerimientos / drivers / restricciones → estilo\n\n> Una decisión arquitectónica debe responder a las necesidades reales del caso (requerimientos, drivers, restricciones y atributos de calidad), no solo a la popularidad o actualidad de una tecnología.\n\n### Fuentes\n- **Clase 17 — 14/09/2026 — Comparación y selección de estilos arquitectónicos** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 14/09/2026 — Comparación y selección de estilos arquitectónicos",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e282a6d656181f59211ebc9a7eaa107"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Clase 17",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-17"
+      },
+      {
+        "type": "video",
+        "title": "Videoclase (YouTube)",
+        "url": "https://www.youtube.com/watch?v=IbLOGfqst3w"
+      }
+    ]
+  },
+  "conceptual-architecture-design": {
+    "title": "Diseño conceptual desde el estilo",
+    "content": "# Diseño conceptual desde el estilo\n\nTraducir el estilo elegido en componentes, responsabilidades, relaciones, dependencias e integraciones coherentes con el caso.\n\n### Conceptos cubiertos\n- Componentes y responsabilidades del sistema\n- Relaciones y dependencias entre componentes\n- Diseño conceptual coherente con el estilo seleccionado\n- Práctica con simulador interactivo\n\n> El diseño conceptual traduce el estilo elegido en componentes, responsabilidades, relaciones e integraciones coherentes con el contexto del sistema.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Diseño conceptual a partir del estilo seleccionado** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 16/09/2026 — Diseño conceptual a partir del estilo seleccionado",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e282a6d656181b0bb67ec2a15156f37"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Clase 18",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-18"
+      }
+    ]
+  },
+  "architecture-simulator-lab": {
+    "title": "Simulador de arquitectura conceptual",
+    "content": "# Simulador de arquitectura conceptual\n\nPráctica interactiva de construcción y análisis del diseño conceptual sobre el estilo seleccionado.\n\n### Fuentes\n- **Clase 18 — Diseño conceptual** — Actividad / Simulador interactivo",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — Diseño conceptual",
+        "locator": "Actividad / Simulador interactivo",
+        "url": "https://app.notion.com/p/3e282a6d656181b0bb67ec2a15156f37"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Simulador interactivo (Netlify)",
+        "url": "https://aquamarine-hotteok-9b065a.netlify.app/"
       }
     ]
   }

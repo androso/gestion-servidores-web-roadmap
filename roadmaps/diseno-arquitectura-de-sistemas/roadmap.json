@@ -5,7 +5,7 @@
   "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, hasta la elección de estilos (capas, cliente-servidor, monolito, microservicios y SOA).",
   "canvas": {
     "width": 1280,
-    "height": 4320,
+    "height": 4560,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -898,7 +898,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 560
+        "height": 800
       },
       "zIndex": -1,
       "data": {
@@ -1005,6 +1005,57 @@
         "label": "Práctica 04: escenarios y atributos",
         "order": "39",
         "detail": "Escenarios y atributos de calidad conectan requerimientos y drivers con las decisiones de arquitectura."
+      }
+    },
+    {
+      "id": "style-selection-criteria",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4070
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Criterios de selección de estilos",
+        "order": "45",
+        "detail": "Comparar estilos y elegir según requerimientos, drivers, restricciones y atributos de calidad — no por popularidad tecnológica."
+      }
+    },
+    {
+      "id": "conceptual-architecture-design",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4210
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Diseño conceptual desde el estilo",
+        "order": "46",
+        "detail": "Traducir el estilo elegido en componentes, responsabilidades, relaciones, dependencias e integraciones coherentes con el caso."
+      }
+    },
+    {
+      "id": "architecture-simulator-lab",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4214
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Simulador de arquitectura conceptual",
+        "order": "47",
+        "detail": "Práctica interactiva de construcción y análisis del diseño conceptual sobre el estilo seleccionado."
       }
     }
   ],
@@ -1429,6 +1480,33 @@
       "target": "practica-05-architectural-styles",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-style-decision-lab-style-selection-criteria",
+      "source": "style-decision-lab",
+      "target": "style-selection-criteria",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-style-selection-criteria-conceptual-architecture-design",
+      "source": "style-selection-criteria",
+      "target": "conceptual-architecture-design",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-conceptual-architecture-design-architecture-simulator-lab",
+      "source": "conceptual-architecture-design",
+      "target": "architecture-simulator-lab",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     }

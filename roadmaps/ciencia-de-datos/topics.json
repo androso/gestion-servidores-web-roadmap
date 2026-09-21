@@ -935,5 +935,45 @@
         "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
       }
     ]
+  },
+  "svm-linear-rbf-lab": {
+    "title": "Lab SVM: kernel lineal vs RBF",
+    "content": "# Lab SVM: kernel lineal vs RBF\n\nImplementar y comparar SVM lineal y RBF: EDA, entrenamiento, CV sobre C, visualización de fronteras/márgenes/SVs y matriz de confusión.\n\n### Conceptos cubiertos\n- SVM para clasificación binaria\n- Kernel lineal vs radial (RBF)\n- Hiperparámetro C y validación cruzada\n- Fronteras de decisión, márgenes y vectores de soporte\n- Matrices de confusión y métricas de clasificación\n\n> Comparar kernels y el efecto de C permite interpretar la capacidad predictiva y la forma de la frontera de decisión en SVM.\n\n### Fuentes\n- **Clase 18 — 19/09/2026 — Implementación SVM kernel lineal y radial** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 19/09/2026 — Implementación SVM kernel lineal y radial",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e282a6d65618178a33deaef9bc34716"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canvas — Clase 18",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-18-19-slash-09-slash-2026"
+      }
+    ]
+  },
+  "svm-cv-hyperparameter-c": {
+    "title": "Validación cruzada del hiperparámetro C",
+    "content": "# Validación cruzada del hiperparámetro C\n\nOptimizar C con validación cruzada e interpretar el efecto en la frontera de decisión.\n\n### Fuentes\n- **Clase 18 — Implementación SVM kernel lineal y radial** — Hiperparámetro C y validación cruzada",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — Implementación SVM kernel lineal y radial",
+        "locator": "Hiperparámetro C y validación cruzada",
+        "url": "https://app.notion.com/p/3e282a6d65618178a33deaef9bc34716"
+      }
+    ]
+  },
+  "svm-confusion-metrics": {
+    "title": "Matriz de confusión y métricas SVM",
+    "content": "# Matriz de confusión y métricas SVM\n\nEvaluar SVM lineal/RBF con matrices de confusión y métricas de clasificación.\n\n### Fuentes\n- **Clase 18 — Implementación SVM kernel lineal y radial** — Matrices de confusión y métricas",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — Implementación SVM kernel lineal y radial",
+        "locator": "Matrices de confusión y métricas",
+        "url": "https://app.notion.com/p/3e282a6d65618178a33deaef9bc34716"
+      }
+    ]
   }
 }

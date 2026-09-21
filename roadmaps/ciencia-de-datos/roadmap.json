@@ -5,7 +5,7 @@
   "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta (incluida la logística multinomial), SVM, diagnóstico de GLM y aplicación reproducible.",
   "canvas": {
     "width": 1280,
-    "height": 6120,
+    "height": 6460,
     "minZoom": 0.13,
     "maxZoom": 1.75,
     "initialViewport": { "x": 150, "y": 8, "zoom": 0.84 },
@@ -39,7 +39,7 @@
     { "id": "section-diagnostics", "type": "section", "position": { "x": 40, "y": 3440 }, "size": { "width": 1200, "height": 430 }, "zIndex": -1, "data": { "label": "05 · Diagnóstico y ejemplos aplicados" } },
     { "id": "section-applied", "type": "section", "position": { "x": 40, "y": 3910 }, "size": { "width": 1200, "height": 700 }, "zIndex": -1, "data": { "label": "06 · Flujo reproducible y checkpoints" } },
     { "id": "section-multinomial", "type": "section", "position": { "x": 40, "y": 4650 }, "size": { "width": 1200, "height": 740 }, "zIndex": -1, "data": { "label": "07 · Clasificación multinomial" } },
-    { "id": "section-svm", "type": "section", "position": { "x": 40, "y": 5410 }, "size": { "width": 1200, "height": 620 }, "zIndex": -1, "data": { "label": "08 · Máquinas de vectores de soporte" } },
+    { "id": "section-svm", "type": "section", "position": { "x": 40, "y": 5410 }, "size": { "width": 1200, "height": 900 }, "zIndex": -1, "data": { "label": "08 · Máquinas de vectores de soporte" } },
 
     { "id": "data-science", "type": "topic", "position": { "x": 90, "y": 290 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Ciencia de datos", "order": "01", "detail": "Transformar datos en decisiones, no solo ejecutar herramientas." } },
     { "id": "interdisciplinary", "type": "subtopic", "position": { "x": 540, "y": 294 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Tres pilares interdisciplinarios", "order": "02", "detail": "Estadística, computación y conocimiento del dominio." } },
@@ -114,7 +114,10 @@
     { "id": "svm-hyperplane-margin", "type": "subtopic", "position": { "x": 540, "y": 5474 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Hiperplano, vectores de soporte y margen", "order": "59", "detail": "SVM busca el hiperplano de máximo margen definido por los vectores de soporte." } },
     { "id": "svm-linear-nonlinear", "type": "subtopic", "position": { "x": 540, "y": 5614 }, "size": { "width": 330, "height": 88 }, "data": { "label": "SVM lineal vs no lineal", "order": "60", "detail": "Modelos lineales y no lineales según la separabilidad de las clases." } },
     { "id": "svm-kernels", "type": "subtopic", "position": { "x": 540, "y": 5754 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Funciones kernel", "order": "61", "detail": "Los kernels controlan la forma de la frontera de decisión." } },
-    { "id": "svm-c-gamma", "type": "subtopic", "position": { "x": 540, "y": 5894 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Hiperparámetros C y gamma", "order": "62", "detail": "C y gamma, junto con el kernel, controlan la frontera de decisión." } }
+    { "id": "svm-c-gamma", "type": "subtopic", "position": { "x": 540, "y": 5894 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Hiperparámetros C y gamma", "order": "62", "detail": "C y gamma, junto con el kernel, controlan la frontera de decisión." } },
+    { "id": "svm-linear-rbf-lab", "type": "topic", "position": { "x": 90, "y": 6034 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Lab SVM: kernel lineal vs RBF", "order": "63", "detail": "Implementar y comparar SVM lineal y RBF: EDA, entrenamiento, CV sobre C, visualización de fronteras/márgenes/SVs y matriz de confusión." } },
+    { "id": "svm-cv-hyperparameter-c", "type": "subtopic", "position": { "x": 540, "y": 6038 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Validación cruzada del hiperparámetro C", "order": "64", "detail": "Optimizar C con validación cruzada e interpretar el efecto en la frontera de decisión." } },
+    { "id": "svm-confusion-metrics", "type": "subtopic", "position": { "x": 540, "y": 6178 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Matriz de confusión y métricas SVM", "order": "65", "detail": "Evaluar SVM lineal/RBF con matrices de confusión y métricas de clasificación." } }
   ],
   "edges": [
     { "id": "e-title-node-subtitle-para", "source": "title-node", "target": "subtitle-para", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
@@ -165,6 +168,9 @@
     { "id": "e-svm-hyperplane-margin-svm-linear-nonlinear", "source": "svm-hyperplane-margin", "target": "svm-linear-nonlinear", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-svm-linear-nonlinear-svm-kernels", "source": "svm-linear-nonlinear", "target": "svm-kernels", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-svm-kernels-svm-c-gamma", "source": "svm-kernels", "target": "svm-c-gamma", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-svm-c-gamma-svm-linear-rbf-lab", "source": "svm-c-gamma", "target": "svm-linear-rbf-lab", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-svm-linear-rbf-lab-svm-cv-hyperparameter-c", "source": "svm-linear-rbf-lab", "target": "svm-cv-hyperparameter-c", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-svm-linear-rbf-lab-svm-confusion-metrics", "source": "svm-linear-rbf-lab", "target": "svm-confusion-metrics", "sourceHandle": "bottom", "targetHandle": "left", "route": "bezier", "arrow": true },
     { "id": "e-count-outcomes-equidispersion", "source": "count-outcomes", "target": "equidispersion", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-equidispersion-log-link", "source": "equidispersion", "target": "log-link", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-log-link-multiplicative-effects", "source": "log-link", "target": "multiplicative-effects", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
