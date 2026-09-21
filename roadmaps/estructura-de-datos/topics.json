@@ -497,5 +497,81 @@
         "url": "https://univo.instructure.com/courses/1748/pages/clase-15-funciones-y-clases-08-09-26"
       }
     ]
+  },
+  "python-lambda": {
+    "title": "Funciones anónimas (lambda)",
+    "content": "# Funciones anónimas (lambda)\n\nPráctica 5 (14/09/2026): una función tradicional de una sola línea se puede resumir en una **expresión lambda**.\n\n```python\ndef calcular_iva(precio):\n    return precio * 0.13\n\ncalcular_iva_lambda = lambda precio: precio * 0.13\nprint(\"IVA normal:\", calcular_iva(100))\nprint(\"IVA lambda:\", calcular_iva_lambda(100))\n# IVA normal: 13.0\n# IVA lambda: 13.0\n```\n\nLa lambda no reemplaza a `def` en general: resume lógica de una expresión cuando no hace falta un bloque nombrado largo.\n\n### Fuentes\n- **Práctica 5 — 14/09/2026 — Funciones Anónimas (Lambda) en Python** — note `3e282a6d-6561-819a-99f6-f4d0903ad1f9` · sección 1",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — 14/09/2026 — Funciones Anónimas (Lambda) en Python",
+        "locator": "3e282a6d-6561-819a-99f6-f4d0903ad1f9 · 1. Sintaxis básica y comparación con def",
+        "url": "https://app.notion.com/p/3e282a6d6561819a99f6f4d0903ad1f9"
+      },
+      {
+        "label": "Canvas — Práctica 5 (14/09/2026)",
+        "locator": "practica-5-lunes-14-slash-09-slash-2026",
+        "url": "https://univo.instructure.com/courses/1748/pages/practica-5-lunes-14-slash-09-slash-2026"
+      }
+    ]
+  },
+  "lambda-vs-def": {
+    "title": "Sintaxis básica y varios argumentos",
+    "content": "# Sintaxis básica y varios argumentos\n\nMisma lógica que `def` de una línea, asignada a un nombre:\n\n`nombre = lambda parametros: expresion`\n\nVarios parámetros (sección 2 del cuaderno):\n\n```python\narea_rectangulo = lambda base, altura: base * altura\ndistancia_total = lambda velocidad, tiempo: velocidad * tiempo\nprint(\"Área:\", area_rectangulo(5, 8))\nprint(\"Distancia:\", distancia_total(60, 2.5), \"km\")\n# Área: 40\n# Distancia: 150.0 km\n```\n\n### Fuentes\n- **Práctica 5** — note `3e282a6d-6561-819a-99f6-f4d0903ad1f9` · secciones 1–2",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — 14/09/2026 — Funciones Anónimas (Lambda) en Python",
+        "locator": "3e282a6d-6561-819a-99f6-f4d0903ad1f9 · 1–2. Comparación con def y múltiples argumentos",
+        "url": "https://app.notion.com/p/3e282a6d6561819a99f6f4d0903ad1f9"
+      }
+    ]
+  },
+  "lambda-ternary-comprehensions": {
+    "title": "Ternario y comprensiones",
+    "content": "# Ternario y comprensiones\n\nSintaxis del operador ternario en el cuaderno: `valor_si_verdadero if condicion else valor_si_falso`.\n\n```python\nevaluar_estado = lambda nota: \"Aprobado\" if nota >= 6.0 else \"Reprobado\"\nes_par = lambda n: True if n % 2 == 0 else False\nprint(\"Resultado 1:\", evaluar_estado(7.5))\nprint(\"Resultado 2:\", evaluar_estado(4.0))\nprint(\"¿El 10 es par?:\", es_par(10))\n# Resultado 1: Aprobado\n# Resultado 2: Reprobado\n# ¿El 10 es par?: True\n```\n\nAplicación rápida en ciclos o comprensiones (sección 4):\n\n```python\nformatear_codigo = lambda prefijo, numero: f\"{prefijo}-{numero:04d}\"\nids_generados = [formatear_codigo(\"USR\", i) for i in range(1, 6)]\nprint(\"Códigos generados:\", ids_generados)\n# ['USR-0001', 'USR-0002', 'USR-0003', 'USR-0004', 'USR-0005']\n```\n\n### Fuentes\n- **Práctica 5** — note `3e282a6d-6561-819a-99f6-f4d0903ad1f9` · secciones 3–4",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — 14/09/2026 — Funciones Anónimas (Lambda) en Python",
+        "locator": "3e282a6d-6561-819a-99f6-f4d0903ad1f9 · 3–4. Condicionales en línea y comprensiones",
+        "url": "https://app.notion.com/p/3e282a6d6561819a99f6f4d0903ad1f9"
+      }
+    ]
+  },
+  "python-dictionaries": {
+    "title": "Diccionarios y mapeos clave-valor",
+    "content": "# Diccionarios y mapeos clave-valor\n\nPráctica 6 (21/09/2026): un diccionario asocia **claves** con **valores**.\n\nDeclaración y acceso (sección 1):\n\n```python\nestudiante = {\n    \"carnet\": \"U2023001\",\n    \"nombre\": \"Beatriz\",\n    \"carrera\": \"Ingeniería en Sistemas\",\n    \"cum\": 8.7\n}\nprint(\"Nombre:\", estudiante[\"nombre\"])\nprint(\"Beca:\", estudiante.get(\"beca\", \"No asignada\"))\n```\n\nEl acceso con `[]` usa la clave directa; `.get(clave, valor_por_defecto)` evita fallar si la clave no existe (aquí la clave beca no está en el dict).\n\n### Fuentes\n- **Práctica 6 — 21/09/2026 — Diccionarios y Mapeos Clave-Valor en Python** — note `3e282a6d-6561-81ea-b238-d8527b52a1f7` · sección 1",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — Diccionarios y Mapeos Clave-Valor en Python",
+        "locator": "3e282a6d-6561-81ea-b238-d8527b52a1f7 · 1. Declaración y acceso",
+        "url": "https://app.notion.com/p/3e282a6d656181eab238d8527b52a1f7"
+      },
+      {
+        "label": "Canvas — Práctica 6 (21/09/2026)",
+        "locator": "practica-6-lunes-21-slash-09-slash-2026",
+        "url": "https://univo.instructure.com/courses/1748/pages/practica-6-lunes-21-slash-09-slash-2026"
+      }
+    ]
+  },
+  "dict-access-methods": {
+    "title": "Acceso, items, pop e inserción",
+    "content": "# Acceso, items, pop e inserción\n\nCatálogo de productos (sección 2): recorrer pares con `.items()`, modificar, insertar y eliminar.\n\n```python\ninventario = {\n    \"TECLADO\": 15,\n    \"MOUSE\": 28,\n    \"MONITOR\": 8,\n    \"HEADSET\": 12\n}\nfor codigo, stock in inventario.items():\n    print(f\"Producto: {codigo:<10} | Stock: {stock}\")\n\ninventario[\"MOUSE\"] += 5          # modificación\ninventario[\"WEBCAM\"] = 10         # inserción\neliminado = inventario.pop(\"MONITOR\", None)  # eliminación segura\n```\n\n`.pop(clave, None)` quita la clave si existe y no lanza error si falta.\n\n### Fuentes\n- **Práctica 6** — note `3e282a6d-6561-81ea-b238-d8527b52a1f7` · sección 2",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — Diccionarios y Mapeos Clave-Valor en Python",
+        "locator": "3e282a6d-6561-81ea-b238-d8527b52a1f7 · 2. Métodos clave",
+        "url": "https://app.notion.com/p/3e282a6d656181eab238d8527b52a1f7"
+      }
+    ]
+  },
+  "dict-frequency-grouping": {
+    "title": "Conteo de frecuencias y agrupado",
+    "content": "# Conteo de frecuencias y agrupado\n\nPatrón hash map (sección 3): contar apariciones con `.get`.\n\n```python\naccesos_servidor = [\"192.168.1.1\", \"10.0.0.2\", \"192.168.1.1\", \"172.16.0.5\"]\nconteo_ips = {}\nfor ip in accesos_servidor:\n    conteo_ips[ip] = conteo_ips.get(ip, 0) + 1\nprint(\"Frecuencia de accesos por IP:\", conteo_ips)\n```\n\nMapeo agrupado (sección 4): el valor puede ser una colección.\n\n```python\nestudiantes_por_carrera = {\n    \"Sistemas\": [\"Carlos\", \"Elena\", \"Mario\"],\n    \"Redes\": [\"Ana\", \"Beatriz\"]\n}\nestudiantes_por_carrera[\"Sistemas\"].append(\"Sofía\")\nprint(\"Alumnos en Sistemas:\", estudiantes_por_carrera[\"Sistemas\"])\n```\n\n### Fuentes\n- **Práctica 6** — note `3e282a6d-6561-81ea-b238-d8527b52a1f7` · secciones 3–4",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — Diccionarios y Mapeos Clave-Valor en Python",
+        "locator": "3e282a6d-6561-81ea-b238-d8527b52a1f7 · 3–4. Conteo de frecuencias y mapeo agrupado",
+        "url": "https://app.notion.com/p/3e282a6d656181eab238d8527b52a1f7"
+      }
+    ]
   }
 }
