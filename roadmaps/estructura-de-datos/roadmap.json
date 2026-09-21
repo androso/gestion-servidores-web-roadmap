@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "estructura-de-datos",
   "title": "Estructura de Datos",
-  "description": "Ruta basada únicamente en las clases sustantivas 1–5 y 9–10, más la Práctica 1: entorno Python, tipos, rangos, cadenas y estructuras list, tuple y set.",
+  "description": "Ruta basada en las clases sustantivas 1–5 y 9–10, prácticas 1 y 3–6, y la Clase 15: entorno Python, tipos, colecciones, funciones, lambda y diccionarios.",
   "canvas": {
     "width": 1280,
-    "height": 2660,
+    "height": 3120,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -60,7 +60,7 @@
         "height": 88
       },
       "data": {
-        "text": "Sigue la numeración. La columna izquierda marca el recorrido principal y las tarjetas claras de la derecha amplían cada paso. La ruta omite las clases 6–8 ausentes y las plantillas 11–40.",
+        "text": "Sigue la numeración. La columna izquierda marca el recorrido principal y las tarjetas claras de la derecha amplían cada paso. La ruta omite las clases 6–8 ausentes y las plantillas vacías.",
         "style": {
           "fontSize": 14,
           "textAlign": "center"
@@ -620,11 +620,129 @@
       },
       "size": {
         "width": 1200,
-        "height": 320
+        "height": 460
       },
       "zIndex": -1,
       "data": {
-        "label": "04 · Funciones y clases — Clase 15"
+        "label": "04 · Funciones, lambda y clases — Clase 15 y Práctica 5"
+      }
+    },
+    {
+      "id": "python-lambda",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2592
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Funciones anónimas (lambda)",
+        "order": "28",
+        "detail": "Expresar una función de una línea con lambda en lugar de def."
+      }
+    },
+    {
+      "id": "lambda-vs-def",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2596
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Sintaxis básica y varios argumentos",
+        "order": "29",
+        "detail": "Comparar def de una línea con lambda; varios parámetros."
+      }
+    },
+    {
+      "id": "lambda-ternary-comprehensions",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 2596
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Ternario y comprensiones",
+        "order": "30",
+        "detail": "Condicional en línea y uso de lambda en bucles o listas."
+      }
+    },
+    {
+      "id": "section-dictionaries",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2760
+      },
+      "size": {
+        "width": 1200,
+        "height": 300
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "05 · Diccionarios — Práctica 6"
+      }
+    },
+    {
+      "id": "python-dictionaries",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2808
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Diccionarios y mapeos clave-valor",
+        "order": "31",
+        "detail": "Declarar un dict, acceder por clave y recorrer pares."
+      }
+    },
+    {
+      "id": "dict-access-methods",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2812
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Acceso, items, pop e inserción",
+        "order": "32",
+        "detail": "[] vs get, items(), actualizar stock y pop seguro."
+      }
+    },
+    {
+      "id": "dict-frequency-grouping",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 2812
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Conteo de frecuencias y agrupado",
+        "order": "33",
+        "detail": "Patrón hash map y diccionario de colecciones."
       }
     }
   ],
@@ -896,6 +1014,69 @@
       "target": "python-functions",
       "sourceHandle": "bottom",
       "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-python-functions-python-lambda",
+      "source": "python-functions",
+      "target": "python-lambda",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-python-lambda-lambda-vs-def",
+      "source": "python-lambda",
+      "target": "lambda-vs-def",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lambda-vs-def-lambda-ternary-comprehensions",
+      "source": "lambda-vs-def",
+      "target": "lambda-ternary-comprehensions",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-choose-collection-python-dictionaries",
+      "source": "choose-collection",
+      "target": "python-dictionaries",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-linear-vs-nonlinear-python-dictionaries",
+      "source": "linear-vs-nonlinear",
+      "target": "python-dictionaries",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-python-dictionaries-dict-access-methods",
+      "source": "python-dictionaries",
+      "target": "dict-access-methods",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-dict-access-methods-dict-frequency-grouping",
+      "source": "dict-access-methods",
+      "target": "dict-frequency-grouping",
+      "sourceHandle": "right",
+      "targetHandle": "left",
       "route": "straight",
       "arrow": true
     }
