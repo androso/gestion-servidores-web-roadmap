@@ -5,7 +5,7 @@
   "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección y Newton para raíces de ecuaciones no lineales.",
   "canvas": {
     "width": 1280,
-    "height": 1780,
+    "height": 1920,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -300,6 +300,23 @@
       }
     },
     {
+      "id": "newton-applications",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1608
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Aplicaciones del Método de Newton",
+        "order": "12",
+        "detail": "Aplicar Newton a ecuaciones no lineales contextualizadas (Python / Jupyter)."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -324,7 +341,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 420
+        "height": 540
       },
       "zIndex": -1,
       "data": {
@@ -448,6 +465,24 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-newton-method-newton-applications",
+      "source": "newton-method",
+      "target": "newton-applications",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-python-newton-newton-applications",
+      "source": "python-newton",
+      "target": "newton-applications",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

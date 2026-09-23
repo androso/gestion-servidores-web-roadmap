@@ -1031,12 +1031,17 @@
   },
   "hardware-sizing": {
     "title": "Requerimientos de equipo del servidor web",
-    "content": "# Requerimientos de equipo del servidor web\n\nDimensionar CPU, RAM, disco y red; no confundir con contenedor web.\n\nDimensionar CPU, RAM, disco y red. Distinguir el equipo del contenedor web.\n\n### Fuentes\n- **Clase 13 — Requerimientos de equipo para instalación** — Objetivo / Idea clave",
+    "content": "# Requerimientos de equipo del servidor web\n\nDimensionar CPU, RAM, disco y red; no confundir con contenedor web.\n\nDimensionar CPU, RAM, disco y red. Distinguir el equipo del contenedor web.\n\nLa Práctica 5 vuelve a estos requerimientos de equipo junto con los métodos de instalación.\n\n### Fuentes\n- **Clase 13 — Requerimientos de equipo para instalación** — Objetivo / Idea clave\n- **Práctica 5 — Métodos de Instalación de Servidores Web** — Requerimientos de equipo + ejercicios",
     "sourceRefs": [
       {
         "label": "Clase 13 — Requerimientos de equipo para instalación",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3cd82a6d6561816e9f2dc707e4a418c1"
+      },
+      {
+        "label": "Práctica 5 — Métodos de Instalación de Servidores Web",
+        "locator": "Requerimientos de equipo + ejercicios de métodos de instalación",
+        "url": "https://app.notion.com/p/3e382a6d6561814bad34d2cf490999e9"
       }
     ]
   },
@@ -1053,12 +1058,28 @@
   },
   "install-methods": {
     "title": "Métodos de instalación de servidores web",
-    "content": "# Métodos de instalación de servidores web\n\nElegir por rapidez, control y mantenibilidad; imágenes cloud no son magia.\n\nCriterios de elección: rapidez, control y mantenibilidad. Las imágenes cloud no sustituyen el criterio de instalación.\n\n### Fuentes\n- **Clase 14 — Métodos de Instalación de Servidores Web** — Objetivo / Idea clave",
+    "content": "# Métodos de instalación de servidores web\n\nElegir por rapidez, control y mantenibilidad; imágenes cloud no son magia.\n\nCriterios de elección: rapidez, control y mantenibilidad. Las imágenes cloud no sustituyen el criterio de instalación.\n\nLa Práctica 5 repasa en laboratorio estos métodos y el dimensionamiento ya vistos en clase.\n\n### Fuentes\n- **Clase 14 — Métodos de Instalación de Servidores Web** — Objetivo / Idea clave\n- **Práctica 5 — Métodos de Instalación de Servidores Web** — Métodos de instalación / Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 14 — Métodos de Instalación de Servidores Web",
         "locator": "Objetivo / Idea clave",
         "url": "https://app.notion.com/p/3cf82a6d6561815ea87df7accd4fa505"
+      },
+      {
+        "label": "Práctica 5 — Métodos de Instalación de Servidores Web",
+        "locator": "Métodos de instalación / Idea clave",
+        "url": "https://app.notion.com/p/3e382a6d6561814bad34d2cf490999e9"
+      }
+    ]
+  },
+  "install-methods-lab": {
+    "title": "Práctica 5: instalar y poner en marcha",
+    "content": "# Práctica 5: instalar y poner en marcha\n\nLaboratorio de métodos de instalación de servidores web: **poner el servidor en marcha** y trabajar los **requerimientos de equipo** más los ejercicios de instalación.\n\nIdea clave: repasar en laboratorio los métodos de instalación y el dimensionamiento ya vistos en clase.\n\n### Fuentes\n- **Práctica 5 — Métodos de Instalación de Servidores Web** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 5 — Métodos de Instalación de Servidores Web",
+        "locator": "Repaso: poner el servidor en marcha / requerimientos de equipo + ejercicios",
+        "url": "https://app.notion.com/p/3e382a6d6561814bad34d2cf490999e9"
       }
     ]
   },
@@ -1184,6 +1205,77 @@
         "label": "Clase 18 — 16/09/2026 — Configuración de Apache (Virtual hosts y módulos)",
         "locator": "mod_proxy (preparación hacia Clase 19) / Idea clave",
         "url": "https://app.notion.com/p/3dc82a6d656181c7a890d3547fe0324e"
+      }
+    ]
+  },
+  "apache-reverse-proxy": {
+    "title": "Reverse proxy Apache + Express",
+    "content": "# Reverse proxy Apache + Express\n\nClase 19: configurar servicios web dinámicos con un **reverse proxy** que une Apache (capa HTTP) con Express/TypeScript (aplicación).\n\nIdea clave: el reverse proxy sirve dinámico de forma estándar en producción.\n\n### Fuentes\n- **Clase 19 — Reverse proxy Apache + Express** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — Reverse proxy Apache + Express",
+        "locator": "Reverse proxy Apache + Express/TypeScript / Idea clave",
+        "url": "https://app.notion.com/p/3e382a6d6561815d95b2f96c56e90198"
+      }
+    ]
+  },
+  "apache-express-stack": {
+    "title": "Servidor web + contenedor de app",
+    "content": "# Servidor web + contenedor de app\n\nArquitectura de dos capas: **servidor web** (Apache) delante y **contenedor de aplicación** (Express/TypeScript) detrás.\n\nApache entrega HTTP; Express calcula. El reverse proxy es el puente, no un segundo contenedor.\n\n### Fuentes\n- **Clase 19 — Reverse proxy Apache + Express** — Arquitectura servidor web + contenedor de aplicación",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — Reverse proxy Apache + Express",
+        "locator": "Arquitectura servidor web + contenedor de aplicación",
+        "url": "https://app.notion.com/p/3e382a6d6561815d95b2f96c56e90198"
+      }
+    ]
+  },
+  "dynamic-request-e2e": {
+    "title": "Verificar peticiones dinámicas e2e",
+    "content": "# Verificar peticiones dinámicas e2e\n\nLa Clase 19 pide **verificación extremo a extremo de peticiones dinámicas**: el cliente habla con Apache y la respuesta dinámica sale de Express/TypeScript.\n\nNo basta con que cada proceso “esté arriba”; hay que comprobar el recorrido completo.\n\n### Fuentes\n- **Clase 19 — Reverse proxy Apache + Express** — Verificación extremo a extremo",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — Reverse proxy Apache + Express",
+        "locator": "Verificación extremo a extremo de peticiones dinámicas",
+        "url": "https://app.notion.com/p/3e382a6d6561815d95b2f96c56e90198"
+      }
+    ]
+  },
+  "iis-apache-performance": {
+    "title": "Rendimiento: IIS vs Apache+Express",
+    "content": "# Rendimiento: IIS vs Apache+Express\n\nClase 20: comparativa de rendimiento **IIS vs Apache+Express** bajo **carga simple**, con mediciones.\n\nIdea clave: el rendimiento se decide con mediciones reproducibles, no con intuición.\n\nLa nota de Canvas del 23/09/2026 es la misma (PDF actualizado); no es un tema nuevo.\n\n### Fuentes\n- **Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express",
+        "locator": "Comparativa de rendimiento con mediciones / Idea clave",
+        "url": "https://app.notion.com/p/3e382a6d6561814dafd4efa49aa2a9a0"
+      },
+      {
+        "label": "Canvas — Clase 20 miércoles 23 de septiembre",
+        "locator": "Clase 20 (misma nota; PDF actualizado)",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-20-miercoles-23-de-septiembre"
+      }
+    ]
+  },
+  "ts-perf-scripts": {
+    "title": "Scripts de medición en TypeScript",
+    "content": "# Scripts de medición en TypeScript\n\nLa comparativa se hace con **scripts de medición en TypeScript** contra IIS y Apache+Express bajo carga simple.\n\nEl script es el instrumento: misma carga, mismos criterios, resultados comparables.\n\n### Fuentes\n- **Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express** — Scripts de medición en TypeScript",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express",
+        "locator": "Scripts de medición en TypeScript / IIS vs Apache+Express bajo carga simple",
+        "url": "https://app.notion.com/p/3e382a6d6561814dafd4efa49aa2a9a0"
+      }
+    ]
+  },
+  "cautious-perf-interp": {
+    "title": "Interpretar resultados con cautela",
+    "content": "# Interpretar resultados con cautela\n\nLa carga del laboratorio es **simple**. Los números no coronan un ganador absoluto: hay que interpretar con **cautela** (entorno, carga y qué se midió).\n\nMedir no es lo mismo que generalizar.\n\n### Fuentes\n- **Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express** — Interpretación cautelosa de resultados",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — Comparativa de Rendimiento IIS vs Apache+Express",
+        "locator": "Interpretación cautelosa de resultados",
+        "url": "https://app.notion.com/p/3e382a6d6561814dafd4efa49aa2a9a0"
       }
     ]
   }
