@@ -771,12 +771,50 @@
   },
   "nextjs-app-router": {
     "title": "App Router y Server Components",
-    "content": "# App Router y Server Components\n\nEl **App Router** se basa en el sistema de archivos: rutas, **Server Components**, layouts anidados y streaming.\n\nTambién cubre optimización de imágenes, CSS/SASS y API routes en el mismo proyecto.\n\n### Fuentes\n- **Clase 14 — 02/09/2026 — Next.js: Framework Full Stack** — Conceptos / App Router",
+    "content": "# App Router y Server Components\n\nEl **App Router** se basa en el sistema de archivos: rutas, **Server Components**, layouts anidados y streaming.\n\nTambién cubre optimización de imágenes, CSS/SASS y API routes en el mismo proyecto.\n\nLa Clase 15 practica `app/`, `page.tsx`, `layout.tsx` y `globals.css` en el proyecto guiado.\n\n### Fuentes\n- **Clase 14 — 02/09/2026 — Next.js: Framework Full Stack** — Conceptos / App Router\n- **Clase 15 — Proyecto Flores Amarillas con Next.js** — App Router (app/, page.tsx, layout.tsx, globals.css)",
     "sourceRefs": [
       {
         "label": "Clase 14 — 02/09/2026 — Next.js: Framework Full Stack",
         "locator": "Conceptos / App Router",
         "url": "https://app.notion.com/p/3de82a6d656181d2bda4f0558389a3ff"
+      },
+      {
+        "label": "Clase 15 — Proyecto Flores Amarillas con Next.js",
+        "locator": "Next.js App Router (app/, page.tsx, layout.tsx, globals.css)",
+        "url": "https://app.notion.com/p/3e382a6d656181399c66f8bbce4b419e"
+      }
+    ]
+  },
+  "nextjs-yellow-flowers": {
+    "title": "Proyecto: flores amarillas en Next.js",
+    "content": "# Proyecto: flores amarillas en Next.js\n\nClase 15: proyecto guiado de un **jardín de flores amarillas animadas** para aprender Next.js construyendo.\n\nIdea clave: App Router + CSS propio **antes de Tailwind**.\n\n### Fuentes\n- **Clase 15 — Proyecto Flores Amarillas con Next.js** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — Proyecto Flores Amarillas con Next.js",
+        "locator": "Proyecto guiado: jardín de flores amarillas animadas / Idea clave",
+        "url": "https://app.notion.com/p/3e382a6d656181399c66f8bbce4b419e"
+      }
+    ]
+  },
+  "nextjs-create-app": {
+    "title": "create-next-app TS + ESLint",
+    "content": "# create-next-app TS + ESLint\n\nArrancar el proyecto con **create-next-app**: TypeScript + ESLint **sin Tailwind**.\n\nPracticar el App Router en archivos: `app/`, `page.tsx`, `layout.tsx`, `globals.css`.\n\n### Fuentes\n- **Clase 15 — Proyecto Flores Amarillas con Next.js** — create-next-app / App Router",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — Proyecto Flores Amarillas con Next.js",
+        "locator": "create-next-app TypeScript + ESLint sin Tailwind / App Router (app/, page.tsx, layout.tsx, globals.css)",
+        "url": "https://app.notion.com/p/3e382a6d656181399c66f8bbce4b419e"
+      }
+    ]
+  },
+  "nextjs-css-keyframes": {
+    "title": "React + CSS: Flexbox y keyframes",
+    "content": "# React + CSS: Flexbox y keyframes\n\nEl jardín se arma con **componentes React** y **CSS propio**: Flexbox y keyframes. Tailwind queda fuera a propósito en esta sesión.\n\n### Fuentes\n- **Clase 15 — Proyecto Flores Amarillas con Next.js** — Componentes React y CSS",
+    "sourceRefs": [
+      {
+        "label": "Clase 15 — Proyecto Flores Amarillas con Next.js",
+        "locator": "Componentes React y CSS (Flexbox, keyframes)",
+        "url": "https://app.notion.com/p/3e382a6d656181399c66f8bbce4b419e"
       }
     ]
   },

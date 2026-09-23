@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "programacion-orientada-a-eventos",
   "title": "Programación Orientada a Eventos",
-  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js full stack y el patrón debounce en TypeScript.",
+  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js (App Router y proyecto guiado) y el patrón debounce en TypeScript.",
   "canvas": {
     "width": 1280,
-    "height": 4160,
+    "height": 4480,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1007,11 +1007,62 @@
       },
       "size": {
         "width": 1200,
-        "height": 250
+        "height": 420
       },
       "zIndex": -1,
       "data": {
-        "label": "08 · Next.js — Clase 14"
+        "label": "08 · Next.js — Clases 14–15"
+      }
+    },
+    {
+      "id": "nextjs-yellow-flowers",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3676
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Proyecto: flores amarillas en Next.js",
+        "order": "47",
+        "detail": "Next.js se aprende construyendo: jardín guiado de flores amarillas animadas."
+      }
+    },
+    {
+      "id": "nextjs-create-app",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3680
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "create-next-app TS + ESLint",
+        "order": "48",
+        "detail": "Scaffold: TypeScript y ESLint, sin Tailwind; App Router (app/, page.tsx, layout.tsx, globals.css)."
+      }
+    },
+    {
+      "id": "nextjs-css-keyframes",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 3680
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "React + CSS: Flexbox y keyframes",
+        "order": "49",
+        "detail": "Componentes React y CSS propio (Flexbox, keyframes) antes de Tailwind."
       }
     },
     {
@@ -1019,7 +1070,7 @@
       "type": "topic",
       "position": {
         "x": 90,
-        "y": 3830
+        "y": 4160
       },
       "size": {
         "width": 380,
@@ -1027,7 +1078,7 @@
       },
       "data": {
         "label": "Patrón Debounce",
-        "order": "47",
+        "order": "50",
         "detail": "Limitar ejecución ante eventos de alta frecuencia (p. ej. búsqueda en vivo)."
       }
     },
@@ -1036,7 +1087,7 @@
       "type": "subtopic",
       "position": {
         "x": 540,
-        "y": 3834
+        "y": 4164
       },
       "size": {
         "width": 330,
@@ -1044,7 +1095,7 @@
       },
       "data": {
         "label": "debounce tipado con genéricos",
-        "order": "48",
+        "order": "51",
         "detail": "Función utilitaria con Parameters<T> conectada a un input de búsqueda."
       }
     },
@@ -1053,7 +1104,7 @@
       "type": "section",
       "position": {
         "x": 40,
-        "y": 3770
+        "y": 4100
       },
       "size": {
         "width": 1200,
@@ -1514,6 +1565,60 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-fullstack-nextjs-yellow-flowers",
+      "source": "nextjs-fullstack",
+      "target": "nextjs-yellow-flowers",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-app-router-nextjs-yellow-flowers",
+      "source": "nextjs-app-router",
+      "target": "nextjs-yellow-flowers",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-yellow-flowers-nextjs-create-app",
+      "source": "nextjs-yellow-flowers",
+      "target": "nextjs-create-app",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-create-app-nextjs-css-keyframes",
+      "source": "nextjs-create-app",
+      "target": "nextjs-css-keyframes",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-flex-grid-nextjs-css-keyframes",
+      "source": "flex-grid",
+      "target": "nextjs-css-keyframes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-yellow-flowers-debounce-pattern",
+      "source": "nextjs-yellow-flowers",
+      "target": "debounce-pattern",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     },
     {

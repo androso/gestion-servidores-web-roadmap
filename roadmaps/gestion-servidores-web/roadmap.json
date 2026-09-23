@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "slug": "gestion-servidores-web",
   "title": "Gestión de Servidores Web",
-  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, hasta instalar Apache como servidor web de libre distribución y configurarlo con virtual hosts y módulos.",
+  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, Apache con virtual hosts y reverse proxy hacia Express, y la comparativa de rendimiento IIS vs Apache+Express.",
   "canvas": {
     "width": 1280,
-    "height": 5480,
-    "minZoom": 0.14,
+    "height": 5940,
+    "minZoom": 0.13,
     "maxZoom": 1.75,
     "initialViewport": {
       "x": 170,
@@ -1168,6 +1168,23 @@
       }
     },
     {
+      "id": "install-methods-lab",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4602
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Práctica 5: instalar y poner en marcha",
+        "order": "40",
+        "detail": "Laboratorio: métodos de instalación, equipo y dejar el servidor en marcha."
+      }
+    },
+    {
       "id": "proprietary-server-install",
       "type": "topic",
       "position": {
@@ -1180,7 +1197,7 @@
       },
       "data": {
         "label": "Instalar un servidor web propietario",
-        "order": "40",
+        "order": "41",
         "detail": "IIS: sitio puro vs iisnode, directorios virtuales y uso real de la VM."
       }
     },
@@ -1197,7 +1214,7 @@
       },
       "data": {
         "label": "HTTPS en el servidor propietario",
-        "order": "41",
+        "order": "42",
         "detail": "Configuración inicial: certificado y HTTPS como requisito de producción."
       }
     },
@@ -1214,7 +1231,7 @@
       },
       "data": {
         "label": "Certificado autofirmado en IIS",
-        "order": "42",
+        "order": "43",
         "detail": "En laboratorio se practica HTTPS con certificado autofirmado en IIS."
       }
     },
@@ -1231,7 +1248,7 @@
       },
       "data": {
         "label": "Redirección HTTP → HTTPS",
-        "order": "43",
+        "order": "44",
         "detail": "Redirigir automáticamente HTTP hacia HTTPS en el sitio propietario."
       }
     },
@@ -1264,7 +1281,7 @@
       },
       "data": {
         "label": "Instalar Apache HTTP Server",
-        "order": "44",
+        "order": "45",
         "detail": "Instalar Apache en Linux, macOS o Windows y verificar que responde."
       }
     },
@@ -1281,7 +1298,7 @@
       },
       "data": {
         "label": "Apache vs Express/TypeScript",
-        "order": "45",
+        "order": "46",
         "detail": "Apache es servidor web puro; Express/TS es el contenedor de la Unidad 1."
       }
     },
@@ -1298,7 +1315,7 @@
       },
       "data": {
         "label": "Archivos de configuración de Apache",
-        "order": "46",
+        "order": "47",
         "detail": "Explorar la estructura de archivos de configuración de Apache."
       }
     },
@@ -1315,7 +1332,7 @@
       },
       "data": {
         "label": "Virtual hosts en Apache",
-        "order": "47",
+        "order": "48",
         "detail": "Un segundo sitio independiente en el mismo Apache."
       }
     },
@@ -1332,7 +1349,7 @@
       },
       "data": {
         "label": "Módulos de Apache",
-        "order": "48",
+        "order": "49",
         "detail": "Habilitar módulos y entender qué hace cada uno."
       }
     },
@@ -1349,7 +1366,7 @@
       },
       "data": {
         "label": "mod_proxy hacia Express",
-        "order": "49",
+        "order": "50",
         "detail": "Preparar mod_proxy para conectar Apache con Express/TypeScript."
       }
     },
@@ -1367,6 +1384,124 @@
       "zIndex": -1,
       "data": {
         "label": "08 · Apache de libre distribución — Clases 17–18"
+      }
+    },
+    {
+      "id": "apache-reverse-proxy",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 5480
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Reverse proxy Apache + Express",
+        "order": "51",
+        "detail": "Unir Apache (HTTP) con Express/TypeScript para servir dinámico en producción."
+      }
+    },
+    {
+      "id": "apache-express-stack",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 5484
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Servidor web + contenedor de app",
+        "order": "52",
+        "detail": "Apache delante; Express/TS calcula; arquitectura de dos capas."
+      }
+    },
+    {
+      "id": "dynamic-request-e2e",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 5484
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Verificar peticiones dinámicas e2e",
+        "order": "53",
+        "detail": "Comprobar de punta a punta que el reverse proxy entrega dinámico."
+      }
+    },
+    {
+      "id": "iis-apache-performance",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 5616
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Rendimiento: IIS vs Apache+Express",
+        "order": "54",
+        "detail": "Comparar con mediciones reproducibles, no con intuición."
+      }
+    },
+    {
+      "id": "ts-perf-scripts",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 5620
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Scripts de medición en TypeScript",
+        "order": "55",
+        "detail": "Medir IIS y Apache+Express bajo carga simple con scripts en TS."
+      }
+    },
+    {
+      "id": "cautious-perf-interp",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 5620
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Interpretar resultados con cautela",
+        "order": "56",
+        "detail": "La carga es simple: no generalizar el ganador sin contexto."
+      }
+    },
+    {
+      "id": "section-apache-proxy-perf",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 5460
+      },
+      "size": {
+        "width": 1200,
+        "height": 420
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "09 · Reverse proxy y rendimiento — Clases 19–20"
       }
     }
   ],
@@ -1942,6 +2077,87 @@
       "id": "e-apache-modules-apache-mod-proxy",
       "source": "apache-modules",
       "target": "apache-mod-proxy",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-install-methods-install-methods-lab",
+      "source": "install-methods",
+      "target": "install-methods-lab",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-hardware-sizing-install-methods-lab",
+      "source": "hardware-sizing",
+      "target": "install-methods-lab",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-mod-proxy-apache-reverse-proxy",
+      "source": "apache-mod-proxy",
+      "target": "apache-reverse-proxy",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-virtual-hosts-apache-reverse-proxy",
+      "source": "apache-virtual-hosts",
+      "target": "apache-reverse-proxy",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-reverse-proxy-apache-express-stack",
+      "source": "apache-reverse-proxy",
+      "target": "apache-express-stack",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-express-stack-dynamic-request-e2e",
+      "source": "apache-express-stack",
+      "target": "dynamic-request-e2e",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-reverse-proxy-iis-apache-performance",
+      "source": "apache-reverse-proxy",
+      "target": "iis-apache-performance",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-apache-performance-ts-perf-scripts",
+      "source": "iis-apache-performance",
+      "target": "ts-perf-scripts",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-ts-perf-scripts-cautious-perf-interp",
+      "source": "ts-perf-scripts",
+      "target": "cautious-perf-interp",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",

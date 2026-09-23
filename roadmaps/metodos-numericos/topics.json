@@ -108,7 +108,7 @@
   },
   "newton-method": {
     "title": "Método de Newton",
-    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada** (tolerancia y error).\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo**. La Clase 18 (presencial 17/09/2026, Semana 09) continúa el método: formulación matemática, proceso iterativo y tablas de iteraciones para analizar convergencia y precisión. Es continuación de bisección: conviene repasarlo, junto con funciones no lineales, derivadas y métodos iterativos.\n\nMaterial de la nota Clase 16 (actualizado 12/09/2026): PDF `Clase 16 - Análisis Numérico.pdf` (antes UNAVAILABLE).\n\nIdea clave: Newton actualiza una estimación inicial con la fórmula iterativa hasta cumplir el criterio de parada; las tablas de iteraciones permiten analizar convergencia y precisión.",
+    "content": "# Método de Newton\n\nAproxima raíces de ecuaciones no lineales a partir de una **estimación inicial** y actualiza iterativamente hasta cumplir el **criterio de parada** (tolerancia y error).\n\nLa Clase 16 cubre formulación, criterios de parada, **pseudocódigo** y **error iterativo**. La Clase 18 (presencial 17/09/2026, Semana 09) continúa el método: formulación matemática, proceso iterativo y tablas de iteraciones para analizar convergencia y precisión. Es continuación de bisección: conviene repasarlo, junto con funciones no lineales, derivadas y métodos iterativos.\n\nLa Clase 19 aplica el mismo método a **ecuaciones no lineales contextualizadas**.\n\nMaterial de la nota Clase 16 (actualizado 12/09/2026): PDF `Clase 16 - Análisis Numérico.pdf` (antes UNAVAILABLE).\n\nIdea clave: Newton actualiza una estimación inicial con la fórmula iterativa hasta cumplir el criterio de parada; las tablas de iteraciones permiten analizar convergencia y precisión.",
     "sourceRefs": [
       {
         "label": "Clase 16 — 10/09/2026 — Método de Newton para ecuaciones no lineales",
@@ -129,6 +129,16 @@
         "label": "Canvas Clase 18 - 17/09/2026",
         "locator": "page",
         "url": "https://univo.instructure.com/courses/1739/pages/clase-18-17-slash-09-slash-2026"
+      },
+      {
+        "label": "Clase 19 — 22/09/2026 — Aplicaciones del Método de Newton",
+        "locator": "Aplicaciones del Método de Newton / ecuaciones no lineales contextualizadas",
+        "url": "https://app.notion.com/p/3e482a6d656181938d95cf5011faee3c"
+      },
+      {
+        "label": "Canvas — Clase 19 22/09/2026",
+        "locator": "Clase 19",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-19-22-slash-09-slash-2026"
       }
     ]
   },
@@ -156,6 +166,27 @@
         "label": "Clase 18 — 17/09/2026 — Método de Newton: resolución de ecuaciones no lineales e implementación en Python",
         "locator": "Herramientas / Archivos / Conceptos (implementación Python)",
         "url": "https://app.notion.com/p/3df82a6d656181908a74d21eb5b07236"
+      },
+      {
+        "label": "Clase 19 — 22/09/2026 — Aplicaciones del Método de Newton",
+        "locator": "Python / Jupyter",
+        "url": "https://app.notion.com/p/3e482a6d656181938d95cf5011faee3c"
+      }
+    ]
+  },
+  "newton-applications": {
+    "title": "Aplicaciones del Método de Newton",
+    "content": "# Aplicaciones del Método de Newton\n\nClase 19 (22/09/2026): aplicar el Método de Newton a **ecuaciones no lineales contextualizadas**, con **Python / Jupyter**.\n\nSigue a la formulación e implementación de las Clases 16 y 18: aquí el foco es el problema aplicado, no una receta nueva del algoritmo.\n\n### Fuentes\n- **Clase 19 — 22/09/2026 — Aplicaciones del Método de Newton** — Título / conceptos",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 22/09/2026 — Aplicaciones del Método de Newton",
+        "locator": "Aplicaciones del Método de Newton / ecuaciones no lineales contextualizadas / Python / Jupyter",
+        "url": "https://app.notion.com/p/3e482a6d656181938d95cf5011faee3c"
+      },
+      {
+        "label": "Canvas — Clase 19 22/09/2026",
+        "locator": "Clase 19",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-19-22-slash-09-slash-2026"
       }
     ]
   },
