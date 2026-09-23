@@ -874,7 +874,7 @@
   },
   "svm-hyperplane-margin": {
     "title": "Hiperplano, vectores de soporte y margen",
-    "content": "# Hiperplano, vectores de soporte y margen\n\nHiperplano, vectores de soporte y maximización del margen. SVM busca el hiperplano de máximo margen.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Objetivo / Conceptos / Idea clave",
+    "content": "# Hiperplano, vectores de soporte y margen\n\nHiperplano, vectores de soporte y maximización del margen. SVM busca el hiperplano de máximo margen. En la Práctica 6 los hiperplanos OvO y los márgenes canónicos (±1) hacen explícita la separación máxima entre biotipos; los vectores de soporte definen el modelo.\n\n### Fuentes\n- **Clase 17 — Introducción a SVM** — Objetivo / Conceptos / Idea clave\n- **Práctica 6 — SVM Lineal Multiclase** — Hiperplanos, márgenes ±1 y vectores de soporte",
     "sourceRefs": [
       {
         "label": "Clase 17 — 18/09/2026 — Introducción a SVM",
@@ -885,6 +885,16 @@
         "label": "Canvas — Clase 17",
         "locator": "Página de la clase",
         "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
+      },
+      {
+        "label": "Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)",
+        "locator": "Conceptos: hiperplanos centrales, márgenes canónicos (±1) y vectores de soporte geométricos",
+        "url": "https://app.notion.com/p/3e382a6d656181f9a8dfd6cf452b6354"
+      },
+      {
+        "label": "Canvas — Práctica 6 SVM lineal multiclase",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
       }
     ]
   },
@@ -967,12 +977,77 @@
   },
   "svm-confusion-metrics": {
     "title": "Matriz de confusión y métricas SVM",
-    "content": "# Matriz de confusión y métricas SVM\n\nEvaluar SVM lineal/RBF con matrices de confusión y métricas de clasificación.\n\n### Fuentes\n- **Clase 18 — Implementación SVM kernel lineal y radial** — Matrices de confusión y métricas",
+    "content": "# Matriz de confusión y métricas SVM\n\nEvaluar SVM lineal/RBF con matrices de confusión y métricas de clasificación. La Práctica 6 retoma la matriz y las métricas en el caso multiclase (macro: exactitud, precisión, sensibilidad, F1) sobre `tipofacial.csv`.\n\n### Fuentes\n- **Clase 18 — Implementación SVM kernel lineal y radial** — Matrices de confusión y métricas\n- **Práctica 6 — SVM Lineal Multiclase** — Matriz de confusión y métricas macro",
     "sourceRefs": [
       {
         "label": "Clase 18 — Implementación SVM kernel lineal y radial",
         "locator": "Matrices de confusión y métricas",
         "url": "https://app.notion.com/p/3e282a6d65618178a33deaef9bc34716"
+      },
+      {
+        "label": "Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)",
+        "locator": "Conceptos: matriz de confusión y métricas macro",
+        "url": "https://app.notion.com/p/3e382a6d656181f9a8dfd6cf452b6354"
+      },
+      {
+        "label": "Canvas — Práctica 6 SVM lineal multiclase",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
+      }
+    ]
+  },
+  "practica-6-svm-linear-multiclass": {
+    "title": "Práctica 6: SVM lineal multiclase",
+    "content": "# Práctica 6: SVM lineal multiclase\n\nImplementar y evaluar un modelo de clasificación supervisada mediante Máquinas de Vectores de Soporte con núcleo lineal para problemas multiclase (Uno contra Uno - OvO), representando analíticamente los hiperplanos de decisión, sus márgenes de separación máxima y analizando la influencia de los vectores de soporte en el diagnóstico craneofacial.\n\n### Conceptos cubiertos\n- SVM lineal multiclase (OvO)\n- StandardScaler sobre predictores\n- Hiperplanos centrales y márgenes canónicos (±1)\n- Vectores de soporte geométricos\n- Matriz de confusión y métricas macro (exactitud, precisión, sensibilidad, F1)\n- Dataset tipofacial.csv (mediciones cefalométricas de Ricketts)\n\n> Los hiperplanos OvO y sus márgenes canónicos hacen explícita la separación máxima entre biotipos; los vectores de soporte definen el modelo.\n\n### Fuentes\n- **Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)** — Objetivo / Conceptos / Idea clave\n- **Canvas — Práctica 6 SVM lineal multiclase**",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)",
+        "locator": "Objetivo / Conceptos / Idea clave — Notion 3e382a6d656181f9a8dfd6cf452b6354",
+        "url": "https://app.notion.com/p/3e382a6d656181f9a8dfd6cf452b6354"
+      },
+      {
+        "label": "Canvas — Práctica 6 SVM lineal multiclase",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
+      }
+    ],
+    "resources": [
+      {
+        "type": "video",
+        "title": "Video de la práctica (YouTube)",
+        "url": "https://www.youtube.com/watch?v=eAKJsFLshA8"
+      }
+    ]
+  },
+  "svm-ovo-scaler-hyperplanes": {
+    "title": "OvO, StandardScaler y márgenes ±1",
+    "content": "# OvO, StandardScaler y márgenes ±1\n\nSVM lineal multiclase Uno contra Uno (OvO), con StandardScaler sobre los predictores. Representar hiperplanos centrales y márgenes canónicos (±1), y los vectores de soporte geométricos que definen el modelo.\n\n### Fuentes\n- **Práctica 6 — SVM Lineal Multiclase** — Conceptos: OvO, StandardScaler, hiperplanos/márgenes, vectores de soporte",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)",
+        "locator": "Conceptos: SVM lineal multiclase OvO, StandardScaler, hiperplanos y márgenes ±1, vectores de soporte",
+        "url": "https://app.notion.com/p/3e382a6d656181f9a8dfd6cf452b6354"
+      },
+      {
+        "label": "Canvas — Práctica 6 SVM lineal multiclase",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
+      }
+    ]
+  },
+  "svm-macro-metrics-tipofacial": {
+    "title": "Matriz macro y tipofacial.csv",
+    "content": "# Matriz macro y tipofacial.csv\n\nEvaluar con matriz de confusión y métricas macro (exactitud, precisión, sensibilidad, F1) sobre `tipofacial.csv` (mediciones cefalométricas de Ricketts / biotipos faciales).\n\n### Fuentes\n- **Práctica 6 — SVM Lineal Multiclase** — Conceptos: matriz y métricas macro / dataset tipofacial.csv",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 21/09/2026 — SVM Lineal Multiclase (biotipos faciales)",
+        "locator": "Conceptos: matriz de confusión, métricas macro y dataset tipofacial.csv",
+        "url": "https://app.notion.com/p/3e382a6d656181f9a8dfd6cf452b6354"
+      },
+      {
+        "label": "Canvas — Práctica 6 SVM lineal multiclase",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
       }
     ]
   }

@@ -5,7 +5,7 @@
   "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, hasta la elección de estilos (capas, cliente-servidor, monolito, microservicios y SOA).",
   "canvas": {
     "width": 1280,
-    "height": 4560,
+    "height": 4720,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -898,7 +898,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 800
+        "height": 960
       },
       "zIndex": -1,
       "data": {
@@ -1056,6 +1056,23 @@
         "label": "Simulador de arquitectura conceptual",
         "order": "47",
         "detail": "Práctica interactiva de construcción y análisis del diseño conceptual sobre el estilo seleccionado."
+      }
+    },
+    {
+      "id": "practica-06-compare-select-design",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4350
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Práctica 06: comparación, selección y diseño conceptual",
+        "order": "48",
+        "detail": "Comparar estilos; seleccionar por requerimientos, drivers y restricciones; justificar; ventajas/desventajas; diseño conceptual."
       }
     }
   ],
@@ -1508,6 +1525,33 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-style-selection-criteria-practica-06",
+      "source": "style-selection-criteria",
+      "target": "practica-06-compare-select-design",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-conceptual-architecture-design-practica-06",
+      "source": "conceptual-architecture-design",
+      "target": "practica-06-compare-select-design",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-style-decision-lab-practica-06",
+      "source": "style-decision-lab",
+      "target": "practica-06-compare-select-design",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
       "arrow": true
     }
   ]

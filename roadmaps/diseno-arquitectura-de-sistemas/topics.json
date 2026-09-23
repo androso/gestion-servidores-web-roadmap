@@ -859,6 +859,16 @@
         "label": "Clase 17 — Comparación y selección de estilos",
         "locator": "Idea clave",
         "url": "https://app.notion.com/p/3e282a6d656181f59211ebc9a7eaa107"
+      },
+      {
+        "label": "Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual",
+        "locator": "Comparar y seleccionar estilo — Notion 3e482a6d65618188beabeaf1e21a1d40",
+        "url": "https://app.notion.com/p/3e482a6d65618188beabeaf1e21a1d40"
+      },
+      {
+        "label": "Canvas — Práctica 06: 22/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-06-22-slash-09-slash-2026"
       }
     ],
     "resources": [
@@ -904,12 +914,22 @@
   },
   "style-selection-criteria": {
     "title": "Criterios de selección de estilos",
-    "content": "# Criterios de selección de estilos\n\nComparar estilos y elegir según requerimientos, drivers, restricciones y atributos de calidad — no por popularidad tecnológica.\n\n### Conceptos cubiertos\n- Comparación de estilos arquitectónicos\n- Criterios de selección según el contexto\n- Justificación de decisiones con base en atributos de calidad\n- Relación requerimientos / drivers / restricciones → estilo\n\n> Una decisión arquitectónica debe responder a las necesidades reales del caso (requerimientos, drivers, restricciones y atributos de calidad), no solo a la popularidad o actualidad de una tecnología.\n\n### Fuentes\n- **Clase 17 — 14/09/2026 — Comparación y selección de estilos arquitectónicos** — Objetivo / Conceptos / Idea clave",
+    "content": "# Criterios de selección de estilos\n\nComparar estilos y elegir según requerimientos, drivers, restricciones y atributos de calidad — no por popularidad tecnológica.\n\n### Conceptos cubiertos\n- Comparación de estilos arquitectónicos\n- Criterios de selección según el contexto\n- Justificación de decisiones con base en atributos de calidad\n- Relación requerimientos / drivers / restricciones → estilo\n\n> Una decisión arquitectónica debe responder a las necesidades reales del caso (requerimientos, drivers, restricciones y atributos de calidad), no solo a la popularidad o actualidad de una tecnología.\n\nLa Práctica 06 aplica comparación, selección justificada (requerimientos, drivers y restricciones), ventajas/desventajas y el paso al diseño conceptual.\n\n### Fuentes\n- **Clase 17 — 14/09/2026 — Comparación y selección de estilos arquitectónicos** — Objetivo / Conceptos / Idea clave\n- **Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual**",
     "sourceRefs": [
       {
         "label": "Clase 17 — 14/09/2026 — Comparación y selección de estilos arquitectónicos",
         "locator": "Objetivo / Conceptos / Idea clave",
         "url": "https://app.notion.com/p/3e282a6d656181f59211ebc9a7eaa107"
+      },
+      {
+        "label": "Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual",
+        "locator": "Seleccionar estilo según requerimientos, drivers y restricciones; justificar; ventajas/desventajas — Notion 3e482a6d65618188beabeaf1e21a1d40",
+        "url": "https://app.notion.com/p/3e482a6d65618188beabeaf1e21a1d40"
+      },
+      {
+        "label": "Canvas — Práctica 06: 22/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-06-22-slash-09-slash-2026"
       }
     ],
     "resources": [
@@ -927,12 +947,22 @@
   },
   "conceptual-architecture-design": {
     "title": "Diseño conceptual desde el estilo",
-    "content": "# Diseño conceptual desde el estilo\n\nTraducir el estilo elegido en componentes, responsabilidades, relaciones, dependencias e integraciones coherentes con el caso.\n\n### Conceptos cubiertos\n- Componentes y responsabilidades del sistema\n- Relaciones y dependencias entre componentes\n- Diseño conceptual coherente con el estilo seleccionado\n- Práctica con simulador interactivo\n\n> El diseño conceptual traduce el estilo elegido en componentes, responsabilidades, relaciones e integraciones coherentes con el contexto del sistema.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Diseño conceptual a partir del estilo seleccionado** — Objetivo / Conceptos / Idea clave",
+    "content": "# Diseño conceptual desde el estilo\n\nTraducir el estilo elegido en componentes, responsabilidades, relaciones, dependencias e integraciones coherentes con el caso.\n\n### Conceptos cubiertos\n- Componentes y responsabilidades del sistema\n- Relaciones y dependencias entre componentes\n- Diseño conceptual coherente con el estilo seleccionado\n- Práctica con simulador interactivo\n\n> El diseño conceptual traduce el estilo elegido en componentes, responsabilidades, relaciones e integraciones coherentes con el contexto del sistema.\n\nLa Práctica 06 cierra con diseño conceptual tras comparar y seleccionar el estilo.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Diseño conceptual a partir del estilo seleccionado** — Objetivo / Conceptos / Idea clave\n- **Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual**",
     "sourceRefs": [
       {
         "label": "Clase 18 — 16/09/2026 — Diseño conceptual a partir del estilo seleccionado",
         "locator": "Objetivo / Conceptos / Idea clave",
         "url": "https://app.notion.com/p/3e282a6d656181b0bb67ec2a15156f37"
+      },
+      {
+        "label": "Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual",
+        "locator": "Diseño conceptual — Notion 3e482a6d65618188beabeaf1e21a1d40",
+        "url": "https://app.notion.com/p/3e482a6d65618188beabeaf1e21a1d40"
+      },
+      {
+        "label": "Canvas — Práctica 06: 22/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-06-22-slash-09-slash-2026"
       }
     ],
     "resources": [
@@ -958,6 +988,22 @@
         "type": "guide",
         "title": "Simulador interactivo (Netlify)",
         "url": "https://aquamarine-hotteok-9b065a.netlify.app/"
+      }
+    ]
+  },
+  "practica-06-compare-select-design": {
+    "title": "Práctica 06: comparación, selección y diseño conceptual",
+    "content": "# Práctica 06: comparación, selección y diseño conceptual\n\nComparar estilos arquitectónicos; seleccionar el estilo según requerimientos, drivers y restricciones; justificar la decisión; analizar ventajas y desventajas; elaborar el diseño conceptual.\n\n### Fuentes\n- **Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual** — Resumen de la práctica\n- **Canvas — Práctica 06: 22/09/2026**",
+    "sourceRefs": [
+      {
+        "label": "Práctica 06 — 22/09/2026 — Comparación, Selección y Diseño Conceptual",
+        "locator": "topic_summary — Notion 3e482a6d65618188beabeaf1e21a1d40",
+        "url": "https://app.notion.com/p/3e482a6d65618188beabeaf1e21a1d40"
+      },
+      {
+        "label": "Canvas — Práctica 06: 22/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-06-22-slash-09-slash-2026"
       }
     ]
   }

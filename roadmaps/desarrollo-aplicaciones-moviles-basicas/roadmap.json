@@ -5,7 +5,7 @@
   "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer, panel ShopEase, perfil y consumo del servicio de actualización de usuario.",
   "canvas": {
     "width": 1280,
-    "height": 1900,
+    "height": 2140,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -351,6 +351,57 @@
       }
     },
     {
+      "id": "product-category-admin-form",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1786
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Formulario de categorías de productos",
+        "order": "15",
+        "detail": "Clase 19: formularios avanzados de administración para categorías, con validaciones, placeholders y comportamiento variable."
+      }
+    },
+    {
+      "id": "keyboard-avoiding-scroll-forms",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1790
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "KeyboardAvoidingView y ScrollView",
+        "order": "16",
+        "detail": "Contenedores que respetan el teclado (behavior iOS/Android) y ScrollView para no truncar campos."
+      }
+    },
+    {
+      "id": "formcard-multiline-dual-headers",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1930
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "formCard, multilinea y cabeceras dobles",
+        "order": "17",
+        "detail": "Layouts formCard, TextInput multilinea y cabeceras ADMIN PORTAL + Nueva Categoría con badges."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -359,7 +410,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1570
+        "height": 1820
       },
       "zIndex": -1,
       "data": {
@@ -510,6 +561,42 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-panel-search-category-filter-product-category-admin-form",
+      "source": "panel-search-category-filter",
+      "target": "product-category-admin-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-login-register-ui-product-category-admin-form",
+      "source": "login-register-ui",
+      "target": "product-category-admin-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-product-category-admin-form-keyboard-avoiding-scroll-forms",
+      "source": "product-category-admin-form",
+      "target": "keyboard-avoiding-scroll-forms",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-product-category-admin-form-formcard-multiline-dual-headers",
+      "source": "product-category-admin-form",
+      "target": "formcard-multiline-dual-headers",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
       "arrow": true
     }
   ]
