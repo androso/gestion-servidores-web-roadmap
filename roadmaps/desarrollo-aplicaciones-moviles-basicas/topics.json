@@ -207,5 +207,53 @@
         "url": "https://app.notion.com/p/3de82a6d656181d096f4d58c7a41f873"
       }
     ]
+  },
+  "product-category-admin-form": {
+    "title": "Formulario de categorías de productos",
+    "content": "# Formulario de categorías de productos\n\nConfigurar, maquetar e implementar interfaces de recolección de datos (formularios de categorías de productos) con validaciones, placeholders y comportamientos variables, incluyendo KeyboardAvoidingView y TextInput multilinea.\n\n### Conceptos cubiertos\n- Formularios avanzados para portales de administración en móviles\n- KeyboardAvoidingView (behavior según iOS/Android)\n- ScrollView para evitar truncamiento de campos\n- Layouts con tarjetas agrupadas (formCard)\n- TextInput multilinea (numberOfLines) y centrado vertical\n- Cabeceras dobles (ADMIN PORTAL + Nueva Categoría) y badges con iconos\n\n> Un formulario administrativo usable combina contenedores que respetan el teclado, scroll y campos multilinea bien tipados, con una cabecera de contexto clara.\n\n### Fuentes\n- **Clase 19 — 16/09/2026 — Formulario de categorías de productos** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 19**",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 16/09/2026 — Formulario de categorías de productos",
+        "locator": "Objetivo / Conceptos / Idea clave — Notion 3e382a6d656181e3bc0df6642ec703be",
+        "url": "https://app.notion.com/p/3e382a6d656181e3bc0df6642ec703be"
+      },
+      {
+        "label": "Lección Canvas — Clase 19",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
+      }
+    ]
+  },
+  "keyboard-avoiding-scroll-forms": {
+    "title": "KeyboardAvoidingView y ScrollView",
+    "content": "# KeyboardAvoidingView y ScrollView\n\nKeyboardAvoidingView con `behavior` según iOS/Android, y ScrollView para evitar truncamiento de campos cuando aparece el teclado.\n\n### Fuentes\n- **Clase 19 — Formulario de categorías de productos** — Conceptos: KeyboardAvoidingView / ScrollView",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 16/09/2026 — Formulario de categorías de productos",
+        "locator": "Conceptos: KeyboardAvoidingView (behavior iOS/Android) y ScrollView",
+        "url": "https://app.notion.com/p/3e382a6d656181e3bc0df6642ec703be"
+      },
+      {
+        "label": "Lección Canvas — Clase 19",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
+      }
+    ]
+  },
+  "formcard-multiline-dual-headers": {
+    "title": "formCard, multilinea y cabeceras dobles",
+    "content": "# formCard, multilinea y cabeceras dobles\n\nLayouts con tarjetas agrupadas (`formCard`), TextInput multilinea (`numberOfLines`) y centrado vertical, más cabeceras dobles (ADMIN PORTAL + Nueva Categoría) y badges con iconos.\n\n### Fuentes\n- **Clase 19 — Formulario de categorías de productos** — Conceptos: formCard / TextInput multilinea / cabeceras y badges",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 16/09/2026 — Formulario de categorías de productos",
+        "locator": "Conceptos: formCard, TextInput multilinea, cabeceras dobles y badges",
+        "url": "https://app.notion.com/p/3e382a6d656181e3bc0df6642ec703be"
+      },
+      {
+        "label": "Lección Canvas — Clase 19",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
+      }
+    ]
   }
 }
