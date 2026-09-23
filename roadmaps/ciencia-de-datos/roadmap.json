@@ -6,7 +6,7 @@
   "canvas": {
     "width": 1280,
     "height": 6720,
-    "minZoom": 0.12,
+    "minZoom": 0.11,
     "maxZoom": 1.75,
     "initialViewport": { "x": 150, "y": 8, "zoom": 0.84 },
     "mobileInitialViewport": { "x": -70, "y": -190, "zoom": 0.8 }
