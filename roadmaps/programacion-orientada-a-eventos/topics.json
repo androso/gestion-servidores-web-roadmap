@@ -839,5 +839,49 @@
         "url": "https://app.notion.com/p/3de82a6d6561815c956fc29c2e910669"
       }
     ]
+  },
+  "async-events-concurrency": {
+    "title": "Eventos asíncronos y concurrencia",
+    "content": "# Eventos asíncronos y concurrencia\n\nClase 16 (09/09/2026): **eventos asíncronos vs síncronos**; callbacks, **Promesas** y **async/await**; Event Loop (**Call Stack + Task Queue**); **Event Dispatch Thread** (no bloquear la UI); **concurrencia vs paralelismo**.\n\nEn Next.js: Server Components **async** y Client Components (`useEffect` / handlers).\n\nJavaScript es **single-threaded**. El Event Loop + async/await mantienen la UI responsiva mientras HTTP/I/O terminan en segundo plano. PDF/Canva/Zoom UNAVAILABLE.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Eventos asíncronos, Event Loop y concurrencia con Next.js** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Eventos asíncronos, Event Loop y concurrencia con Next.js",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e582a6d656181e1bd0bd60af20c7b89"
+      }
+    ]
+  },
+  "async-patterns-throttle-promise-all": {
+    "title": "Retry, timeout, throttle y Promise.all",
+    "content": "# Retry, timeout, throttle y Promise.all\n\nPatrones de Clase 16 para I/O concurrente: **Retry**, **Timeout**, **Cancelación**, Debounce (ya en el mapa), **Throttle** y **Promise.all**.\n\nAplicarlos con Next.js Server Components async y handlers en Client Components, sin saturar la UI ni perder control.\n\n### Fuentes\n- **Clase 16 — 09/09/2026 — Eventos asíncronos, Event Loop y concurrencia con Next.js** — Conceptos / Patrones",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — 09/09/2026 — Eventos asíncronos, Event Loop y concurrencia con Next.js",
+        "locator": "Conceptos / Patrones",
+        "url": "https://app.notion.com/p/3e582a6d656181e1bd0bd60af20c7b89"
+      }
+    ]
+  },
+  "react-component-architecture-profiling": {
+    "title": "Arquitectura de componentes y profiling",
+    "content": "# Arquitectura de componentes y profiling\n\nPráctica 6: optimizar una app **React + TypeScript (Vite)** con filtrado en vivo, ordenamiento dinámico y selección múltiple. Extraer lógica a un **Custom Hook tipado**; memorizar cómputos y estabilizar handlers; validar con **React Profiler**.\n\nConceptos: ciclo de re-render y cascada; identidad referencial; `useMemo`, `useCallback`, `React.memo`; patrón Custom Hook; React DevTools Profiler.\n\nIdea clave: **memorización selectiva** + Custom Hooks tipados aíslan cómputos pesados y evitan re-renders en listas interactivas. Fecha de clase UNAVAILABLE; PDF/Canva/Zoom UNAVAILABLE.\n\n### Fuentes\n- **Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e582a6d656181fd8a6eeebbc1d05d43"
+      }
+    ]
+  },
+  "custom-hooks-memo-profiler": {
+    "title": "Custom Hooks, useMemo/useCallback y Profiler",
+    "content": "# Custom Hooks, useMemo/useCallback y Profiler\n\nPráctica 6: Custom Hook tipado para lógica de eventos, orden y filtros; `useMemo` / `useCallback` / `React.memo`; validar con la pestaña **Profiler** de React Developer Tools.\n\nStack: **Vite + React + TypeScript**.\n\n### Fuentes\n- **Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling** — Conceptos / Herramientas",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling",
+        "locator": "Conceptos / Herramientas",
+        "url": "https://app.notion.com/p/3e582a6d656181fd8a6eeebbc1d05d43"
+      }
+    ]
   }
 }

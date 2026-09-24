@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "programacion-orientada-a-eventos",
   "title": "Programación Orientada a Eventos",
-  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js (App Router y proyecto guiado) y el patrón debounce en TypeScript.",
+  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js, debounce, asincronía/Event Loop y profiling de componentes React.",
   "canvas": {
     "width": 1280,
-    "height": 4480,
+    "height": 5160,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1114,6 +1114,106 @@
       "data": {
         "label": "09 · Debounce — Práctica 5"
       }
+    },
+    {
+      "id": "async-events-concurrency",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4440
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Eventos asíncronos y concurrencia",
+        "order": "52",
+        "detail": "Asincronía, promesas/async-await y Event Loop para UX que no se congela."
+      }
+    },
+    {
+      "id": "async-patterns-throttle-promise-all",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4444
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Retry, timeout, throttle y Promise.all",
+        "order": "53",
+        "detail": "Patrones para I/O concurrente sin saturar la UI ni perder control."
+      }
+    },
+    {
+      "id": "section-async-concurrency",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 4380
+      },
+      "size": {
+        "width": 1200,
+        "height": 250
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "10 · Async / Event Loop — Clase 16"
+      }
+    },
+    {
+      "id": "react-component-architecture-profiling",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4760
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Arquitectura de componentes y profiling",
+        "order": "54",
+        "detail": "Custom Hooks tipados + memorización selectiva ante paneles con alta concurrencia de eventos."
+      }
+    },
+    {
+      "id": "custom-hooks-memo-profiler",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4764
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Custom Hooks, useMemo/useCallback y Profiler",
+        "order": "55",
+        "detail": "Encapsular filtros/orden; estabilizar handlers; medir con React Profiler."
+      }
+    },
+    {
+      "id": "section-react-profiling",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 4700
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "11 · Componentes y profiling — Práctica 6"
+      }
     }
   ],
   "edges": [
@@ -1643,6 +1743,69 @@
       "id": "e-debounce-pattern-debounce-typescript",
       "source": "debounce-pattern",
       "target": "debounce-typescript",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-event-loop-async-events-concurrency",
+      "source": "event-loop",
+      "target": "async-events-concurrency",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-nextjs-app-router-async-events-concurrency",
+      "source": "nextjs-app-router",
+      "target": "async-events-concurrency",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-debounce-pattern-async-events-concurrency",
+      "source": "debounce-pattern",
+      "target": "async-events-concurrency",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-async-events-concurrency-async-patterns-throttle-promise-all",
+      "source": "async-events-concurrency",
+      "target": "async-patterns-throttle-promise-all",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-async-events-concurrency-react-component-architecture-profiling",
+      "source": "async-events-concurrency",
+      "target": "react-component-architecture-profiling",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-debounce-pattern-react-component-architecture-profiling",
+      "source": "debounce-pattern",
+      "target": "react-component-architecture-profiling",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-react-component-architecture-profiling-custom-hooks-memo-profiler",
+      "source": "react-component-architecture-profiling",
+      "target": "custom-hooks-memo-profiler",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
