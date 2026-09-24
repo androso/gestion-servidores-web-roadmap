@@ -255,5 +255,53 @@
         "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
       }
     ]
+  },
+  "mvvm-nav-multilevel": {
+    "title": "Optimización MVVM y menú de navegación multinivel",
+    "content": "# Optimización MVVM y menú de navegación multinivel\n\nEscalar modelos y viewmodels de presentación bajo MVVM: enriquecer interfaces de navegación lineal en menús dinámicos multinivel (desplegables con sub-comunidades de opciones) que agrupan módulos complejos (p. ej. Categorías, Productos y Servicios dentro de Inventory), con tipado recursivo, mantenibilidad del estado visual y cohesión de componentes.\n\n### Conceptos cubiertos\n- Optimización de patrones MVVM\n- Optimización de estructura para el menú de navegación\n- ViewModels desacoplados que exponen lógica de presentación y estados inmutables parametrizables (`profile`, `navigationOptions`)\n- Aislamiento de la vista (UI) respecto a la lógica de datos de navegación\n\n> Un menú administrativo mantenible combina tipado recursivo de opciones de navegación con ViewModels que aíslan estado visual, agrupando acciones en selectores tipo acordeón.\n\nSesión virtual grabada (Semana 10). La actividad se habilitará cuando se realice la pantalla de creación de productos (aún no asignada en Canvas en esta página). PDF/Canva/pptx de clase: UNAVAILABLE (solo Zoom + texto de sesión en Canvas). Fecha de clase en la página Canvas: UNAVAILABLE (placeholder DD/MM/AAAA); el título usa 23/09/2026.\n\nHerramientas: React Native / TypeScript (MVVM, Drawer Accordion). Modalidad: virtual grabada.\n\n### Fuentes\n- **Clase 20 — 23/09/2026 — Optimización MVVM y menú de navegación multinivel** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 20**",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 23/09/2026 — Optimización MVVM y menú de navegación multinivel",
+        "locator": "Objetivo / Conceptos / Idea clave — Notion 3e582a6d65618107979ed18c2fc03e42",
+        "url": "https://app.notion.com/p/3e582a6d65618107979ed18c2fc03e42"
+      },
+      {
+        "label": "Lección Canvas — Clase 20",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-20"
+      }
+    ]
+  },
+  "recursive-nav-subitems": {
+    "title": "Interfaces TypeScript recursivas (subitems)",
+    "content": "# Interfaces TypeScript recursivas (subitems)\n\nInterfaces TypeScript con jerarquía/subordinación: arreglos anidados opcionales como `subitems` para describir opciones de navegación multinivel.\n\n### Fuentes\n- **Clase 20 — Optimización MVVM y menú de navegación multinivel** — Conceptos: interfaces TypeScript / `subitems`",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 23/09/2026 — Optimización MVVM y menú de navegación multinivel",
+        "locator": "Conceptos: Interfaces TypeScript con jerarquía/subordinación (arreglos anidados opcionales como subitems)",
+        "url": "https://app.notion.com/p/3e582a6d65618107979ed18c2fc03e42"
+      },
+      {
+        "label": "Lección Canvas — Clase 20",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-20"
+      }
+    ]
+  },
+  "drawer-accordion-nav": {
+    "title": "Drawer Accordion y agrupación Inventory",
+    "content": "# Drawer Accordion y agrupación Inventory\n\nDrawer Accordion: agrupación de acciones de negocio para reducir ruido visual cognitivo. Ejemplo del curso: Categorías, Productos y Servicios dentro de Inventory, en desplegables con sub-comunidades de opciones.\n\n### Fuentes\n- **Clase 20 — Optimización MVVM y menú de navegación multinivel** — Conceptos: Drawer Accordion / Inventory",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 23/09/2026 — Optimización MVVM y menú de navegación multinivel",
+        "locator": "Conceptos: Drawer Accordion; Objetivo: Inventory (Categorías, Productos y Servicios)",
+        "url": "https://app.notion.com/p/3e582a6d65618107979ed18c2fc03e42"
+      },
+      {
+        "label": "Lección Canvas — Clase 20",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-20"
+      }
+    ]
   }
 }

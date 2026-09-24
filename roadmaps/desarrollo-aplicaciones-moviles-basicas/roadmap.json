@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer, panel ShopEase, perfil y consumo del servicio de actualización de usuario.",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración.",
   "canvas": {
     "width": 1280,
-    "height": 2140,
+    "height": 2520,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -402,6 +402,57 @@
       }
     },
     {
+      "id": "mvvm-nav-multilevel",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2110
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Optimización MVVM y menú de navegación multinivel",
+        "order": "18",
+        "detail": "Escalar ViewModels y menús dinámicos multinivel; aislar UI de la lógica de navegación."
+      }
+    },
+    {
+      "id": "recursive-nav-subitems",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2114
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Interfaces TypeScript recursivas (subitems)",
+        "order": "19",
+        "detail": "Tipado jerárquico con arreglos anidados opcionales subitems para opciones subordinadas."
+      }
+    },
+    {
+      "id": "drawer-accordion-nav",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2254
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Drawer Accordion y agrupación Inventory",
+        "order": "20",
+        "detail": "Acordeón en el drawer que agrupa Categorías, Productos y Servicios para menos ruido visual."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -410,7 +461,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1820
+        "height": 2160
       },
       "zIndex": -1,
       "data": {
@@ -594,6 +645,51 @@
       "id": "e-product-category-admin-form-formcard-multiline-dual-headers",
       "source": "product-category-admin-form",
       "target": "formcard-multiline-dual-headers",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-product-category-admin-form-mvvm-nav-multilevel",
+      "source": "product-category-admin-form",
+      "target": "mvvm-nav-multilevel",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-drawer-navigation-mvvm-nav-multilevel",
+      "source": "drawer-navigation",
+      "target": "mvvm-nav-multilevel",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-clean-mvvm-mvvm-nav-multilevel",
+      "source": "clean-mvvm",
+      "target": "mvvm-nav-multilevel",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-mvvm-nav-multilevel-recursive-nav-subitems",
+      "source": "mvvm-nav-multilevel",
+      "target": "recursive-nav-subitems",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-mvvm-nav-multilevel-drawer-accordion-nav",
+      "source": "mvvm-nav-multilevel",
+      "target": "drawer-accordion-nav",
       "sourceHandle": "bottom",
       "targetHandle": "left",
       "route": "bezier",
