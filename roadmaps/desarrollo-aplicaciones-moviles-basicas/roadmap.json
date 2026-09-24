@@ -5,7 +5,7 @@
   "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración.",
   "canvas": {
     "width": 1280,
-    "height": 2520,
+    "height": 2860,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -415,7 +415,7 @@
       "data": {
         "label": "Optimización MVVM y menú de navegación multinivel",
         "order": "18",
-        "detail": "Escalar ViewModels y menús dinámicos multinivel; aislar UI de la lógica de navegación."
+        "detail": "Escalar modelos y viewmodels MVVM; menús multinivel con tipado recursivo y cohesión de componentes."
       }
     },
     {
@@ -430,13 +430,13 @@
         "height": 88
       },
       "data": {
-        "label": "Interfaces TypeScript recursivas (subitems)",
+        "label": "Interfaces TypeScript con jerarquía (subitems)",
         "order": "19",
-        "detail": "Tipado jerárquico con arreglos anidados opcionales subitems para opciones subordinadas."
+        "detail": "Jerarquía/subordinación con arreglos anidados opcionales como subitems."
       }
     },
     {
-      "id": "drawer-accordion-nav",
+      "id": "decoupled-viewmodels-nav",
       "type": "subtopic",
       "position": {
         "x": 540,
@@ -447,9 +447,43 @@
         "height": 88
       },
       "data": {
-        "label": "Drawer Accordion y agrupación Inventory",
+        "label": "ViewModels desacoplados (profile, navigationOptions)",
         "order": "20",
-        "detail": "Acordeón en el drawer que agrupa Categorías, Productos y Servicios para menos ruido visual."
+        "detail": "Lógica de presentación y estados inmutables parametrizables: profile y navigationOptions."
+      }
+    },
+    {
+      "id": "ui-nav-data-isolation",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2394
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Aislamiento de la vista respecto a la navegación",
+        "order": "21",
+        "detail": "Aislar la vista (UI) de la lógica de datos de navegación."
+      }
+    },
+    {
+      "id": "drawer-accordion-nav",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2534
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Drawer Accordion",
+        "order": "22",
+        "detail": "Agrupación de acciones de negocio para reducir ruido visual cognitivo."
       }
     },
     {
@@ -461,7 +495,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 2160
+        "height": 2500
       },
       "zIndex": -1,
       "data": {
@@ -683,6 +717,24 @@
       "target": "recursive-nav-subitems",
       "sourceHandle": "right",
       "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-mvvm-nav-multilevel-decoupled-viewmodels-nav",
+      "source": "mvvm-nav-multilevel",
+      "target": "decoupled-viewmodels-nav",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-decoupled-viewmodels-nav-ui-nav-data-isolation",
+      "source": "decoupled-viewmodels-nav",
+      "target": "ui-nav-data-isolation",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
       "route": "straight",
       "arrow": true
     },
