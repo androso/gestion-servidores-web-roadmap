@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-seguridad-sistemas-informaticos",
   "title": "Gestión de Seguridad de Sistemas Informáticos",
-  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0, criptografía y funciones hash para integridad.",
+  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0, criptografía, hashes y cifrado simétrico DES/AES con modos ECB y CBC.",
   "canvas": {
     "width": 1280,
-    "height": 1960,
+    "height": 2360,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -368,6 +368,74 @@
       }
     },
     {
+      "id": "symmetric-crypto-des-aes",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1918
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Criptografía simétrica: DES y AES",
+        "order": "16",
+        "detail": "Una sola clave para cifrar y descifrar; el modo (ECB vs CBC) importa tanto como el algoritmo."
+      }
+    },
+    {
+      "id": "des-vs-aes",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1922
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "DES, 3DES y AES",
+        "order": "17",
+        "detail": "DES Feistel (clave efectiva 56 bits) frente a AES SPN (FIPS 197)."
+      }
+    },
+    {
+      "id": "modes-ecb-cbc",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2054
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Modos ECB y CBC",
+        "order": "18",
+        "detail": "ECB filtra patrones; CBC usa IV. Un algoritmo fuerte mal usado es un sistema débil."
+      }
+    },
+    {
+      "id": "lab-aes-ecb-cbc",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2186
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Laboratorio AES: ECB, CBC y GCM",
+        "order": "19",
+        "detail": "Implementar AES-CBC y AES-GCM en Python; demostrar debilidades de ECB y de CBC sin integridad."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -376,7 +444,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 1688
+        "height": 2088
       },
       "zIndex": -1,
       "data": {
@@ -560,6 +628,51 @@
       "id": "e-detecting-modifications-integrasoft-hash-case",
       "source": "detecting-modifications",
       "target": "integrasoft-hash-case",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-hash-functions-integrity-symmetric-crypto-des-aes",
+      "source": "hash-functions-integrity",
+      "target": "symmetric-crypto-des-aes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-integrasoft-hash-case-symmetric-crypto-des-aes",
+      "source": "integrasoft-hash-case",
+      "target": "symmetric-crypto-des-aes",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-symmetric-crypto-des-aes-des-vs-aes",
+      "source": "symmetric-crypto-des-aes",
+      "target": "des-vs-aes",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-des-vs-aes-modes-ecb-cbc",
+      "source": "des-vs-aes",
+      "target": "modes-ecb-cbc",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-modes-ecb-cbc-lab-aes-ecb-cbc",
+      "source": "modes-ecb-cbc",
+      "target": "lab-aes-ecb-cbc",
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",

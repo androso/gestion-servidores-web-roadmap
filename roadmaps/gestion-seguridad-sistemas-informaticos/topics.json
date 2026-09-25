@@ -190,5 +190,81 @@
         "url": "https://univo.instructure.com/courses/1764/pages/hash-e-integridad"
       }
     ]
+  },
+  "symmetric-crypto-des-aes": {
+    "title": "Criptografía simétrica: DES y AES",
+    "content": "# Criptografía simétrica: DES y AES\n\nUna sola clave para cifrar y descifrar (principio de Kerckhoffs). El cifrado por bloques combina confusión y difusión.\n\nUn algoritmo fuerte mal usado es un sistema débil: el modo (ECB vs CBC vs GCM) y el manejo del IV/nonce importan tanto como la clave.\n\n### Conceptos cubiertos\n- Criptografía simétrica y cifrado por bloques\n- DES / 3DES / AES\n- Modos de operación: ECB, CBC, CTR, GCM (AEAD)\n- NIST SP 800-38A\n\n### Fuentes\n- **Clase 10 — 22/09/2026 — Criptografía simétrica: DES, AES, ECB y CBC** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — 22/09/2026 — Criptografía simétrica: DES, AES, ECB y CBC",
+        "locator": "Objetivo de aprendizaje / Idea clave",
+        "url": "https://app.notion.com/p/3e682a6d6561816894b8dda662bcd0f2"
+      },
+      {
+        "label": "Canvas — Clase 10 criptografía simétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-10-criptografia-simetrica-des-aes-ecb-y-cbc"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "NIST SP 800-38A — modos de operación de cifrado por bloques",
+        "url": "https://www.nist.gov/publications/recommendation-block-cipher-modes-operation-methods-and-techniques"
+      },
+      {
+        "type": "video",
+        "title": "Video de la Clase 10",
+        "url": "https://www.youtube.com/watch?v=xX018jBWGCA"
+      }
+    ]
+  },
+  "des-vs-aes": {
+    "title": "DES, 3DES y AES",
+    "content": "# DES, 3DES y AES\n\nComparar DES (Feistel, clave efectiva 56 bits), 3DES y AES (SPN, FIPS 197). Incidentes citados en la sesión: Deep Crack, Adobe 3DES, Zoom, Sweet32, POODLE.\n\n### Fuentes\n- **Clase 10 — Criptografía simétrica** — Conceptos: DES vs AES",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — 22/09/2026 — Criptografía simétrica: DES, AES, ECB y CBC",
+        "locator": "Conceptos: DES (Feistel) vs AES (SPN, FIPS 197)",
+        "url": "https://app.notion.com/p/3e682a6d6561816894b8dda662bcd0f2"
+      },
+      {
+        "label": "Canvas — Clase 10 criptografía simétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-10-criptografia-simetrica-des-aes-ecb-y-cbc"
+      }
+    ]
+  },
+  "modes-ecb-cbc": {
+    "title": "Modos ECB y CBC",
+    "content": "# Modos ECB y CBC\n\nECB cifra cada bloque por separado y filtra patrones. CBC encadena bloques con un IV. La sesión también sitúa CTR y GCM (AEAD) frente a esos modos.\n\n### Fuentes\n- **Clase 10 — Criptografía simétrica** — Modos ECB/CBC/CTR/GCM",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — 22/09/2026 — Criptografía simétrica: DES, AES, ECB y CBC",
+        "locator": "Conceptos: modos ECB (patrones), CBC (IV), CTR, GCM",
+        "url": "https://app.notion.com/p/3e682a6d6561816894b8dda662bcd0f2"
+      },
+      {
+        "label": "Canvas — Clase 10 criptografía simétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-10-criptografia-simetrica-des-aes-ecb-y-cbc"
+      }
+    ]
+  },
+  "lab-aes-ecb-cbc": {
+    "title": "Laboratorio AES: ECB, CBC y GCM",
+    "content": "# Laboratorio AES: ECB, CBC y GCM\n\nImplementar AES-CBC y AES-GCM en Python (`lab_semana10.py`, paquetes `cryptography` y `pycryptodome`) y demostrar debilidades de ECB y de CBC sin integridad (bit-flipping). La práctica incluye AES-ECB, AES-CBC, AES-GCM y fuerza bruta DES.\n\nEntregar informe de laboratorio (PDF) con capturas, respuestas de análisis y recomendación final; completar el quiz guiado (práctica, sin peso de evaluación).\n\n### Fuentes\n- **Clase 10 — Criptografía simétrica** — Laboratorio Python / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 10 — 22/09/2026 — Criptografía simétrica: DES, AES, ECB y CBC",
+        "locator": "Laboratorio Python: AES-ECB, AES-CBC, bit-flipping, AES-GCM; lab_semana10.py",
+        "url": "https://app.notion.com/p/3e682a6d6561816894b8dda662bcd0f2"
+      },
+      {
+        "label": "Canvas — Clase 10 criptografía simétrica",
+        "locator": "Página de la clase / archivos Semana10_Criptografia_Simetrica.pdf y lab_semana10.py",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-10-criptografia-simetrica-des-aes-ecb-y-cbc"
+      }
+    ]
   }
 }
