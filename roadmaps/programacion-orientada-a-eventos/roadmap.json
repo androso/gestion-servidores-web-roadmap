@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "slug": "programacion-orientada-a-eventos",
   "title": "Programación Orientada a Eventos",
-  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js, debounce, asincronía/Event Loop y profiling de componentes React.",
+  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js, debounce, asincronía/Event Loop y useState/eventos en React.",
   "canvas": {
     "width": 1280,
     "height": 5160,
@@ -1177,9 +1177,9 @@
         "height": 96
       },
       "data": {
-        "label": "Arquitectura de componentes y profiling",
+        "label": "React: useState y eventos",
         "order": "54",
-        "detail": "Custom Hooks tipados + memorización selectiva ante paneles con alta concurrencia de eventos."
+        "detail": "Estado local con useState; renderizado condicional; componentes controlados y formularios con onSubmit."
       }
     },
     {
@@ -1194,9 +1194,9 @@
         "height": 88
       },
       "data": {
-        "label": "Custom Hooks, useMemo/useCallback y Profiler",
+        "label": "Inputs controlados y formularios onSubmit",
         "order": "55",
-        "detail": "Encapsular filtros/orden; estabilizar handlers; medir con React Profiler."
+        "detail": "onChange en vivo; onSubmit + preventDefault; toggle con onClick."
       }
     },
     {
@@ -1212,7 +1212,7 @@
       },
       "zIndex": -1,
       "data": {
-        "label": "11 · Componentes y profiling — Práctica 6"
+        "label": "11 · React useState / eventos — Práctica 6"
       }
     }
   ],
