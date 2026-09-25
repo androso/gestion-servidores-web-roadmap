@@ -863,23 +863,23 @@
     ]
   },
   "react-component-architecture-profiling": {
-    "title": "Arquitectura de componentes y profiling",
-    "content": "# Arquitectura de componentes y profiling\n\nPráctica 6: optimizar una app **React + TypeScript (Vite)** con filtrado en vivo, ordenamiento dinámico y selección múltiple. Extraer lógica a un **Custom Hook tipado**; memorizar cómputos y estabilizar handlers; validar con **React Profiler**.\n\nConceptos: ciclo de re-render y cascada; identidad referencial; `useMemo`, `useCallback`, `React.memo`; patrón Custom Hook; React DevTools Profiler.\n\nIdea clave: **memorización selectiva** + Custom Hooks tipados aíslan cómputos pesados y evitan re-renders en listas interactivas. Fecha de clase UNAVAILABLE; PDF/Canva/Zoom UNAVAILABLE.\n\n### Fuentes\n- **Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling** — Objetivo / Conceptos / Idea clave",
+    "title": "React: useState y eventos",
+    "content": "# React: useState y eventos\n\nPráctica 6 reescrita (Canvas, actualización 2026-09-24): **ya no es Custom Hooks / Profiling**. Ahora introduce React y el **estado local con `useState`** y eventos: **renderizado condicional (`&&`)**, **componentes controlados** (`input` + `onChange`) y formularios con **`onSubmit` / `preventDefault`**.\n\nTres ejercicios: **ComponenteVisible** (toggle `onClick`), **ComponenteTexto** (`onChange` en vivo), **ComponenteFormulario** (Nombre/Correo con `onSubmit`).\n\nIdea clave: `useState` + eventos (`onClick` / `onChange` / `onSubmit`) son el núcleo de la reactividad local en React. Stack: **Vite + React**. Fecha de clase UNAVAILABLE; PDF/Canva/Zoom UNAVAILABLE.\n\n### Fuentes\n- **Práctica 6 — Introducción a React: useState y Eventos** — Objetivo / Conceptos / Idea clave",
     "sourceRefs": [
       {
-        "label": "Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling",
+        "label": "Práctica 6 — Introducción a React: useState y Eventos",
         "locator": "Objetivo / Conceptos / Idea clave",
         "url": "https://app.notion.com/p/3e582a6d656181fd8a6eeebbc1d05d43"
       }
     ]
   },
   "custom-hooks-memo-profiler": {
-    "title": "Custom Hooks, useMemo/useCallback y Profiler",
-    "content": "# Custom Hooks, useMemo/useCallback y Profiler\n\nPráctica 6: Custom Hook tipado para lógica de eventos, orden y filtros; `useMemo` / `useCallback` / `React.memo`; validar con la pestaña **Profiler** de React Developer Tools.\n\nStack: **Vite + React + TypeScript**.\n\n### Fuentes\n- **Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling** — Conceptos / Herramientas",
+    "title": "Inputs controlados y formularios onSubmit",
+    "content": "# Inputs controlados y formularios onSubmit\n\nPráctica 6 (contenido nuevo): ejercicios **ComponenteVisible**, **ComponenteTexto** y **ComponenteFormulario** — toggle con `onClick`, `onChange` en vivo y `onSubmit` + `preventDefault`.\n\nHerramientas: VS Code, Node.js LTS, **Vite + React**, navegador moderno.\n\n### Fuentes\n- **Práctica 6 — Introducción a React: useState y Eventos** — Actividad / Herramientas",
     "sourceRefs": [
       {
-        "label": "Práctica 6 — Arquitectura de Componentes, Custom Hooks y Optimización con Profiling",
-        "locator": "Conceptos / Herramientas",
+        "label": "Práctica 6 — Introducción a React: useState y Eventos",
+        "locator": "Actividad / Herramientas",
         "url": "https://app.notion.com/p/3e582a6d656181fd8a6eeebbc1d05d43"
       }
     ]

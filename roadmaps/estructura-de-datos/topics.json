@@ -573,5 +573,27 @@
         "url": "https://app.notion.com/p/3e282a6d656181eab238d8527b52a1f7"
       }
     ]
+  },
+  "fifo-queue-python-implementation": {
+    "title": "Implementación de cola FIFO en Python",
+    "content": "# Implementación de cola FIFO en Python\n\nClase 17 (17/09/2026, Semana 17): **crear y manipular una cola FIFO** en Python; elegir cola cuando el problema exige **atender en el orden de llegada** (orden de recepción).\n\nIdea clave: una cola FIFO atiende en orden de llegada; se implementa en Python y se usa en turnos de banco. Herramientas: **VS Code** y **Python**. Zoom: UNAVAILABLE.\n\nNo recrea el patrón LIFO/FIFO de Práctica 3 ni el laboratorio mixto de Práctica 4: aquí el foco es la implementación FIFO y la guía de turnos.\n\n### Fuentes\n- **Clase 17 — 17/09/2026 — Implementación de FIFO** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 17/09/2026 — Implementación de FIFO",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e682a6d6561812ab496c3170f54c8db"
+      }
+    ]
+  },
+  "fifo-bank-turns-lab": {
+    "title": "Sistema de turnos de banco (FIFO)",
+    "content": "# Sistema de turnos de banco (FIFO)\n\nClase 17: aplicar la cola a un **sistema de turnos de banco**; completar la **guía paso a paso** (PDF `Guía Paso a Paso_ Sistema de Turnos FIFO.pdf`) y el **cuestionario de retroalimentación LIFO/FIFO** (sin ponderación). Sesión presencial **17/09/2026** con laptop.\n\n### Fuentes\n- **Clase 17 — 17/09/2026 — Implementación de FIFO** — Actividad / Archivos",
+    "sourceRefs": [
+      {
+        "label": "Clase 17 — 17/09/2026 — Implementación de FIFO",
+        "locator": "Actividad / Archivos",
+        "url": "https://app.notion.com/p/3e682a6d6561812ab496c3170f54c8db"
+      }
+    ]
   }
 }

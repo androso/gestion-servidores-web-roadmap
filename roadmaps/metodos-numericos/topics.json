@@ -190,6 +190,28 @@
       }
     ]
   },
+  "traub-multipoint-method": {
+    "title": "Método de Traub (multipaso)",
+    "content": "# Método de Traub (multipaso)\n\nClase 20 (24/09/2026, Semana 10): **métodos iterativos multipaso** y el **Método de Traub** para raíces de ecuaciones no lineales: formulación iterativa, **pseudocódigo** e **implementación en Python / Jupyter**.\n\nContinúa Newton (Clases 16–19): Traub es multipaso; se implementa en Python y se evalúa la rapidez de convergencia con ACOC. Repasar Newton y ecuaciones no lineales antes de la sesión.\n\nHerramientas: Python / Jupyter. Adjuntos en Notion: diapositivas `Clase 20 - Semana 10 - AMN.pdf` y notebook `Método de Traub - Clase 20.ipynb`.\n\n### Fuentes\n- **Clase 20 — 24/09/2026 — Métodos Iterativos Multipaso: Método de Traub y Análisis de su Convergencia** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 24/09/2026 — Métodos Iterativos Multipaso: Método de Traub y Análisis de su Convergencia",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e682a6d656181658a68c251be517120"
+      }
+    ]
+  },
+  "traub-acoc-convergence": {
+    "title": "ACOC y convergencia de Traub",
+    "content": "# ACOC y convergencia de Traub\n\nClase 20: **orden de convergencia computacional aproximado (ACOC)**; **aproximaciones y errores por iteración**; ejemplos numéricos en la sesión presencial del **24/09/2026** (Semana 10).\n\nDespués de implementar Traub, leer las tablas de error y calcular ACOC para interpretar qué tan rápido converge el método.\n\n### Fuentes\n- **Clase 20 — 24/09/2026 — Métodos Iterativos Multipaso: Método de Traub y Análisis de su Convergencia** — Conceptos / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 24/09/2026 — Métodos Iterativos Multipaso: Método de Traub y Análisis de su Convergencia",
+        "locator": "Conceptos / Actividad",
+        "url": "https://app.notion.com/p/3e682a6d656181658a68c251be517120"
+      }
+    ]
+  },
   "parcial-1-scope": {
     "title": "Alcance del Parcial 1",
     "content": "# Alcance del Parcial 1\n\nEl primer examen parcial (Clase 14, 03/09/2026) cubre:\n\n- existencia de soluciones\n- raíces y derivadas\n- polinomio de Taylor\n- error porcentual\n- aproximaciones para integrales\n\nEs un hito de evaluación de lo ya estudiado, no un tema nuevo de enseñanza.",
