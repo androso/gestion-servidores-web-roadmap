@@ -381,7 +381,7 @@
       "data": {
         "label": "Criptografía simétrica: DES y AES",
         "order": "16",
-        "detail": "Una sola clave para cifrar y descifrar; el modo (ECB vs CBC) importa tanto como el algoritmo."
+        "detail": "Cifrado por bloques (confusión/difusión). Un algoritmo fuerte mal usado es un sistema débil: el modo y el IV/nonce importan tanto como la clave."
       }
     },
     {
@@ -415,7 +415,7 @@
       "data": {
         "label": "Modos ECB y CBC",
         "order": "18",
-        "detail": "ECB filtra patrones; CBC usa IV. Un algoritmo fuerte mal usado es un sistema débil."
+        "detail": "ECB filtra patrones; CBC usa IV; también CTR y GCM (AEAD)."
       }
     },
     {
@@ -432,7 +432,7 @@
       "data": {
         "label": "Laboratorio AES: ECB, CBC y GCM",
         "order": "19",
-        "detail": "Implementar AES-CBC y AES-GCM en Python; demostrar debilidades de ECB y de CBC sin integridad."
+        "detail": "Python: AES-ECB, AES-CBC, bit-flipping CBC, AES-GCM y fuerza bruta DES."
       }
     },
     {
