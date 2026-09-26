@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "aplicacion-tecnicas-ingenieria-software",
   "title": "Aplicación de Técnicas de Ingeniería de Software",
-  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML (fundamentos y diagrama de clases).",
+  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML (estructura, secuencia y actividad).",
   "canvas": {
     "width": 1300,
-    "height": 1920,
+    "height": 2260,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -106,10 +106,10 @@
       },
       "size": {
         "width": 1220,
-        "height": 440
+        "height": 760
       },
       "data": {
-        "label": "Modelado UML — fundamentos y diagrama de clases"
+        "label": "Modelado UML — fundamentos, clases, secuencia y actividad"
       }
     },
     {
@@ -659,6 +659,74 @@
         "order": "31",
         "detail": "Asociación, herencia, agregación y composición, con multiplicidades explícitas."
       }
+    },
+    {
+      "id": "t-diagramas-secuencia-actividad",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 1848
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Diagramas de secuencia y actividad",
+        "order": "32",
+        "detail": "Dos vistas del comportamiento UML: interacciones entre participantes y flujo de decisiones."
+      }
+    },
+    {
+      "id": "s-diagrama-secuencia",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1852
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Diagrama de secuencia",
+        "order": "33",
+        "detail": "Participantes y mensajes: cómo interactúan en el tiempo."
+      }
+    },
+    {
+      "id": "s-diagrama-actividad",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 1852
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Diagrama de actividad",
+        "order": "34",
+        "detail": "Actividades, decisiones y caminos alternativos del proceso."
+      }
+    },
+    {
+      "id": "s-reservaya-reservar-cita",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 1980
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Caso ReservaYA: Reservar cita",
+        "order": "35",
+        "detail": "Elaborar ambos diagramas sobre «Reservar cita» y una funcionalidad del proyecto integrador."
+      }
     }
   ],
   "edges": [
@@ -993,6 +1061,69 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-uml-estructural-vs-comportamiento-t-diagramas-secuencia-actividad",
+      "source": "s-uml-estructural-vs-comportamiento",
+      "target": "t-diagramas-secuencia-actividad",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagrama-clases-t-diagramas-secuencia-actividad",
+      "source": "t-diagrama-clases",
+      "target": "t-diagramas-secuencia-actividad",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagramas-secuencia-actividad-s-diagrama-secuencia",
+      "source": "t-diagramas-secuencia-actividad",
+      "target": "s-diagrama-secuencia",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagramas-secuencia-actividad-s-diagrama-actividad",
+      "source": "t-diagramas-secuencia-actividad",
+      "target": "s-diagrama-actividad",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-s-diagrama-secuencia-s-reservaya-reservar-cita",
+      "source": "s-diagrama-secuencia",
+      "target": "s-reservaya-reservar-cita",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-s-diagrama-actividad-s-reservaya-reservar-cita",
+      "source": "s-diagrama-actividad",
+      "target": "s-reservaya-reservar-cita",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-s-caso-reservaya-uml-s-reservaya-reservar-cita",
+      "source": "s-caso-reservaya-uml",
+      "target": "s-reservaya-reservar-cita",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
       "arrow": true
     }
   ]

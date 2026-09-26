@@ -940,6 +940,11 @@
         "url": "https://app.notion.com/p/3e082a6d656181fabb31d3db9fdf443d"
       },
       {
+        "label": "Clase 19 — 25/09/2026 — Aplicación y optimización de SVM con kernel RBF",
+        "locator": "Hiperparámetros C y gamma; idea clave sobre margen y frontera RBF",
+        "url": "https://app.notion.com/p/3e782a6d656181aca4baf634f08824cc"
+      },
+      {
         "label": "Canvas — Clase 17",
         "locator": "Página de la clase",
         "url": "https://univo.instructure.com/courses/1765/pages/clase-17-18-slash-09-slash-2026"
@@ -993,6 +998,11 @@
         "label": "Canvas — Práctica 6 SVM lineal multiclase",
         "locator": "Página de la práctica",
         "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
+      },
+      {
+        "label": "Clase 19 — 25/09/2026 — Aplicación y optimización de SVM con kernel RBF",
+        "locator": "Métricas: accuracy, precisión, recall, F1-score y matriz de confusión",
+        "url": "https://app.notion.com/p/3e782a6d656181aca4baf634f08824cc"
       }
     ]
   },
@@ -1048,6 +1058,38 @@
         "label": "Canvas — Práctica 6 SVM lineal multiclase",
         "locator": "Página de la práctica",
         "url": "https://univo.instructure.com/courses/1765/pages/practica-6-svm-lineal-multiclase"
+      }
+    ]
+  },
+  "svm-rbf-application": {
+    "title": "SVM RBF: aplicación y optimización",
+    "content": "# SVM RBF: aplicación y optimización\n\nAplicar SVM con kernel RBF a clasificación binaria: frontera no lineal, vectores de soporte, métricas (accuracy, precisión, recall, F1, matriz de confusión) y optimización de hiperparámetros C y gamma.\n\n### Conceptos cubiertos\n- SVM con kernel RBF para clasificación binaria\n- Fronteras de decisión no lineales y vectores de soporte\n- Hiperparámetros C y gamma\n- Métricas: accuracy, precisión, recall, F1-score y matriz de confusión\n\n> C y gamma controlan el margen y la forma de la frontera RBF; GridSearchCV con CV permite elegir combinaciones que mejoran el desempeño sin inventar resultados.\n\nSesión virtual 25/09/2026 (Semana 10). Ejemplos prácticos en Python (Ejemplo 4 y 5): construir, visualizar y evaluar SVM RBF. Entrega asociada: Problema SVM - Clase 19 (assignment 17072).\n\n### Fuentes\n- **Clase 19 — 25/09/2026 — Aplicación y optimización de SVM con kernel RBF** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 25/09/2026 — Aplicación y optimización de SVM con kernel RBF",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e782a6d656181aca4baf634f08824cc"
+      },
+      {
+        "label": "Canvas — Clase 19 - 25/09/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-19-25-slash-09-slash-2026"
+      },
+      {
+        "label": "Problema SVM - Clase 19",
+        "locator": "assignment 17072",
+        "url": "https://univo.instructure.com/courses/1765/assignments/17072"
+      }
+    ]
+  },
+  "svm-gridsearchcv": {
+    "title": "GridSearchCV de C y gamma",
+    "content": "# GridSearchCV de C y gamma\n\nExplorar C y gamma con GridSearchCV y validación cruzada. C y gamma controlan el margen y la forma de la frontera RBF; la búsqueda con CV elige combinaciones que mejoran el desempeño sin inventar resultados.\n\nHerramientas de la sesión: Jupyter / scikit-learn SVM, GridSearchCV.\n\n### Fuentes\n- **Clase 19 — Aplicación y optimización de SVM con kernel RBF** — GridSearchCV con validación cruzada / C y gamma",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 25/09/2026 — Aplicación y optimización de SVM con kernel RBF",
+        "locator": "Conceptos: GridSearchCV con validación cruzada; hiperparámetros C y gamma",
+        "url": "https://app.notion.com/p/3e782a6d656181aca4baf634f08824cc"
       }
     ]
   }
