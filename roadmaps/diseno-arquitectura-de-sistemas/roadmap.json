@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "diseno-arquitectura-de-sistemas",
   "title": "Diseño de Arquitectura de Sistemas",
-  "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, hasta la elección de estilos (capas, cliente-servidor, monolito, microservicios y SOA).",
+  "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, la elección de estilos y la organización de componentes e integración de aplicaciones.",
   "canvas": {
     "width": 1280,
-    "height": 4720,
+    "height": 5300,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1074,6 +1074,107 @@
         "order": "48",
         "detail": "Comparar estilos; seleccionar por requerimientos, drivers y restricciones; justificar; ventajas/desventajas; diseño conceptual."
       }
+    },
+    {
+      "id": "section-components-integration",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 4580
+      },
+      "size": {
+        "width": 1200,
+        "height": 620
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "09 · Componentes e integración"
+      }
+    },
+    {
+      "id": "component-ui-business-persistence",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4640
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Organizar interfaz, negocio y persistencia",
+        "order": "49",
+        "detail": "Clasificar componentes por responsabilidades de interfaz, lógica de negocio y persistencia antes de implementar."
+      }
+    },
+    {
+      "id": "layered-component-responsibilities",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4644
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Responsabilidades por capa",
+        "order": "50",
+        "detail": "Separar interfaz, negocio y persistencia clarifica responsabilidades y reduce acoplamiento."
+      }
+    },
+    {
+      "id": "application-integration",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4780
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Integración de aplicaciones",
+        "order": "51",
+        "detail": "Mecanismos de integración entre aplicaciones y componentes externos; decidir comunicación y fallas."
+      }
+    },
+    {
+      "id": "sync-vs-async-integration",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4784
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Comunicación síncrona vs asíncrona",
+        "order": "52",
+        "detail": "Elegir el estilo de comunicación según el contexto de integración."
+      }
+    },
+    {
+      "id": "integration-failure-handling",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4924
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Manejo de fallas en integración",
+        "order": "53",
+        "detail": "La integración exige un mecanismo y un manejo de fallos adecuados al contexto esperado."
+      }
     }
   ],
   "edges": [
@@ -1552,6 +1653,69 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-conceptual-architecture-design-component-ui-business-persistence",
+      "source": "conceptual-architecture-design",
+      "target": "component-ui-business-persistence",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-practica-06-component-ui-business-persistence",
+      "source": "practica-06-compare-select-design",
+      "target": "component-ui-business-persistence",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-component-ui-business-persistence-layered-component-responsibilities",
+      "source": "component-ui-business-persistence",
+      "target": "layered-component-responsibilities",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-component-ui-business-persistence-application-integration",
+      "source": "component-ui-business-persistence",
+      "target": "application-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-application-integration-sync-vs-async-integration",
+      "source": "application-integration",
+      "target": "sync-vs-async-integration",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-application-integration-integration-failure-handling",
+      "source": "application-integration",
+      "target": "integration-failure-handling",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-sync-vs-async-integration-integration-failure-handling",
+      "source": "sync-vs-async-integration",
+      "target": "integration-failure-handling",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
       "arrow": true
     }
   ]

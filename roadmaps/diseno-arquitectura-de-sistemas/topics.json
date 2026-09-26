@@ -103,6 +103,11 @@
         "label": "Clase_15_julio_Arquitectura_Software_UNIVO.pdf",
         "locator": "Diapositiva 08 — Componentes generales de una solución",
         "url": "/diseno-arquitectura-de-sistemas/materiales/Clase_15_julio_Arquitectura_Software_UNIVO.pdf"
+      },
+      {
+        "label": "Clase 19 — 21/09/2026 — Organización de componentes de interfaz, negocio y persistencia",
+        "locator": "Clasificación interfaz / negocio / persistencia",
+        "url": "https://app.notion.com/p/3e782a6d656181169a89f3167c2d2195"
       }
     ]
   },
@@ -1004,6 +1009,85 @@
         "label": "Canvas — Práctica 06: 22/09/2026",
         "locator": "Página de la práctica",
         "url": "https://univo.instructure.com/courses/1759/pages/practica-06-22-slash-09-slash-2026"
+      }
+    ]
+  },
+  "component-ui-business-persistence": {
+    "title": "Organizar interfaz, negocio y persistencia",
+    "content": "# Organizar interfaz, negocio y persistencia\n\nComprender cómo organizar los componentes de una arquitectura según responsabilidades de interfaz, lógica de negocio y persistencia.\n\n### Conceptos cubiertos\n- Responsabilidades de componentes\n- Clasificación: interfaz, negocio y persistencia\n- Organización de componentes antes de implementar\n\n> Separar interfaz, negocio y persistencia clarifica responsabilidades y reduce acoplamiento en el diseño arquitectónico.\n\nSesión virtual 21/09/2026 (Semana 10). Revisar presentación y video explicativo; analizar el caso propuesto e identificar elementos de interfaz, negocio y persistencia.\n\n### Fuentes\n- **Clase 19 — 21/09/2026 — Organización de componentes de interfaz, negocio y persistencia** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 21/09/2026 — Organización de componentes de interfaz, negocio y persistencia",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e782a6d656181169a89f3167c2d2195"
+      },
+      {
+        "label": "Canvas — Clase 19",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-19"
+      }
+    ]
+  },
+  "layered-component-responsibilities": {
+    "title": "Responsabilidades por capa",
+    "content": "# Responsabilidades por capa\n\nClasificar componentes en interfaz, negocio y persistencia. Separar esas responsabilidades clarifica el diseño y reduce acoplamiento.\n\nOrganizar los componentes **antes de implementar**: cada pieza debe tener un propósito claro.\n\n### Fuentes\n- **Clase 19 — Organización de componentes de interfaz, negocio y persistencia** — Clasificación y responsabilidades",
+    "sourceRefs": [
+      {
+        "label": "Clase 19 — 21/09/2026 — Organización de componentes de interfaz, negocio y persistencia",
+        "locator": "Conceptos: clasificación interfaz / negocio / persistencia; idea clave",
+        "url": "https://app.notion.com/p/3e782a6d656181169a89f3167c2d2195"
+      }
+    ]
+  },
+  "application-integration": {
+    "title": "Integración de aplicaciones",
+    "content": "# Integración de aplicaciones\n\nConocer mecanismos de integración entre aplicaciones y componentes externos; practicar decisiones de comunicación, integración y manejo de fallas.\n\n### Conceptos cubiertos\n- Necesidades de integración entre aplicaciones\n- Comunicación síncrona vs asíncrona\n- Mecanismos de integración y manejo de fallas\n- Simulador «Arquitecto de Integraciones»\n\n> La integración requiere elegir el mecanismo y el estilo de comunicación adecuados al contexto y a los fallos esperados.\n\nSesión virtual 21/09/2026 (Semana 10). Revisar presentación; desarrollar el simulador Arquitecto de Integraciones.\n\n### Fuentes\n- **Clase 20 — 21/09/2026 — Integración de aplicaciones** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 21/09/2026 — Integración de aplicaciones",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e782a6d6561814f9d77c44d98d26bb1"
+      },
+      {
+        "label": "Canvas — Clase 20",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1759/pages/clase-20"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Simulador Arquitecto de Integraciones",
+        "url": "https://friendly-jelly-32e0a4.netlify.app/"
+      }
+    ]
+  },
+  "sync-vs-async-integration": {
+    "title": "Comunicación síncrona vs asíncrona",
+    "content": "# Comunicación síncrona vs asíncrona\n\nDecidir el estilo de comunicación entre aplicaciones: síncrona o asíncrona, según el contexto de integración.\n\n### Fuentes\n- **Clase 20 — Integración de aplicaciones** — Comunicación síncrona vs asíncrona",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 21/09/2026 — Integración de aplicaciones",
+        "locator": "Conceptos: comunicación síncrona vs asíncrona",
+        "url": "https://app.notion.com/p/3e782a6d6561814f9d77c44d98d26bb1"
+      }
+    ]
+  },
+  "integration-failure-handling": {
+    "title": "Manejo de fallas en integración",
+    "content": "# Manejo de fallas en integración\n\nLa integración exige elegir el mecanismo y el estilo de comunicación adecuados al contexto **y a los fallos esperados**.\n\nEn el simulador Arquitecto de Integraciones se practican decisiones sobre comunicación, mecanismos y fallas.\n\n### Fuentes\n- **Clase 20 — Integración de aplicaciones** — Mecanismos de integración y manejo de fallas / Simulador",
+    "sourceRefs": [
+      {
+        "label": "Clase 20 — 21/09/2026 — Integración de aplicaciones",
+        "locator": "Conceptos: mecanismos de integración y manejo de fallas / Actividad del simulador",
+        "url": "https://app.notion.com/p/3e782a6d6561814f9d77c44d98d26bb1"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Simulador Arquitecto de Integraciones",
+        "url": "https://friendly-jelly-32e0a4.netlify.app/"
       }
     ]
   }

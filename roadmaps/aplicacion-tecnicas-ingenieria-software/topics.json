@@ -599,5 +599,66 @@
         "url": "https://univo.instructure.com/courses/1760/pages/sesion-14-%7Csabado-5-de-septiembre-de-2026"
       }
     ]
+  },
+  "t-diagramas-secuencia-actividad": {
+    "title": "Diagramas de secuencia y actividad",
+    "content": "# Diagramas de secuencia y actividad\n\nRepresentar el comportamiento de un sistema con diagramas de secuencia y de actividad, aplicados a ReservaYA y al proyecto integrador.\n\n### Conceptos cubiertos\n- Diagramas de comportamiento (UML)\n- Diagrama de secuencia: participantes y mensajes\n- Diagrama de actividad: actividades, decisiones y caminos alternativos\n- Caso «Reservar cita» de ReservaYA\n\n> Secuencia y actividad muestran dos vistas complementarias del comportamiento: interacciones entre participantes y flujo de decisiones.\n\nSesión presencial 11/09/2026 (Semana 08). Observar interacciones del caso ReservaYA; elaborar ambos diagramas para una funcionalidad del proyecto integrador (avance Laboratorio 3).\n\n### Fuentes\n- **Sesión 15 — 11/09/2026 — Diagramas de secuencia y actividad (ReservaYA)** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Sesión 15 — 11/09/2026 — Diagramas de secuencia y actividad (ReservaYA)",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e782a6d6561812c8269d3b7e7850e7a"
+      },
+      {
+        "label": "Canvas — Sesión 15",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-15-%7Cviernes-11-de-septiembre-de-2026"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Diapositivas (Canva)",
+        "url": "https://www.canva.com/design/DAHWPat1oYk/AsZEPPDpiqSPFPkLPqYusg/view"
+      },
+      {
+        "type": "video",
+        "title": "Video de la sesión (YouTube)",
+        "url": "https://www.youtube.com/watch?v=C8KKneiXJsg"
+      }
+    ]
+  },
+  "s-diagrama-secuencia": {
+    "title": "Diagrama de secuencia",
+    "content": "# Diagrama de secuencia\n\nEl diagrama de secuencia muestra **participantes y mensajes**: cómo interactúan en el tiempo.\n\nEs una vista de comportamiento complementaria al diagrama de actividad.\n\n### Fuentes\n- **Sesión 15 — Diagramas de secuencia y actividad (ReservaYA)** — Diagrama de secuencia",
+    "sourceRefs": [
+      {
+        "label": "Sesión 15 — 11/09/2026 — Diagramas de secuencia y actividad (ReservaYA)",
+        "locator": "Conceptos: diagrama de secuencia (participantes y mensajes)",
+        "url": "https://app.notion.com/p/3e782a6d6561812c8269d3b7e7850e7a"
+      }
+    ]
+  },
+  "s-diagrama-actividad": {
+    "title": "Diagrama de actividad",
+    "content": "# Diagrama de actividad\n\nEl diagrama de actividad muestra **actividades, decisiones y caminos alternativos** del proceso.\n\nComplementa la secuencia: flujo de decisiones frente a interacciones entre participantes.\n\n### Fuentes\n- **Sesión 15 — Diagramas de secuencia y actividad (ReservaYA)** — Diagrama de actividad",
+    "sourceRefs": [
+      {
+        "label": "Sesión 15 — 11/09/2026 — Diagramas de secuencia y actividad (ReservaYA)",
+        "locator": "Conceptos: diagrama de actividad (actividades, decisiones y caminos alternativos)",
+        "url": "https://app.notion.com/p/3e782a6d6561812c8269d3b7e7850e7a"
+      }
+    ]
+  },
+  "s-reservaya-reservar-cita": {
+    "title": "Caso ReservaYA: Reservar cita",
+    "content": "# Caso ReservaYA: Reservar cita\n\nAplicar secuencia y actividad al caso «Reservar cita» de ReservaYA y a una funcionalidad del proyecto integrador (avance Laboratorio 3).\n\n### Fuentes\n- **Sesión 15 — Diagramas de secuencia y actividad (ReservaYA)** — Caso Reservar cita / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Sesión 15 — 11/09/2026 — Diagramas de secuencia y actividad (ReservaYA)",
+        "locator": "Conceptos: caso Reservar cita de ReservaYA / Actividad",
+        "url": "https://app.notion.com/p/3e782a6d6561812c8269d3b7e7850e7a"
+      }
+    ]
   }
 }
