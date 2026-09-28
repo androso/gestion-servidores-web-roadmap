@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "estructura-de-datos",
   "title": "Estructura de Datos",
-  "description": "Ruta basada en las clases sustantivas 1–5 y 9–10, prácticas 1 y 3–6, Clase 15 y Clase 17: entorno Python, tipos, colecciones, funciones, lambda, diccionarios y cola FIFO.",
+  "description": "Ruta basada en las clases sustantivas 1–5 y 9–10, prácticas 1 y 3–6, Clase 15, resolución del Parcial 1 (Clase 16) y Clase 17: entorno Python, tipos, colecciones, funciones, lambda, diccionarios, retroalimentación del parcial y cola FIFO.",
   "canvas": {
     "width": 1280,
-    "height": 3480,
+    "height": 3616,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -485,11 +485,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 700
+        "height": 836
       },
       "zIndex": -1,
       "data": {
-        "label": "03 · Evidencia — Prácticas y Parcial 1"
+        "label": "03 · Evidencia — Prácticas, Parcial 1 y resolución"
       }
     },
     {
@@ -544,7 +544,7 @@
       }
     },
     {
-      "id": "fifo-lifo-sets-lab",
+      "id": "parcial-1-review",
       "type": "topic",
       "position": {
         "x": 90,
@@ -555,13 +555,30 @@
         "height": 96
       },
       "data": {
-        "label": "Integrar FIFO, LIFO y sets",
+        "label": "Resolución de Parcial 1",
         "order": "24",
-        "detail": "Simulación de supermercado: cola en caja, pila de bolsa y cupones únicos."
+        "detail": "Revisar guía y video del parcial: estructuras, listas, dicts, sets, tuplas y lógica en Python."
       }
     },
     {
-      "id": "python-functions",
+      "id": "parcial-1-python-logic",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2188
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Lógica y código en Python",
+        "order": "25",
+        "detail": "Analizar y resolver problemas del parcial con lógica y código; retroalimentación práctica."
+      }
+    },
+    {
+      "id": "fifo-lifo-sets-lab",
       "type": "topic",
       "position": {
         "x": 90,
@@ -572,30 +589,13 @@
         "height": 96
       },
       "data": {
-        "label": "Funciones en Python",
-        "order": "25",
-        "detail": "Definir funciones para encapsular lógica reutilizable."
-      }
-    },
-    {
-      "id": "python-params-return",
-      "type": "subtopic",
-      "position": {
-        "x": 540,
-        "y": 2324
-      },
-      "size": {
-        "width": 330,
-        "height": 88
-      },
-      "data": {
-        "label": "Parámetros, argumentos y return",
+        "label": "Integrar FIFO, LIFO y sets",
         "order": "26",
-        "detail": "Pasar datos a la función y devolver un resultado con return."
+        "detail": "Simulación de supermercado: cola en caja, pila de bolsa y cupones únicos."
       }
     },
     {
-      "id": "python-classes-objects",
+      "id": "python-functions",
       "type": "topic",
       "position": {
         "x": 90,
@@ -606,8 +606,42 @@
         "height": 96
       },
       "data": {
-        "label": "Clase y objeto",
+        "label": "Funciones en Python",
         "order": "27",
+        "detail": "Definir funciones para encapsular lógica reutilizable."
+      }
+    },
+    {
+      "id": "python-params-return",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2460
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Parámetros, argumentos y return",
+        "order": "28",
+        "detail": "Pasar datos a la función y devolver un resultado con return."
+      }
+    },
+    {
+      "id": "python-classes-objects",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2592
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Clase y objeto",
+        "order": "29",
         "detail": "Organizar el código un nivel más: clase como molde, objeto como instancia."
       }
     },
@@ -616,7 +650,7 @@
       "type": "section",
       "position": {
         "x": 40,
-        "y": 2282
+        "y": 2418
       },
       "size": {
         "width": 1200,
@@ -632,7 +666,7 @@
       "type": "topic",
       "position": {
         "x": 90,
-        "y": 2592
+        "y": 2728
       },
       "size": {
         "width": 380,
@@ -640,7 +674,7 @@
       },
       "data": {
         "label": "Funciones anónimas (lambda)",
-        "order": "28",
+        "order": "30",
         "detail": "Expresar una función de una línea con lambda en lugar de def."
       }
     },
@@ -649,7 +683,7 @@
       "type": "subtopic",
       "position": {
         "x": 540,
-        "y": 2596
+        "y": 2732
       },
       "size": {
         "width": 330,
@@ -657,7 +691,7 @@
       },
       "data": {
         "label": "Sintaxis básica y varios argumentos",
-        "order": "29",
+        "order": "31",
         "detail": "Comparar def de una línea con lambda; varios parámetros."
       }
     },
@@ -666,7 +700,7 @@
       "type": "subtopic",
       "position": {
         "x": 910,
-        "y": 2596
+        "y": 2732
       },
       "size": {
         "width": 300,
@@ -674,7 +708,7 @@
       },
       "data": {
         "label": "Ternario y comprensiones",
-        "order": "30",
+        "order": "32",
         "detail": "Condicional en línea y uso de lambda en bucles o listas."
       }
     },
@@ -683,7 +717,7 @@
       "type": "section",
       "position": {
         "x": 40,
-        "y": 2760
+        "y": 2896
       },
       "size": {
         "width": 1200,
@@ -699,7 +733,7 @@
       "type": "topic",
       "position": {
         "x": 90,
-        "y": 2808
+        "y": 2944
       },
       "size": {
         "width": 380,
@@ -707,7 +741,7 @@
       },
       "data": {
         "label": "Diccionarios y mapeos clave-valor",
-        "order": "31",
+        "order": "33",
         "detail": "Declarar un dict, acceder por clave y recorrer pares."
       }
     },
@@ -716,7 +750,7 @@
       "type": "subtopic",
       "position": {
         "x": 540,
-        "y": 2812
+        "y": 2948
       },
       "size": {
         "width": 330,
@@ -724,7 +758,7 @@
       },
       "data": {
         "label": "Acceso, items, pop e inserción",
-        "order": "32",
+        "order": "34",
         "detail": "[] vs get, items(), actualizar stock y pop seguro."
       }
     },
@@ -733,7 +767,7 @@
       "type": "subtopic",
       "position": {
         "x": 910,
-        "y": 2812
+        "y": 2948
       },
       "size": {
         "width": 300,
@@ -741,7 +775,7 @@
       },
       "data": {
         "label": "Conteo de frecuencias y agrupado",
-        "order": "33",
+        "order": "35",
         "detail": "Patrón hash map y diccionario de colecciones."
       }
     },
@@ -750,7 +784,7 @@
       "type": "topic",
       "position": {
         "x": 90,
-        "y": 3188
+        "y": 3324
       },
       "size": {
         "width": 380,
@@ -758,7 +792,7 @@
       },
       "data": {
         "label": "Implementación de cola FIFO en Python",
-        "order": "34",
+        "order": "36",
         "detail": "Crear y manipular una cola FIFO; elegir cola cuando el problema exige orden de llegada."
       }
     },
@@ -767,7 +801,7 @@
       "type": "subtopic",
       "position": {
         "x": 540,
-        "y": 3192
+        "y": 3328
       },
       "size": {
         "width": 330,
@@ -775,7 +809,7 @@
       },
       "data": {
         "label": "Sistema de turnos de banco (FIFO)",
-        "order": "35",
+        "order": "37",
         "detail": "Aplicar la cola a un sistema de turnos; completar la guía paso a paso."
       }
     },
@@ -784,7 +818,7 @@
       "type": "section",
       "position": {
         "x": 40,
-        "y": 3128
+        "y": 3264
       },
       "size": {
         "width": 1200,
@@ -1152,6 +1186,33 @@
       "id": "e-fifo-queue-python-implementation-fifo-bank-turns-lab",
       "source": "fifo-queue-python-implementation",
       "target": "fifo-bank-turns-lab",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-parcial-1-briefing-parcial-1-review",
+      "source": "parcial-1-briefing",
+      "target": "parcial-1-review",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-choose-collection-parcial-1-review",
+      "source": "choose-collection",
+      "target": "parcial-1-review",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-parcial-1-review-parcial-1-python-logic",
+      "source": "parcial-1-review",
+      "target": "parcial-1-python-logic",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",

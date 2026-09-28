@@ -585,6 +585,50 @@
       }
     ]
   },
+  "parcial-1-review": {
+    "title": "Resolución de Parcial 1",
+    "content": "# Resolución de Parcial 1\n\nClase 16 (fecha en Canvas **UNAVAILABLE**): identificar **conceptos fundamentales de estructuras de datos**; **diferenciar y aplicar** tipos de datos — listas, diccionarios, conjuntos y tuplas —; y **analizar y resolver problemas** con lógica y código en Python. Es **retroalimentación del Parcial 1 práctico**, no un tema nuevo de colecciones.\n\nIdea clave: la guía PDF y el video de resolución permiten revisar esas estructuras y la lógica en Python para reforzar lo evaluado.\n\nLos tipos ya están en la ruta (`lists`, `tuples`, `sets`, `python-dictionaries`). Aquí el trabajo es volver a aplicarlos con la guía y el parcial resuelto.\n\nActividad: sesión presencial Semana 08; revisar `Guia-de-resolucion-de-parcial.pdf` y el [video del parcial](https://www.youtube.com/watch?v=35WQcahOzoc). Zoom: UNAVAILABLE. Herramientas: Python y VS Code.\n\n### Fuentes\n- **Clase 16 — UNAVAILABLE — Resolución de Parcial 1** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — UNAVAILABLE — Resolución de Parcial 1",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3e982a6d6561815ca11df059679668c7"
+      },
+      {
+        "label": "Canvas — Clase 16 Resolución de Parcial 1",
+        "locator": "clase-16-resolucion-de-parcial-1",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-16-resolucion-de-parcial-1"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Guía de resolución de parcial (PDF)",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-16-resolucion-de-parcial-1"
+      },
+      {
+        "type": "video",
+        "title": "Video del parcial resuelto",
+        "url": "https://www.youtube.com/watch?v=35WQcahOzoc"
+      }
+    ]
+  },
+  "parcial-1-python-logic": {
+    "title": "Lógica y código en Python",
+    "content": "# Lógica y código en Python\n\nCompetencia de la Clase 16: **analizar y resolver problemas mediante lógica y código en Python**, como retroalimentación del Parcial 1 práctico.\n\nSesión presencial Semana 08: seguir la guía de resolución y el video para contrastar el planteamiento con la solución. Foro de consultas: [discusión 7193](https://univo.instructure.com/courses/1748/discussion_topics/7193).\n\nNo sustituye a las prácticas de listas, tuplas, sets o diccionarios: es el cierre evaluativo de esos tipos con problemas del parcial.\n\n### Fuentes\n- **Clase 16 — UNAVAILABLE — Resolución de Parcial 1** — Actividad / Recursos",
+    "sourceRefs": [
+      {
+        "label": "Clase 16 — UNAVAILABLE — Resolución de Parcial 1",
+        "locator": "Actividad / Recursos — guía y video del parcial",
+        "url": "https://app.notion.com/p/3e982a6d6561815ca11df059679668c7"
+      },
+      {
+        "label": "Canvas — Clase 16 Resolución de Parcial 1",
+        "locator": "clase-16-resolucion-de-parcial-1",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-16-resolucion-de-parcial-1"
+      }
+    ]
+  },
   "fifo-bank-turns-lab": {
     "title": "Sistema de turnos de banco (FIFO)",
     "content": "# Sistema de turnos de banco (FIFO)\n\nClase 17: aplicar la cola a un **sistema de turnos de banco**; completar la **guía paso a paso** (PDF `Guía Paso a Paso_ Sistema de Turnos FIFO.pdf`) y el **cuestionario de retroalimentación LIFO/FIFO** (sin ponderación). Sesión presencial **17/09/2026** con laptop.\n\n### Fuentes\n- **Clase 17 — 17/09/2026 — Implementación de FIFO** — Actividad / Archivos",
