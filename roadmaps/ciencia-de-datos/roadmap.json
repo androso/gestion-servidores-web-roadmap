@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "slug": "ciencia-de-datos",
   "title": "Ciencia de Datos",
-  "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta (incluida la logística multinomial), SVM, diagnóstico de GLM y aplicación reproducible.",
+  "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta (incluida la logística multinomial), SVM, clasificación por ensamble con AdaBoost, diagnóstico de GLM y aplicación reproducible.",
   "canvas": {
     "width": 1280,
-    "height": 7000,
-    "minZoom": 0.11,
+    "height": 7700,
+    "minZoom": 0.10,
     "maxZoom": 1.75,
     "initialViewport": { "x": 150, "y": 8, "zoom": 0.84 },
     "mobileInitialViewport": { "x": -70, "y": -190, "zoom": 0.8 }
@@ -40,6 +40,7 @@
     { "id": "section-applied", "type": "section", "position": { "x": 40, "y": 3910 }, "size": { "width": 1200, "height": 700 }, "zIndex": -1, "data": { "label": "06 · Flujo reproducible y checkpoints" } },
     { "id": "section-multinomial", "type": "section", "position": { "x": 40, "y": 4650 }, "size": { "width": 1200, "height": 740 }, "zIndex": -1, "data": { "label": "07 · Clasificación multinomial" } },
     { "id": "section-svm", "type": "section", "position": { "x": 40, "y": 5410 }, "size": { "width": 1200, "height": 1460 }, "zIndex": -1, "data": { "label": "08 · Máquinas de vectores de soporte" } },
+    { "id": "section-adaboost", "type": "section", "position": { "x": 40, "y": 6910 }, "size": { "width": 1200, "height": 620 }, "zIndex": -1, "data": { "label": "09 · Clasificación por ensamble (AdaBoost)" } },
 
     { "id": "data-science", "type": "topic", "position": { "x": 90, "y": 290 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Ciencia de datos", "order": "01", "detail": "Transformar datos en decisiones, no solo ejecutar herramientas." } },
     { "id": "interdisciplinary", "type": "subtopic", "position": { "x": 540, "y": 294 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Tres pilares interdisciplinarios", "order": "02", "detail": "Estadística, computación y conocimiento del dominio." } },
@@ -122,7 +123,12 @@
     { "id": "svm-ovo-scaler-hyperplanes", "type": "subtopic", "position": { "x": 540, "y": 6322 }, "size": { "width": 330, "height": 88 }, "data": { "label": "OvO, StandardScaler y márgenes ±1", "order": "67", "detail": "Uno contra Uno, StandardScaler en predictores, hiperplanos centrales y márgenes canónicos (±1)." } },
     { "id": "svm-macro-metrics-tipofacial", "type": "subtopic", "position": { "x": 540, "y": 6462 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Matriz macro y tipofacial.csv", "order": "68", "detail": "Confusión y métricas macro (exactitud, precisión, sensibilidad, F1) sobre mediciones cefalométricas de Ricketts." } },
     { "id": "svm-rbf-application", "type": "topic", "position": { "x": 90, "y": 6602 }, "size": { "width": 380, "height": 96 }, "data": { "label": "SVM RBF: aplicación y optimización", "order": "69", "detail": "Clasificación binaria con kernel RBF: frontera no lineal, vectores de soporte y ajuste de C y gamma." } },
-    { "id": "svm-gridsearchcv", "type": "subtopic", "position": { "x": 540, "y": 6606 }, "size": { "width": 330, "height": 88 }, "data": { "label": "GridSearchCV de C y gamma", "order": "70", "detail": "Elegir combinaciones de C y gamma con GridSearchCV y validación cruzada, sin inventar resultados." } }
+    { "id": "svm-gridsearchcv", "type": "subtopic", "position": { "x": 540, "y": 6606 }, "size": { "width": 330, "height": 88 }, "data": { "label": "GridSearchCV de C y gamma", "order": "70", "detail": "Elegir combinaciones de C y gamma con GridSearchCV y validación cruzada, sin inventar resultados." } },
+
+    { "id": "adaboost-classification", "type": "topic", "position": { "x": 90, "y": 6970 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Clasificación con AdaBoost", "order": "71", "detail": "Ensamble que combina clasificadores débiles reponderando observaciones mal clasificadas." } },
+    { "id": "adaboost-weak-reweighting", "type": "subtopic", "position": { "x": 540, "y": 6974 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Clasificadores débiles y reponderación", "order": "72", "detail": "Cada iteración sube el peso de las observaciones mal clasificadas." } },
+    { "id": "adaboost-weighted-combination", "type": "subtopic", "position": { "x": 540, "y": 7114 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Combinación ponderada y parámetros", "order": "73", "detail": "El modelo final pondera las predicciones de los débiles; hay que conocer los parámetros del algoritmo." } },
+    { "id": "adaboost-python-evaluation", "type": "topic", "position": { "x": 90, "y": 7254 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Implementar y evaluar AdaBoost", "order": "74", "detail": "AdaBoost en Python (scikit-learn), métricas de clasificación e interpretación con Default.csv." } }
   ],
   "edges": [
     { "id": "e-title-node-subtitle-para", "source": "title-node", "target": "subtitle-para", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
@@ -185,6 +191,12 @@
     { "id": "e-svm-confusion-metrics-svm-rbf-application", "source": "svm-confusion-metrics", "target": "svm-rbf-application", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
     { "id": "e-svm-rbf-application-svm-gridsearchcv", "source": "svm-rbf-application", "target": "svm-gridsearchcv", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
     { "id": "e-svm-cv-hyperparameter-c-svm-gridsearchcv", "source": "svm-cv-hyperparameter-c", "target": "svm-gridsearchcv", "sourceHandle": "bottom", "targetHandle": "top", "route": "bezier", "arrow": true },
+    { "id": "e-knn-adaboost-classification", "source": "knn", "target": "adaboost-classification", "sourceHandle": "bottom", "targetHandle": "top", "route": "bezier", "arrow": true },
+    { "id": "e-svm-classification-adaboost-classification", "source": "svm-classification", "target": "adaboost-classification", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-adaboost-classification-adaboost-weak-reweighting", "source": "adaboost-classification", "target": "adaboost-weak-reweighting", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-weak-reweighting-adaboost-weighted-combination", "source": "adaboost-weak-reweighting", "target": "adaboost-weighted-combination", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-classification-adaboost-python-evaluation", "source": "adaboost-classification", "target": "adaboost-python-evaluation", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-weighted-combination-adaboost-python-evaluation", "source": "adaboost-weighted-combination", "target": "adaboost-python-evaluation", "sourceHandle": "bottom", "targetHandle": "left", "route": "bezier", "arrow": true },
     { "id": "e-count-outcomes-equidispersion", "source": "count-outcomes", "target": "equidispersion", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-equidispersion-log-link", "source": "equidispersion", "target": "log-link", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-log-link-multiplicative-effects", "source": "log-link", "target": "multiplicative-effects", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
