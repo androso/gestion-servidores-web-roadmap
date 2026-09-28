@@ -1111,7 +1111,7 @@
   },
   "adaboost-weak-reweighting": {
     "title": "Clasificadores débiles y reponderación",
-    "content": "# Clasificadores débiles y reponderación\n\nUn clasificador débil acierta poco más que el azar. AdaBoost los entrena en un proceso iterativo de reponderación: tras cada ronda, sube el peso de las observaciones mal clasificadas para que la siguiente ronda se concentre en ellas.\n\n### Debes poder\n- Explicar qué es un clasificador débil en el contexto de AdaBoost.\n- Describir cómo cambian los pesos de las observaciones entre iteraciones.",
+    "content": "# Clasificadores débiles y reponderación\n\nAdaBoost usa clasificadores débiles y un proceso iterativo de reponderación: tras cada ronda, sube el peso de las observaciones mal clasificadas para que la siguiente ronda se concentre en ellas.\n\n### Debes poder\n- Explicar qué es un clasificador débil en el contexto de AdaBoost.\n- Describir cómo cambian los pesos de las observaciones entre iteraciones.",
     "sourceRefs": [
       {
         "label": "Clase 20 — 26/09/2026 — Clasificación con AdaBoost: clasificadores débiles",
