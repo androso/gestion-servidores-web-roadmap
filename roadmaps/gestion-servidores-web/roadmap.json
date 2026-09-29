@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-servidores-web",
   "title": "Gestión de Servidores Web",
-  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, Apache con virtual hosts y reverse proxy hacia Express, y la comparativa de rendimiento IIS vs Apache+Express.",
+  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, Apache con virtual hosts y reverse proxy hacia Express, comparativa de rendimiento IIS vs Apache+Express, directorios virtuales en IIS y seguridad básica de archivos y TLS.",
   "canvas": {
     "width": 1280,
-    "height": 5940,
+    "height": 6620,
     "minZoom": 0.13,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1202,6 +1202,40 @@
       }
     },
     {
+      "id": "iis-virtual-directories",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4738
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Virtual directories en IIS",
+        "order": "57",
+        "detail": "Varios sitios en el mismo IIS mediante directorios virtuales."
+      }
+    },
+    {
+      "id": "iis-virtual-directories-lab",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 4738
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Práctica 6: varios sitios IIS",
+        "order": "58",
+        "detail": "Crear y verificar vdirs; capturas, Get-WebVirtualDirectory y conclusión."
+      }
+    },
+    {
       "id": "iis-https-initial-config",
       "type": "topic",
       "position": {
@@ -1502,6 +1536,73 @@
       "zIndex": -1,
       "data": {
         "label": "09 · Reverse proxy y rendimiento — Clases 19–20"
+      }
+    },
+    {
+      "id": "web-server-basic-security",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 6100
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Seguridad básica en servidores web",
+        "order": "59",
+        "detail": "Permisos de archivos, menor privilegio en el FS y TLS válido."
+      }
+    },
+    {
+      "id": "filesystem-posix-ntfs",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 6104
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Permisos POSIX y NTFS",
+        "order": "60",
+        "detail": "Configurar permisos correctos en Linux/macOS y Windows."
+      }
+    },
+    {
+      "id": "letsencrypt-tls",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 6104
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Let’s Encrypt vs autofirmado",
+        "order": "61",
+        "detail": "Flujo de un certificado TLS válido, más allá del lab autofirmado."
+      }
+    },
+    {
+      "id": "section-web-fs-tls",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 6040
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "10 · Seguridad de archivos y TLS — Clase 21"
       }
     }
   ],
@@ -2161,6 +2262,69 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-proprietary-server-install-iis-virtual-directories",
+      "source": "proprietary-server-install",
+      "target": "iis-virtual-directories",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-site-iis-virtual-directories",
+      "source": "iis-site",
+      "target": "iis-virtual-directories",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-virtual-directories-iis-virtual-directories-lab",
+      "source": "iis-virtual-directories",
+      "target": "iis-virtual-directories-lab",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-least-privilege-web-server-basic-security",
+      "source": "least-privilege",
+      "target": "web-server-basic-security",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-hardening-web-server-basic-security",
+      "source": "iis-hardening",
+      "target": "web-server-basic-security",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-web-server-basic-security-filesystem-posix-ntfs",
+      "source": "web-server-basic-security",
+      "target": "filesystem-posix-ntfs",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-self-signed-cert-letsencrypt-tls",
+      "source": "iis-self-signed-cert",
+      "target": "letsencrypt-tls",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

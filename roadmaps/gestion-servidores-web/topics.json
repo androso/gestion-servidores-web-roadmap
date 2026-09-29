@@ -1278,5 +1278,96 @@
         "url": "https://app.notion.com/p/3e382a6d6561814dafd4efa49aa2a9a0"
       }
     ]
+  },
+  "iis-virtual-directories": {
+    "title": "Virtual directories en IIS",
+    "content": "# Virtual directories en IIS\n\nPráctica 6: comprobar la creación de **múltiples sitios en el mismo IIS** usando **virtual directories**. La Clase 15 ya pide crear sitios con directorios virtuales; aquí se verifica esa pieza, no se reinstala el rol.\n\nUn virtual directory apunta una URL del sitio a una carpeta física distinta. Varios sitios/aplicaciones conviven en un IIS; no es un segundo servidor ni un virtual host de Apache.\n\nHerramientas de la nota: IIS (Windows Server), PowerShell (`Get-WebVirtualDirectory`), navegador.\n\n### Fuentes\n- **Práctica 6 — 22/09/2026 — Virtual directories en IIS** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 22/09/2026 — Virtual directories en IIS",
+        "locator": "Objetivo / Conceptos / Idea clave — virtual directories, varios sitios en el mismo IIS",
+        "url": "https://app.notion.com/p/3ea82a6d656181c49d02c06e817aaede"
+      },
+      {
+        "label": "Canvas — Práctica 6 22 de septiembre 2026",
+        "locator": "practica-6-22-de-septiembre-2026",
+        "url": "https://univo.instructure.com/courses/1745/pages/practica-6-22-de-septiembre-2026"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Microsoft Learn: Sitios, aplicaciones y directorios virtuales en IIS",
+        "url": "https://learn.microsoft.com/en-us/iis/get-started/planning-your-iis-architecture/understanding-sites-applications-and-virtual-directories-on-iis"
+      }
+    ]
+  },
+  "iis-virtual-directories-lab": {
+    "title": "Práctica 6: varios sitios IIS",
+    "content": "# Práctica 6: varios sitios IIS\n\nLaboratorio en CT7 (Ciudad Universitaria) el **martes 29/09/2026** (página titulada 22 de septiembre): repasar la presentación Canva; ejercicios 1 y 2 (páginas 4–5) más ejercicios de virtual directories.\n\nEntrega: PDF con **capturas de la solución** y una **conclusión breve**. Assignment: [Actividad Práctica 6](https://univo.instructure.com/courses/1745/assignments/17291) (due 2026-10-05 11:59 PM CST). Zoom: UNAVAILABLE.\n\nLa nota adjunta `practica06-canva.pdf` (6 diapositivas; se omitió la slide «Gracias»). Verificar con `Get-WebVirtualDirectory` además del navegador.\n\n### Fuentes\n- **Práctica 6 — 22/09/2026 — Virtual directories en IIS** — Actividad / Recursos / Herramientas",
+    "sourceRefs": [
+      {
+        "label": "Práctica 6 — 22/09/2026 — Virtual directories en IIS",
+        "locator": "Actividad — ejercicios Canva pp. 4–5, capturas, conclusión, Get-WebVirtualDirectory",
+        "url": "https://app.notion.com/p/3ea82a6d656181c49d02c06e817aaede"
+      },
+      {
+        "label": "Canvas — Actividad Práctica 6",
+        "locator": "assignments/17291",
+        "url": "https://univo.instructure.com/courses/1745/assignments/17291"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canva — Práctica 6 (diapositiva y ejercicios)",
+        "url": "https://www.canva.com/design/DAHWiQ1MSSU/IW5kQ1r7dfAo5qFGe4eClg/view"
+      }
+    ]
+  },
+  "web-server-basic-security": {
+    "title": "Seguridad básica en servidores web",
+    "content": "# Seguridad básica en servidores web\n\nClase 21 (28/09/2026, Semana 11): asegurar el servidor **en el sistema de archivos**, no solo en la aplicación (Helmet, validación, pool) de la Clase 9.\n\nObjetivo de la nota: configurar **permisos de archivos** correctos (POSIX y NTFS); aplicar **menor privilegio a nivel de filesystem**; y entender el flujo para un **certificado TLS válido (Let’s Encrypt)**, más allá del autofirmado de la Clase 16.\n\nActividad: presencial; el bloque de tareas en Canvas aún tiene placeholders (sin assignment vinculado). Zoom: UNAVAILABLE. PDF de clase: `clase_21-gsw.pdf`.\n\n### Fuentes\n- **Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web",
+        "locator": "Objetivo / Idea clave — permisos, menor privilegio en FS, TLS Let’s Encrypt",
+        "url": "https://app.notion.com/p/3ea82a6d656181c4a6e8d3848e5b64c3"
+      },
+      {
+        "label": "Canvas — Clase 21 lunes 28 de septiembre",
+        "locator": "clase-21-lunes-28-de-septiembre",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-21-lunes-28-de-septiembre"
+      }
+    ]
+  },
+  "filesystem-posix-ntfs": {
+    "title": "Permisos POSIX y NTFS",
+    "content": "# Permisos POSIX y NTFS\n\nLa Clase 21 pide configurar **permisos de archivos correctos** en el servidor web: **POSIX** en Linux/macOS y **NTFS** en Windows, con el **principio de menor privilegio** aplicado al filesystem (quién lee el document root, quién escribe logs, qué cuenta corre el worker).\n\nEso no reemplaza `appweb` ni el Application Pool de la Clase 9: es el mismo principio en otro capa (disco, no proceso).\n\n### Fuentes\n- **Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web** — Conceptos: permisos POSIX/NTFS y menor privilegio en FS",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web",
+        "locator": "Conceptos — permisos POSIX / NTFS y menor privilegio a nivel de filesystem",
+        "url": "https://app.notion.com/p/3ea82a6d656181c4a6e8d3848e5b64c3"
+      }
+    ]
+  },
+  "letsencrypt-tls": {
+    "title": "Let’s Encrypt vs autofirmado",
+    "content": "# Let’s Encrypt vs autofirmado\n\nLa Clase 16 practica HTTPS con **certificado autofirmado** en IIS. La Clase 21 pide el **flujo real** para un certificado **TLS válido** con **Let’s Encrypt**: el navegador deja de advertir el lab; la CA pública firma el sitio.\n\nNo sustituye el laboratorio autofirmado: lo sitúa como ensayo. El certificado válido es el paso de producción.\n\nPresentación de clase: `clase_21-gsw.pdf` (adjunto en la nota).\n\n### Fuentes\n- **Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web** — Conceptos: Let’s Encrypt vs autofirmado",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Seguridad Básica en Servidores Web",
+        "locator": "Conceptos — certificados TLS reales (Let’s Encrypt) vs auto-firmados (Clase 16)",
+        "url": "https://app.notion.com/p/3ea82a6d656181c4a6e8d3848e5b64c3"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Let’s Encrypt",
+        "url": "https://letsencrypt.org/"
+      }
+    ]
   }
 }

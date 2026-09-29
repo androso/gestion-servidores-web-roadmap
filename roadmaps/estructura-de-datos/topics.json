@@ -639,5 +639,48 @@
         "url": "https://app.notion.com/p/3e682a6d6561812ab496c3170f54c8db"
       }
     ]
+  },
+  "multidimensional-matrices": {
+    "title": "Matrices bidimensionales",
+    "content": "# Matrices bidimensionales\n\nPráctica 7: aplicar operaciones básicas sobre **matrices bidimensionales** en Python: recorridos por **filas y columnas**, acceso a una posición `(fila, columna)` y modificación de elementos.\n\nUna matriz 2D es una lista de listas. El índice de fila recorre hacia abajo; el de columna, hacia la derecha. Mezclar esos ejes rompe totales por producto, por día o por estudiante.\n\nIdea clave: dominar indexación y recorrido (filas vs columnas) antes de agregar o buscar.\n\nSesión presencial **28/09/2026**. Herramientas: Python (`.py` o `.ipynb`). Canva/PDF de clase: UNAVAILABLE (contenido embebido en Canvas).\n\n### Fuentes\n- **Práctica 7 — 28/09/2026 — Matrices Multidimensionales** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — 28/09/2026 — Matrices Multidimensionales",
+        "locator": "Objetivo / Conceptos / Idea clave — matrices 2D, filas vs columnas",
+        "url": "https://app.notion.com/p/3ea82a6d656181c081cece6fc80b2f48"
+      },
+      {
+        "label": "Canvas — Práctica 7 lunes 28/09/2026",
+        "locator": "practica-7-lunes-28-slash-09-slash-2026",
+        "url": "https://univo.instructure.com/courses/1748/pages/practica-7-lunes-28-slash-09-slash-2026"
+      }
+    ]
+  },
+  "matrix-aggregations-search": {
+    "title": "Agregar, contar y actualizar",
+    "content": "# Agregar, contar y actualizar\n\nSobre la misma matriz 2D la práctica pide:\n\n- **acumuladores**: suma/total y promedio\n- **contar** valores que cumplen una condición\n- **modificar** un elemento por índices de fila y columna\n- **buscar** información (máximo, mayor asistencia)\n\nEl recorrido elige el eje: total por fila (producto, estudiante, día) frente a total por columna (día, momento). El acumulador no sustituye el índice: primero llegas a la celda, después sumas o reemplazas.\n\n### Fuentes\n- **Práctica 7 — 28/09/2026 — Matrices Multidimensionales** — Conceptos: acumuladores, conteo, modificación",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — 28/09/2026 — Matrices Multidimensionales",
+        "locator": "Conceptos: acumuladores, conteo condicional, modificación por (fila, columna)",
+        "url": "https://app.notion.com/p/3ea82a6d656181c081cece6fc80b2f48"
+      }
+    ]
+  },
+  "matrix-lab-practica-7": {
+    "title": "Práctica 7: inventario, clima, asistencia",
+    "content": "# Práctica 7: inventario, clima, asistencia\n\nTres ejercicios en `.py` o `.ipynb`:\n\n1. **Inventario de Producto** — matriz 4×3; totales por producto y por día; modificar cantidad por fila/columna.\n2. **Registro de Temperaturas** — matriz 5×3; promedio por día y por momento; temperatura máxima.\n3. **Registro de Asistencia** — matriz 5×5 (1/0); asistencias por estudiante y por día; estudiante con mayor asistencia.\n\nEntrega Canvas: [Practicas de laboratorio 7](https://univo.instructure.com/courses/1748/assignments/17294) (due 2026-10-05 11:59 PM CST). Zoom: UNAVAILABLE. Sin PDF/notebook adjunto en Canvas.\n\n### Fuentes\n- **Práctica 7 — 28/09/2026 — Matrices Multidimensionales** — Actividad / Recursos",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — 28/09/2026 — Matrices Multidimensionales",
+        "locator": "Actividad — tres ejercicios (inventario 4×3, temperaturas 5×3, asistencia 5×5)",
+        "url": "https://app.notion.com/p/3ea82a6d656181c081cece6fc80b2f48"
+      },
+      {
+        "label": "Canvas — Practicas de laboratorio 7",
+        "locator": "assignments/17294",
+        "url": "https://univo.instructure.com/courses/1748/assignments/17294"
+      }
+    ]
   }
 }
