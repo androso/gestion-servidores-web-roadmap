@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración.",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración de alta densidad (categorías y producto).",
   "canvas": {
     "width": 1280,
-    "height": 2860,
+    "height": 3280,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -487,6 +487,91 @@
       }
     },
     {
+      "id": "create-product-form",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2670
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Formulario de producto (alta densidad)",
+        "order": "23",
+        "detail": "Clase 21: maquetar captura administrativa de producto con cards, inputs densos y estado local."
+      }
+    },
+    {
+      "id": "prefix-icon-category-selectors",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2674
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Inputs con iconos prefix y selectores de categorías",
+        "order": "24",
+        "detail": "Campos con icono prefix y selectores de categorías en el formulario de producto."
+      }
+    },
+    {
+      "id": "textinput-align-vertical-top",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2814
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "TextInput multilínea con textAlignVertical top",
+        "order": "25",
+        "detail": "TextInput multilínea con textAlignVertical: \"top\" para descripciones largas."
+      }
+    },
+    {
+      "id": "reactive-char-counter",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2954
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Contador reactivo de caracteres",
+        "order": "26",
+        "detail": "Límite de texto con useState: description.length/2000 y maxLength."
+      }
+    },
+    {
+      "id": "advanced-flexbox-form-layout",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3094
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Flexbox avanzado en formularios",
+        "order": "27",
+        "detail": "flexDirection, justifyContent: \"flex-end\" y espaciados compuestos en el layout del formulario."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -495,7 +580,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 2500
+        "height": 2980
       },
       "zIndex": -1,
       "data": {
@@ -742,6 +827,78 @@
       "id": "e-mvvm-nav-multilevel-drawer-accordion-nav",
       "source": "mvvm-nav-multilevel",
       "target": "drawer-accordion-nav",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-product-category-admin-form-create-product-form",
+      "source": "product-category-admin-form",
+      "target": "create-product-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-keyboard-avoiding-scroll-forms-create-product-form",
+      "source": "keyboard-avoiding-scroll-forms",
+      "target": "create-product-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-formcard-multiline-dual-headers-create-product-form",
+      "source": "formcard-multiline-dual-headers",
+      "target": "create-product-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-create-product-form-prefix-icon-category-selectors",
+      "source": "create-product-form",
+      "target": "prefix-icon-category-selectors",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-create-product-form-textinput-align-vertical-top",
+      "source": "create-product-form",
+      "target": "textinput-align-vertical-top",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-create-product-form-reactive-char-counter",
+      "source": "create-product-form",
+      "target": "reactive-char-counter",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-components-usestate-reactive-char-counter",
+      "source": "components-usestate",
+      "target": "reactive-char-counter",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-create-product-form-advanced-flexbox-form-layout",
+      "source": "create-product-form",
+      "target": "advanced-flexbox-form-layout",
       "sourceHandle": "bottom",
       "targetHandle": "left",
       "route": "bezier",
