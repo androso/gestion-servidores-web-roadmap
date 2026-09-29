@@ -237,6 +237,16 @@
         "label": "Lección Canvas — Clase 19",
         "locator": "Página de la clase",
         "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
+      },
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: Ergonomía móvil KeyboardAvoidingView + ScrollView",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
       }
     ]
   },
@@ -253,6 +263,16 @@
         "label": "Lección Canvas — Clase 19",
         "locator": "Página de la clase",
         "url": "https://univo.instructure.com/courses/1763/pages/clase-19"
+      },
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: Layout por tarjetas de información (cards)",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
       }
     ]
   },
@@ -333,6 +353,86 @@
         "label": "Lección Canvas — Clase 20",
         "locator": "Página de la clase",
         "url": "https://univo.instructure.com/courses/1763/pages/clase-20"
+      }
+    ]
+  },
+  "create-product-form": {
+    "title": "Formulario de producto (alta densidad)",
+    "content": "# Formulario de producto (alta densidad)\n\nMaquetar e implementar pantallas de captura de datos de alta densidad (formularios administrativos) en React Native: estructura por tarjetas (`cards`), inputs con iconos, selectores de categorías, `TextInput` multilínea (`textAlignVertical: \"top\"`) y control reactivo de longitud de caracteres con estados locales.\n\n### Conceptos cubiertos\n- Formularios de alta densidad / captura administrativa\n- Layout por tarjetas de información (`cards`)\n- Referencia de implementación: `app/(protected)/create-product.tsx`\n\n> Un formulario administrativo usable combina cards + inputs densos con estado local que retroalimenta límites de texto, y contenedores (`KeyboardAvoidingView`/`ScrollView`) que evitan que el teclado tape los campos.\n\nLa actividad se dejará cuando se termine la maquetación completa del formulario de producto (aún no asignada). Herramientas: React Native / TypeScript. Modalidad: Virtual grabada (Semana 11).\n\n### Fuentes\n- **Clase 21 — 28/09/2026 — Construcción de Formulario Producto** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 21**",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Objetivo / Conceptos / Idea clave — Notion 3ea82a6d65618143b5e7fabfb70629da",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
+      }
+    ]
+  },
+  "prefix-icon-category-selectors": {
+    "title": "Inputs con iconos prefix y selectores de categorías",
+    "content": "# Inputs con iconos prefix y selectores de categorías\n\nInputs con iconos prefix y selectores de categorías en el formulario de producto.\n\n### Fuentes\n- **Clase 21 — Construcción de Formulario Producto** — Conceptos: inputs con iconos prefix y selectores de categorías",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: Inputs con iconos prefix y selectores de categorías",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
+      }
+    ]
+  },
+  "textinput-align-vertical-top": {
+    "title": "TextInput multilínea con textAlignVertical top",
+    "content": "# TextInput multilínea con textAlignVertical top\n\n`TextInput` multilínea con `textAlignVertical: \"top\"`.\n\n### Fuentes\n- **Clase 21 — Construcción de Formulario Producto** — Conceptos: TextInput multilínea / textAlignVertical",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: TextInput multilínea con textAlignVertical: \"top\"",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
+      }
+    ]
+  },
+  "reactive-char-counter": {
+    "title": "Contador reactivo de caracteres",
+    "content": "# Contador reactivo de caracteres\n\nContador reactivo de caracteres (`${description.length}/2000`, `maxLength`) con `useState`.\n\n### Fuentes\n- **Clase 21 — Construcción de Formulario Producto** — Conceptos: contador reactivo / maxLength / useState",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: Contador reactivo de caracteres (${description.length}/2000, maxLength) con useState",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
+      }
+    ]
+  },
+  "advanced-flexbox-form-layout": {
+    "title": "Flexbox avanzado en formularios",
+    "content": "# Flexbox avanzado en formularios\n\nFlexbox avanzado (`flexDirection`, `justifyContent: \"flex-end\"`, espaciados compuestos).\n\n### Fuentes\n- **Clase 21 — Construcción de Formulario Producto** — Conceptos: Flexbox avanzado",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 28/09/2026 — Construcción de Formulario Producto",
+        "locator": "Conceptos: Flexbox avanzado (flexDirection, justifyContent: \"flex-end\", espaciados compuestos)",
+        "url": "https://app.notion.com/p/3ea82a6d65618143b5e7fabfb70629da"
+      },
+      {
+        "label": "Lección Canvas — Clase 21",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
       }
     ]
   }
