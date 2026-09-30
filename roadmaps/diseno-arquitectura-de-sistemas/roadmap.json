@@ -5,7 +5,7 @@
   "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, la elección de estilos y la organización de componentes e integración de aplicaciones.",
   "canvas": {
     "width": 1280,
-    "height": 5300,
+    "height": 5480,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1084,7 +1084,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 620
+        "height": 760
       },
       "zIndex": -1,
       "data": {
@@ -1174,6 +1174,23 @@
         "label": "Manejo de fallas en integración",
         "order": "53",
         "detail": "La integración exige un mecanismo y un manejo de fallos adecuados al contexto esperado."
+      }
+    },
+    {
+      "id": "practica-07-component-organization-integration",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 5064
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Práctica 07: organización de componentes e integración",
+        "order": "54",
+        "detail": "Identificar interfaz, negocio y persistencia; asignar responsabilidades; diferenciar presentación, lógica y acceso a datos antes de integrar."
       }
     }
   ],
@@ -1716,6 +1733,33 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-component-ui-business-persistence-practica-07",
+      "source": "component-ui-business-persistence",
+      "target": "practica-07-component-organization-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-application-integration-practica-07",
+      "source": "application-integration",
+      "target": "practica-07-component-organization-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-layered-component-responsibilities-practica-07",
+      "source": "layered-component-responsibilities",
+      "target": "practica-07-component-organization-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
       "arrow": true
     }
   ]
