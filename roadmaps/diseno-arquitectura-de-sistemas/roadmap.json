@@ -5,7 +5,7 @@
   "description": "Ruta conceptual desde fundamentos y tipos de arquitectura de TI, pasando por el proceso, el rol del arquitecto, stakeholders, requerimientos, drivers y escenarios de calidad, la elección de estilos y la organización de componentes e integración de aplicaciones.",
   "canvas": {
     "width": 1280,
-    "height": 5480,
+    "height": 5300,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1084,7 +1084,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 760
+        "height": 680
       },
       "zIndex": -1,
       "data": {
