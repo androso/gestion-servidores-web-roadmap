@@ -1025,6 +1025,11 @@
         "label": "Canvas — Clase 19",
         "locator": "Página de la sesión",
         "url": "https://univo.instructure.com/courses/1759/pages/clase-19"
+      },
+      {
+        "label": "Práctica 07 — 29/09/2026 — Organización de Componentes e Integración de Aplicaciones",
+        "locator": "Objetivo / Conceptos (organización de componentes de interfaz, negocio y persistencia)",
+        "url": "https://app.notion.com/p/3eb82a6d6561813eb3cbca4ed83ffa8a"
       }
     ]
   },
@@ -1036,6 +1041,11 @@
         "label": "Clase 19 — 21/09/2026 — Organización de componentes de interfaz, negocio y persistencia",
         "locator": "Conceptos: clasificación interfaz / negocio / persistencia; idea clave",
         "url": "https://app.notion.com/p/3e782a6d656181169a89f3167c2d2195"
+      },
+      {
+        "label": "Práctica 07 — 29/09/2026 — Organización de Componentes e Integración de Aplicaciones",
+        "locator": "Asignación de responsabilidades por capa/componente; presentación vs negocio vs acceso a datos",
+        "url": "https://app.notion.com/p/3eb82a6d6561813eb3cbca4ed83ffa8a"
       }
     ]
   },
@@ -1052,6 +1062,11 @@
         "label": "Canvas — Clase 20",
         "locator": "Página de la sesión",
         "url": "https://univo.instructure.com/courses/1759/pages/clase-20"
+      },
+      {
+        "label": "Práctica 07 — 29/09/2026 — Organización de Componentes e Integración de Aplicaciones",
+        "locator": "Conceptos: integración de aplicaciones (después de organizar componentes)",
+        "url": "https://app.notion.com/p/3eb82a6d6561813eb3cbca4ed83ffa8a"
       }
     ],
     "resources": [
@@ -1088,6 +1103,39 @@
         "type": "guide",
         "title": "Simulador Arquitecto de Integraciones",
         "url": "https://friendly-jelly-32e0a4.netlify.app/"
+      }
+    ]
+  },
+  "practica-07-component-organization-integration": {
+    "title": "Práctica 07: organización de componentes e integración",
+    "content": "# Práctica 07: organización de componentes e integración\n\n**Objetivo:** identificar componentes de interfaz, negocio y persistencia; asignar responsabilidades adecuadas a cada componente; diferenciar entre componentes de presentación, lógica de negocio y acceso a datos.\n\n### Conceptos cubiertos\n- Organización de componentes de interfaz, negocio y persistencia\n- Integración de aplicaciones\n- Asignación de responsabilidades por capa/componente\n- Diferenciación presentación vs lógica de negocio vs acceso a datos\n\n> Separar y organizar componentes de presentación, negocio y persistencia antes de integrar aplicaciones.\n\n**Actividad:** práctica evaluada (Practica 7 / assignment 17296). Ver material (Canva) y video práctico; analizar la tarea y subir la entrega en PDF o imagen. Una semana para entregar; el docente indica que no habrá prórrogas. Fecha de la práctica en Canvas: 29/09/2026. Entrega: 05/10/2026 23:59 America/El_Salvador (`due_at` 2026-10-06T05:59:59Z).\n\n### Fuentes\n- **Práctica 07 — 29/09/2026 — Organización de Componentes e Integración de Aplicaciones** — Objetivo / Conceptos / Idea clave / Actividad\n- **Lección de Canvas — Practica 07: 29/09/2026**",
+    "sourceRefs": [
+      {
+        "label": "Práctica 07 — 29/09/2026 — Organización de Componentes e Integración de Aplicaciones",
+        "locator": "Objetivo / Conceptos / Idea clave / Actividad",
+        "url": "https://app.notion.com/p/3eb82a6d6561813eb3cbca4ed83ffa8a"
+      },
+      {
+        "label": "Lección de Canvas — Practica 07: 29/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1759/pages/practica-07-29-slash-09-slash-2026"
+      },
+      {
+        "label": "Entrega — Practica 7",
+        "locator": "assignment 17296",
+        "url": "https://univo.instructure.com/courses/1759/assignments/17296"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Diapositivas (Canva)",
+        "url": "https://canva.link/os478huhzy0inoa"
+      },
+      {
+        "type": "video",
+        "title": "Video práctico",
+        "url": "https://youtu.be/ksdcL_Paeys"
       }
     ]
   }
