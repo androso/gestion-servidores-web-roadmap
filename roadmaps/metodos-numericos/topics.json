@@ -212,6 +212,33 @@
       }
     ]
   },
+  "ostrowski-method": {
+    "title": "Método de Ostrowski (multipaso)",
+    "content": "# Método de Ostrowski (multipaso)\n\nClase 21 (29/09/2026, Semana 11): **método de Ostrowski** como técnica **iterativa multipaso** para aproximar raíces de ecuaciones no lineales: **fórmula**, **pseudocódigo** e **implementación en Python / Jupyter**.\n\nContinúa Newton (Clases 16–19) y Traub (Clase 20): Ostrowski también es multipaso; se implementa en Python y se evalúa con error y ACOC. La sesión pide **repasar Newton y Traub**, error y orden de convergencia, antes de la clase.\n\nHerramientas: Python / Jupyter. Adjuntos en Notion: diapositivas `Clase-21-AMN-S11.pdf` y notebook convertido `Clase-21-AMN-Jupyter-Notebook.pdf`.\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 29/09/2026 — El método de Ostrowski",
+        "locator": "Objetivo / Conceptos / Idea clave — Ostrowski multipaso, fórmula, Python",
+        "url": "https://app.notion.com/p/3eb82a6d6561816f8c90c04a3c094f5c"
+      },
+      {
+        "label": "Canvas — Clase 21 29/09/2026",
+        "locator": "clase-21-29-slash-09-slash-2026",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-21-29-slash-09-slash-2026"
+      }
+    ]
+  },
+  "ostrowski-acoc-comparison": {
+    "title": "Ostrowski vs Newton y Traub",
+    "content": "# Ostrowski vs Newton y Traub\n\nClase 21: analizar **error** y **orden aproximado de convergencia (ACOC)**; **comparar** Ostrowski con **Newton** y **Traub** (iteraciones, errores y ACOC) sobre ejemplos matemáticos o de ingeniería.\n\nNo sustituye los nodos de Newton ni Traub: es la comparación que la sesión pide después de implementar Ostrowski.\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Conceptos / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 29/09/2026 — El método de Ostrowski",
+        "locator": "Conceptos / Actividad — error, ACOC, comparación con Newton y Traub",
+        "url": "https://app.notion.com/p/3eb82a6d6561816f8c90c04a3c094f5c"
+      }
+    ]
+  },
   "parcial-1-scope": {
     "title": "Alcance del Parcial 1",
     "content": "# Alcance del Parcial 1\n\nEl primer examen parcial (Clase 14, 03/09/2026) cubre:\n\n- existencia de soluciones\n- raíces y derivadas\n- polinomio de Taylor\n- error porcentual\n- aproximaciones para integrales\n\nEs un hito de evaluación de lo ya estudiado, no un tema nuevo de enseñanza.",
