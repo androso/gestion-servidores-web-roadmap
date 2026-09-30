@@ -1304,7 +1304,7 @@
   },
   "iis-virtual-directories-lab": {
     "title": "Práctica 6: varios sitios IIS",
-    "content": "# Práctica 6: varios sitios IIS\n\nLaboratorio en CT7 (Ciudad Universitaria) el **martes 29/09/2026** (página titulada 22 de septiembre): repasar la presentación Canva; ejercicios 1 y 2 (páginas 4–5) más ejercicios de virtual directories.\n\nEntrega: PDF con **capturas de la solución** y una **conclusión breve**. Assignment: [Actividad Práctica 6](https://univo.instructure.com/courses/1745/assignments/17291) (due 2026-10-05 11:59 PM CST). Zoom: UNAVAILABLE.\n\nLa nota adjunta `practica06-canva.pdf` (6 diapositivas; se omitió la slide «Gracias»). Verificar con `Get-WebVirtualDirectory` además del navegador.\n\n### Fuentes\n- **Práctica 6 — 22/09/2026 — Virtual directories en IIS** — Actividad / Recursos / Herramientas",
+    "content": "# Práctica 6: varios sitios IIS\n\nLaboratorio en CT7 (Ciudad Universitaria) el **martes 29/09/2026**. Canvas publicó [Práctica 6 - 29 de Septiembre 2026](https://univo.instructure.com/courses/1745/pages/practica-6-29-de-septiembre-2026) (mismo Canva DAHWiQ1MSSU y assignment 17291; sin deck nuevo). La página original sigue titulada 22 de septiembre.\n\nRepasar la presentación Canva; ejercicios 1 y 2 (páginas 4–5) más ejercicios de virtual directories. Entrega: PDF con **capturas de la solución** y una **conclusión breve**. Assignment: [Actividad Práctica 6](https://univo.instructure.com/courses/1745/assignments/17291) (due 2026-10-05 11:59 PM CST). Zoom: UNAVAILABLE.\n\nLa nota adjunta `practica06-canva.pdf` (6 diapositivas; se omitió la slide «Gracias»). Verificar con `Get-WebVirtualDirectory` además del navegador.\n\n### Fuentes\n- **Práctica 6 — 22/09/2026 — Virtual directories en IIS** — Actividad / Recursos / Herramientas",
     "sourceRefs": [
       {
         "label": "Práctica 6 — 22/09/2026 — Virtual directories en IIS",
@@ -1315,6 +1315,11 @@
         "label": "Canvas — Actividad Práctica 6",
         "locator": "assignments/17291",
         "url": "https://univo.instructure.com/courses/1745/assignments/17291"
+      },
+      {
+        "label": "Canvas — Práctica 6 29 de septiembre 2026",
+        "locator": "practica-6-29-de-septiembre-2026 (mismo Canva y assignment 17291)",
+        "url": "https://univo.instructure.com/courses/1745/pages/practica-6-29-de-septiembre-2026"
       }
     ],
     "resources": [
@@ -1367,6 +1372,44 @@
         "type": "official",
         "title": "Let’s Encrypt",
         "url": "https://letsencrypt.org/"
+      }
+    ]
+  },
+  "server-logs-monitoring": {
+    "title": "Gestión de logs y monitoreo",
+    "content": "# Gestión de logs y monitoreo\n\nClase 22 (30/09/2026): **gestión de logs y monitoreo del servidor**. Idea clave de la nota: los logs son la **fuente primaria** para monitoreo; interpretarlos y **automatizar** su análisis permite detectar problemas y anomalías a tiempo.\n\nActividad: presencial; el bloque de tareas en Canvas aún tiene placeholders (sin assignment vinculado). Zoom: UNAVAILABLE. PDF de clase: `clase-22-gsw.pdf`.\n\n### Fuentes\n- **Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor",
+        "locator": "Objetivo / Idea clave — logs como fuente primaria de monitoreo",
+        "url": "https://app.notion.com/p/3eb82a6d656181b88c21f353626b5a5a"
+      },
+      {
+        "label": "Canvas — Clase 22 miércoles 30 de septiembre",
+        "locator": "clase-22-miercoles-30-de-septiembre",
+        "url": "https://univo.instructure.com/courses/1745/pages/clase-22-miercoles-30-de-septiembre"
+      }
+    ]
+  },
+  "apache-iis-access-logs": {
+    "title": "Logs de acceso Apache e IIS",
+    "content": "# Logs de acceso Apache e IIS\n\nLa Clase 22 pide **leer e interpretar logs de acceso** de **Apache** e **IIS**.\n\nEso es el material bruto del monitoreo: las estadísticas y las alertas salen de estos archivos, no de una métrica inventada.\n\n### Fuentes\n- **Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor** — Conceptos: logs de acceso Apache e IIS",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor",
+        "locator": "Conceptos — logs de acceso Apache e IIS",
+        "url": "https://app.notion.com/p/3eb82a6d656181b88c21f353626b5a5a"
+      }
+    ]
+  },
+  "typescript-log-analysis": {
+    "title": "Análisis de logs en TypeScript",
+    "content": "# Análisis de logs en TypeScript\n\nLa sesión pide un **script en TypeScript** que analice un archivo de log y extraiga **estadísticas útiles**, y **detectar señales de alerta**: errores frecuentes y picos de tráfico anómalo.\n\nHerramientas de la nota: TypeScript; Apache / IIS. Presentación: `clase-22-gsw.pdf`.\n\n### Fuentes\n- **Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor** — Objetivo / Conceptos: análisis TS y alertas",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Gestión de Logs y Monitoreo del Servidor",
+        "locator": "Objetivo / Conceptos — script TypeScript, estadísticas, errores frecuentes y picos anómalos",
+        "url": "https://app.notion.com/p/3eb82a6d656181b88c21f353626b5a5a"
       }
     ]
   }

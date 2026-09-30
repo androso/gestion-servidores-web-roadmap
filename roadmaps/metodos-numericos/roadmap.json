@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "metodos-numericos",
   "title": "Métodos Numéricos",
-  "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección, Newton y Traub (multipaso/ACOC) para raíces de ecuaciones no lineales.",
+  "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección, Newton, Traub y Ostrowski (multipaso/ACOC) para raíces de ecuaciones no lineales.",
   "canvas": {
     "width": 1280,
-    "height": 2280,
+    "height": 2560,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -397,6 +397,56 @@
       "data": {
         "label": "03 · Traub multipaso — Clase 20"
       }
+    },
+    {
+      "id": "ostrowski-method",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2228
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Método de Ostrowski (multipaso)",
+        "order": "15",
+        "detail": "Método iterativo multipaso: fórmula, pseudocódigo e implementación en Python."
+      }
+    },
+    {
+      "id": "ostrowski-acoc-comparison",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2232
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Ostrowski vs Newton y Traub",
+        "order": "16",
+        "detail": "Comparar iteraciones, error y ACOC frente a Newton y Traub."
+      }
+    },
+    {
+      "id": "section-ostrowski",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 2168
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "04 · Ostrowski multipaso — Clase 21"
+      }
     }
   ],
   "edges": [
@@ -557,6 +607,33 @@
       "id": "e-traub-multipoint-method-traub-acoc-convergence",
       "source": "traub-multipoint-method",
       "target": "traub-acoc-convergence",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-traub-multipoint-method-ostrowski-method",
+      "source": "traub-multipoint-method",
+      "target": "ostrowski-method",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-newton-method-ostrowski-method",
+      "source": "newton-method",
+      "target": "ostrowski-method",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-ostrowski-method-ostrowski-acoc-comparison",
+      "source": "ostrowski-method",
+      "target": "ostrowski-acoc-comparison",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",

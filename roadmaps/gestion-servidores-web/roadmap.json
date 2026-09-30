@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-servidores-web",
   "title": "Gestión de Servidores Web",
-  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, Apache con virtual hosts y reverse proxy hacia Express, comparativa de rendimiento IIS vs Apache+Express, directorios virtuales en IIS y seguridad básica de archivos y TLS.",
+  "description": "Ruta desde el request HTTP y el contenedor, la decisión propietario/libre, IIS y Express, seguridad e integración, Apache con virtual hosts y reverse proxy hacia Express, comparativa de rendimiento IIS vs Apache+Express, directorios virtuales en IIS, seguridad básica de archivos y TLS, y gestión de logs con monitoreo.",
   "canvas": {
     "width": 1280,
-    "height": 6620,
+    "height": 6940,
     "minZoom": 0.12,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -1604,6 +1604,73 @@
       "data": {
         "label": "10 · Seguridad de archivos y TLS — Clase 21"
       }
+    },
+    {
+      "id": "server-logs-monitoring",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 6400
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Gestión de logs y monitoreo",
+        "order": "62",
+        "detail": "Los logs del servidor son la fuente primaria para detectar problemas y anomalías."
+      }
+    },
+    {
+      "id": "apache-iis-access-logs",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 6404
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Logs de acceso Apache e IIS",
+        "order": "63",
+        "detail": "Leer e interpretar logs de acceso de Apache e IIS."
+      }
+    },
+    {
+      "id": "typescript-log-analysis",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 6404
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Análisis de logs en TypeScript",
+        "order": "64",
+        "detail": "Script TS sobre un archivo de log: estadísticas y señales de alerta."
+      }
+    },
+    {
+      "id": "section-logs-monitoring",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 6360
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "11 · Logs y monitoreo — Clase 22"
+      }
     }
   ],
   "edges": [
@@ -2325,6 +2392,42 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-web-server-basic-security-server-logs-monitoring",
+      "source": "web-server-basic-security",
+      "target": "server-logs-monitoring",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-iis-apache-performance-server-logs-monitoring",
+      "source": "iis-apache-performance",
+      "target": "server-logs-monitoring",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-server-logs-monitoring-apache-iis-access-logs",
+      "source": "server-logs-monitoring",
+      "target": "apache-iis-access-logs",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-apache-iis-access-logs-typescript-log-analysis",
+      "source": "apache-iis-access-logs",
+      "target": "typescript-log-analysis",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
       "arrow": true
     }
   ]
