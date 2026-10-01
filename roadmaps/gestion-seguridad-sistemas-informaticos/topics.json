@@ -261,5 +261,115 @@
         "url": "https://univo.instructure.com/courses/1764/pages/clase-10-criptografia-simetrica-des-aes-ecb-y-cbc"
       }
     ]
+  },
+  "asymmetric-crypto": {
+    "title": "Criptografía asimétrica",
+    "content": "# Criptografía asimétrica\n\nComprender el funcionamiento de la criptografía asimétrica; diferenciar clave pública y privada; analizar aplicaciones reales (HTTPS, firmas digitales, cifrado); y resolver ejercicios de intercambio seguro de información.\n\n**Idea clave:** la criptografía asimétrica separa lo que se publica (clave pública) de lo que nunca se comparte (clave privada), habilitando confidencialidad, autenticación y firmas sobre canales inseguros.\n\n### Fuentes\n- **Clase 11 — 29/09/2026 — Criptografía asimétrica** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Objetivo de aprendizaje / Idea clave",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Clase 11 criptografía asimétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-11-criptografia-asimetrica"
+      }
+    ],
+    "resources": [
+      {
+        "type": "article",
+        "title": "Cloudflare — How does public key cryptography work?",
+        "url": "https://www.cloudflare.com/en-gb/learning/ssl/how-does-public-key-encryption-work/"
+      }
+    ]
+  },
+  "public-private-keys": {
+    "title": "Clave pública y clave privada",
+    "content": "# Clave pública y clave privada\n\nPar de claves con uso diferenciado: la clave pública se comparte; la privada no se comparte. Esa separación es la base de cifrado, autenticación y firmas.\n\n### Fuentes\n- **Clase 11 — Criptografía asimétrica** — Conceptos: par de claves",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Conceptos: par de claves pública/privada y uso diferenciado",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Clase 11 criptografía asimétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-11-criptografia-asimetrica"
+      }
+    ]
+  },
+  "https-asymmetric": {
+    "title": "HTTPS y cifrado de información",
+    "content": "# HTTPS y cifrado de información\n\nAplicación de criptografía de clave pública a HTTPS y al cifrado de información en canales inseguros.\n\n### Fuentes\n- **Clase 11 — Criptografía asimétrica** — Aplicaciones: HTTPS",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Conceptos: aplicaciones HTTPS, cifrado de información",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Clase 11 criptografía asimétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-11-criptografia-asimetrica"
+      }
+    ]
+  },
+  "digital-signatures": {
+    "title": "Firmas digitales",
+    "content": "# Firmas digitales\n\nLas firmas digitales usan el par de claves para autenticar e integrar: se firma con la privada y se verifica con la pública.\n\n### Fuentes\n- **Clase 11 — Criptografía asimétrica** — Aplicaciones: firmas digitales",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Conceptos: aplicaciones firmas digitales",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Clase 11 criptografía asimétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-11-criptografia-asimetrica"
+      }
+    ]
+  },
+  "post-quantum-crypto-intro": {
+    "title": "Introducción a criptografía post-cuántica (NIST)",
+    "content": "# Introducción a criptografía post-cuántica (NIST)\n\nMaterial NIST *What Is Post-Quantum Cryptography?* como introducción a PQC frente a la computación cuántica.\n\n### Fuentes\n- **Clase 11 — Criptografía asimétrica** — Material NIST PQC",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Conceptos: material NIST What Is Post-Quantum Cryptography?",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Clase 11 criptografía asimétrica",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1764/pages/clase-11-criptografia-asimetrica"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "NIST — What Is Post-Quantum Cryptography?",
+        "url": "https://www.nist.gov/cybersecurity-and-privacy/what-post-quantum-cryptography"
+      }
+    ]
+  },
+  "buzon-seguro": {
+    "title": "Tarea: Buzón Seguro",
+    "content": "# Tarea: Buzón Seguro\n\nActividad evaluada en equipo: diseño, implementación y auditoría de un sistema de intercambio seguro de documentos (Semanas 8–11). El enunciado Canvas 17419 / PDF `GSSI_Tarea_Equipo_Buzon_Seguro.pdf` especifica primitivas aplicadas: X25519, Ed25519, AES-256-GCM y HKDF.\n\nIntegra cifrado simétrico (AES-GCM) con intercambio y firmas asimétricas.\n\n### Fuentes\n- **Clase 11 — Criptografía asimétrica** — Actividad Buzón Seguro",
+    "sourceRefs": [
+      {
+        "label": "Clase 11 — 29/09/2026 — Criptografía asimétrica",
+        "locator": "Actividad: tarea en equipo Buzón Seguro (assignment 17419, PDF GSSI_Tarea_Equipo_Buzon_Seguro.pdf)",
+        "url": "https://app.notion.com/p/3ec82a6d6561811dbe21f71b3c6976e5"
+      },
+      {
+        "label": "Canvas — Assignment Buzón Seguro",
+        "locator": "courses/1764/assignments/17419",
+        "url": "https://univo.instructure.com/courses/1764/assignments/17419"
+      }
+    ]
   }
 }
