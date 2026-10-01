@@ -682,5 +682,62 @@
         "url": "https://univo.instructure.com/courses/1748/assignments/17294"
       }
     ]
+  },
+  "binary-trees-concepts": {
+    "title": "Árboles binarios",
+    "content": "# Árboles binarios\n\nClase 18 (29/09/2026): identificar los **componentes visuales** de un árbol — **nodos**, **raíz** y **hojas** — y explicar cómo un árbol binario organiza datos de forma **jerárquica** (no lineal).\n\nIdea clave: entender nodos y **recorridos recursivos** es la base para implementarlos en Python. El Árbol Binario de Búsqueda (BST) es la variante de búsqueda de esa misma estructura.\n\nSesión presencial Semana 09. Indicaciones Canvas: ver la clase grabada, revisar las diapositivas Canva y seguir la guía visual «Mi Primer Árbol en Python». Zoom: UNAVAILABLE. Herramientas: Python.\n\n### Fuentes\n- **Clase 18 — 29/09/2026 — Concepto de árboles binarios** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 29/09/2026 — Concepto de árboles binarios",
+        "locator": "Objetivo / Conceptos / Idea clave — nodos, raíz, hojas y organización jerárquica",
+        "url": "https://app.notion.com/p/3ec82a6d6561818a9ea3e3dc5663db04"
+      },
+      {
+        "label": "Canvas — Clase 18 Concepto de árboles binarios",
+        "locator": "clase-18-concepto-de-arboles-binarios",
+        "url": "https://univo.instructure.com/courses/1748/pages/clase-18-concepto-de-arboles-binarios"
+      }
+    ],
+    "resources": [
+      {
+        "type": "official",
+        "title": "Canva — 3- Arboles binarios parte 1",
+        "url": "https://www.canva.com/design/DAHWgcbdMMk/vW0VlVS55rk1_43h6R70aQ/view"
+      },
+      {
+        "type": "video",
+        "title": "Grabación Árboles binarios (YouTube)",
+        "url": "https://www.youtube.com/embed/DnXbgAXYpm0?si=hHBeYhXY5sfnLEzd"
+      }
+    ]
+  },
+  "bst-binary-search-tree": {
+    "title": "Árbol Binario de Búsqueda (BST)",
+    "content": "# Árbol Binario de Búsqueda (BST)\n\nCompetencia de la Clase 18: **explicar el funcionamiento** del Árbol Binario de Búsqueda.\n\nEl BST es un árbol binario usado para organizar datos jerárquicamente de modo que la búsqueda siga la estructura de nodos (raíz e hijos), no una secuencia lineal.\n\nLa nota no desarrolla insertar/eliminar más allá de ese funcionamiento conceptual: primero nombra componentes (nodos, raíz, hojas) y después el BST.\n\n### Fuentes\n- **Clase 18 — 29/09/2026 — Concepto de árboles binarios** — Objetivo / Conceptos: BST",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 29/09/2026 — Concepto de árboles binarios",
+        "locator": "Objetivo / Conceptos — Árbol Binario de Búsqueda (BST)",
+        "url": "https://app.notion.com/p/3ec82a6d6561818a9ea3e3dc5663db04"
+      }
+    ]
+  },
+  "python-binary-tree-node-recursion": {
+    "title": "Clase Nodo y árboles en Python",
+    "content": "# Clase Nodo y árboles en Python\n\nLa Clase 18 pide seguir la guía de **creación de árboles binarios en Python**: **clase Nodo** y **recursividad**.\n\nLos recorridos se construyen de forma recursiva sobre esa clase. Guía visual: [Mi Primer Árbol en Python](https://arbolesbinarios-med.netlify.app/). Diapositivas Canva (PDF de 14 slides) adjuntas en la nota.\n\n### Fuentes\n- **Clase 18 — 29/09/2026 — Concepto de árboles binarios** — Conceptos: Clase Nodo y recursividad / Actividad",
+    "sourceRefs": [
+      {
+        "label": "Clase 18 — 29/09/2026 — Concepto de árboles binarios",
+        "locator": "Conceptos — Clase Nodo y recursividad; creación de árboles binarios en Python",
+        "url": "https://app.notion.com/p/3ec82a6d6561818a9ea3e3dc5663db04"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Mi Primer Árbol en Python (Netlify)",
+        "url": "https://arbolesbinarios-med.netlify.app/"
+      }
+    ]
   }
 }
