@@ -2,11 +2,11 @@
   "schemaVersion": 1,
   "slug": "programacion-orientada-a-eventos",
   "title": "Programación Orientada a Eventos",
-  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js, debounce, asincronía/Event Loop y useState/eventos en React.",
+  "description": "Ruta conceptual desde el paradigma reactivo y TypeScript, pasando por EventEmitter, DOM, UX y frameworks, hasta Next.js, debounce, asincronía/Event Loop, useState/eventos en React y el arranque Feature-Driven de DevDesk.",
   "canvas": {
     "width": 1280,
-    "height": 5160,
-    "minZoom": 0.15,
+    "height": 5600,
+    "minZoom": 0.14,
     "maxZoom": 1.75,
     "initialViewport": {
       "x": 170,
@@ -1214,6 +1214,73 @@
       "data": {
         "label": "11 · React useState / eventos — Práctica 6"
       }
+    },
+    {
+      "id": "devdesk-feature-driven-architecture",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 5120
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "DevDesk: arquitectura Feature-Driven",
+        "order": "56",
+        "detail": "Proyecto de tickets: modular por dominio (Vite + React + TypeScript + Tailwind v4)."
+      }
+    },
+    {
+      "id": "ticket-typescript-contracts",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 5124
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Contratos de tickets en TypeScript",
+        "order": "57",
+        "detail": "Interfaces y uniones literales; colecciones unidireccionales con key única."
+      }
+    },
+    {
+      "id": "ui-foundations-tailwind-v4",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 5124
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Fundaciones UI: Tailwind v4 y tablero",
+        "order": "58",
+        "detail": "Navbar vs TicketCard/TicketList; tablero responsivo con Tailwind CSS v4."
+      }
+    },
+    {
+      "id": "section-devdesk",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 5060
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "12 · DevDesk Feature-Driven — Práctica 7"
+      }
     }
   ],
   "edges": [
@@ -1809,6 +1876,51 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-react-component-architecture-profiling-devdesk-feature-driven-architecture",
+      "source": "react-component-architecture-profiling",
+      "target": "devdesk-feature-driven-architecture",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-ts-models-functions-ticket-typescript-contracts",
+      "source": "ts-models-functions",
+      "target": "ticket-typescript-contracts",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-devdesk-feature-driven-architecture-ticket-typescript-contracts",
+      "source": "devdesk-feature-driven-architecture",
+      "target": "ticket-typescript-contracts",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-layout-responsive-ui-foundations-tailwind-v4",
+      "source": "layout-responsive",
+      "target": "ui-foundations-tailwind-v4",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-devdesk-feature-driven-architecture-ui-foundations-tailwind-v4",
+      "source": "devdesk-feature-driven-architecture",
+      "target": "ui-foundations-tailwind-v4",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

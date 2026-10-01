@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "estructura-de-datos",
   "title": "Estructura de Datos",
-  "description": "Ruta basada en las clases sustantivas 1–5 y 9–10, prácticas 1 y 3–7, Clase 15, resolución del Parcial 1 (Clase 16) y Clase 17: entorno Python, tipos, colecciones, funciones, lambda, diccionarios, retroalimentación del parcial, cola FIFO y matrices bidimensionales.",
+  "description": "Ruta basada en las clases sustantivas 1–5 y 9–10, prácticas 1 y 3–7, Clase 15, resolución del Parcial 1 (Clase 16), Clase 17 y Clase 18: entorno Python, tipos, colecciones, funciones, lambda, diccionarios, retroalimentación del parcial, cola FIFO, matrices bidimensionales y árboles binarios.",
   "canvas": {
     "width": 1280,
-    "height": 4000,
+    "height": 4440,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -895,6 +895,73 @@
       "data": {
         "label": "07 · Matrices 2D — Práctica 7"
       }
+    },
+    {
+      "id": "binary-trees-concepts",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 4004
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Árboles binarios",
+        "order": "41",
+        "detail": "Nodos, raíz y hojas: organización jerárquica y recorridos recursivos."
+      }
+    },
+    {
+      "id": "bst-binary-search-tree",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 4008
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Árbol Binario de Búsqueda (BST)",
+        "order": "42",
+        "detail": "Explicar el funcionamiento del BST sobre un árbol binario."
+      }
+    },
+    {
+      "id": "python-binary-tree-node-recursion",
+      "type": "subtopic",
+      "position": {
+        "x": 910,
+        "y": 4008
+      },
+      "size": {
+        "width": 300,
+        "height": 88
+      },
+      "data": {
+        "label": "Clase Nodo y árboles en Python",
+        "order": "43",
+        "detail": "Crear el árbol con clase Nodo y recursividad; guía visual en Python."
+      }
+    },
+    {
+      "id": "section-binary-trees",
+      "type": "section",
+      "position": {
+        "x": 40,
+        "y": 3944
+      },
+      "size": {
+        "width": 1200,
+        "height": 280
+      },
+      "zIndex": -1,
+      "data": {
+        "label": "08 · Árboles binarios — Clase 18"
+      }
     }
   ],
   "edges": [
@@ -1310,6 +1377,51 @@
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-linear-vs-nonlinear-binary-trees-concepts",
+      "source": "linear-vs-nonlinear",
+      "target": "binary-trees-concepts",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-python-classes-objects-python-binary-tree-node-recursion",
+      "source": "python-classes-objects",
+      "target": "python-binary-tree-node-recursion",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-python-functions-python-binary-tree-node-recursion",
+      "source": "python-functions",
+      "target": "python-binary-tree-node-recursion",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-binary-trees-concepts-bst-binary-search-tree",
+      "source": "binary-trees-concepts",
+      "target": "bst-binary-search-tree",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-binary-trees-concepts-python-binary-tree-node-recursion",
+      "source": "binary-trees-concepts",
+      "target": "python-binary-tree-node-recursion",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

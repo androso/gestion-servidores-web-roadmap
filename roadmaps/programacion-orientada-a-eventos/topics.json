@@ -883,5 +883,43 @@
         "url": "https://app.notion.com/p/3e582a6d656181fd8a6eeebbc1d05d43"
       }
     ]
+  },
+  "devdesk-feature-driven-architecture": {
+    "title": "DevDesk: arquitectura Feature-Driven",
+    "content": "# DevDesk: arquitectura Feature-Driven\n\nPráctica 7 (fecha Canvas **UNAVAILABLE**): iniciar el proyecto semestral **DevDesk** (gestión de tickets).\n\n**Arquitectura Feature-Driven:** organizar el código de forma **modular por dominio**, no solo por capas técnicas. Eso prepara el módulo de tickets y el camino hacia persistencia relacional.\n\nStack de arranque: **Vite + React + TypeScript**, **Tailwind CSS v4** (`@tailwindcss/vite`). Assignment ligado: UNAVAILABLE. Zoom: UNAVAILABLE. Canva/PDF: UNAVAILABLE.\n\nIdea clave: Feature-Driven + tipado estricto en TypeScript permiten separar UI transversal de componentes de negocio.\n\n### Fuentes\n- **Práctica 7 — UNAVAILABLE — DevDesk: arquitectura Feature-Driven y fundaciones UI** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — UNAVAILABLE — DevDesk: arquitectura Feature-Driven y fundaciones UI",
+        "locator": "Objetivo / Conceptos / Idea clave — Feature-Driven vs capas",
+        "url": "https://app.notion.com/p/3ec82a6d6561816e9ca7ffa17f057d57"
+      },
+      {
+        "label": "Canvas — Práctica 7",
+        "locator": "practica-7",
+        "url": "https://univo.instructure.com/courses/1742/pages/practica-7"
+      }
+    ]
+  },
+  "ticket-typescript-contracts": {
+    "title": "Contratos de tickets en TypeScript",
+    "content": "# Contratos de tickets en TypeScript\n\nLa práctica pide **definir contratos de datos** del módulo de tickets con **interfaces** y **uniones literales**, y renderizar un tablero con **datos tipados**.\n\n**Renderizado de colecciones:** datos unidireccionales y **`key` única** por ítem. El tablero no inventa estado paralelo: muestra la colección tipada.\n\n### Fuentes\n- **Práctica 7 — UNAVAILABLE — DevDesk** — Conceptos: modelado TypeScript e interfaces / uniones literales",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — UNAVAILABLE — DevDesk: arquitectura Feature-Driven y fundaciones UI",
+        "locator": "Conceptos — interfaces, uniones literales, datos unidireccionales y key única",
+        "url": "https://app.notion.com/p/3ec82a6d6561816e9ca7ffa17f057d57"
+      }
+    ]
+  },
+  "ui-foundations-tailwind-v4": {
+    "title": "Fundaciones UI: Tailwind v4 y tablero",
+    "content": "# Fundaciones UI: Tailwind v4 y tablero\n\nConfigurar **Tailwind CSS v4** (`@tailwindcss/vite`) e implementar componentes visuales para un **tablero responsivo**.\n\n**Desacoplamiento UI:**\n\n- componentes **transversales** (Navbar)\n- componentes de **negocio** (`TicketCard`, `TicketList`)\n\nHerramientas: Visual Studio Code; Node.js LTS; Vite + React (plantilla TypeScript); Tailwind CSS v4.\n\n### Fuentes\n- **Práctica 7 — UNAVAILABLE — DevDesk** — Conceptos: desacoplamiento UI / Actividad / Herramientas",
+    "sourceRefs": [
+      {
+        "label": "Práctica 7 — UNAVAILABLE — DevDesk: arquitectura Feature-Driven y fundaciones UI",
+        "locator": "Conceptos / Herramientas — Navbar vs TicketCard/TicketList; Tailwind CSS v4",
+        "url": "https://app.notion.com/p/3ec82a6d6561816e9ca7ffa17f057d57"
+      }
+    ]
   }
 }
