@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "gestion-seguridad-sistemas-informaticos",
   "title": "Gestión de Seguridad de Sistemas Informáticos",
-  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0, criptografía, hashes y cifrado simétrico DES/AES con modos ECB y CBC.",
+  "description": "CIA, PDCA, ITIL, CISA, CMMI, familia ISO/IEC 27000, COBIT, NIST CSF 2.0, criptografía simétrica DES/AES (ECB/CBC/GCM) y criptografía asimétrica (claves pública/privada, HTTPS, firmas, post-cuántica NIST y Buzón Seguro).",
   "canvas": {
     "width": 1280,
-    "height": 2360,
+    "height": 3100,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -436,6 +436,108 @@
       }
     },
     {
+      "id": "asymmetric-crypto",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2322
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Criptografía asimétrica",
+        "order": "20",
+        "detail": "Par público/privado: confidencialidad, autenticación y firmas sobre canales inseguros."
+      }
+    },
+    {
+      "id": "public-private-keys",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2326
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Clave pública y clave privada",
+        "order": "21",
+        "detail": "Lo que se publica vs lo que nunca se comparte; usos diferenciados del par."
+      }
+    },
+    {
+      "id": "https-asymmetric",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2458
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "HTTPS y cifrado de información",
+        "order": "22",
+        "detail": "Aplicación real de criptografía de clave pública en canales inseguros."
+      }
+    },
+    {
+      "id": "digital-signatures",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2590
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Firmas digitales",
+        "order": "23",
+        "detail": "Autenticación e integridad con clave privada; verificación con clave pública."
+      }
+    },
+    {
+      "id": "post-quantum-crypto-intro",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2722
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Introducción a criptografía post-cuántica (NIST)",
+        "order": "24",
+        "detail": "Qué es PQC según NIST y por qué importa frente a computación cuántica."
+      }
+    },
+    {
+      "id": "buzon-seguro",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2854
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Tarea: Buzón Seguro",
+        "order": "25",
+        "detail": "Intercambio seguro de documentos: X25519, Ed25519, AES-256-GCM y HKDF."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -444,11 +546,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 2088
+        "height": 2760
       },
       "zIndex": -1,
       "data": {
-        "label": "01 · Seguridad, estándares y gobierno"
+        "label": "01 · Seguridad, estándares, cripto simétrica y asimétrica"
       }
     }
   ],
@@ -676,6 +778,87 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-symmetric-crypto-des-aes-asymmetric-crypto",
+      "source": "symmetric-crypto-des-aes",
+      "target": "asymmetric-crypto",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lab-aes-ecb-cbc-asymmetric-crypto",
+      "source": "lab-aes-ecb-cbc",
+      "target": "asymmetric-crypto",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-asymmetric-crypto-public-private-keys",
+      "source": "asymmetric-crypto",
+      "target": "public-private-keys",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-public-private-keys-https-asymmetric",
+      "source": "public-private-keys",
+      "target": "https-asymmetric",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-https-asymmetric-digital-signatures",
+      "source": "https-asymmetric",
+      "target": "digital-signatures",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-asymmetric-crypto-post-quantum-crypto-intro",
+      "source": "asymmetric-crypto",
+      "target": "post-quantum-crypto-intro",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-digital-signatures-post-quantum-crypto-intro",
+      "source": "digital-signatures",
+      "target": "post-quantum-crypto-intro",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-post-quantum-crypto-intro-buzon-seguro",
+      "source": "post-quantum-crypto-intro",
+      "target": "buzon-seguro",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-lab-aes-ecb-cbc-buzon-seguro",
+      "source": "lab-aes-ecb-cbc",
+      "target": "buzon-seguro",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
       "arrow": true
     }
   ]

@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración de alta densidad (categorías y producto).",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración (categorías y producto: información general, precios e inventario).",
   "canvas": {
     "width": 1280,
-    "height": 3280,
+    "height": 3780,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -572,6 +572,74 @@
       }
     },
     {
+      "id": "prices-inventory-form",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3234
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Módulos transaccionales: precios e inventario",
+        "order": "28",
+        "detail": "Clase 22: continuar create-product.tsx con tarjeta Precios e Inventario y CTA Guardar."
+      }
+    },
+    {
+      "id": "two-column-price-stock-rows",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3238
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Filas de dos columnas (precio y stock)",
+        "order": "29",
+        "detail": "Flexbox row + gap + flex:1 / rowCols para precio regular/oferta y stock inicial/mínimo."
+      }
+    },
+    {
+      "id": "monetary-prefix-inputs",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3378
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Inputs con prefijo monetario",
+        "order": "30",
+        "detail": "inputPriceWrapper con prefijo $ y keyboardType numeric."
+      }
+    },
+    {
+      "id": "stock-metrics-save-cta",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3518
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Métricas de stock y Guardar Producto",
+        "order": "31",
+        "detail": "Stock inicial/mínimo y botón primario con icono de confirmación."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -580,7 +648,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 2980
+        "height": 3420
       },
       "zIndex": -1,
       "data": {
@@ -899,6 +967,69 @@
       "id": "e-create-product-form-advanced-flexbox-form-layout",
       "source": "create-product-form",
       "target": "advanced-flexbox-form-layout",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-create-product-form-prices-inventory-form",
+      "source": "create-product-form",
+      "target": "prices-inventory-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-advanced-flexbox-form-layout-prices-inventory-form",
+      "source": "advanced-flexbox-form-layout",
+      "target": "prices-inventory-form",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-prices-inventory-form-two-column-price-stock-rows",
+      "source": "prices-inventory-form",
+      "target": "two-column-price-stock-rows",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-two-column-price-stock-rows-monetary-prefix-inputs",
+      "source": "two-column-price-stock-rows",
+      "target": "monetary-prefix-inputs",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-prefix-icon-category-selectors-monetary-prefix-inputs",
+      "source": "prefix-icon-category-selectors",
+      "target": "monetary-prefix-inputs",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-monetary-prefix-inputs-stock-metrics-save-cta",
+      "source": "monetary-prefix-inputs",
+      "target": "stock-metrics-save-cta",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-prices-inventory-form-stock-metrics-save-cta",
+      "source": "prices-inventory-form",
+      "target": "stock-metrics-save-cta",
       "sourceHandle": "bottom",
       "targetHandle": "left",
       "route": "bezier",

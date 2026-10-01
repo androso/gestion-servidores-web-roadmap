@@ -435,5 +435,69 @@
         "url": "https://univo.instructure.com/courses/1763/pages/clase-21"
       }
     ]
+  },
+  "prices-inventory-form": {
+    "title": "Módulos transaccionales: precios e inventario",
+    "content": "# Módulos transaccionales: precios e inventario\n\nProfundizar la maquetación de secciones transaccionales de inventario y precios en el formulario administrativo móvil. Continuación de `create-product.tsx` (ADMIN PORTAL / Nuevo Producto) tras la tarjeta de Información General de Clase 21.\n\n**Idea clave:** los formularios administrativos densos ganan usabilidad cuando precios y stock se presentan en columnas con prefijos visuales claros y un CTA primario de guardado, sin saturar el viewport móvil.\n\nAsignación Canvas **Maquetacion de formulario producto** (17434), entrega 05/10/2026.\n\n### Fuentes\n- **Clase 22 — 30/09/2026 — Maquetación creación de productos parte 2** — Objetivo / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Maquetación creación de productos parte 2",
+        "locator": "Objetivo de aprendizaje / Idea clave — continuación create-product.tsx",
+        "url": "https://app.notion.com/p/3ec82a6d6561813c9c4ff5907cbdd17d"
+      },
+      {
+        "label": "Lección Canvas — Clase 22",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-22"
+      }
+    ]
+  },
+  "two-column-price-stock-rows": {
+    "title": "Filas de dos columnas (precio y stock)",
+    "content": "# Filas de dos columnas (precio y stock)\n\nCuadrículas de dos columnas con Flexbox (`flexDirection: \"row\"`, `gap`, `flex: 1` / `rowCols`) para precio regular/oferta y stock inicial/mínimo.\n\n### Fuentes\n- **Clase 22 — Maquetación creación de productos parte 2** — Conceptos: cuadrículas Flexbox",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Maquetación creación de productos parte 2",
+        "locator": "Conceptos: cuadrículas de dos columnas Flexbox (row / gap / flex:1 / rowCols)",
+        "url": "https://app.notion.com/p/3ec82a6d6561813c9c4ff5907cbdd17d"
+      },
+      {
+        "label": "Lección Canvas — Clase 22",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-22"
+      }
+    ]
+  },
+  "monetary-prefix-inputs": {
+    "title": "Inputs con prefijo monetario",
+    "content": "# Inputs con prefijo monetario\n\nEntradas numéricas compuestas con prefijo `$` (`inputPriceWrapper`, `keyboardType=\"numeric\"`) para precio regular y de oferta.\n\n### Fuentes\n- **Clase 22 — Maquetación creación de productos parte 2** — Conceptos: prefijo monetario",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Maquetación creación de productos parte 2",
+        "locator": "Conceptos: inputPriceWrapper, prefijo $ y keyboardType numeric",
+        "url": "https://app.notion.com/p/3ec82a6d6561813c9c4ff5907cbdd17d"
+      },
+      {
+        "label": "Lección Canvas — Clase 22",
+        "locator": "Página de la clase",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-22"
+      }
+    ]
+  },
+  "stock-metrics-save-cta": {
+    "title": "Métricas de stock y Guardar Producto",
+    "content": "# Métricas de stock y Guardar Producto\n\nMétricas de stock (stock inicial / stock mínimo) y botón de acción principal \"Guardar Producto\" con icono de confirmación. Header de navegación con `router.replace` al Dashboard.\n\n### Fuentes\n- **Clase 22 — Maquetación creación de productos parte 2** — Actividad / Conceptos: stock y CTA",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 30/09/2026 — Maquetación creación de productos parte 2",
+        "locator": "Conceptos: métricas de stock; botón Guardar Producto; assignment 17434",
+        "url": "https://app.notion.com/p/3ec82a6d6561813c9c4ff5907cbdd17d"
+      },
+      {
+        "label": "Lección Canvas — Clase 22",
+        "locator": "Página de la clase / assignment 17434",
+        "url": "https://univo.instructure.com/courses/1763/pages/clase-22"
+      }
+    ]
   }
 }
