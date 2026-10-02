@@ -214,7 +214,7 @@
   },
   "ostrowski-method": {
     "title": "Método de Ostrowski (multipaso)",
-    "content": "# Método de Ostrowski (multipaso)\n\nClase 21 (29/09/2026, Semana 11): **método de Ostrowski** como técnica **iterativa multipaso** para aproximar raíces de ecuaciones no lineales: **fórmula**, **pseudocódigo** e **implementación en Python / Jupyter**.\n\nContinúa Newton (Clases 16–19) y Traub (Clase 20): Ostrowski también es multipaso; se implementa en Python y se evalúa con error y ACOC. La sesión pide **repasar Newton y Traub**, error y orden de convergencia, antes de la clase.\n\nHerramientas: Python / Jupyter. Adjuntos en Notion: diapositivas `Clase-21-AMN-S11.pdf` y notebook convertido `Clase-21-AMN-Jupyter-Notebook.pdf`.\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Objetivo / Conceptos / Idea clave",
+    "content": "# Método de Ostrowski (multipaso)\n\nClase 21 (29/09/2026, Semana 11): **método de Ostrowski** como técnica **iterativa multipaso** para aproximar raíces de ecuaciones no lineales: **fórmula**, **pseudocódigo** e **implementación en Python / Jupyter**.\n\nClase 22 (01/10/2026): continúa la misma fórmula en **Python** para **ecuaciones no lineales** y problemas de ingeniería; pide **repasar la fórmula de Ostrowski**, error, tolerancia y orden de convergencia antes de la sesión.\n\nContinúa Newton (Clases 16–19) y Traub (Clase 20). Adjuntos Clase 21: `Clase-21-AMN-S11.pdf` y `Clase-21-AMN-Jupyter-Notebook.pdf`. Adjuntos Clase 22: `Clase 22 - Método de Ostrowski.pdf` y notebook `Clase 22 AMN- Jupyter Notebook` (PDF `clase-22-amn-jupyter-notebook.pdf`).\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Objetivo / Conceptos / Idea clave\n- **Clase 22 — 01/10/2026 — Método de Ostrowski en Python** — Objetivo / Conceptos",
     "sourceRefs": [
       {
         "label": "Clase 21 — 29/09/2026 — El método de Ostrowski",
@@ -225,17 +225,53 @@
         "label": "Canvas — Clase 21 29/09/2026",
         "locator": "clase-21-29-slash-09-slash-2026",
         "url": "https://univo.instructure.com/courses/1739/pages/clase-21-29-slash-09-slash-2026"
+      },
+      {
+        "label": "Clase 22 — 01/10/2026 — Método de Ostrowski en Python, resolución de ecuaciones no lineales y comparación con Newton y Traub",
+        "locator": "Objetivo / Conceptos — método de Ostrowski en Python (ecuaciones no lineales); PDF Clase 22 - Método de Ostrowski",
+        "url": "https://app.notion.com/p/3ed82a6d656181ffba63e1daf48c4b18"
+      },
+      {
+        "label": "Canvas — Clase 22 01/10/2026",
+        "locator": "clase-22-01-slash-10-slash-2026",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-22-01-slash-10-slash-2026"
+      }
+    ]
+  },
+  "python-ostrowski": {
+    "title": "Ostrowski en Python",
+    "content": "# Ostrowski en Python\n\nClase 22 (01/10/2026, Semana 10): **implementar el método de Ostrowski en Python / Jupyter** para resolver **ecuaciones no lineales** y problemas de ingeniería.\n\nLa sesión pide: **gráficas para estimaciones iniciales**; **tablas de aproximaciones y errores**; **criterios de parada**, tolerancia y ACOC. Herramientas: Jupyter con **NumPy**, **pandas** y **Matplotlib**. Notebook adjunto: `Clase 22 AMN- Jupyter Notebook.ipynb` (PDF `clase-22-amn-jupyter-notebook.pdf`). Diapositivas: `Clase 22 - Método de Ostrowski.pdf`.\n\nMisma idea que Newton/Traub en Python: el código refleja el procedimiento analítico y registra iteraciones.\n\n### Fuentes\n- **Clase 22 — 01/10/2026** — Objetivo / Conceptos / Actividad / Herramientas / Archivos",
+    "sourceRefs": [
+      {
+        "label": "Clase 22 — 01/10/2026 — Método de Ostrowski en Python, resolución de ecuaciones no lineales y comparación con Newton y Traub",
+        "locator": "Objetivo / Conceptos / Actividad / Herramientas — Python, Jupyter, NumPy, pandas, Matplotlib; gráficas para x0; tablas de aproximaciones y errores; PDFs clase-22-metodo-de-ostrowski y clase-22-amn-jupyter-notebook",
+        "url": "https://app.notion.com/p/3ed82a6d656181ffba63e1daf48c4b18"
+      },
+      {
+        "label": "Canvas — Clase 22 01/10/2026",
+        "locator": "clase-22-01-slash-10-slash-2026",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-22-01-slash-10-slash-2026"
       }
     ]
   },
   "ostrowski-acoc-comparison": {
     "title": "Ostrowski vs Newton y Traub",
-    "content": "# Ostrowski vs Newton y Traub\n\nClase 21: analizar **error** y **orden aproximado de convergencia (ACOC)**; **comparar** Ostrowski con **Newton** y **Traub** (iteraciones, errores y ACOC) sobre ejemplos matemáticos o de ingeniería.\n\nNo sustituye los nodos de Newton ni Traub: es la comparación que la sesión pide después de implementar Ostrowski.\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Conceptos / Actividad",
+    "content": "# Ostrowski vs Newton y Traub\n\nClase 21: analizar **error** y **orden aproximado de convergencia (ACOC)**; **comparar** Ostrowski con **Newton** y **Traub** (iteraciones, errores y ACOC) sobre ejemplos matemáticos o de ingeniería.\n\nClase 22: tras implementar Ostrowski en Python, **comparar con Newton y Traub** interpretando **errores, iteraciones, precisión y ACOC**.\n\nNo sustituye los nodos de Newton ni Traub: es la comparación que las sesiones piden después de implementar Ostrowski.\n\n### Fuentes\n- **Clase 21 — 29/09/2026 — El método de Ostrowski** — Conceptos / Actividad\n- **Clase 22 — 01/10/2026** — Objetivo / Conceptos / Actividad / Idea clave",
     "sourceRefs": [
       {
         "label": "Clase 21 — 29/09/2026 — El método de Ostrowski",
         "locator": "Conceptos / Actividad — error, ACOC, comparación con Newton y Traub",
         "url": "https://app.notion.com/p/3eb82a6d6561816f8c90c04a3c094f5c"
+      },
+      {
+        "label": "Clase 22 — 01/10/2026 — Método de Ostrowski en Python, resolución de ecuaciones no lineales y comparación con Newton y Traub",
+        "locator": "Objetivo / Conceptos / Actividad / Idea clave — comparación Ostrowski vs Newton vs Traub (iteraciones, precisión, ACOC)",
+        "url": "https://app.notion.com/p/3ed82a6d656181ffba63e1daf48c4b18"
+      },
+      {
+        "label": "Canvas — Clase 22 01/10/2026",
+        "locator": "clase-22-01-slash-10-slash-2026",
+        "url": "https://univo.instructure.com/courses/1739/pages/clase-22-01-slash-10-slash-2026"
       }
     ]
   },
