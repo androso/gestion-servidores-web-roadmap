@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "metodos-numericos",
   "title": "Métodos Numéricos",
-  "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección, Newton, Traub y Ostrowski (multipaso/ACOC) para raíces de ecuaciones no lineales.",
+  "description": "Error iterativo, aritmética de punto flotante, Taylor, TVI, bisección, Newton, Traub y Ostrowski (Python, ACOC y comparación) para raíces de ecuaciones no lineales.",
   "canvas": {
     "width": 1280,
-    "height": 2560,
+    "height": 2720,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -412,11 +412,11 @@
       "data": {
         "label": "Método de Ostrowski (multipaso)",
         "order": "15",
-        "detail": "Método iterativo multipaso: fórmula, pseudocódigo e implementación en Python."
+        "detail": "Método iterativo multipaso: fórmula, pseudocódigo e implementación en Python (Clases 21–22)."
       }
     },
     {
-      "id": "ostrowski-acoc-comparison",
+      "id": "python-ostrowski",
       "type": "subtopic",
       "position": {
         "x": 540,
@@ -427,9 +427,26 @@
         "height": 88
       },
       "data": {
-        "label": "Ostrowski vs Newton y Traub",
+        "label": "Ostrowski en Python",
         "order": "16",
-        "detail": "Comparar iteraciones, error y ACOC frente a Newton y Traub."
+        "detail": "Implementar Ostrowski en Jupyter (NumPy, pandas, Matplotlib): gráficas para x0 y tablas de aproximaciones/errores."
+      }
+    },
+    {
+      "id": "ostrowski-acoc-comparison",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2364
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "Ostrowski vs Newton y Traub",
+        "order": "17",
+        "detail": "Comparar iteraciones, precisión y ACOC frente a Newton y Traub."
       }
     },
     {
@@ -441,11 +458,11 @@
       },
       "size": {
         "width": 1200,
-        "height": 280
+        "height": 420
       },
       "zIndex": -1,
       "data": {
-        "label": "04 · Ostrowski multipaso — Clase 21"
+        "label": "04 · Ostrowski: fórmula, Python y comparación"
       }
     }
   ],
@@ -631,12 +648,30 @@
       "arrow": true
     },
     {
-      "id": "e-ostrowski-method-ostrowski-acoc-comparison",
+      "id": "e-ostrowski-method-python-ostrowski",
       "source": "ostrowski-method",
-      "target": "ostrowski-acoc-comparison",
+      "target": "python-ostrowski",
       "sourceHandle": "right",
       "targetHandle": "left",
       "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-python-ostrowski-ostrowski-acoc-comparison",
+      "source": "python-ostrowski",
+      "target": "ostrowski-acoc-comparison",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-ostrowski-method-ostrowski-acoc-comparison",
+      "source": "ostrowski-method",
+      "target": "ostrowski-acoc-comparison",
+      "sourceHandle": "bottom",
+      "targetHandle": "left",
+      "route": "smoothstep",
       "arrow": true
     }
   ]
