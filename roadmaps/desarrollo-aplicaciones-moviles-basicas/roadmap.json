@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "desarrollo-aplicaciones-moviles-basicas",
   "title": "Desarrollo de Aplicaciones Móviles Básicas",
-  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario y formularios de administración (categorías y producto: información general, precios e inventario).",
+  "description": "React Native, Expo, Clean Architecture/MVVM, autenticación, Drawer multinivel, panel ShopEase, perfil, actualización de usuario, formularios de administración (categorías y producto: información general, precios e inventario) y prácticas de To-Do App.",
   "canvas": {
     "width": 1280,
-    "height": 3780,
+    "height": 4180,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -640,6 +640,74 @@
       }
     },
     {
+      "id": "todo-app-part-1",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3658
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "To-Do App (Parte 1)",
+        "order": "32",
+        "detail": "Práctica 06: UI nativa de lista y captura de tareas por hacer en React Native (lab con video)."
+      }
+    },
+    {
+      "id": "todo-app-task-list-ui",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3662
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "UI de lista y agregar tareas",
+        "order": "33",
+        "detail": "Montar la interfaz para listar tareas y capturar nuevos todos."
+      }
+    },
+    {
+      "id": "todo-app-part-2",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 3794
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "To-Do App (Parte 2)",
+        "order": "34",
+        "detail": "Práctica 07: continuar la UI para agregar tareas sobre la base de la Parte 1."
+      }
+    },
+    {
+      "id": "todo-app-add-tasks-ui",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 3798
+      },
+      "size": {
+        "width": 330,
+        "height": 88
+      },
+      "data": {
+        "label": "UI para agregar tareas (continuación)",
+        "order": "35",
+        "detail": "Reforzar la captura de tareas en React Native con el video de la Parte 2."
+      }
+    },
+    {
       "id": "section-main",
       "type": "section",
       "position": {
@@ -648,7 +716,7 @@
       },
       "size": {
         "width": 1200,
-        "height": 3420
+        "height": 3720,
       },
       "zIndex": -1,
       "data": {
@@ -1033,6 +1101,60 @@
       "sourceHandle": "bottom",
       "targetHandle": "left",
       "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-calculator-ui-practice-todo-app-part-1",
+      "source": "calculator-ui-practice",
+      "target": "todo-app-part-1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-rn-fundamentals-todo-app-part-1",
+      "source": "rn-fundamentals",
+      "target": "todo-app-part-1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-components-usestate-todo-app-part-1",
+      "source": "components-usestate",
+      "target": "todo-app-part-1",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-todo-app-part-1-todo-app-task-list-ui",
+      "source": "todo-app-part-1",
+      "target": "todo-app-task-list-ui",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-todo-app-part-1-todo-app-part-2",
+      "source": "todo-app-part-1",
+      "target": "todo-app-part-2",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-todo-app-part-2-todo-app-add-tasks-ui",
+      "source": "todo-app-part-2",
+      "target": "todo-app-add-tasks-ui",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
       "arrow": true
     }
   ]

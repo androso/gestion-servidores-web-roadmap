@@ -1156,5 +1156,117 @@
         "url": "https://univo.instructure.com/courses/1765/pages/clase-20-26-slash-09-slash-2026"
       }
     ]
+  },
+  "adaboost-implementation-optimization": {
+    "title": "AdaBoost: implementación y optimización",
+    "content": "# AdaBoost: implementación y optimización\n\nImplementar un modelo AdaBoost con árboles de decisión; evaluar desempeño con accuracy, precisión, recall, F1-score y matriz de confusión; optimizar hiperparámetros (`n_estimators`, `max_depth`, `learning_rate`) con validación cruzada y GridSearchCV.\n\nSesión presencial 02/10/2026 (Semana 11). Flujo: EDA → modelo → métricas → hiperparámetros → GridSearchCV. Dataset: `dataset_abc_S11.csv` (fallas de maquinaria industrial: 1200 obs., 10 predictoras + falla). Construye sobre la introducción a clasificadores débiles de la Clase 20 (`Default.csv`).\n\n> AdaBoost combina muchos árboles débiles reponderando observaciones mal clasificadas; el rendimiento depende de n_estimators, profundidad de los árboles y learning_rate, que se afinan con GridSearchCV.\n\nHerramientas: Jupyter / scikit-learn (`AdaBoostClassifier`, `GridSearchCV`). Materiales: Clase-21-CDD-ABC.pdf, Ejemplo-1-ABC-Default.pdf. No hay tarea evaluada vinculada en Canvas.",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-weak-trees": {
+    "title": "Árboles de decisión como débiles",
+    "content": "# Árboles de decisión como débiles\n\nConstruir AdaBoost con clasificadores débiles basados en árboles de decisión (`AdaBoostClassifier`).\n\n### Debes poder\n- Explicar por qué un árbol de decisión poco profundo actúa como clasificador débil.\n- Ensamblar esos árboles en un `AdaBoostClassifier` sobre el dataset de fallas.\n\n### Fuentes\n- **Clase 21 — Implementación, evaluación y optimización del algoritmo AdaBoost** — Conceptos: construcción de AdaBoost con árboles de decisión",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: construcción de AdaBoost con clasificadores débiles (árboles de decisión)",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-decision-boundary": {
+    "title": "Frontera de decisión del ensamble",
+    "content": "# Frontera de decisión del ensamble\n\nVisualizar la frontera de decisión del modelo AdaBoost sobre el problema de fallas de maquinaria.\n\n### Debes poder\n- Interpretar la forma de la frontera que produce el ensamble de árboles débiles.\n- Relacionar esa frontera con el desempeño inicial del clasificador.\n\n### Fuentes\n- **Clase 21** — Conceptos: visualización de la frontera de decisión",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: visualización de la frontera de decisión",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-classification-metrics": {
+    "title": "Métricas y matriz de confusión",
+    "content": "# Métricas y matriz de confusión\n\nEvaluar el modelo inicial con accuracy (~78.67%), precisión, recall, F1-score y matriz de confusión.\n\n### Debes poder\n- Calcular e interpretar las cuatro métricas de clasificación.\n- Leer la matriz de confusión en el caso de falla vs no falla de maquinaria.\n\n### Fuentes\n- **Clase 21** — Conceptos: evaluación del modelo inicial",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: accuracy (~78.67% modelo inicial), precisión, recall, F1, matriz de confusión",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-weak-weights-errors": {
+    "title": "Pesos y errores de los débiles",
+    "content": "# Pesos y errores de los débiles\n\nSeguir pesos y errores de los clasificadores débiles a lo largo del ensamble AdaBoost.\n\n### Debes poder\n- Relacionar el error de un débil con el peso que recibe en el modelo final.\n- Describir cómo evolucionan esos pesos durante las iteraciones.\n\n### Fuentes\n- **Clase 21** — Conceptos: pesos y errores de clasificadores débiles",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: pesos y errores de clasificadores débiles a lo largo del ensamble",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-hyperparameter-tuning": {
+    "title": "Hiperparámetros de AdaBoost",
+    "content": "# Hiperparámetros de AdaBoost\n\nAjustar el número de estimadores, la profundidad máxima de los árboles y la tasa de aprendizaje.\n\nIdea clave de la sesión: el rendimiento depende de `n_estimators`, profundidad de los árboles y `learning_rate`.\n\n### Debes poder\n- Explicar el efecto de cada hiperparámetro sobre el ensamble.\n- Proponer una rejilla razonable antes de GridSearchCV.\n\n### Fuentes\n- **Clase 21** — Conceptos: ajuste de hiperparámetros / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: n_estimators, max_depth, learning_rate / Idea clave",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
+  },
+  "adaboost-gridsearchcv": {
+    "title": "GridSearchCV y validación cruzada",
+    "content": "# GridSearchCV y validación cruzada\n\nOptimizar la combinación de hiperparámetros de AdaBoost con validación cruzada y `GridSearchCV` (scikit-learn).\n\nReutiliza la disciplina de búsqueda en rejilla ya vista en SVM RBF, ahora sobre `n_estimators`, `max_depth` y `learning_rate`.\n\n### Debes poder\n- Configurar GridSearchCV con validación cruzada para AdaBoost.\n- Interpretar la mejor combinación sin inventar resultados no reportados en clase.\n\n### Fuentes\n- **Clase 21** — Conceptos: optimización con validación cruzada y GridSearchCV",
+    "sourceRefs": [
+      {
+        "label": "Clase 21 — 02/10/2026 — Implementación, evaluación y optimización del algoritmo AdaBoost",
+        "locator": "Conceptos: optimización con validación cruzada y GridSearchCV",
+        "url": "https://app.notion.com/p/3ee82a6d6561817d89aac57cfc3b5cc6"
+      },
+      {
+        "label": "Canvas — Clase 21 - 02/10/2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1765/pages/clase-21-02-slash-10-slash-2026"
+      }
+    ]
   }
 }

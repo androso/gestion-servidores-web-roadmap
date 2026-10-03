@@ -5,8 +5,8 @@
   "description": "Ruta conceptual de la asignatura: fundamentos, preparación y EDA, disciplina de evaluación, selección del modelo según la naturaleza de la variable respuesta (incluida la logística multinomial), SVM, clasificación por ensamble con AdaBoost, diagnóstico de GLM y aplicación reproducible.",
   "canvas": {
     "width": 1280,
-    "height": 7700,
-    "minZoom": 0.10,
+    "height": 8540,
+    "minZoom": 0.09,
     "maxZoom": 1.75,
     "initialViewport": { "x": 150, "y": 8, "zoom": 0.84 },
     "mobileInitialViewport": { "x": -70, "y": -190, "zoom": 0.8 }
@@ -40,7 +40,7 @@
     { "id": "section-applied", "type": "section", "position": { "x": 40, "y": 3910 }, "size": { "width": 1200, "height": 700 }, "zIndex": -1, "data": { "label": "06 · Flujo reproducible y checkpoints" } },
     { "id": "section-multinomial", "type": "section", "position": { "x": 40, "y": 4650 }, "size": { "width": 1200, "height": 740 }, "zIndex": -1, "data": { "label": "07 · Clasificación multinomial" } },
     { "id": "section-svm", "type": "section", "position": { "x": 40, "y": 5410 }, "size": { "width": 1200, "height": 1460 }, "zIndex": -1, "data": { "label": "08 · Máquinas de vectores de soporte" } },
-    { "id": "section-adaboost", "type": "section", "position": { "x": 40, "y": 6910 }, "size": { "width": 1200, "height": 620 }, "zIndex": -1, "data": { "label": "09 · Clasificación por ensamble (AdaBoost)" } },
+    { "id": "section-adaboost", "type": "section", "position": { "x": 40, "y": 6910 }, "size": { "width": 1200, "height": 1480 }, "zIndex": -1, "data": { "label": "09 · Clasificación por ensamble (AdaBoost)" } },
 
     { "id": "data-science", "type": "topic", "position": { "x": 90, "y": 290 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Ciencia de datos", "order": "01", "detail": "Transformar datos en decisiones, no solo ejecutar herramientas." } },
     { "id": "interdisciplinary", "type": "subtopic", "position": { "x": 540, "y": 294 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Tres pilares interdisciplinarios", "order": "02", "detail": "Estadística, computación y conocimiento del dominio." } },
@@ -128,7 +128,14 @@
     { "id": "adaboost-classification", "type": "topic", "position": { "x": 90, "y": 6970 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Clasificación con AdaBoost", "order": "71", "detail": "Ensamble que combina clasificadores débiles reponderando observaciones mal clasificadas." } },
     { "id": "adaboost-weak-reweighting", "type": "subtopic", "position": { "x": 540, "y": 6974 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Clasificadores débiles y reponderación", "order": "72", "detail": "Cada iteración sube el peso de las observaciones mal clasificadas." } },
     { "id": "adaboost-weighted-combination", "type": "subtopic", "position": { "x": 540, "y": 7114 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Combinación ponderada y parámetros", "order": "73", "detail": "El modelo final pondera las predicciones de los débiles; hay que conocer los parámetros del algoritmo." } },
-    { "id": "adaboost-python-evaluation", "type": "topic", "position": { "x": 90, "y": 7254 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Implementar y evaluar AdaBoost", "order": "74", "detail": "AdaBoost en Python (scikit-learn), métricas de clasificación e interpretación con Default.csv." } }
+    { "id": "adaboost-python-evaluation", "type": "topic", "position": { "x": 90, "y": 7254 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Implementar y evaluar AdaBoost", "order": "74", "detail": "AdaBoost en Python (scikit-learn), métricas de clasificación e interpretación con Default.csv." } },
+    { "id": "adaboost-implementation-optimization", "type": "topic", "position": { "x": 90, "y": 7394 }, "size": { "width": 380, "height": 96 }, "data": { "label": "AdaBoost: implementación y optimización", "order": "75", "detail": "AdaBoostClassifier sobre fallas de maquinaria: EDA, métricas y GridSearchCV de hiperparámetros." } },
+    { "id": "adaboost-weak-trees", "type": "subtopic", "position": { "x": 540, "y": 7398 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Árboles de decisión como débiles", "order": "76", "detail": "Construir AdaBoost con clasificadores débiles basados en árboles de decisión." } },
+    { "id": "adaboost-decision-boundary", "type": "subtopic", "position": { "x": 540, "y": 7538 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Frontera de decisión del ensamble", "order": "77", "detail": "Visualizar cómo el ensamble AdaBoost separa las clases en el plano de predictores." } },
+    { "id": "adaboost-classification-metrics", "type": "subtopic", "position": { "x": 540, "y": 7678 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Métricas y matriz de confusión", "order": "78", "detail": "Accuracy, precisión, recall, F1-score y matriz de confusión del modelo inicial (~78.67%)." } },
+    { "id": "adaboost-weak-weights-errors", "type": "subtopic", "position": { "x": 540, "y": 7818 }, "size": { "width": 330, "height": 88 }, "data": { "label": "Pesos y errores de los débiles", "order": "79", "detail": "Seguir pesos y errores de los clasificadores débiles a lo largo del ensamble." } },
+    { "id": "adaboost-hyperparameter-tuning", "type": "subtopic", "position": { "x": 90, "y": 7958 }, "size": { "width": 380, "height": 96 }, "data": { "label": "Hiperparámetros de AdaBoost", "order": "80", "detail": "Afinar n_estimators, max_depth y learning_rate: el rendimiento depende de esos tres." } },
+    { "id": "adaboost-gridsearchcv", "type": "subtopic", "position": { "x": 540, "y": 7962 }, "size": { "width": 330, "height": 88 }, "data": { "label": "GridSearchCV y validación cruzada", "order": "81", "detail": "Optimizar la combinación de hiperparámetros con validación cruzada y GridSearchCV." } }
   ],
   "edges": [
     { "id": "e-title-node-subtitle-para", "source": "title-node", "target": "subtitle-para", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
@@ -197,6 +204,17 @@
     { "id": "e-adaboost-weak-reweighting-adaboost-weighted-combination", "source": "adaboost-weak-reweighting", "target": "adaboost-weighted-combination", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-adaboost-classification-adaboost-python-evaluation", "source": "adaboost-classification", "target": "adaboost-python-evaluation", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-adaboost-weighted-combination-adaboost-python-evaluation", "source": "adaboost-weighted-combination", "target": "adaboost-python-evaluation", "sourceHandle": "bottom", "targetHandle": "left", "route": "bezier", "arrow": true },
+    { "id": "e-adaboost-python-evaluation-adaboost-implementation-optimization", "source": "adaboost-python-evaluation", "target": "adaboost-implementation-optimization", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-classification-adaboost-implementation-optimization", "source": "adaboost-classification", "target": "adaboost-implementation-optimization", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-adaboost-implementation-optimization-adaboost-weak-trees", "source": "adaboost-implementation-optimization", "target": "adaboost-weak-trees", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-weak-trees-adaboost-decision-boundary", "source": "adaboost-weak-trees", "target": "adaboost-decision-boundary", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-decision-boundary-adaboost-classification-metrics", "source": "adaboost-decision-boundary", "target": "adaboost-classification-metrics", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-classification-metrics-adaboost-weak-weights-errors", "source": "adaboost-classification-metrics", "target": "adaboost-weak-weights-errors", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-implementation-optimization-adaboost-classification-metrics", "source": "adaboost-implementation-optimization", "target": "adaboost-classification-metrics", "sourceHandle": "bottom", "targetHandle": "left", "route": "bezier", "arrow": true },
+    { "id": "e-adaboost-weak-weights-errors-adaboost-hyperparameter-tuning", "source": "adaboost-weak-weights-errors", "target": "adaboost-hyperparameter-tuning", "sourceHandle": "bottom", "targetHandle": "top", "route": "smoothstep", "arrow": true },
+    { "id": "e-adaboost-implementation-optimization-adaboost-hyperparameter-tuning", "source": "adaboost-implementation-optimization", "target": "adaboost-hyperparameter-tuning", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
+    { "id": "e-adaboost-hyperparameter-tuning-adaboost-gridsearchcv", "source": "adaboost-hyperparameter-tuning", "target": "adaboost-gridsearchcv", "sourceHandle": "right", "targetHandle": "left", "route": "straight", "arrow": true },
+    { "id": "e-svm-gridsearchcv-adaboost-gridsearchcv", "source": "svm-gridsearchcv", "target": "adaboost-gridsearchcv", "sourceHandle": "bottom", "targetHandle": "top", "route": "bezier", "arrow": true },
     { "id": "e-count-outcomes-equidispersion", "source": "count-outcomes", "target": "equidispersion", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-equidispersion-log-link", "source": "equidispersion", "target": "log-link", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
     { "id": "e-log-link-multiplicative-effects", "source": "log-link", "target": "multiplicative-effects", "sourceHandle": "bottom", "targetHandle": "top", "route": "straight", "arrow": true },
