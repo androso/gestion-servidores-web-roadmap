@@ -181,6 +181,84 @@
       }
     ]
   },
+  "todo-app-part-1": {
+    "title": "To-Do App (Parte 1)",
+    "content": "# To-Do App (Parte 1)\n\nComprender fundamentos básicos para el desarrollo de apps nativas con React Native; desarrollar una UI para agregar tareas por hacer (To-Do App).\n\nPráctica virtual 25/09/2026. Ver el video práctico, analizar la tarea y entregar en Canvas en PDF o imagen.\n\n> La To-Do App introduce la captura de tareas en UI nativa con React Native.\n\n### Conceptos cubiertos\n- To-Do App (Parte 1)\n- UI para lista / agregar tareas por hacer\n- Práctica virtual con video guiado\n\n### Fuentes\n- **Práctica 06 — 25/09/2026 — To-Do App** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 06 — 25/09/2026 — To-Do App",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ee82a6d656181f09fdfef5a12325953"
+      },
+      {
+        "label": "Canvas — Práctica 06: 25/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1763/pages/practica-06-25-slash-09-slash-2026"
+      }
+    ],
+    "resources": [
+      {
+        "type": "video",
+        "title": "Video práctico — To-Do App Parte 1",
+        "url": "https://youtu.be/u-s1EerU6a0"
+      }
+    ]
+  },
+  "todo-app-task-list-ui": {
+    "title": "UI de lista y agregar tareas",
+    "content": "# UI de lista y agregar tareas\n\nMontar la interfaz para listar tareas y capturar nuevos todos en React Native (Parte 1 de la To-Do App).\n\n### Debes poder\n- Identificar los bloques de UI de lista y de captura.\n- Documentar la práctica con PDF o imagen en Canvas.\n\n### Fuentes\n- **Práctica 06 — To-Do App** — Conceptos: UI para agregar tareas por hacer",
+    "sourceRefs": [
+      {
+        "label": "Práctica 06 — 25/09/2026 — To-Do App",
+        "locator": "Conceptos: UI para agregar tareas por hacer / To-Do App (Parte 1)",
+        "url": "https://app.notion.com/p/3ee82a6d656181f09fdfef5a12325953"
+      },
+      {
+        "label": "Canvas — Práctica 06: 25/09/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1763/pages/practica-06-25-slash-09-slash-2026"
+      }
+    ]
+  },
+  "todo-app-part-2": {
+    "title": "To-Do App (Parte 2)",
+    "content": "# To-Do App (Parte 2)\n\nComprender fundamentos básicos para el desarrollo de apps nativas con React Native; desarrollar una UI para agregar tareas por hacer (To-Do App, parte 2).\n\nPráctica virtual 02/10/2026. Continuación de la Práctica 06. Ver el video práctico; entregar en Canvas en PDF o imagen (sin prórrogas).\n\n> La Parte 2 de la To-Do App refuerza la UI de captura de tareas sobre la base de React Native vista en la Parte 1.\n\n### Fuentes\n- **Práctica 07 — 02/10/2026 — To-Do App Part 2** — Objetivo / Conceptos / Idea clave",
+    "sourceRefs": [
+      {
+        "label": "Práctica 07 — 02/10/2026 — To-Do App Part 2",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ee82a6d656181888fa1f4c0d0111e09"
+      },
+      {
+        "label": "Canvas — Práctica 07: 02/10/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1763/pages/practica-07-02-slash-10-slash-2026"
+      }
+    ],
+    "resources": [
+      {
+        "type": "video",
+        "title": "Video práctico — To-Do App Parte 2",
+        "url": "https://youtu.be/Hz9adONiHKo"
+      }
+    ]
+  },
+  "todo-app-add-tasks-ui": {
+    "title": "UI para agregar tareas (continuación)",
+    "content": "# UI para agregar tareas (continuación)\n\nReforzar la captura de tareas en React Native sobre la Parte 1 (Práctica 07, lab con video).\n\n### Debes poder\n- Continuar la UI de agregar tareas iniciada en la Práctica 06.\n- Entregar evidencia en Canvas (PDF o imagen).\n\n### Fuentes\n- **Práctica 07 — To-Do App Part 2** — Conceptos: UI para agregar tareas por hacer",
+    "sourceRefs": [
+      {
+        "label": "Práctica 07 — 02/10/2026 — To-Do App Part 2",
+        "locator": "Conceptos: UI para agregar tareas por hacer / continuación To-Do App",
+        "url": "https://app.notion.com/p/3ee82a6d656181888fa1f4c0d0111e09"
+      },
+      {
+        "label": "Canvas — Práctica 07: 02/10/2026",
+        "locator": "Página de la práctica",
+        "url": "https://univo.instructure.com/courses/1763/pages/practica-07-02-slash-10-slash-2026"
+      }
+    ]
+  },
   "user-update-service": {
     "title": "Consumo del servicio de actualización de usuario",
     "content": "# Consumo del servicio de actualización de usuario\n\nObjetivo: consumir el servicio de actualización de usuario en apps móviles multiplataforma: integrar React Context con vistas nativas escroleables, serializar con FormData (`multipart/form-data`), autenticar con JWT Bearer y manejar errores HTTP de producción con Axios.\n\n### Conceptos cubiertos\n- Consumo síncrono/asíncrono de endpoints de producción (modelo de dominio ↔ respuestas del servidor)\n- Clientes HTTP asíncronos con TypeScript (`Promise<T>`): métodos POST y PUT\n- Seguridad de sesión: tokens JWT con prefijo Bearer\n- Integración de estados globales (React Context) con datos de perfil en dispositivo\n\n> Actualizar el perfil del usuario requiere un cliente HTTP tipado (POST/PUT) con FormData, autenticación Bearer JWT y manejo defensivo de errores Axios para no romper la UI.\n\nNo hay tarea formal en esta clase; aplicar más adelante en el proyecto. Herramientas: React Native, Expo, React Context, Axios, TypeScript, FormData, JWT Bearer.\n\n### Fuentes\n- **Clase 18 — 16/09/2026 — Consumo de servicio de actualización del usuario** — Objetivo / Conceptos / Idea clave\n- **Lección Canvas — Clase 18**",

@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "slug": "aplicacion-tecnicas-ingenieria-software",
   "title": "Aplicación de Técnicas de Ingeniería de Software",
-  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML (estructura, secuencia y actividad).",
+  "description": "Ruta de aprendizaje del curso ATIS (UNIVO): de la concepción RUP del proyecto integrador a las metodologías ágiles, el checkpoint del Parcial 1 y el modelado UML (estructura, secuencia, actividad e integración del Laboratorio 3).",
   "canvas": {
     "width": 1300,
-    "height": 2260,
+    "height": 2580,
     "minZoom": 0.15,
     "maxZoom": 1.75,
     "initialViewport": {
@@ -106,10 +106,10 @@
       },
       "size": {
         "width": 1220,
-        "height": 760
+        "height": 1080
       },
       "data": {
-        "label": "Modelado UML — fundamentos, clases, secuencia y actividad"
+        "label": "Modelado UML — fundamentos, clases, secuencia, actividad e integración Lab 3"
       }
     },
     {
@@ -727,6 +727,74 @@
         "order": "35",
         "detail": "Elaborar ambos diagramas sobre «Reservar cita» y una funcionalidad del proyecto integrador."
       }
+    },
+    {
+      "id": "t-lab3-uml-integration",
+      "type": "topic",
+      "position": {
+        "x": 90,
+        "y": 2116
+      },
+      "size": {
+        "width": 380,
+        "height": 96
+      },
+      "data": {
+        "label": "Lab 3: integración de diagramas UML",
+        "order": "36",
+        "detail": "Taller: integrar clases + comportamiento del Proyecto Integrador y revisar coherencia antes de entregar Lab 3."
+      }
+    },
+    {
+      "id": "s-uml-coherency-matrix",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2120
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Matriz de coherencia estructura–comportamiento",
+        "order": "37",
+        "detail": "Comprobar que clases y secuencia/actividad representan el mismo dominio con nombres consistentes."
+      }
+    },
+    {
+      "id": "s-uml-peer-review",
+      "type": "subtopic",
+      "position": {
+        "x": 920,
+        "y": 2120
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Revisión entre pares y mejoras",
+        "order": "38",
+        "detail": "Detectar errores de notación y listar mejoras pendientes previo a la entrega."
+      }
+    },
+    {
+      "id": "s-reservaya-registrar-reserva",
+      "type": "subtopic",
+      "position": {
+        "x": 540,
+        "y": 2248
+      },
+      "size": {
+        "width": 320,
+        "height": 88
+      },
+      "data": {
+        "label": "Caso guía ReservaYA: Registrar una reserva",
+        "order": "39",
+        "detail": "Usar el proceso Registrar una reserva como referencia de coherencia dominio/proceso."
+      }
     }
   ],
   "edges": [
@@ -1124,6 +1192,60 @@
       "sourceHandle": "bottom",
       "targetHandle": "top",
       "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-s-reservaya-reservar-cita-t-lab3-uml-integration",
+      "source": "s-reservaya-reservar-cita",
+      "target": "t-lab3-uml-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagrama-clases-t-lab3-uml-integration",
+      "source": "t-diagrama-clases",
+      "target": "t-lab3-uml-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "bezier",
+      "arrow": true
+    },
+    {
+      "id": "e-t-diagramas-secuencia-actividad-t-lab3-uml-integration",
+      "source": "t-diagramas-secuencia-actividad",
+      "target": "t-lab3-uml-integration",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-lab3-uml-integration-s-uml-coherency-matrix",
+      "source": "t-lab3-uml-integration",
+      "target": "s-uml-coherency-matrix",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "straight",
+      "arrow": true
+    },
+    {
+      "id": "e-t-lab3-uml-integration-s-uml-peer-review",
+      "source": "t-lab3-uml-integration",
+      "target": "s-uml-peer-review",
+      "sourceHandle": "right",
+      "targetHandle": "left",
+      "route": "smoothstep",
+      "arrow": true
+    },
+    {
+      "id": "e-s-uml-coherency-matrix-s-reservaya-registrar-reserva",
+      "source": "s-uml-coherency-matrix",
+      "target": "s-reservaya-registrar-reserva",
+      "sourceHandle": "bottom",
+      "targetHandle": "top",
+      "route": "straight",
       "arrow": true
     }
   ]

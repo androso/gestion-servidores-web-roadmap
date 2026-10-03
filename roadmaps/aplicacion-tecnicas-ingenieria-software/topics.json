@@ -660,5 +660,76 @@
         "url": "https://app.notion.com/p/3e782a6d6561812c8269d3b7e7850e7a"
       }
     ]
+  },
+  "t-lab3-uml-integration": {
+    "title": "Lab 3: integración de diagramas UML",
+    "content": "# Lab 3: integración de diagramas UML\n\nIntegrar y revisar en equipo los diagramas UML del Proyecto Integrador (clases + comportamiento); comprobar coherencia dominio/proceso; detectar errores de notación antes de entregar el Laboratorio 3.\n\nSesión presencial 18/09/2026. Taller de equipo: diagramas revisados + matriz de coherencia + mejoras pendientes previo a entrega de Laboratorio 3 (assignment 17236, unlock 03/10, due 09/10).\n\n> Antes de entregar Lab 3, la estructura (clases) y el comportamiento (actividad/secuencia) deben representar el mismo dominio con nombres y responsabilidades consistentes.\n\n### Conceptos cubiertos\n- Revisión de diagrama de clases (atributos, métodos, relaciones)\n- Diagrama de secuencia o de actividad de un proceso real del proyecto\n- Matriz de coherencia entre estructura y comportamiento\n- Revisión entre pares y lista de mejoras pendientes\n- Caso guía ReservaYA (proceso Registrar una reserva)",
+    "sourceRefs": [
+      {
+        "label": "Sesión 16 — 18/09/2026 — Laboratorio 3: integración y revisión de diagramas UML",
+        "locator": "Objetivo / Conceptos / Idea clave",
+        "url": "https://app.notion.com/p/3ee82a6d65618115ab85cdb9beba411e"
+      },
+      {
+        "label": "Canvas — Sesión 16 | sábado 18 de septiembre de 2026",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-16-%7C-sabado-18-de-septiembre-de-2026"
+      }
+    ],
+    "resources": [
+      {
+        "type": "guide",
+        "title": "Drive — Integración diagramas UML",
+        "url": "https://drive.google.com/drive/folders/1NYa_mp8uWWb6S15M6Lbgt49wg3PIXQbB?usp=sharing"
+      }
+    ]
+  },
+  "s-uml-coherency-matrix": {
+    "title": "Matriz de coherencia estructura–comportamiento",
+    "content": "# Matriz de coherencia estructura–comportamiento\n\nComprobar coherencia entre el diagrama de clases y el diagrama de secuencia o de actividad de un proceso real del proyecto.\n\n### Debes poder\n- Cruzar nombres de clases, responsabilidades y mensajes/actividades en una matriz.\n- Detectar inconsistencias de dominio/proceso antes de entregar Lab 3.\n\n### Fuentes\n- **Sesión 16 — Laboratorio 3** — Conceptos: matriz de coherencia",
+    "sourceRefs": [
+      {
+        "label": "Sesión 16 — 18/09/2026 — Laboratorio 3: integración y revisión de diagramas UML",
+        "locator": "Conceptos: matriz de coherencia entre estructura y comportamiento",
+        "url": "https://app.notion.com/p/3ee82a6d65618115ab85cdb9beba411e"
+      },
+      {
+        "label": "Canvas — Sesión 16",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-16-%7C-sabado-18-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-uml-peer-review": {
+    "title": "Revisión entre pares y mejoras",
+    "content": "# Revisión entre pares y mejoras\n\nRevisar en equipo los diagramas UML; detectar errores de notación; listar mejoras pendientes previo a la entrega del Laboratorio 3.\n\n### Debes poder\n- Revisar atributos, métodos y relaciones del diagrama de clases.\n- Dejar una lista concreta de mejoras pendientes.\n\n### Fuentes\n- **Sesión 16 — Laboratorio 3** — Conceptos: revisión entre pares",
+    "sourceRefs": [
+      {
+        "label": "Sesión 16 — 18/09/2026 — Laboratorio 3: integración y revisión de diagramas UML",
+        "locator": "Conceptos: revisión entre pares y lista de mejoras pendientes",
+        "url": "https://app.notion.com/p/3ee82a6d65618115ab85cdb9beba411e"
+      },
+      {
+        "label": "Canvas — Sesión 16",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-16-%7C-sabado-18-de-septiembre-de-2026"
+      }
+    ]
+  },
+  "s-reservaya-registrar-reserva": {
+    "title": "Caso guía ReservaYA: Registrar una reserva",
+    "content": "# Caso guía ReservaYA: Registrar una reserva\n\nUsar el proceso **Registrar una reserva** de ReservaYA como referencia de coherencia dominio/proceso al integrar los diagramas del proyecto integrador.\n\n### Fuentes\n- **Sesión 16 — Laboratorio 3** — Conceptos: caso guía ReservaYA",
+    "sourceRefs": [
+      {
+        "label": "Sesión 16 — 18/09/2026 — Laboratorio 3: integración y revisión de diagramas UML",
+        "locator": "Conceptos: caso guía ReservaYA (proceso Registrar una reserva)",
+        "url": "https://app.notion.com/p/3ee82a6d65618115ab85cdb9beba411e"
+      },
+      {
+        "label": "Canvas — Sesión 16",
+        "locator": "Página de la sesión",
+        "url": "https://univo.instructure.com/courses/1760/pages/sesion-16-%7C-sabado-18-de-septiembre-de-2026"
+      }
+    ]
   }
 }
